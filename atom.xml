@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-25T18:41:47.000Z</updated>
+  <updated>2016-09-25T18:29:03.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,31 +16,9 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Apple 系统固件下载地址</title>
-    <link href="http://yoursite.com/2016/09/26/005_Apple/"/>
-    <id>http://yoursite.com/2016/09/26/005_Apple/</id>
-    <published>2016-09-26T00:00:00.000Z</published>
-    <updated>2016-09-25T18:41:47.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><a href="https://support.apple.com/zh_CN/downloads/" target="_blank" rel="external">https://support.apple.com/zh_CN/downloads/</a></p>
-<p><br><br><code>Apple</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://support.apple.com/zh_CN/downloads/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://support.apple.com/zh_CN/downloads/&lt;/a
-    
-    </summary>
-    
-    
-      <category term="Apple" scheme="http://yoursite.com/tags/Apple/"/>
-    
-  </entry>
-  
-  <entry>
     <title>MySQL 数据库编码方式修改</title>
-    <link href="http://yoursite.com/2016/09/26/004_MySQL/"/>
-    <id>http://yoursite.com/2016/09/26/004_MySQL/</id>
+    <link href="http://yoursite.com/2016/09/26/004/"/>
+    <id>http://yoursite.com/2016/09/26/004/</id>
     <published>2016-09-26T00:00:00.000Z</published>
     <updated>2016-09-25T18:29:03.000Z</updated>
     
@@ -70,9 +48,31 @@
   </entry>
   
   <entry>
+    <title>Apple 系统固件下载地址</title>
+    <link href="http://yoursite.com/2016/09/26/005/"/>
+    <id>http://yoursite.com/2016/09/26/005/</id>
+    <published>2016-09-26T00:00:00.000Z</published>
+    <updated>2016-09-25T18:41:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><a href="https://support.apple.com/zh_CN/downloads/" target="_blank" rel="external">https://support.apple.com/zh_CN/downloads/</a></p>
+<p><br><br><code>Apple</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://support.apple.com/zh_CN/downloads/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://support.apple.com/zh_CN/downloads/&lt;/a
+    
+    </summary>
+    
+    
+      <category term="Apple" scheme="http://yoursite.com/tags/Apple/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mac电脑设置 Finder 可以退出</title>
-    <link href="http://yoursite.com/2016/09/25/001_Mac/"/>
-    <id>http://yoursite.com/2016/09/25/001_Mac/</id>
+    <link href="http://yoursite.com/2016/09/25/001/"/>
+    <id>http://yoursite.com/2016/09/25/001/</id>
     <published>2016-09-25T00:00:00.000Z</published>
     <updated>2016-09-25T18:30:06.000Z</updated>
     
@@ -93,32 +93,9 @@
   </entry>
   
   <entry>
-    <title>Mac 修改 Dock 栏隐藏的速度</title>
-    <link href="http://yoursite.com/2016/09/25/003_Mac/"/>
-    <id>http://yoursite.com/2016/09/25/003_Mac/</id>
-    <published>2016-09-25T00:00:00.000Z</published>
-    <updated>2016-09-25T18:34:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）"><a href="#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）" class="headerlink" title="修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）"></a>修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
-<h1 id="恢复默认设置"><a href="#恢复默认设置" class="headerlink" title="恢复默认设置"></a>恢复默认设置</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
-<p><br><br><code>Mac</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot;&gt;&lt;a href=&quot;#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot; class=&quot;headerlink&quot; title=&quot;修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5
-    
-    </summary>
-    
-    
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Mac 显示隐藏文件</title>
-    <link href="http://yoursite.com/2016/09/25/002_Mac/"/>
-    <id>http://yoursite.com/2016/09/25/002_Mac/</id>
+    <link href="http://yoursite.com/2016/09/25/002/"/>
+    <id>http://yoursite.com/2016/09/25/002/</id>
     <published>2016-09-25T00:00:00.000Z</published>
     <updated>2016-09-25T18:32:45.000Z</updated>
     
@@ -132,6 +109,29 @@
     <summary type="html">
     
       &lt;h1 id=&quot;终端输入&quot;&gt;&lt;a href=&quot;#终端输入&quot; class=&quot;headerlink&quot; title=&quot;终端输入&quot;&gt;&lt;/a&gt;终端输入&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre
+    
+    </summary>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac 修改 Dock 栏隐藏的速度</title>
+    <link href="http://yoursite.com/2016/09/25/003/"/>
+    <id>http://yoursite.com/2016/09/25/003/</id>
+    <published>2016-09-25T00:00:00.000Z</published>
+    <updated>2016-09-25T18:34:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）"><a href="#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）" class="headerlink" title="修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）"></a>修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
+<h1 id="恢复默认设置"><a href="#恢复默认设置" class="headerlink" title="恢复默认设置"></a>恢复默认设置</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
+<p><br><br><code>Mac</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot;&gt;&lt;a href=&quot;#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot; class=&quot;headerlink&quot; title=&quot;修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5
     
     </summary>
     
