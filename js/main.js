@@ -9,7 +9,7 @@
         menuToggle = d.getElementById('menu-toggle'),
         menuOff = d.getElementById('menu-off'),
         loading = d.getElementById('loading'),
-        animate = w.requestAnimationFrame,
+        // animate = w.requestAnimationFrame,
         ua = navigator.userAgent,
         isMD = ua.indexOf('Mobile') !== -1 || ua.indexOf('Android') !== -1 || ua.indexOf('iPhone') !== -1 || ua.indexOf('iPad') !== -1 || ua.indexOf('KFAPWI') !== -1,
         even = isMD ? 'touchstart' : 'click',
@@ -263,9 +263,9 @@
         Blog.fixedToc(top);
     }, false);
 
-    if (typeof BLOG_SHARE !== 'undefined') {
-        Blog.share();
-    }
+    // if (typeof BLOG_SHARE !== 'undefined') {
+    //     Blog.share();
+    // }
 
     Waves.init();
     Waves.attach('.global-share li', ['waves-block']);
