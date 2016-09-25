@@ -8,8 +8,7 @@
         mask = d.getElementById('mask'),
         menuToggle = d.getElementById('menu-toggle'),
         menuOff = d.getElementById('menu-off'),
-        loading = d.getElementById('loading'),
-        // animate = w.requestAnimationFrame,
+        animate = w.requestAnimationFrame,
         ua = navigator.userAgent,
         isMD = ua.indexOf('Mobile') !== -1 || ua.indexOf('Android') !== -1 || ua.indexOf('iPhone') !== -1 || ua.indexOf('iPad') !== -1 || ua.indexOf('KFAPWI') !== -1,
         even = isMD ? 'touchstart' : 'click',
@@ -231,7 +230,6 @@
 
     w.addEventListener('load', function() {
         Blog.fixNavMinH();
-        loading.classList.remove('active');
     });
 
     w.addEventListener('resize', function() {
