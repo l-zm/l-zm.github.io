@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>李志敏</title>
   <subtitle>副标题，网站名下面</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="/l-zm/atom.xml" rel="self"/>
   
-  <link href="http://www.l-zm.com/"/>
+  <link href="http://www.l-zm.com/l-zm/"/>
   <updated>2016-09-24T17:25:14.000Z</updated>
-  <id>http://www.l-zm.com/</id>
+  <id>http://www.l-zm.com/l-zm/</id>
   
   <author>
     <name>李志敏</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>test</title>
-    <link href="http://www.l-zm.com/2016/09/25/test/"/>
-    <id>http://www.l-zm.com/2016/09/25/test/</id>
+    <link href="http://www.l-zm.com/l-zm/2016/09/25/test/"/>
+    <id>http://www.l-zm.com/l-zm/2016/09/25/test/</id>
     <published>2016-09-24T17:25:14.000Z</published>
     <updated>2016-09-24T17:25:14.000Z</updated>
     
@@ -31,8 +31,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://www.l-zm.com/2016/09/25/hello-world/"/>
-    <id>http://www.l-zm.com/2016/09/25/hello-world/</id>
+    <link href="http://www.l-zm.com/l-zm/2016/09/25/hello-world/"/>
+    <id>http://www.l-zm.com/l-zm/2016/09/25/hello-world/</id>
     <published>2016-09-24T17:18:47.000Z</published>
     <updated>2016-09-24T17:18:47.000Z</updated>
     
