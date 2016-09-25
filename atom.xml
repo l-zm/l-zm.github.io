@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Lizm&#39;s Personal Blog</title>
-  <subtitle>Personal Blog</subtitle>
+  <subtitle>You really have two down son (你真有两下子)</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-25T15:19:35.000Z</updated>
+  <updated>2016-09-25T18:41:47.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,56 +16,127 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2016/09/25/hello-world/"/>
-    <id>http://yoursite.com/2016/09/25/hello-world/</id>
-    <published>2016-09-24T17:18:47.000Z</published>
-    <updated>2016-09-25T15:19:35.000Z</updated>
+    <title>Apple 系统固件下载地址</title>
+    <link href="http://yoursite.com/2016/09/26/005_Apple/"/>
+    <id>http://yoursite.com/2016/09/26/005_Apple/</id>
+    <published>2016-09-26T00:00:00.000Z</published>
+    <updated>2016-09-25T18:41:47.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<p><br><br><a href="https://support.apple.com/zh_CN/downloads/" target="_blank" rel="external">https://support.apple.com/zh_CN/downloads/</a></p>
+<p><br><br><code>Apple</code></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://support.apple.com/zh_CN/downloads/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://support.apple.com/zh_CN/downloads/&lt;/a
     
     </summary>
     
+    
+      <category term="Apple" scheme="http://yoursite.com/tags/Apple/"/>
     
   </entry>
   
   <entry>
-    <title>李志敏Hello World</title>
-    <link href="http://yoursite.com/2016/09/25/%E6%9D%8E%E5%BF%97%E6%95%8F/"/>
-    <id>http://yoursite.com/2016/09/25/李志敏/</id>
-    <published>2016-09-24T17:18:47.000Z</published>
-    <updated>2016-09-25T16:14:36.000Z</updated>
+    <title>MySQL 数据库编码方式修改</title>
+    <link href="http://yoursite.com/2016/09/26/004_MySQL/"/>
+    <id>http://yoursite.com/2016/09/26/004_MySQL/</id>
+    <published>2016-09-26T00:00:00.000Z</published>
+    <updated>2016-09-25T18:29:03.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<h1 id="查看-MySQL-编码"><a href="#查看-MySQL-编码" class="headerlink" title="查看 MySQL 编码"></a>查看 MySQL 编码</h1><p><strong>进入 MySQL 输入</strong> <code>status</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">mysql  Ver 14.14 Distrib 5.6.33, <span class="keyword">for</span> debian-linux-gnu (x86_64) using  EditLine wrapper</div><div class="line">Connection id: 249</div><div class="line">Current database:</div><div class="line">Current user: root@localhost</div><div class="line">SSL: Not <span class="keyword">in</span> use</div><div class="line">Current pager: stdout</div><div class="line">Using outfile: <span class="string">''</span></div><div class="line">Using delimiter: ;</div><div class="line">Server version: 5.6.33-0ubuntu0.14.04.1 (Ubuntu)</div><div class="line">Protocol version: 10</div><div class="line">Connection: Localhost via UNIX socket</div><div class="line">Server characterset: utf8</div><div class="line">Db     characterset: utf8</div><div class="line">Client characterset: utf8</div><div class="line">Conn.  characterset: utf8</div><div class="line">UNIX socket: /var/run/mysqld/mysqld.sock</div><div class="line">Uptime: 5 hours 16 min 18 sec</div></pre></td></tr></table></figure>
+<p><strong>如果下面这四个不是</strong> <code>utf8</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Server characterset: utf8</div><div class="line">Db     characterset: utf8</div><div class="line">Client characterset: utf8</div><div class="line">Conn.  characterset: utf8</div></pre></td></tr></table></figure>
+<p><strong>保存中文的时候可能会乱码</strong></p>
+<h1 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vim /etc/mysql/my.cnf</div></pre></td></tr></table></figure>
+<pre><code>[client] &gt; 下面追加  default-character-set=utf8
+[mysqld] &gt; 下面追加  character-set-server=utf8
+[mysql] &gt; 下面追加  no-auto-rehash
+</code></pre><h1 id="重启-MySQL-数据库"><a href="#重启-MySQL-数据库" class="headerlink" title="重启 MySQL 数据库"></a>重启 MySQL 数据库</h1><p><strong>输入</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ service mysql restart</div></pre></td></tr></table></figure></p>
+<p> (重启数据库)</p>
+<p><br><br><code>MySQL</code></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;h1 id=&quot;查看-MySQL-编码&quot;&gt;&lt;a href=&quot;#查看-MySQL-编码&quot; class=&quot;headerlink&quot; title=&quot;查看 MySQL 编码&quot;&gt;&lt;/a&gt;查看 MySQL 编码&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;进入 MySQL 输入&lt;/strong&gt; &lt;code
     
     </summary>
     
+    
+      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac电脑设置 Finder 可以退出</title>
+    <link href="http://yoursite.com/2016/09/25/001_Mac/"/>
+    <id>http://yoursite.com/2016/09/25/001_Mac/</id>
+    <published>2016-09-25T00:00:00.000Z</published>
+    <updated>2016-09-25T18:30:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.Finder QuitMenuItem 1</div></pre></td></tr></table></figure>
+<h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.Finder QuitMenuItem 0</div></pre></td></tr></table></figure>
+<p><br><br><code>Mac</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;终端输入&quot;&gt;&lt;a href=&quot;#终端输入&quot; class=&quot;headerlink&quot; title=&quot;终端输入&quot;&gt;&lt;/a&gt;终端输入&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre
+    
+    </summary>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac 修改 Dock 栏隐藏的速度</title>
+    <link href="http://yoursite.com/2016/09/25/003_Mac/"/>
+    <id>http://yoursite.com/2016/09/25/003_Mac/</id>
+    <published>2016-09-25T00:00:00.000Z</published>
+    <updated>2016-09-25T18:34:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）"><a href="#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）" class="headerlink" title="修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）"></a>修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
+<h1 id="恢复默认设置"><a href="#恢复默认设置" class="headerlink" title="恢复默认设置"></a>恢复默认设置</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
+<p><br><br><code>Mac</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot;&gt;&lt;a href=&quot;#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot; class=&quot;headerlink&quot; title=&quot;修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5
+    
+    </summary>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac 显示隐藏文件</title>
+    <link href="http://yoursite.com/2016/09/25/002_Mac/"/>
+    <id>http://yoursite.com/2016/09/25/002_Mac/</id>
+    <published>2016-09-25T00:00:00.000Z</published>
+    <updated>2016-09-25T18:32:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">true</span></div></pre></td></tr></table></figure>
+<h1 id="生效"><a href="#生效" class="headerlink" title="生效"></a>生效</h1><p><strong>强制退出 Finder</strong>  <code>commend + option + esc</code> </p>
+<p><br></p>
+<h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">false</span></div></pre></td></tr></table></figure>
+<p><br><br><code>Mac</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;终端输入&quot;&gt;&lt;a href=&quot;#终端输入&quot; class=&quot;headerlink&quot; title=&quot;终端输入&quot;&gt;&lt;/a&gt;终端输入&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre
+    
+    </summary>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
     
   </entry>
   
