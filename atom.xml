@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-25T18:29:03.000Z</updated>
+  <updated>2016-09-25T18:41:47.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Apple 系统固件下载地址</title>
+    <link href="http://yoursite.com/2016/09/26/005/"/>
+    <id>http://yoursite.com/2016/09/26/005/</id>
+    <published>2016-09-26T00:00:00.000Z</published>
+    <updated>2016-09-25T18:41:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><a href="https://support.apple.com/zh_CN/downloads/" target="_blank" rel="external">https://support.apple.com/zh_CN/downloads/</a></p>
+<p><br><br><code>Apple</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://support.apple.com/zh_CN/downloads/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://support.apple.com/zh_CN/downloads/&lt;/a
+    
+    </summary>
+    
+    
+      <category term="Apple" scheme="http://yoursite.com/tags/Apple/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MySQL 数据库编码方式修改</title>
     <link href="http://yoursite.com/2016/09/26/004/"/>
     <id>http://yoursite.com/2016/09/26/004/</id>
     <published>2016-09-26T00:00:00.000Z</published>
-    <updated>2016-09-25T18:29:03.000Z</updated>
+    <updated>2016-09-26T01:34:17.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="查看-MySQL-编码"><a href="#查看-MySQL-编码" class="headerlink" title="查看 MySQL 编码"></a>查看 MySQL 编码</h1><p><strong>进入 MySQL 输入</strong> <code>status</code></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">mysql  Ver 14.14 Distrib 5.6.33, <span class="keyword">for</span> debian-linux-gnu (x86_64) using  EditLine wrapper</div><div class="line">Connection id: 249</div><div class="line">Current database:</div><div class="line">Current user: root@localhost</div><div class="line">SSL: Not <span class="keyword">in</span> use</div><div class="line">Current pager: stdout</div><div class="line">Using outfile: <span class="string">''</span></div><div class="line">Using delimiter: ;</div><div class="line">Server version: 5.6.33-0ubuntu0.14.04.1 (Ubuntu)</div><div class="line">Protocol version: 10</div><div class="line">Connection: Localhost via UNIX socket</div><div class="line">Server characterset: utf8</div><div class="line">Db     characterset: utf8</div><div class="line">Client characterset: utf8</div><div class="line">Conn.  characterset: utf8</div><div class="line">UNIX socket: /var/run/mysqld/mysqld.sock</div><div class="line">Uptime: 5 hours 16 min 18 sec</div></pre></td></tr></table></figure>
@@ -48,28 +70,6 @@
   </entry>
   
   <entry>
-    <title>Apple 系统固件下载地址</title>
-    <link href="http://yoursite.com/2016/09/26/005/"/>
-    <id>http://yoursite.com/2016/09/26/005/</id>
-    <published>2016-09-26T00:00:00.000Z</published>
-    <updated>2016-09-25T18:41:47.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><a href="https://support.apple.com/zh_CN/downloads/" target="_blank" rel="external">https://support.apple.com/zh_CN/downloads/</a></p>
-<p><br><br><code>Apple</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://support.apple.com/zh_CN/downloads/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://support.apple.com/zh_CN/downloads/&lt;/a
-    
-    </summary>
-    
-    
-      <category term="Apple" scheme="http://yoursite.com/tags/Apple/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Mac电脑设置 Finder 可以退出</title>
     <link href="http://yoursite.com/2016/09/25/001/"/>
     <id>http://yoursite.com/2016/09/25/001/</id>
@@ -78,31 +78,6 @@
     
     <content type="html"><![CDATA[<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.Finder QuitMenuItem 1</div></pre></td></tr></table></figure>
 <h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.Finder QuitMenuItem 0</div></pre></td></tr></table></figure>
-<p><br><br><code>Mac</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;终端输入&quot;&gt;&lt;a href=&quot;#终端输入&quot; class=&quot;headerlink&quot; title=&quot;终端输入&quot;&gt;&lt;/a&gt;终端输入&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre
-    
-    </summary>
-    
-    
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac 显示隐藏文件</title>
-    <link href="http://yoursite.com/2016/09/25/002/"/>
-    <id>http://yoursite.com/2016/09/25/002/</id>
-    <published>2016-09-25T00:00:00.000Z</published>
-    <updated>2016-09-25T18:32:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">true</span></div></pre></td></tr></table></figure>
-<h1 id="生效"><a href="#生效" class="headerlink" title="生效"></a>生效</h1><p><strong>强制退出 Finder</strong>  <code>commend + option + esc</code> </p>
-<p><br></p>
-<h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">false</span></div></pre></td></tr></table></figure>
 <p><br><br><code>Mac</code></p>
 ]]></content>
     
@@ -132,6 +107,31 @@
     <summary type="html">
     
       &lt;h1 id=&quot;修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot;&gt;&lt;a href=&quot;#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot; class=&quot;headerlink&quot; title=&quot;修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5
+    
+    </summary>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac 显示隐藏文件</title>
+    <link href="http://yoursite.com/2016/09/25/002/"/>
+    <id>http://yoursite.com/2016/09/25/002/</id>
+    <published>2016-09-25T00:00:00.000Z</published>
+    <updated>2016-09-25T18:32:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">true</span></div></pre></td></tr></table></figure>
+<h1 id="生效"><a href="#生效" class="headerlink" title="生效"></a>生效</h1><p><strong>强制退出 Finder</strong>  <code>commend + option + esc</code> </p>
+<p><br></p>
+<h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">false</span></div></pre></td></tr></table></figure>
+<p><br><br><code>Mac</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;终端输入&quot;&gt;&lt;a href=&quot;#终端输入&quot; class=&quot;headerlink&quot; title=&quot;终端输入&quot;&gt;&lt;/a&gt;终端输入&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre
     
     </summary>
     
