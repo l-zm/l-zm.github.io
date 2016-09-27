@@ -26,7 +26,7 @@ Nginx 设置备用服务器官方 Example Configurati">
 
 
 Nginx 设置备用服务器官方 Example Configurati">
-<meta property="og:updated_time" content="2016-09-27T17:43:40.000Z">
+<meta property="og:updated_time" content="2016-09-27T17:46:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Nginx 负载均衡">
 <meta name="twitter:description" content="说明一般情况下，项目上线可能会选在凌晨时刻进行，比如之前在中国电信，项目上线要等到凌晨一点，由测试给出最终版本项目文件，然后等待运维部署上线，我们开发等待测试给出上线结果，如果有问题，马上做修改，因为此刻访问用户最少，影响微乎其微。但是，上线完成，已经六点了。
@@ -176,7 +176,7 @@ Nginx 设置备用服务器官方 Example Configurati">
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">upstream backend &#123;</div><div class="line">    server www.l-zm.com        weight=<span class="number">5</span>;</div><div class="line">    server www.l-zm.com:<span class="number">8080</span>;</div><div class="line"></div><div class="line">    server www.l-zm.com:<span class="number">8081</span>   backup;</div><div class="line">&#125;</div><div class="line"></div><div class="line">server &#123;</div><div class="line">    listen        <span class="number">80</span>;</div><div class="line">    server_name   localhost;</div><div class="line"></div><div class="line">    location / &#123;</div><div class="line">        index      index.html</div><div class="line">        proxy_pass http:<span class="comment">//backend;</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <hr>
-<h1 id="TODO：不间断更新中"><a href="#TODO：不间断更新中" class="headerlink" title="TODO：不间断更新中"></a>TODO：不间断更新中</h1><p><br><br><code>Nginx``服务器</code></p>
+<h1 id="TODO：不间断更新中"><a href="#TODO：不间断更新中" class="headerlink" title="TODO：不间断更新中"></a>TODO：不间断更新中</h1><p><br><br><code>Nginx</code> <code>服务器</code></p>
 
             
             </div>

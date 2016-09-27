@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-27T17:43:40.000Z</updated>
+  <updated>2016-09-27T17:46:47.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/09/28/011/"/>
     <id>http://yoursite.com/2016/09/28/011/</id>
     <published>2016-09-28T00:00:00.000Z</published>
-    <updated>2016-09-27T17:43:40.000Z</updated>
+    <updated>2016-09-27T17:46:47.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>一般情况下，项目上线可能会选在凌晨时刻进行，比如之前在中国电信，项目上线要等到凌晨一点，由测试给出最终版本项目文件，然后等待运维部署上线，我们开发等待测试给出上线结果，如果有问题，马上做修改，因为此刻访问用户最少，影响微乎其微。但是，上线完成，已经六点了。</p>
 <blockquote>
@@ -34,7 +34,7 @@
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">upstream backend &#123;</div><div class="line">    server www.l-zm.com        weight=<span class="number">5</span>;</div><div class="line">    server www.l-zm.com:<span class="number">8080</span>;</div><div class="line"></div><div class="line">    server www.l-zm.com:<span class="number">8081</span>   backup;</div><div class="line">&#125;</div><div class="line"></div><div class="line">server &#123;</div><div class="line">    listen        <span class="number">80</span>;</div><div class="line">    server_name   localhost;</div><div class="line"></div><div class="line">    location / &#123;</div><div class="line">        index      index.html</div><div class="line">        proxy_pass http:<span class="comment">//backend;</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <hr>
-<h1 id="TODO：不间断更新中"><a href="#TODO：不间断更新中" class="headerlink" title="TODO：不间断更新中"></a>TODO：不间断更新中</h1><p><br><br><code>Nginx``服务器</code></p>
+<h1 id="TODO：不间断更新中"><a href="#TODO：不间断更新中" class="headerlink" title="TODO：不间断更新中"></a>TODO：不间断更新中</h1><p><br><br><code>Nginx</code> <code>服务器</code></p>
 ]]></content>
     
     <summary type="html">
@@ -47,186 +47,6 @@
       <category term="Nginx" scheme="http://yoursite.com/tags/Nginx/"/>
     
       <category term="服务器" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring 各版本 jar包 下载</title>
-    <link href="http://yoursite.com/2016/09/27/007/"/>
-    <id>http://yoursite.com/2016/09/27/007/</id>
-    <published>2016-09-27T00:00:00.000Z</published>
-    <updated>2016-09-26T16:45:23.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://repo.spring.io/release/org/springframework/spring/" target="_blank" rel="external">http://repo.spring.io/release/org/springframework/spring/</a></p>
-<pre><code>http://repo.spring.io/release/org/springframework/spring/
-</code></pre><p><br><br><code>Spring</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://repo.spring.io/release/org/springframework/spring/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://repo.spring.io/release/org/spri
-    
-    </summary>
-    
-    
-      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java 中 System.getProperty() 方法可以获取系统的那些值</title>
-    <link href="http://yoursite.com/2016/09/27/009/"/>
-    <id>http://yoursite.com/2016/09/27/009/</id>
-    <published>2016-09-27T00:00:00.000Z</published>
-    <updated>2016-09-26T17:04:54.000Z</updated>
-    
-    <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th>-</th>
-<th>-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>java.version</td>
-<td>Java 运行时环境版本</td>
-</tr>
-<tr>
-<td>java.vendor</td>
-<td>Java 运行时环境供应商</td>
-</tr>
-<tr>
-<td>java.vendor.url</td>
-<td>Java 供应商的 URL</td>
-</tr>
-<tr>
-<td>java.home</td>
-<td>Java 安装目录</td>
-</tr>
-<tr>
-<td>java.vm.specification.version</td>
-<td>Java 虚拟机规范版本</td>
-</tr>
-<tr>
-<td>java.vm.specification.vendor</td>
-<td>Java 虚拟机规范供应商</td>
-</tr>
-<tr>
-<td>java.vm.specification.name</td>
-<td>Java 虚拟机规范名称</td>
-</tr>
-<tr>
-<td>java.vm.version</td>
-<td>Java 虚拟机实现版本</td>
-</tr>
-<tr>
-<td>java.vm.vendor</td>
-<td>Java 虚拟机实现供应商</td>
-</tr>
-<tr>
-<td>java.vm.name</td>
-<td>Java 虚拟机实现名称</td>
-</tr>
-<tr>
-<td>java.specification.version</td>
-<td>Java 运行时环境规范版本</td>
-</tr>
-<tr>
-<td>java.specification.vendor</td>
-<td>Java 运行时环境规范供应商</td>
-</tr>
-<tr>
-<td>java.specification.name</td>
-<td>Java 运行时环境规范名称</td>
-</tr>
-<tr>
-<td>java.class.version</td>
-<td>Java 类格式版本号</td>
-</tr>
-<tr>
-<td>java.class.path</td>
-<td>Java 类路径</td>
-</tr>
-<tr>
-<td>java.library.path</td>
-<td>加载库时搜索的路径列表</td>
-</tr>
-<tr>
-<td>java.io.tmpdir</td>
-<td>默认的临时文件路径</td>
-</tr>
-<tr>
-<td>java.compiler</td>
-<td>要使用的 JIT 编译器的名称</td>
-</tr>
-<tr>
-<td>java.ext.dirs</td>
-<td>一个或多个扩展目录的路径</td>
-</tr>
-<tr>
-<td>os.name</td>
-<td>操作系统的名称</td>
-</tr>
-<tr>
-<td>os.arch</td>
-<td>操作系统的架构</td>
-</tr>
-<tr>
-<td>os.version</td>
-<td>操作系统的版本</td>
-</tr>
-<tr>
-<td>file.separator</td>
-<td>文件分隔符（在 UNIX 系统中是“/”）</td>
-</tr>
-<tr>
-<td>path.separator</td>
-<td>路径分隔符（在 UNIX 系统中是“:”）</td>
-</tr>
-<tr>
-<td>line.separator</td>
-<td>行分隔符（在 UNIX 系统中是“/n”）</td>
-</tr>
-<tr>
-<td>user.name</td>
-<td>用户的账户名称</td>
-</tr>
-<tr>
-<td>user.home</td>
-<td>用户的主目录</td>
-</tr>
-<tr>
-<td>user.dir</td>
-<td>用户的当前工作目录</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">System.getProperty(<span class="string">"user.dir"</span>)</div></pre></td></tr></table></figure>
-<p><br><br><code>Java</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;-&lt;/th&gt;
-&lt;th&gt;-&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;java.version&lt;/td&gt;
-&lt;td&gt;Java 运行时环境版本&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;java.vendo
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
   </entry>
   
@@ -510,6 +330,163 @@
   </entry>
   
   <entry>
+    <title>Java 中 System.getProperty() 方法可以获取系统的那些值</title>
+    <link href="http://yoursite.com/2016/09/27/009/"/>
+    <id>http://yoursite.com/2016/09/27/009/</id>
+    <published>2016-09-27T00:00:00.000Z</published>
+    <updated>2016-09-26T17:04:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>-</th>
+<th>-</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>java.version</td>
+<td>Java 运行时环境版本</td>
+</tr>
+<tr>
+<td>java.vendor</td>
+<td>Java 运行时环境供应商</td>
+</tr>
+<tr>
+<td>java.vendor.url</td>
+<td>Java 供应商的 URL</td>
+</tr>
+<tr>
+<td>java.home</td>
+<td>Java 安装目录</td>
+</tr>
+<tr>
+<td>java.vm.specification.version</td>
+<td>Java 虚拟机规范版本</td>
+</tr>
+<tr>
+<td>java.vm.specification.vendor</td>
+<td>Java 虚拟机规范供应商</td>
+</tr>
+<tr>
+<td>java.vm.specification.name</td>
+<td>Java 虚拟机规范名称</td>
+</tr>
+<tr>
+<td>java.vm.version</td>
+<td>Java 虚拟机实现版本</td>
+</tr>
+<tr>
+<td>java.vm.vendor</td>
+<td>Java 虚拟机实现供应商</td>
+</tr>
+<tr>
+<td>java.vm.name</td>
+<td>Java 虚拟机实现名称</td>
+</tr>
+<tr>
+<td>java.specification.version</td>
+<td>Java 运行时环境规范版本</td>
+</tr>
+<tr>
+<td>java.specification.vendor</td>
+<td>Java 运行时环境规范供应商</td>
+</tr>
+<tr>
+<td>java.specification.name</td>
+<td>Java 运行时环境规范名称</td>
+</tr>
+<tr>
+<td>java.class.version</td>
+<td>Java 类格式版本号</td>
+</tr>
+<tr>
+<td>java.class.path</td>
+<td>Java 类路径</td>
+</tr>
+<tr>
+<td>java.library.path</td>
+<td>加载库时搜索的路径列表</td>
+</tr>
+<tr>
+<td>java.io.tmpdir</td>
+<td>默认的临时文件路径</td>
+</tr>
+<tr>
+<td>java.compiler</td>
+<td>要使用的 JIT 编译器的名称</td>
+</tr>
+<tr>
+<td>java.ext.dirs</td>
+<td>一个或多个扩展目录的路径</td>
+</tr>
+<tr>
+<td>os.name</td>
+<td>操作系统的名称</td>
+</tr>
+<tr>
+<td>os.arch</td>
+<td>操作系统的架构</td>
+</tr>
+<tr>
+<td>os.version</td>
+<td>操作系统的版本</td>
+</tr>
+<tr>
+<td>file.separator</td>
+<td>文件分隔符（在 UNIX 系统中是“/”）</td>
+</tr>
+<tr>
+<td>path.separator</td>
+<td>路径分隔符（在 UNIX 系统中是“:”）</td>
+</tr>
+<tr>
+<td>line.separator</td>
+<td>行分隔符（在 UNIX 系统中是“/n”）</td>
+</tr>
+<tr>
+<td>user.name</td>
+<td>用户的账户名称</td>
+</tr>
+<tr>
+<td>user.home</td>
+<td>用户的主目录</td>
+</tr>
+<tr>
+<td>user.dir</td>
+<td>用户的当前工作目录</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">System.getProperty(<span class="string">"user.dir"</span>)</div></pre></td></tr></table></figure>
+<p><br><br><code>Java</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;-&lt;/th&gt;
+&lt;th&gt;-&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;java.version&lt;/td&gt;
+&lt;td&gt;Java 运行时环境版本&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;java.vendo
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Struts 各版本 jar包 下载</title>
     <link href="http://yoursite.com/2016/09/27/008/"/>
     <id>http://yoursite.com/2016/09/27/008/</id>
@@ -529,6 +506,29 @@
     
     
       <category term="Struts" scheme="http://yoursite.com/tags/Struts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring 各版本 jar包 下载</title>
+    <link href="http://yoursite.com/2016/09/27/007/"/>
+    <id>http://yoursite.com/2016/09/27/007/</id>
+    <published>2016-09-27T00:00:00.000Z</published>
+    <updated>2016-09-26T16:45:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://repo.spring.io/release/org/springframework/spring/" target="_blank" rel="external">http://repo.spring.io/release/org/springframework/spring/</a></p>
+<pre><code>http://repo.spring.io/release/org/springframework/spring/
+</code></pre><p><br><br><code>Spring</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://repo.spring.io/release/org/springframework/spring/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://repo.spring.io/release/org/spri
+    
+    </summary>
+    
+    
+      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
     
   </entry>
   
@@ -587,29 +587,6 @@
   </entry>
   
   <entry>
-    <title>Mac 修改 Dock 栏隐藏的速度</title>
-    <link href="http://yoursite.com/2016/09/25/003/"/>
-    <id>http://yoursite.com/2016/09/25/003/</id>
-    <published>2016-09-25T00:00:00.000Z</published>
-    <updated>2016-09-25T18:34:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）"><a href="#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）" class="headerlink" title="修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）"></a>修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
-<h1 id="恢复默认设置"><a href="#恢复默认设置" class="headerlink" title="恢复默认设置"></a>恢复默认设置</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
-<p><br><br><code>Mac</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot;&gt;&lt;a href=&quot;#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot; class=&quot;headerlink&quot; title=&quot;修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5
-    
-    </summary>
-    
-    
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Mac 显示隐藏文件</title>
     <link href="http://yoursite.com/2016/09/25/002/"/>
     <id>http://yoursite.com/2016/09/25/002/</id>
@@ -626,6 +603,29 @@
     <summary type="html">
     
       &lt;h1 id=&quot;终端输入&quot;&gt;&lt;a href=&quot;#终端输入&quot; class=&quot;headerlink&quot; title=&quot;终端输入&quot;&gt;&lt;/a&gt;终端输入&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre
+    
+    </summary>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac 修改 Dock 栏隐藏的速度</title>
+    <link href="http://yoursite.com/2016/09/25/003/"/>
+    <id>http://yoursite.com/2016/09/25/003/</id>
+    <published>2016-09-25T00:00:00.000Z</published>
+    <updated>2016-09-25T18:34:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）"><a href="#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）" class="headerlink" title="修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）"></a>修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
+<h1 id="恢复默认设置"><a href="#恢复默认设置" class="headerlink" title="恢复默认设置"></a>恢复默认设置</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
+<p><br><br><code>Mac</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot;&gt;&lt;a href=&quot;#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot; class=&quot;headerlink&quot; title=&quot;修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5
     
     </summary>
     
