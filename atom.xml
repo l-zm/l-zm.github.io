@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-28T12:55:05.000Z</updated>
+  <updated>2016-10-04T13:11:46.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,9 +16,320 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CentOS 6 计划任务 CronTab</title>
+    <link href="http://yoursite.com/2016/10/04/017%20CentOS%206%20%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%20CronTab/"/>
+    <id>http://yoursite.com/2016/10/04/017 CentOS 6 计划任务 CronTab/</id>
+    <published>2016-10-04T00:00:00.000Z</published>
+    <updated>2016-10-04T13:11:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="安装-CronTab"><a href="#安装-CronTab" class="headerlink" title="安装 CronTab"></a>安装 CronTab</h1><p><strong> CentOS 中自带了CronTab 如果有需要 百度一下，你就知道 </strong></p>
+<h1 id="CronTab-使用与解释"><a href="#CronTab-使用与解释" class="headerlink" title="CronTab 使用与解释"></a>CronTab 使用与解释</h1><p><code>crontab -l</code> 查看所有的计划任务<br><code>crontab -e</code> 修改计划任务</p>
+<blockquote>
+<p><strong>CronTab 的语法</strong><br>* * * * * date &gt;&gt; /tmp/date.txt</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">date &gt;&gt; /tmp/date.txt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">分钟</td>
+<td style="text-align:center">小时</td>
+<td style="text-align:center">几号</td>
+<td style="text-align:center">几月</td>
+<td style="text-align:center">星期</td>
+<td style="text-align:center">需要执行的命令</td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><h2 id="每秒执行一次"><a href="#每秒执行一次" class="headerlink" title="每秒执行一次"></a>每秒执行一次</h2><pre><code>*/1 * * * * date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 1s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 2s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 3s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 4s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 5s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 6s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 7s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 8s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 9s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 10s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 11s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 12s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 13s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 14s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 15s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 16s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 17s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 18s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 19s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 20s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 21s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 22s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 23s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 24s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 25s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 26s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 27s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 28s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 29s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 30s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 31s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 32s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 33s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 34s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 35s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 36s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 37s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 38s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 39s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 40s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 41s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 42s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 43s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 44s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 45s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 46s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 47s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 48s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 49s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 50s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 51s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 52s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 53s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 54s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 55s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 56s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 57s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 58s; date &gt;&gt; /tmp/date.txt
+*/1 * * * * sleep 59s; date &gt;&gt; /tmp/date.txt
+</code></pre><h2 id="每小时的第3和第15分钟执行"><a href="#每小时的第3和第15分钟执行" class="headerlink" title="每小时的第3和第15分钟执行"></a>每小时的第3和第15分钟执行</h2><pre><code>3,15 * * * * date &gt;&gt; /tmp/date.txt
+</code></pre><h2 id="在上午8点到11点的第3和第15分钟执行"><a href="#在上午8点到11点的第3和第15分钟执行" class="headerlink" title="在上午8点到11点的第3和第15分钟执行"></a>在上午8点到11点的第3和第15分钟执行</h2><pre><code>3,15 8-11 * * * date &gt;&gt; /tmp/date.txt
+</code></pre><h2 id="每隔两天的上午8点到11点的第3和第15分钟执行"><a href="#每隔两天的上午8点到11点的第3和第15分钟执行" class="headerlink" title="每隔两天的上午8点到11点的第3和第15分钟执行"></a>每隔两天的上午8点到11点的第3和第15分钟执行</h2><pre><code>3,15 8-11 */2 * * date &gt;&gt; /tmp/date.txt
+</code></pre><h2 id="每个星期一的上午8点到11点的第3和第15分钟执行"><a href="#每个星期一的上午8点到11点的第3和第15分钟执行" class="headerlink" title="每个星期一的上午8点到11点的第3和第15分钟执行"></a>每个星期一的上午8点到11点的第3和第15分钟执行</h2><pre><code>3,15 8-11 * * 1 date &gt;&gt; /tmp/date.txt
+</code></pre><h2 id="每晚的21-30重启smb"><a href="#每晚的21-30重启smb" class="headerlink" title="每晚的21:30重启smb"></a>每晚的21:30重启smb</h2><pre><code>30 21 * * * /etc/init.d/smb restart
+</code></pre><h2 id="每月1、10、22日的4-45重启smb"><a href="#每月1、10、22日的4-45重启smb" class="headerlink" title="每月1、10、22日的4 : 45重启smb"></a>每月1、10、22日的4 : 45重启smb</h2><pre><code>45 4 1,10,22 * * /etc/init.d/smb restart
+</code></pre><h2 id="每周六、周日的1-10重启smb"><a href="#每周六、周日的1-10重启smb" class="headerlink" title="每周六、周日的1 : 10重启smb"></a>每周六、周日的1 : 10重启smb</h2><pre><code>10 1 * * 6,0 /etc/init.d/smb restart
+</code></pre><h2 id="每天18-00至23-00之间每隔30分钟重启smb"><a href="#每天18-00至23-00之间每隔30分钟重启smb" class="headerlink" title="每天18 : 00至23 : 00之间每隔30分钟重启smb"></a>每天18 : 00至23 : 00之间每隔30分钟重启smb</h2><pre><code>0,30 18-23 * * * /etc/init.d/smb restart
+</code></pre><h2 id="每星期六的晚上11-00-pm重启smb"><a href="#每星期六的晚上11-00-pm重启smb" class="headerlink" title="每星期六的晚上11 : 00 pm重启smb"></a>每星期六的晚上11 : 00 pm重启smb</h2><pre><code>0 23 * * 6 /etc/init.d/smb restart
+</code></pre><h2 id="每一小时重启smb"><a href="#每一小时重启smb" class="headerlink" title="每一小时重启smb"></a>每一小时重启smb</h2><pre><code>* */1 * * * /etc/init.d/smb restart
+</code></pre><h2 id="晚上11点到早上7点之间，每隔一小时重启smb"><a href="#晚上11点到早上7点之间，每隔一小时重启smb" class="headerlink" title="晚上11点到早上7点之间，每隔一小时重启smb"></a>晚上11点到早上7点之间，每隔一小时重启smb</h2><pre><code>* 23-7/1 * * * /etc/init.d/smb restart
+</code></pre><h2 id="每月的4号与每周一到周三的11点重启smb"><a href="#每月的4号与每周一到周三的11点重启smb" class="headerlink" title="每月的4号与每周一到周三的11点重启smb"></a>每月的4号与每周一到周三的11点重启smb</h2><pre><code>0 11 4 * mon-wed /etc/init.d/smb restart
+</code></pre><h2 id="一月一号的4点重启smb"><a href="#一月一号的4点重启smb" class="headerlink" title="一月一号的4点重启smb"></a>一月一号的4点重启smb</h2><pre><code>0 4 1 jan * /etc/init.d/smb restart
+</code></pre><h2 id="每小时执行-etc-cron-hourly目录内的脚本"><a href="#每小时执行-etc-cron-hourly目录内的脚本" class="headerlink" title="每小时执行/etc/cron.hourly目录内的脚本"></a>每小时执行/etc/cron.hourly目录内的脚本</h2><pre><code>01 * * * * root run-parts /etc/cron.hourly
+</code></pre><p><br><br><code>CentOS</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;安装-CronTab&quot;&gt;&lt;a href=&quot;#安装-CronTab&quot; class=&quot;headerlink&quot; title=&quot;安装 CronTab&quot;&gt;&lt;/a&gt;安装 CronTab&lt;/h1&gt;&lt;p&gt;&lt;strong&gt; CentOS 中自带了CronTab 如果有需要 百度一下
+    
+    </summary>
+    
+    
+      <category term="CentOS" scheme="http://yoursite.com/tags/CentOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS 6 安装 JDK</title>
+    <link href="http://yoursite.com/2016/10/03/016%20CentOS%206%20%E5%AE%89%E8%A3%85JDK/"/>
+    <id>http://yoursite.com/2016/10/03/016 CentOS 6 安装JDK/</id>
+    <published>2016-10-03T00:00:00.000Z</published>
+    <updated>2016-10-02T17:11:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="下载-JDK-安装"><a href="#下载-JDK-安装" class="headerlink" title="下载 JDK 安装"></a>下载 JDK 安装</h1><p><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="external">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></p>
+<blockquote>
+<p><strong>其他版本下载提示</strong><br>页面拉低，找到 Java Archive </p>
+</blockquote>
+<p><strong> 上传至服务器 </strong></p>
+<p><code>tar -zxvf jdk-7u80-linux-x64.tar.gz</code></p>
+<p><code>mv jdk1.7.0_80 /usr/</code></p>
+<p><strong> 设置环境变量 </strong></p>
+<p><code>vim /etc/profile</code></p>
+<p><strong> 添加如下内容 </strong></p>
+<pre><code>export JAVA_HOME=/usr/jdk1.7.0_80
+export JRE_HOME=$JAVA_HOME/jre
+export PATH=$PATH:$JAVA_HOME/bin
+export CLASSPATH=./:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
+</code></pre><p><strong> 修改生效 </strong><br><code>source /etc/profile</code></p>
+<p><strong> 验证 </strong><br><code>java -version</code></p>
+<pre><code>java version &quot;1.7.0_80&quot;
+Java(TM) SE Runtime Environment (build 1.7.0_80-b15)
+Java HotSpot(TM) 64-Bit Server VM (build 24.80-b11, mixed mode)
+</code></pre><h1 id="使用-yum-安装-JDK"><a href="#使用-yum-安装-JDK" class="headerlink" title="使用 yum 安装 JDK"></a>使用 yum 安装 JDK</h1><p><code>yum search java | grep jdk</code></p>
+<pre><code>ldapjdk-javadoc.x86_64 : Javadoc for ldapjdk
+java-1.6.0-openjdk.x86_64 : OpenJDK Runtime Environment
+java-1.6.0-openjdk-demo.x86_64 : OpenJDK Demos
+java-1.6.0-openjdk-devel.x86_64 : OpenJDK Development Environment
+java-1.6.0-openjdk-javadoc.x86_64 : OpenJDK API Documentation
+java-1.6.0-openjdk-src.x86_64 : OpenJDK Source Bundle
+java-1.7.0-openjdk.x86_64 : OpenJDK Runtime Environment
+java-1.7.0-openjdk-demo.x86_64 : OpenJDK Demos
+java-1.7.0-openjdk-devel.x86_64 : OpenJDK Development Environment
+java-1.7.0-openjdk-javadoc.noarch : OpenJDK API Documentation
+java-1.7.0-openjdk-src.x86_64 : OpenJDK Source Bundle
+java-1.8.0-openjdk.x86_64 : OpenJDK Runtime Environment
+java-1.8.0-openjdk-debug.x86_64 : OpenJDK Runtime Environment with full debug on
+java-1.8.0-openjdk-demo.x86_64 : OpenJDK Demos
+java-1.8.0-openjdk-demo-debug.x86_64 : OpenJDK Demos with full debug on
+java-1.8.0-openjdk-devel.x86_64 : OpenJDK Development Environment
+java-1.8.0-openjdk-devel-debug.x86_64 : OpenJDK Development Environment with
+java-1.8.0-openjdk-headless.x86_64 : OpenJDK Runtime Environment
+java-1.8.0-openjdk-headless-debug.x86_64 : OpenJDK Runtime Environment with full
+java-1.8.0-openjdk-javadoc.noarch : OpenJDK API Documentation
+java-1.8.0-openjdk-javadoc-debug.noarch : OpenJDK API Documentation for packages
+java-1.8.0-openjdk-src.x86_64 : OpenJDK Source Bundle
+java-1.8.0-openjdk-src-debug.x86_64 : OpenJDK Source Bundle for packages with
+ldapjdk.x86_64 : The Mozilla LDAP Java SDK
+</code></pre><p><strong> 安装 java-1.7.0-openjdk </strong></p>
+<p><code>yum install java-1.7.0-openjdk</code></p>
+<pre><code>安装完之后，默认的安装目录是在: /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.75.x86_64
+</code></pre><p><strong> 设置环境变量 修改生效 </strong></p>
+<pre><code>同上
+</code></pre><p><br><br><code>JDK</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;下载-JDK-安装&quot;&gt;&lt;a href=&quot;#下载-JDK-安装&quot; class=&quot;headerlink&quot; title=&quot;下载 JDK 安装&quot;&gt;&lt;/a&gt;下载 JDK 安装&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.oracle.com/technetwork
+    
+    </summary>
+    
+    
+      <category term="JDK" scheme="http://yoursite.com/tags/JDK/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Tomcat 各版本下载</title>
+    <link href="http://yoursite.com/2016/10/03/015%20Tomcat%20%E5%90%84%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://yoursite.com/2016/10/03/015 Tomcat 各版本下载/</id>
+    <published>2016-10-03T00:00:00.000Z</published>
+    <updated>2016-10-02T16:24:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://archive.apache.org/dist/tomcat/" target="_blank" rel="external">http://archive.apache.org/dist/tomcat/</a></p>
+<pre><code>http://archive.apache.org/dist/tomcat/
+</code></pre><p><br><br><code>Tomcat</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://archive.apache.org/dist/tomcat/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://archive.apache.org/dist/tomcat/&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code
+    
+    </summary>
+    
+    
+      <category term="Tomcat" scheme="http://yoursite.com/tags/Tomcat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos 6 中部署 Hexo 个人博客</title>
+    <link href="http://yoursite.com/2016/10/01/013%20CentOS%206%20%E4%B8%AD%E9%83%A8%E7%BD%B2%20Hexo%20%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2016/10/01/013 CentOS 6 中部署 Hexo 个人博客/</id>
+    <published>2016-10-01T00:00:00.000Z</published>
+    <updated>2016-10-02T16:02:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="首先安装-Node-js"><a href="#首先安装-Node-js" class="headerlink" title="首先安装 Node.js"></a>首先安装 Node.js</h1><h2 id="更新系统所有软件"><a href="#更新系统所有软件" class="headerlink" title="更新系统所有软件"></a>更新系统所有软件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y update</div></pre></td></tr></table></figure>
+<h2 id="安装-Development-Tools"><a href="#安装-Development-Tools" class="headerlink" title="安装 Development Tools"></a>安装 Development Tools</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y groupinstall &quot;Development Tools&quot;</div></pre></td></tr></table></figure>
+<h2 id="安装-screen"><a href="#安装-screen" class="headerlink" title="安装 screen"></a>安装 screen</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install screen</div></pre></td></tr></table></figure>
+<h2 id="选择目录来编译源程序"><a href="#选择目录来编译源程序" class="headerlink" title="选择目录来编译源程序"></a>选择目录来编译源程序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd /usr/local/src</div></pre></td></tr></table></figure>
+<h2 id="下载-Node-js"><a href="#下载-Node-js" class="headerlink" title="下载 Node.js"></a>下载 Node.js</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget http://nodejs.org/dist/node-latest.tar.gz</div></pre></td></tr></table></figure>
+<h2 id="解压并变为目录"><a href="#解压并变为目录" class="headerlink" title="解压并变为目录"></a>解压并变为目录</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">tar zxf node-*.tar.gz</div><div class="line">cd node-v*</div></pre></td></tr></table></figure>
+<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./configure</div></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>出现问题</strong><br>WARNING: C++ compiler too old, need g++ 4.8 or clang++ 3.4 (CXX=g++)<br>gcc 版本过低，升级gcc。请看我博客中 <b>CentOS 6 安装 / 更新 GCC 编译器</b></p>
+</blockquote>
+<h2 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make</div></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>出现问题</strong><br>make[1]: [/usr/local/src/node-v6.7.0/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/default-platform.o] 错误 1<br>make[1]: Leaving directory /usr/local/src/node-v6.7.0/out<br>make: <em>*</em> [node] 错误 2<br><br><br>源码编译升级安装了gcc后，编译程序或运行其它程序时，有时会出现类似/usr/lib64/libstdc++.so.6: version GLIBCXX_3.4.21 not found的问题。这是因为升级gcc时，生成的动态库没有替换老版本gcc的动态库导致的，将gcc最新版本的动态库替换系统中老版本的动态库即可解决<br><code>strings /usr/lib64/libstdc++.so.6 | grep GLIBC</code><br>输出结果如下<br>……<br>GLIBCXX_3.4.17<br>GLIBCXX_3.4.18<br>GLIBCXX_3.4.19<br>GLIBC_2.3<br>GLIBC_2.2.5<br>GLIBC_2.3.2<br>……<br>从以上输出可以看出，gcc的动态库还是旧版本的。说明出现这些问题，是因为升级gcc时，生成的动态库没有替换老版本gcc的动态库<br>问题处理：执行以下命令，查找编译gcc时生成的最新动态库<br><code>find / -name &quot;libstdc++.so星&quot;</code><br>……<br>/usr/local/build/gcc-4.9.1/x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs/libstdc++.so.6.0.20<br>/usr/local/build/gcc-4.9.1/x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs/libstdc++.so<br>/usr/local/build/gcc-4.9.1/x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs/libstdc++.so.6<br>/usr/local/build/gcc-4.9.1/stage1-x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs/libstdc++.so.6.0.20<br>(最新动态库)<br>/usr/local/build/gcc-4.9.1/stage1-x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs/libstdc++.so<br>/usr/local/build/gcc-4.9.1/stage1-x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs/libstdc++.so.6<br>/usr/local/build/gcc-4.9.1/prev-x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs/libstdc++.so.6.0.20<br>/usr/local/build/gcc-4.9.1/prev-x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs/libstdc++.so<br>/usr/local/build/gcc-4.9.1/prev-x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs/libstdc++.so.6<br>将上面的最新动态库libstdc++.so.6.0.20复制到/usr/lib64目录下<br><code>cp /usr/local/build/gcc-4.9.1/stage1-x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs/libstdc++.so.6.0.20 /usr/lib64</code><br>复制后，修改系统默认动态库的指向，即：重建默认库的软连接<br>切换工作目录至 <code>cd /usr/lib64</code><br>删除原来软连接 <code>rm -rf libstdc++.so.6</code><br>将默认库的软连接指向最新动态库 <code>ln -s libstdc++.so.6.0.20 libstdc++.so.6</code><br>默认动态库升级完成。重新运行以下命令检查动态库 <code>strings /usr/lib64/libstdc++.so.6 | grep GLIBC</code><br>有了 <code>GLIBCXX_3.4.20</code><br>重新编译 <code>make</code></p>
+</blockquote>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make install</div></pre></td></tr></table></figure>
+<h2 id="Node-js-安装完成"><a href="#Node-js-安装完成" class="headerlink" title="Node.js 安装完成"></a>Node.js 安装完成</h2><p><strong> 查看Node.js 版本 </strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node --version</div></pre></td></tr></table></figure>
+<h2 id="安装-Nginx"><a href="#安装-Nginx" class="headerlink" title="安装 Nginx"></a>安装 Nginx</h2><p><strong> 这里不多说，网上都是 </strong></p>
+<h1 id="安装-hexo"><a href="#安装-hexo" class="headerlink" title="安装 hexo"></a>安装 hexo</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
+<h1 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h1><p><strong> 可以到自己指定的目录下初始化，比如我的在 <code>/service/hexo</code> 下 </strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure>
+<h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><p><strong> 将自己的 MarkDown 文件上传至服务器 Hexo source 指定文件夹下 </strong></p>
+<p><code>hexo g</code></p>
+<p><code>hexo s &amp;</code> (添加 &amp; 后，关掉terminal后服务依然在)</p>
+<p><code>ps aux | grep hexo</code> (找到指定的端口号可以使用：<code>kill -9 123456</code> 杀掉服务)</p>
+<h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1><p><br><br><code>服务器</code> <code>Node.js</code> <code>Hexo</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;首先安装-Node-js&quot;&gt;&lt;a href=&quot;#首先安装-Node-js&quot; class=&quot;headerlink&quot; title=&quot;首先安装 Node.js&quot;&gt;&lt;/a&gt;首先安装 Node.js&lt;/h1&gt;&lt;h2 id=&quot;更新系统所有软件&quot;&gt;&lt;a href=&quot;#更新系统所
+    
+    </summary>
+    
+    
+      <category term="服务器" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="Node.js" scheme="http://yoursite.com/tags/Node-js/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS 6 安装 / 更新 GCC 编译器</title>
+    <link href="http://yoursite.com/2016/10/01/014%20CentOS%206%20%E5%AE%89%E8%A3%85:%E6%9B%B4%E6%96%B0%20gcc%20%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    <id>http://yoursite.com/2016/10/01/014 CentOS 6 安装:更新 gcc 编译器/</id>
+    <published>2016-10-01T00:00:00.000Z</published>
+    <updated>2016-10-02T16:00:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="使用-yum-安装-gcc"><a href="#使用-yum-安装-gcc" class="headerlink" title="使用 yum 安装 gcc"></a>使用 yum 安装 gcc</h1><p><strong> 安装 gcc  、 c++ 编译器以及内核文件 </strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install gcc gcc-c++ kernel-devel</div></pre></td></tr></table></figure>
+<h1 id="yum-安装的版本太低-就需要自己安装了"><a href="#yum-安装的版本太低-就需要自己安装了" class="headerlink" title="yum 安装的版本太低 就需要自己安装了"></a>yum 安装的版本太低 就需要自己安装了</h1><blockquote>
+<p>不建议在服务器上面下载 因为速度太慢了 下面这个网址 根据自己的需求下载指定版本 然后上传至服务器<br><code>http://gcc.skazkaforyou.com/releases/</code></p>
+</blockquote>
+<h1 id="下载-解压"><a href="#下载-解压" class="headerlink" title="下载 解压"></a>下载 解压</h1><p>在这里，我们将<code>gcc-4.9.1.tar.gz</code>解压到<code>/usr/local/src</code>目录中(当然你也可以指定其他目录)</p>
+<p>解压 <code>tar -xvzf gcc-4.9.1.tar.gz</code> <code>cd gcc-4.9.1</code></p>
+<h1 id="运行-download-prerequisites-脚本"><a href="#运行-download-prerequisites-脚本" class="headerlink" title="运行 download_prerequisites 脚本"></a>运行 download_prerequisites 脚本</h1><p><code>./contrib/download_prerequisites</code></p>
+<blockquote>
+<p>安装gcc需要下载诸如gmp、mpfr、mpc等依赖文件，执行download_prerequisites将会自动下载这些软件并解压到当前目录(文件不大，总共只有几MB，请耐心等待下载)</p>
+</blockquote>
+<h1 id="gcc-安装位置"><a href="#gcc-安装位置" class="headerlink" title="gcc 安装位置"></a>gcc 安装位置</h1><p>接着，就可以对gcc进行编译安装了。在此之前，我们先创建一个目录 <code>/usr/local/build/gcc-4.9.1</code> (你也可以自行指定其他目录)用于存放编译后的程序文件</p>
+<p><code>mkdir /usr/local/build/</code></p>
+<p><code>mkdir /usr/local/build/gcc-4.9.1</code></p>
+<p>跳转到编译后的程序文件存放目录<br><code>cd /usr/local/build/gcc-4.9.1</code><br>调用gcc源程序的configure(后面的参数选项可根据需要自行修改)，用于配置gcc<br><code>/usr/local/src/gcc-4.9.1/configure --enable-checking=release --enable-languages=c,c++ --disable-multilib</code><br>充分发挥CPU四核优势，启动四线程<br><code>make -j4</code></p>
+<h1 id="编译-gcc-源程序-需要消耗比较长的时间"><a href="#编译-gcc-源程序-需要消耗比较长的时间" class="headerlink" title="编译 gcc 源程序 需要消耗比较长的时间"></a>编译 gcc 源程序 需要消耗比较长的时间</h1><p><code>make</code></p>
+<blockquote>
+<p><code>make</code>命令这一过程耗费的时间非常多 我大概用了一个小时</p>
+</blockquote>
+<h1 id="安装-gcc"><a href="#安装-gcc" class="headerlink" title="安装 gcc"></a>安装 gcc</h1><p><code>make insatall</code></p>
+<h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1><p><strong>查看 gcc 版本</strong></p>
+<p><code>gcc -v</code> <strong>gcc version 4.9.1 (GCC) </strong></p>
+<p><br><br><code>CentOS</code> <code>GCC</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;使用-yum-安装-gcc&quot;&gt;&lt;a href=&quot;#使用-yum-安装-gcc&quot; class=&quot;headerlink&quot; title=&quot;使用 yum 安装 gcc&quot;&gt;&lt;/a&gt;使用 yum 安装 gcc&lt;/h1&gt;&lt;p&gt;&lt;strong&gt; 安装 gcc  、 c++ 编译器
+    
+    </summary>
+    
+    
+      <category term="CentOS" scheme="http://yoursite.com/tags/CentOS/"/>
+    
+      <category term="GCC" scheme="http://yoursite.com/tags/GCC/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mac 电脑下终端程序 SecureCRT</title>
-    <link href="http://yoursite.com/2016/09/29/software_001/"/>
-    <id>http://yoursite.com/2016/09/29/software_001/</id>
+    <link href="http://yoursite.com/2016/09/29/012%20Mac%20%E7%94%B5%E8%84%91%E4%B8%8B%E7%BB%88%E7%AB%AF%E7%A8%8B%E5%BA%8F%20SecureCRT/"/>
+    <id>http://yoursite.com/2016/09/29/012 Mac 电脑下终端程序 SecureCRT/</id>
     <published>2016-09-29T00:00:00.000Z</published>
     <updated>2016-09-28T12:55:05.000Z</updated>
     
@@ -51,8 +362,8 @@
   
   <entry>
     <title>Nginx 负载均衡</title>
-    <link href="http://yoursite.com/2016/09/28/011/"/>
-    <id>http://yoursite.com/2016/09/28/011/</id>
+    <link href="http://yoursite.com/2016/09/28/011%20Nginx%20%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"/>
+    <id>http://yoursite.com/2016/09/28/011 Nginx 负载均衡/</id>
     <published>2016-09-28T00:00:00.000Z</published>
     <updated>2016-09-27T17:46:47.000Z</updated>
     
@@ -86,8 +397,8 @@
   
   <entry>
     <title>Java 中 System.getProperty() 方法可以获取系统的那些值</title>
-    <link href="http://yoursite.com/2016/09/27/009/"/>
-    <id>http://yoursite.com/2016/09/27/009/</id>
+    <link href="http://yoursite.com/2016/09/27/009%20Java%20%E4%B8%AD%20System.getProperty()%20%E6%96%B9%E6%B3%95%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%82%A3%E4%BA%9B%E5%80%BC/"/>
+    <id>http://yoursite.com/2016/09/27/009 Java 中 System.getProperty() 方法可以获取系统的那些值/</id>
     <published>2016-09-27T00:00:00.000Z</published>
     <updated>2016-09-26T17:04:54.000Z</updated>
     
@@ -243,8 +554,8 @@
   
   <entry>
     <title>Mac 电脑 U盘 重装系统</title>
-    <link href="http://yoursite.com/2016/09/27/006/"/>
-    <id>http://yoursite.com/2016/09/27/006/</id>
+    <link href="http://yoursite.com/2016/09/27/006%20Mac%20%E7%94%B5%E8%84%91%20U%E7%9B%98%20%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://yoursite.com/2016/09/27/006 Mac 电脑 U盘 重装系统/</id>
     <published>2016-09-27T00:00:00.000Z</published>
     <updated>2016-09-26T16:40:19.000Z</updated>
     
@@ -273,8 +584,8 @@
   
   <entry>
     <title>iOS 设置 Launch Image 启动图片尺寸 (闪图)</title>
-    <link href="http://yoursite.com/2016/09/27/010/"/>
-    <id>http://yoursite.com/2016/09/27/010/</id>
+    <link href="http://yoursite.com/2016/09/27/010%20iOS%20%E8%AE%BE%E7%BD%AE%20Launch%20Image%20%E5%90%AF%E5%8A%A8%E5%9B%BE%E7%89%87%E5%B0%BA%E5%AF%B8%20(%E9%97%AA%E5%9B%BE)%20/"/>
+    <id>http://yoursite.com/2016/09/27/010 iOS 设置 Launch Image 启动图片尺寸 (闪图) /</id>
     <published>2016-09-27T00:00:00.000Z</published>
     <updated>2016-09-26T17:26:58.000Z</updated>
     
@@ -521,32 +832,9 @@
   </entry>
   
   <entry>
-    <title>Spring 各版本 jar包 下载</title>
-    <link href="http://yoursite.com/2016/09/27/007/"/>
-    <id>http://yoursite.com/2016/09/27/007/</id>
-    <published>2016-09-27T00:00:00.000Z</published>
-    <updated>2016-09-26T16:45:23.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://repo.spring.io/release/org/springframework/spring/" target="_blank" rel="external">http://repo.spring.io/release/org/springframework/spring/</a></p>
-<pre><code>http://repo.spring.io/release/org/springframework/spring/
-</code></pre><p><br><br><code>Spring</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://repo.spring.io/release/org/springframework/spring/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://repo.spring.io/release/org/spri
-    
-    </summary>
-    
-    
-      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Struts 各版本 jar包 下载</title>
-    <link href="http://yoursite.com/2016/09/27/008/"/>
-    <id>http://yoursite.com/2016/09/27/008/</id>
+    <link href="http://yoursite.com/2016/09/27/008%20Struts%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://yoursite.com/2016/09/27/008 Struts 各版本 jar包 下载/</id>
     <published>2016-09-27T00:00:00.000Z</published>
     <updated>2016-09-26T16:44:48.000Z</updated>
     
@@ -567,9 +855,32 @@
   </entry>
   
   <entry>
+    <title>Spring 各版本 jar包 下载</title>
+    <link href="http://yoursite.com/2016/09/27/007%20Spring%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://yoursite.com/2016/09/27/007 Spring 各版本 jar包 下载/</id>
+    <published>2016-09-27T00:00:00.000Z</published>
+    <updated>2016-09-26T16:45:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://repo.spring.io/release/org/springframework/spring/" target="_blank" rel="external">http://repo.spring.io/release/org/springframework/spring/</a></p>
+<pre><code>http://repo.spring.io/release/org/springframework/spring/
+</code></pre><p><br><br><code>Spring</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://repo.spring.io/release/org/springframework/spring/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://repo.spring.io/release/org/spri
+    
+    </summary>
+    
+    
+      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MySQL 数据库编码方式修改</title>
-    <link href="http://yoursite.com/2016/09/26/004/"/>
-    <id>http://yoursite.com/2016/09/26/004/</id>
+    <link href="http://yoursite.com/2016/09/26/004%20MySQL%20%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F%E4%BF%AE%E6%94%B9/"/>
+    <id>http://yoursite.com/2016/09/26/004 MySQL 数据库编码方式修改/</id>
     <published>2016-09-26T00:00:00.000Z</published>
     <updated>2016-09-26T01:34:17.000Z</updated>
     
@@ -600,8 +911,8 @@
   
   <entry>
     <title>Apple 系统固件下载地址</title>
-    <link href="http://yoursite.com/2016/09/26/005/"/>
-    <id>http://yoursite.com/2016/09/26/005/</id>
+    <link href="http://yoursite.com/2016/09/26/005%20Apple%20%E7%B3%BB%E7%BB%9F%E5%9B%BA%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/"/>
+    <id>http://yoursite.com/2016/09/26/005 Apple 系统固件下载地址/</id>
     <published>2016-09-26T00:00:00.000Z</published>
     <updated>2016-09-25T18:41:47.000Z</updated>
     
@@ -621,9 +932,32 @@
   </entry>
   
   <entry>
+    <title>Mac 修改 Dock 栏隐藏的速度</title>
+    <link href="http://yoursite.com/2016/09/25/003%20Mac%20%E4%BF%AE%E6%94%B9%20Dock%20%E6%A0%8F%E9%9A%90%E8%97%8F%E7%9A%84%E9%80%9F%E5%BA%A6/"/>
+    <id>http://yoursite.com/2016/09/25/003 Mac 修改 Dock 栏隐藏的速度/</id>
+    <published>2016-09-25T00:00:00.000Z</published>
+    <updated>2016-09-25T18:34:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）"><a href="#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）" class="headerlink" title="修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）"></a>修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
+<h1 id="恢复默认设置"><a href="#恢复默认设置" class="headerlink" title="恢复默认设置"></a>恢复默认设置</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
+<p><br><br><code>Mac</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot;&gt;&lt;a href=&quot;#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot; class=&quot;headerlink&quot; title=&quot;修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5
+    
+    </summary>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mac 显示隐藏文件</title>
-    <link href="http://yoursite.com/2016/09/25/002/"/>
-    <id>http://yoursite.com/2016/09/25/002/</id>
+    <link href="http://yoursite.com/2016/09/25/002%20Mac%20%E6%98%BE%E7%A4%BA%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/"/>
+    <id>http://yoursite.com/2016/09/25/002 Mac 显示隐藏文件/</id>
     <published>2016-09-25T00:00:00.000Z</published>
     <updated>2016-09-25T18:32:45.000Z</updated>
     
@@ -646,32 +980,9 @@
   </entry>
   
   <entry>
-    <title>Mac 修改 Dock 栏隐藏的速度</title>
-    <link href="http://yoursite.com/2016/09/25/003/"/>
-    <id>http://yoursite.com/2016/09/25/003/</id>
-    <published>2016-09-25T00:00:00.000Z</published>
-    <updated>2016-09-25T18:34:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）"><a href="#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）" class="headerlink" title="修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）"></a>修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
-<h1 id="恢复默认设置"><a href="#恢复默认设置" class="headerlink" title="恢复默认设置"></a>恢复默认设置</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
-<p><br><br><code>Mac</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot;&gt;&lt;a href=&quot;#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot; class=&quot;headerlink&quot; title=&quot;修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5
-    
-    </summary>
-    
-    
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Mac 电脑设置 Finder 可以退出</title>
-    <link href="http://yoursite.com/2016/09/25/001/"/>
-    <id>http://yoursite.com/2016/09/25/001/</id>
+    <link href="http://yoursite.com/2016/09/25/001%20Mac%20%E7%94%B5%E8%84%91%E8%AE%BE%E7%BD%AE%20Finder%20%E5%8F%AF%E4%BB%A5%E9%80%80%E5%87%BA/"/>
+    <id>http://yoursite.com/2016/09/25/001 Mac 电脑设置 Finder 可以退出/</id>
     <published>2016-09-25T00:00:00.000Z</published>
     <updated>2016-09-27T01:54:05.000Z</updated>
     
