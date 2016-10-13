@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-10T17:43:03.000Z</updated>
+  <updated>2016-10-13T11:55:38.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://yoursite.com/2016/10/11/018%20Linux%20%E4%B8%AD%20curl/"/>
     <id>http://yoursite.com/2016/10/11/018 Linux 中 curl/</id>
     <published>2016-10-11T00:00:00.000Z</published>
-    <updated>2016-10-10T17:43:03.000Z</updated>
+    <updated>2016-10-13T11:55:38.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
-<p>curl是利用URL语法在命令行方式下工作的开源文件传输工具。它被广泛应用在Unix、多种Linux发行版中，并且有DOS和Win32、Win64下的移植版本</p>
+<p>curl是利用URL语法在命令行方式下工作的开源文件传输工具。它被广泛应用在Unix、多种Linux发行版中，并且有DOS和Win32、Win64下的移植版本<br>Ubuntu 中默认没有安装：<code>apt-get install curl</code> 安装即可</p>
 </blockquote>
 <h1 id="常见参数"><a href="#常见参数" class="headerlink" title="常见参数"></a>常见参数</h1><table>
 <thead>
@@ -123,9 +123,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;curl是利用URL语法在命令行方式下工作的开源文件传输工具。它被广泛应用在Unix、多种Linux发行版中，并且有DOS和Win32、Win64下的移植版本&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;常见参数&quot;&gt;&lt;a href=&quot;#常见
+&lt;p&gt;curl是利用URL语法在命令行方式下工作的开源文件传输工具。它被广泛应用在Unix、多种Linux发行版中，并且有DOS和Win32、Win64下的移植版本&lt;br&gt;Ubuntu 中默认没有安装：&lt;code&gt;apt-get install curl
     
     </summary>
     
@@ -141,12 +139,15 @@
     <link href="http://yoursite.com/2016/10/04/017%20CentOS%206%20%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%20CronTab/"/>
     <id>http://yoursite.com/2016/10/04/017 CentOS 6 计划任务 CronTab/</id>
     <published>2016-10-04T00:00:00.000Z</published>
-    <updated>2016-10-08T20:04:22.000Z</updated>
+    <updated>2016-10-13T14:05:31.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="安装-CronTab"><a href="#安装-CronTab" class="headerlink" title="安装 CronTab"></a>安装 CronTab</h1><p><strong> CentOS 中自带了CronTab 如果有需要 百度一下，你就知道 </strong></p>
 <h1 id="CronTab-使用与解释"><a href="#CronTab-使用与解释" class="headerlink" title="CronTab 使用与解释"></a>CronTab 使用与解释</h1><p><code>crontab -l</code> 查看所有的计划任务<br><code>crontab -e</code> 修改计划任务</p>
 <p><code>service crond start</code> 启动计划任务<br><code>service crond restart</code> 重启计划任务<br><code>service crond reload</code> 重新载入计划任务</p>
-<blockquote>
+<p><strong> Ubuntu 下的使用的语法</strong><br><code>service cron start</code> 启动计划任务<br><code>service cron restart</code> 重启计划任务<br><code>service cron reload</code> 重新载入计划任务</p>
+<pre><code>如果第一次用这个命令会让你选择文本编辑器, 我选择的是`vim`
+如果要换: `select-editor`
+</code></pre><blockquote>
 <p><strong>CronTab 的语法</strong><br>* * * * * date &gt;&gt; /tmp/date.txt</p>
 </blockquote>
 <table>
@@ -173,7 +174,7 @@
 </table>
 <h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><h2 id="每一小时"><a href="#每一小时" class="headerlink" title="每一小时"></a>每一小时</h2><pre><code>* */1 * * * /service/l-zm/request.sh
 </code></pre><h2 id="每小时执行-etc-cron-hourly目录内的脚本"><a href="#每小时执行-etc-cron-hourly目录内的脚本" class="headerlink" title="每小时执行/etc/cron.hourly目录内的脚本"></a>每小时执行/etc/cron.hourly目录内的脚本</h2><pre><code>01 * * * * root run-parts /etc/cron.hourly
-</code></pre><h2 id="每秒执行一次"><a href="#每秒执行一次" class="headerlink" title="每秒执行一次"></a>每秒执行一次</h2><pre><code>*/1 * * * * date &gt;&gt; /tmp/date.txt
+</code></pre><h2 id="每秒执行一次"><a href="#每秒执行一次" class="headerlink" title="每秒执行一次"></a>每秒执行一次</h2><pre><code>*/1 * * * * sleep 0s;date &gt;&gt; /tmp/date.txt
 */1 * * * * sleep 1s; date &gt;&gt; /tmp/date.txt
 */1 * * * * sleep 2s; date &gt;&gt; /tmp/date.txt
 */1 * * * * sleep 3s; date &gt;&gt; /tmp/date.txt
@@ -233,6 +234,8 @@
 */1 * * * * sleep 57s; date &gt;&gt; /tmp/date.txt
 */1 * * * * sleep 58s; date &gt;&gt; /tmp/date.txt
 */1 * * * * sleep 59s; date &gt;&gt; /tmp/date.txt
+
+如果每秒没有循环连续 可以试试把 sleep 0s 删除, 在最后添加 sleep 60s (CentOS 和 Ubuntu 下不一样)
 </code></pre><h2 id="每小时的第3和第15分钟执行"><a href="#每小时的第3和第15分钟执行" class="headerlink" title="每小时的第3和第15分钟执行"></a>每小时的第3和第15分钟执行</h2><pre><code>3,15 * * * * /service/l-zm/request.sh
 </code></pre><h2 id="在上午8点到11点的第3和第15分钟执行"><a href="#在上午8点到11点的第3和第15分钟执行" class="headerlink" title="在上午8点到11点的第3和第15分钟执行"></a>在上午8点到11点的第3和第15分钟执行</h2><pre><code>3,15 8-11 * * * /service/l-zm/request.sh
 </code></pre><h2 id="每隔两天的上午8点到11点的第3和第15分钟执行"><a href="#每隔两天的上午8点到11点的第3和第15分钟执行" class="headerlink" title="每隔两天的上午8点到11点的第3和第15分钟执行"></a>每隔两天的上午8点到11点的第3和第15分钟执行</h2><pre><code>3,15 8-11 */2 * * date &gt;&gt; /tmp/date.txt
@@ -518,29 +521,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>Struts 各版本 jar包 下载</title>
-    <link href="http://yoursite.com/2016/09/27/008%20Struts%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
-    <id>http://yoursite.com/2016/09/27/008 Struts 各版本 jar包 下载/</id>
-    <published>2016-09-27T00:00:00.000Z</published>
-    <updated>2016-09-26T16:44:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://archive.apache.org/dist/struts/binaries/" target="_blank" rel="external">http://archive.apache.org/dist/struts/binaries/</a></p>
-<pre><code>http://archive.apache.org/dist/struts/binaries/
-</code></pre><p><br><br><code>Struts</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://archive.apache.org/dist/struts/binaries/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://archive.apache.org/dist/struts/binaries/&lt;
-    
-    </summary>
-    
-    
-      <category term="Struts" scheme="http://yoursite.com/tags/Struts/"/>
-    
-  </entry>
-  
-  <entry>
     <title>iOS 设置 Launch Image 启动图片尺寸 (闪图)</title>
     <link href="http://yoursite.com/2016/09/27/010%20iOS%20%E8%AE%BE%E7%BD%AE%20Launch%20Image%20%E5%90%AF%E5%8A%A8%E5%9B%BE%E7%89%87%E5%B0%BA%E5%AF%B8%20(%E9%97%AA%E5%9B%BE)%20/"/>
     <id>http://yoursite.com/2016/09/27/010 iOS 设置 Launch Image 启动图片尺寸 (闪图) /</id>
@@ -786,6 +766,29 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
     
     
       <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Struts 各版本 jar包 下载</title>
+    <link href="http://yoursite.com/2016/09/27/008%20Struts%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://yoursite.com/2016/09/27/008 Struts 各版本 jar包 下载/</id>
+    <published>2016-09-27T00:00:00.000Z</published>
+    <updated>2016-09-26T16:44:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://archive.apache.org/dist/struts/binaries/" target="_blank" rel="external">http://archive.apache.org/dist/struts/binaries/</a></p>
+<pre><code>http://archive.apache.org/dist/struts/binaries/
+</code></pre><p><br><br><code>Struts</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://archive.apache.org/dist/struts/binaries/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://archive.apache.org/dist/struts/binaries/&lt;
+    
+    </summary>
+    
+    
+      <category term="Struts" scheme="http://yoursite.com/tags/Struts/"/>
     
   </entry>
   
@@ -1054,29 +1057,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>Mac 电脑设置 Finder 可以退出</title>
-    <link href="http://yoursite.com/2016/09/25/001%20Mac%20%E7%94%B5%E8%84%91%E8%AE%BE%E7%BD%AE%20Finder%20%E5%8F%AF%E4%BB%A5%E9%80%80%E5%87%BA/"/>
-    <id>http://yoursite.com/2016/09/25/001 Mac 电脑设置 Finder 可以退出/</id>
-    <published>2016-09-25T00:00:00.000Z</published>
-    <updated>2016-09-27T01:54:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.Finder QuitMenuItem 1</div></pre></td></tr></table></figure>
-<h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.Finder QuitMenuItem 0</div></pre></td></tr></table></figure>
-<p><br><br><code>Mac</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;终端输入&quot;&gt;&lt;a href=&quot;#终端输入&quot; class=&quot;headerlink&quot; title=&quot;终端输入&quot;&gt;&lt;/a&gt;终端输入&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre
-    
-    </summary>
-    
-    
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Mac 修改 Dock 栏隐藏的速度</title>
     <link href="http://yoursite.com/2016/09/25/003%20Mac%20%E4%BF%AE%E6%94%B9%20Dock%20%E6%A0%8F%E9%9A%90%E8%97%8F%E7%9A%84%E9%80%9F%E5%BA%A6/"/>
     <id>http://yoursite.com/2016/09/25/003 Mac 修改 Dock 栏隐藏的速度/</id>
@@ -1110,6 +1090,29 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
 <h1 id="生效"><a href="#生效" class="headerlink" title="生效"></a>生效</h1><p><strong>强制退出 Finder</strong>  <code>commend + option + esc</code> </p>
 <p><br></p>
 <h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">false</span></div></pre></td></tr></table></figure>
+<p><br><br><code>Mac</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;终端输入&quot;&gt;&lt;a href=&quot;#终端输入&quot; class=&quot;headerlink&quot; title=&quot;终端输入&quot;&gt;&lt;/a&gt;终端输入&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre
+    
+    </summary>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac 电脑设置 Finder 可以退出</title>
+    <link href="http://yoursite.com/2016/09/25/001%20Mac%20%E7%94%B5%E8%84%91%E8%AE%BE%E7%BD%AE%20Finder%20%E5%8F%AF%E4%BB%A5%E9%80%80%E5%87%BA/"/>
+    <id>http://yoursite.com/2016/09/25/001 Mac 电脑设置 Finder 可以退出/</id>
+    <published>2016-09-25T00:00:00.000Z</published>
+    <updated>2016-09-27T01:54:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.Finder QuitMenuItem 1</div></pre></td></tr></table></figure>
+<h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.Finder QuitMenuItem 0</div></pre></td></tr></table></figure>
 <p><br><br><code>Mac</code></p>
 ]]></content>
     

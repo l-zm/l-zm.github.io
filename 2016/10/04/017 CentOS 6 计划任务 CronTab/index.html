@@ -13,8 +13,7 @@
   <meta name="description" content="安装 CronTab CentOS 中自带了CronTab 如果有需要 百度一下，你就知道 
 CronTab 使用与解释crontab -l 查看所有的计划任务crontab -e 修改计划任务
 service crond start 启动计划任务service crond restart 重启计划任务service crond reload 重新载入计划任务
-
-CronTab 的语法* * *">
+ Ubuntu 下的使用的语法ser">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CentOS 6 计划任务 CronTab">
 <meta property="og:url" content="http://yoursite.com/2016/10/04/017 CentOS 6 计划任务 CronTab/index.html">
@@ -22,16 +21,14 @@ CronTab 的语法* * *">
 <meta property="og:description" content="安装 CronTab CentOS 中自带了CronTab 如果有需要 百度一下，你就知道 
 CronTab 使用与解释crontab -l 查看所有的计划任务crontab -e 修改计划任务
 service crond start 启动计划任务service crond restart 重启计划任务service crond reload 重新载入计划任务
-
-CronTab 的语法* * *">
-<meta property="og:updated_time" content="2016-10-08T20:04:22.000Z">
+ Ubuntu 下的使用的语法ser">
+<meta property="og:updated_time" content="2016-10-13T14:05:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS 6 计划任务 CronTab">
 <meta name="twitter:description" content="安装 CronTab CentOS 中自带了CronTab 如果有需要 百度一下，你就知道 
 CronTab 使用与解释crontab -l 查看所有的计划任务crontab -e 修改计划任务
 service crond start 启动计划任务service crond restart 重启计划任务service crond reload 重新载入计划任务
-
-CronTab 的语法* * *">
+ Ubuntu 下的使用的语法ser">
   
     <link rel="alternative" href="/atom.xml" title="Lizm&#39;s Personal Blog" type="application/atom+xml">
   
@@ -164,7 +161,10 @@ CronTab 的语法* * *">
             <h1 id="安装-CronTab"><a href="#安装-CronTab" class="headerlink" title="安装 CronTab"></a>安装 CronTab</h1><p><strong> CentOS 中自带了CronTab 如果有需要 百度一下，你就知道 </strong></p>
 <h1 id="CronTab-使用与解释"><a href="#CronTab-使用与解释" class="headerlink" title="CronTab 使用与解释"></a>CronTab 使用与解释</h1><p><code>crontab -l</code> 查看所有的计划任务<br><code>crontab -e</code> 修改计划任务</p>
 <p><code>service crond start</code> 启动计划任务<br><code>service crond restart</code> 重启计划任务<br><code>service crond reload</code> 重新载入计划任务</p>
-<blockquote>
+<p><strong> Ubuntu 下的使用的语法</strong><br><code>service cron start</code> 启动计划任务<br><code>service cron restart</code> 重启计划任务<br><code>service cron reload</code> 重新载入计划任务</p>
+<pre><code>如果第一次用这个命令会让你选择文本编辑器, 我选择的是`vim`
+如果要换: `select-editor`
+</code></pre><blockquote>
 <p><strong>CronTab 的语法</strong><br>* * * * * date &gt;&gt; /tmp/date.txt</p>
 </blockquote>
 <table>
@@ -191,7 +191,7 @@ CronTab 的语法* * *">
 </table>
 <h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><h2 id="每一小时"><a href="#每一小时" class="headerlink" title="每一小时"></a>每一小时</h2><pre><code>* */1 * * * /service/l-zm/request.sh
 </code></pre><h2 id="每小时执行-etc-cron-hourly目录内的脚本"><a href="#每小时执行-etc-cron-hourly目录内的脚本" class="headerlink" title="每小时执行/etc/cron.hourly目录内的脚本"></a>每小时执行/etc/cron.hourly目录内的脚本</h2><pre><code>01 * * * * root run-parts /etc/cron.hourly
-</code></pre><h2 id="每秒执行一次"><a href="#每秒执行一次" class="headerlink" title="每秒执行一次"></a>每秒执行一次</h2><pre><code>*/1 * * * * date &gt;&gt; /tmp/date.txt
+</code></pre><h2 id="每秒执行一次"><a href="#每秒执行一次" class="headerlink" title="每秒执行一次"></a>每秒执行一次</h2><pre><code>*/1 * * * * sleep 0s;date &gt;&gt; /tmp/date.txt
 */1 * * * * sleep 1s; date &gt;&gt; /tmp/date.txt
 */1 * * * * sleep 2s; date &gt;&gt; /tmp/date.txt
 */1 * * * * sleep 3s; date &gt;&gt; /tmp/date.txt
@@ -251,6 +251,8 @@ CronTab 的语法* * *">
 */1 * * * * sleep 57s; date &gt;&gt; /tmp/date.txt
 */1 * * * * sleep 58s; date &gt;&gt; /tmp/date.txt
 */1 * * * * sleep 59s; date &gt;&gt; /tmp/date.txt
+
+如果每秒没有循环连续 可以试试把 sleep 0s 删除, 在最后添加 sleep 60s (CentOS 和 Ubuntu 下不一样)
 </code></pre><h2 id="每小时的第3和第15分钟执行"><a href="#每小时的第3和第15分钟执行" class="headerlink" title="每小时的第3和第15分钟执行"></a>每小时的第3和第15分钟执行</h2><pre><code>3,15 * * * * /service/l-zm/request.sh
 </code></pre><h2 id="在上午8点到11点的第3和第15分钟执行"><a href="#在上午8点到11点的第3和第15分钟执行" class="headerlink" title="在上午8点到11点的第3和第15分钟执行"></a>在上午8点到11点的第3和第15分钟执行</h2><pre><code>3,15 8-11 * * * /service/l-zm/request.sh
 </code></pre><h2 id="每隔两天的上午8点到11点的第3和第15分钟执行"><a href="#每隔两天的上午8点到11点的第3和第15分钟执行" class="headerlink" title="每隔两天的上午8点到11点的第3和第15分钟执行"></a>每隔两天的上午8点到11点的第3和第15分钟执行</h2><pre><code>3,15 8-11 */2 * * date &gt;&gt; /tmp/date.txt
