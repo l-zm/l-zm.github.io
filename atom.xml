@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-14T07:38:25.000Z</updated>
+  <updated>2016-10-14T07:40:36.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/10/14/019%20Linux%20%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
     <id>http://yoursite.com/2016/10/14/019 Linux 操作命令/</id>
     <published>2016-10-14T00:00:00.000Z</published>
-    <updated>2016-10-14T07:38:25.000Z</updated>
+    <updated>2016-10-14T07:40:36.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="复制-剪切-粘贴"><a href="#复制-剪切-粘贴" class="headerlink" title="复制 剪切 粘贴"></a>复制 剪切 粘贴</h1><blockquote>
 <p><strong>复制的命令是 <code>y</code> 即yank(提起) 常用的命令如下</strong><br>y     在使用v模式选定了某一块的时候，复制选定块到缓冲区用<br>yy     复制整行 (nyy或者yny ，复制n行，n为数字）<br>y^     复制当前到行头的内容<br>y$     复制当前到行尾的内容<br>yw     复制一个word (nyw或者ynw，复制n个word，n为数字）<br>yG     复制至档尾(nyG或者ynG，复制到第n行，例如1yG或者y1G，复制到档尾）<br><strong>剪切的命令是 <code>d</code> 即delete d与y命令基本类似 所以两个命令用法一样 包括含有数字的用法</strong><br>d     剪切选定块到缓冲区；<br>dd     剪切整行<br>d^     剪切至行首<br>d$     剪切至行尾<br>dw     剪切一个word<br>dG     剪切至档尾<br><strong>粘贴的命令式 <code>p</code> 即put(放下）</strong><br>p     小写p代表贴至游标后（下）, 因为游标是在具体字符的位置上, 所以实际是在该字符的后面<br>P     大写P代表贴至游标前（上）整行的复制粘贴在游标的上（下）一行，非整行的复制则是粘贴在游标的前（后）<br>    注：<br>    在正则表达式中，^表示匹配字符串的开始位置，$表示匹配字符串的结束位置。<br>    命令前面加数字表示重复的次数，加字母表示使用的缓冲区名称。使用英文句号”.”可以重复上一个命令。<br>    在复制粘贴时，另一组常用的命令是u（撤销操作），U（撤销某一行最近所有修改），Ctrl+R（重做），<br>    这些功能主要是vim中的，vi中略有差别</p>
@@ -28,7 +28,9 @@
 <h1 id="yum-y-update-upgrade"><a href="#yum-y-update-upgrade" class="headerlink" title="yum -y update / upgrade"></a>yum -y update / upgrade</h1><blockquote>
 <p><strong>yum -y upgrade 和 yum -y update 区别 </strong><br>yum -y update<br>升级所有包，改变软件设置和系统设置,系统版本内核都升级<br>yum -y upgrade<br>升级所有包，不改变软件设置和系统设置，系统版本升级，内核不改变</p>
 </blockquote>
-<h1 id="修改-文件-文件夹-名称"><a href="#修改-文件-文件夹-名称" class="headerlink" title="修改 文件 文件夹 名称"></a>修改 文件 文件夹 名称</h1><p>mv 修改前的文件名称 修改后的文件名称<br>mv 修改前的文件夹名称 修改后的文件夹名称</p>
+<h1 id="修改-文件-文件夹-名称"><a href="#修改-文件-文件夹-名称" class="headerlink" title="修改 文件 文件夹 名称"></a>修改 文件 文件夹 名称</h1><blockquote>
+<p><code>mv</code> 修改前的文件名称 修改后的文件名称<br><code>mv</code> 修改前的文件夹名称 修改后的文件夹名称</p>
+</blockquote>
 <p><br><br><code>Linux</code></p>
 ]]></content>
     
@@ -45,11 +47,89 @@
   </entry>
   
   <entry>
+    <title>Redis 安装及 Redis-sentinel (哨兵模式)集群方案配置</title>
+    <link href="http://yoursite.com/2016/10/14/020%20Redis%E5%AE%89%E8%A3%85%E5%8F%8ARedis-sentinel%20(%E5%93%A8%E5%85%B5%E6%A8%A1%E5%BC%8F)%E9%9B%86%E7%BE%A4%E6%96%B9%E6%A1%88%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2016/10/14/020 Redis安装及Redis-sentinel (哨兵模式)集群方案配置/</id>
+    <published>2016-10-14T00:00:00.000Z</published>
+    <updated>2016-10-14T16:00:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><pre><code>http://redis.io
+</code></pre><h1 id="解压-安装"><a href="#解压-安装" class="headerlink" title="解压 安装"></a>解压 安装</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">tar xvzf redis-3.2.4.tar.gz</div><div class="line">mv redis-3.2.4 /usr/local</div><div class="line">cd /usr/local/redis-3.2.4/</div><div class="line">make</div><div class="line">make test</div></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>问题1: </strong><br>make[2]: cc: Command not found<br>异常原因：没有安装 gcc<br>解决方案：<code>yum install gcc-c++</code><br><strong>问题2: </strong><br>You need tcl 8.5 or newer in order to run the Redis test<br>异常原因：没有安装 tcl<br>解决方案：<code>yum install -y tcl</code><br><strong>问题3: </strong><br>zmalloc.h:51:31: error: jemalloc/jemalloc.h: No such file or directory<br>异常原因：一些编译依赖或原来编译遗留出现的问题<br>解决方案：<code>make distclean</code> 清理一下 然后再 <code>make</code></p>
+</blockquote>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>在 make 成功以后 会在 src 目录下多出一些可执行文件：<code>redis-server</code> <code>redis-cli</code> <code>redis-sentinel</code> 等等</p>
+<p>设置命令:</p>
+<pre><code>cp redis-server /usr/local/bin/
+cp redis-cli /usr/local/bin/
+cp redis-sentinel /usr/local/bin/
+</code></pre><h1 id="Redis-sentinel-哨兵模式-集群方案配置"><a href="#Redis-sentinel-哨兵模式-集群方案配置" class="headerlink" title="Redis-sentinel (哨兵模式) 集群方案配置"></a>Redis-sentinel (哨兵模式) 集群方案配置</h1><p><strong>说明: 两个 Redis-sentinel 服务, 一个 Redis 主服务, 三个从服务 (通过不同的端口进行配置, 项目中应该是6台服务器)</strong></p>
+<ul>
+<li><code>cd /usr/local</code> 创建 6 个目录 <code>mkdir redis-7501 redis-7502 redis-7503 redis-7504 redis-7505 redis-7506</code></li>
+<li><code>cp /usr/local/redis-3.2.4/redis.conf /usr/local/redis-7501/redis-7501.conf</code></li>
+<li><code>cp /usr/local/redis-3.2.4/redis.conf /usr/local/redis-7502/redis-7502.conf</code></li>
+<li><code>cp /usr/local/redis-3.2.4/redis.conf /usr/local/redis-7503/redis-7503.conf</code></li>
+<li><code>cp /usr/local/redis-3.2.4/redis.conf /usr/local/redis-7504/redis-7504.conf</code></li>
+<li><code>cp /usr/local/redis-3.2.4/sentinel.conf /usr/local/redis-7505/sentinel-7505.conf</code></li>
+<li><code>cp /usr/local/redis-3.2.4/sentinel.conf /usr/local/redis-7506/sentinel-7506.conf</code></li>
+<li>每个 Redis 目录下 建立 <code>run</code> <code>log</code> 文件夹 记录 Redis 日志和文件</li>
+</ul>
+<p>此处以修改 <code>redis-7501.conf</code> 为例: <code>vim redis-7501.conf</code></p>
+<pre><code>要修改的:
+
+bind 127.0.0.1
+port 7501
+daemonize yes
+pidfile /usr/local/redis-7501/run/redis_7501.pid
+logfile &quot;/usr/local/redis-7501/log/redis-7501.log&quot;
+</code></pre><p>此处以修改 <code>sentinel-7505.conf</code> 为例: <code>vim sentinel-7505.conf</code></p>
+<pre><code>要修改的:
+
+port 7505
+sentinel monitor mymaster 127.0.0.1 7501 2
+
+启动四个redis实例，其中端口为7501的redis设为master，其他三个设为slave 
+所以 mymaster 后跟的是 master 的 ip 和端口,最后一个’2’代表我要启动只要有2个sentinel认为master下线，
+就认为该master客观下线，启动failover并选举产生新的master。通常最后一个参数不能多于启动的sentinel实例数
+</code></pre><h2 id="启动-Redis-和-sentinel"><a href="#启动-Redis-和-sentinel" class="headerlink" title="启动 Redis 和 sentinel"></a>启动 Redis 和 sentinel</h2><p><strong>分别启动4个 Redis 实例</strong></p>
+<ul>
+<li><code>redis-server /usr/local/redis-7501/redis-7501.conf</code></li>
+<li><code>redis-server /usr/local/redis-7502/redis-7502.conf</code></li>
+<li><code>redis-server /usr/local/redis-7503/redis-7503.conf</code></li>
+<li><code>redis-server /usr/local/redis-7504/redis-7504.conf</code></li>
+</ul>
+<p><strong>然后分别登陆 7502 7503 7504 三个实例，动态改变主从关系，成为 7501 的 slave </strong></p>
+<ul>
+<li><code>redis-cli -h 127.0.0.1 -p 7502</code><br>  <code>127.0.0.1:7502&gt; SLAVEOF 127.0.0.1 7501</code></li>
+<li><code>redis-cli -h 127.0.0.1 -p 7503</code><br>  <code>127.0.0.1:7503&gt; SLAVEOF 127.0.0.1 7501</code></li>
+<li><code>redis-cli -h 127.0.0.1 -p 7504</code><br>  <code>127.0.0.1:7504&gt; SLAVEOF 127.0.0.1 7501</code></li>
+</ul>
+<p><strong> 以后台启动模式启动两个 sentinel（哨兵）</strong></p>
+<p><code>redis-sentinel /usr/local/redis-7505/sentinel-7505.conf &amp;</code><br><code>redis-sentinel /usr/local/redis-7506/sentinel-7506.conf &amp;</code></p>
+<h1 id="Done"><a href="#Done" class="headerlink" title="Done"></a>Done</h1><hr>
+
+<h1 id="Redis-配置文件说明"><a href="#Redis-配置文件说明" class="headerlink" title="Redis 配置文件说明"></a>Redis 配置文件说明</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div></pre></td><td class="code"><pre><div class="line">################################## NETWORK #####################################</div><div class="line">bind 127.0.0.1			# 默认绑定本机所有ip地址 为了安全 可以只监听内网ip</div><div class="line">protected-mode yes		# 保护模式[无密码模式设置为no]</div><div class="line">port 6379 			# 默认端口</div><div class="line">tcp-backlog 511			# listen队列的长度</div><div class="line">timeout 0			# 客户端空闲多少s(秒)后踢掉 0禁止</div><div class="line">tcp-keepalive 300		# 检测挂掉的连接 单位s 0禁止</div><div class="line"></div><div class="line">################################# GENERAL #####################################</div><div class="line">daemonize no 			# 作为守护进程运行</div><div class="line">supervised no 			# 设成开机启动后 系统监控</div><div class="line">pidfile /var/run/redis_6379.pid # pid 位置</div><div class="line">loglevel notice 		# 设置服务端的日志级别，有下列几种选择</div><div class="line">				debug：记录详细信息，用于开发或调试</div><div class="line">				verbose：提供很多有用的信息，</div><div class="line">					但是又不像debug那么详尽，默认就是这一选项</div><div class="line">				notice：适度提醒，多用于产品环境</div><div class="line">				warning：仅显示重要的警告信息</div><div class="line"></div><div class="line">logfile &quot;&quot;			# 日志目录</div><div class="line">databases 16			# 指定数据库的数量</div><div class="line"></div><div class="line">################################ SNAPSHOTTING  ################################</div><div class="line">save 900 1			# 每900秒(15分钟)至少一次键值变更时被触发</div><div class="line">save 300 10			# 每300秒(5分钟)至少10次键值变更时被触发</div><div class="line">save 60 10000			# 每60秒至少10000次键值变更时被触发</div><div class="line">stop-writes-on-bgsave-error yes	# 后台存储错误停止写</div><div class="line">rdbcompression yes		# 存储至本地数据库时(持久化到rdb文件)是否压缩数据 默认为 yes</div><div class="line">rdbchecksum yes			# 读取和写入的时候是否支持CRC64校验 默认是开启的</div><div class="line">dbfilename dump.rdb 		# 镜像文件的名字</div><div class="line">dir ./ 				# 当前工作目录 配置文件和镜像文件等都在此目录下</div><div class="line"></div><div class="line">################################# REPLICATION #################################</div><div class="line">slave-serve-stale-data yes	# 当slave服务器和master服务器失去连接后，</div><div class="line">				或者当数据正在复制传输的时候，如果此参数值设置“yes”</div><div class="line">				slave服务器可以继续接受客户端的请求，</div><div class="line">				否则，会返回给请求的客户端如下信息</div><div class="line">				“SYNC with master in progress”</div><div class="line"></div><div class="line">slave-read-only yes		# 是否允许slave服务器节点只提供读服务</div><div class="line">repl-diskless-sync no 		# disk较慢，并且网络较快的时候，</div><div class="line">				可以用diskless。（默认用disk-based）</div><div class="line"></div><div class="line">repl-diskless-sync-delay 5	# 备份等待延迟时间 seconds</div><div class="line">repl-disable-tcp-nodelay no 	# 指定向slave同步数据时，是否禁用socket的NO_DELAY选 项。</div><div class="line">				若配置为“yes”，则禁用NO_DELAY，则TCP协议栈会合并小包统一发送，</div><div class="line">				这样可以减少主从节点间的包数量并节省带宽，但会增加数据同步到</div><div class="line">				slave的时间。若配置为“no”，表明启用NO_DELAY，则TCP协议栈不</div><div class="line">				会延迟小包的发送时机，这样数据同步的延时会减少，但需要更大的带宽。</div><div class="line">				通常情况下，应该配置为no以降低同步延时，</div><div class="line">				但在主从节点间网络负载已经很高的情况下，可以配置为yes</div><div class="line"></div><div class="line">slave-priority 100		# 指定slave的优先级。在不只1个slave存在的部署环境下，</div><div class="line">				当master宕机时，Redis Sentinel会将priority值最小的slave</div><div class="line">				提升为master需要注意的是，若该配置项为0，则对应的slave永远</div><div class="line">				不会自动提升为master</div><div class="line"></div><div class="line">############################## APPEND ONLY MODE ###############################</div><div class="line">appendonly no 			# 开启append only 模式之后，redis 会把所接收到的每一次写</div><div class="line">				操作请求都追加到appendonly.aof 文件中，当redis 重新启动时，</div><div class="line">				会从该文件恢复出之前的状态。但是这样会造成appendonly.aof </div><div class="line">				文件过大，所以redis 还支持了BGREWRITEAOF 指令，</div><div class="line">				对appendonly.aof 进行重新整理。默认是不开启的</div><div class="line"></div><div class="line">appendfilename &quot;appendonly.aof&quot;	# 默认为appendonly.aof</div><div class="line">appendfsync everysec		# 设置aof的同步频率，有三种选择</div><div class="line">				always、everysec、no，默认是everysec表示每秒同步一次</div><div class="line"></div><div class="line">no-appendfsync-on-rewrite no 	# 指定是否在后台aof文件rewrite期间调用fsync，</div><div class="line">				默认为no，表示要调用fsync（无论后台是否有子进程在刷盘）。</div><div class="line">				Redis在后台写RDB文件或重写afo文件期间会存在大量磁盘IO，</div><div class="line">				此时，在某些linux系统中，调用fsync可能会阻塞</div><div class="line"></div><div class="line">auto-aof-rewrite-percentage 100 # 指定Redis重写aof文件的条件，默认为100，</div><div class="line">				表示与上次rewrite的aof文件大小相比，当前aof文件增长量超过上</div><div class="line">				次afo文件大小的100%时，就会触发background rewrite。</div><div class="line">				若配置为0，则会禁用自动rewrite</div><div class="line"></div><div class="line">auto-aof-rewrite-min-size 64mb 	# 指定触发rewrite的aof文件大小。</div><div class="line">				若aof文件小于该值，即使当前文件的增量比例达到</div><div class="line">				auto-aof-rewrite-percentage的配置值，也不会触发自动</div><div class="line">				rewrite。即这两个配置项同时满足时，才会触发rewrite</div><div class="line"></div><div class="line">aof-load-truncated yes 		# 会自动发布一个log给客户端然后load（默认）</div><div class="line">				如果是no，用户必须手动redis-check-aof修复AOF文件才可以</div><div class="line"></div><div class="line">################################ LUA SCRIPTING  ###############################</div><div class="line">lua-time-limit 5000 		# 一个Lua脚本最长的执行时间，单位为毫秒</div><div class="line">				如果为0或负数表示无限执行时间，默认为5000</div><div class="line"></div><div class="line">################################## SLOW LOG ###################################</div><div class="line">slowlog-log-slower-than 10000 	# 设定执行时间，单位是微秒，执行时长超过该时间</div><div class="line">				的命令将会被记入log。-1表示不记录slow log; 0强制记录所有命令</div><div class="line"></div><div class="line">slowlog-max-len 128 		# 最多保存 128 条日志</div><div class="line"></div><div class="line">################################ LATENCY MONITOR ##############################</div><div class="line">latency-monitor-threshold 0	# 用LATENCY打印redis实例在跑命令时的耗时图表</div><div class="line">				只记录大于等于下边设置的值的操作。0的话，就是关闭监视。</div><div class="line">				可以动态开启</div><div class="line"></div><div class="line">############################# EVENT NOTIFICATION ##############################</div><div class="line">notify-keyspace-events &quot;&quot; 	# 如果开着开关。一个client进行了DEL操作在“foo”key</div><div class="line">				上在database0上。两个消息将会发布通过 </div><div class="line">				pub/sub默认所用的通知被禁用，因为用户通常不需要改特性</div><div class="line">				并且该特性会有性能损耗</div><div class="line"></div><div class="line">############################### ADVANCED CONFIG ###############################</div><div class="line">hash-max-ziplist-entries 512 	# hash类型的数据结构在编码上可以使用</div><div class="line">				ziplist和hashtable。ziplist的特点就是文件存储(以及内存存储)</div><div class="line">				所需的空间较小,在内容较小时,性能和hashtable几乎一样.因此redis</div><div class="line">				对hash类型默认采取ziplist。如果hash中条目的条目个数或者value</div><div class="line">				长度达到阀值,将会被重构为hashtable</div><div class="line">				这个参数指的是ziplist中允许存储的最大条目个数</div><div class="line">				默认为512，建议为128</div><div class="line"></div><div class="line">hash-max-ziplist-value 64	# ziplist中允许条目value值最大字节数，默认为64，建议为1024</div><div class="line">list-max-ziplist-size -2 	# 对于list类型,将会采取ziplist,linkedlist两种编码类型</div><div class="line">list-compress-depth 0		# 表示一个quicklist两端不被压缩的节点个数。</div><div class="line">				注：这里的节点个数是指quicklist双向链表的节点个数，</div><div class="line">				而不是指ziplist里面的数据项个数。实际上，一个</div><div class="line">				quicklist节点上的ziplist，如果被压缩，就是整体被压缩的</div><div class="line"></div><div class="line">				参数list-compress-depth的取值含义如下：</div><div class="line">				0: 是个特殊值，表示都不压缩。这是Redis的默认值。</div><div class="line">				1: 表示quicklist两端各有1个节点不压缩，中间的节点压缩。</div><div class="line">				2: 表示quicklist两端各有2个节点不压缩，中间的节点压缩。</div><div class="line">				3: 表示quicklist两端各有3个节点不压缩，中间的节点压缩。</div><div class="line">				依此类推</div><div class="line"></div><div class="line">				由于0是个特殊值，很容易看出quicklist的头节点和</div><div class="line">				尾节点总是不被压缩的，以便于在表的两端进行快速存取</div><div class="line"></div><div class="line">set-max-intset-entries 512 	# 当set类型中的数据都是数值类型，</div><div class="line">				并且set中整型元素的数量不超过指定值时，使用特殊的编码方式</div><div class="line"></div><div class="line">zset-max-ziplist-entries 128 	# 与hash和list类似 </div><div class="line">zset-max-ziplist-value 64 	# zsort也采用如下的配置来选择是否进行特殊编码来节省空间</div><div class="line">hll-sparse-max-bytes 3000 	# 这个限制包含了16个字节的头部，当一个HyperLogLog</div><div class="line">				使用sparse representation 超过了这个显示，它就会转换到</div><div class="line">				dense representation上</div><div class="line"></div><div class="line">activerehashing yes 		# 用来控制是否自动重建hash。Active rehashing每100微秒</div><div class="line">				使用1微秒cpu时间排序，以重组Redis的hash表。重建是通过一种</div><div class="line">				lazy方式，写入hash表的操作越多，需要执行rehashing的步骤</div><div class="line">				也越多，如果服务器当前空闲，那么rehashing操作会一直执行。</div><div class="line">				如果对实时性要求较高，难以接受redis时不时出现的2微秒的延迟，</div><div class="line">				则可以设置activerehashing为no，</div><div class="line">				否则建议设置为yes，以节省内存空间</div><div class="line"></div><div class="line">client-output-buffer-limit normal 0 0 0</div><div class="line">client-output-buffer-limit slave 256mb 64mb 60</div><div class="line">client-output-buffer-limit pubsub 32mb 8mb 60</div><div class="line">客户端buffer控制。在客户端与server进行的交互中,每个连接都会与一个buffer关联,</div><div class="line">此buffer用来队列化等待被client接受的响应信息。如果client不能及时的消费响应信息,</div><div class="line">那么buffer将会被不断积压而给server带来内存压力.如果buffer中积压的数据达到阀值,</div><div class="line">将会导致连接被关闭,buffer被移除。</div><div class="line">buffer控制类型包括:normal -&gt; 普通连接；slave -&gt;与slave之间的连接；</div><div class="line">pubsub -&gt;pub/sub类型连接，此类型的连接，往往会产生此种问题;</div><div class="line">因为pub端会密集的发布消息,但是sub端可能消费不足.</div><div class="line">指令格式:client-output-buffer-limit &lt;class&gt; &lt;hard&gt; &lt;soft&gt; &lt;seconds&gt;&quot;,</div><div class="line">其中hard表示buffer最大值,一旦达到阀值将立即关闭连接;</div><div class="line">soft表示&quot;容忍值&quot;,它和seconds配合,如果buffer值超过soft且持续时间达到了seconds,</div><div class="line">也将立即关闭连接,如果超过了soft但是在seconds之后，buffer数据小于了soft,连接将会被保留.</div><div class="line">其中hard和soft都设置为0,则表示禁用buffer控制.通常hard值大于soft</div><div class="line"></div><div class="line">hz 10  				# Redis server执行后台任务的频率,默认为10,</div><div class="line">				此值越大表示redis对&quot;间歇性task&quot;的执行次数越频繁(次数/秒)。</div><div class="line">				&quot;间歇性task&quot;包括&quot;过期集合&quot;检测、关闭&quot;空闲超时&quot;的连接等,此</div><div class="line">				值必须大于0且小于500。此值过小就意味着更多的cpu周期消耗,</div><div class="line">				后台task被轮询的次数更频繁。此值过大意味着&quot;内存敏感&quot;性较差。</div><div class="line">				建议采用默认值</div><div class="line"></div><div class="line">aof-rewrite-incremental-fsync yes # aof rewrite过程中,是否采取增量文件同步策略</div><div class="line">				默认为“yes”。 rewrite过程中,每32M数据进行一次文件同步</div><div class="line">				这样可以减少aof大文件写入对磁盘的操作次数</div></pre></td></tr></table></figure>
+<p><br><br><code>Redis</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;http://redis.io
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;解压-安装&quot;&gt;&lt;a href=&quot;#解压-安装&quot; c
+    
+    </summary>
+    
+    
+      <category term="Redis" scheme="http://yoursite.com/tags/Redis/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux 中 curl</title>
     <link href="http://yoursite.com/2016/10/11/018%20Linux%20%E4%B8%AD%20curl/"/>
     <id>http://yoursite.com/2016/10/11/018 Linux 中 curl/</id>
     <published>2016-10-11T00:00:00.000Z</published>
-    <updated>2016-10-13T11:55:38.000Z</updated>
+    <updated>2016-10-14T08:05:02.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>curl是利用URL语法在命令行方式下工作的开源文件传输工具。它被广泛应用在Unix、多种Linux发行版中，并且有DOS和Win32、Win64下的移植版本<br>Ubuntu 中默认没有安装：<code>apt-get install curl</code> 安装即可</p>
@@ -294,6 +374,31 @@
   </entry>
   
   <entry>
+    <title>Tomcat 相关问题及各个版本下载</title>
+    <link href="http://yoursite.com/2016/10/03/015%20Tomcat%20%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%84%E4%B8%AA%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://yoursite.com/2016/10/03/015 Tomcat 相关问题及各个版本下载/</id>
+    <published>2016-10-03T00:00:00.000Z</published>
+    <updated>2016-10-14T08:04:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Tomcat-Get-请求中文乱码"><a href="#Tomcat-Get-请求中文乱码" class="headerlink" title="Tomcat Get 请求中文乱码"></a>Tomcat Get 请求中文乱码</h1><p>到 Tmocat 目录 conf 下修改 server.xml 添加 <code>URIEncoding=&quot;UTF-8&quot;</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;Connector URIEncoding=&quot;UTF-8&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; connectionTimeout=&quot;20000&quot; redirectPort=&quot;8443&quot;/&gt;</div></pre></td></tr></table></figure>
+<h1 id="Tomcat-各个版本下载"><a href="#Tomcat-各个版本下载" class="headerlink" title="Tomcat 各个版本下载"></a>Tomcat 各个版本下载</h1><p><a href="http://archive.apache.org/dist/tomcat/" target="_blank" rel="external">http://archive.apache.org/dist/tomcat/</a></p>
+<pre><code>http://archive.apache.org/dist/tomcat/
+</code></pre><p><br><br><code>Tomcat</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Tomcat-Get-请求中文乱码&quot;&gt;&lt;a href=&quot;#Tomcat-Get-请求中文乱码&quot; class=&quot;headerlink&quot; title=&quot;Tomcat Get 请求中文乱码&quot;&gt;&lt;/a&gt;Tomcat Get 请求中文乱码&lt;/h1&gt;&lt;p&gt;到 Tmocat 目
+    
+    </summary>
+    
+    
+      <category term="Tomcat" scheme="http://yoursite.com/tags/Tomcat/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CentOS 6 安装 JDK</title>
     <link href="http://yoursite.com/2016/10/03/016%20CentOS%206%20%E5%AE%89%E8%A3%85JDK/"/>
     <id>http://yoursite.com/2016/10/03/016 CentOS 6 安装JDK/</id>
@@ -364,26 +469,47 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>Tomcat 各版本下载</title>
-    <link href="http://yoursite.com/2016/10/03/015%20Tomcat%20%E5%90%84%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD/"/>
-    <id>http://yoursite.com/2016/10/03/015 Tomcat 各版本下载/</id>
-    <published>2016-10-03T00:00:00.000Z</published>
-    <updated>2016-10-02T16:24:36.000Z</updated>
+    <title>CentOS 6 安装 / 更新 GCC 编译器</title>
+    <link href="http://yoursite.com/2016/10/01/014%20CentOS%206%20%E5%AE%89%E8%A3%85:%E6%9B%B4%E6%96%B0%20gcc%20%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    <id>http://yoursite.com/2016/10/01/014 CentOS 6 安装:更新 gcc 编译器/</id>
+    <published>2016-10-01T00:00:00.000Z</published>
+    <updated>2016-10-02T16:00:03.000Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://archive.apache.org/dist/tomcat/" target="_blank" rel="external">http://archive.apache.org/dist/tomcat/</a></p>
-<pre><code>http://archive.apache.org/dist/tomcat/
-</code></pre><p><br><br><code>Tomcat</code></p>
+    <content type="html"><![CDATA[<h1 id="使用-yum-安装-gcc"><a href="#使用-yum-安装-gcc" class="headerlink" title="使用 yum 安装 gcc"></a>使用 yum 安装 gcc</h1><p><strong> 安装 gcc  、 c++ 编译器以及内核文件 </strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install gcc gcc-c++ kernel-devel</div></pre></td></tr></table></figure>
+<h1 id="yum-安装的版本太低-就需要自己安装了"><a href="#yum-安装的版本太低-就需要自己安装了" class="headerlink" title="yum 安装的版本太低 就需要自己安装了"></a>yum 安装的版本太低 就需要自己安装了</h1><blockquote>
+<p>不建议在服务器上面下载 因为速度太慢了 下面这个网址 根据自己的需求下载指定版本 然后上传至服务器<br><code>http://gcc.skazkaforyou.com/releases/</code></p>
+</blockquote>
+<h1 id="下载-解压"><a href="#下载-解压" class="headerlink" title="下载 解压"></a>下载 解压</h1><p>在这里，我们将<code>gcc-4.9.1.tar.gz</code>解压到<code>/usr/local/src</code>目录中(当然你也可以指定其他目录)</p>
+<p>解压 <code>tar -xvzf gcc-4.9.1.tar.gz</code> <code>cd gcc-4.9.1</code></p>
+<h1 id="运行-download-prerequisites-脚本"><a href="#运行-download-prerequisites-脚本" class="headerlink" title="运行 download_prerequisites 脚本"></a>运行 download_prerequisites 脚本</h1><p><code>./contrib/download_prerequisites</code></p>
+<blockquote>
+<p>安装gcc需要下载诸如gmp、mpfr、mpc等依赖文件，执行download_prerequisites将会自动下载这些软件并解压到当前目录(文件不大，总共只有几MB，请耐心等待下载)</p>
+</blockquote>
+<h1 id="gcc-安装位置"><a href="#gcc-安装位置" class="headerlink" title="gcc 安装位置"></a>gcc 安装位置</h1><p>接着，就可以对gcc进行编译安装了。在此之前，我们先创建一个目录 <code>/usr/local/build/gcc-4.9.1</code> (你也可以自行指定其他目录)用于存放编译后的程序文件</p>
+<p><code>mkdir /usr/local/build/</code></p>
+<p><code>mkdir /usr/local/build/gcc-4.9.1</code></p>
+<p>跳转到编译后的程序文件存放目录<br><code>cd /usr/local/build/gcc-4.9.1</code><br>调用gcc源程序的configure(后面的参数选项可根据需要自行修改)，用于配置gcc<br><code>/usr/local/src/gcc-4.9.1/configure --enable-checking=release --enable-languages=c,c++ --disable-multilib</code><br>充分发挥CPU四核优势，启动四线程<br><code>make -j4</code></p>
+<h1 id="编译-gcc-源程序-需要消耗比较长的时间"><a href="#编译-gcc-源程序-需要消耗比较长的时间" class="headerlink" title="编译 gcc 源程序 需要消耗比较长的时间"></a>编译 gcc 源程序 需要消耗比较长的时间</h1><p><code>make</code></p>
+<blockquote>
+<p><code>make</code>命令这一过程耗费的时间非常多 我大概用了一个小时</p>
+</blockquote>
+<h1 id="安装-gcc"><a href="#安装-gcc" class="headerlink" title="安装 gcc"></a>安装 gcc</h1><p><code>make insatall</code></p>
+<h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1><p><strong>查看 gcc 版本</strong></p>
+<p><code>gcc -v</code> <strong>gcc version 4.9.1 (GCC) </strong></p>
+<p><br><br><code>CentOS</code> <code>GCC</code></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;http://archive.apache.org/dist/tomcat/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://archive.apache.org/dist/tomcat/&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code
+      &lt;h1 id=&quot;使用-yum-安装-gcc&quot;&gt;&lt;a href=&quot;#使用-yum-安装-gcc&quot; class=&quot;headerlink&quot; title=&quot;使用 yum 安装 gcc&quot;&gt;&lt;/a&gt;使用 yum 安装 gcc&lt;/h1&gt;&lt;p&gt;&lt;strong&gt; 安装 gcc  、 c++ 编译器
     
     </summary>
     
     
-      <category term="Tomcat" scheme="http://yoursite.com/tags/Tomcat/"/>
+      <category term="CentOS" scheme="http://yoursite.com/tags/CentOS/"/>
+    
+      <category term="GCC" scheme="http://yoursite.com/tags/GCC/"/>
     
   </entry>
   
@@ -434,51 +560,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
       <category term="Node.js" scheme="http://yoursite.com/tags/Node-js/"/>
     
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS 6 安装 / 更新 GCC 编译器</title>
-    <link href="http://yoursite.com/2016/10/01/014%20CentOS%206%20%E5%AE%89%E8%A3%85:%E6%9B%B4%E6%96%B0%20gcc%20%E7%BC%96%E8%AF%91%E5%99%A8/"/>
-    <id>http://yoursite.com/2016/10/01/014 CentOS 6 安装:更新 gcc 编译器/</id>
-    <published>2016-10-01T00:00:00.000Z</published>
-    <updated>2016-10-02T16:00:03.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="使用-yum-安装-gcc"><a href="#使用-yum-安装-gcc" class="headerlink" title="使用 yum 安装 gcc"></a>使用 yum 安装 gcc</h1><p><strong> 安装 gcc  、 c++ 编译器以及内核文件 </strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install gcc gcc-c++ kernel-devel</div></pre></td></tr></table></figure>
-<h1 id="yum-安装的版本太低-就需要自己安装了"><a href="#yum-安装的版本太低-就需要自己安装了" class="headerlink" title="yum 安装的版本太低 就需要自己安装了"></a>yum 安装的版本太低 就需要自己安装了</h1><blockquote>
-<p>不建议在服务器上面下载 因为速度太慢了 下面这个网址 根据自己的需求下载指定版本 然后上传至服务器<br><code>http://gcc.skazkaforyou.com/releases/</code></p>
-</blockquote>
-<h1 id="下载-解压"><a href="#下载-解压" class="headerlink" title="下载 解压"></a>下载 解压</h1><p>在这里，我们将<code>gcc-4.9.1.tar.gz</code>解压到<code>/usr/local/src</code>目录中(当然你也可以指定其他目录)</p>
-<p>解压 <code>tar -xvzf gcc-4.9.1.tar.gz</code> <code>cd gcc-4.9.1</code></p>
-<h1 id="运行-download-prerequisites-脚本"><a href="#运行-download-prerequisites-脚本" class="headerlink" title="运行 download_prerequisites 脚本"></a>运行 download_prerequisites 脚本</h1><p><code>./contrib/download_prerequisites</code></p>
-<blockquote>
-<p>安装gcc需要下载诸如gmp、mpfr、mpc等依赖文件，执行download_prerequisites将会自动下载这些软件并解压到当前目录(文件不大，总共只有几MB，请耐心等待下载)</p>
-</blockquote>
-<h1 id="gcc-安装位置"><a href="#gcc-安装位置" class="headerlink" title="gcc 安装位置"></a>gcc 安装位置</h1><p>接着，就可以对gcc进行编译安装了。在此之前，我们先创建一个目录 <code>/usr/local/build/gcc-4.9.1</code> (你也可以自行指定其他目录)用于存放编译后的程序文件</p>
-<p><code>mkdir /usr/local/build/</code></p>
-<p><code>mkdir /usr/local/build/gcc-4.9.1</code></p>
-<p>跳转到编译后的程序文件存放目录<br><code>cd /usr/local/build/gcc-4.9.1</code><br>调用gcc源程序的configure(后面的参数选项可根据需要自行修改)，用于配置gcc<br><code>/usr/local/src/gcc-4.9.1/configure --enable-checking=release --enable-languages=c,c++ --disable-multilib</code><br>充分发挥CPU四核优势，启动四线程<br><code>make -j4</code></p>
-<h1 id="编译-gcc-源程序-需要消耗比较长的时间"><a href="#编译-gcc-源程序-需要消耗比较长的时间" class="headerlink" title="编译 gcc 源程序 需要消耗比较长的时间"></a>编译 gcc 源程序 需要消耗比较长的时间</h1><p><code>make</code></p>
-<blockquote>
-<p><code>make</code>命令这一过程耗费的时间非常多 我大概用了一个小时</p>
-</blockquote>
-<h1 id="安装-gcc"><a href="#安装-gcc" class="headerlink" title="安装 gcc"></a>安装 gcc</h1><p><code>make insatall</code></p>
-<h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1><p><strong>查看 gcc 版本</strong></p>
-<p><code>gcc -v</code> <strong>gcc version 4.9.1 (GCC) </strong></p>
-<p><br><br><code>CentOS</code> <code>GCC</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;使用-yum-安装-gcc&quot;&gt;&lt;a href=&quot;#使用-yum-安装-gcc&quot; class=&quot;headerlink&quot; title=&quot;使用 yum 安装 gcc&quot;&gt;&lt;/a&gt;使用 yum 安装 gcc&lt;/h1&gt;&lt;p&gt;&lt;strong&gt; 安装 gcc  、 c++ 编译器
-    
-    </summary>
-    
-    
-      <category term="CentOS" scheme="http://yoursite.com/tags/CentOS/"/>
-    
-      <category term="GCC" scheme="http://yoursite.com/tags/GCC/"/>
     
   </entry>
   
@@ -548,6 +629,163 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
       <category term="Nginx" scheme="http://yoursite.com/tags/Nginx/"/>
     
       <category term="服务器" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 中 System.getProperty() 方法可以获取系统的那些值</title>
+    <link href="http://yoursite.com/2016/09/27/009%20Java%20%E4%B8%AD%20System.getProperty()%20%E6%96%B9%E6%B3%95%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%82%A3%E4%BA%9B%E5%80%BC/"/>
+    <id>http://yoursite.com/2016/09/27/009 Java 中 System.getProperty() 方法可以获取系统的那些值/</id>
+    <published>2016-09-27T00:00:00.000Z</published>
+    <updated>2016-09-26T17:04:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>-</th>
+<th>-</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>java.version</td>
+<td>Java 运行时环境版本</td>
+</tr>
+<tr>
+<td>java.vendor</td>
+<td>Java 运行时环境供应商</td>
+</tr>
+<tr>
+<td>java.vendor.url</td>
+<td>Java 供应商的 URL</td>
+</tr>
+<tr>
+<td>java.home</td>
+<td>Java 安装目录</td>
+</tr>
+<tr>
+<td>java.vm.specification.version</td>
+<td>Java 虚拟机规范版本</td>
+</tr>
+<tr>
+<td>java.vm.specification.vendor</td>
+<td>Java 虚拟机规范供应商</td>
+</tr>
+<tr>
+<td>java.vm.specification.name</td>
+<td>Java 虚拟机规范名称</td>
+</tr>
+<tr>
+<td>java.vm.version</td>
+<td>Java 虚拟机实现版本</td>
+</tr>
+<tr>
+<td>java.vm.vendor</td>
+<td>Java 虚拟机实现供应商</td>
+</tr>
+<tr>
+<td>java.vm.name</td>
+<td>Java 虚拟机实现名称</td>
+</tr>
+<tr>
+<td>java.specification.version</td>
+<td>Java 运行时环境规范版本</td>
+</tr>
+<tr>
+<td>java.specification.vendor</td>
+<td>Java 运行时环境规范供应商</td>
+</tr>
+<tr>
+<td>java.specification.name</td>
+<td>Java 运行时环境规范名称</td>
+</tr>
+<tr>
+<td>java.class.version</td>
+<td>Java 类格式版本号</td>
+</tr>
+<tr>
+<td>java.class.path</td>
+<td>Java 类路径</td>
+</tr>
+<tr>
+<td>java.library.path</td>
+<td>加载库时搜索的路径列表</td>
+</tr>
+<tr>
+<td>java.io.tmpdir</td>
+<td>默认的临时文件路径</td>
+</tr>
+<tr>
+<td>java.compiler</td>
+<td>要使用的 JIT 编译器的名称</td>
+</tr>
+<tr>
+<td>java.ext.dirs</td>
+<td>一个或多个扩展目录的路径</td>
+</tr>
+<tr>
+<td>os.name</td>
+<td>操作系统的名称</td>
+</tr>
+<tr>
+<td>os.arch</td>
+<td>操作系统的架构</td>
+</tr>
+<tr>
+<td>os.version</td>
+<td>操作系统的版本</td>
+</tr>
+<tr>
+<td>file.separator</td>
+<td>文件分隔符（在 UNIX 系统中是“/”）</td>
+</tr>
+<tr>
+<td>path.separator</td>
+<td>路径分隔符（在 UNIX 系统中是“:”）</td>
+</tr>
+<tr>
+<td>line.separator</td>
+<td>行分隔符（在 UNIX 系统中是“/n”）</td>
+</tr>
+<tr>
+<td>user.name</td>
+<td>用户的账户名称</td>
+</tr>
+<tr>
+<td>user.home</td>
+<td>用户的主目录</td>
+</tr>
+<tr>
+<td>user.dir</td>
+<td>用户的当前工作目录</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">System.getProperty(<span class="string">"user.dir"</span>)</div></pre></td></tr></table></figure>
+<p><br><br><code>Java</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;-&lt;/th&gt;
+&lt;th&gt;-&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;java.version&lt;/td&gt;
+&lt;td&gt;Java 运行时环境版本&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;java.vendo
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
   </entry>
   
@@ -801,163 +1039,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>Java 中 System.getProperty() 方法可以获取系统的那些值</title>
-    <link href="http://yoursite.com/2016/09/27/009%20Java%20%E4%B8%AD%20System.getProperty()%20%E6%96%B9%E6%B3%95%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%82%A3%E4%BA%9B%E5%80%BC/"/>
-    <id>http://yoursite.com/2016/09/27/009 Java 中 System.getProperty() 方法可以获取系统的那些值/</id>
-    <published>2016-09-27T00:00:00.000Z</published>
-    <updated>2016-09-26T17:04:54.000Z</updated>
-    
-    <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th>-</th>
-<th>-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>java.version</td>
-<td>Java 运行时环境版本</td>
-</tr>
-<tr>
-<td>java.vendor</td>
-<td>Java 运行时环境供应商</td>
-</tr>
-<tr>
-<td>java.vendor.url</td>
-<td>Java 供应商的 URL</td>
-</tr>
-<tr>
-<td>java.home</td>
-<td>Java 安装目录</td>
-</tr>
-<tr>
-<td>java.vm.specification.version</td>
-<td>Java 虚拟机规范版本</td>
-</tr>
-<tr>
-<td>java.vm.specification.vendor</td>
-<td>Java 虚拟机规范供应商</td>
-</tr>
-<tr>
-<td>java.vm.specification.name</td>
-<td>Java 虚拟机规范名称</td>
-</tr>
-<tr>
-<td>java.vm.version</td>
-<td>Java 虚拟机实现版本</td>
-</tr>
-<tr>
-<td>java.vm.vendor</td>
-<td>Java 虚拟机实现供应商</td>
-</tr>
-<tr>
-<td>java.vm.name</td>
-<td>Java 虚拟机实现名称</td>
-</tr>
-<tr>
-<td>java.specification.version</td>
-<td>Java 运行时环境规范版本</td>
-</tr>
-<tr>
-<td>java.specification.vendor</td>
-<td>Java 运行时环境规范供应商</td>
-</tr>
-<tr>
-<td>java.specification.name</td>
-<td>Java 运行时环境规范名称</td>
-</tr>
-<tr>
-<td>java.class.version</td>
-<td>Java 类格式版本号</td>
-</tr>
-<tr>
-<td>java.class.path</td>
-<td>Java 类路径</td>
-</tr>
-<tr>
-<td>java.library.path</td>
-<td>加载库时搜索的路径列表</td>
-</tr>
-<tr>
-<td>java.io.tmpdir</td>
-<td>默认的临时文件路径</td>
-</tr>
-<tr>
-<td>java.compiler</td>
-<td>要使用的 JIT 编译器的名称</td>
-</tr>
-<tr>
-<td>java.ext.dirs</td>
-<td>一个或多个扩展目录的路径</td>
-</tr>
-<tr>
-<td>os.name</td>
-<td>操作系统的名称</td>
-</tr>
-<tr>
-<td>os.arch</td>
-<td>操作系统的架构</td>
-</tr>
-<tr>
-<td>os.version</td>
-<td>操作系统的版本</td>
-</tr>
-<tr>
-<td>file.separator</td>
-<td>文件分隔符（在 UNIX 系统中是“/”）</td>
-</tr>
-<tr>
-<td>path.separator</td>
-<td>路径分隔符（在 UNIX 系统中是“:”）</td>
-</tr>
-<tr>
-<td>line.separator</td>
-<td>行分隔符（在 UNIX 系统中是“/n”）</td>
-</tr>
-<tr>
-<td>user.name</td>
-<td>用户的账户名称</td>
-</tr>
-<tr>
-<td>user.home</td>
-<td>用户的主目录</td>
-</tr>
-<tr>
-<td>user.dir</td>
-<td>用户的当前工作目录</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">System.getProperty(<span class="string">"user.dir"</span>)</div></pre></td></tr></table></figure>
-<p><br><br><code>Java</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;-&lt;/th&gt;
-&lt;th&gt;-&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;java.version&lt;/td&gt;
-&lt;td&gt;Java 运行时环境版本&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;java.vendo
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Struts 各版本 jar包 下载</title>
     <link href="http://yoursite.com/2016/09/27/008%20Struts%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
     <id>http://yoursite.com/2016/09/27/008 Struts 各版本 jar包 下载/</id>
@@ -1034,6 +1115,28 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
+    <title>Apple 系统固件下载地址</title>
+    <link href="http://yoursite.com/2016/09/26/005%20Apple%20%E7%B3%BB%E7%BB%9F%E5%9B%BA%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/"/>
+    <id>http://yoursite.com/2016/09/26/005 Apple 系统固件下载地址/</id>
+    <published>2016-09-26T00:00:00.000Z</published>
+    <updated>2016-09-25T18:41:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><a href="https://support.apple.com/zh_CN/downloads/" target="_blank" rel="external">https://support.apple.com/zh_CN/downloads/</a></p>
+<p><br><br><code>Apple</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://support.apple.com/zh_CN/downloads/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://support.apple.com/zh_CN/downloads/&lt;/a
+    
+    </summary>
+    
+    
+      <category term="Apple" scheme="http://yoursite.com/tags/Apple/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MySQL 数据库编码方式修改</title>
     <link href="http://yoursite.com/2016/09/26/004%20MySQL%20%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F%E4%BF%AE%E6%94%B9/"/>
     <id>http://yoursite.com/2016/09/26/004 MySQL 数据库编码方式修改/</id>
@@ -1066,28 +1169,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>Apple 系统固件下载地址</title>
-    <link href="http://yoursite.com/2016/09/26/005%20Apple%20%E7%B3%BB%E7%BB%9F%E5%9B%BA%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/"/>
-    <id>http://yoursite.com/2016/09/26/005 Apple 系统固件下载地址/</id>
-    <published>2016-09-26T00:00:00.000Z</published>
-    <updated>2016-09-25T18:41:47.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><a href="https://support.apple.com/zh_CN/downloads/" target="_blank" rel="external">https://support.apple.com/zh_CN/downloads/</a></p>
-<p><br><br><code>Apple</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://support.apple.com/zh_CN/downloads/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://support.apple.com/zh_CN/downloads/&lt;/a
-    
-    </summary>
-    
-    
-      <category term="Apple" scheme="http://yoursite.com/tags/Apple/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Mac 修改 Dock 栏隐藏的速度</title>
     <link href="http://yoursite.com/2016/09/25/003%20Mac%20%E4%BF%AE%E6%94%B9%20Dock%20%E6%A0%8F%E9%9A%90%E8%97%8F%E7%9A%84%E9%80%9F%E5%BA%A6/"/>
     <id>http://yoursite.com/2016/09/25/003 Mac 修改 Dock 栏隐藏的速度/</id>
@@ -1111,16 +1192,14 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>Mac 显示隐藏文件</title>
-    <link href="http://yoursite.com/2016/09/25/002%20Mac%20%E6%98%BE%E7%A4%BA%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/"/>
-    <id>http://yoursite.com/2016/09/25/002 Mac 显示隐藏文件/</id>
+    <title>Mac 电脑设置 Finder 可以退出</title>
+    <link href="http://yoursite.com/2016/09/25/001%20Mac%20%E7%94%B5%E8%84%91%E8%AE%BE%E7%BD%AE%20Finder%20%E5%8F%AF%E4%BB%A5%E9%80%80%E5%87%BA/"/>
+    <id>http://yoursite.com/2016/09/25/001 Mac 电脑设置 Finder 可以退出/</id>
     <published>2016-09-25T00:00:00.000Z</published>
-    <updated>2016-09-25T18:32:45.000Z</updated>
+    <updated>2016-09-27T01:54:05.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">true</span></div></pre></td></tr></table></figure>
-<h1 id="生效"><a href="#生效" class="headerlink" title="生效"></a>生效</h1><p><strong>强制退出 Finder</strong>  <code>commend + option + esc</code> </p>
-<p><br></p>
-<h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">false</span></div></pre></td></tr></table></figure>
+    <content type="html"><![CDATA[<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.Finder QuitMenuItem 1</div></pre></td></tr></table></figure>
+<h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.Finder QuitMenuItem 0</div></pre></td></tr></table></figure>
 <p><br><br><code>Mac</code></p>
 ]]></content>
     
@@ -1136,14 +1215,16 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>Mac 电脑设置 Finder 可以退出</title>
-    <link href="http://yoursite.com/2016/09/25/001%20Mac%20%E7%94%B5%E8%84%91%E8%AE%BE%E7%BD%AE%20Finder%20%E5%8F%AF%E4%BB%A5%E9%80%80%E5%87%BA/"/>
-    <id>http://yoursite.com/2016/09/25/001 Mac 电脑设置 Finder 可以退出/</id>
+    <title>Mac 显示隐藏文件</title>
+    <link href="http://yoursite.com/2016/09/25/002%20Mac%20%E6%98%BE%E7%A4%BA%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/"/>
+    <id>http://yoursite.com/2016/09/25/002 Mac 显示隐藏文件/</id>
     <published>2016-09-25T00:00:00.000Z</published>
-    <updated>2016-09-27T01:54:05.000Z</updated>
+    <updated>2016-09-25T18:32:45.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.Finder QuitMenuItem 1</div></pre></td></tr></table></figure>
-<h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.Finder QuitMenuItem 0</div></pre></td></tr></table></figure>
+    <content type="html"><![CDATA[<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">true</span></div></pre></td></tr></table></figure>
+<h1 id="生效"><a href="#生效" class="headerlink" title="生效"></a>生效</h1><p><strong>强制退出 Finder</strong>  <code>commend + option + esc</code> </p>
+<p><br></p>
+<h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">false</span></div></pre></td></tr></table></figure>
 <p><br><br><code>Mac</code></p>
 ]]></content>
     
