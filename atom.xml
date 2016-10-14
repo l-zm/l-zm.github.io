@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-13T16:20:18.000Z</updated>
+  <updated>2016-10-14T07:38:25.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,12 +20,15 @@
     <link href="http://yoursite.com/2016/10/14/019%20Linux%20%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
     <id>http://yoursite.com/2016/10/14/019 Linux 操作命令/</id>
     <published>2016-10-14T00:00:00.000Z</published>
-    <updated>2016-10-13T16:20:18.000Z</updated>
+    <updated>2016-10-14T07:38:25.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="复制-剪切-粘贴"><a href="#复制-剪切-粘贴" class="headerlink" title="复制 剪切 粘贴"></a>复制 剪切 粘贴</h1><blockquote>
-<p><strong>复制的命令是 <code>y</code> 即yank(提起) 常用的命令如下</strong><br>y     在使用v模式选定了某一块的时候，复制选定块到缓冲区用<br>yy     复制整行 (nyy或者yny ，复制n行，n为数字）<br>y^     复制当前到行头的内容<br>y$     复制当前到行尾的内容<br>yw     复制一个word (nyw或者ynw，复制n个word，n为数字）<br>yG     复制至档尾(nyG或者ynG，复制到第n行，例如1yG或者y1G，复制到档尾）<br><strong>剪切的命令是 <code>d</code> 即delete d与y命令基本类似 所以两个命令用法一样 包括含有数字的用法</strong><br>d     剪切选定块到缓冲区；<br>dd     剪切整行<br>d^     剪切至行首<br>d$     剪切至行尾<br>dw     剪切一个word<br>dG     剪切至档尾</p>
-<p><strong>粘贴的命令式 <code>p</code> 即put(放下）</strong><br>p     小写p代表贴至游标后（下）, 因为游标是在具体字符的位置上, 所以实际是在该字符的后面<br>P     大写P代表贴至游标前（上）整行的复制粘贴在游标的上（下）一行，非整行的复制则是粘贴在游标的前（后）<br>    注：<br>    在正则表达式中，^表示匹配字符串的开始位置，$表示匹配字符串的结束位置。<br>    命令前面加数字表示重复的次数，加字母表示使用的缓冲区名称。使用英文句号”.”可以重复上一个命令。<br>    在复制粘贴时，另一组常用的命令是u（撤销操作），U（撤销某一行最近所有修改），Ctrl+R（重做），<br>    这些功能主要是vim中的，vi中略有差别</p>
+<p><strong>复制的命令是 <code>y</code> 即yank(提起) 常用的命令如下</strong><br>y     在使用v模式选定了某一块的时候，复制选定块到缓冲区用<br>yy     复制整行 (nyy或者yny ，复制n行，n为数字）<br>y^     复制当前到行头的内容<br>y$     复制当前到行尾的内容<br>yw     复制一个word (nyw或者ynw，复制n个word，n为数字）<br>yG     复制至档尾(nyG或者ynG，复制到第n行，例如1yG或者y1G，复制到档尾）<br><strong>剪切的命令是 <code>d</code> 即delete d与y命令基本类似 所以两个命令用法一样 包括含有数字的用法</strong><br>d     剪切选定块到缓冲区；<br>dd     剪切整行<br>d^     剪切至行首<br>d$     剪切至行尾<br>dw     剪切一个word<br>dG     剪切至档尾<br><strong>粘贴的命令式 <code>p</code> 即put(放下）</strong><br>p     小写p代表贴至游标后（下）, 因为游标是在具体字符的位置上, 所以实际是在该字符的后面<br>P     大写P代表贴至游标前（上）整行的复制粘贴在游标的上（下）一行，非整行的复制则是粘贴在游标的前（后）<br>    注：<br>    在正则表达式中，^表示匹配字符串的开始位置，$表示匹配字符串的结束位置。<br>    命令前面加数字表示重复的次数，加字母表示使用的缓冲区名称。使用英文句号”.”可以重复上一个命令。<br>    在复制粘贴时，另一组常用的命令是u（撤销操作），U（撤销某一行最近所有修改），Ctrl+R（重做），<br>    这些功能主要是vim中的，vi中略有差别</p>
 </blockquote>
+<h1 id="yum-y-update-upgrade"><a href="#yum-y-update-upgrade" class="headerlink" title="yum -y update / upgrade"></a>yum -y update / upgrade</h1><blockquote>
+<p><strong>yum -y upgrade 和 yum -y update 区别 </strong><br>yum -y update<br>升级所有包，改变软件设置和系统设置,系统版本内核都升级<br>yum -y upgrade<br>升级所有包，不改变软件设置和系统设置，系统版本升级，内核不改变</p>
+</blockquote>
+<h1 id="修改-文件-文件夹-名称"><a href="#修改-文件-文件夹-名称" class="headerlink" title="修改 文件 文件夹 名称"></a>修改 文件 文件夹 名称</h1><p>mv 修改前的文件名称 修改后的文件名称<br>mv 修改前的文件夹名称 修改后的文件夹名称</p>
 <p><br><br><code>Linux</code></p>
 ]]></content>
     
@@ -549,36 +552,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>Mac 电脑 U盘 重装系统</title>
-    <link href="http://yoursite.com/2016/09/27/006%20Mac%20%E7%94%B5%E8%84%91%20U%E7%9B%98%20%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
-    <id>http://yoursite.com/2016/09/27/006 Mac 电脑 U盘 重装系统/</id>
-    <published>2016-09-27T00:00:00.000Z</published>
-    <updated>2016-09-26T16:40:19.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h1><p><code>Install\ macOS\ Sierra.app</code></p>
-<p><strong> 最新的系统可以去 Apple Store 里面下载 </strong></p>
-<h1 id="U盘"><a href="#U盘" class="headerlink" title="U盘"></a>U盘</h1><p><code>lzmvlzm</code></p>
-<p><strong> U盘名称可以到磁盘工具里面查看 </strong></p>
-<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/lzmvlzm --applicationpath /Applications/Install\ macOS\ Sierra.app --nointeraction</div></pre></td></tr></table></figure>
-<h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><p><strong> 开机按下 <code>option</code> 键 </strong></p>
-<p><br><br><code>Mac</code> <code>系统</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;系统&quot;&gt;&lt;a href=&quot;#系统&quot; class=&quot;headerlink&quot; title=&quot;系统&quot;&gt;&lt;/a&gt;系统&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Install\ macOS\ Sierra.app&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt; 最新的系统可以去 Apple
-    
-    </summary>
-    
-    
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
-    
-      <category term="系统" scheme="http://yoursite.com/tags/%E7%B3%BB%E7%BB%9F/"/>
-    
-  </entry>
-  
-  <entry>
     <title>iOS 设置 Launch Image 启动图片尺寸 (闪图)</title>
     <link href="http://yoursite.com/2016/09/27/010%20iOS%20%E8%AE%BE%E7%BD%AE%20Launch%20Image%20%E5%90%AF%E5%8A%A8%E5%9B%BE%E7%89%87%E5%B0%BA%E5%AF%B8%20(%E9%97%AA%E5%9B%BE)%20/"/>
     <id>http://yoursite.com/2016/09/27/010 iOS 设置 Launch Image 启动图片尺寸 (闪图) /</id>
@@ -828,52 +801,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>Spring 各版本 jar包 下载</title>
-    <link href="http://yoursite.com/2016/09/27/007%20Spring%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
-    <id>http://yoursite.com/2016/09/27/007 Spring 各版本 jar包 下载/</id>
-    <published>2016-09-27T00:00:00.000Z</published>
-    <updated>2016-09-26T16:45:23.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://repo.spring.io/release/org/springframework/spring/" target="_blank" rel="external">http://repo.spring.io/release/org/springframework/spring/</a></p>
-<pre><code>http://repo.spring.io/release/org/springframework/spring/
-</code></pre><p><br><br><code>Spring</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://repo.spring.io/release/org/springframework/spring/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://repo.spring.io/release/org/spri
-    
-    </summary>
-    
-    
-      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Struts 各版本 jar包 下载</title>
-    <link href="http://yoursite.com/2016/09/27/008%20Struts%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
-    <id>http://yoursite.com/2016/09/27/008 Struts 各版本 jar包 下载/</id>
-    <published>2016-09-27T00:00:00.000Z</published>
-    <updated>2016-09-26T16:44:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://archive.apache.org/dist/struts/binaries/" target="_blank" rel="external">http://archive.apache.org/dist/struts/binaries/</a></p>
-<pre><code>http://archive.apache.org/dist/struts/binaries/
-</code></pre><p><br><br><code>Struts</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://archive.apache.org/dist/struts/binaries/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://archive.apache.org/dist/struts/binaries/&lt;
-    
-    </summary>
-    
-    
-      <category term="Struts" scheme="http://yoursite.com/tags/Struts/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Java 中 System.getProperty() 方法可以获取系统的那些值</title>
     <link href="http://yoursite.com/2016/09/27/009%20Java%20%E4%B8%AD%20System.getProperty()%20%E6%96%B9%E6%B3%95%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%82%A3%E4%BA%9B%E5%80%BC/"/>
     <id>http://yoursite.com/2016/09/27/009 Java 中 System.getProperty() 方法可以获取系统的那些值/</id>
@@ -1031,24 +958,78 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>Apple 系统固件下载地址</title>
-    <link href="http://yoursite.com/2016/09/26/005%20Apple%20%E7%B3%BB%E7%BB%9F%E5%9B%BA%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/"/>
-    <id>http://yoursite.com/2016/09/26/005 Apple 系统固件下载地址/</id>
-    <published>2016-09-26T00:00:00.000Z</published>
-    <updated>2016-09-25T18:41:47.000Z</updated>
+    <title>Struts 各版本 jar包 下载</title>
+    <link href="http://yoursite.com/2016/09/27/008%20Struts%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://yoursite.com/2016/09/27/008 Struts 各版本 jar包 下载/</id>
+    <published>2016-09-27T00:00:00.000Z</published>
+    <updated>2016-09-26T16:44:48.000Z</updated>
     
-    <content type="html"><![CDATA[<p><br><br><a href="https://support.apple.com/zh_CN/downloads/" target="_blank" rel="external">https://support.apple.com/zh_CN/downloads/</a></p>
-<p><br><br><code>Apple</code></p>
+    <content type="html"><![CDATA[<p><a href="http://archive.apache.org/dist/struts/binaries/" target="_blank" rel="external">http://archive.apache.org/dist/struts/binaries/</a></p>
+<pre><code>http://archive.apache.org/dist/struts/binaries/
+</code></pre><p><br><br><code>Struts</code></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://support.apple.com/zh_CN/downloads/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://support.apple.com/zh_CN/downloads/&lt;/a
+      &lt;p&gt;&lt;a href=&quot;http://archive.apache.org/dist/struts/binaries/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://archive.apache.org/dist/struts/binaries/&lt;
     
     </summary>
     
     
-      <category term="Apple" scheme="http://yoursite.com/tags/Apple/"/>
+      <category term="Struts" scheme="http://yoursite.com/tags/Struts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac 电脑 U盘 重装系统</title>
+    <link href="http://yoursite.com/2016/09/27/006%20Mac%20%E7%94%B5%E8%84%91%20U%E7%9B%98%20%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://yoursite.com/2016/09/27/006 Mac 电脑 U盘 重装系统/</id>
+    <published>2016-09-27T00:00:00.000Z</published>
+    <updated>2016-09-26T16:40:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h1><p><code>Install\ macOS\ Sierra.app</code></p>
+<p><strong> 最新的系统可以去 Apple Store 里面下载 </strong></p>
+<h1 id="U盘"><a href="#U盘" class="headerlink" title="U盘"></a>U盘</h1><p><code>lzmvlzm</code></p>
+<p><strong> U盘名称可以到磁盘工具里面查看 </strong></p>
+<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/lzmvlzm --applicationpath /Applications/Install\ macOS\ Sierra.app --nointeraction</div></pre></td></tr></table></figure>
+<h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><p><strong> 开机按下 <code>option</code> 键 </strong></p>
+<p><br><br><code>Mac</code> <code>系统</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;系统&quot;&gt;&lt;a href=&quot;#系统&quot; class=&quot;headerlink&quot; title=&quot;系统&quot;&gt;&lt;/a&gt;系统&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Install\ macOS\ Sierra.app&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; 最新的系统可以去 Apple
+    
+    </summary>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+      <category term="系统" scheme="http://yoursite.com/tags/%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring 各版本 jar包 下载</title>
+    <link href="http://yoursite.com/2016/09/27/007%20Spring%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://yoursite.com/2016/09/27/007 Spring 各版本 jar包 下载/</id>
+    <published>2016-09-27T00:00:00.000Z</published>
+    <updated>2016-09-26T16:45:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://repo.spring.io/release/org/springframework/spring/" target="_blank" rel="external">http://repo.spring.io/release/org/springframework/spring/</a></p>
+<pre><code>http://repo.spring.io/release/org/springframework/spring/
+</code></pre><p><br><br><code>Spring</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://repo.spring.io/release/org/springframework/spring/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://repo.spring.io/release/org/spri
+    
+    </summary>
+    
+    
+      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
     
   </entry>
   
@@ -1085,27 +1066,24 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>Mac 显示隐藏文件</title>
-    <link href="http://yoursite.com/2016/09/25/002%20Mac%20%E6%98%BE%E7%A4%BA%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/"/>
-    <id>http://yoursite.com/2016/09/25/002 Mac 显示隐藏文件/</id>
-    <published>2016-09-25T00:00:00.000Z</published>
-    <updated>2016-09-25T18:32:45.000Z</updated>
+    <title>Apple 系统固件下载地址</title>
+    <link href="http://yoursite.com/2016/09/26/005%20Apple%20%E7%B3%BB%E7%BB%9F%E5%9B%BA%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/"/>
+    <id>http://yoursite.com/2016/09/26/005 Apple 系统固件下载地址/</id>
+    <published>2016-09-26T00:00:00.000Z</published>
+    <updated>2016-09-25T18:41:47.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">true</span></div></pre></td></tr></table></figure>
-<h1 id="生效"><a href="#生效" class="headerlink" title="生效"></a>生效</h1><p><strong>强制退出 Finder</strong>  <code>commend + option + esc</code> </p>
-<p><br></p>
-<h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">false</span></div></pre></td></tr></table></figure>
-<p><br><br><code>Mac</code></p>
+    <content type="html"><![CDATA[<p><br><br><a href="https://support.apple.com/zh_CN/downloads/" target="_blank" rel="external">https://support.apple.com/zh_CN/downloads/</a></p>
+<p><br><br><code>Apple</code></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;终端输入&quot;&gt;&lt;a href=&quot;#终端输入&quot; class=&quot;headerlink&quot; title=&quot;终端输入&quot;&gt;&lt;/a&gt;终端输入&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://support.apple.com/zh_CN/downloads/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://support.apple.com/zh_CN/downloads/&lt;/a
     
     </summary>
     
     
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+      <category term="Apple" scheme="http://yoursite.com/tags/Apple/"/>
     
   </entry>
   
@@ -1124,6 +1102,31 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
     <summary type="html">
     
       &lt;h1 id=&quot;修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot;&gt;&lt;a href=&quot;#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot; class=&quot;headerlink&quot; title=&quot;修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5
+    
+    </summary>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac 显示隐藏文件</title>
+    <link href="http://yoursite.com/2016/09/25/002%20Mac%20%E6%98%BE%E7%A4%BA%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/"/>
+    <id>http://yoursite.com/2016/09/25/002 Mac 显示隐藏文件/</id>
+    <published>2016-09-25T00:00:00.000Z</published>
+    <updated>2016-09-25T18:32:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">true</span></div></pre></td></tr></table></figure>
+<h1 id="生效"><a href="#生效" class="headerlink" title="生效"></a>生效</h1><p><strong>强制退出 Finder</strong>  <code>commend + option + esc</code> </p>
+<p><br></p>
+<h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">false</span></div></pre></td></tr></table></figure>
+<p><br><br><code>Mac</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;终端输入&quot;&gt;&lt;a href=&quot;#终端输入&quot; class=&quot;headerlink&quot; title=&quot;终端输入&quot;&gt;&lt;/a&gt;终端输入&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre
     
     </summary>
     
