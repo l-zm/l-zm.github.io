@@ -63,12 +63,12 @@ Maven
     <link href="http://yoursite.com/2016/10/14/020%20Redis%E5%AE%89%E8%A3%85%E5%8F%8ARedis-sentinel%20(%E5%93%A8%E5%85%B5%E6%A8%A1%E5%BC%8F)%E9%9B%86%E7%BE%A4%E6%96%B9%E6%A1%88%E9%85%8D%E7%BD%AE/"/>
     <id>http://yoursite.com/2016/10/14/020 Redis安装及Redis-sentinel (哨兵模式)集群方案配置/</id>
     <published>2016-10-14T00:00:00.000Z</published>
-    <updated>2016-10-14T16:14:55.000Z</updated>
+    <updated>2016-10-20T08:19:51.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><pre><code>http://redis.io
 </code></pre><h1 id="解压-安装"><a href="#解压-安装" class="headerlink" title="解压 安装"></a>解压 安装</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">tar xvzf redis-3.2.4.tar.gz</div><div class="line">mv redis-3.2.4 /usr/local</div><div class="line">cd /usr/local/redis-3.2.4/</div><div class="line">make</div><div class="line">make test</div></pre></td></tr></table></figure>
 <blockquote>
-<p><strong>问题1: </strong><br>make[2]: cc: Command not found<br>异常原因：没有安装 gcc<br>解决方案：<code>yum install gcc-c++</code><br><strong>问题2: </strong><br>You need tcl 8.5 or newer in order to run the Redis test<br>异常原因：没有安装 tcl<br>解决方案：<code>yum install -y tcl</code><br><strong>问题3: </strong><br>zmalloc.h:51:31: error: jemalloc/jemalloc.h: No such file or directory<br>异常原因：一些编译依赖或原来编译遗留出现的问题<br>解决方案：<code>make distclean</code> 清理一下 然后再 <code>make</code></p>
+<p><strong>问题1: </strong><br>make[2]: cc: Command not found<br>异常原因：没有安装 gcc<br>解决方案：<code>yum install gcc-c++</code><br><strong>问题2: </strong><br>You need tcl 8.5 or newer in order to run the Redis test<br>异常原因：没有安装 tcl<br>解决方案：<code>yum install -y tcl</code><br>解决方案 (Ubuntu)：<code>apt-get install tcl8.5 tcl8.5-dev tk8.5 tk8.5-dev</code><br><strong>问题3: </strong><br>zmalloc.h:51:31: error: jemalloc/jemalloc.h: No such file or directory<br>异常原因：一些编译依赖或原来编译遗留出现的问题<br>解决方案：<code>make distclean</code> 清理一下 然后再 <code>make</code><br><strong>问题4: </strong><br>E: Unable to fetch some archives, maybe run apt-get update or try with –fix-missing?<br>解决方案：<code>apt-get update</code></p>
 </blockquote>
 <h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>在 make 成功以后 会在 src 目录下多出一些可执行文件：<code>redis-server</code> <code>redis-cli</code> <code>redis-sentinel</code> 等等</p>
 <p>设置命令:</p>
@@ -446,7 +446,7 @@ sentinel monitor mymaster 127.0.0.1 7501 2
     <link href="http://yoursite.com/2016/10/03/016%20CentOS%206%20%E5%AE%89%E8%A3%85JDK/"/>
     <id>http://yoursite.com/2016/10/03/016 CentOS 6 安装JDK/</id>
     <published>2016-10-03T00:00:00.000Z</published>
-    <updated>2016-10-02T17:11:05.000Z</updated>
+    <updated>2016-10-20T08:21:47.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="下载-JDK-安装"><a href="#下载-JDK-安装" class="headerlink" title="下载 JDK 安装"></a>下载 JDK 安装</h1><p><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="external">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></p>
 <blockquote>
@@ -512,6 +512,51 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
+    <title>CentOS 6 安装 / 更新 GCC 编译器</title>
+    <link href="http://yoursite.com/2016/10/01/014%20CentOS%206%20%E5%AE%89%E8%A3%85:%E6%9B%B4%E6%96%B0%20gcc%20%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    <id>http://yoursite.com/2016/10/01/014 CentOS 6 安装:更新 gcc 编译器/</id>
+    <published>2016-10-01T00:00:00.000Z</published>
+    <updated>2016-10-02T16:00:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="使用-yum-安装-gcc"><a href="#使用-yum-安装-gcc" class="headerlink" title="使用 yum 安装 gcc"></a>使用 yum 安装 gcc</h1><p><strong> 安装 gcc  、 c++ 编译器以及内核文件 </strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install gcc gcc-c++ kernel-devel</div></pre></td></tr></table></figure>
+<h1 id="yum-安装的版本太低-就需要自己安装了"><a href="#yum-安装的版本太低-就需要自己安装了" class="headerlink" title="yum 安装的版本太低 就需要自己安装了"></a>yum 安装的版本太低 就需要自己安装了</h1><blockquote>
+<p>不建议在服务器上面下载 因为速度太慢了 下面这个网址 根据自己的需求下载指定版本 然后上传至服务器<br><code>http://gcc.skazkaforyou.com/releases/</code></p>
+</blockquote>
+<h1 id="下载-解压"><a href="#下载-解压" class="headerlink" title="下载 解压"></a>下载 解压</h1><p>在这里，我们将<code>gcc-4.9.1.tar.gz</code>解压到<code>/usr/local/src</code>目录中(当然你也可以指定其他目录)</p>
+<p>解压 <code>tar -xvzf gcc-4.9.1.tar.gz</code> <code>cd gcc-4.9.1</code></p>
+<h1 id="运行-download-prerequisites-脚本"><a href="#运行-download-prerequisites-脚本" class="headerlink" title="运行 download_prerequisites 脚本"></a>运行 download_prerequisites 脚本</h1><p><code>./contrib/download_prerequisites</code></p>
+<blockquote>
+<p>安装gcc需要下载诸如gmp、mpfr、mpc等依赖文件，执行download_prerequisites将会自动下载这些软件并解压到当前目录(文件不大，总共只有几MB，请耐心等待下载)</p>
+</blockquote>
+<h1 id="gcc-安装位置"><a href="#gcc-安装位置" class="headerlink" title="gcc 安装位置"></a>gcc 安装位置</h1><p>接着，就可以对gcc进行编译安装了。在此之前，我们先创建一个目录 <code>/usr/local/build/gcc-4.9.1</code> (你也可以自行指定其他目录)用于存放编译后的程序文件</p>
+<p><code>mkdir /usr/local/build/</code></p>
+<p><code>mkdir /usr/local/build/gcc-4.9.1</code></p>
+<p>跳转到编译后的程序文件存放目录<br><code>cd /usr/local/build/gcc-4.9.1</code><br>调用gcc源程序的configure(后面的参数选项可根据需要自行修改)，用于配置gcc<br><code>/usr/local/src/gcc-4.9.1/configure --enable-checking=release --enable-languages=c,c++ --disable-multilib</code><br>充分发挥CPU四核优势，启动四线程<br><code>make -j4</code></p>
+<h1 id="编译-gcc-源程序-需要消耗比较长的时间"><a href="#编译-gcc-源程序-需要消耗比较长的时间" class="headerlink" title="编译 gcc 源程序 需要消耗比较长的时间"></a>编译 gcc 源程序 需要消耗比较长的时间</h1><p><code>make</code></p>
+<blockquote>
+<p><code>make</code>命令这一过程耗费的时间非常多 我大概用了一个小时</p>
+</blockquote>
+<h1 id="安装-gcc"><a href="#安装-gcc" class="headerlink" title="安装 gcc"></a>安装 gcc</h1><p><code>make insatall</code></p>
+<h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1><p><strong>查看 gcc 版本</strong></p>
+<p><code>gcc -v</code> <strong>gcc version 4.9.1 (GCC) </strong></p>
+<p><br><br><code>CentOS</code> <code>GCC</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;使用-yum-安装-gcc&quot;&gt;&lt;a href=&quot;#使用-yum-安装-gcc&quot; class=&quot;headerlink&quot; title=&quot;使用 yum 安装 gcc&quot;&gt;&lt;/a&gt;使用 yum 安装 gcc&lt;/h1&gt;&lt;p&gt;&lt;strong&gt; 安装 gcc  、 c++ 编译器
+    
+    </summary>
+    
+    
+      <category term="CentOS" scheme="http://yoursite.com/tags/CentOS/"/>
+    
+      <category term="GCC" scheme="http://yoursite.com/tags/GCC/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Centos 6 中部署 Hexo 个人博客</title>
     <link href="http://yoursite.com/2016/10/01/013%20CentOS%206%20%E4%B8%AD%E9%83%A8%E7%BD%B2%20Hexo%20%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2016/10/01/013 CentOS 6 中部署 Hexo 个人博客/</id>
@@ -558,51 +603,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
       <category term="Node.js" scheme="http://yoursite.com/tags/Node-js/"/>
     
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS 6 安装 / 更新 GCC 编译器</title>
-    <link href="http://yoursite.com/2016/10/01/014%20CentOS%206%20%E5%AE%89%E8%A3%85:%E6%9B%B4%E6%96%B0%20gcc%20%E7%BC%96%E8%AF%91%E5%99%A8/"/>
-    <id>http://yoursite.com/2016/10/01/014 CentOS 6 安装:更新 gcc 编译器/</id>
-    <published>2016-10-01T00:00:00.000Z</published>
-    <updated>2016-10-02T16:00:03.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="使用-yum-安装-gcc"><a href="#使用-yum-安装-gcc" class="headerlink" title="使用 yum 安装 gcc"></a>使用 yum 安装 gcc</h1><p><strong> 安装 gcc  、 c++ 编译器以及内核文件 </strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install gcc gcc-c++ kernel-devel</div></pre></td></tr></table></figure>
-<h1 id="yum-安装的版本太低-就需要自己安装了"><a href="#yum-安装的版本太低-就需要自己安装了" class="headerlink" title="yum 安装的版本太低 就需要自己安装了"></a>yum 安装的版本太低 就需要自己安装了</h1><blockquote>
-<p>不建议在服务器上面下载 因为速度太慢了 下面这个网址 根据自己的需求下载指定版本 然后上传至服务器<br><code>http://gcc.skazkaforyou.com/releases/</code></p>
-</blockquote>
-<h1 id="下载-解压"><a href="#下载-解压" class="headerlink" title="下载 解压"></a>下载 解压</h1><p>在这里，我们将<code>gcc-4.9.1.tar.gz</code>解压到<code>/usr/local/src</code>目录中(当然你也可以指定其他目录)</p>
-<p>解压 <code>tar -xvzf gcc-4.9.1.tar.gz</code> <code>cd gcc-4.9.1</code></p>
-<h1 id="运行-download-prerequisites-脚本"><a href="#运行-download-prerequisites-脚本" class="headerlink" title="运行 download_prerequisites 脚本"></a>运行 download_prerequisites 脚本</h1><p><code>./contrib/download_prerequisites</code></p>
-<blockquote>
-<p>安装gcc需要下载诸如gmp、mpfr、mpc等依赖文件，执行download_prerequisites将会自动下载这些软件并解压到当前目录(文件不大，总共只有几MB，请耐心等待下载)</p>
-</blockquote>
-<h1 id="gcc-安装位置"><a href="#gcc-安装位置" class="headerlink" title="gcc 安装位置"></a>gcc 安装位置</h1><p>接着，就可以对gcc进行编译安装了。在此之前，我们先创建一个目录 <code>/usr/local/build/gcc-4.9.1</code> (你也可以自行指定其他目录)用于存放编译后的程序文件</p>
-<p><code>mkdir /usr/local/build/</code></p>
-<p><code>mkdir /usr/local/build/gcc-4.9.1</code></p>
-<p>跳转到编译后的程序文件存放目录<br><code>cd /usr/local/build/gcc-4.9.1</code><br>调用gcc源程序的configure(后面的参数选项可根据需要自行修改)，用于配置gcc<br><code>/usr/local/src/gcc-4.9.1/configure --enable-checking=release --enable-languages=c,c++ --disable-multilib</code><br>充分发挥CPU四核优势，启动四线程<br><code>make -j4</code></p>
-<h1 id="编译-gcc-源程序-需要消耗比较长的时间"><a href="#编译-gcc-源程序-需要消耗比较长的时间" class="headerlink" title="编译 gcc 源程序 需要消耗比较长的时间"></a>编译 gcc 源程序 需要消耗比较长的时间</h1><p><code>make</code></p>
-<blockquote>
-<p><code>make</code>命令这一过程耗费的时间非常多 我大概用了一个小时</p>
-</blockquote>
-<h1 id="安装-gcc"><a href="#安装-gcc" class="headerlink" title="安装 gcc"></a>安装 gcc</h1><p><code>make insatall</code></p>
-<h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1><p><strong>查看 gcc 版本</strong></p>
-<p><code>gcc -v</code> <strong>gcc version 4.9.1 (GCC) </strong></p>
-<p><br><br><code>CentOS</code> <code>GCC</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;使用-yum-安装-gcc&quot;&gt;&lt;a href=&quot;#使用-yum-安装-gcc&quot; class=&quot;headerlink&quot; title=&quot;使用 yum 安装 gcc&quot;&gt;&lt;/a&gt;使用 yum 安装 gcc&lt;/h1&gt;&lt;p&gt;&lt;strong&gt; 安装 gcc  、 c++ 编译器
-    
-    </summary>
-    
-    
-      <category term="CentOS" scheme="http://yoursite.com/tags/CentOS/"/>
-    
-      <category term="GCC" scheme="http://yoursite.com/tags/GCC/"/>
     
   </entry>
   
@@ -925,29 +925,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>Struts 各版本 jar包 下载</title>
-    <link href="http://yoursite.com/2016/09/27/008%20Struts%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
-    <id>http://yoursite.com/2016/09/27/008 Struts 各版本 jar包 下载/</id>
-    <published>2016-09-27T00:00:00.000Z</published>
-    <updated>2016-09-26T16:44:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://archive.apache.org/dist/struts/binaries/" target="_blank" rel="external">http://archive.apache.org/dist/struts/binaries/</a></p>
-<pre><code>http://archive.apache.org/dist/struts/binaries/
-</code></pre><p><br><br><code>Struts</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://archive.apache.org/dist/struts/binaries/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://archive.apache.org/dist/struts/binaries/&lt;
-    
-    </summary>
-    
-    
-      <category term="Struts" scheme="http://yoursite.com/tags/Struts/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Java 中 System.getProperty() 方法可以获取系统的那些值</title>
     <link href="http://yoursite.com/2016/09/27/009%20Java%20%E4%B8%AD%20System.getProperty()%20%E6%96%B9%E6%B3%95%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%82%A3%E4%BA%9B%E5%80%BC/"/>
     <id>http://yoursite.com/2016/09/27/009 Java 中 System.getProperty() 方法可以获取系统的那些值/</id>
@@ -1105,6 +1082,29 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
+    <title>Struts 各版本 jar包 下载</title>
+    <link href="http://yoursite.com/2016/09/27/008%20Struts%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://yoursite.com/2016/09/27/008 Struts 各版本 jar包 下载/</id>
+    <published>2016-09-27T00:00:00.000Z</published>
+    <updated>2016-09-26T16:44:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://archive.apache.org/dist/struts/binaries/" target="_blank" rel="external">http://archive.apache.org/dist/struts/binaries/</a></p>
+<pre><code>http://archive.apache.org/dist/struts/binaries/
+</code></pre><p><br><br><code>Struts</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://archive.apache.org/dist/struts/binaries/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://archive.apache.org/dist/struts/binaries/&lt;
+    
+    </summary>
+    
+    
+      <category term="Struts" scheme="http://yoursite.com/tags/Struts/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mac 电脑 U盘 重装系统</title>
     <link href="http://yoursite.com/2016/09/27/006%20Mac%20%E7%94%B5%E8%84%91%20U%E7%9B%98%20%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
     <id>http://yoursite.com/2016/09/27/006 Mac 电脑 U盘 重装系统/</id>
@@ -1158,6 +1158,28 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
+    <title>Apple 系统固件下载地址</title>
+    <link href="http://yoursite.com/2016/09/26/005%20Apple%20%E7%B3%BB%E7%BB%9F%E5%9B%BA%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/"/>
+    <id>http://yoursite.com/2016/09/26/005 Apple 系统固件下载地址/</id>
+    <published>2016-09-26T00:00:00.000Z</published>
+    <updated>2016-09-25T18:41:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><a href="https://support.apple.com/zh_CN/downloads/" target="_blank" rel="external">https://support.apple.com/zh_CN/downloads/</a></p>
+<p><br><br><code>Apple</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://support.apple.com/zh_CN/downloads/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://support.apple.com/zh_CN/downloads/&lt;/a
+    
+    </summary>
+    
+    
+      <category term="Apple" scheme="http://yoursite.com/tags/Apple/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MySQL 数据库编码方式修改</title>
     <link href="http://yoursite.com/2016/09/26/004%20MySQL%20%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F%E4%BF%AE%E6%94%B9/"/>
     <id>http://yoursite.com/2016/09/26/004 MySQL 数据库编码方式修改/</id>
@@ -1186,28 +1208,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
     
     
       <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Apple 系统固件下载地址</title>
-    <link href="http://yoursite.com/2016/09/26/005%20Apple%20%E7%B3%BB%E7%BB%9F%E5%9B%BA%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/"/>
-    <id>http://yoursite.com/2016/09/26/005 Apple 系统固件下载地址/</id>
-    <published>2016-09-26T00:00:00.000Z</published>
-    <updated>2016-09-25T18:41:47.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><a href="https://support.apple.com/zh_CN/downloads/" target="_blank" rel="external">https://support.apple.com/zh_CN/downloads/</a></p>
-<p><br><br><code>Apple</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://support.apple.com/zh_CN/downloads/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://support.apple.com/zh_CN/downloads/&lt;/a
-    
-    </summary>
-    
-    
-      <category term="Apple" scheme="http://yoursite.com/tags/Apple/"/>
     
   </entry>
   
