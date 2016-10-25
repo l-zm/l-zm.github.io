@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-17T17:32:52.000Z</updated>
+  <updated>2016-10-25T10:12:06.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SSH 免密码登录远程服务器</title>
+    <link href="http://yoursite.com/2016/10/25/022%20SSH%E5%85%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>http://yoursite.com/2016/10/25/022 SSH免密码登录远程服务器/</id>
+    <published>2016-10-25T00:00:00.000Z</published>
+    <updated>2016-10-25T10:12:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p><strong> 本机生成 rsa 秘钥 </strong></p>
+<p><code>ssh-keygen -t rsa</code></p>
+<h1 id="上传公钥"><a href="#上传公钥" class="headerlink" title="上传公钥"></a>上传公钥</h1><p><code>scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/</code></p>
+<h1 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h1><p>进入：<code>cd /root/.ssh/tmp</code><br>修改名字：<code>mv id_rsa.pub authorized_keys</code><br>复制到 <code>.ssh</code> 目录：<code>cp /root/.ssh/tmp/authorized_keys /root/.ssh/</code><br>修改文件权限：<code>chmod 600 /root/.ssh/tmp/authorized_key</code> (如果不修改，可能会引起 authorized_key 文件被修改,导致文件失效)</p>
+<h1 id="Done"><a href="#Done" class="headerlink" title="Done"></a>Done</h1><p>直接登录服务器：<code>ssh root@目标服务器IP</code></p>
+<p><br><br><code>Linux</code> <code>SSH</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h1&gt;&lt;p&gt;&lt;strong&gt; 本机生成 rsa 秘钥 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh-keygen -t rsa&lt;/code&gt;&lt;/
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="SSH" scheme="http://yoursite.com/tags/SSH/"/>
+    
+  </entry>
   
   <entry>
     <title>SpringMVC 操作 Redis</title>
@@ -52,9 +81,9 @@ Maven
     </summary>
     
     
-      <category term="SpringMVC" scheme="http://yoursite.com/tags/SpringMVC/"/>
-    
       <category term="Redis" scheme="http://yoursite.com/tags/Redis/"/>
+    
+      <category term="SpringMVC" scheme="http://yoursite.com/tags/SpringMVC/"/>
     
   </entry>
   
@@ -1082,29 +1111,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>Struts 各版本 jar包 下载</title>
-    <link href="http://yoursite.com/2016/09/27/008%20Struts%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
-    <id>http://yoursite.com/2016/09/27/008 Struts 各版本 jar包 下载/</id>
-    <published>2016-09-27T00:00:00.000Z</published>
-    <updated>2016-09-26T16:44:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://archive.apache.org/dist/struts/binaries/" target="_blank" rel="external">http://archive.apache.org/dist/struts/binaries/</a></p>
-<pre><code>http://archive.apache.org/dist/struts/binaries/
-</code></pre><p><br><br><code>Struts</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://archive.apache.org/dist/struts/binaries/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://archive.apache.org/dist/struts/binaries/&lt;
-    
-    </summary>
-    
-    
-      <category term="Struts" scheme="http://yoursite.com/tags/Struts/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Mac 电脑 U盘 重装系统</title>
     <link href="http://yoursite.com/2016/09/27/006%20Mac%20%E7%94%B5%E8%84%91%20U%E7%9B%98%20%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
     <id>http://yoursite.com/2016/09/27/006 Mac 电脑 U盘 重装系统/</id>
@@ -1131,6 +1137,29 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
       <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
     
       <category term="系统" scheme="http://yoursite.com/tags/%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Struts 各版本 jar包 下载</title>
+    <link href="http://yoursite.com/2016/09/27/008%20Struts%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://yoursite.com/2016/09/27/008 Struts 各版本 jar包 下载/</id>
+    <published>2016-09-27T00:00:00.000Z</published>
+    <updated>2016-09-26T16:44:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://archive.apache.org/dist/struts/binaries/" target="_blank" rel="external">http://archive.apache.org/dist/struts/binaries/</a></p>
+<pre><code>http://archive.apache.org/dist/struts/binaries/
+</code></pre><p><br><br><code>Struts</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://archive.apache.org/dist/struts/binaries/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://archive.apache.org/dist/struts/binaries/&lt;
+    
+    </summary>
+    
+    
+      <category term="Struts" scheme="http://yoursite.com/tags/Struts/"/>
     
   </entry>
   
@@ -1208,29 +1237,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
     
     
       <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac 修改 Dock 栏隐藏的速度</title>
-    <link href="http://yoursite.com/2016/09/25/003%20Mac%20%E4%BF%AE%E6%94%B9%20Dock%20%E6%A0%8F%E9%9A%90%E8%97%8F%E7%9A%84%E9%80%9F%E5%BA%A6/"/>
-    <id>http://yoursite.com/2016/09/25/003 Mac 修改 Dock 栏隐藏的速度/</id>
-    <published>2016-09-25T00:00:00.000Z</published>
-    <updated>2016-09-25T18:34:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）"><a href="#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）" class="headerlink" title="修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）"></a>修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 默认是 1 ）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
-<h1 id="恢复默认设置"><a href="#恢复默认设置" class="headerlink" title="恢复默认设置"></a>恢复默认设置</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</div></pre></td></tr></table></figure>
-<p><br><br><code>Mac</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot;&gt;&lt;a href=&quot;#修改-Dock-栏显示隐藏的速度（-0秒-0-5秒-默认是-1-）&quot; class=&quot;headerlink&quot; title=&quot;修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5
-    
-    </summary>
-    
-    
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
     
   </entry>
   

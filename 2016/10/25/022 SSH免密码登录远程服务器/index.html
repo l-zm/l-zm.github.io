@@ -9,16 +9,26 @@
   <meta name="theme-color" content="#3F51B5">
   
   
-  <meta name="keywords" content="undefined">
-  <meta name="description" content="Personal Blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lizm's Personal Blog">
-<meta property="og:url" content="http://yoursite.com/tags/Mac/index.html">
+  <meta name="keywords" content="Linux,SSH">
+  <meta name="description" content="准备 本机生成 rsa 秘钥 
+ssh-keygen -t rsa
+上传公钥scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/
+修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制到 .ssh 目录：cp /root/.ssh/tmp/authorized_keys">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SSH 免密码登录远程服务器">
+<meta property="og:url" content="http://yoursite.com/2016/10/25/022 SSH免密码登录远程服务器/index.html">
 <meta property="og:site_name" content="Lizm's Personal Blog">
-<meta property="og:description" content="Personal Blog">
+<meta property="og:description" content="准备 本机生成 rsa 秘钥 
+ssh-keygen -t rsa
+上传公钥scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/
+修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制到 .ssh 目录：cp /root/.ssh/tmp/authorized_keys">
+<meta property="og:updated_time" content="2016-10-25T10:12:06.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lizm's Personal Blog">
-<meta name="twitter:description" content="Personal Blog">
+<meta name="twitter:title" content="SSH 免密码登录远程服务器">
+<meta name="twitter:description" content="准备 本机生成 rsa 秘钥 
+ssh-keygen -t rsa
+上传公钥scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/
+修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制到 .ssh 目录：cp /root/.ssh/tmp/authorized_keys">
   
     <link rel="alternative" href="/atom.xml" title="Lizm&#39;s Personal Blog" type="application/atom+xml">
   
@@ -28,7 +38,7 @@
 </head>
 
 <body>
-  <nav id="menu"  >
+  <nav id="menu" class="hide" >
    <div class="inner flex-row-vertical">
   <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
       <i class="icon icon-lg icon-close"></i>
@@ -97,7 +107,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Lizm&#39;s Personal Blog</div>
+        <div class="flex-col header-title ellipsis">SSH 免密码登录远程服务器</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -114,155 +124,53 @@
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">Lizm&#39;s Personal Blog</h1>
+    <h1 class="author">SSH 免密码登录远程服务器</h1>
     <h5 class="subtitle">
         
-        You really have two down son (你真有两下子)
+            <time datetime="2016-10-25T00:00:00.000Z" itemprop="datePublished" class="page-time">
+  2016-10-25
+</time>
+
+
         
     </h5>
   </div>
 </header>
 
     <div class="container body-wrap">
-      
+      <article id="post-022 SSH免密码登录远程服务器" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meta flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SSH/">SSH</a></li></ul>
 
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
 
-        <h3 class="archive-separator">2016  -  09</h3>
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#准备"><span class="post-toc-text">准备</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#上传公钥"><span class="post-toc-text">上传公钥</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#修改"><span class="post-toc-text">修改</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Done"><span class="post-toc-text">Done</span></a></li></ol>
+            </nav>
+            
+        </aside>
 
+        <div class="post-main">
 
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p><strong> 本机生成 rsa 秘钥 </strong></p>
+<p><code>ssh-keygen -t rsa</code></p>
+<h1 id="上传公钥"><a href="#上传公钥" class="headerlink" title="上传公钥"></a>上传公钥</h1><p><code>scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/</code></p>
+<h1 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h1><p>进入：<code>cd /root/.ssh/tmp</code><br>修改名字：<code>mv id_rsa.pub authorized_keys</code><br>复制到 <code>.ssh</code> 目录：<code>cp /root/.ssh/tmp/authorized_keys /root/.ssh/</code><br>修改文件权限：<code>chmod 600 /root/.ssh/tmp/authorized_key</code> (如果不修改，可能会引起 authorized_key 文件被修改,导致文件失效)</p>
+<h1 id="Done"><a href="#Done" class="headerlink" title="Done"></a>Done</h1><p>直接登录服务器：<code>ssh root@目标服务器IP</code></p>
+<p><br><br><code>Linux</code> <code>SSH</code></p>
 
-     <article class="archive-article">
-  <div class="archive-article-date">
-    <time datetime="2016-09-29T00:00:00.000Z" itemprop="datePublished" class="post-time">
-  29
-</time>
-
-  </div>
-  <div class="archive-article-inner">
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/09/29/012 Mac 电脑下终端程序 SecureCRT/">Mac 电脑下终端程序 SecureCRT</a>
-    </h3>
-  
-
-
-
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/软件/">软件</a></li></ul>
-
-  </div>
+            
+            </div>
+            
+        </div>
+    </div>
 </article>
-
-
-     <article class="archive-article">
-  <div class="archive-article-date">
-    <time datetime="2016-09-27T00:00:00.000Z" itemprop="datePublished" class="post-time">
-  27
-</time>
-
-  </div>
-  <div class="archive-article-inner">
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/09/27/006 Mac 电脑 U盘 重装系统/">Mac 电脑 U盘 重装系统</a>
-    </h3>
-  
-
-
-
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统/">系统</a></li></ul>
-
-  </div>
-</article>
-
-
-     <article class="archive-article">
-  <div class="archive-article-date">
-    <time datetime="2016-09-25T00:00:00.000Z" itemprop="datePublished" class="post-time">
-  25
-</time>
-
-  </div>
-  <div class="archive-article-inner">
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/09/25/002 Mac 显示隐藏文件/">Mac 显示隐藏文件</a>
-    </h3>
-  
-
-
-
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li></ul>
-
-  </div>
-</article>
-
-
-     <article class="archive-article">
-  <div class="archive-article-date">
-    <time datetime="2016-09-25T00:00:00.000Z" itemprop="datePublished" class="post-time">
-  25
-</time>
-
-  </div>
-  <div class="archive-article-inner">
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/09/25/001 Mac 电脑设置 Finder 可以退出/">Mac 电脑设置 Finder 可以退出</a>
-    </h3>
-  
-
-
-
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li></ul>
-
-  </div>
-</article>
-
-
-     <article class="archive-article">
-  <div class="archive-article-date">
-    <time datetime="2016-09-25T00:00:00.000Z" itemprop="datePublished" class="post-time">
-  25
-</time>
-
-  </div>
-  <div class="archive-article-inner">
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/09/25/003 Mac 修改 Dock 栏隐藏的速度/">Mac 修改 Dock 栏隐藏的速度</a>
-    </h3>
-  
-
-
-
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li></ul>
-
-  </div>
-</article>
-
-
-
-
     </div>
   </main>
 <div class="mask" id="mask"></div>
