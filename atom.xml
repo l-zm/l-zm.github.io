@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-25T10:12:06.000Z</updated>
+  <updated>2016-12-05T13:12:30.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,16 +16,222 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>BigDecimal Java高精度运算</title>
+    <link href="http://yoursite.com/2016/12/05/025%20BigDecimal%20Java%E9%AB%98%E7%B2%BE%E5%BA%A6%E8%BF%90%E7%AE%97/"/>
+    <id>http://yoursite.com/2016/12/05/025 BigDecimal Java高精度运算/</id>
+    <published>2016-12-05T00:00:00.000Z</published>
+    <updated>2016-12-05T13:12:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="不同舍入模式下的舍入操作汇总"><a href="#不同舍入模式下的舍入操作汇总" class="headerlink" title="不同舍入模式下的舍入操作汇总"></a>不同舍入模式下的舍入操作汇总</h1><table>
+<thead>
+<tr>
+<th style="text-align:center">NUMBER</th>
+<th style="text-align:center">UP</th>
+<th style="text-align:center">DOWN</th>
+<th style="text-align:center">CEILING</th>
+<th style="text-align:center">FLOOR</th>
+<th style="text-align:center">HALF_UP</th>
+<th style="text-align:center">HALF_DOWN</th>
+<th style="text-align:center">HALF_EVEN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">5.5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+</tr>
+<tr>
+<td style="text-align:center">2.5</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">1.6</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">1.1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1.0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">-1.0</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+</tr>
+<tr>
+<td style="text-align:center">-1.1</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+</tr>
+<tr>
+<td style="text-align:center">-1.6</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+</tr>
+<tr>
+<td style="text-align:center">-2.5</td>
+<td style="text-align:center">-3</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-3</td>
+<td style="text-align:center">-3</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+</tr>
+<tr>
+<td style="text-align:center">-5.5</td>
+<td style="text-align:center">-6</td>
+<td style="text-align:center">-5</td>
+<td style="text-align:center">-5</td>
+<td style="text-align:center">-6</td>
+<td style="text-align:center">-6</td>
+<td style="text-align:center">-5</td>
+<td style="text-align:center">-6</td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>UP</strong> 远离零方向舍入的舍入模式。始终对非零舍弃部分前面的数字加 1。注意，此舍入模式始终不会减少计算值的绝对值</em></p>
+<p><em><strong>DOWN</strong> 向零方向舍入的舍入模式。从不对舍弃部分前面的数字加 1（即截尾）。注意，此舍入模式始终不会增加计算值的绝对值</em></p>
+<p><em><strong>CEILING</strong> 向正无限大方向舍入的舍入模式。如果结果为正，则舍入行为类似于 RoundingMode.UP；如果结果为负，则舍入行为类似于 RoundingMode.DOWN。注意，此舍入模式始终不会减少计算值</em></p>
+<p><em><strong>FLOOR</strong> 向负无限大方向舍入的舍入模式。如果结果为正，则舍入行为类似于 RoundingMode.DOWN；如果结果为负，则舍入行为类似于 RoundingMode.UP。注意，此舍入模式始终不会增加计算值</em></p>
+<p><em><strong>HALF_UP</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向上舍入。如果被舍弃部分 &gt;= 0.5，则舍入行为同 RoundingMode.UP；否则舍入行为同 RoundingMode.DOWN。注意，此舍入模式就是通常学校里讲的四舍五入</em></p>
+<p><em><strong>HALF_DOWN</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向下舍入。如果被舍弃部分 &gt; 0.5，则舍入行为同 RoundingMode.UP；否则舍入行为同 RoundingMode.DOWN</em></p>
+<p><em><strong>HALF_EVEN</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向相邻的偶数舍入。如果舍弃部分左边的数字为奇数，则舍入行为同 RoundingMode.HALF_UP；如果为偶数，则舍入行为同 RoundingMode.HALF_DOWN。注意，在重复进行一系列计算时，此舍入模式可以在统计上将累加错误减到最小。此舍入模式也称为“银行家舍入法”，主要在美国使用。此舍入模式类似于 Java 中对 float 和 double 算法使用的舍入策略</em></p>
+<p><em><strong>UNNECESSARY</strong> 用于断言请求的操作具有精确结果的舍入模式，因此不需要舍入。如果对生成精确结果的操作指定此舍入模式，则抛出 ArithmeticException</em></p>
+<p><br><br><code>Java</code> <code>BigDecimal</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;不同舍入模式下的舍入操作汇总&quot;&gt;&lt;a href=&quot;#不同舍入模式下的舍入操作汇总&quot; class=&quot;headerlink&quot; title=&quot;不同舍入模式下的舍入操作汇总&quot;&gt;&lt;/a&gt;不同舍入模式下的舍入操作汇总&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th 
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+      <category term="BigDecimal" scheme="http://yoursite.com/tags/BigDecimal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL 基本操作</title>
+    <link href="http://yoursite.com/2016/11/24/024%20MySQL%20%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
+    <id>http://yoursite.com/2016/11/24/024 MySQL 基本操作/</id>
+    <published>2016-11-24T00:00:00.000Z</published>
+    <updated>2016-12-05T12:36:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Mysql-设置-unique-key-及-联合主键"><a href="#Mysql-设置-unique-key-及-联合主键" class="headerlink" title="Mysql 设置 unique key 及 联合主键"></a>Mysql 设置 unique key 及 联合主键</h1><pre><code>// 删除约束
+alter table `表` drop index `联合主键的名称`;
+
+// 创建 唯一约束主键
+alter table `表` add unique key (`字段`)
+
+// 创建 联合主键 联合主键不可重复
+alter table `表` add unique key `联合主键的名称` (`字段1`,`字段2`);
+</code></pre><p><br><br><code>MySQL</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Mysql-设置-unique-key-及-联合主键&quot;&gt;&lt;a href=&quot;#Mysql-设置-unique-key-及-联合主键&quot; class=&quot;headerlink&quot; title=&quot;Mysql 设置 unique key 及 联合主键&quot;&gt;&lt;/a&gt;Mysql 设置
+    
+    </summary>
+    
+    
+      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux MySQL 自动备份</title>
+    <link href="http://yoursite.com/2016/10/26/023%20Linux%20MySQL%20%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BD/"/>
+    <id>http://yoursite.com/2016/10/26/023 Linux MySQL 自动备份/</id>
+    <published>2016-10-26T00:00:00.000Z</published>
+    <updated>2016-10-26T14:57:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="mysqldump"><a href="#mysqldump" class="headerlink" title="mysqldump"></a>mysqldump</h1><p>数据库结构+数据的 .sql 文件<br><code>mysqldump -u 用户名 -p密码 数据库 &gt; /tmp/mysql_data/文件名</code>date +%Y-%m-%d-%H-%M-%S<code>.sql</code><br><code>mysqldump -u lim -ppassword shujuku &gt; /tmp/mysql_data/shujuku\</code>date +%Y-%m-%d-%H-%M-%S`.sql`</p>
+<p>数据库结构+数据的 .sql.gz 文件<br><code>mysqldump -u lim -ppassword shujuku | gzip &gt; /tmp/mysql_data/shujuku</code>date +%Y-%m-%d-%H-%M-%S<code>.sql.gz</code></p>
+<h1 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h1><p><code>scp /usr/local/backup_mysql/shujuku.sql root@10.10.10.10:/usr/local/online-mysql-database/shujuku.sql</code></p>
+<p><br><br><code>Linux</code> <code>SSH</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;mysqldump&quot;&gt;&lt;a href=&quot;#mysqldump&quot; class=&quot;headerlink&quot; title=&quot;mysqldump&quot;&gt;&lt;/a&gt;mysqldump&lt;/h1&gt;&lt;p&gt;数据库结构+数据的 .sql 文件&lt;br&gt;&lt;code&gt;mysqldump -u 用户
+    
+    </summary>
+    
+    
+      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SSH 免密码登录远程服务器</title>
     <link href="http://yoursite.com/2016/10/25/022%20SSH%E5%85%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     <id>http://yoursite.com/2016/10/25/022 SSH免密码登录远程服务器/</id>
     <published>2016-10-25T00:00:00.000Z</published>
-    <updated>2016-10-25T10:12:06.000Z</updated>
+    <updated>2016-10-25T10:19:24.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p><strong> 本机生成 rsa 秘钥 </strong></p>
 <p><code>ssh-keygen -t rsa</code></p>
 <h1 id="上传公钥"><a href="#上传公钥" class="headerlink" title="上传公钥"></a>上传公钥</h1><p><code>scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/</code></p>
 <h1 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h1><p>进入：<code>cd /root/.ssh/tmp</code><br>修改名字：<code>mv id_rsa.pub authorized_keys</code><br>复制到 <code>.ssh</code> 目录：<code>cp /root/.ssh/tmp/authorized_keys /root/.ssh/</code><br>修改文件权限：<code>chmod 600 /root/.ssh/tmp/authorized_key</code> (如果不修改，可能会引起 authorized_key 文件被修改,导致文件失效)</p>
+<h1 id="配置多用户"><a href="#配置多用户" class="headerlink" title="配置多用户"></a>配置多用户</h1><p>如果 <code>authorized_key</code> 已经存在, 进行如下操作<br>在第二个用户机上面生成 <code>rea</code> 秘钥<br>复制到服务器上：<code>scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/</code><br>执行：<code>cat /root/.ssh/tmp/id_rsa.pub &gt;&gt; /root/.ssh/authorized_key</code> （附加秘钥）</p>
 <h1 id="Done"><a href="#Done" class="headerlink" title="Done"></a>Done</h1><p>直接登录服务器：<code>ssh root@目标服务器IP</code></p>
 <p><br><br><code>Linux</code> <code>SSH</code></p>
 ]]></content>
@@ -84,6 +290,37 @@ Maven
       <category term="Redis" scheme="http://yoursite.com/tags/Redis/"/>
     
       <category term="SpringMVC" scheme="http://yoursite.com/tags/SpringMVC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 操作命令</title>
+    <link href="http://yoursite.com/2016/10/14/019%20Linux%20%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2016/10/14/019 Linux 操作命令/</id>
+    <published>2016-10-14T00:00:00.000Z</published>
+    <updated>2016-10-14T07:40:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="复制-剪切-粘贴"><a href="#复制-剪切-粘贴" class="headerlink" title="复制 剪切 粘贴"></a>复制 剪切 粘贴</h1><blockquote>
+<p><strong>复制的命令是 <code>y</code> 即yank(提起) 常用的命令如下</strong><br>y     在使用v模式选定了某一块的时候，复制选定块到缓冲区用<br>yy     复制整行 (nyy或者yny ，复制n行，n为数字）<br>y^     复制当前到行头的内容<br>y$     复制当前到行尾的内容<br>yw     复制一个word (nyw或者ynw，复制n个word，n为数字）<br>yG     复制至档尾(nyG或者ynG，复制到第n行，例如1yG或者y1G，复制到档尾）<br><strong>剪切的命令是 <code>d</code> 即delete d与y命令基本类似 所以两个命令用法一样 包括含有数字的用法</strong><br>d     剪切选定块到缓冲区；<br>dd     剪切整行<br>d^     剪切至行首<br>d$     剪切至行尾<br>dw     剪切一个word<br>dG     剪切至档尾<br><strong>粘贴的命令式 <code>p</code> 即put(放下）</strong><br>p     小写p代表贴至游标后（下）, 因为游标是在具体字符的位置上, 所以实际是在该字符的后面<br>P     大写P代表贴至游标前（上）整行的复制粘贴在游标的上（下）一行，非整行的复制则是粘贴在游标的前（后）<br>    注：<br>    在正则表达式中，^表示匹配字符串的开始位置，$表示匹配字符串的结束位置。<br>    命令前面加数字表示重复的次数，加字母表示使用的缓冲区名称。使用英文句号”.”可以重复上一个命令。<br>    在复制粘贴时，另一组常用的命令是u（撤销操作），U（撤销某一行最近所有修改），Ctrl+R（重做），<br>    这些功能主要是vim中的，vi中略有差别</p>
+</blockquote>
+<h1 id="yum-y-update-upgrade"><a href="#yum-y-update-upgrade" class="headerlink" title="yum -y update / upgrade"></a>yum -y update / upgrade</h1><blockquote>
+<p><strong>yum -y upgrade 和 yum -y update 区别 </strong><br>yum -y update<br>升级所有包，改变软件设置和系统设置,系统版本内核都升级<br>yum -y upgrade<br>升级所有包，不改变软件设置和系统设置，系统版本升级，内核不改变</p>
+</blockquote>
+<h1 id="修改-文件-文件夹-名称"><a href="#修改-文件-文件夹-名称" class="headerlink" title="修改 文件 文件夹 名称"></a>修改 文件 文件夹 名称</h1><blockquote>
+<p><code>mv</code> 修改前的文件名称 修改后的文件名称<br><code>mv</code> 修改前的文件夹名称 修改后的文件夹名称</p>
+</blockquote>
+<p><br><br><code>Linux</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;复制-剪切-粘贴&quot;&gt;&lt;a href=&quot;#复制-剪切-粘贴&quot; class=&quot;headerlink&quot; title=&quot;复制 剪切 粘贴&quot;&gt;&lt;/a&gt;复制 剪切 粘贴&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;复制的命令是 &lt;code&gt;y&lt;/code&gt; 即ya
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
     
   </entry>
   
@@ -162,37 +399,6 @@ sentinel monitor mymaster 127.0.0.1 7501 2
     
     
       <category term="Redis" scheme="http://yoursite.com/tags/Redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 操作命令</title>
-    <link href="http://yoursite.com/2016/10/14/019%20Linux%20%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2016/10/14/019 Linux 操作命令/</id>
-    <published>2016-10-14T00:00:00.000Z</published>
-    <updated>2016-10-14T07:40:36.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="复制-剪切-粘贴"><a href="#复制-剪切-粘贴" class="headerlink" title="复制 剪切 粘贴"></a>复制 剪切 粘贴</h1><blockquote>
-<p><strong>复制的命令是 <code>y</code> 即yank(提起) 常用的命令如下</strong><br>y     在使用v模式选定了某一块的时候，复制选定块到缓冲区用<br>yy     复制整行 (nyy或者yny ，复制n行，n为数字）<br>y^     复制当前到行头的内容<br>y$     复制当前到行尾的内容<br>yw     复制一个word (nyw或者ynw，复制n个word，n为数字）<br>yG     复制至档尾(nyG或者ynG，复制到第n行，例如1yG或者y1G，复制到档尾）<br><strong>剪切的命令是 <code>d</code> 即delete d与y命令基本类似 所以两个命令用法一样 包括含有数字的用法</strong><br>d     剪切选定块到缓冲区；<br>dd     剪切整行<br>d^     剪切至行首<br>d$     剪切至行尾<br>dw     剪切一个word<br>dG     剪切至档尾<br><strong>粘贴的命令式 <code>p</code> 即put(放下）</strong><br>p     小写p代表贴至游标后（下）, 因为游标是在具体字符的位置上, 所以实际是在该字符的后面<br>P     大写P代表贴至游标前（上）整行的复制粘贴在游标的上（下）一行，非整行的复制则是粘贴在游标的前（后）<br>    注：<br>    在正则表达式中，^表示匹配字符串的开始位置，$表示匹配字符串的结束位置。<br>    命令前面加数字表示重复的次数，加字母表示使用的缓冲区名称。使用英文句号”.”可以重复上一个命令。<br>    在复制粘贴时，另一组常用的命令是u（撤销操作），U（撤销某一行最近所有修改），Ctrl+R（重做），<br>    这些功能主要是vim中的，vi中略有差别</p>
-</blockquote>
-<h1 id="yum-y-update-upgrade"><a href="#yum-y-update-upgrade" class="headerlink" title="yum -y update / upgrade"></a>yum -y update / upgrade</h1><blockquote>
-<p><strong>yum -y upgrade 和 yum -y update 区别 </strong><br>yum -y update<br>升级所有包，改变软件设置和系统设置,系统版本内核都升级<br>yum -y upgrade<br>升级所有包，不改变软件设置和系统设置，系统版本升级，内核不改变</p>
-</blockquote>
-<h1 id="修改-文件-文件夹-名称"><a href="#修改-文件-文件夹-名称" class="headerlink" title="修改 文件 文件夹 名称"></a>修改 文件 文件夹 名称</h1><blockquote>
-<p><code>mv</code> 修改前的文件名称 修改后的文件名称<br><code>mv</code> 修改前的文件夹名称 修改后的文件夹名称</p>
-</blockquote>
-<p><br><br><code>Linux</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;复制-剪切-粘贴&quot;&gt;&lt;a href=&quot;#复制-剪切-粘贴&quot; class=&quot;headerlink&quot; title=&quot;复制 剪切 粘贴&quot;&gt;&lt;/a&gt;复制 剪切 粘贴&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;复制的命令是 &lt;code&gt;y&lt;/code&gt; 即ya
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
     
   </entry>
   
@@ -316,14 +522,16 @@ sentinel monitor mymaster 127.0.0.1 7501 2
   </entry>
   
   <entry>
-    <title>CentOS 6 计划任务 CronTab</title>
+    <title>Linux 计划任务 CronTab</title>
     <link href="http://yoursite.com/2016/10/04/017%20CentOS%206%20%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%20CronTab/"/>
     <id>http://yoursite.com/2016/10/04/017 CentOS 6 计划任务 CronTab/</id>
     <published>2016-10-04T00:00:00.000Z</published>
-    <updated>2016-10-13T14:07:41.000Z</updated>
+    <updated>2016-10-26T09:14:20.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="安装-CronTab"><a href="#安装-CronTab" class="headerlink" title="安装 CronTab"></a>安装 CronTab</h1><p><strong> CentOS 中自带了CronTab 如果有需要 百度一下，你就知道 </strong></p>
-<h1 id="CronTab-使用与解释"><a href="#CronTab-使用与解释" class="headerlink" title="CronTab 使用与解释"></a>CronTab 使用与解释</h1><p><code>crontab -l</code> 查看所有的计划任务<br><code>crontab -e</code> 修改计划任务</p>
+<p>CentOS 安装 CronTab<br><code>yum -y install vixie-cron</code>    vixie-cron 软件包是 cron 的主程序<br><code>yum -y install crontabs</code>    crontabs 软件包是用来安装、卸装、或列举用来驱动 cron 守护进程的表格的程序</p>
+<p>Ubuntu 安装 CronTab<br><code>apt-get install cron</code></p>
+<h1 id="CronTab-使用与解释"><a href="#CronTab-使用与解释" class="headerlink" title="CronTab 使用与解释"></a>CronTab 使用与解释</h1><p><strong> Centos 下的使用的语法</strong><br><code>crontab -l</code> 查看所有的计划任务<br><code>crontab -e</code> 修改计划任务</p>
 <p><code>service crond start</code> 启动计划任务<br><code>service crond restart</code> 重启计划任务<br><code>service crond reload</code> 重新载入计划任务</p>
 <p><strong> Ubuntu 下的使用的语法</strong><br><code>service cron start</code> 启动计划任务<br><code>service cron restart</code> 重启计划任务<br><code>service cron reload</code> 重新载入计划任务</p>
 <pre><code>如果第一次用这个命令会让你选择文本编辑器, 我选择的是`vim`
@@ -429,7 +637,7 @@ sentinel monitor mymaster 127.0.0.1 7501 2
 </code></pre><h2 id="晚上11点到早上7点之间，每隔一小时"><a href="#晚上11点到早上7点之间，每隔一小时" class="headerlink" title="晚上11点到早上7点之间，每隔一小时"></a>晚上11点到早上7点之间，每隔一小时</h2><pre><code>* 23-7/1 * * * /service/l-zm/request.sh
 </code></pre><h2 id="每月的4号与每周一到周三的11点"><a href="#每月的4号与每周一到周三的11点" class="headerlink" title="每月的4号与每周一到周三的11点"></a>每月的4号与每周一到周三的11点</h2><pre><code>0 11 4 * mon-wed /service/l-zm/request.sh
 </code></pre><h2 id="一月一号的4点"><a href="#一月一号的4点" class="headerlink" title="一月一号的4点"></a>一月一号的4点</h2><pre><code>0 4 1 jan * /service/l-zm/request.sh
-</code></pre><p><br><br><code>CentOS</code> <code>CronTab</code></p>
+</code></pre><p><br><br><code>Linux</code> <code>CronTab</code></p>
 ]]></content>
     
     <summary type="html">
@@ -439,7 +647,7 @@ sentinel monitor mymaster 127.0.0.1 7501 2
     </summary>
     
     
-      <category term="CentOS" scheme="http://yoursite.com/tags/CentOS/"/>
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
     
       <category term="CronTab" scheme="http://yoursite.com/tags/CronTab/"/>
     
@@ -541,51 +749,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>CentOS 6 安装 / 更新 GCC 编译器</title>
-    <link href="http://yoursite.com/2016/10/01/014%20CentOS%206%20%E5%AE%89%E8%A3%85:%E6%9B%B4%E6%96%B0%20gcc%20%E7%BC%96%E8%AF%91%E5%99%A8/"/>
-    <id>http://yoursite.com/2016/10/01/014 CentOS 6 安装:更新 gcc 编译器/</id>
-    <published>2016-10-01T00:00:00.000Z</published>
-    <updated>2016-10-02T16:00:03.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="使用-yum-安装-gcc"><a href="#使用-yum-安装-gcc" class="headerlink" title="使用 yum 安装 gcc"></a>使用 yum 安装 gcc</h1><p><strong> 安装 gcc  、 c++ 编译器以及内核文件 </strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install gcc gcc-c++ kernel-devel</div></pre></td></tr></table></figure>
-<h1 id="yum-安装的版本太低-就需要自己安装了"><a href="#yum-安装的版本太低-就需要自己安装了" class="headerlink" title="yum 安装的版本太低 就需要自己安装了"></a>yum 安装的版本太低 就需要自己安装了</h1><blockquote>
-<p>不建议在服务器上面下载 因为速度太慢了 下面这个网址 根据自己的需求下载指定版本 然后上传至服务器<br><code>http://gcc.skazkaforyou.com/releases/</code></p>
-</blockquote>
-<h1 id="下载-解压"><a href="#下载-解压" class="headerlink" title="下载 解压"></a>下载 解压</h1><p>在这里，我们将<code>gcc-4.9.1.tar.gz</code>解压到<code>/usr/local/src</code>目录中(当然你也可以指定其他目录)</p>
-<p>解压 <code>tar -xvzf gcc-4.9.1.tar.gz</code> <code>cd gcc-4.9.1</code></p>
-<h1 id="运行-download-prerequisites-脚本"><a href="#运行-download-prerequisites-脚本" class="headerlink" title="运行 download_prerequisites 脚本"></a>运行 download_prerequisites 脚本</h1><p><code>./contrib/download_prerequisites</code></p>
-<blockquote>
-<p>安装gcc需要下载诸如gmp、mpfr、mpc等依赖文件，执行download_prerequisites将会自动下载这些软件并解压到当前目录(文件不大，总共只有几MB，请耐心等待下载)</p>
-</blockquote>
-<h1 id="gcc-安装位置"><a href="#gcc-安装位置" class="headerlink" title="gcc 安装位置"></a>gcc 安装位置</h1><p>接着，就可以对gcc进行编译安装了。在此之前，我们先创建一个目录 <code>/usr/local/build/gcc-4.9.1</code> (你也可以自行指定其他目录)用于存放编译后的程序文件</p>
-<p><code>mkdir /usr/local/build/</code></p>
-<p><code>mkdir /usr/local/build/gcc-4.9.1</code></p>
-<p>跳转到编译后的程序文件存放目录<br><code>cd /usr/local/build/gcc-4.9.1</code><br>调用gcc源程序的configure(后面的参数选项可根据需要自行修改)，用于配置gcc<br><code>/usr/local/src/gcc-4.9.1/configure --enable-checking=release --enable-languages=c,c++ --disable-multilib</code><br>充分发挥CPU四核优势，启动四线程<br><code>make -j4</code></p>
-<h1 id="编译-gcc-源程序-需要消耗比较长的时间"><a href="#编译-gcc-源程序-需要消耗比较长的时间" class="headerlink" title="编译 gcc 源程序 需要消耗比较长的时间"></a>编译 gcc 源程序 需要消耗比较长的时间</h1><p><code>make</code></p>
-<blockquote>
-<p><code>make</code>命令这一过程耗费的时间非常多 我大概用了一个小时</p>
-</blockquote>
-<h1 id="安装-gcc"><a href="#安装-gcc" class="headerlink" title="安装 gcc"></a>安装 gcc</h1><p><code>make insatall</code></p>
-<h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1><p><strong>查看 gcc 版本</strong></p>
-<p><code>gcc -v</code> <strong>gcc version 4.9.1 (GCC) </strong></p>
-<p><br><br><code>CentOS</code> <code>GCC</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;使用-yum-安装-gcc&quot;&gt;&lt;a href=&quot;#使用-yum-安装-gcc&quot; class=&quot;headerlink&quot; title=&quot;使用 yum 安装 gcc&quot;&gt;&lt;/a&gt;使用 yum 安装 gcc&lt;/h1&gt;&lt;p&gt;&lt;strong&gt; 安装 gcc  、 c++ 编译器
-    
-    </summary>
-    
-    
-      <category term="CentOS" scheme="http://yoursite.com/tags/CentOS/"/>
-    
-      <category term="GCC" scheme="http://yoursite.com/tags/GCC/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Centos 6 中部署 Hexo 个人博客</title>
     <link href="http://yoursite.com/2016/10/01/013%20CentOS%206%20%E4%B8%AD%E9%83%A8%E7%BD%B2%20Hexo%20%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2016/10/01/013 CentOS 6 中部署 Hexo 个人博客/</id>
@@ -632,6 +795,51 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
       <category term="Node.js" scheme="http://yoursite.com/tags/Node-js/"/>
     
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS 6 安装 / 更新 GCC 编译器</title>
+    <link href="http://yoursite.com/2016/10/01/014%20CentOS%206%20%E5%AE%89%E8%A3%85:%E6%9B%B4%E6%96%B0%20gcc%20%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    <id>http://yoursite.com/2016/10/01/014 CentOS 6 安装:更新 gcc 编译器/</id>
+    <published>2016-10-01T00:00:00.000Z</published>
+    <updated>2016-10-02T16:00:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="使用-yum-安装-gcc"><a href="#使用-yum-安装-gcc" class="headerlink" title="使用 yum 安装 gcc"></a>使用 yum 安装 gcc</h1><p><strong> 安装 gcc  、 c++ 编译器以及内核文件 </strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install gcc gcc-c++ kernel-devel</div></pre></td></tr></table></figure>
+<h1 id="yum-安装的版本太低-就需要自己安装了"><a href="#yum-安装的版本太低-就需要自己安装了" class="headerlink" title="yum 安装的版本太低 就需要自己安装了"></a>yum 安装的版本太低 就需要自己安装了</h1><blockquote>
+<p>不建议在服务器上面下载 因为速度太慢了 下面这个网址 根据自己的需求下载指定版本 然后上传至服务器<br><code>http://gcc.skazkaforyou.com/releases/</code></p>
+</blockquote>
+<h1 id="下载-解压"><a href="#下载-解压" class="headerlink" title="下载 解压"></a>下载 解压</h1><p>在这里，我们将<code>gcc-4.9.1.tar.gz</code>解压到<code>/usr/local/src</code>目录中(当然你也可以指定其他目录)</p>
+<p>解压 <code>tar -xvzf gcc-4.9.1.tar.gz</code> <code>cd gcc-4.9.1</code></p>
+<h1 id="运行-download-prerequisites-脚本"><a href="#运行-download-prerequisites-脚本" class="headerlink" title="运行 download_prerequisites 脚本"></a>运行 download_prerequisites 脚本</h1><p><code>./contrib/download_prerequisites</code></p>
+<blockquote>
+<p>安装gcc需要下载诸如gmp、mpfr、mpc等依赖文件，执行download_prerequisites将会自动下载这些软件并解压到当前目录(文件不大，总共只有几MB，请耐心等待下载)</p>
+</blockquote>
+<h1 id="gcc-安装位置"><a href="#gcc-安装位置" class="headerlink" title="gcc 安装位置"></a>gcc 安装位置</h1><p>接着，就可以对gcc进行编译安装了。在此之前，我们先创建一个目录 <code>/usr/local/build/gcc-4.9.1</code> (你也可以自行指定其他目录)用于存放编译后的程序文件</p>
+<p><code>mkdir /usr/local/build/</code></p>
+<p><code>mkdir /usr/local/build/gcc-4.9.1</code></p>
+<p>跳转到编译后的程序文件存放目录<br><code>cd /usr/local/build/gcc-4.9.1</code><br>调用gcc源程序的configure(后面的参数选项可根据需要自行修改)，用于配置gcc<br><code>/usr/local/src/gcc-4.9.1/configure --enable-checking=release --enable-languages=c,c++ --disable-multilib</code><br>充分发挥CPU四核优势，启动四线程<br><code>make -j4</code></p>
+<h1 id="编译-gcc-源程序-需要消耗比较长的时间"><a href="#编译-gcc-源程序-需要消耗比较长的时间" class="headerlink" title="编译 gcc 源程序 需要消耗比较长的时间"></a>编译 gcc 源程序 需要消耗比较长的时间</h1><p><code>make</code></p>
+<blockquote>
+<p><code>make</code>命令这一过程耗费的时间非常多 我大概用了一个小时</p>
+</blockquote>
+<h1 id="安装-gcc"><a href="#安装-gcc" class="headerlink" title="安装 gcc"></a>安装 gcc</h1><p><code>make insatall</code></p>
+<h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1><p><strong>查看 gcc 版本</strong></p>
+<p><code>gcc -v</code> <strong>gcc version 4.9.1 (GCC) </strong></p>
+<p><br><br><code>CentOS</code> <code>GCC</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;使用-yum-安装-gcc&quot;&gt;&lt;a href=&quot;#使用-yum-安装-gcc&quot; class=&quot;headerlink&quot; title=&quot;使用 yum 安装 gcc&quot;&gt;&lt;/a&gt;使用 yum 安装 gcc&lt;/h1&gt;&lt;p&gt;&lt;strong&gt; 安装 gcc  、 c++ 编译器
+    
+    </summary>
+    
+    
+      <category term="CentOS" scheme="http://yoursite.com/tags/CentOS/"/>
+    
+      <category term="GCC" scheme="http://yoursite.com/tags/GCC/"/>
     
   </entry>
   
@@ -701,6 +909,36 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
       <category term="Nginx" scheme="http://yoursite.com/tags/Nginx/"/>
     
       <category term="服务器" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac 电脑 U盘 重装系统</title>
+    <link href="http://yoursite.com/2016/09/27/006%20Mac%20%E7%94%B5%E8%84%91%20U%E7%9B%98%20%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://yoursite.com/2016/09/27/006 Mac 电脑 U盘 重装系统/</id>
+    <published>2016-09-27T00:00:00.000Z</published>
+    <updated>2016-09-26T16:40:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h1><p><code>Install\ macOS\ Sierra.app</code></p>
+<p><strong> 最新的系统可以去 Apple Store 里面下载 </strong></p>
+<h1 id="U盘"><a href="#U盘" class="headerlink" title="U盘"></a>U盘</h1><p><code>lzmvlzm</code></p>
+<p><strong> U盘名称可以到磁盘工具里面查看 </strong></p>
+<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/lzmvlzm --applicationpath /Applications/Install\ macOS\ Sierra.app --nointeraction</div></pre></td></tr></table></figure>
+<h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><p><strong> 开机按下 <code>option</code> 键 </strong></p>
+<p><br><br><code>Mac</code> <code>系统</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;系统&quot;&gt;&lt;a href=&quot;#系统&quot; class=&quot;headerlink&quot; title=&quot;系统&quot;&gt;&lt;/a&gt;系统&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Install\ macOS\ Sierra.app&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; 最新的系统可以去 Apple
+    
+    </summary>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+      <category term="系统" scheme="http://yoursite.com/tags/%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
@@ -954,6 +1192,29 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
+    <title>Struts 各版本 jar包 下载</title>
+    <link href="http://yoursite.com/2016/09/27/008%20Struts%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://yoursite.com/2016/09/27/008 Struts 各版本 jar包 下载/</id>
+    <published>2016-09-27T00:00:00.000Z</published>
+    <updated>2016-09-26T16:44:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://archive.apache.org/dist/struts/binaries/" target="_blank" rel="external">http://archive.apache.org/dist/struts/binaries/</a></p>
+<pre><code>http://archive.apache.org/dist/struts/binaries/
+</code></pre><p><br><br><code>Struts</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://archive.apache.org/dist/struts/binaries/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://archive.apache.org/dist/struts/binaries/&lt;
+    
+    </summary>
+    
+    
+      <category term="Struts" scheme="http://yoursite.com/tags/Struts/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java 中 System.getProperty() 方法可以获取系统的那些值</title>
     <link href="http://yoursite.com/2016/09/27/009%20Java%20%E4%B8%AD%20System.getProperty()%20%E6%96%B9%E6%B3%95%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%82%A3%E4%BA%9B%E5%80%BC/"/>
     <id>http://yoursite.com/2016/09/27/009 Java 中 System.getProperty() 方法可以获取系统的那些值/</id>
@@ -1111,59 +1372,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
   </entry>
   
   <entry>
-    <title>Mac 电脑 U盘 重装系统</title>
-    <link href="http://yoursite.com/2016/09/27/006%20Mac%20%E7%94%B5%E8%84%91%20U%E7%9B%98%20%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
-    <id>http://yoursite.com/2016/09/27/006 Mac 电脑 U盘 重装系统/</id>
-    <published>2016-09-27T00:00:00.000Z</published>
-    <updated>2016-09-26T16:40:19.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h1><p><code>Install\ macOS\ Sierra.app</code></p>
-<p><strong> 最新的系统可以去 Apple Store 里面下载 </strong></p>
-<h1 id="U盘"><a href="#U盘" class="headerlink" title="U盘"></a>U盘</h1><p><code>lzmvlzm</code></p>
-<p><strong> U盘名称可以到磁盘工具里面查看 </strong></p>
-<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/lzmvlzm --applicationpath /Applications/Install\ macOS\ Sierra.app --nointeraction</div></pre></td></tr></table></figure>
-<h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><p><strong> 开机按下 <code>option</code> 键 </strong></p>
-<p><br><br><code>Mac</code> <code>系统</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;系统&quot;&gt;&lt;a href=&quot;#系统&quot; class=&quot;headerlink&quot; title=&quot;系统&quot;&gt;&lt;/a&gt;系统&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Install\ macOS\ Sierra.app&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt; 最新的系统可以去 Apple
-    
-    </summary>
-    
-    
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
-    
-      <category term="系统" scheme="http://yoursite.com/tags/%E7%B3%BB%E7%BB%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Struts 各版本 jar包 下载</title>
-    <link href="http://yoursite.com/2016/09/27/008%20Struts%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
-    <id>http://yoursite.com/2016/09/27/008 Struts 各版本 jar包 下载/</id>
-    <published>2016-09-27T00:00:00.000Z</published>
-    <updated>2016-09-26T16:44:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://archive.apache.org/dist/struts/binaries/" target="_blank" rel="external">http://archive.apache.org/dist/struts/binaries/</a></p>
-<pre><code>http://archive.apache.org/dist/struts/binaries/
-</code></pre><p><br><br><code>Struts</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://archive.apache.org/dist/struts/binaries/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://archive.apache.org/dist/struts/binaries/&lt;
-    
-    </summary>
-    
-    
-      <category term="Struts" scheme="http://yoursite.com/tags/Struts/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Spring 各版本 jar包 下载</title>
     <link href="http://yoursite.com/2016/09/27/007%20Spring%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
     <id>http://yoursite.com/2016/09/27/007 Spring 各版本 jar包 下载/</id>
@@ -1183,85 +1391,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
     
     
       <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Apple 系统固件下载地址</title>
-    <link href="http://yoursite.com/2016/09/26/005%20Apple%20%E7%B3%BB%E7%BB%9F%E5%9B%BA%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/"/>
-    <id>http://yoursite.com/2016/09/26/005 Apple 系统固件下载地址/</id>
-    <published>2016-09-26T00:00:00.000Z</published>
-    <updated>2016-09-25T18:41:47.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><br><br><a href="https://support.apple.com/zh_CN/downloads/" target="_blank" rel="external">https://support.apple.com/zh_CN/downloads/</a></p>
-<p><br><br><code>Apple</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://support.apple.com/zh_CN/downloads/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://support.apple.com/zh_CN/downloads/&lt;/a
-    
-    </summary>
-    
-    
-      <category term="Apple" scheme="http://yoursite.com/tags/Apple/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL 数据库编码方式修改</title>
-    <link href="http://yoursite.com/2016/09/26/004%20MySQL%20%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F%E4%BF%AE%E6%94%B9/"/>
-    <id>http://yoursite.com/2016/09/26/004 MySQL 数据库编码方式修改/</id>
-    <published>2016-09-26T00:00:00.000Z</published>
-    <updated>2016-09-26T01:34:17.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="查看-MySQL-编码"><a href="#查看-MySQL-编码" class="headerlink" title="查看 MySQL 编码"></a>查看 MySQL 编码</h1><p><strong>进入 MySQL 输入</strong> <code>status</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">mysql  Ver 14.14 Distrib 5.6.33, <span class="keyword">for</span> debian-linux-gnu (x86_64) using  EditLine wrapper</div><div class="line">Connection id: 249</div><div class="line">Current database:</div><div class="line">Current user: root@localhost</div><div class="line">SSL: Not <span class="keyword">in</span> use</div><div class="line">Current pager: stdout</div><div class="line">Using outfile: <span class="string">''</span></div><div class="line">Using delimiter: ;</div><div class="line">Server version: 5.6.33-0ubuntu0.14.04.1 (Ubuntu)</div><div class="line">Protocol version: 10</div><div class="line">Connection: Localhost via UNIX socket</div><div class="line">Server characterset: utf8</div><div class="line">Db     characterset: utf8</div><div class="line">Client characterset: utf8</div><div class="line">Conn.  characterset: utf8</div><div class="line">UNIX socket: /var/run/mysqld/mysqld.sock</div><div class="line">Uptime: 5 hours 16 min 18 sec</div></pre></td></tr></table></figure>
-<p><strong>如果下面这四个不是</strong> <code>utf8</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Server characterset: utf8</div><div class="line">Db     characterset: utf8</div><div class="line">Client characterset: utf8</div><div class="line">Conn.  characterset: utf8</div></pre></td></tr></table></figure>
-<p><strong>保存中文的时候可能会乱码</strong></p>
-<h1 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vim /etc/mysql/my.cnf</div></pre></td></tr></table></figure>
-<pre><code>[client] &gt; 下面追加  default-character-set=utf8
-[mysqld] &gt; 下面追加  character-set-server=utf8
-[mysql] &gt; 下面追加  no-auto-rehash
-</code></pre><h1 id="重启-MySQL-数据库"><a href="#重启-MySQL-数据库" class="headerlink" title="重启 MySQL 数据库"></a>重启 MySQL 数据库</h1><p><strong>输入</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ service mysql restart</div></pre></td></tr></table></figure></p>
-<p> (重启数据库)</p>
-<p><br><br><code>MySQL</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;查看-MySQL-编码&quot;&gt;&lt;a href=&quot;#查看-MySQL-编码&quot; class=&quot;headerlink&quot; title=&quot;查看 MySQL 编码&quot;&gt;&lt;/a&gt;查看 MySQL 编码&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;进入 MySQL 输入&lt;/strong&gt; &lt;code
-    
-    </summary>
-    
-    
-      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac 显示隐藏文件</title>
-    <link href="http://yoursite.com/2016/09/25/002%20Mac%20%E6%98%BE%E7%A4%BA%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/"/>
-    <id>http://yoursite.com/2016/09/25/002 Mac 显示隐藏文件/</id>
-    <published>2016-09-25T00:00:00.000Z</published>
-    <updated>2016-09-25T18:32:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">true</span></div></pre></td></tr></table></figure>
-<h1 id="生效"><a href="#生效" class="headerlink" title="生效"></a>生效</h1><p><strong>强制退出 Finder</strong>  <code>commend + option + esc</code> </p>
-<p><br></p>
-<h1 id="恢复原来的样子"><a href="#恢复原来的样子" class="headerlink" title="恢复原来的样子"></a>恢复原来的样子</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool <span class="literal">false</span></div></pre></td></tr></table></figure>
-<p><br><br><code>Mac</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;终端输入&quot;&gt;&lt;a href=&quot;#终端输入&quot; class=&quot;headerlink&quot; title=&quot;终端输入&quot;&gt;&lt;/a&gt;终端输入&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre
-    
-    </summary>
-    
-    
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
     
   </entry>
   

@@ -9,26 +9,20 @@
   <meta name="theme-color" content="#3F51B5">
   
   
-  <meta name="keywords" content="Linux,SSH">
-  <meta name="description" content="准备 本机生成 rsa 秘钥 
-ssh-keygen -t rsa
-上传公钥scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/
-修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制到 .ssh 目录：cp /root/.ssh/tmp/authorized_keys">
+  <meta name="keywords" content="MySQL,Linux">
+  <meta name="description" content="mysqldump数据库结构+数据的 .sql 文件mysqldump -u 用户名 -p密码 数据库 &amp;gt; /tmp/mysql_data/文件名date +%Y-%m-%d-%H-%M-%S.sqlmysqldump -u lim -ppassword shujuku &amp;gt; /tmp/mysql_data/shujuku\date +%Y-%m-%d-%H-%M-%S`.sql`
+数据">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SSH 免密码登录远程服务器">
-<meta property="og:url" content="http://yoursite.com/2016/10/25/022 SSH免密码登录远程服务器/index.html">
+<meta property="og:title" content="Linux MySQL 自动备份">
+<meta property="og:url" content="http://yoursite.com/2016/10/26/023 Linux MySQL 自动备份/index.html">
 <meta property="og:site_name" content="Lizm's Personal Blog">
-<meta property="og:description" content="准备 本机生成 rsa 秘钥 
-ssh-keygen -t rsa
-上传公钥scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/
-修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制到 .ssh 目录：cp /root/.ssh/tmp/authorized_keys">
-<meta property="og:updated_time" content="2016-10-25T10:19:24.000Z">
+<meta property="og:description" content="mysqldump数据库结构+数据的 .sql 文件mysqldump -u 用户名 -p密码 数据库 &amp;gt; /tmp/mysql_data/文件名date +%Y-%m-%d-%H-%M-%S.sqlmysqldump -u lim -ppassword shujuku &amp;gt; /tmp/mysql_data/shujuku\date +%Y-%m-%d-%H-%M-%S`.sql`
+数据">
+<meta property="og:updated_time" content="2016-10-26T14:57:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SSH 免密码登录远程服务器">
-<meta name="twitter:description" content="准备 本机生成 rsa 秘钥 
-ssh-keygen -t rsa
-上传公钥scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/
-修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制到 .ssh 目录：cp /root/.ssh/tmp/authorized_keys">
+<meta name="twitter:title" content="Linux MySQL 自动备份">
+<meta name="twitter:description" content="mysqldump数据库结构+数据的 .sql 文件mysqldump -u 用户名 -p密码 数据库 &amp;gt; /tmp/mysql_data/文件名date +%Y-%m-%d-%H-%M-%S.sqlmysqldump -u lim -ppassword shujuku &amp;gt; /tmp/mysql_data/shujuku\date +%Y-%m-%d-%H-%M-%S`.sql`
+数据">
   
     <link rel="alternative" href="/atom.xml" title="Lizm&#39;s Personal Blog" type="application/atom+xml">
   
@@ -107,7 +101,7 @@ ssh-keygen -t rsa
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">SSH 免密码登录远程服务器</div>
+        <div class="flex-col header-title ellipsis">Linux MySQL 自动备份</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -124,11 +118,11 @@ ssh-keygen -t rsa
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">SSH 免密码登录远程服务器</h1>
+    <h1 class="author">Linux MySQL 自动备份</h1>
     <h5 class="subtitle">
         
-            <time datetime="2016-10-25T00:00:00.000Z" itemprop="datePublished" class="page-time">
-  2016-10-25
+            <time datetime="2016-10-26T00:00:00.000Z" itemprop="datePublished" class="page-time">
+  2016-10-26
 </time>
 
 
@@ -138,11 +132,11 @@ ssh-keygen -t rsa
 </header>
 
     <div class="container body-wrap">
-      <article id="post-022 SSH免密码登录远程服务器" 
+      <article id="post-023 Linux MySQL 自动备份" 
   class="article article-type-post" itemprop="blogPost">
     <div class="post-meta flex-row">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SSH/">SSH</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li></ul>
 
     </div>
     <div class="post-body">
@@ -150,7 +144,7 @@ ssh-keygen -t rsa
 
             
             <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#准备"><span class="post-toc-text">准备</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#上传公钥"><span class="post-toc-text">上传公钥</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#修改"><span class="post-toc-text">修改</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#配置多用户"><span class="post-toc-text">配置多用户</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Done"><span class="post-toc-text">Done</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#mysqldump"><span class="post-toc-text">mysqldump</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#备份"><span class="post-toc-text">备份</span></a></li></ol>
             </nav>
             
         </aside>
@@ -158,12 +152,9 @@ ssh-keygen -t rsa
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p><strong> 本机生成 rsa 秘钥 </strong></p>
-<p><code>ssh-keygen -t rsa</code></p>
-<h1 id="上传公钥"><a href="#上传公钥" class="headerlink" title="上传公钥"></a>上传公钥</h1><p><code>scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/</code></p>
-<h1 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h1><p>进入：<code>cd /root/.ssh/tmp</code><br>修改名字：<code>mv id_rsa.pub authorized_keys</code><br>复制到 <code>.ssh</code> 目录：<code>cp /root/.ssh/tmp/authorized_keys /root/.ssh/</code><br>修改文件权限：<code>chmod 600 /root/.ssh/tmp/authorized_key</code> (如果不修改，可能会引起 authorized_key 文件被修改,导致文件失效)</p>
-<h1 id="配置多用户"><a href="#配置多用户" class="headerlink" title="配置多用户"></a>配置多用户</h1><p>如果 <code>authorized_key</code> 已经存在, 进行如下操作<br>在第二个用户机上面生成 <code>rea</code> 秘钥<br>复制到服务器上：<code>scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/</code><br>执行：<code>cat /root/.ssh/tmp/id_rsa.pub &gt;&gt; /root/.ssh/authorized_key</code> （附加秘钥）</p>
-<h1 id="Done"><a href="#Done" class="headerlink" title="Done"></a>Done</h1><p>直接登录服务器：<code>ssh root@目标服务器IP</code></p>
+            <h1 id="mysqldump"><a href="#mysqldump" class="headerlink" title="mysqldump"></a>mysqldump</h1><p>数据库结构+数据的 .sql 文件<br><code>mysqldump -u 用户名 -p密码 数据库 &gt; /tmp/mysql_data/文件名</code>date +%Y-%m-%d-%H-%M-%S<code>.sql</code><br><code>mysqldump -u lim -ppassword shujuku &gt; /tmp/mysql_data/shujuku\</code>date +%Y-%m-%d-%H-%M-%S`.sql`</p>
+<p>数据库结构+数据的 .sql.gz 文件<br><code>mysqldump -u lim -ppassword shujuku | gzip &gt; /tmp/mysql_data/shujuku</code>date +%Y-%m-%d-%H-%M-%S<code>.sql.gz</code></p>
+<h1 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h1><p><code>scp /usr/local/backup_mysql/shujuku.sql root@10.10.10.10:/usr/local/online-mysql-database/shujuku.sql</code></p>
 <p><br><br><code>Linux</code> <code>SSH</code></p>
 
             

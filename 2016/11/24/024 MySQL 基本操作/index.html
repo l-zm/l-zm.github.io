@@ -9,26 +9,38 @@
   <meta name="theme-color" content="#3F51B5">
   
   
-  <meta name="keywords" content="Linux,SSH">
-  <meta name="description" content="准备 本机生成 rsa 秘钥 
-ssh-keygen -t rsa
-上传公钥scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/
-修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制到 .ssh 目录：cp /root/.ssh/tmp/authorized_keys">
+  <meta name="keywords" content="MySQL">
+  <meta name="description" content="Mysql 设置 unique key 及 联合主键// 删除约束
+alter table `表` drop index `联合主键的名称`;
+
+// 创建 唯一约束主键
+alter table `表` add unique key (`字段`)
+
+// 创建 联合主键 联合主键不可重复
+alter table `表` add unique key `联合主键的名称` (`字段1`,`字段2`);">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SSH 免密码登录远程服务器">
-<meta property="og:url" content="http://yoursite.com/2016/10/25/022 SSH免密码登录远程服务器/index.html">
+<meta property="og:title" content="MySQL 基本操作">
+<meta property="og:url" content="http://yoursite.com/2016/11/24/024 MySQL 基本操作/index.html">
 <meta property="og:site_name" content="Lizm's Personal Blog">
-<meta property="og:description" content="准备 本机生成 rsa 秘钥 
-ssh-keygen -t rsa
-上传公钥scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/
-修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制到 .ssh 目录：cp /root/.ssh/tmp/authorized_keys">
-<meta property="og:updated_time" content="2016-10-25T10:19:24.000Z">
+<meta property="og:description" content="Mysql 设置 unique key 及 联合主键// 删除约束
+alter table `表` drop index `联合主键的名称`;
+
+// 创建 唯一约束主键
+alter table `表` add unique key (`字段`)
+
+// 创建 联合主键 联合主键不可重复
+alter table `表` add unique key `联合主键的名称` (`字段1`,`字段2`);">
+<meta property="og:updated_time" content="2016-12-05T12:36:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SSH 免密码登录远程服务器">
-<meta name="twitter:description" content="准备 本机生成 rsa 秘钥 
-ssh-keygen -t rsa
-上传公钥scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/
-修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制到 .ssh 目录：cp /root/.ssh/tmp/authorized_keys">
+<meta name="twitter:title" content="MySQL 基本操作">
+<meta name="twitter:description" content="Mysql 设置 unique key 及 联合主键// 删除约束
+alter table `表` drop index `联合主键的名称`;
+
+// 创建 唯一约束主键
+alter table `表` add unique key (`字段`)
+
+// 创建 联合主键 联合主键不可重复
+alter table `表` add unique key `联合主键的名称` (`字段1`,`字段2`);">
   
     <link rel="alternative" href="/atom.xml" title="Lizm&#39;s Personal Blog" type="application/atom+xml">
   
@@ -107,7 +119,7 @@ ssh-keygen -t rsa
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">SSH 免密码登录远程服务器</div>
+        <div class="flex-col header-title ellipsis">MySQL 基本操作</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -124,11 +136,11 @@ ssh-keygen -t rsa
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">SSH 免密码登录远程服务器</h1>
+    <h1 class="author">MySQL 基本操作</h1>
     <h5 class="subtitle">
         
-            <time datetime="2016-10-25T00:00:00.000Z" itemprop="datePublished" class="page-time">
-  2016-10-25
+            <time datetime="2016-11-24T00:00:00.000Z" itemprop="datePublished" class="page-time">
+  2016-11-24
 </time>
 
 
@@ -138,11 +150,11 @@ ssh-keygen -t rsa
 </header>
 
     <div class="container body-wrap">
-      <article id="post-022 SSH免密码登录远程服务器" 
+      <article id="post-024 MySQL 基本操作" 
   class="article article-type-post" itemprop="blogPost">
     <div class="post-meta flex-row">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SSH/">SSH</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li></ul>
 
     </div>
     <div class="post-body">
@@ -150,7 +162,7 @@ ssh-keygen -t rsa
 
             
             <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#准备"><span class="post-toc-text">准备</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#上传公钥"><span class="post-toc-text">上传公钥</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#修改"><span class="post-toc-text">修改</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#配置多用户"><span class="post-toc-text">配置多用户</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Done"><span class="post-toc-text">Done</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Mysql-设置-unique-key-及-联合主键"><span class="post-toc-text">Mysql 设置 unique key 及 联合主键</span></a></li></ol>
             </nav>
             
         </aside>
@@ -158,13 +170,15 @@ ssh-keygen -t rsa
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p><strong> 本机生成 rsa 秘钥 </strong></p>
-<p><code>ssh-keygen -t rsa</code></p>
-<h1 id="上传公钥"><a href="#上传公钥" class="headerlink" title="上传公钥"></a>上传公钥</h1><p><code>scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/</code></p>
-<h1 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h1><p>进入：<code>cd /root/.ssh/tmp</code><br>修改名字：<code>mv id_rsa.pub authorized_keys</code><br>复制到 <code>.ssh</code> 目录：<code>cp /root/.ssh/tmp/authorized_keys /root/.ssh/</code><br>修改文件权限：<code>chmod 600 /root/.ssh/tmp/authorized_key</code> (如果不修改，可能会引起 authorized_key 文件被修改,导致文件失效)</p>
-<h1 id="配置多用户"><a href="#配置多用户" class="headerlink" title="配置多用户"></a>配置多用户</h1><p>如果 <code>authorized_key</code> 已经存在, 进行如下操作<br>在第二个用户机上面生成 <code>rea</code> 秘钥<br>复制到服务器上：<code>scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/</code><br>执行：<code>cat /root/.ssh/tmp/id_rsa.pub &gt;&gt; /root/.ssh/authorized_key</code> （附加秘钥）</p>
-<h1 id="Done"><a href="#Done" class="headerlink" title="Done"></a>Done</h1><p>直接登录服务器：<code>ssh root@目标服务器IP</code></p>
-<p><br><br><code>Linux</code> <code>SSH</code></p>
+            <h1 id="Mysql-设置-unique-key-及-联合主键"><a href="#Mysql-设置-unique-key-及-联合主键" class="headerlink" title="Mysql 设置 unique key 及 联合主键"></a>Mysql 设置 unique key 及 联合主键</h1><pre><code>// 删除约束
+alter table `表` drop index `联合主键的名称`;
+
+// 创建 唯一约束主键
+alter table `表` add unique key (`字段`)
+
+// 创建 联合主键 联合主键不可重复
+alter table `表` add unique key `联合主键的名称` (`字段1`,`字段2`);
+</code></pre><p><br><br><code>MySQL</code></p>
 
             
             </div>
