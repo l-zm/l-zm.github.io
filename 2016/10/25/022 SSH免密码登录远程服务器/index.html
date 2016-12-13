@@ -13,7 +13,8 @@
   <meta name="description" content="准备 本机生成 rsa 秘钥 
 ssh-keygen -t rsa
 上传公钥scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/
-修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制到 .ssh 目录：cp /root/.ssh/tmp/authorized_keys">
+如果目标服务器上面没有 .ssh 目录 使用：ssh-keygen -t rsa 生成
+修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SSH 免密码登录远程服务器">
 <meta property="og:url" content="http://yoursite.com/2016/10/25/022 SSH免密码登录远程服务器/index.html">
@@ -21,14 +22,16 @@ ssh-keygen -t rsa
 <meta property="og:description" content="准备 本机生成 rsa 秘钥 
 ssh-keygen -t rsa
 上传公钥scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/
-修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制到 .ssh 目录：cp /root/.ssh/tmp/authorized_keys">
-<meta property="og:updated_time" content="2016-10-25T10:19:24.000Z">
+如果目标服务器上面没有 .ssh 目录 使用：ssh-keygen -t rsa 生成
+修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制">
+<meta property="og:updated_time" content="2016-12-13T17:21:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSH 免密码登录远程服务器">
 <meta name="twitter:description" content="准备 本机生成 rsa 秘钥 
 ssh-keygen -t rsa
 上传公钥scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/
-修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制到 .ssh 目录：cp /root/.ssh/tmp/authorized_keys">
+如果目标服务器上面没有 .ssh 目录 使用：ssh-keygen -t rsa 生成
+修改进入：cd /root/.ssh/tmp修改名字：mv id_rsa.pub authorized_keys复制">
   
     <link rel="alternative" href="/atom.xml" title="Lizm&#39;s Personal Blog" type="application/atom+xml">
   
@@ -161,7 +164,8 @@ ssh-keygen -t rsa
             <h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p><strong> 本机生成 rsa 秘钥 </strong></p>
 <p><code>ssh-keygen -t rsa</code></p>
 <h1 id="上传公钥"><a href="#上传公钥" class="headerlink" title="上传公钥"></a>上传公钥</h1><p><code>scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/</code></p>
-<h1 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h1><p>进入：<code>cd /root/.ssh/tmp</code><br>修改名字：<code>mv id_rsa.pub authorized_keys</code><br>复制到 <code>.ssh</code> 目录：<code>cp /root/.ssh/tmp/authorized_keys /root/.ssh/</code><br>修改文件权限：<code>chmod 600 /root/.ssh/tmp/authorized_key</code> (如果不修改，可能会引起 authorized_key 文件被修改,导致文件失效)</p>
+<p>如果目标服务器上面没有 <code>.ssh</code> 目录 使用：<code>ssh-keygen -t rsa</code> 生成</p>
+<h1 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h1><p>进入：<code>cd /root/.ssh/tmp</code><br>修改名字：<code>mv id_rsa.pub authorized_keys</code><br>复制到 <code>.ssh</code> 目录：<code>cp /root/.ssh/tmp/authorized_keys /root/.ssh/</code><br>修改文件权限：<code>chmod 600 /root/.ssh/authorized_key</code> (如果不修改，可能会引起 authorized_key 文件被修改,导致文件失效)</p>
 <h1 id="配置多用户"><a href="#配置多用户" class="headerlink" title="配置多用户"></a>配置多用户</h1><p>如果 <code>authorized_key</code> 已经存在, 进行如下操作<br>在第二个用户机上面生成 <code>rea</code> 秘钥<br>复制到服务器上：<code>scp /Users/Lim/.ssh/id_rsa.pub root@目标服务器IP:/root/.ssh/tmp/</code><br>执行：<code>cat /root/.ssh/tmp/id_rsa.pub &gt;&gt; /root/.ssh/authorized_key</code> （附加秘钥）</p>
 <h1 id="Done"><a href="#Done" class="headerlink" title="Done"></a>Done</h1><p>直接登录服务器：<code>ssh root@目标服务器IP</code></p>
 <p><br><br><code>Linux</code> <code>SSH</code></p>
