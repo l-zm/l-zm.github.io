@@ -10,31 +10,34 @@
   
   
   <meta name="keywords" content="Nginx,服务器">
-  <meta name="description" content="Nginx 安装官网下载
+  <meta name="description" content="Nginx 安装官网下载 http://nginx.org/
 放在目录：/usr/local/nginx 下
-tar -zxvf /usr/local/nginx/nginx-1.10.1.tar.gz 
+tar -zxvf /usr/local/nginx/nginx-1.10.1.tar.gz
 进入目录：cd nginx-1.10.1
-./configure –prefix=/usr/local/nginx
-出现错误：./configure: error: the HTTP rewrite module requires">
+./configure --prefix=/usr/local/nginx
+出现错误：
+./configure: error: the HTTP rewr">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Nginx 安装 负载均衡 备用服务器">
 <meta property="og:url" content="http://yoursite.com/2016/09/28/011 Nginx 安装 负载均衡 备用服务器/index.html">
 <meta property="og:site_name" content="Lizm's Personal Blog">
-<meta property="og:description" content="Nginx 安装官网下载
+<meta property="og:description" content="Nginx 安装官网下载 http://nginx.org/
 放在目录：/usr/local/nginx 下
-tar -zxvf /usr/local/nginx/nginx-1.10.1.tar.gz 
+tar -zxvf /usr/local/nginx/nginx-1.10.1.tar.gz
 进入目录：cd nginx-1.10.1
-./configure –prefix=/usr/local/nginx
-出现错误：./configure: error: the HTTP rewrite module requires">
-<meta property="og:updated_time" content="2016-12-16T05:45:36.000Z">
+./configure --prefix=/usr/local/nginx
+出现错误：
+./configure: error: the HTTP rewr">
+<meta property="og:updated_time" content="2016-12-16T05:55:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Nginx 安装 负载均衡 备用服务器">
-<meta name="twitter:description" content="Nginx 安装官网下载
+<meta name="twitter:description" content="Nginx 安装官网下载 http://nginx.org/
 放在目录：/usr/local/nginx 下
-tar -zxvf /usr/local/nginx/nginx-1.10.1.tar.gz 
+tar -zxvf /usr/local/nginx/nginx-1.10.1.tar.gz
 进入目录：cd nginx-1.10.1
-./configure –prefix=/usr/local/nginx
-出现错误：./configure: error: the HTTP rewrite module requires">
+./configure --prefix=/usr/local/nginx
+出现错误：
+./configure: error: the HTTP rewr">
   
     <link rel="alternative" href="/atom.xml" title="Lizm&#39;s Personal Blog" type="application/atom+xml">
   
@@ -164,16 +167,25 @@ tar -zxvf /usr/local/nginx/nginx-1.10.1.tar.gz
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="Nginx-安装"><a href="#Nginx-安装" class="headerlink" title="Nginx 安装"></a>Nginx 安装</h1><p>官网下载</p>
+            <h1 id="Nginx-安装"><a href="#Nginx-安装" class="headerlink" title="Nginx 安装"></a>Nginx 安装</h1><p>官网下载 <a href="http://nginx.org/" target="_blank" rel="external">http://nginx.org/</a></p>
 <p>放在目录：<code>/usr/local/nginx</code> 下</p>
-<p>tar -zxvf /usr/local/nginx/nginx-1.10.1.tar.gz </p>
-<p>进入目录：cd nginx-1.10.1</p>
-<p>./configure –prefix=/usr/local/nginx</p>
-<p>出现错误：<br>./configure: error: the HTTP rewrite module requires the PCRE library.<br>You can either disable the module by using –without-http_rewrite_module<br>option, or install the PCRE library into the system, or build the PCRE library<br>statically from the source with nginx by using –with-pcre=<path></path> option.</p>
-<p>安装：yum -y install pcre-devel</p>
-<p>出现错误：<br>./configure: error: the HTTP gzip module requires the zlib library.<br>You can either disable the module by using –without-http_gzip_module<br>option, or install the zlib library into the system, or build the zlib library<br>statically from the source with nginx by using –with-zlib=<path></path> option.</p>
-<p>安装：yum -y install zlib-devel</p>
-<hr>
+<p><code>tar -zxvf /usr/local/nginx/nginx-1.10.1.tar.gz</code></p>
+<p>进入目录：<code>cd nginx-1.10.1</code></p>
+<p><code>./configure --prefix=/usr/local/nginx</code></p>
+<pre><code>出现错误：
+./configure: error: the HTTP rewrite module requires the PCRE library.
+You can either disable the module by using --without-http_rewrite_module
+option, or install the PCRE library into the system, or build the PCRE library
+statically from the source with nginx by using --with-pcre=&lt;path&gt; option.
+安装： yum -y install pcre-devel
+
+出现错误：
+./configure: error: the HTTP gzip module requires the zlib library.
+You can either disable the module by using --without-http_gzip_module
+option, or install the zlib library into the system, or build the zlib library
+statically from the source with nginx by using --with-zlib=&lt;path&gt; option.
+安装：yum -y install zlib-devel
+</code></pre><hr>
 <h1 id="Nginx-设置备用服务器"><a href="#Nginx-设置备用服务器" class="headerlink" title="Nginx 设置备用服务器"></a>Nginx 设置备用服务器</h1><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>一般情况下，项目上线可能会选在凌晨时刻进行，比如之前在中国电信，项目上线要等到凌晨一点，由测试给出最终版本项目文件，然后等待运维部署上线，我们开发等待测试给出上线结果，如果有问题，马上做修改，因为此刻访问用户最少，影响微乎其微。但是，上线完成，已经六点了。</p>
 <blockquote>
 <p><strong>生产环境   </strong>是一个神圣而有伟大的地方 只可远观而不可亵玩焉</p>
