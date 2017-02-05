@@ -9,23 +9,16 @@
   <meta name="theme-color" content="#3F51B5">
   
   
-  <meta name="keywords" content="MySQL,Linux">
-  <meta name="description" content="mysqldump数据库结构+数据的 .sql 文件
-mysqldump -u 用户名 -p密码 数据库 &amp;gt; /tmp/mysql_data/文件名`date +%Y-%m-%d-%H-%M-%S`.sql
-mysqldump -u lim -ppassword shujuku &amp;gt; /tmp/mysql_data/shujuku\`date +%Y-%m-%d-%H-%M-%S\`.s">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Linux MySQL 自动备份">
-<meta property="og:url" content="http://yoursite.com/2016/10/26/023 Linux MySQL 自动备份/index.html">
+  <meta name="keywords" content="undefined">
+  <meta name="description" content="Personal Blog">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lizm's Personal Blog">
+<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
 <meta property="og:site_name" content="Lizm's Personal Blog">
-<meta property="og:description" content="mysqldump数据库结构+数据的 .sql 文件
-mysqldump -u 用户名 -p密码 数据库 &amp;gt; /tmp/mysql_data/文件名`date +%Y-%m-%d-%H-%M-%S`.sql
-mysqldump -u lim -ppassword shujuku &amp;gt; /tmp/mysql_data/shujuku\`date +%Y-%m-%d-%H-%M-%S\`.s">
-<meta property="og:updated_time" content="2016-12-23T16:01:58.000Z">
+<meta property="og:description" content="Personal Blog">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux MySQL 自动备份">
-<meta name="twitter:description" content="mysqldump数据库结构+数据的 .sql 文件
-mysqldump -u 用户名 -p密码 数据库 &amp;gt; /tmp/mysql_data/文件名`date +%Y-%m-%d-%H-%M-%S`.sql
-mysqldump -u lim -ppassword shujuku &amp;gt; /tmp/mysql_data/shujuku\`date +%Y-%m-%d-%H-%M-%S\`.s">
+<meta name="twitter:title" content="Lizm's Personal Blog">
+<meta name="twitter:description" content="Personal Blog">
   
     <link rel="alternative" href="/atom.xml" title="Lizm&#39;s Personal Blog" type="application/atom+xml">
   
@@ -35,7 +28,7 @@ mysqldump -u lim -ppassword shujuku &amp;gt; /tmp/mysql_data/shujuku\`date +%Y-%
 </head>
 
 <body>
-  <nav id="menu" class="hide" >
+  <nav id="menu"  >
    <div class="inner flex-row-vertical">
   <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
       <i class="icon icon-lg icon-close"></i>
@@ -104,7 +97,7 @@ mysqldump -u lim -ppassword shujuku &amp;gt; /tmp/mysql_data/shujuku\`date +%Y-%
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Linux MySQL 自动备份</div>
+        <div class="flex-col header-title ellipsis">Lizm&#39;s Personal Blog</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -121,59 +114,51 @@ mysqldump -u lim -ppassword shujuku &amp;gt; /tmp/mysql_data/shujuku\`date +%Y-%
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">Linux MySQL 自动备份</h1>
+    <h1 class="author">Lizm&#39;s Personal Blog</h1>
     <h5 class="subtitle">
         
-            <time datetime="2016-10-26T00:00:00.000Z" itemprop="datePublished" class="page-time">
-  2016-10-26
-</time>
-
-
+        You really have two down son (你真有两下子)
         
     </h5>
   </div>
 </header>
 
     <div class="container body-wrap">
-      <article id="post-023 Linux MySQL 自动备份" 
-  class="article article-type-post" itemprop="blogPost">
-    <div class="post-meta flex-row">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li></ul>
+      
 
-    </div>
-    <div class="post-body">
-        <aside class="post-widget" id="post-widget">
 
-            
-            <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#mysqldump"><span class="post-toc-text">mysqldump</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#备份"><span class="post-toc-text">备份</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#恢复"><span class="post-toc-text">恢复</span></a></li></ol>
-            </nav>
-            
-        </aside>
+        <h3 class="archive-separator">2017  -  02</h3>
 
-        <div class="post-main">
 
-            <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="mysqldump"><a href="#mysqldump" class="headerlink" title="mysqldump"></a>mysqldump</h1><p>数据库结构+数据的 .sql 文件</p>
-<pre><code>mysqldump -u 用户名 -p密码 数据库 &gt; /tmp/mysql_data/文件名`date +%Y-%m-%d-%H-%M-%S`.sql
-mysqldump -u lim -ppassword shujuku &gt; /tmp/mysql_data/shujuku\`date +%Y-%m-%d-%H-%M-%S\`.sql
-</code></pre><p>数据库结构+数据的 .sql.gz 文件</p>
-<pre><code>mysqldump -u lim -ppassword shujuku | gzip &gt; /tmp/mysql_data/shujuku`date +%Y-%m-%d-%H-%M-%S`.sql.gz
-</code></pre><h1 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h1><pre><code>scp /usr/local/backup_mysql/shujuku.sql root@10.10.10.10:/usr/local/online-mysql-database/shujuku.sql
-</code></pre><h1 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a>恢复</h1><pre><code>首页进入 mysql 的 bin 目录
-创建数据库
-mysqladmin create shujuku
-恢复数据
-mysql -u lim -ppassword shujuku &lt; shujuku.sql
-</code></pre><p><br><br><code>Linux</code> <code>SSH</code></p>
 
-            
-            </div>
-            
-        </div>
-    </div>
+     <article class="archive-article">
+  <div class="archive-article-date">
+    <time datetime="2017-02-05T00:00:00.000Z" itemprop="datePublished" class="post-time">
+  5
+</time>
+
+  </div>
+  <div class="archive-article-inner">
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/02/05/029 无论以后跟谁结婚-请记住这些话/">无论以后跟谁结婚-请记住这些话</a>
+    </h3>
+  
+
+
+
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活/">生活</a></li></ul>
+
+  </div>
 </article>
+
+
+
+
     </div>
   </main>
 <div class="mask" id="mask"></div>
