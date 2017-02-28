@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-05T15:43:30.000Z</updated>
+  <updated>2017-02-28T10:01:58.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>MacOS Maven的安装与配置</title>
+    <link href="http://yoursite.com/2017/02/28/030%20MacOS%20Maven%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2017/02/28/030 MacOS Maven的安装与配置/</id>
+    <published>2017-02-28T00:00:00.000Z</published>
+    <updated>2017-02-28T10:01:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p><a href="https://maven.apache.org/download.cgi" target="_blank" rel="external">https://maven.apache.org/download.cgi</a></p>
+<h1 id="保存"><a href="#保存" class="headerlink" title="保存"></a>保存</h1><p>下载好的文件保存在：<code>/Users/lizm/Documents/apache-maven-3.3.3/</code> (不管在哪里,你开心就好)</p>
+<h1 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h1><p>打开 终端 , <code>vim ~/.bash_profile</code></p>
+<pre><code>export M2_HOME=/Users/lizm/Documents/apache-maven-3.3.3
+export PATH=$PATH:$M2_HOME/bin
+</code></pre><p>保存</p>
+<p><code>source ~/.bash_profile</code><br><code>mvn -v</code></p>
+<p><br><br><code>Maven</code> <code>MacOS</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://maven.apache.org/download.cgi&quot; target=&quot;_blank&quot; rel=&quot;e
+    
+    </summary>
+    
+    
+      <category term="Maven" scheme="http://yoursite.com/tags/Maven/"/>
+    
+      <category term="MacOS" scheme="http://yoursite.com/tags/MacOS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>无论以后跟谁结婚-请记住这些话</title>
     <link href="http://yoursite.com/2017/02/05/029%20%E6%97%A0%E8%AE%BA%E4%BB%A5%E5%90%8E%E8%B7%9F%E8%B0%81%E7%BB%93%E5%A9%9A-%E8%AF%B7%E8%AE%B0%E4%BD%8F%E8%BF%99%E4%BA%9B%E8%AF%9D/"/>
     <id>http://yoursite.com/2017/02/05/029 无论以后跟谁结婚-请记住这些话/</id>
     <published>2017-02-05T00:00:00.000Z</published>
-    <updated>2017-02-05T15:43:30.000Z</updated>
+    <updated>2017-02-05T15:45:21.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="无论以后跟谁结婚，请记住这些话"><a href="#无论以后跟谁结婚，请记住这些话" class="headerlink" title="无论以后跟谁结婚，请记住这些话"></a>无论以后跟谁结婚，请记住这些话</h1><h1 id="01"><a href="#01" class="headerlink" title="01"></a>01</h1><p>结婚是三个家庭的联谊，如果父母反对，沟通无果，这婚就不要结了，这就是以后各种解不开的死疙瘩的源头，别跟家里闹翻了，这世上，能发自肺腑疼你的，父母一定是排第一的。</p>
 <h1 id="02"><a href="#02" class="headerlink" title="02"></a>02</h1><p>父母在，不远嫁，如果仍要嫁，有时间还是常回家看看吧，我们结婚就是跟父母的一场渐行渐远的告别，你说不必送了，而他们余生最开心的事儿就是盼你回家吃顿饭。</p>
@@ -426,9 +456,9 @@ Maven
     </summary>
     
     
-      <category term="SpringMVC" scheme="http://yoursite.com/tags/SpringMVC/"/>
-    
       <category term="Redis" scheme="http://yoursite.com/tags/Redis/"/>
+    
+      <category term="SpringMVC" scheme="http://yoursite.com/tags/SpringMVC/"/>
     
   </entry>
   
@@ -798,31 +828,6 @@ sentinel monitor mymaster 127.0.0.1 7501 2
   </entry>
   
   <entry>
-    <title>Tomcat 相关问题及各个版本下载</title>
-    <link href="http://yoursite.com/2016/10/03/015%20Tomcat%20%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%84%E4%B8%AA%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD/"/>
-    <id>http://yoursite.com/2016/10/03/015 Tomcat 相关问题及各个版本下载/</id>
-    <published>2016-10-03T00:00:00.000Z</published>
-    <updated>2016-10-14T08:04:49.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Tomcat-Get-请求中文乱码"><a href="#Tomcat-Get-请求中文乱码" class="headerlink" title="Tomcat Get 请求中文乱码"></a>Tomcat Get 请求中文乱码</h1><p>到 Tmocat 目录 conf 下修改 server.xml 添加 <code>URIEncoding=&quot;UTF-8&quot;</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;Connector URIEncoding=&quot;UTF-8&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; connectionTimeout=&quot;20000&quot; redirectPort=&quot;8443&quot;/&gt;</div></pre></td></tr></table></figure>
-<h1 id="Tomcat-各个版本下载"><a href="#Tomcat-各个版本下载" class="headerlink" title="Tomcat 各个版本下载"></a>Tomcat 各个版本下载</h1><p><a href="http://archive.apache.org/dist/tomcat/" target="_blank" rel="external">http://archive.apache.org/dist/tomcat/</a></p>
-<pre><code>http://archive.apache.org/dist/tomcat/
-</code></pre><p><br><br><code>Tomcat</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Tomcat-Get-请求中文乱码&quot;&gt;&lt;a href=&quot;#Tomcat-Get-请求中文乱码&quot; class=&quot;headerlink&quot; title=&quot;Tomcat Get 请求中文乱码&quot;&gt;&lt;/a&gt;Tomcat Get 请求中文乱码&lt;/h1&gt;&lt;p&gt;到 Tmocat 目
-    
-    </summary>
-    
-    
-      <category term="Tomcat" scheme="http://yoursite.com/tags/Tomcat/"/>
-    
-  </entry>
-  
-  <entry>
     <title>CentOS 6 安装 JDK</title>
     <link href="http://yoursite.com/2016/10/03/016%20CentOS%206%20%E5%AE%89%E8%A3%85JDK/"/>
     <id>http://yoursite.com/2016/10/03/016 CentOS 6 安装JDK/</id>
@@ -889,6 +894,31 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
     
     
       <category term="JDK" scheme="http://yoursite.com/tags/JDK/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Tomcat 相关问题及各个版本下载</title>
+    <link href="http://yoursite.com/2016/10/03/015%20Tomcat%20%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%84%E4%B8%AA%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://yoursite.com/2016/10/03/015 Tomcat 相关问题及各个版本下载/</id>
+    <published>2016-10-03T00:00:00.000Z</published>
+    <updated>2016-10-14T08:04:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Tomcat-Get-请求中文乱码"><a href="#Tomcat-Get-请求中文乱码" class="headerlink" title="Tomcat Get 请求中文乱码"></a>Tomcat Get 请求中文乱码</h1><p>到 Tmocat 目录 conf 下修改 server.xml 添加 <code>URIEncoding=&quot;UTF-8&quot;</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;Connector URIEncoding=&quot;UTF-8&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; connectionTimeout=&quot;20000&quot; redirectPort=&quot;8443&quot;/&gt;</div></pre></td></tr></table></figure>
+<h1 id="Tomcat-各个版本下载"><a href="#Tomcat-各个版本下载" class="headerlink" title="Tomcat 各个版本下载"></a>Tomcat 各个版本下载</h1><p><a href="http://archive.apache.org/dist/tomcat/" target="_blank" rel="external">http://archive.apache.org/dist/tomcat/</a></p>
+<pre><code>http://archive.apache.org/dist/tomcat/
+</code></pre><p><br><br><code>Tomcat</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Tomcat-Get-请求中文乱码&quot;&gt;&lt;a href=&quot;#Tomcat-Get-请求中文乱码&quot; class=&quot;headerlink&quot; title=&quot;Tomcat Get 请求中文乱码&quot;&gt;&lt;/a&gt;Tomcat Get 请求中文乱码&lt;/h1&gt;&lt;p&gt;到 Tmocat 目
+    
+    </summary>
+    
+    
+      <category term="Tomcat" scheme="http://yoursite.com/tags/Tomcat/"/>
     
   </entry>
   
@@ -1074,29 +1104,6 @@ statically from the source with nginx by using --with-zlib=&lt;path&gt; option.
       <category term="Nginx" scheme="http://yoursite.com/tags/Nginx/"/>
     
       <category term="服务器" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring 各版本 jar包 下载</title>
-    <link href="http://yoursite.com/2016/09/27/007%20Spring%20%E5%90%84%E7%89%88%E6%9C%AC%20jar%E5%8C%85%20%E4%B8%8B%E8%BD%BD/"/>
-    <id>http://yoursite.com/2016/09/27/007 Spring 各版本 jar包 下载/</id>
-    <published>2016-09-27T00:00:00.000Z</published>
-    <updated>2016-09-26T16:45:23.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://repo.spring.io/release/org/springframework/spring/" target="_blank" rel="external">http://repo.spring.io/release/org/springframework/spring/</a></p>
-<pre><code>http://repo.spring.io/release/org/springframework/spring/
-</code></pre><p><br><br><code>Spring</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://repo.spring.io/release/org/springframework/spring/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://repo.spring.io/release/org/spri
-    
-    </summary>
-    
-    
-      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
     
   </entry>
   
