@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-28T10:01:58.000Z</updated>
+  <updated>2017-03-10T09:46:14.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,80 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网络请求的请求头和应答头解释</title>
+    <link href="http://yoursite.com/2017/03/10/031%20%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82%E7%9A%84%E8%AF%B7%E6%B1%82%E5%A4%B4%E5%92%8C%E5%BA%94%E7%AD%94%E5%A4%B4%E8%A7%A3%E9%87%8A/"/>
+    <id>http://yoursite.com/2017/03/10/031 网络请求的请求头和应答头解释/</id>
+    <published>2017-03-10T00:00:00.000Z</published>
+    <updated>2017-03-10T09:46:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="HTTP-请求的细节"><a href="#HTTP-请求的细节" class="headerlink" title="HTTP 请求的细节"></a>HTTP 请求的细节</h1><h2 id="请求方式："><a href="#请求方式：" class="headerlink" title="请求方式："></a>请求方式：</h2><pre><code>POST(常用)、GET(常用)、HEAD、OPTIONS、DELETE、TRACE、PUT
+</code></pre><h2 id="Request-Headers-请求头-："><a href="#Request-Headers-请求头-：" class="headerlink" title="Request Headers (请求头)："></a>Request Headers (请求头)：</h2><pre><code>浏览器通过这个头告诉服务器，它所支持的数据类型
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+
+浏览器通过这个头告诉服务器，支持的压缩格式
+Accept-Encoding：gzip, deflate, sdch, br
+
+浏览器通过这个头告诉服务器，它的语言环境
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+浏览器通过这个头告诉服务器，请求完后是断开链接还是何持链接
+Connection: keep-alive
+
+通过在客户端记录信息确定用户身份
+Cookie: _gscu_1241536983=882696267fjfxi33;TSf75e5b=e0cd2f639e1888d5cbd8cfa4f746188539c67dfeb03cb76b58c2625a
+
+浏览器通过这个头告诉服务器，想访问哪台主机
+Host: l-zm.com
+
+浏览器通过这个头告诉服务器，客户机是哪个页面来的  防盗链
+Referer: http://www.l-zm.com/index.jsp
+
+浏览器通过这个头告诉服务器，它支持哪种字符集
+Accept-Charset: zh-cn,zh;q=0.5
+
+浏览器通过这个头告诉服务器，缓存数据的时间 
+如果请求的部分在指定时间之后被修改则请求成功，未被修改则返回304代码
+If-Modified-Since: Fri, 10 Mar 2017 08:22:58 GMT
+
+自动升级请求从http到https
+Upgrade-Insecure-Requests: 1
+
+浏览器类型
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) 
+    AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+</code></pre><h2 id="Response-Headers-应答头-："><a href="#Response-Headers-应答头-：" class="headerlink" title="Response Headers (应答头)："></a>Response Headers (应答头)：</h2><h3 id="Cache-Control-private"><a href="#Cache-Control-private" class="headerlink" title="Cache-Control: private"></a>Cache-Control: private</h3><p>Cache-Control指定请求和响应遵循的缓存机制。在请求消息或响应消息中设置<br>Cache-Control并不会修改另一个消息处理过程中的缓存处理过程。请求时的缓存指令包括no-cache、no-store、max-age、max-stale、min-fresh、only-if-cached，响应消息中的指令包括public、private、no-cache、no-store、no-transform、must-revalidate、proxy-revalidate、max-age。各个消息中的指令含义如下：</p>
+<p>　　no-cache：指示请求或响应消息不能缓存，实际上是可以存储在本地缓存区中的，只是在与原始服务器进行新鲜度验证之前，缓存不能将其提供给客户端使用<br>　　no-store：缓存应该尽快从存储器中删除文档的所有痕迹，因为其中可能会包含敏感信息。<br>　　max-age：缓存无法返回缓存时间长于max-age规定秒的文档，若不超规定秒浏览器将不会发送对应的请求到服务器，数据由缓存直接返回；超过这一时间段才进一步由服务器决定是返回新数据还是仍由缓存提供。若同时还发送了max-stale指令，则使用期可能会超过其过期时间。<br>　　min-fresh：至少在未来规定秒内文档要保持新鲜，接受其新鲜生命期大于其当前 Age 跟 min-fresh 值之和的缓存对象。<br>　　max-stale：指示客户端可以接收过期响应消息，如果指定max-stale消息的值，那么客户端可以接收过期但在指定值之内的响应消息。<br>　　only-if-cached：只有当缓存中有副本存在时，客户端才会获得一份副本。<br>　　Public：指示响应可被任何缓存区缓存，可以用缓存内容回应任何用户。<br>　　Private：指示对于单个用户的整个或部分响应消息，不能被共享缓存处理，只能用缓存内容回应先前请求该内容的那个用户。</p>
+<h3 id="Connection-Keep-Alive"><a href="#Connection-Keep-Alive" class="headerlink" title="Connection: Keep-Alive"></a>Connection: Keep-Alive</h3><p>Connection表示是否需要持久连接。如果Servlet看到这里的值为“Keep-Alive”，或者看到请求使用的是HTTP 1.1（HTTP 1.1默认进行持久连接），它就可以利用持久连接的优点，当页面包含多个元素时（例如Applet，图片），显著地减少下载所需要的时间。要实现这一点，Servlet需要在应答中发送一个Content-Length头，最简单的实现方法是：先把内容写入ByteArrayOutputStream，然后在正式写出内容之前计算它的大小</p>
+<p>　　Close：告诉WEB服务器或者代理服务器，在完成本次请求的响应后，断开连接，不要等待本次连接的后续请求了<br>　　Keepalive：告诉WEB服务器或者代理服务器，在完成本次请求的响应后，保持连接，等待本次连接的后续请求<br>　　Keep-Alive：如果浏览器请求保持连接，则该头部表明希望 WEB 服务器保持连接多长时间（秒），如Keep-Alive：300</p>
+<h3 id="Content-Type-text-html-charset-utf-8"><a href="#Content-Type-text-html-charset-utf-8" class="headerlink" title="Content-Type: text/html;charset=utf-8"></a>Content-Type: text/html;charset=utf-8</h3><p>WEB 服务器告诉浏览器自己响应的对象的类型 如：image/jpeg、video/mpeg4</p>
+<h3 id="Date-Fri-10-Mar-2017-09-20-09-GMT"><a href="#Date-Fri-10-Mar-2017-09-20-09-GMT" class="headerlink" title="Date: Fri, 10 Mar 2017 09:20:09 GMT"></a>Date: Fri, 10 Mar 2017 09:20:09 GMT</h3><p>原始服务器消息发出的时间</p>
+<h3 id="Expires-Thu-01-Jan-1970-00-00-00-GMT"><a href="#Expires-Thu-01-Jan-1970-00-00-00-GMT" class="headerlink" title="Expires: Thu, 01 Jan 1970 00:00:00 GMT"></a>Expires: Thu, 01 Jan 1970 00:00:00 GMT</h3><p>响应过期的日期和时间</p>
+<h3 id="Keep-Alive-timeout-5-max-97"><a href="#Keep-Alive-timeout-5-max-97" class="headerlink" title="Keep-Alive: timeout=5, max=97"></a>Keep-Alive: timeout=5, max=97</h3><p>使客户端到服务器端的连接持续有效，当出现对服务器的后继请求时，Keep-Alive功能避免了建立或者重新建立连接</p>
+<h3 id="Pragma-No-cache"><a href="#Pragma-No-cache" class="headerlink" title="Pragma: No-cache"></a>Pragma: No-cache</h3><p>控制页面缓存</p>
+<h3 id="Set-Cookie-TSf75e5b-6aa6aea13c51efd2cf66e24bce52057b39c67dfeb03cb76b58c26fbf-Path"><a href="#Set-Cookie-TSf75e5b-6aa6aea13c51efd2cf66e24bce52057b39c67dfeb03cb76b58c26fbf-Path" class="headerlink" title="Set-Cookie: TSf75e5b=6aa6aea13c51efd2cf66e24bce52057b39c67dfeb03cb76b58c26fbf; Path=/"></a>Set-Cookie: TSf75e5b=6aa6aea13c51efd2cf66e24bce52057b39c67dfeb03cb76b58c26fbf; Path=/</h3><p>设置和页面关联的Cookie</p>
+<h3 id="Transfer-Encoding-chunked"><a href="#Transfer-Encoding-chunked" class="headerlink" title="Transfer-Encoding: chunked"></a>Transfer-Encoding: chunked</h3><p>用于确保安全和信息的恰当传输</p>
+<h3 id="X-Frame-Options-Options-SAMEORIGIN"><a href="#X-Frame-Options-Options-SAMEORIGIN" class="headerlink" title="X-Frame-Options: Options:SAMEORIGIN"></a>X-Frame-Options: Options:SAMEORIGIN</h3><p>用于指示是否应该允许浏览器呈现在一个页面 <code>&lt;FRAME&gt;</code> 或 <code>&lt;IFRAME&gt;</code>中. 以确保网站内容是不是嵌入到其它网站</p>
+<h1 id="保存"><a href="#保存" class="headerlink" title="保存"></a>保存</h1><p>下载好的文件保存在：<code>/Users/lizm/Documents/apache-maven-3.3.3/</code> (不管在哪里,你开心就好)</p>
+<h1 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h1><p>打开 终端 , <code>vim ~/.bash_profile</code></p>
+<pre><code>export M2_HOME=/Users/lizm/Documents/apache-maven-3.3.3
+export PATH=$PATH:$M2_HOME/bin
+</code></pre><p>保存</p>
+<p><code>source ~/.bash_profile</code><br><code>mvn -v</code></p>
+<p><br><br><code>Web</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;HTTP-请求的细节&quot;&gt;&lt;a href=&quot;#HTTP-请求的细节&quot; class=&quot;headerlink&quot; title=&quot;HTTP 请求的细节&quot;&gt;&lt;/a&gt;HTTP 请求的细节&lt;/h1&gt;&lt;h2 id=&quot;请求方式：&quot;&gt;&lt;a href=&quot;#请求方式：&quot; class=&quot;he
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="http://yoursite.com/tags/Web/"/>
+    
+  </entry>
   
   <entry>
     <title>MacOS Maven的安装与配置</title>
@@ -828,6 +902,31 @@ sentinel monitor mymaster 127.0.0.1 7501 2
   </entry>
   
   <entry>
+    <title>Tomcat 相关问题及各个版本下载</title>
+    <link href="http://yoursite.com/2016/10/03/015%20Tomcat%20%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%84%E4%B8%AA%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://yoursite.com/2016/10/03/015 Tomcat 相关问题及各个版本下载/</id>
+    <published>2016-10-03T00:00:00.000Z</published>
+    <updated>2016-10-14T08:04:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Tomcat-Get-请求中文乱码"><a href="#Tomcat-Get-请求中文乱码" class="headerlink" title="Tomcat Get 请求中文乱码"></a>Tomcat Get 请求中文乱码</h1><p>到 Tmocat 目录 conf 下修改 server.xml 添加 <code>URIEncoding=&quot;UTF-8&quot;</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;Connector URIEncoding=&quot;UTF-8&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; connectionTimeout=&quot;20000&quot; redirectPort=&quot;8443&quot;/&gt;</div></pre></td></tr></table></figure>
+<h1 id="Tomcat-各个版本下载"><a href="#Tomcat-各个版本下载" class="headerlink" title="Tomcat 各个版本下载"></a>Tomcat 各个版本下载</h1><p><a href="http://archive.apache.org/dist/tomcat/" target="_blank" rel="external">http://archive.apache.org/dist/tomcat/</a></p>
+<pre><code>http://archive.apache.org/dist/tomcat/
+</code></pre><p><br><br><code>Tomcat</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Tomcat-Get-请求中文乱码&quot;&gt;&lt;a href=&quot;#Tomcat-Get-请求中文乱码&quot; class=&quot;headerlink&quot; title=&quot;Tomcat Get 请求中文乱码&quot;&gt;&lt;/a&gt;Tomcat Get 请求中文乱码&lt;/h1&gt;&lt;p&gt;到 Tmocat 目
+    
+    </summary>
+    
+    
+      <category term="Tomcat" scheme="http://yoursite.com/tags/Tomcat/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CentOS 6 安装 JDK</title>
     <link href="http://yoursite.com/2016/10/03/016%20CentOS%206%20%E5%AE%89%E8%A3%85JDK/"/>
     <id>http://yoursite.com/2016/10/03/016 CentOS 6 安装JDK/</id>
@@ -894,31 +993,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
     
     
       <category term="JDK" scheme="http://yoursite.com/tags/JDK/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Tomcat 相关问题及各个版本下载</title>
-    <link href="http://yoursite.com/2016/10/03/015%20Tomcat%20%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%84%E4%B8%AA%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD/"/>
-    <id>http://yoursite.com/2016/10/03/015 Tomcat 相关问题及各个版本下载/</id>
-    <published>2016-10-03T00:00:00.000Z</published>
-    <updated>2016-10-14T08:04:49.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Tomcat-Get-请求中文乱码"><a href="#Tomcat-Get-请求中文乱码" class="headerlink" title="Tomcat Get 请求中文乱码"></a>Tomcat Get 请求中文乱码</h1><p>到 Tmocat 目录 conf 下修改 server.xml 添加 <code>URIEncoding=&quot;UTF-8&quot;</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;Connector URIEncoding=&quot;UTF-8&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; connectionTimeout=&quot;20000&quot; redirectPort=&quot;8443&quot;/&gt;</div></pre></td></tr></table></figure>
-<h1 id="Tomcat-各个版本下载"><a href="#Tomcat-各个版本下载" class="headerlink" title="Tomcat 各个版本下载"></a>Tomcat 各个版本下载</h1><p><a href="http://archive.apache.org/dist/tomcat/" target="_blank" rel="external">http://archive.apache.org/dist/tomcat/</a></p>
-<pre><code>http://archive.apache.org/dist/tomcat/
-</code></pre><p><br><br><code>Tomcat</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Tomcat-Get-请求中文乱码&quot;&gt;&lt;a href=&quot;#Tomcat-Get-请求中文乱码&quot; class=&quot;headerlink&quot; title=&quot;Tomcat Get 请求中文乱码&quot;&gt;&lt;/a&gt;Tomcat Get 请求中文乱码&lt;/h1&gt;&lt;p&gt;到 Tmocat 目
-    
-    </summary>
-    
-    
-      <category term="Tomcat" scheme="http://yoursite.com/tags/Tomcat/"/>
     
   </entry>
   
@@ -1048,62 +1122,6 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
       <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
     
       <category term="软件" scheme="http://yoursite.com/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nginx 安装 负载均衡 备用服务器</title>
-    <link href="http://yoursite.com/2016/09/28/011%20Nginx%20%E5%AE%89%E8%A3%85%20%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%20%E5%A4%87%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    <id>http://yoursite.com/2016/09/28/011 Nginx 安装 负载均衡 备用服务器/</id>
-    <published>2016-09-28T00:00:00.000Z</published>
-    <updated>2016-12-23T16:21:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Nginx-安装"><a href="#Nginx-安装" class="headerlink" title="Nginx 安装"></a>Nginx 安装</h1><p>官网下载 <a href="http://nginx.org/" target="_blank" rel="external">http://nginx.org/</a></p>
-<p>放在目录：<code>/usr/local/nginx</code> 下</p>
-<p><code>tar -zxvf /usr/local/nginx/nginx-1.10.1.tar.gz</code></p>
-<p>进入目录：<code>cd nginx-1.10.1</code></p>
-<p><code>./configure --prefix=/usr/local/nginx</code></p>
-<pre><code>出现错误：
-./configure: error: the HTTP rewrite module requires the PCRE library.
-You can either disable the module by using --without-http_rewrite_module
-option, or install the PCRE library into the system, or build the PCRE library
-statically from the source with nginx by using --with-pcre=&lt;path&gt; option.
-安装： yum -y install pcre-devel
-
-出现错误：
-./configure: error: the HTTP gzip module requires the zlib library.
-You can either disable the module by using --without-http_gzip_module
-option, or install the zlib library into the system, or build the zlib library
-statically from the source with nginx by using --with-zlib=&lt;path&gt; option.
-安装：yum -y install zlib-devel
-</code></pre><h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><p><code>service nginx start</code></p>
-<h2 id="查询Nginx进程"><a href="#查询Nginx进程" class="headerlink" title="查询Nginx进程"></a>查询Nginx进程</h2><p><code>ps -ef | grep nginx</code></p>
-<h2 id="重启"><a href="#重启" class="headerlink" title="重启"></a>重启</h2><p><code>service nginx restart</code></p>
-<hr>
-<h1 id="Nginx-设置备用服务器"><a href="#Nginx-设置备用服务器" class="headerlink" title="Nginx 设置备用服务器"></a>Nginx 设置备用服务器</h1><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>一般情况下，项目上线可能会选在凌晨时刻进行，比如之前在中国电信，项目上线要等到凌晨一点，由测试给出最终版本项目文件，然后等待运维部署上线，我们开发等待测试给出上线结果，如果有问题，马上做修改，因为此刻访问用户最少，影响微乎其微。但是，上线完成，已经六点了。</p>
-<blockquote>
-<p><strong>生产环境   </strong>是一个神圣而有伟大的地方 只可远观而不可亵玩焉</p>
-</blockquote>
-<p><strong>官方 Example Configuration</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">upstream backend &#123;</div><div class="line">    server backend1.example.com       weight=5;</div><div class="line">    server backend2.example.com:8080;</div><div class="line">    server unix:/tmp/backend3;</div><div class="line"></div><div class="line">    server backup1.example.com:8080   backup;</div><div class="line">    server backup2.example.com:8080   backup;</div><div class="line">&#125;</div><div class="line"></div><div class="line">server &#123;</div><div class="line">    location / &#123;</div><div class="line">        proxy_pass http://backend;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<blockquote>
-<p><strong>官方的说法是</strong><br>默认情况下，请求会根据权重在服务器之间请求。在上面的例子中，每7请求将被分配如下：5个请求到<code>backend1.example.com</code>、1个请求到<code>backend2.example.com:8080</code>、1个请求到<code>unix:/tmp/backend3</code>。如果与服务器的通信的过程中发生了错误，请求将被传递到下一个服务器，等等，直到尝试了所有的运作的服务器都放生错误，请求将请求剩下的备用服务器地址。</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">upstream backend &#123;</div><div class="line">    server www.l-zm.com        weight=<span class="number">5</span>;</div><div class="line">    server www.l-zm.com:<span class="number">8080</span>;</div><div class="line"></div><div class="line">    server www.l-zm.com:<span class="number">8081</span>   backup;</div><div class="line">&#125;</div><div class="line"></div><div class="line">server &#123;</div><div class="line">    listen        <span class="number">80</span>;</div><div class="line">    server_name   localhost;</div><div class="line"></div><div class="line">    location / &#123;</div><div class="line">        index      index.html</div><div class="line">        proxy_pass http:<span class="comment">//backend;</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<hr>
-<h1 id="TODO：不间断更新中"><a href="#TODO：不间断更新中" class="headerlink" title="TODO：不间断更新中"></a>TODO：不间断更新中</h1><p><br><br><code>Nginx</code> <code>服务器</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Nginx-安装&quot;&gt;&lt;a href=&quot;#Nginx-安装&quot; class=&quot;headerlink&quot; title=&quot;Nginx 安装&quot;&gt;&lt;/a&gt;Nginx 安装&lt;/h1&gt;&lt;p&gt;官网下载 &lt;a href=&quot;http://nginx.org/&quot; target=&quot;_blan
-    
-    </summary>
-    
-    
-      <category term="Nginx" scheme="http://yoursite.com/tags/Nginx/"/>
-    
-      <category term="服务器" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
