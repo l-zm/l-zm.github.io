@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-10T09:46:14.000Z</updated>
+  <updated>2017-03-10T09:48:06.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/03/10/031%20%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82%E7%9A%84%E8%AF%B7%E6%B1%82%E5%A4%B4%E5%92%8C%E5%BA%94%E7%AD%94%E5%A4%B4%E8%A7%A3%E9%87%8A/"/>
     <id>http://yoursite.com/2017/03/10/031 网络请求的请求头和应答头解释/</id>
     <published>2017-03-10T00:00:00.000Z</published>
-    <updated>2017-03-10T09:46:14.000Z</updated>
+    <updated>2017-03-10T09:48:06.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="HTTP-请求的细节"><a href="#HTTP-请求的细节" class="headerlink" title="HTTP 请求的细节"></a>HTTP 请求的细节</h1><h2 id="请求方式："><a href="#请求方式：" class="headerlink" title="请求方式："></a>请求方式：</h2><pre><code>POST(常用)、GET(常用)、HEAD、OPTIONS、DELETE、TRACE、PUT
 </code></pre><h2 id="Request-Headers-请求头-："><a href="#Request-Headers-请求头-：" class="headerlink" title="Request Headers (请求头)："></a>Request Headers (请求头)：</h2><pre><code>浏览器通过这个头告诉服务器，它所支持的数据类型
@@ -69,12 +69,6 @@ User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2)
 <h3 id="Set-Cookie-TSf75e5b-6aa6aea13c51efd2cf66e24bce52057b39c67dfeb03cb76b58c26fbf-Path"><a href="#Set-Cookie-TSf75e5b-6aa6aea13c51efd2cf66e24bce52057b39c67dfeb03cb76b58c26fbf-Path" class="headerlink" title="Set-Cookie: TSf75e5b=6aa6aea13c51efd2cf66e24bce52057b39c67dfeb03cb76b58c26fbf; Path=/"></a>Set-Cookie: TSf75e5b=6aa6aea13c51efd2cf66e24bce52057b39c67dfeb03cb76b58c26fbf; Path=/</h3><p>设置和页面关联的Cookie</p>
 <h3 id="Transfer-Encoding-chunked"><a href="#Transfer-Encoding-chunked" class="headerlink" title="Transfer-Encoding: chunked"></a>Transfer-Encoding: chunked</h3><p>用于确保安全和信息的恰当传输</p>
 <h3 id="X-Frame-Options-Options-SAMEORIGIN"><a href="#X-Frame-Options-Options-SAMEORIGIN" class="headerlink" title="X-Frame-Options: Options:SAMEORIGIN"></a>X-Frame-Options: Options:SAMEORIGIN</h3><p>用于指示是否应该允许浏览器呈现在一个页面 <code>&lt;FRAME&gt;</code> 或 <code>&lt;IFRAME&gt;</code>中. 以确保网站内容是不是嵌入到其它网站</p>
-<h1 id="保存"><a href="#保存" class="headerlink" title="保存"></a>保存</h1><p>下载好的文件保存在：<code>/Users/lizm/Documents/apache-maven-3.3.3/</code> (不管在哪里,你开心就好)</p>
-<h1 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h1><p>打开 终端 , <code>vim ~/.bash_profile</code></p>
-<pre><code>export M2_HOME=/Users/lizm/Documents/apache-maven-3.3.3
-export PATH=$PATH:$M2_HOME/bin
-</code></pre><p>保存</p>
-<p><code>source ~/.bash_profile</code><br><code>mvn -v</code></p>
 <p><br><br><code>Web</code></p>
 ]]></content>
     
