@@ -896,31 +896,6 @@ sentinel monitor mymaster 127.0.0.1 7501 2
   </entry>
   
   <entry>
-    <title>Tomcat 相关问题及各个版本下载</title>
-    <link href="http://yoursite.com/2016/10/03/015%20Tomcat%20%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%84%E4%B8%AA%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD/"/>
-    <id>http://yoursite.com/2016/10/03/015 Tomcat 相关问题及各个版本下载/</id>
-    <published>2016-10-03T00:00:00.000Z</published>
-    <updated>2016-10-14T08:04:49.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Tomcat-Get-请求中文乱码"><a href="#Tomcat-Get-请求中文乱码" class="headerlink" title="Tomcat Get 请求中文乱码"></a>Tomcat Get 请求中文乱码</h1><p>到 Tmocat 目录 conf 下修改 server.xml 添加 <code>URIEncoding=&quot;UTF-8&quot;</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;Connector URIEncoding=&quot;UTF-8&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; connectionTimeout=&quot;20000&quot; redirectPort=&quot;8443&quot;/&gt;</div></pre></td></tr></table></figure>
-<h1 id="Tomcat-各个版本下载"><a href="#Tomcat-各个版本下载" class="headerlink" title="Tomcat 各个版本下载"></a>Tomcat 各个版本下载</h1><p><a href="http://archive.apache.org/dist/tomcat/" target="_blank" rel="external">http://archive.apache.org/dist/tomcat/</a></p>
-<pre><code>http://archive.apache.org/dist/tomcat/
-</code></pre><p><br><br><code>Tomcat</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Tomcat-Get-请求中文乱码&quot;&gt;&lt;a href=&quot;#Tomcat-Get-请求中文乱码&quot; class=&quot;headerlink&quot; title=&quot;Tomcat Get 请求中文乱码&quot;&gt;&lt;/a&gt;Tomcat Get 请求中文乱码&lt;/h1&gt;&lt;p&gt;到 Tmocat 目
-    
-    </summary>
-    
-    
-      <category term="Tomcat" scheme="http://yoursite.com/tags/Tomcat/"/>
-    
-  </entry>
-  
-  <entry>
     <title>CentOS 6 安装 JDK</title>
     <link href="http://yoursite.com/2016/10/03/016%20CentOS%206%20%E5%AE%89%E8%A3%85JDK/"/>
     <id>http://yoursite.com/2016/10/03/016 CentOS 6 安装JDK/</id>
@@ -987,6 +962,31 @@ ldapjdk.x86_64 : The Mozilla LDAP Java SDK
     
     
       <category term="JDK" scheme="http://yoursite.com/tags/JDK/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Tomcat 相关问题及各个版本下载</title>
+    <link href="http://yoursite.com/2016/10/03/015%20Tomcat%20%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%84%E4%B8%AA%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://yoursite.com/2016/10/03/015 Tomcat 相关问题及各个版本下载/</id>
+    <published>2016-10-03T00:00:00.000Z</published>
+    <updated>2016-10-14T08:04:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Tomcat-Get-请求中文乱码"><a href="#Tomcat-Get-请求中文乱码" class="headerlink" title="Tomcat Get 请求中文乱码"></a>Tomcat Get 请求中文乱码</h1><p>到 Tmocat 目录 conf 下修改 server.xml 添加 <code>URIEncoding=&quot;UTF-8&quot;</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;Connector URIEncoding=&quot;UTF-8&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; connectionTimeout=&quot;20000&quot; redirectPort=&quot;8443&quot;/&gt;</div></pre></td></tr></table></figure>
+<h1 id="Tomcat-各个版本下载"><a href="#Tomcat-各个版本下载" class="headerlink" title="Tomcat 各个版本下载"></a>Tomcat 各个版本下载</h1><p><a href="http://archive.apache.org/dist/tomcat/" target="_blank" rel="external">http://archive.apache.org/dist/tomcat/</a></p>
+<pre><code>http://archive.apache.org/dist/tomcat/
+</code></pre><p><br><br><code>Tomcat</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Tomcat-Get-请求中文乱码&quot;&gt;&lt;a href=&quot;#Tomcat-Get-请求中文乱码&quot; class=&quot;headerlink&quot; title=&quot;Tomcat Get 请求中文乱码&quot;&gt;&lt;/a&gt;Tomcat Get 请求中文乱码&lt;/h1&gt;&lt;p&gt;到 Tmocat 目
+    
+    </summary>
+    
+    
+      <category term="Tomcat" scheme="http://yoursite.com/tags/Tomcat/"/>
     
   </entry>
   
