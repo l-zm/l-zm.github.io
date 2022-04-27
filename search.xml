@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo 网站初始化</title>
+    <url>/hexo-web-site-inti/</url>
+    <content><![CDATA[<p>第一步</p>
+<p>初始化：<code>hexo init</code></p>
+<p>安装 主题<br>
+使用的主题：<code>inside</code><br>
+地址：<code>https://github.com/ikeq/hexo-theme-inside</code></p>
+<ol>
+<li>进入博客目录 <code>project/</code> , 执行以下命令：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-inside</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>配置：<code>project/_config.yml</code></li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">inside</span></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>创建主题文件：<code>project/_config.inside.yml</code></li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://github.com/ikeq/hexo-theme-inside/blob/master/_config.yml</span><br></pre></td></tr></table></figure>
+<p><a href="https://github.com/omnibingo/talk2.it">https://github.com/omnibingo/talk2.it</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>临时文档</title>
-    <url>/2/</url>
+    <url>/1/</url>
     <content><![CDATA[<h3 id="临时文档">临时文档<a title="#临时文档" href="#临时文档"></a></h3>
 ]]></content>
       <categories>
@@ -32,32 +61,21 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Hexo 网站初始化</title>
-    <url>/hexo-web-site-inti/</url>
-    <content><![CDATA[<p>第一步</p>
-<p>初始化：<code>hexo init</code></p>
-<p>安装 主题<br>
-使用的主题：<code>inside</code><br>
-地址：<code>https://github.com/ikeq/hexo-theme-inside</code></p>
+    <title>解除网页右键限制</title>
+    <url>/remove-right-click-limit/</url>
+    <content><![CDATA[<h3 id="脚本">脚本<a title="#脚本" href="#脚本"></a></h3>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">javascript</span>:!<span class="keyword">function</span> <span class="title function_">e</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;&#125;<span class="keyword">function</span> <span class="title function_">o</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">removeChild</span>(e)&#125;<span class="keyword">function</span> <span class="title function_">r</span>(<span class="params">e</span>)&#123;<span class="keyword">return</span>[].<span class="property">slice</span>.<span class="title function_">call</span>(t.<span class="title function_">querySelectorAll</span>(e))&#125;<span class="keyword">function</span> <span class="title function_">c</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;<span class="title function_">s</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;<span class="keyword">if</span>(!o)<span class="keyword">try</span>&#123;<span class="keyword">var</span> n=t.<span class="property">contentDocument</span>;n.<span class="property">body</span>.<span class="property">childNodes</span>.<span class="property">length</span>&amp;&amp;(o=<span class="number">1</span>,<span class="title function_">e</span>(n))&#125;<span class="keyword">catch</span>(e)&#123;o=<span class="number">0</span>&#125;&#125;,<span class="number">100</span>)&#125;a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t[<span class="string">&#x27;on&#x27;</span>+e]=<span class="literal">null</span>&#125;);<span class="keyword">var</span> o;<span class="title function_">n</span>(),t.<span class="property">onload</span>=n&#125;<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="string">&#x27;parentNode&#x27;</span>,l=<span class="string">&#x27;forEach&#x27;</span>,a=<span class="string">&#x27;contextmenu dragstart selectstart select copy beforecopy mouseup mousedown&#x27;</span>.<span class="title function_">split</span>(<span class="string">&#x27; &#x27;</span>),u=<span class="built_in">setTimeout</span>(n,<span class="number">0</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearTimeout</span>(u);<span class="keyword">for</span>(u=<span class="built_in">setInterval</span>(n,<span class="number">1e8</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearInterval</span>(u);<span class="keyword">var</span> s=<span class="built_in">setTimeout</span>;<span class="built_in">setTimeout</span>=<span class="built_in">setInterval</span>=n,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](o);<span class="keyword">var</span> m=[];<span class="title function_">r</span>(<span class="string">&#x27;iframe,frame&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;m.<span class="title function_">push</span>(e),e[i].<span class="title function_">replaceChild</span>(t.<span class="title function_">createElement</span>(<span class="string">&#x27;script&#x27;</span>),e)&#125;);<span class="keyword">var</span> f=t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>;t.<span class="title function_">open</span>(),t.<span class="title function_">write</span>(<span class="string">&#x27;&lt;!DOCTYPE html&gt;&#x27;</span>),t.<span class="title function_">close</span>(),t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>=f,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">replaceChild</span>(m.<span class="title function_">shift</span>(),e)&#125;),<span class="title function_">r</span>(<span class="string">&#x27;*&#x27;</span>)[l](c),<span class="title function_">c</span>(t),a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t.<span class="title function_">addEventListener</span>(e,<span class="keyword">function</span>(<span class="params">e</span>)&#123;e.<span class="title function_">stopPropagation</span>()&#125;,!<span class="number">0</span>)&#125;);<span class="keyword">var</span> p=t.<span class="title function_">createElement</span>(<span class="string">&#x27;style&#x27;</span>);p.<span class="property">innerHTML</span>=<span class="string">&#x27;*&#123;-webkit-user-select:text!important;-moz-user-select:text!important;user-select:text!important;&#125;&#x27;</span>,t.<span class="property">body</span>.<span class="title function_">appendChild</span>(p)&#125;(<span class="variable language_">document</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="两种使用方法:">两种使用方法:<a title="#两种使用方法:" href="#两种使用方法:"></a></h3>
 <ol>
-<li>进入博客目录 <code>project/</code> , 执行以下命令：</li>
+<li>浏览器: F12打开调试模式, 在控制台<code>Console</code>里面直接执行</li>
+<li>直接保存为书签, 在需要解除右键限制的网页直接点击书签即可 <strong>(推荐)</strong></li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-inside</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>配置：<code>project/_config.yml</code></li>
-</ol>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">inside</span></span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>创建主题文件：<code>project/_config.inside.yml</code></li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://github.com/ikeq/hexo-theme-inside/blob/master/_config.yml</span><br></pre></td></tr></table></figure>
-<p><a href="https://github.com/omnibingo/talk2.it">https://github.com/omnibingo/talk2.it</a></p>
 ]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>Web</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
@@ -121,36 +139,6 @@
       </categories>
       <tags>
         <tag>iOS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>强哥想看的</title>
-    <url>/1/</url>
-    <content><![CDATA[<p><a href="https://imgtu.com/i/LqtWPU" target="_blank"><img src="https://s1.ax1x.com/2022/04/27/LqtWPU.png" alt="强哥想看的" loading="lazy"></a></p>
-]]></content>
-      <categories>
-        <category>Other</category>
-      </categories>
-      <tags>
-        <tag>Other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解除网页右键限制</title>
-    <url>/remove-right-click-limit/</url>
-    <content><![CDATA[<h3 id="脚本">脚本<a title="#脚本" href="#脚本"></a></h3>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">javascript</span>:!<span class="keyword">function</span> <span class="title function_">e</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;&#125;<span class="keyword">function</span> <span class="title function_">o</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">removeChild</span>(e)&#125;<span class="keyword">function</span> <span class="title function_">r</span>(<span class="params">e</span>)&#123;<span class="keyword">return</span>[].<span class="property">slice</span>.<span class="title function_">call</span>(t.<span class="title function_">querySelectorAll</span>(e))&#125;<span class="keyword">function</span> <span class="title function_">c</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;<span class="title function_">s</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;<span class="keyword">if</span>(!o)<span class="keyword">try</span>&#123;<span class="keyword">var</span> n=t.<span class="property">contentDocument</span>;n.<span class="property">body</span>.<span class="property">childNodes</span>.<span class="property">length</span>&amp;&amp;(o=<span class="number">1</span>,<span class="title function_">e</span>(n))&#125;<span class="keyword">catch</span>(e)&#123;o=<span class="number">0</span>&#125;&#125;,<span class="number">100</span>)&#125;a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t[<span class="string">&#x27;on&#x27;</span>+e]=<span class="literal">null</span>&#125;);<span class="keyword">var</span> o;<span class="title function_">n</span>(),t.<span class="property">onload</span>=n&#125;<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="string">&#x27;parentNode&#x27;</span>,l=<span class="string">&#x27;forEach&#x27;</span>,a=<span class="string">&#x27;contextmenu dragstart selectstart select copy beforecopy mouseup mousedown&#x27;</span>.<span class="title function_">split</span>(<span class="string">&#x27; &#x27;</span>),u=<span class="built_in">setTimeout</span>(n,<span class="number">0</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearTimeout</span>(u);<span class="keyword">for</span>(u=<span class="built_in">setInterval</span>(n,<span class="number">1e8</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearInterval</span>(u);<span class="keyword">var</span> s=<span class="built_in">setTimeout</span>;<span class="built_in">setTimeout</span>=<span class="built_in">setInterval</span>=n,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](o);<span class="keyword">var</span> m=[];<span class="title function_">r</span>(<span class="string">&#x27;iframe,frame&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;m.<span class="title function_">push</span>(e),e[i].<span class="title function_">replaceChild</span>(t.<span class="title function_">createElement</span>(<span class="string">&#x27;script&#x27;</span>),e)&#125;);<span class="keyword">var</span> f=t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>;t.<span class="title function_">open</span>(),t.<span class="title function_">write</span>(<span class="string">&#x27;&lt;!DOCTYPE html&gt;&#x27;</span>),t.<span class="title function_">close</span>(),t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>=f,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">replaceChild</span>(m.<span class="title function_">shift</span>(),e)&#125;),<span class="title function_">r</span>(<span class="string">&#x27;*&#x27;</span>)[l](c),<span class="title function_">c</span>(t),a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t.<span class="title function_">addEventListener</span>(e,<span class="keyword">function</span>(<span class="params">e</span>)&#123;e.<span class="title function_">stopPropagation</span>()&#125;,!<span class="number">0</span>)&#125;);<span class="keyword">var</span> p=t.<span class="title function_">createElement</span>(<span class="string">&#x27;style&#x27;</span>);p.<span class="property">innerHTML</span>=<span class="string">&#x27;*&#123;-webkit-user-select:text!important;-moz-user-select:text!important;user-select:text!important;&#125;&#x27;</span>,t.<span class="property">body</span>.<span class="title function_">appendChild</span>(p)&#125;(<span class="variable language_">document</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="两种使用方法:">两种使用方法:<a title="#两种使用方法:" href="#两种使用方法:"></a></h3>
-<ol>
-<li>浏览器: F12打开调试模式, 在控制台<code>Console</code>里面直接执行</li>
-<li>直接保存为书签, 在需要解除右键限制的网页直接点击书签即可 <strong>(推荐)</strong></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>Web</tag>
       </tags>
   </entry>
 </search>
