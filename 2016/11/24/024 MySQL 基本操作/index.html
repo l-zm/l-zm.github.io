@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Lizm&#39;s Personal Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="MySQL">
+  <meta name="description" content="Mysql 设置 unique key 及 联合主键// 删除约束
+alter table `表` drop index `联合主键的名称`;
+
+// 创建 唯一约束主键
+alter table `表` add unique key (`字段`)
+
+// 创建 联合主键 联合主键不可重复
+alter table `表` add unique key `联合主键的名称` (`字段1`,`字段2`);">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL 基本操作">
+<meta property="og:url" content="http://yoursite.com/2016/11/24/024 MySQL 基本操作/index.html">
+<meta property="og:site_name" content="Lizm's Personal Blog">
+<meta property="og:description" content="Mysql 设置 unique key 及 联合主键// 删除约束
+alter table `表` drop index `联合主键的名称`;
+
+// 创建 唯一约束主键
+alter table `表` add unique key (`字段`)
+
+// 创建 联合主键 联合主键不可重复
+alter table `表` add unique key `联合主键的名称` (`字段1`,`字段2`);">
+<meta property="og:updated_time" content="2016-12-05T12:36:19.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MySQL 基本操作">
+<meta name="twitter:description" content="Mysql 设置 unique key 及 联合主键// 删除约束
+alter table `表` drop index `联合主键的名称`;
+
+// 创建 唯一约束主键
+alter table `表` add unique key (`字段`)
+
+// 创建 联合主键 联合主键不可重复
+alter table `表` add unique key `联合主键的名称` (`字段1`,`字段2`);">
+  
+    <link rel="alternative" href="/atom.xml" title="Lizm&#39;s Personal Blog" type="application/atom+xml">
+  
+  <meta name="summary" content="Personal Blog">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Lizm</h5>
+        <a href="mailto:lzmvlzm@163.com" title="lzmvlzm@163.com" class="mail">lzmvlzm@163.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <div class="scroll-wrap flex-col">
+    <ul class="nav">
+      
+          <li class="waves-block waves-effect">
+            <a href="/"  >
+              <i class="icon icon-lg icon-home"></i>
+              主页
+            </a>
+          </li>
+      
+          <li class="waves-block waves-effect">
+            <a href="/archives"  >
+              <i class="icon icon-lg icon-archives"></i>
+              归档
+            </a>
+          </li>
+      
+          <li class="waves-block waves-effect">
+            <a href="/tags"  >
+              <i class="icon icon-lg icon-tags"></i>
+              标签
+            </a>
+          </li>
+      
+          <li class="waves-block waves-effect">
+            <a href="https://github.com/l-zm" target="_blank" >
+              <i class="icon icon-lg icon-github"></i>
+              GitHub
+            </a>
+          </li>
+      
+          <li class="waves-block waves-effect">
+            <a href="http://weibo.com/lzmvlzm" target="_blank" >
+              <i class="icon icon-lg icon-weibo"></i>
+              Weibo
+            </a>
+          </li>
+      
+    </ul>
+
+    <footer class="footer">
+  <p>Welcome To My Personal Blog</p>
+  <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602001598" target="_blank">浙公网安备 33010602001598 号</a></p>
+</footer>
+
+  </div>
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">MySQL 基本操作</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">MySQL 基本操作</h1>
+    <h5 class="subtitle">
+        
+            <time datetime="2016-11-24T00:00:00.000Z" itemprop="datePublished" class="page-time">
+  2016-11-24
+</time>
+
+
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-024 MySQL 基本操作" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meta flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Mysql-设置-unique-key-及-联合主键"><span class="post-toc-text">Mysql 设置 unique key 及 联合主键</span></a></li></ol>
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="Mysql-设置-unique-key-及-联合主键"><a href="#Mysql-设置-unique-key-及-联合主键" class="headerlink" title="Mysql 设置 unique key 及 联合主键"></a>Mysql 设置 unique key 及 联合主键</h1><pre><code>// 删除约束
+alter table `表` drop index `联合主键的名称`;
+
+// 创建 唯一约束主键
+alter table `表` add unique key (`字段`)
+
+// 创建 联合主键 联合主键不可重复
+alter table `表` add unique key `联合主键的名称` (`字段1`,`字段2`);
+</code></pre><p><br><br><code>MySQL</code></p>
+
+            
+            </div>
+            
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
