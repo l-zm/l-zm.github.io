@@ -3,10 +3,7 @@
   <entry>
     <title>临时文档</title>
     <url>/1/</url>
-    <content><![CDATA[<p><video controls height='100%' width='100%' src="https://encooacademy.oss-cn-shanghai.aliyuncs.com/activity/OpenBrowser.mp41"></video></p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1939898238&auto=1&height=66"></iframe>
-<iframe height=500 width=500 src="https://i0.hdslb.com/bfs/archive/39047c5cca133d93beb3b5a99713ff6eb589341c.gif">
-<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX18uMPqDg5S52gTxs7SseEVn4sobPBrEbL7qKyHO2S3+4Gi8KXk5BiuL</is-cipher>]]></content>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX18CGHks/afsjAN5J3q7Mtm+ORZNuN/yzQaRGAIo2b9Xm8ruIB8x2XyM</is-cipher>]]></content>
       <categories>
         <category>Other</category>
       </categories>
@@ -15,169 +12,257 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux 计划任务 CronTab</title>
-    <url>/linux-crontab/</url>
-    <content><![CDATA[<blockquote>
-<p>CronTab 的语法</p>
-<p>* * * * * date &gt;&gt; /tmp/date.txt</p>
-</blockquote>
-<div class="φbq"><div class="φbs"><table><thead>
-<tr>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">date &gt;&gt; /tmp/date.txt</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">分钟</td>
-<td style="text-align:center">小时</td>
-<td style="text-align:center">几号</td>
-<td style="text-align:center">几月</td>
-<td style="text-align:center">星期</td>
-<td style="text-align:center">需要执行的命令</td>
-</tr>
-</tbody>
-</table></div></div><p><img src="https://pic.imgdb.cn/item/626cf1db239250f7c57d0a84.png" alt="Linux 计划任务 CronTab" loading="lazy" class="φbp"></p>
-<h2 id="案例">案例<a title="#案例" href="#案例"></a></h2>
-<h3 id="每一小时">每一小时<a title="#每一小时" href="#每一小时"></a></h3>
-<p><code>* */1 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每小时执行/etc/cron.hourly目录内的脚本">每小时执行/etc/cron.hourly目录内的脚本<a title="#每小时执行/etc/cron.hourly目录内的脚本" href="#每小时执行/etc/cron.hourly目录内的脚本"></a></h3>
-<p><code>01 * * * * root run-parts /etc/cron.hourly</code></p>
-<h3 id="每小时的第3和第15分钟执行">每小时的第3和第15分钟执行<a title="#每小时的第3和第15分钟执行" href="#每小时的第3和第15分钟执行"></a></h3>
-<p><code>3,15 * * * * /service/l-zm/request.sh</code></p>
-<h3 id="在上午8点到11点的第3和第15分钟执行">在上午8点到11点的第3和第15分钟执行<a title="#在上午8点到11点的第3和第15分钟执行" href="#在上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每隔两天的上午8点到11点的第3和第15分钟执行">每隔两天的上午8点到11点的第3和第15分钟执行<a title="#每隔两天的上午8点到11点的第3和第15分钟执行" href="#每隔两天的上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 */2 * * date &gt;&gt; /tmp/date.txt</code></p>
-<h3 id="每个星期一的上午8点到11点的第3和第15分钟执行">每个星期一的上午8点到11点的第3和第15分钟执行<a title="#每个星期一的上午8点到11点的第3和第15分钟执行" href="#每个星期一的上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 * * 1 date &gt;&gt; /tmp/date.txt</code></p>
-<h3 id="每晚的21:30">每晚的21:30<a title="#每晚的21:30" href="#每晚的21:30"></a></h3>
-<p><code>30 21 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每月1、10、22日的4-:-45">每月1、10、22日的4 : 45<a title="#每月1、10、22日的4-:-45" href="#每月1、10、22日的4-:-45"></a></h3>
-<p><code>45 4 1,10,22 * * /service/l-zm/request.sh</code></p>
-<h3 id="每周六、周日的1-:-10">每周六、周日的1 : 10<a title="#每周六、周日的1-:-10" href="#每周六、周日的1-:-10"></a></h3>
-<p><code>10 1 * * 6,0 /service/l-zm/request.sh</code></p>
-<h3 id="每天18-:-00至23-:-00之间每隔30分钟">每天18 : 00至23 : 00之间每隔30分钟<a title="#每天18-:-00至23-:-00之间每隔30分钟" href="#每天18-:-00至23-:-00之间每隔30分钟"></a></h3>
-<p><code>0,30 18-23 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每星期六的晚上11-:-00-pm">每星期六的晚上11 : 00 pm<a title="#每星期六的晚上11-:-00-pm" href="#每星期六的晚上11-:-00-pm"></a></h3>
-<p><code>0 23 * * 6 /service/l-zm/request.sh</code></p>
-<h3 id="晚上11点到早上7点之间，每隔一小时">晚上11点到早上7点之间，每隔一小时<a title="#晚上11点到早上7点之间，每隔一小时" href="#晚上11点到早上7点之间，每隔一小时"></a></h3>
-<p><code>* 23-7/1 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每月的4号与每周一到周三的11点">每月的4号与每周一到周三的11点<a title="#每月的4号与每周一到周三的11点" href="#每月的4号与每周一到周三的11点"></a></h3>
-<p><code>0 11 4 * mon-wed /service/l-zm/request.sh</code></p>
-<h3 id="一月一号的4点">一月一号的4点<a title="#一月一号的4点" href="#一月一号的4点"></a></h3>
-<p><code>0 4 1 jan * /service/l-zm/request.sh</code></p>
-<h3 id="每秒执行一次">每秒执行一次<a title="#每秒执行一次" href="#每秒执行一次"></a></h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">*/1 * * * * <span class="built_in">sleep</span> 0s;<span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 1s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 2s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 3s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 4s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 5s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 6s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 7s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 8s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 9s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 10s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 11s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 12s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 13s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 14s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 15s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 16s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 17s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 18s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 19s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 20s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 21s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 22s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 23s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 24s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 25s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 26s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 27s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 28s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 29s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 30s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 31s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 32s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 33s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 34s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 35s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 36s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 37s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 38s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 39s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 40s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 41s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 42s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 43s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 44s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 45s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 46s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 47s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 48s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 49s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 50s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 51s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 52s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 53s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 54s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 55s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 56s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 57s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 58s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 59s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line"></span><br><span class="line">如果每秒没有循环连续 可以试试把 <span class="built_in">sleep</span> 0s 删除, 在最后添加 <span class="built_in">sleep</span> 60s (CentOS 和 Ubuntu 下不一样)</span><br></pre></td></tr></table></figure>
-<h2 id="crontab-使用与解释">CronTab 使用与解释<a title="#crontab-使用与解释" href="#crontab-使用与解释"></a></h2>
-<p><code>crontab -l</code> 查看所有的计划任务</p>
-<p><code>crontab -e</code> 修改计划任务</p>
-<p><code>service crond start</code> 启动计划任务</p>
-<p><code>service crond restart</code> 重启计划任务</p>
-<p><code>service crond reload</code> 重新载入计划任务</p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-        <category>CronTab</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>CronTab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows 安装完成 必装软件</title>
-    <url>/windows/</url>
-    <content><![CDATA[<h3 id="系统激活">系统激活<a title="#系统激活" href="#系统激活"></a></h3>
-<blockquote>
-<p><strong>HEU_KMS_Activator</strong></p>
-<p>公众号：知彼而知己<br>
-链接：<a href="https://pan.baidu.com/s/1mduGZblq5WpdmhTv32FDkg">https://pan.baidu.com/s/1mduGZblq5WpdmhTv32FDkg</a><br>
-提取码：1234</p>
-</blockquote>
-<p><img src="https://pic.imgdb.cn/item/6278942609475431293f3f58.jpg" alt="HEU_KMS_Activator_v24.5.0" loading="lazy" class="φbp"></p>
+    <title>Markdown 基本语法</title>
+    <url>/markdown/</url>
+    <content><![CDATA[<h1 id="&lt;center&gt;-一级标题"><center> 一级标题<a title="#&lt;center&gt;-一级标题" href="#&lt;center&gt;-一级标题"></a></h1>
+<p><strong><center> markdown居中文本</center></strong></p>
+<p><font face="黑体" color="black" size="2">我是黑体字</font></p>
+<p><s>删除文本</s></p>
+<!-- <table><tr><td bgcolor=#FF4500>
+     这里的背景色是：OrangeRed，十六进制颜色值：#FF4500，rgb(255, 69, 0)
+</td></tr></table> -->
+<table><tr><td bgcolor=black>
+     这里的背景色是：OrangeRed，十六进制颜色值：#FF4500，rgb(255, 69, 0)
+</td></tr></table>
+<p><strong>马克飞象</strong>是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述：</p>
+<ul>
+<li><strong>功能丰富</strong> ：支持高亮代码块、<em>LaTeX</em> 公式、流程图，本地图片以及附件上传，甚至截图粘贴，工作学习好帮手；</li>
+<li><strong>得心应手</strong> ：简洁高效的编辑器，提供<a href="http://maxiang.info/client_zh" target="_blank">桌面客户端</a>以及<a href="https://chrome.google.com/webstore/detail/kidnkfckhbdkfgbicccmdggmpgogehop" target="_blank">离线Chrome App</a>，支持移动端 Web；</li>
+<li><strong>深度整合</strong> ：支持选择笔记本和添加标签，支持从印象笔记跳转编辑，轻松管理。</li>
+</ul>
 <hr>
+<h2 id="markdown简介">Markdown简介<a title="#markdown简介" href="#markdown简介"></a></h2>
 <blockquote>
-<p><strong>Microsoft PowerToys</strong>  <code>必装软件</code>  自定义键盘及快捷键</p>
-<blockquote>
-<p>官网：<a href="https://docs.microsoft.com/zh-cn/windows/powertoys/">https://docs.microsoft.com/zh-cn/windows/powertoys/</a></p>
+<p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。    —— <a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank">维基百科</a></p>
 </blockquote>
-<p>GitHub 存储库：<a href="https://github.com/microsoft/PowerToys">https://github.com/microsoft/PowerToys</a></p>
-<p>链接：<a href="https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ">https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ</a><br>
-提取码：1234</p>
-</blockquote>
-<blockquote>
-<p>CronTab 的语法</p>
-<p>* * * * * date &gt;&gt; /tmp/date.txt</p>
-</blockquote>
+<p>正如您在阅读的这份文档，它使用简单的符号标识不同的标题，将某些文字标记为<strong>粗体</strong>或者<em>斜体</em>，创建一个<a href="http://www.example.com" target="_blank">链接</a>或一个脚注[^demo]。下面列举了几个高级功能，更多语法请按<code>Ctrl + /</code>查看帮助。</p>
+<h3 id="代码块">代码块<a title="#代码块" href="#代码块"></a></h3>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">somefunc</span>(<span class="params">param1=<span class="string">&#x27;&#x27;</span>, param2=<span class="number">0</span></span>):</span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;A docstring&#x27;&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></span><br><span class="line">        <span class="built_in">print</span> <span class="string">&#x27;Greater&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="literal">None</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">SomeClass</span>:</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>message = <span class="string">&#x27;&#x27;&#x27;interpreter</span></span><br><span class="line"><span class="string"><span class="meta">... </span>prompt&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="latex-公式">LaTeX 公式<a title="#latex-公式" href="#latex-公式"></a></h3>
+<p>可以创建行内公式，例如 $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$。或者块级公式：</p>
+<p>$$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>
+<h3 id="表格">表格<a title="#表格" href="#表格"></a></h3>
 <div class="φbq"><div class="φbs"><table><thead>
 <tr>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">date &gt;&gt; /tmp/date.txt</th>
+<th style="text-align:left">Item</th>
+<th style="text-align:right">Value</th>
+<th style="text-align:center">Qty</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">分钟</td>
-<td style="text-align:center">小时</td>
-<td style="text-align:center">几号</td>
-<td style="text-align:center">几月</td>
-<td style="text-align:center">星期</td>
-<td style="text-align:center">需要执行的命令</td>
+<td style="text-align:left">Computer</td>
+<td style="text-align:right">1600 USD</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:left">Phone</td>
+<td style="text-align:right">12 USD</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td style="text-align:left">Pipe</td>
+<td style="text-align:right">1 USD</td>
+<td style="text-align:center">234</td>
 </tr>
 </tbody>
-</table></div></div><p><img src="https://pic.imgdb.cn/item/626cf1db239250f7c57d0a84.png" alt="Linux 计划任务 CronTab" loading="lazy" class="φbp"></p>
-<h2 id="案例">案例<a title="#案例" href="#案例"></a></h2>
-<h3 id="每一小时">每一小时<a title="#每一小时" href="#每一小时"></a></h3>
-<p><code>* */1 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每小时执行/etc/cron.hourly目录内的脚本">每小时执行/etc/cron.hourly目录内的脚本<a title="#每小时执行/etc/cron.hourly目录内的脚本" href="#每小时执行/etc/cron.hourly目录内的脚本"></a></h3>
-<p><code>01 * * * * root run-parts /etc/cron.hourly</code></p>
-<h3 id="每小时的第3和第15分钟执行">每小时的第3和第15分钟执行<a title="#每小时的第3和第15分钟执行" href="#每小时的第3和第15分钟执行"></a></h3>
-<p><code>3,15 * * * * /service/l-zm/request.sh</code></p>
-<h3 id="在上午8点到11点的第3和第15分钟执行">在上午8点到11点的第3和第15分钟执行<a title="#在上午8点到11点的第3和第15分钟执行" href="#在上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每隔两天的上午8点到11点的第3和第15分钟执行">每隔两天的上午8点到11点的第3和第15分钟执行<a title="#每隔两天的上午8点到11点的第3和第15分钟执行" href="#每隔两天的上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 */2 * * date &gt;&gt; /tmp/date.txt</code></p>
-<h3 id="每个星期一的上午8点到11点的第3和第15分钟执行">每个星期一的上午8点到11点的第3和第15分钟执行<a title="#每个星期一的上午8点到11点的第3和第15分钟执行" href="#每个星期一的上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 * * 1 date &gt;&gt; /tmp/date.txt</code></p>
-<h3 id="每晚的21:30">每晚的21:30<a title="#每晚的21:30" href="#每晚的21:30"></a></h3>
-<p><code>30 21 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每月1、10、22日的4-:-45">每月1、10、22日的4 : 45<a title="#每月1、10、22日的4-:-45" href="#每月1、10、22日的4-:-45"></a></h3>
-<p><code>45 4 1,10,22 * * /service/l-zm/request.sh</code></p>
-<h3 id="每周六、周日的1-:-10">每周六、周日的1 : 10<a title="#每周六、周日的1-:-10" href="#每周六、周日的1-:-10"></a></h3>
-<p><code>10 1 * * 6,0 /service/l-zm/request.sh</code></p>
-<h3 id="每天18-:-00至23-:-00之间每隔30分钟">每天18 : 00至23 : 00之间每隔30分钟<a title="#每天18-:-00至23-:-00之间每隔30分钟" href="#每天18-:-00至23-:-00之间每隔30分钟"></a></h3>
-<p><code>0,30 18-23 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每星期六的晚上11-:-00-pm">每星期六的晚上11 : 00 pm<a title="#每星期六的晚上11-:-00-pm" href="#每星期六的晚上11-:-00-pm"></a></h3>
-<p><code>0 23 * * 6 /service/l-zm/request.sh</code></p>
-<h3 id="晚上11点到早上7点之间，每隔一小时">晚上11点到早上7点之间，每隔一小时<a title="#晚上11点到早上7点之间，每隔一小时" href="#晚上11点到早上7点之间，每隔一小时"></a></h3>
-<p><code>* 23-7/1 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每月的4号与每周一到周三的11点">每月的4号与每周一到周三的11点<a title="#每月的4号与每周一到周三的11点" href="#每月的4号与每周一到周三的11点"></a></h3>
-<p><code>0 11 4 * mon-wed /service/l-zm/request.sh</code></p>
-<h3 id="一月一号的4点">一月一号的4点<a title="#一月一号的4点" href="#一月一号的4点"></a></h3>
-<p><code>0 4 1 jan * /service/l-zm/request.sh</code></p>
-<h3 id="每秒执行一次">每秒执行一次<a title="#每秒执行一次" href="#每秒执行一次"></a></h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">*/1 * * * * <span class="built_in">sleep</span> 0s;<span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 1s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 2s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 3s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 4s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 5s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 6s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 7s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 8s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 9s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 10s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 11s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 12s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 13s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 14s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 15s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 16s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 17s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 18s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 19s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 20s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 21s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 22s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 23s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 24s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 25s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 26s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 27s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 28s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 29s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 30s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 31s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 32s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 33s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 34s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 35s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 36s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 37s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 38s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 39s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 40s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 41s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 42s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 43s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 44s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 45s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 46s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 47s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 48s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 49s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 50s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 51s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 52s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 53s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 54s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 55s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 56s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 57s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 58s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 59s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line"></span><br><span class="line">如果每秒没有循环连续 可以试试把 <span class="built_in">sleep</span> 0s 删除, 在最后添加 <span class="built_in">sleep</span> 60s (CentOS 和 Ubuntu 下不一样)</span><br></pre></td></tr></table></figure>
-<h2 id="crontab-使用与解释">CronTab 使用与解释<a title="#crontab-使用与解释" href="#crontab-使用与解释"></a></h2>
-<p><code>crontab -l</code> 查看所有的计划任务</p>
-<p><code>crontab -e</code> 修改计划任务</p>
-<p><code>service crond start</code> 启动计划任务</p>
-<p><code>service crond restart</code> 重启计划任务</p>
-<p><code>service crond reload</code> 重新载入计划任务</p>
+</table></div></div><h3 id="流程图">流程图<a title="#流程图" href="#流程图"></a></h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">st=&gt;start: Start</span><br><span class="line">e=&gt;end</span><br><span class="line">op=&gt;operation: My Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
+<p>以及时序图:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Alice-&gt;Bob: Hello Bob, how are you?</span><br><span class="line">Note right of Bob: Bob thinks</span><br><span class="line">Bob--&gt;Alice: I am good thanks!</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>提示：<strong>想了解更多，请查看</strong>流程图</strong><a href="http://adrai.github.io/flowchart.js/" target="_blank">语法</a>以及<strong>时序图</strong><a href="http://bramp.github.io/js-sequence-diagrams/" target="_blank">语法</a>。</p>
+</blockquote>
+<h3 id="复选框">复选框<a title="#复选框" href="#复选框"></a></h3>
+<p>使用 <code>- [ ]</code> 和 <code>- [x]</code> 语法可以创建复选框，实现 todo-list 等功能。例如：</p>
+<ul class="φbr" class="φbr" class="φbr">
+<li><input type="checkbox" disabled="" checked=""><i></i>已完成事项</li>
+<li><input type="checkbox" disabled=""><i></i>待办事项1</li>
+<li><input type="checkbox" disabled=""><i></i>待办事项2</li>
+</ul>
+<blockquote>
+<p><strong>注意：<strong>目前支持尚不完全，在印象笔记中勾选复选框是无效、不能同步的，所以必须在</strong>马克飞象</strong>中修改 Markdown 原文才可生效。下个版本将会全面支持。</p>
+</blockquote>
+<h2 id="印象笔记相关">印象笔记相关<a title="#印象笔记相关" href="#印象笔记相关"></a></h2>
+<h3 id="笔记本和标签">笔记本和标签<a title="#笔记本和标签" href="#笔记本和标签"></a></h3>
+<p><strong>马克飞象</strong>增加了<code>@(笔记本)[标签A|标签B]</code>语法, 以选择笔记本和添加标签。 <strong>绑定账号后</strong>， 输入<code>(</code>自动会出现笔记本列表，请从中选择。</p>
+<h3 id="笔记标题">笔记标题<a title="#笔记标题" href="#笔记标题"></a></h3>
+<p><strong>马克飞象</strong>会自动使用文档内出现的第一个标题作为笔记标题。例如本文，就是第一行的 <code>欢迎使用马克飞象</code>。</p>
+<h3 id="快捷编辑">快捷编辑<a title="#快捷编辑" href="#快捷编辑"></a></h3>
+<p>保存在印象笔记中的笔记，右上角会有一个红色的编辑按钮，点击后会回到<strong>马克飞象</strong>中打开并编辑该笔记。</p>
+<blockquote>
+<p>**注意：**目前用户在印象笔记中单方面做的任何修改，马克飞象是无法自动感知和更新的。所以请务必回到马克飞象编辑。</p>
+</blockquote>
+<h3 id="数据同步">数据同步<a title="#数据同步" href="#数据同步"></a></h3>
+<p><strong>马克飞象</strong>通过<strong>将Markdown原文以隐藏内容保存在笔记中</strong>的精妙设计，实现了对Markdown的存储和再次编辑。既解决了其他产品只是单向导出HTML的单薄，又规避了服务端存储Markdown带来的隐私安全问题。这样，服务端仅作为对印象笔记 API调用和数据转换之用。</p>
+<blockquote>
+<p><strong>隐私声明：用户所有的笔记数据，均保存在印象笔记中。马克飞象不存储用户的任何笔记数据。</strong></p>
+</blockquote>
+<h3 id="离线存储">离线存储<a title="#离线存储" href="#离线存储"></a></h3>
+<p><strong>马克飞象</strong>使用浏览器离线存储将内容实时保存在本地，不必担心网络断掉或浏览器崩溃。为了节省空间和避免冲突，已同步至印象笔记并且不再修改的笔记将删除部分本地缓存，不过依然可以随时通过<code>文档管理</code>打开。</p>
+<blockquote>
+<p>**注意：**虽然浏览器存储大部分时候都比较可靠，但印象笔记作为专业云存储，更值得信赖。以防万一，<strong>请务必经常及时同步到印象笔记</strong>。</p>
+</blockquote>
+<h2 id="编辑器相关">编辑器相关<a title="#编辑器相关" href="#编辑器相关"></a></h2>
+<h3 id="设置">设置<a title="#设置" href="#设置"></a></h3>
+<p>右侧系统菜单（快捷键<code>Ctrl + M</code>）的<code>设置</code>中，提供了界面字体、字号、自定义CSS、vim/emacs 键盘模式等高级选项。</p>
+<h3 id="快捷键">快捷键<a title="#快捷键" href="#快捷键"></a></h3>
+<p>帮助    <code>Ctrl + /</code><br>
+同步文档    <code>Ctrl + S</code><br>
+创建文档    <code>Ctrl + Alt + N</code><br>
+最大化编辑器    <code>Ctrl + Enter</code><br>
+预览文档 <code>Ctrl + Alt + Enter</code><br>
+文档管理    <code>Ctrl + O</code><br>
+系统菜单    <code>Ctrl + M</code></p>
+<p>加粗    <code>Ctrl + B</code><br>
+插入图片    <code>Ctrl + G</code><br>
+插入链接    <code>Ctrl + L</code><br>
+提升标题    <code>Ctrl + H</code></p>
+<h2 id="关于收费">关于收费<a title="#关于收费" href="#关于收费"></a></h2>
+<p><strong>马克飞象</strong>为新用户提供 10 天的试用期，试用期过后需要<a href="maxiang.info/vip.html">续费</a>才能继续使用。未购买或者未及时续费，将不能同步新的笔记。之前保存过的笔记依然可以编辑。</p>
+<h2 id="反馈与建议">反馈与建议<a title="#反馈与建议" href="#反馈与建议"></a></h2>
+<ul>
+<li>微博：<a href="http://weibo.com/u/2788354117" target="_blank">@马克飞象</a>，<a href="http://weibo.com/ggock" title="开发者个人账号" target="_blank">@GGock</a></li>
+<li>邮箱：<a href="mailto:hustgock@gmail.com">hustgock@gmail.com</a></li>
+</ul>
+<hr>
+<p>感谢阅读这份帮助文档。请点击右上角，绑定印象笔记账号，开启全新的记录与分享体验吧。</p>
+<p>[^demo]: 这是一个示例脚注。请查阅 <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide#footnotes" target="_blank">MultiMarkdown 文档</a> 关于脚注的说明。 <strong>限制：</strong> 印象笔记的笔记内容使用 <a href="https://dev.yinxiang.com/doc/articles/enml.php" target="_blank">ENML</a> 格式，基于 HTML，但是不支持某些标签和属性，例如id，这就导致<code>脚注</code>和<code>TOC</code>无法正常点击。</p>
+<hr>
+<h1 id="欢迎使用-cmd-markdown-编辑阅读器">欢迎使用 Cmd Markdown 编辑阅读器<a title="#欢迎使用-cmd-markdown-编辑阅读器" href="#欢迎使用-cmd-markdown-编辑阅读器"></a></h1>
+<hr>
+<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
+<blockquote>
+<ul>
+<li>整理知识，学习笔记</li>
+<li>发布日记，杂文，所见所想</li>
+<li>撰写发布技术文稿（代码支持）</li>
+<li>撰写发布学术论文（LaTeX 公式支持）</li>
+</ul>
+</blockquote>
+<p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo" loading="lazy" class="φbp"></p>
+<p>除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：</p>
+<h3 id="windows/mac/linux-全平台客户端"><a href="https://www.zybuluo.com/cmd/">Windows/Mac/Linux 全平台客户端</a><a title="#windows/mac/linux-全平台客户端" href="#windows/mac/linux-全平台客户端"></a></h3>
+<blockquote>
+<p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p>
+</blockquote>
+<hr>
+<h2 id="什么是-markdown">什么是 Markdown<a title="#什么是-markdown" href="#什么是-markdown"></a></h2>
+<p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
+<h3 id="1.-制作一份待办事宜-todo-列表">1. 制作一份待办事宜 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-%E5%BE%85%E5%8A%9E%E4%BA%8B%E5%AE%9C-todo-%E5%88%97%E8%A1%A8">Todo 列表</a><a title="#1.-制作一份待办事宜-todo-列表" href="#1.-制作一份待办事宜-todo-列表"></a></h3>
+<ul class="φbr" class="φbr" class="φbr" class="φbr" class="φbr">
+<li><input type="checkbox" disabled=""><i></i>支持以 PDF 格式导出文稿</li>
+<li><input type="checkbox" disabled=""><i></i>改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li>
+<li><input type="checkbox" disabled="" checked=""><i></i>新增 Todo 列表功能</li>
+<li><input type="checkbox" disabled="" checked=""><i></i>修复 LaTex 公式渲染问题</li>
+<li><input type="checkbox" disabled="" checked=""><i></i>新增 LaTex 公式编号功能</li>
+</ul>
+<h3 id="2.-书写一个质能守恒公式[^latex]">2. 书写一个质能守恒公式[^LaTeX]<a title="#2.-书写一个质能守恒公式[^latex]" href="#2.-书写一个质能守恒公式[^latex]"></a></h3>
+<p>$$E=mc^2$$</p>
+<h3 id="3.-高亮一段代码[^code]">3. 高亮一段代码[^code]<a title="#3.-高亮一段代码[^code]" href="#3.-高亮一段代码[^code]"></a></h3>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">SomeClass</span>:</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="comment"># A comment</span></span><br><span class="line">    <span class="built_in">print</span> <span class="string">&#x27;hello world&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="4.-高效绘制-流程图">4. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-%E6%B5%81%E7%A8%8B%E5%9B%BE">流程图</a><a title="#4.-高效绘制-流程图" href="#4.-高效绘制-流程图"></a></h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">st=&gt;start: Start</span><br><span class="line">op=&gt;operation: Your Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">e=&gt;end</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
+<h3 id="5.-高效绘制-序列图">5. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-%E5%BA%8F%E5%88%97%E5%9B%BE">序列图</a><a title="#5.-高效绘制-序列图" href="#5.-高效绘制-序列图"></a></h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Alice-&gt;Bob: Hello Bob, how are you?</span><br><span class="line">Note right of Bob: Bob thinks</span><br><span class="line">Bob--&gt;Alice: I am good thanks!</span><br></pre></td></tr></table></figure>
+<h3 id="6.-高效绘制-甘特图">6. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#9-%E7%94%98%E7%89%B9%E5%9B%BE">甘特图</a><a title="#6.-高效绘制-甘特图" href="#6.-高效绘制-甘特图"></a></h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title 项目开发流程</span><br><span class="line">section 项目确定</span><br><span class="line">    需求分析       :a1, 2016-06-22, 3d</span><br><span class="line">    可行性报告     :after a1, 5d</span><br><span class="line">    概念验证       : 5d</span><br><span class="line">section 项目实施</span><br><span class="line">    概要设计      :2016-07-05  , 5d</span><br><span class="line">    详细设计      :2016-07-08, 10d</span><br><span class="line">    编码          :2016-07-15, 10d</span><br><span class="line">    测试          :2016-07-22, 5d</span><br><span class="line">section 发布验收</span><br><span class="line">    发布: 2d</span><br><span class="line">    验收: 3d</span><br></pre></td></tr></table></figure>
+<h3 id="7.-绘制表格">7. 绘制表格<a title="#7.-绘制表格" href="#7.-绘制表格"></a></h3>
+<div class="φbq"><div class="φbs"><table><thead>
+<tr>
+<th>项目</th>
+<th style="text-align:right">价格</th>
+<th style="text-align:center">数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>计算机</td>
+<td style="text-align:right">$1600</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td style="text-align:right">$12</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td style="text-align:right">$1</td>
+<td style="text-align:center">234</td>
+</tr>
+</tbody>
+</table></div></div><h3 id="8.-更详细语法说明">8. 更详细语法说明<a title="#8.-更详细语法说明" href="#8.-更详细语法说明"></a></h3>
+<p>想要查看更详细的语法说明，可以参考我们准备的 <a href="http://maxiang.info/client_zh" target="_blank">Cmd Markdown 简明语法手册</a>，进阶用户可以参考 <a href="https://chrome.google.com/webstore/detail/kidnkfckhbdkfgbicccmdggmpgogehop" target="_blank">Cmd Markdown 高阶语法手册</a> 了解更多高级功能。</p>
+<p>总而言之，不同于其它 <em>所见即所得</em> 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p>
+<hr>
+<h2 id="什么是-cmd-markdown">什么是 Cmd Markdown<a title="#什么是-cmd-markdown" href="#什么是-cmd-markdown"></a></h2>
+<p>您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p>
+<h3 id="1.-实时同步预览">1. 实时同步预览<a title="#1.-实时同步预览" href="#1.-实时同步预览"></a></h3>
+<p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p>
+<h3 id="2.-编辑工具栏">2. 编辑工具栏<a title="#2.-编辑工具栏" href="#2.-编辑工具栏"></a></h3>
+<p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p>
+<p><img src="https://www.zybuluo.com/static/img/toolbar-editor.png" alt="tool-editor" loading="lazy" class="φbp"></p>
+<h3 id="3.-编辑模式">3. 编辑模式<a title="#3.-编辑模式" href="#3.-编辑模式"></a></h3>
+<p>完全心无旁骛的方式编辑文字：点击 <strong>编辑工具栏</strong> 最右侧的拉伸按钮或者按下 <code>Ctrl + M</code>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p>
+<h3 id="4.-实时的云端文稿">4. 实时的云端文稿<a title="#4.-实时的云端文稿" href="#4.-实时的云端文稿"></a></h3>
+<p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 <code>已保存</code> 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p>
+<h3 id="5.-离线模式">5. 离线模式<a title="#5.-离线模式" href="#5.-离线模式"></a></h3>
+<p>在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。</p>
+<h3 id="6.-管理工具栏">6. 管理工具栏<a title="#6.-管理工具栏" href="#6.-管理工具栏"></a></h3>
+<p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p>
+<p><img src="https://www.zybuluo.com/static/img/toolbar-manager.jpg" alt="tool-manager" loading="lazy" class="φbp"></p>
+<p>通过管理工具栏可以：</p>
+<p><i class="icon-share"></i> 发布：将当前的文稿生成固定链接，在网络上发布，分享<br>
+<i class="icon-file"></i> 新建：开始撰写一篇新的文稿<br>
+<i class="icon-trash"></i> 删除：删除当前的文稿<br>
+<i class="icon-cloud"></i> 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地<br>
+<i class="icon-reorder"></i> 列表：所有新增和过往的文稿都可以在这里查看、操作<br>
+<i class="icon-pencil"></i> 模式：切换 普通/Vim/Emacs 编辑模式</p>
+<h3 id="7.-阅读工具栏">7. 阅读工具栏<a title="#7.-阅读工具栏" href="#7.-阅读工具栏"></a></h3>
+<p><img src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" alt="tool-manager" loading="lazy" class="φbp"></p>
+<p>通过 <strong>预览区</strong> 右上角的 <strong>阅读工具栏</strong>，可以查看当前文稿的目录并增强阅读体验。</p>
+<p>工具栏上的五个图标依次为：</p>
+<p><i class="icon-list"></i> 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落<br>
+<i class="icon-chevron-sign-left"></i> 视图：互换左边编辑区和右边预览区的位置<br>
+<i class="icon-adjust"></i> 主题：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！<br>
+<i class="icon-desktop"></i> 阅读：心无旁骛的阅读模式提供超一流的阅读体验<br>
+<i class="icon-fullscreen"></i> 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</p>
+<h3 id="8.-阅读模式">8. 阅读模式<a title="#8.-阅读模式" href="#8.-阅读模式"></a></h3>
+<p>在 <strong>阅读工具栏</strong> 点击 <i class="icon-desktop"></i> 或者按下 <code>Ctrl+Alt+M</code> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。</p>
+<h3 id="9.-标签、分类和搜索">9. 标签、分类和搜索<a title="#9.-标签、分类和搜索" href="#9.-标签、分类和搜索"></a></h3>
+<p>在编辑区任意行首位置输入以下格式的文字可以标签当前文档：</p>
+<p>标签： 未分类</p>
+<p>标签以后的文稿在【文件列表】（Ctrl+Alt+F）里会按照标签分类，用户可以同时使用键盘或者鼠标浏览查看，或者在【文件列表】的搜索文本框内搜索标题关键字过滤文稿，如下图所示：</p>
+<p><img src="https://www.zybuluo.com/static/img/file-list.png" alt="file-list" loading="lazy" class="φbp"></p>
+<h3 id="10.-文稿发布和分享">10. 文稿发布和分享<a title="#10.-文稿发布和分享" href="#10.-文稿发布和分享"></a></h3>
+<p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class="icon-share"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！</p>
+<div style="text-align:center;">
+<div style="
+border:2px solid green;
+border-radius:5px;
+margin:.5em auto;
+padding:0 .5em;
+width:fit-content;
+font-size:2em;
+display:inline-block;
+font-family: SlideTownsoul
+">
+<marquee direction="up" behavior="scroll" scrollamount=4>
+<p><i class="fas fa-award fa-2x fa-fw"></i>李先森<i class="fas fa-award fa-2x fa-fw"></i></p>
+<p><strong><a href="http://l-zm.com" target="_blank"><i class="fas fa-award fa-2x fa-fw"></i>李先森<i class="fas fa-award fa-2x fa-fw"></i></a></strong></p>
+</marquee>
+</div>
+</div>
+<hr>
+<p>[^LaTeX]: 支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 <a href="http://bramp.github.io/js-sequence-diagrams/" target="_blank">MathJax</a> 参考更多使用方法。</p>
+<p>[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。</p>
 ]]></content>
       <categories>
-        <category>Windows</category>
+        <category>Other</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
+        <tag>Other</tag>
       </tags>
   </entry>
   <entry>
@@ -402,46 +487,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PowerToys-微软的一款开源电脑工具箱软件</title>
-    <url>/PowerToys/</url>
-    <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
-<p>习惯了 <strong><code>Mac</code></strong> 系统的 <code>command + *</code> 按键的操作逻辑之后</p>
-<p>针对于 <strong><code>Windows</code></strong> 系统的 <code>Ctrl + *</code> 各种不适应</p>
-<hr>
-<p>放上我的调整结果，回到 <code>command</code> 按键逻辑下</p>
-<p><img src="https://pic.imgdb.cn/item/6277942309475431296ca2b5.png" alt="PowerToys-微软的一款开源电脑工具箱软件-键盘管理器" loading="lazy" class="φbp"></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>PowerToys</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>离线下载安装 Windows商店(Microsoft Store) 应用</title>
-    <url>/Microsoft-Store/</url>
-    <content><![CDATA[<h3 id="复制链接">复制链接<a title="#复制链接" href="#复制链接"></a></h3>
-<p>以：Windows 相机 应用举例</p>
-<p><code>https://www.microsoft.com/zh-cn/p/camara-de-windows/9wzdncrfjbbg?activetab=pivot:overviewtab</code></p>
-<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
-<p><code>https://store.rg-adguard.net/</code></p>
-<ul>
-<li>粘贴链接到输入框</li>
-<li>找到以 <code>AppxBundle</code> 结尾的</li>
-<li>点击下载安装</li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/627886ca09475431290fb21e.png" alt="离线安装 Windows 商店(Microsoft-Store)应用-AppxBundle" loading="lazy" class="φbp"></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-        <category>Microsoft Store</category>
-      </categories>
-      <tags>
-        <tag>Microsoft Store</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>exo 网站初始化</title>
     <url>/hexo-web-site-inti/</url>
     <content><![CDATA[<p>第一步</p>
@@ -468,6 +513,23 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PowerToys-微软的一款开源电脑工具箱软件</title>
+    <url>/PowerToys/</url>
+    <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
+<p>习惯了 <strong><code>Mac</code></strong> 系统的 <code>command + *</code> 按键的操作逻辑之后</p>
+<p>针对于 <strong><code>Windows</code></strong> 系统的 <code>Ctrl + *</code> 各种不适应</p>
+<hr>
+<p>放上我的调整结果，回到 <code>command</code> 按键逻辑下</p>
+<p><img src="https://pic.imgdb.cn/item/6277942309475431296ca2b5.png" alt="PowerToys-微软的一款开源电脑工具箱软件-键盘管理器" loading="lazy" class="φbp"></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>PowerToys</tag>
       </tags>
   </entry>
   <entry>
@@ -533,6 +595,123 @@
       </tags>
   </entry>
   <entry>
+    <title>离线下载安装 Windows商店(Microsoft Store) 应用</title>
+    <url>/Microsoft-Store/</url>
+    <content><![CDATA[<h3 id="复制链接">复制链接<a title="#复制链接" href="#复制链接"></a></h3>
+<p>以：Windows 相机 应用举例</p>
+<p><code>https://www.microsoft.com/zh-cn/p/camara-de-windows/9wzdncrfjbbg?activetab=pivot:overviewtab</code></p>
+<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
+<p><code>https://store.rg-adguard.net/</code></p>
+<ul>
+<li>粘贴链接到输入框</li>
+<li>找到以 <code>AppxBundle</code> 结尾的</li>
+<li>点击下载安装</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/627886ca09475431290fb21e.png" alt="离线安装 Windows 商店(Microsoft-Store)应用-AppxBundle" loading="lazy" class="φbp"></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+        <category>Microsoft Store</category>
+      </categories>
+      <tags>
+        <tag>Microsoft Store</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows 安装完成 必装软件</title>
+    <url>/windows/</url>
+    <content><![CDATA[<h3 id="系统激活">系统激活<a title="#系统激活" href="#系统激活"></a></h3>
+<blockquote>
+<p><strong>HEU_KMS_Activator_v24.6.2</strong></p>
+<p>公众号：知彼而知己</p>
+<blockquote>
+<p>链接：<a href="https://pan.baidu.com/s/1pxIEZSK7xz8_lP85cQnyMw">https://pan.baidu.com/s/1pxIEZSK7xz8_lP85cQnyMw</a><br>
+提取码：vf3b</p>
+</blockquote>
+<p>GitHub：<a href="https://github.com/zbezj/HEU_KMS_Activator">https://github.com/zbezj/HEU_KMS_Activator</a></p>
+</blockquote>
+<p><img src="https://pic.imgdb.cn/item/6281a68209475431297e8edb.png" alt="HEU_KMS_Activator_v24.6.2" loading="lazy" class="φbp"></p>
+<hr>
+<blockquote>
+<p><strong>Microsoft PowerToys</strong>  <code>必装软件</code>  自定义键盘及快捷键</p>
+<blockquote>
+<p>官网：<a href="https://docs.microsoft.com/zh-cn/windows/powertoys/">https://docs.microsoft.com/zh-cn/windows/powertoys/</a></p>
+</blockquote>
+<p>GitHub 存储库：<a href="https://github.com/microsoft/PowerToys">https://github.com/microsoft/PowerToys</a></p>
+<p>链接：<a href="https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ">https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ</a><br>
+提取码：1234</p>
+</blockquote>
+<blockquote>
+<p>CronTab 的语法</p>
+<p>* * * * * date &gt;&gt; /tmp/date.txt</p>
+</blockquote>
+<div class="φbq"><div class="φbs"><table><thead>
+<tr>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">date &gt;&gt; /tmp/date.txt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">分钟</td>
+<td style="text-align:center">小时</td>
+<td style="text-align:center">几号</td>
+<td style="text-align:center">几月</td>
+<td style="text-align:center">星期</td>
+<td style="text-align:center">需要执行的命令</td>
+</tr>
+</tbody>
+</table></div></div><p><img src="https://pic.imgdb.cn/item/626cf1db239250f7c57d0a84.png" alt="Linux 计划任务 CronTab" loading="lazy" class="φbp"></p>
+<h2 id="案例">案例<a title="#案例" href="#案例"></a></h2>
+<h3 id="每一小时">每一小时<a title="#每一小时" href="#每一小时"></a></h3>
+<p><code>* */1 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每小时执行/etc/cron.hourly目录内的脚本">每小时执行/etc/cron.hourly目录内的脚本<a title="#每小时执行/etc/cron.hourly目录内的脚本" href="#每小时执行/etc/cron.hourly目录内的脚本"></a></h3>
+<p><code>01 * * * * root run-parts /etc/cron.hourly</code></p>
+<h3 id="每小时的第3和第15分钟执行">每小时的第3和第15分钟执行<a title="#每小时的第3和第15分钟执行" href="#每小时的第3和第15分钟执行"></a></h3>
+<p><code>3,15 * * * * /service/l-zm/request.sh</code></p>
+<h3 id="在上午8点到11点的第3和第15分钟执行">在上午8点到11点的第3和第15分钟执行<a title="#在上午8点到11点的第3和第15分钟执行" href="#在上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每隔两天的上午8点到11点的第3和第15分钟执行">每隔两天的上午8点到11点的第3和第15分钟执行<a title="#每隔两天的上午8点到11点的第3和第15分钟执行" href="#每隔两天的上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 */2 * * date &gt;&gt; /tmp/date.txt</code></p>
+<h3 id="每个星期一的上午8点到11点的第3和第15分钟执行">每个星期一的上午8点到11点的第3和第15分钟执行<a title="#每个星期一的上午8点到11点的第3和第15分钟执行" href="#每个星期一的上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 * * 1 date &gt;&gt; /tmp/date.txt</code></p>
+<h3 id="每晚的21:30">每晚的21:30<a title="#每晚的21:30" href="#每晚的21:30"></a></h3>
+<p><code>30 21 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每月1、10、22日的4-:-45">每月1、10、22日的4 : 45<a title="#每月1、10、22日的4-:-45" href="#每月1、10、22日的4-:-45"></a></h3>
+<p><code>45 4 1,10,22 * * /service/l-zm/request.sh</code></p>
+<h3 id="每周六、周日的1-:-10">每周六、周日的1 : 10<a title="#每周六、周日的1-:-10" href="#每周六、周日的1-:-10"></a></h3>
+<p><code>10 1 * * 6,0 /service/l-zm/request.sh</code></p>
+<h3 id="每天18-:-00至23-:-00之间每隔30分钟">每天18 : 00至23 : 00之间每隔30分钟<a title="#每天18-:-00至23-:-00之间每隔30分钟" href="#每天18-:-00至23-:-00之间每隔30分钟"></a></h3>
+<p><code>0,30 18-23 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每星期六的晚上11-:-00-pm">每星期六的晚上11 : 00 pm<a title="#每星期六的晚上11-:-00-pm" href="#每星期六的晚上11-:-00-pm"></a></h3>
+<p><code>0 23 * * 6 /service/l-zm/request.sh</code></p>
+<h3 id="晚上11点到早上7点之间，每隔一小时">晚上11点到早上7点之间，每隔一小时<a title="#晚上11点到早上7点之间，每隔一小时" href="#晚上11点到早上7点之间，每隔一小时"></a></h3>
+<p><code>* 23-7/1 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每月的4号与每周一到周三的11点">每月的4号与每周一到周三的11点<a title="#每月的4号与每周一到周三的11点" href="#每月的4号与每周一到周三的11点"></a></h3>
+<p><code>0 11 4 * mon-wed /service/l-zm/request.sh</code></p>
+<h3 id="一月一号的4点">一月一号的4点<a title="#一月一号的4点" href="#一月一号的4点"></a></h3>
+<p><code>0 4 1 jan * /service/l-zm/request.sh</code></p>
+<h3 id="每秒执行一次">每秒执行一次<a title="#每秒执行一次" href="#每秒执行一次"></a></h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">*/1 * * * * <span class="built_in">sleep</span> 0s;<span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 1s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 2s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 3s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 4s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 5s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 6s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 7s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 8s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 9s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 10s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 11s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 12s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 13s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 14s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 15s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 16s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 17s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 18s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 19s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 20s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 21s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 22s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 23s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 24s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 25s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 26s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 27s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 28s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 29s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 30s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 31s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 32s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 33s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 34s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 35s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 36s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 37s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 38s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 39s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 40s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 41s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 42s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 43s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 44s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 45s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 46s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 47s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 48s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 49s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 50s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 51s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 52s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 53s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 54s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 55s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 56s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 57s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 58s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 59s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line"></span><br><span class="line">如果每秒没有循环连续 可以试试把 <span class="built_in">sleep</span> 0s 删除, 在最后添加 <span class="built_in">sleep</span> 60s (CentOS 和 Ubuntu 下不一样)</span><br></pre></td></tr></table></figure>
+<h2 id="crontab-使用与解释">CronTab 使用与解释<a title="#crontab-使用与解释" href="#crontab-使用与解释"></a></h2>
+<p><code>crontab -l</code> 查看所有的计划任务</p>
+<p><code>crontab -e</code> 修改计划任务</p>
+<p><code>service crond start</code> 启动计划任务</p>
+<p><code>service crond restart</code> 重启计划任务</p>
+<p><code>service crond reload</code> 重新载入计划任务</p>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows CMD 查看端口占用情况列表 关闭指定端口命令</title>
     <url>/Windows-CMD-Task/</url>
     <content><![CDATA[<h3 id="查看所有端口运行状态">查看所有端口运行状态<a title="#查看所有端口运行状态" href="#查看所有端口运行状态"></a></h3>
@@ -564,17 +743,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Chrome 插件</title>
-    <url>/Chrome-Plugins/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1+Q5Vq8JMocCI/dUXJBFaRi4UK4X7wtlu+CHo6e4ijICbIFf+UqEQCb</is-cipher>]]></content>
-      <categories>
-        <category>Chrome</category>
-      </categories>
-      <tags>
-        <tag>Chrome Plugins</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>IntelliJ IDEA 插件</title>
     <url>/IntelliJ-IDEA-Plugins/</url>
     <content><![CDATA[<h3 id="free-mybatis-plugin">Free MyBatis plugin<a title="#free-mybatis-plugin" href="#free-mybatis-plugin"></a></h3>
@@ -599,6 +767,103 @@
       </tags>
   </entry>
   <entry>
+    <title>Chrome 插件</title>
+    <url>/Chrome-Plugins/</url>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX19MS/QnlpwUn9a4t7unYfVhbyq2OkciJgBhMPI8Mj3yFo81LYmCHsvM</is-cipher>]]></content>
+      <categories>
+        <category>Chrome</category>
+      </categories>
+      <tags>
+        <tag>Chrome Plugins</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 计划任务 CronTab</title>
+    <url>/linux-crontab/</url>
+    <content><![CDATA[<blockquote>
+<p>CronTab 的语法</p>
+<p>* * * * * date &gt;&gt; /tmp/date.txt</p>
+</blockquote>
+<div class="φbq"><div class="φbs"><table><thead>
+<tr>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">date &gt;&gt; /tmp/date.txt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">分钟</td>
+<td style="text-align:center">小时</td>
+<td style="text-align:center">几号</td>
+<td style="text-align:center">几月</td>
+<td style="text-align:center">星期</td>
+<td style="text-align:center">需要执行的命令</td>
+</tr>
+</tbody>
+</table></div></div><p><img src="https://pic.imgdb.cn/item/626cf1db239250f7c57d0a84.png" alt="Linux 计划任务 CronTab" loading="lazy" class="φbp"></p>
+<h2 id="案例">案例<a title="#案例" href="#案例"></a></h2>
+<h3 id="每一小时">每一小时<a title="#每一小时" href="#每一小时"></a></h3>
+<p><code>* */1 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每小时执行/etc/cron.hourly目录内的脚本">每小时执行/etc/cron.hourly目录内的脚本<a title="#每小时执行/etc/cron.hourly目录内的脚本" href="#每小时执行/etc/cron.hourly目录内的脚本"></a></h3>
+<p><code>01 * * * * root run-parts /etc/cron.hourly</code></p>
+<h3 id="每小时的第3和第15分钟执行">每小时的第3和第15分钟执行<a title="#每小时的第3和第15分钟执行" href="#每小时的第3和第15分钟执行"></a></h3>
+<p><code>3,15 * * * * /service/l-zm/request.sh</code></p>
+<h3 id="在上午8点到11点的第3和第15分钟执行">在上午8点到11点的第3和第15分钟执行<a title="#在上午8点到11点的第3和第15分钟执行" href="#在上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每隔两天的上午8点到11点的第3和第15分钟执行">每隔两天的上午8点到11点的第3和第15分钟执行<a title="#每隔两天的上午8点到11点的第3和第15分钟执行" href="#每隔两天的上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 */2 * * date &gt;&gt; /tmp/date.txt</code></p>
+<h3 id="每个星期一的上午8点到11点的第3和第15分钟执行">每个星期一的上午8点到11点的第3和第15分钟执行<a title="#每个星期一的上午8点到11点的第3和第15分钟执行" href="#每个星期一的上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 * * 1 date &gt;&gt; /tmp/date.txt</code></p>
+<h3 id="每晚的21:30">每晚的21:30<a title="#每晚的21:30" href="#每晚的21:30"></a></h3>
+<p><code>30 21 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每月1、10、22日的4-:-45">每月1、10、22日的4 : 45<a title="#每月1、10、22日的4-:-45" href="#每月1、10、22日的4-:-45"></a></h3>
+<p><code>45 4 1,10,22 * * /service/l-zm/request.sh</code></p>
+<h3 id="每周六、周日的1-:-10">每周六、周日的1 : 10<a title="#每周六、周日的1-:-10" href="#每周六、周日的1-:-10"></a></h3>
+<p><code>10 1 * * 6,0 /service/l-zm/request.sh</code></p>
+<h3 id="每天18-:-00至23-:-00之间每隔30分钟">每天18 : 00至23 : 00之间每隔30分钟<a title="#每天18-:-00至23-:-00之间每隔30分钟" href="#每天18-:-00至23-:-00之间每隔30分钟"></a></h3>
+<p><code>0,30 18-23 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每星期六的晚上11-:-00-pm">每星期六的晚上11 : 00 pm<a title="#每星期六的晚上11-:-00-pm" href="#每星期六的晚上11-:-00-pm"></a></h3>
+<p><code>0 23 * * 6 /service/l-zm/request.sh</code></p>
+<h3 id="晚上11点到早上7点之间，每隔一小时">晚上11点到早上7点之间，每隔一小时<a title="#晚上11点到早上7点之间，每隔一小时" href="#晚上11点到早上7点之间，每隔一小时"></a></h3>
+<p><code>* 23-7/1 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每月的4号与每周一到周三的11点">每月的4号与每周一到周三的11点<a title="#每月的4号与每周一到周三的11点" href="#每月的4号与每周一到周三的11点"></a></h3>
+<p><code>0 11 4 * mon-wed /service/l-zm/request.sh</code></p>
+<h3 id="一月一号的4点">一月一号的4点<a title="#一月一号的4点" href="#一月一号的4点"></a></h3>
+<p><code>0 4 1 jan * /service/l-zm/request.sh</code></p>
+<h3 id="每秒执行一次">每秒执行一次<a title="#每秒执行一次" href="#每秒执行一次"></a></h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">*/1 * * * * <span class="built_in">sleep</span> 0s;<span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 1s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 2s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 3s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 4s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 5s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 6s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 7s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 8s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 9s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 10s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 11s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 12s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 13s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 14s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 15s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 16s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 17s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 18s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 19s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 20s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 21s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 22s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 23s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 24s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 25s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 26s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 27s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 28s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 29s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 30s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 31s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 32s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 33s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 34s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 35s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 36s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 37s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 38s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 39s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 40s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 41s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 42s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 43s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 44s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 45s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 46s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 47s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 48s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 49s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 50s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 51s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 52s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 53s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 54s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 55s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 56s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 57s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 58s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 59s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line"></span><br><span class="line">如果每秒没有循环连续 可以试试把 <span class="built_in">sleep</span> 0s 删除, 在最后添加 <span class="built_in">sleep</span> 60s (CentOS 和 Ubuntu 下不一样)</span><br></pre></td></tr></table></figure>
+<h2 id="crontab-使用与解释">CronTab 使用与解释<a title="#crontab-使用与解释" href="#crontab-使用与解释"></a></h2>
+<p><code>crontab -l</code> 查看所有的计划任务</p>
+<p><code>crontab -e</code> 修改计划任务</p>
+<p><code>service crond start</code> 启动计划任务</p>
+<p><code>service crond restart</code> 重启计划任务</p>
+<p><code>service crond reload</code> 重新载入计划任务</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>CronTab</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>CronTab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多线程</title>
+    <url>/Thread/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Thread</category>
+      </categories>
+      <tags>
+        <tag>Thread</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java 23种设计模式之创建型模式「单例模式」Singleton Pattern</title>
     <url>/Singleton-Pattern/</url>
     <content><![CDATA[<h2 id="单例模式---singleton-pattern">单例模式 - Singleton Pattern<a title="#单例模式---singleton-pattern" href="#单例模式---singleton-pattern"></a></h2>
@@ -619,6 +884,53 @@
       </categories>
       <tags>
         <tag>Singleton Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java 自定义注解的使用</title>
+    <url>/Java-Annotation/</url>
+    <content><![CDATA[<p><strong>自定义注解</strong> 说明</p>
+<ul>
+<li>自定义注解的修饰符为：<code>@interface</code></li>
+<li>注解可以添加成员变量, 成员变量以方法的形式定义</li>
+<li>需要使用 <code>@Retention</code> 注解来规定该注解的声明周期</li>
+<li>需要使用 <code>@Target</code> 注解来规定该注解的使用范围</li>
+</ul>
+<h3 id="java中的元注解(用来标识注解的注解),-共有四个">Java中的元注解(用来标识注解的注解), 共有四个<a title="#java中的元注解(用来标识注解的注解),-共有四个" href="#java中的元注解(用来标识注解的注解),-共有四个"></a></h3>
+<ol>
+<li><code>@Target</code> : 注解的作用目标</li>
+<li><code>@Retention</code> : 注解的保留位置, 注解的生命周期</li>
+<li><code>@Document</code> : 包含在javadoc文档中</li>
+<li><code>@Inherited</code> : 子类可以继承父类的该注解</li>
+</ol>
+<h4 id="@target-定义注解的使用位置,-作用目标,-取值范围"><code>@Target</code> 定义注解的使用位置, 作用目标, 取值范围<a title="#@target-定义注解的使用位置,-作用目标,-取值范围" href="#@target-定义注解的使用位置,-作用目标,-取值范围"></a></h4>
+<ul>
+<li><code>TYPE</code> : 类</li>
+<li><code>FIELD</code> : 字段</li>
+<li><code>METHOD</code> : 方法</li>
+<li><code>PARAMETER</code> : 参数</li>
+<li><code>CONSTRUCTOR</code> : 构造方法</li>
+<li><code>LOCAL_VARIABLE</code> : 局部变量</li>
+<li><code>ANNOTATION_TYPE</code> : 注解类型</li>
+<li><code>PACKAGE</code> : 包名</li>
+<li><code>TYPE_PARAMETER</code> : 类型参数</li>
+<li><code>TYPE_USE</code> : 任何类型</li>
+</ul>
+<h4 id="@retention-生命周期-三种情况"><code>@Retention</code> 生命周期 三种情况<a title="#@retention-生命周期-三种情况" href="#@retention-生命周期-三种情况"></a></h4>
+<ul>
+<li><code>@Retention(RetentionPolicy.SOURCE)</code> : 注解只存在于源码中(编译检查阶段)</li>
+<li><code>@Retention(RetentionPolicy.CLASS)</code> : 注解会在class字节码文件中存在 (默认保留策略)(class编译阶段)</li>
+<li><code>@Retention(RetentionPolicy.RUNTIME)</code> : 所有阶段都会保留(运行阶段)</li>
+</ul>
+<h4 id="@document-表示所修饰的注解在被javadoc解析时,-保留下来"><code>@Document</code> 表示所修饰的注解在被javadoc解析时, 保留下来<a title="#@document-表示所修饰的注解在被javadoc解析时,-保留下来" href="#@document-表示所修饰的注解在被javadoc解析时,-保留下来"></a></h4>
+<h4 id="@inherited-被它修饰的注解可以被继承"><code>@Inherited</code> 被它修饰的注解可以被继承<a title="#@inherited-被它修饰的注解可以被继承" href="#@inherited-被它修饰的注解可以被继承"></a></h4>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Annotation</tag>
       </tags>
   </entry>
   <entry>
@@ -664,44 +976,6 @@
       </categories>
       <tags>
         <tag>Strategy Pattern</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java 自定义注解的使用</title>
-    <url>/Java-Annotation/</url>
-    <content><![CDATA[<h3 id="java中的元注解(用来标识注解的注解),-共有四个">Java中的元注解(用来标识注解的注解), 共有四个<a title="#java中的元注解(用来标识注解的注解),-共有四个" href="#java中的元注解(用来标识注解的注解),-共有四个"></a></h3>
-<ol>
-<li><code>@Target</code> : 注解的作用目标</li>
-<li><code>@Retention</code> : 注解的保留位置, 注解的生命周期</li>
-<li><code>@Document</code> : 包含在javadoc文档中</li>
-<li><code>@Inherited</code> : 子类可以继承父类的该注解</li>
-</ol>
-<h4 id="@target-定义注解的使用位置,-作用目标,-取值范围"><code>@Target</code> 定义注解的使用位置, 作用目标, 取值范围<a title="#@target-定义注解的使用位置,-作用目标,-取值范围" href="#@target-定义注解的使用位置,-作用目标,-取值范围"></a></h4>
-<ul>
-<li><code>TYPE</code> : 类</li>
-<li><code>FIELD</code> : 字段</li>
-<li><code>METHOD</code> : 方法</li>
-<li><code>PARAMETER</code> : 参数</li>
-<li><code>CONSTRUCTOR</code> : 构造方法</li>
-<li><code>LOCAL_VARIABLE</code> : 局部变量</li>
-<li><code>ANNOTATION_TYPE</code> : 注解类型</li>
-<li><code>PACKAGE</code> : 包名</li>
-<li><code>TYPE_PARAMETER</code> : 类型参数</li>
-<li><code>TYPE_USE</code> : 任何类型</li>
-</ul>
-<h4 id="@retention-生命周期-三种情况"><code>@Retention</code> 生命周期 三种情况<a title="#@retention-生命周期-三种情况" href="#@retention-生命周期-三种情况"></a></h4>
-<ul>
-<li><code>@Retention(RetentionPolicy.SOURCE)</code> : 注解只存在于源码中(编译检查阶段)</li>
-<li><code>@Retention(RetentionPolicy.CLASS)</code> : 注解会在class字节码文件中存在 (默认保留策略)(class编译阶段)</li>
-<li><code>@Retention(RetentionPolicy.RUNTIME)</code> : 所有阶段都会保留(运行阶段)</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>Annotation</tag>
       </tags>
   </entry>
 </search>
