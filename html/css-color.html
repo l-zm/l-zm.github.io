@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS 调色板 色彩库</title>
+<!--适应移动端-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--css样式-->
+<style type="text/css">
+:root {
+	
+	/* light, use dark text  */
+	--ambrosia:						#FCDBBA;
+	--banana:							#FEE694;
+	--blue-tack: 					#82BFE0;
+	--bud:								#94C15C;
+	--butter:							#F2C94C;
+	--camo:								#AAA843;
+	--cappuccino:					#C9B092;
+	--champagne: 					#FCEBD5;
+	--dusty-pink: 				#E4ADAD;
+	--forget-me-not: 			#91A7FA;
+	--ice:								#E1EFF8;
+	--strawberry-yogurt:	#E4BCAD;
+	--sun:								#FEC305;
+	--grassy: 						#A8D363;
+	--lemon:							#EAFC7E;
+	--lime: 							#73D645;
+	--limestone:					#C9C5B5;
+	--melon:							#F2994A;
+	--mink:								#E8C9A1;
+	--spearmint:					#94E0CF;
+	--mint:								#C4EA70;
+	--mushroom:						#EDE8D5;
+	--mustard:						#CC9E08;
+	--pale-lemon:					#F4FFDC;
+	--peach:							#FFB190;
+	--petal:							#F4E9F3;
+	--pebble:							#B8B4BE;
+	--pink:								#FFC9D8;
+	--posy:								#DED7EC;
+	--powder-blue:				#B5D0E0;
+	--powder-pink:				#FBD1D1;
+	--primrose:						#E1F7B0;
+	--robins-egg:					#B8DEE0;
+	--sakura:							#FFE4E4;
+	--salmon:							#FF7863;
+	--sand:								#E1BE7C;
+	--sea-glass:					#7FD1AE;
+	--yellow:							#FFE03D;
+	
+	/* medium, difficult the accessibility guys will hate use, maybe we can use text with shadow */
+	
+	--apricot: 						#FF8652;
+	--blue-gray: 					#91A2C2;
+	--blush: 							#D67B71;
+	--bronze:							#C27940;
+	--emerald: 						#55B95F;
+	--lilac:							#8E8ADE;
+	--hazelnut: 					#D08E5A;
+	--sage:								#87A376;
+	
+	/* dark use light text */
+	--rouge:							#CC3737;
+	--punch:							#FF5563;
+	--aubergine: 					#6A2352;
+	--auburn: 						#A12F2F;
+	--beetroot:						#7F0421;
+	--berry:							#461234;
+	--carmine:						#9A133E;
+	--charcoal: 					#4F4450;
+	--chestnut: 					#81291F;
+	--chocolate: 					#8F5D38;
+	--clay: 							#7D6050;
+	--burnt-orange:				#FF5F00;
+	--cerise:							#FF0F63;
+	--coffee:    					#624739;
+	--conker: 						#6F3131;
+	--coral: 							#EB4444;
+	--dusty-purple: 			#7D6391;
+	--eucalyptus: 				#688461;
+	--fern:								#4F8D08;
+	--forest: 						#2E644A;
+	--hot-pink:						#FF3263;
+	--ink:								#292C31;
+	
+	--iron:								#6B5C6C;
+	--lapis:							#2B4D8D;
+	
+	--leafy:							#318553;
+	
+	--magenta:						#BC2767;
+	--meadow:							#7A9A3E;
+	
+	
+	--midnight:						#1B3955;
+	
+	--moss:								#83A944;
+	
+	--navy:								#363A57;
+	--ocean:							#206777;
+	
+	--orange:							#FD8A04;
+	--orchid:							#7945BF;
+	--pond-bottom:				#264A46;
+	--purple:							#A95AF3;
+	--purple-slate:				#545375;
+	--rainforest:					#25422E;
+	--raspberry-jam:			#3C0D2B;
+	
+	--royal:							#4169E1;
+	--ruby:								#D1314B;
+	--squash:							#E96310;
+	--sea-foam:						#5D998B;
+	--sea-fog:						#758C92;
+	--slate:							#7184A5;
+	--spice:							#B54E16;
+	--spring:							#5ACB65;
+  --teal:          			#29879C;
+  --terracotta:    			#B76A61;
+	--twilight:						#203763;
+	--vavavoom:						#BF0D0D;
+  --walnut:      				#381F19;
+	
+}
+
+/* Palette only styles */
+
+body {
+	background: #ddd;
+}
+
+.swatches {
+	list-style: none;
+	font: 0.9em calibri, san-serif;
+	color: #333;
+}
+
+.swatches li {
+	border-radius: 2em;
+	display: inline-block;
+	height: 6rem;
+	position: relative;
+	width: 6rem;
+	margin: 2rem 1rem;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.swatches li span {
+	position: relative;
+	top: 6.2rem;
+	display: inline-block;
+	height: 2rem;
+}
+
+</style>
+<!--百度压缩版引用-->
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+<ul class="swatches">
+	<li style="background: var(--ambrosia)"><span>					ambrosia<br>						#FCDBBA</span></li>
+	<li style="background: var(--apricot)"><span>						apricot<br> 						#FF8652</span></li>
+	<li style="background: var(--aubergine)"><span>					aubergine<br> 					#6A2352</span></li>
+	<li style="background: var(--auburn)"><span>						auburn<br> 							#A12F2F</span></li>
+	<li style="background: var(--banana)"><span>						banana<br>							#FEE694</span></li>
+	<li style="background: var(--beetroot)"><span>					beetroot<br>						#7F0421</span></li>
+	<li style="background: var(--berry)"><span>							berry<br>								#461234</span></li>
+	<li style="background: var(--blue-tack)"><span>					blue tack<br> 					#82BFE0</span></li>
+	<li style="background: var(--blue-gray)"><span>					blue gray<br> 					#91A2C2</span></li>
+	<li style="background: var(--blush)"><span>							blush<br> 							#D67B71</span></li>
+	<li style="background: var(--bronze)"><span>						bronze<br>							#C27940</span></li>
+	<li style="background: var(--bud)"><span>								bud<br>									#94C15C</span></li>
+	<li style="background: var(--burnt-orange)"><span>			burnt orange<br>				#FF5F00</span></li>
+	<li style="background: var(--butter)"><span>						butter<br>							#F2C94C</span></li>
+	<li style="background: var(--camo)"><span>							camo<br>								#AAA843</span></li>
+	<li style="background: var(--cappuccino)"><span>				cappuccino<br>					#C9B092</span></li>
+	<li style="background: var(--carmine)"><span>						carmine<br>							#9A133E</span></li>
+	<li style="background: var(--cerise)"><span>						cerise<br>							#FF0F63</span></li>
+	<li style="background: var(--champagne)"><span>					champagne<br> 					#FCEBD5</span></li>
+	<li style="background: var(--charcoal)"><span>					charcoal<br> 						#4F4450</span></li>
+	<li style="background: var(--chestnut)"><span>					chestnut<br> 						#81291F</span></li>
+	<li style="background: var(--chocolate)"><span>					chocolate<br> 					#8F5D38</span></li>
+	<li style="background: var(--clay)"><span>							clay<br> 								#7D6050</span></li>
+	<li style="background: var(--cloud)"><span>							cloud<br> 	   					#F2EFE3</span></li>
+	<li style="background: var(--coffee)"><span>						coffee<br> 							#624739</span></li>
+	<li style="background: var(--conker)"><span>						conker<br> 							#6F3131</span></li>
+	<li style="background: var(--coral)"><span>							coral<br> 							#EB4444</span></li>
+	<li style="background: var(--dove)"><span>							dove<br>								#C9C5CB</span></li>
+	<li style="background: var(--dusty-purple)"><span>			dusty purple<br>	 			#7D6391</span></li>
+	<li style="background: var(--dusty-pink)"><span>				dusty pink<br> 					#E4ADAD</span></li>
+	<li style="background: var(--emerald)"><span>						emerald<br> 						#55B95F</span></li>
+	<li style="background: var(--eucalyptus)"><span>				eucalyptus<br> 					#688461</span></li>
+	<li style="background: var(--fern)"><span>							fern<br>								#4F8D08</span></li>
+	<li style="background: var(--forest)"><span>						forest<br>							#2E644A</span></li>
+	<li style="background: var(--forget-me-not)"><span>			forget me not<br>				#91A7FA</span></li>
+	<li style="background: var(--fudge)"><span>							fudge<br>								#C28742</span></li>
+	<li style="background: var(--grassy)"><span>						grassy<br> 							#A8D363</span></li>
+	<li style="background: var(--gray)"><span>							gray<br> 								#98919F</span></li>
+	<li style="background: var(--green)"><span>							green<br>								#62B90A</span></li>
+	<li style="background: var(--hazelnut)"><span>					hazelnut<br> 						#D08E5A</span></li>
+	<li style="background: var(--hot-pink)"><span>					hot pink<br>						#FF3263</span></li>
+	<li style="background: var(--ice)"><span>								ice<br>									#E1EFF8</span></li>
+	<li style="background: var(--ink)"><span>								ink<br>									#292C31</span></li>
+	<li style="background: var(--iron)"><span>							iron<br>								#6B5C6C</span></li>
+	<li style="background: var(--lapis)"><span>							lapis<br>								#2B4D8D</span></li>
+	<li style="background: var(--latte)"><span>							latte<br>								#A38468</span></li>
+	<li style="background: var(--leafy)"><span>							leafy<br>								#318553</span></li>
+	<li style="background: var(--lemon)"><span>							lemon<br>								#EAFC7E</span></li>
+	<li style="background: var(--lilac)"><span>							lilac<br>								#8E8ADE</span></li>
+	<li style="background: var(--lime)"><span>							lime<br> 								#73D645</span></li>
+	<li style="background: var(--limestone)"><span>					limestone<br>						#C9C5B5</span></li>
+	<li style="background: var(--magenta)"><span>						magenta<br>							#BC2767</span></li>
+	<li style="background: var(--meadow)"><span>						meadow<br>							#7A9A3E</span></li>
+	<li style="background: var(--melon)"><span>							melon<br>								#F2994A</span></li>
+	<li style="background: var(--midnight)"><span>					midnight<br>						#1B3955</span></li>
+	<li style="background: var(--mink)"><span>							mink<br>								#E8C9A1</span></li>
+	<li style="background: var(--mint)"><span>							mint<br>								#C4EA70</span></li>
+	<li style="background: var(--moss)"><span>							moss<br>								#83A944</span></li>
+	<li style="background: var(--mushroom)"><span>					mushroom<br>						#EDE8D5</span></li>
+	<li style="background: var(--mustard)"><span>						mustard<br>							#CC9E08</span></li>
+	<li style="background: var(--navy)"><span>							navy<br>								#363A57</span></li>
+	<li style="background: var(--ocean)"><span>							ocean<br>								#206777</span></li>
+	<li style="background: var(--orange)"><span>						orange<br>							#FD8A04</span></li>
+	<li style="background: var(--orchid)"><span>						orchid<br>							#7945BF</span></li>
+	<li style="background: var(--pale-lemon)"><span>				pale lemon<br>					#F4FFDC</span></li>
+	<li style="background: var(--peach)"><span>							peach<br>								#FFB190</span></li>
+	<li style="background: var(--pebble)"><span>						pebble<br>							#B8B4BE</span></li>
+	<li style="background: var(--petal)"><span>							petal<br>								#F4E9F3</span></li>
+	<li style="background: var(--pink)"><span>							pink<br>								#FFC9D8</span></li>
+	<li style="background: var(--pond-bottom)"><span>				pond bottom<br>					#264A46</span></li>
+	<li style="background: var(--posy)"><span>							posy<br>								#DED7EC</span></li>
+	<li style="background: var(--powder-blue)"><span>				powder blue<br>					#B5D0E0</span></li>
+	<li style="background: var(--powder-pink)"><span>				powder pink<br>					#FBD1D1</span></li>
+	<li style="background: var(--primrose)"><span>					primrose<br>						#E1F7B0</span></li>
+	<li style="background: var(--punch)"><span>							punch<br>								#FF5563</span></li>
+	<li style="background: var(--purple)"><span>						purple<br>							#A95AF3</span></li>
+	<li style="background: var(--purple-slate)"><span>			purple slate<br>				#545375</span></li>
+	<li style="background: var(--rainforest)"><span>				rainforest<br>					#25422E</span></li>
+	<li style="background: var(--raspberry-jam)"><span>			raspberry jam<br>				#3C0D2B</span></li>
+	<li style="background: var(--robins-egg)"><span>				robins egg<br>					#B8DEE0</span></li>
+	<li style="background: var(--rouge)"><span>							rouge<br>								#CC3737</span></li>
+	<li style="background: var(--royal)"><span>							royal<br>								#4169E1</span></li>
+	<li style="background: var(--ruby)"><span>							ruby<br>								#D1314B</span></li>
+	<li style="background: var(--sage)"><span>							sage<br>								#87A376</span></li>
+	<li style="background: var(--sakura)"><span>						sakura<br>							#FFE4E4</span></li>
+	<li style="background: var(--salmon)"><span>						salmon<br>							#FF7863</span></li>
+	<li style="background: var(--sand)"><span>							sand<br>								#E1BE7C</span></li>
+	<li style="background: var(--squash)"><span>						squash<br>							#E96310</span></li>
+	<li style="background: var(--sea-glass)"><span>					sea glass<br>						#7FD1AE</span></li>
+	<li style="background: var(--sea-foam)"><span>					sea foam<br>						#5D998B</span></li>
+	<li style="background: var(--sea-fog)"><span>						sea fog<br>							#758C92</span></li>
+	<li style="background: var(--slate)"><span>							slate<br>								#7184A5</span></li>
+	<li style="background: var(--spearmint)"><span>					spearmint<br>						#94E0CF</span></li>
+	<li style="background: var(--spice)"><span>							spice<br>								#B54E16</span></li>
+	<li style="background: var(--spring)"><span>						spring<br>							#5ACB65</span></li>
+	<li style="background: var(--strawberry-yogurt)"><span>	strawberry yogurt<br>		#E4BCAD</span></li>
+	<li style="background: var(--sun)"><span>								sun<br>									#FEC305</span></li>
+	<li style="background: var(--teal)"><span>							teal<br>          			#29879C</span></li>
+	<li style="background: var(--terracotta)"><span>				terracotta<br>         	#B76A61</span></li>
+	<li style="background: var(--twilight)"><span>					twilight<br>						#203763</span></li>
+	<li style="background: var(--vavavoom)"><span>					vavavoom<br>						#BF0D0D</span></li>
+	<li style="background: var(--walnut)"><span>						walnut<br>      				#381F19</span></li>
+	<li style="background: var(--white)"><span>							white<br>								#FFFFFF</span></li>
+	<li style="background: var(--yellow)"><span>						yellow<br>							#FFE03D</span></li>
+</ul>
+	
+
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>
