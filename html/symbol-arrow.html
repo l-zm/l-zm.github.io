@@ -764,12 +764,24 @@
 
     <script type="text/javascript">
 
-        $(document).ready(function () {
+        window.onload = function () {
             var num = 1;
-            $("span[name='num']").each(function () {
-                $(this).text(num++);
-            });
-        });
+
+            var numList = document.getElementsByName("num");
+            for (var i = 0; i < numList.length; i++) {
+                numList[i].innerText = num;
+                num++;
+            }
+
+        }
+
+
+            // $(document).ready(function () {
+            //     var num = 1;
+            //     $("span[name='num']").each(function () {
+            //         $(this).text(num++);
+            //     });
+            // });
 
     </script>
 </body>
