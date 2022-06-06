@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>临时文档</title>
-    <url>/1/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX192/9szoS9HRGmDumIFjmttKLCloEoss3vJjTdnqW25QCb34kZoAQ0S</is-cipher>]]></content>
-      <categories>
-        <category>Other</category>
-      </categories>
-      <tags>
-        <tag>Other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac 修改 Dock 栏的隐藏速度</title>
-    <url>/mac-edit-dock-hidden-speed/</url>
-    <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
-<p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
-<h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
-<p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
-]]></content>
-      <categories>
-        <category>Mac</category>
-      </categories>
-      <tags>
-        <tag>Mac</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown 基本语法</title>
     <url>/markdown/</url>
     <content><![CDATA[<h1 id="&lt;center&gt;-一级标题"><center> 一级标题<a title="#&lt;center&gt;-一级标题" href="#&lt;center&gt;-一级标题"></a></h1>
@@ -281,21 +255,29 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>解除网页右键限制</title>
-    <url>/remove-right-click-limit/</url>
-    <content><![CDATA[<h3 id="脚本">脚本<a title="#脚本" href="#脚本"></a></h3>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">javascript</span>:!<span class="keyword">function</span> <span class="title function_">e</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;&#125;<span class="keyword">function</span> <span class="title function_">o</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">removeChild</span>(e)&#125;<span class="keyword">function</span> <span class="title function_">r</span>(<span class="params">e</span>)&#123;<span class="keyword">return</span>[].<span class="property">slice</span>.<span class="title function_">call</span>(t.<span class="title function_">querySelectorAll</span>(e))&#125;<span class="keyword">function</span> <span class="title function_">c</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;<span class="title function_">s</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;<span class="keyword">if</span>(!o)<span class="keyword">try</span>&#123;<span class="keyword">var</span> n=t.<span class="property">contentDocument</span>;n.<span class="property">body</span>.<span class="property">childNodes</span>.<span class="property">length</span>&amp;&amp;(o=<span class="number">1</span>,<span class="title function_">e</span>(n))&#125;<span class="keyword">catch</span>(e)&#123;o=<span class="number">0</span>&#125;&#125;,<span class="number">100</span>)&#125;a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t[<span class="string">&#x27;on&#x27;</span>+e]=<span class="literal">null</span>&#125;);<span class="keyword">var</span> o;<span class="title function_">n</span>(),t.<span class="property">onload</span>=n&#125;<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="string">&#x27;parentNode&#x27;</span>,l=<span class="string">&#x27;forEach&#x27;</span>,a=<span class="string">&#x27;contextmenu dragstart selectstart select copy beforecopy mouseup mousedown&#x27;</span>.<span class="title function_">split</span>(<span class="string">&#x27; &#x27;</span>),u=<span class="built_in">setTimeout</span>(n,<span class="number">0</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearTimeout</span>(u);<span class="keyword">for</span>(u=<span class="built_in">setInterval</span>(n,<span class="number">1e8</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearInterval</span>(u);<span class="keyword">var</span> s=<span class="built_in">setTimeout</span>;<span class="built_in">setTimeout</span>=<span class="built_in">setInterval</span>=n,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](o);<span class="keyword">var</span> m=[];<span class="title function_">r</span>(<span class="string">&#x27;iframe,frame&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;m.<span class="title function_">push</span>(e),e[i].<span class="title function_">replaceChild</span>(t.<span class="title function_">createElement</span>(<span class="string">&#x27;script&#x27;</span>),e)&#125;);<span class="keyword">var</span> f=t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>;t.<span class="title function_">open</span>(),t.<span class="title function_">write</span>(<span class="string">&#x27;&lt;!DOCTYPE html&gt;&#x27;</span>),t.<span class="title function_">close</span>(),t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>=f,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">replaceChild</span>(m.<span class="title function_">shift</span>(),e)&#125;),<span class="title function_">r</span>(<span class="string">&#x27;*&#x27;</span>)[l](c),<span class="title function_">c</span>(t),a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t.<span class="title function_">addEventListener</span>(e,<span class="keyword">function</span>(<span class="params">e</span>)&#123;e.<span class="title function_">stopPropagation</span>()&#125;,!<span class="number">0</span>)&#125;);<span class="keyword">var</span> p=t.<span class="title function_">createElement</span>(<span class="string">&#x27;style&#x27;</span>);p.<span class="property">innerHTML</span>=<span class="string">&#x27;*&#123;-webkit-user-select:text!important;-moz-user-select:text!important;user-select:text!important;&#125;&#x27;</span>,t.<span class="property">body</span>.<span class="title function_">appendChild</span>(p)&#125;(<span class="variable language_">document</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="两种使用方法:">两种使用方法:<a title="#两种使用方法:" href="#两种使用方法:"></a></h3>
-<ol>
-<li>浏览器: F12打开调试模式, 在控制台<code>Console</code>里面直接执行</li>
-<li>直接保存为书签, 在需要解除右键限制的网页直接点击书签即可 <strong>(推荐)</strong></li>
-</ol>
-]]></content>
+    <title>临时文档</title>
+    <url>/1/</url>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX19sA4EizeLuttShEC2kdwi/rvr5Toj/QRAGhalUOAJ5bIrA3HI09F/k</is-cipher>]]></content>
       <categories>
-        <category>Web</category>
+        <category>Other</category>
       </categories>
       <tags>
-        <tag>Web</tag>
+        <tag>Other</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 修改 Dock 栏的隐藏速度</title>
+    <url>/mac-edit-dock-hidden-speed/</url>
+    <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
+<p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
+<h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
+<p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
       </tags>
   </entry>
   <entry>
@@ -467,6 +449,24 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
+    <title>解除网页右键限制</title>
+    <url>/remove-right-click-limit/</url>
+    <content><![CDATA[<h3 id="脚本">脚本<a title="#脚本" href="#脚本"></a></h3>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">javascript</span>:!<span class="keyword">function</span> <span class="title function_">e</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;&#125;<span class="keyword">function</span> <span class="title function_">o</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">removeChild</span>(e)&#125;<span class="keyword">function</span> <span class="title function_">r</span>(<span class="params">e</span>)&#123;<span class="keyword">return</span>[].<span class="property">slice</span>.<span class="title function_">call</span>(t.<span class="title function_">querySelectorAll</span>(e))&#125;<span class="keyword">function</span> <span class="title function_">c</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;<span class="title function_">s</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;<span class="keyword">if</span>(!o)<span class="keyword">try</span>&#123;<span class="keyword">var</span> n=t.<span class="property">contentDocument</span>;n.<span class="property">body</span>.<span class="property">childNodes</span>.<span class="property">length</span>&amp;&amp;(o=<span class="number">1</span>,<span class="title function_">e</span>(n))&#125;<span class="keyword">catch</span>(e)&#123;o=<span class="number">0</span>&#125;&#125;,<span class="number">100</span>)&#125;a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t[<span class="string">&#x27;on&#x27;</span>+e]=<span class="literal">null</span>&#125;);<span class="keyword">var</span> o;<span class="title function_">n</span>(),t.<span class="property">onload</span>=n&#125;<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="string">&#x27;parentNode&#x27;</span>,l=<span class="string">&#x27;forEach&#x27;</span>,a=<span class="string">&#x27;contextmenu dragstart selectstart select copy beforecopy mouseup mousedown&#x27;</span>.<span class="title function_">split</span>(<span class="string">&#x27; &#x27;</span>),u=<span class="built_in">setTimeout</span>(n,<span class="number">0</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearTimeout</span>(u);<span class="keyword">for</span>(u=<span class="built_in">setInterval</span>(n,<span class="number">1e8</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearInterval</span>(u);<span class="keyword">var</span> s=<span class="built_in">setTimeout</span>;<span class="built_in">setTimeout</span>=<span class="built_in">setInterval</span>=n,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](o);<span class="keyword">var</span> m=[];<span class="title function_">r</span>(<span class="string">&#x27;iframe,frame&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;m.<span class="title function_">push</span>(e),e[i].<span class="title function_">replaceChild</span>(t.<span class="title function_">createElement</span>(<span class="string">&#x27;script&#x27;</span>),e)&#125;);<span class="keyword">var</span> f=t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>;t.<span class="title function_">open</span>(),t.<span class="title function_">write</span>(<span class="string">&#x27;&lt;!DOCTYPE html&gt;&#x27;</span>),t.<span class="title function_">close</span>(),t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>=f,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">replaceChild</span>(m.<span class="title function_">shift</span>(),e)&#125;),<span class="title function_">r</span>(<span class="string">&#x27;*&#x27;</span>)[l](c),<span class="title function_">c</span>(t),a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t.<span class="title function_">addEventListener</span>(e,<span class="keyword">function</span>(<span class="params">e</span>)&#123;e.<span class="title function_">stopPropagation</span>()&#125;,!<span class="number">0</span>)&#125;);<span class="keyword">var</span> p=t.<span class="title function_">createElement</span>(<span class="string">&#x27;style&#x27;</span>);p.<span class="property">innerHTML</span>=<span class="string">&#x27;*&#123;-webkit-user-select:text!important;-moz-user-select:text!important;user-select:text!important;&#125;&#x27;</span>,t.<span class="property">body</span>.<span class="title function_">appendChild</span>(p)&#125;(<span class="variable language_">document</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="两种使用方法:">两种使用方法:<a title="#两种使用方法:" href="#两种使用方法:"></a></h3>
+<ol>
+<li>浏览器: F12打开调试模式, 在控制台<code>Console</code>里面直接执行</li>
+<li>直接保存为书签, 在需要解除右键限制的网页直接点击书签即可 <strong>(推荐)</strong></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>苹果官方鼠标移动速度慢问题解决(Magic Mouse)</title>
     <url>/magic-mouse/</url>
     <content><![CDATA[<h3 id="设置">设置<a title="#设置" href="#设置"></a></h3>
@@ -577,6 +577,55 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
+    <title>PowerToys-微软的一款开源电脑工具箱软件</title>
+    <url>/PowerToys/</url>
+    <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
+<p>习惯了 <strong><code>Mac</code></strong> 系统的 <code>command + *</code> 按键的操作逻辑之后</p>
+<p>针对于 <strong><code>Windows</code></strong> 系统的 <code>Ctrl + *</code> 各种不适应</p>
+<hr>
+<p>放上我的调整结果，回到 <code>command</code> 按键逻辑下</p>
+<p><img src="https://pic.imgdb.cn/item/6277942309475431296ca2b5.png" alt="PowerToys-微软的一款开源电脑工具箱软件-键盘管理器" loading="lazy" class="φbp"></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>PowerToys</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows 安装完成 必装软件</title>
+    <url>/windows/</url>
+    <content><![CDATA[<h3 id="系统激活">系统激活<a title="#系统激活" href="#系统激活"></a></h3>
+<blockquote>
+<p><strong>HEU_KMS_Activator_v24.6.2</strong></p>
+<p>公众号：知彼而知己</p>
+<blockquote>
+<p>链接：<a href="https://pan.baidu.com/s/1pxIEZSK7xz8_lP85cQnyMw">https://pan.baidu.com/s/1pxIEZSK7xz8_lP85cQnyMw</a><br>
+提取码：vf3b</p>
+</blockquote>
+<p>GitHub：<a href="https://github.com/zbezj/HEU_KMS_Activator">https://github.com/zbezj/HEU_KMS_Activator</a></p>
+</blockquote>
+<p><img src="https://pic.imgdb.cn/item/6281a68209475431297e8edb.png" alt="HEU_KMS_Activator_v24.6.2" loading="lazy" class="φbp"></p>
+<hr>
+<blockquote>
+<p><strong>Microsoft PowerToys</strong>  <code>必装软件</code>  自定义键盘及快捷键</p>
+<blockquote>
+<p>官网：<a href="https://docs.microsoft.com/zh-cn/windows/powertoys/">https://docs.microsoft.com/zh-cn/windows/powertoys/</a></p>
+</blockquote>
+<p>GitHub 存储库：<a href="https://github.com/microsoft/PowerToys">https://github.com/microsoft/PowerToys</a></p>
+<p>链接：<a href="https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ">https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ</a><br>
+提取码：1234</p>
+</blockquote>
+<!-- https://masuit.com/posts?page=18&size=15&orderby=ModifyDate -->]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>离线下载安装 Windows商店(Microsoft Store) 应用</title>
     <url>/Microsoft-Store/</url>
     <content><![CDATA[<h3 id="复制链接">复制链接<a title="#复制链接" href="#复制链接"></a></h3>
@@ -597,23 +646,6 @@ font-family: SlideTownsoul
       </categories>
       <tags>
         <tag>Microsoft Store</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PowerToys-微软的一款开源电脑工具箱软件</title>
-    <url>/PowerToys/</url>
-    <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
-<p>习惯了 <strong><code>Mac</code></strong> 系统的 <code>command + *</code> 按键的操作逻辑之后</p>
-<p>针对于 <strong><code>Windows</code></strong> 系统的 <code>Ctrl + *</code> 各种不适应</p>
-<hr>
-<p>放上我的调整结果，回到 <code>command</code> 按键逻辑下</p>
-<p><img src="https://pic.imgdb.cn/item/6277942309475431296ca2b5.png" alt="PowerToys-微软的一款开源电脑工具箱软件-键盘管理器" loading="lazy" class="φbp"></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>PowerToys</tag>
       </tags>
   </entry>
   <entry>
@@ -650,7 +682,7 @@ font-family: SlideTownsoul
   <entry>
     <title>Chrome 插件</title>
     <url>/Chrome-Plugins/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1/Cl97kmX9Axpcax/D7aMOkjHxmvFSDRrM7IpcVuwOKupJQH2o7QHd8</is-cipher>]]></content>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX18N5MN6teT/p5TpnoqKcUbsagMbdNLd0M+Zbhpq7QOCVdGhkiLXxWxj</is-cipher>]]></content>
       <categories>
         <category>Chrome</category>
       </categories>
@@ -659,35 +691,76 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>Windows 安装完成 必装软件</title>
-    <url>/windows/</url>
-    <content><![CDATA[<h3 id="系统激活">系统激活<a title="#系统激活" href="#系统激活"></a></h3>
-<blockquote>
-<p><strong>HEU_KMS_Activator_v24.6.2</strong></p>
-<p>公众号：知彼而知己</p>
-<blockquote>
-<p>链接：<a href="https://pan.baidu.com/s/1pxIEZSK7xz8_lP85cQnyMw">https://pan.baidu.com/s/1pxIEZSK7xz8_lP85cQnyMw</a><br>
-提取码：vf3b</p>
-</blockquote>
-<p>GitHub：<a href="https://github.com/zbezj/HEU_KMS_Activator">https://github.com/zbezj/HEU_KMS_Activator</a></p>
-</blockquote>
-<p><img src="https://pic.imgdb.cn/item/6281a68209475431297e8edb.png" alt="HEU_KMS_Activator_v24.6.2" loading="lazy" class="φbp"></p>
-<hr>
-<blockquote>
-<p><strong>Microsoft PowerToys</strong>  <code>必装软件</code>  自定义键盘及快捷键</p>
-<blockquote>
-<p>官网：<a href="https://docs.microsoft.com/zh-cn/windows/powertoys/">https://docs.microsoft.com/zh-cn/windows/powertoys/</a></p>
-</blockquote>
-<p>GitHub 存储库：<a href="https://github.com/microsoft/PowerToys">https://github.com/microsoft/PowerToys</a></p>
-<p>链接：<a href="https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ">https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ</a><br>
-提取码：1234</p>
-</blockquote>
-<!-- https://masuit.com/posts?page=18&size=15&orderby=ModifyDate -->]]></content>
+    <title>IntelliJ IDEA 插件</title>
+    <url>/IntelliJ-IDEA-Plugins/</url>
+    <content><![CDATA[<h3 id="free-mybatis-plugin">Free MyBatis plugin<a title="#free-mybatis-plugin" href="#free-mybatis-plugin"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/6279cab909475431291d2971.png" alt="Free MyBatis plugin" loading="lazy" class="φbp"></p>
+<ul>
+<li>Git地址：<a href="https://github.com/chuntungho/free-mybatis-plugin">https://github.com/chuntungho/free-mybatis-plugin</a></li>
+</ul>
+<p>主要功能：</p>
+<ol>
+<li>生成mapper xml文件</li>
+<li>快速从代码跳转到mapper及从mapper返回代码</li>
+<li>mybatis自动补全及语法错误提示</li>
+<li>集成mybatis generator gui界面</li>
+<li>根据数据库注解，生成swagger model注解</li>
+</ol>
+]]></content>
       <categories>
-        <category>Windows</category>
+        <category>IntelliJ IDEA</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
+        <tag>IntelliJ IDEA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>那些好看的页面效果</title>
+    <url>/good-html/</url>
+    <content><![CDATA[<ol>
+<li>
+<p><a href="/html/hover-style-slider.html?_blank">悬停效果的滑块(全屏)</a></p>
+</li>
+<li>
+<p><a href="/html/snowflake-animation.html?_blank">CSS雪花动画</a></p>
+</li>
+<li>
+<p><a href="/html/css-slider-font.html?_blank">CSS 滚动文字</a></p>
+</li>
+<li>
+<p><a href="/html/css-picture-accordion.html">CSS 实现横向图片手风琴样式图像库</a></p>
+</li>
+<li>
+<p><a href="/html/css-color.html">CSS 调色板 色彩库</a></p>
+</li>
+<li>
+<p><a href="/html/css-typing-animation.html">CSS 打字输出动画</a></p>
+</li>
+<li>
+<p><a href="/html/css-icon-android-ios.html">CSS 图标 iOS Android</a></p>
+</li>
+<li>
+<p><a href="/html/css3-loading-animations.html">CSS3 Loading animations</a></p>
+</li>
+<li>
+<p><a href="/html/flip-clock.html">翻页时钟</a></p>
+</li>
+<li>
+<p><a href="/html/vision-intelligent-cards.html">视觉智能卡-跟随鼠标</a></p>
+</li>
+<li>
+<p><a href="/html/tilt-style.html">倾斜效果</a></p>
+</li>
+<li>
+<p><a href="/html/symbol-arrow.html">箭头符号 箭头特殊符号大全</a></p>
+</li>
+</ol>
+<!-- https://www.jq22.com/daima400 -->]]></content>
+      <categories>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
@@ -821,79 +894,6 @@ main {
       <tags>
         <tag>HTML</tag>
         <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IntelliJ IDEA 插件</title>
-    <url>/IntelliJ-IDEA-Plugins/</url>
-    <content><![CDATA[<h3 id="free-mybatis-plugin">Free MyBatis plugin<a title="#free-mybatis-plugin" href="#free-mybatis-plugin"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/6279cab909475431291d2971.png" alt="Free MyBatis plugin" loading="lazy" class="φbp"></p>
-<ul>
-<li>Git地址：<a href="https://github.com/chuntungho/free-mybatis-plugin">https://github.com/chuntungho/free-mybatis-plugin</a></li>
-</ul>
-<p>主要功能：</p>
-<ol>
-<li>生成mapper xml文件</li>
-<li>快速从代码跳转到mapper及从mapper返回代码</li>
-<li>mybatis自动补全及语法错误提示</li>
-<li>集成mybatis generator gui界面</li>
-<li>根据数据库注解，生成swagger model注解</li>
-</ol>
-]]></content>
-      <categories>
-        <category>IntelliJ IDEA</category>
-      </categories>
-      <tags>
-        <tag>IntelliJ IDEA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>那些好看的页面效果</title>
-    <url>/good-html/</url>
-    <content><![CDATA[<ol>
-<li>
-<p><a href="/html/hover-style-slider.html?_blank">悬停效果的滑块(全屏)</a></p>
-</li>
-<li>
-<p><a href="/html/snowflake-animation.html?_blank">CSS雪花动画</a></p>
-</li>
-<li>
-<p><a href="/html/css-slider-font.html?_blank">CSS 滚动文字</a></p>
-</li>
-<li>
-<p><a href="/html/css-picture-accordion.html">CSS 实现横向图片手风琴样式图像库</a></p>
-</li>
-<li>
-<p><a href="/html/css-color.html">CSS 调色板 色彩库</a></p>
-</li>
-<li>
-<p><a href="/html/css-typing-animation.html">CSS 打字输出动画</a></p>
-</li>
-<li>
-<p><a href="/html/css-icon-android-ios.html">CSS 图标 iOS Android</a></p>
-</li>
-<li>
-<p><a href="/html/css3-loading-animations.html">CSS3 Loading animations</a></p>
-</li>
-<li>
-<p><a href="/html/flip-clock.html">翻页时钟</a></p>
-</li>
-<li>
-<p><a href="/html/vision-intelligent-cards.html">视觉智能卡-跟随鼠标</a></p>
-</li>
-<li>
-<p><a href="/html/tilt-style.html">倾斜效果</a></p>
-</li>
-<li>
-<p><a href="/html/symbol-arrow.html">箭头符号 箭头特殊符号大全</a></p>
-</li>
-</ol>
-<!-- https://www.jq22.com/daima400 -->]]></content>
-      <categories>
-        <category>HTML</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
