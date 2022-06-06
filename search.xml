@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>临时文档</title>
+    <url>/1/</url>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX192/9szoS9HRGmDumIFjmttKLCloEoss3vJjTdnqW25QCb34kZoAQ0S</is-cipher>]]></content>
+      <categories>
+        <category>Other</category>
+      </categories>
+      <tags>
+        <tag>Other</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 修改 Dock 栏的隐藏速度</title>
+    <url>/mac-edit-dock-hidden-speed/</url>
+    <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
+<p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
+<h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
+<p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown 基本语法</title>
     <url>/markdown/</url>
     <content><![CDATA[<h1 id="&lt;center&gt;-一级标题"><center> 一级标题<a title="#&lt;center&gt;-一级标题" href="#&lt;center&gt;-一级标题"></a></h1>
@@ -273,32 +299,6 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>临时文档</title>
-    <url>/1/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1/Yx3odbOZGHrlwwyOXMK7Wt0u3vr092OkRUevT1NcTMok3TIAw7eQU</is-cipher>]]></content>
-      <categories>
-        <category>Other</category>
-      </categories>
-      <tags>
-        <tag>Other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac 修改 Dock 栏的隐藏速度</title>
-    <url>/mac-edit-dock-hidden-speed/</url>
-    <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
-<p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
-<h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
-<p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
-]]></content>
-      <categories>
-        <category>Mac</category>
-      </categories>
-      <tags>
-        <tag>Mac</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>BigDecimal Java 高精度运算</title>
     <url>/bigdecimal/</url>
     <content><![CDATA[<h2 id="常用方法">常用方法<a title="#常用方法" href="#常用方法"></a></h2>
@@ -515,38 +515,6 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>Windows 安装完成 必装软件</title>
-    <url>/windows/</url>
-    <content><![CDATA[<h3 id="系统激活">系统激活<a title="#系统激活" href="#系统激活"></a></h3>
-<blockquote>
-<p><strong>HEU_KMS_Activator_v24.6.2</strong></p>
-<p>公众号：知彼而知己</p>
-<blockquote>
-<p>链接：<a href="https://pan.baidu.com/s/1pxIEZSK7xz8_lP85cQnyMw">https://pan.baidu.com/s/1pxIEZSK7xz8_lP85cQnyMw</a><br>
-提取码：vf3b</p>
-</blockquote>
-<p>GitHub：<a href="https://github.com/zbezj/HEU_KMS_Activator">https://github.com/zbezj/HEU_KMS_Activator</a></p>
-</blockquote>
-<p><img src="https://pic.imgdb.cn/item/6281a68209475431297e8edb.png" alt="HEU_KMS_Activator_v24.6.2" loading="lazy" class="φbp"></p>
-<hr>
-<blockquote>
-<p><strong>Microsoft PowerToys</strong>  <code>必装软件</code>  自定义键盘及快捷键</p>
-<blockquote>
-<p>官网：<a href="https://docs.microsoft.com/zh-cn/windows/powertoys/">https://docs.microsoft.com/zh-cn/windows/powertoys/</a></p>
-</blockquote>
-<p>GitHub 存储库：<a href="https://github.com/microsoft/PowerToys">https://github.com/microsoft/PowerToys</a></p>
-<p>链接：<a href="https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ">https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ</a><br>
-提取码：1234</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>iOS App苹果企业签分发</title>
     <url>/ios-app-enterprise-sign-share/</url>
     <content><![CDATA[<h3 id="配置">配置<a title="#配置" href="#配置"></a></h3>
@@ -609,23 +577,6 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>PowerToys-微软的一款开源电脑工具箱软件</title>
-    <url>/PowerToys/</url>
-    <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
-<p>习惯了 <strong><code>Mac</code></strong> 系统的 <code>command + *</code> 按键的操作逻辑之后</p>
-<p>针对于 <strong><code>Windows</code></strong> 系统的 <code>Ctrl + *</code> 各种不适应</p>
-<hr>
-<p>放上我的调整结果，回到 <code>command</code> 按键逻辑下</p>
-<p><img src="https://pic.imgdb.cn/item/6277942309475431296ca2b5.png" alt="PowerToys-微软的一款开源电脑工具箱软件-键盘管理器" loading="lazy" class="φbp"></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>PowerToys</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>离线下载安装 Windows商店(Microsoft Store) 应用</title>
     <url>/Microsoft-Store/</url>
     <content><![CDATA[<h3 id="复制链接">复制链接<a title="#复制链接" href="#复制链接"></a></h3>
@@ -646,6 +597,23 @@ font-family: SlideTownsoul
       </categories>
       <tags>
         <tag>Microsoft Store</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PowerToys-微软的一款开源电脑工具箱软件</title>
+    <url>/PowerToys/</url>
+    <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
+<p>习惯了 <strong><code>Mac</code></strong> 系统的 <code>command + *</code> 按键的操作逻辑之后</p>
+<p>针对于 <strong><code>Windows</code></strong> 系统的 <code>Ctrl + *</code> 各种不适应</p>
+<hr>
+<p>放上我的调整结果，回到 <code>command</code> 按键逻辑下</p>
+<p><img src="https://pic.imgdb.cn/item/6277942309475431296ca2b5.png" alt="PowerToys-微软的一款开源电脑工具箱软件-键盘管理器" loading="lazy" class="φbp"></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>PowerToys</tag>
       </tags>
   </entry>
   <entry>
@@ -682,7 +650,7 @@ font-family: SlideTownsoul
   <entry>
     <title>Chrome 插件</title>
     <url>/Chrome-Plugins/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX190NlYUlpYAY7GCslJlVtNAcCKsxukA8IFQzfmy5Vjvq8UcdcnzBILH</is-cipher>]]></content>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1/Cl97kmX9Axpcax/D7aMOkjHxmvFSDRrM7IpcVuwOKupJQH2o7QHd8</is-cipher>]]></content>
       <categories>
         <category>Chrome</category>
       </categories>
@@ -691,27 +659,35 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>IntelliJ IDEA 插件</title>
-    <url>/IntelliJ-IDEA-Plugins/</url>
-    <content><![CDATA[<h3 id="free-mybatis-plugin">Free MyBatis plugin<a title="#free-mybatis-plugin" href="#free-mybatis-plugin"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/6279cab909475431291d2971.png" alt="Free MyBatis plugin" loading="lazy" class="φbp"></p>
-<ul>
-<li>Git地址：<a href="https://github.com/chuntungho/free-mybatis-plugin">https://github.com/chuntungho/free-mybatis-plugin</a></li>
-</ul>
-<p>主要功能：</p>
-<ol>
-<li>生成mapper xml文件</li>
-<li>快速从代码跳转到mapper及从mapper返回代码</li>
-<li>mybatis自动补全及语法错误提示</li>
-<li>集成mybatis generator gui界面</li>
-<li>根据数据库注解，生成swagger model注解</li>
-</ol>
-]]></content>
+    <title>Windows 安装完成 必装软件</title>
+    <url>/windows/</url>
+    <content><![CDATA[<h3 id="系统激活">系统激活<a title="#系统激活" href="#系统激活"></a></h3>
+<blockquote>
+<p><strong>HEU_KMS_Activator_v24.6.2</strong></p>
+<p>公众号：知彼而知己</p>
+<blockquote>
+<p>链接：<a href="https://pan.baidu.com/s/1pxIEZSK7xz8_lP85cQnyMw">https://pan.baidu.com/s/1pxIEZSK7xz8_lP85cQnyMw</a><br>
+提取码：vf3b</p>
+</blockquote>
+<p>GitHub：<a href="https://github.com/zbezj/HEU_KMS_Activator">https://github.com/zbezj/HEU_KMS_Activator</a></p>
+</blockquote>
+<p><img src="https://pic.imgdb.cn/item/6281a68209475431297e8edb.png" alt="HEU_KMS_Activator_v24.6.2" loading="lazy" class="φbp"></p>
+<hr>
+<blockquote>
+<p><strong>Microsoft PowerToys</strong>  <code>必装软件</code>  自定义键盘及快捷键</p>
+<blockquote>
+<p>官网：<a href="https://docs.microsoft.com/zh-cn/windows/powertoys/">https://docs.microsoft.com/zh-cn/windows/powertoys/</a></p>
+</blockquote>
+<p>GitHub 存储库：<a href="https://github.com/microsoft/PowerToys">https://github.com/microsoft/PowerToys</a></p>
+<p>链接：<a href="https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ">https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ</a><br>
+提取码：1234</p>
+</blockquote>
+<!-- https://masuit.com/posts?page=18&size=15&orderby=ModifyDate -->]]></content>
       <categories>
-        <category>IntelliJ IDEA</category>
+        <category>Windows</category>
       </categories>
       <tags>
-        <tag>IntelliJ IDEA</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -848,20 +824,69 @@ main {
       </tags>
   </entry>
   <entry>
+    <title>IntelliJ IDEA 插件</title>
+    <url>/IntelliJ-IDEA-Plugins/</url>
+    <content><![CDATA[<h3 id="free-mybatis-plugin">Free MyBatis plugin<a title="#free-mybatis-plugin" href="#free-mybatis-plugin"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/6279cab909475431291d2971.png" alt="Free MyBatis plugin" loading="lazy" class="φbp"></p>
+<ul>
+<li>Git地址：<a href="https://github.com/chuntungho/free-mybatis-plugin">https://github.com/chuntungho/free-mybatis-plugin</a></li>
+</ul>
+<p>主要功能：</p>
+<ol>
+<li>生成mapper xml文件</li>
+<li>快速从代码跳转到mapper及从mapper返回代码</li>
+<li>mybatis自动补全及语法错误提示</li>
+<li>集成mybatis generator gui界面</li>
+<li>根据数据库注解，生成swagger model注解</li>
+</ol>
+]]></content>
+      <categories>
+        <category>IntelliJ IDEA</category>
+      </categories>
+      <tags>
+        <tag>IntelliJ IDEA</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>那些好看的页面效果</title>
     <url>/good-html/</url>
     <content><![CDATA[<ol>
-<li><a href="/html/hover-style-slider.html?_blank">悬停效果的滑块(全屏)</a></li>
-<li><a href="/html/snowflake-animation.html?_blank">CSS雪花动画</a></li>
-<li><a href="/html/css-slider-font.html?_blank">CSS 滚动文字</a></li>
-<li><a href="/html/css-picture-accordion.html">CSS 实现横向图片手风琴样式图像库</a></li>
-<li><a href="/html/css-color.html">CSS 调色板 色彩库</a></li>
-<li><a href="/html/css-typing-animation.html">CSS 打字输出动画</a></li>
-<li><a href="/html/css-icon-android-ios.html">CSS 图标 iOS Android</a></li>
-<li><a href="/html/css3-loading-animations.html">CSS3 Loading animations</a></li>
-<li><a href="/html/flip-clock.html">翻页时钟</a></li>
-<li><a href="/html/vision-intelligent-cards.html">视觉智能卡-跟随鼠标</a></li>
-<li><a href="/html/tilt-style.html">倾斜效果</a></li>
+<li>
+<p><a href="/html/hover-style-slider.html?_blank">悬停效果的滑块(全屏)</a></p>
+</li>
+<li>
+<p><a href="/html/snowflake-animation.html?_blank">CSS雪花动画</a></p>
+</li>
+<li>
+<p><a href="/html/css-slider-font.html?_blank">CSS 滚动文字</a></p>
+</li>
+<li>
+<p><a href="/html/css-picture-accordion.html">CSS 实现横向图片手风琴样式图像库</a></p>
+</li>
+<li>
+<p><a href="/html/css-color.html">CSS 调色板 色彩库</a></p>
+</li>
+<li>
+<p><a href="/html/css-typing-animation.html">CSS 打字输出动画</a></p>
+</li>
+<li>
+<p><a href="/html/css-icon-android-ios.html">CSS 图标 iOS Android</a></p>
+</li>
+<li>
+<p><a href="/html/css3-loading-animations.html">CSS3 Loading animations</a></p>
+</li>
+<li>
+<p><a href="/html/flip-clock.html">翻页时钟</a></p>
+</li>
+<li>
+<p><a href="/html/vision-intelligent-cards.html">视觉智能卡-跟随鼠标</a></p>
+</li>
+<li>
+<p><a href="/html/tilt-style.html">倾斜效果</a></p>
+</li>
+<li>
+<p><a href="/html/symbol-arrow.html">箭头符号 箭头特殊符号大全</a></p>
+</li>
 </ol>
 <!-- https://www.jq22.com/daima400 -->]]></content>
       <categories>
@@ -869,22 +894,6 @@ main {
       </categories>
       <tags>
         <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL 开源的数据快速回滚工具(闪回) - binlog2sql</title>
-    <url>/mysql-binlog2sql/</url>
-    <content><![CDATA[<h2 id="binlog2sql-介绍">binlog2sql 介绍<a title="#binlog2sql-介绍" href="#binlog2sql-介绍"></a></h2>
-<p>从MySQL binlog解析出你要的SQL。根据不同选项，你可以得到原始SQL、回滚SQL、去除主键的INSERT SQL等。</p>
-<p>GitHub 地址：<code>https://github.com/danfengcao/binlog2sql</code></p>
-<h2 id="安装">安装<a title="#安装" href="#安装"></a></h2>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 安装Git</span></span><br><span class="line">yum install -y git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 pip 工具</span></span><br><span class="line">yum install -y epel-release</span><br><span class="line"></span><br><span class="line">yum install -y python-pip</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载 安装binlog2sql</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/danfengcao/binlog2sql.git &amp;&amp; <span class="built_in">cd</span> binlog2sql</span><br><span class="line"></span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
       </tags>
   </entry>
   <entry>
@@ -974,6 +983,22 @@ main {
       </tags>
   </entry>
   <entry>
+    <title>MySQL 开源的数据快速回滚工具(闪回) - binlog2sql</title>
+    <url>/mysql-binlog2sql/</url>
+    <content><![CDATA[<h2 id="binlog2sql-介绍">binlog2sql 介绍<a title="#binlog2sql-介绍" href="#binlog2sql-介绍"></a></h2>
+<p>从MySQL binlog解析出你要的SQL。根据不同选项，你可以得到原始SQL、回滚SQL、去除主键的INSERT SQL等。</p>
+<p>GitHub 地址：<code>https://github.com/danfengcao/binlog2sql</code></p>
+<h2 id="安装">安装<a title="#安装" href="#安装"></a></h2>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 安装Git</span></span><br><span class="line">yum install -y git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 pip 工具</span></span><br><span class="line">yum install -y epel-release</span><br><span class="line"></span><br><span class="line">yum install -y python-pip</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载 安装binlog2sql</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/danfengcao/binlog2sql.git &amp;&amp; <span class="built_in">cd</span> binlog2sql</span><br><span class="line"></span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java 23种设计模式 说明</title>
     <url>/Design-Pattern/</url>
     <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62878e6e09475431296d65c4.png" alt="Java 23种设计模式关系" loading="lazy" class="φbp"></p>
@@ -991,6 +1016,29 @@ main {
       </categories>
       <tags>
         <tag>Design Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java 23种设计模式之创建型模式「单例模式」Singleton Pattern</title>
+    <url>/Singleton-Pattern/</url>
+    <content><![CDATA[<h2 id="单例模式---singleton-pattern">单例模式 - Singleton Pattern<a title="#单例模式---singleton-pattern" href="#单例模式---singleton-pattern"></a></h2>
+<h3 id="单例模式-之-holder-模式-(推荐)">单例模式 之 holder 模式 (推荐)<a title="#单例模式-之-holder-模式-(推荐)" href="#单例模式-之-holder-模式-(推荐)"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 holder 模式</span></span><br><span class="line"><span class="comment"> *   带有 Holder 的方法，</span></span><br><span class="line"><span class="comment"> *   类级内部类，静态的成员内部类，该内部类的实例与外部类的实例没有绑定关系</span></span><br><span class="line"><span class="comment"> *   只有在调用的时候才会被封装，从而实现了延迟加载，即懒汉式</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> *   holder方式的单例模式是最好的设计之一，也是目前用的比价广泛的设计之一</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   将懒加载和线程安全完美结合的一种方式（无锁）</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 注：</span></span><br><span class="line"><span class="comment"> *   final 修饰，不允许被继承</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfHolder</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfHolderIn</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 静态初始化，由JVM来保证线程安全</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">SingletonModeOfHolder</span> <span class="variable">INSTANCE</span> <span class="operator">=</span></span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">SingletonModeOfHolder</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> SingletonModeOfHolder <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> SingletonModeOfHolderIn.INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfHolder</span><span class="params">()</span> &#123; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="单例模式-之-饱汉模式（懒汉模式）">单例模式 之 饱汉模式（懒汉模式）<a title="#单例模式-之-饱汉模式（懒汉模式）" href="#单例模式-之-饱汉模式（懒汉模式）"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饱汉模式（懒汉模式）</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   启动快，资源占用小，使用时才实例，无锁</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *   非线程安全的，多线程下不能保证单例的唯一性</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 注：</span></span><br><span class="line"><span class="comment"> *   final 修饰，不允许被继承</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfFull</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">SingletonModeOfFull</span> <span class="variable">instance</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> SingletonModeOfFull <span class="title function_">getInstance</span> <span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">            instance = <span class="keyword">new</span> <span class="title class_">SingletonModeOfFull</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfFull</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="单例模式-之-双重锁检查-（double-check-lock）">单例模式 之 双重锁检查 （Double Check Lock）<a title="#单例模式-之-双重锁检查-（double-check-lock）" href="#单例模式-之-双重锁检查-（double-check-lock）"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饱汉模式（懒汉模式） 线程安全 双重锁检查 （Double Check Lock）</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   懒加载，线程安全</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 注：</span></span><br><span class="line"><span class="comment"> *   实例必须有 volatile 关键字修饰，保证初始化完全，保证了变量的可见性（visibility）</span></span><br><span class="line"><span class="comment"> *   被 volatile 关键字修饰的变量，如果值发生了变化，其他线程立马可见</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfFullDCL</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> <span class="type">SingletonModeOfFullDCL</span> <span class="variable">instance</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> SingletonModeOfFullDCL <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 判断实例是否存在，如果不存在进入下面的同步块</span></span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 同步 线程安全的创建实例</span></span><br><span class="line">            <span class="keyword">synchronized</span> (SingletonModeOfFullDCL.class) &#123;</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 再次检查实例是否存在</span></span><br><span class="line">                <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">                    instance = <span class="keyword">new</span> <span class="title class_">SingletonModeOfFullDCL</span>();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfFullDCL</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="单例模式-之-饱汉模式（懒汉模式）-线程安全">单例模式 之 饱汉模式（懒汉模式） 线程安全<a title="#单例模式-之-饱汉模式（懒汉模式）-线程安全" href="#单例模式-之-饱汉模式（懒汉模式）-线程安全"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饱汉模式（懒汉模式） 线程安全</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   启动快，资源占用小，使用时才实例，有锁</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *   synchronized 为独占排他锁，并发性差，即使在创建成功之后，获取实例仍然是串行化操作</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfFullSafe</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">SingletonModeOfFullSafe</span> <span class="variable">instance</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> SingletonModeOfFullSafe <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">            instance = <span class="keyword">new</span> <span class="title class_">SingletonModeOfFullSafe</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfFullSafe</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="单例模式-之-饿汉模式">单例模式 之 饿汉模式<a title="#单例模式-之-饿汉模式" href="#单例模式-之-饿汉模式"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饿汉模式</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   饿汉模式天生是线程安全的，使用时没有延迟</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *   时候即创建实例，启动慢，有可能造成资源浪费</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfHungry</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 类加载即创建对象</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">static</span> <span class="type">SingletonModeOfHungry</span> <span class="variable">INSTANCE</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">SingletonModeOfHungry</span>();</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 提供给外接获取对象的方法</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> SingletonModeOfHungry <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 私有化构造器 防止外接创建对象</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">SingletonModeOfHungry</span><span class="params">()</span> &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Java</category>
+        <category>Design Pattern</category>
+      </categories>
+      <tags>
+        <tag>Singleton Pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -1036,29 +1084,6 @@ main {
       </categories>
       <tags>
         <tag>Strategy Pattern</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java 23种设计模式之创建型模式「单例模式」Singleton Pattern</title>
-    <url>/Singleton-Pattern/</url>
-    <content><![CDATA[<h2 id="单例模式---singleton-pattern">单例模式 - Singleton Pattern<a title="#单例模式---singleton-pattern" href="#单例模式---singleton-pattern"></a></h2>
-<h3 id="单例模式-之-holder-模式-(推荐)">单例模式 之 holder 模式 (推荐)<a title="#单例模式-之-holder-模式-(推荐)" href="#单例模式-之-holder-模式-(推荐)"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 holder 模式</span></span><br><span class="line"><span class="comment"> *   带有 Holder 的方法，</span></span><br><span class="line"><span class="comment"> *   类级内部类，静态的成员内部类，该内部类的实例与外部类的实例没有绑定关系</span></span><br><span class="line"><span class="comment"> *   只有在调用的时候才会被封装，从而实现了延迟加载，即懒汉式</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> *   holder方式的单例模式是最好的设计之一，也是目前用的比价广泛的设计之一</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   将懒加载和线程安全完美结合的一种方式（无锁）</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 注：</span></span><br><span class="line"><span class="comment"> *   final 修饰，不允许被继承</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfHolder</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfHolderIn</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 静态初始化，由JVM来保证线程安全</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">SingletonModeOfHolder</span> <span class="variable">INSTANCE</span> <span class="operator">=</span></span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">SingletonModeOfHolder</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> SingletonModeOfHolder <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> SingletonModeOfHolderIn.INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfHolder</span><span class="params">()</span> &#123; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="单例模式-之-饱汉模式（懒汉模式）">单例模式 之 饱汉模式（懒汉模式）<a title="#单例模式-之-饱汉模式（懒汉模式）" href="#单例模式-之-饱汉模式（懒汉模式）"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饱汉模式（懒汉模式）</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   启动快，资源占用小，使用时才实例，无锁</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *   非线程安全的，多线程下不能保证单例的唯一性</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 注：</span></span><br><span class="line"><span class="comment"> *   final 修饰，不允许被继承</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfFull</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">SingletonModeOfFull</span> <span class="variable">instance</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> SingletonModeOfFull <span class="title function_">getInstance</span> <span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">            instance = <span class="keyword">new</span> <span class="title class_">SingletonModeOfFull</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfFull</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="单例模式-之-双重锁检查-（double-check-lock）">单例模式 之 双重锁检查 （Double Check Lock）<a title="#单例模式-之-双重锁检查-（double-check-lock）" href="#单例模式-之-双重锁检查-（double-check-lock）"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饱汉模式（懒汉模式） 线程安全 双重锁检查 （Double Check Lock）</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   懒加载，线程安全</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 注：</span></span><br><span class="line"><span class="comment"> *   实例必须有 volatile 关键字修饰，保证初始化完全，保证了变量的可见性（visibility）</span></span><br><span class="line"><span class="comment"> *   被 volatile 关键字修饰的变量，如果值发生了变化，其他线程立马可见</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfFullDCL</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> <span class="type">SingletonModeOfFullDCL</span> <span class="variable">instance</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> SingletonModeOfFullDCL <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 判断实例是否存在，如果不存在进入下面的同步块</span></span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 同步 线程安全的创建实例</span></span><br><span class="line">            <span class="keyword">synchronized</span> (SingletonModeOfFullDCL.class) &#123;</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 再次检查实例是否存在</span></span><br><span class="line">                <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">                    instance = <span class="keyword">new</span> <span class="title class_">SingletonModeOfFullDCL</span>();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfFullDCL</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="单例模式-之-饱汉模式（懒汉模式）-线程安全">单例模式 之 饱汉模式（懒汉模式） 线程安全<a title="#单例模式-之-饱汉模式（懒汉模式）-线程安全" href="#单例模式-之-饱汉模式（懒汉模式）-线程安全"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饱汉模式（懒汉模式） 线程安全</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   启动快，资源占用小，使用时才实例，有锁</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *   synchronized 为独占排他锁，并发性差，即使在创建成功之后，获取实例仍然是串行化操作</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfFullSafe</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">SingletonModeOfFullSafe</span> <span class="variable">instance</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> SingletonModeOfFullSafe <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">            instance = <span class="keyword">new</span> <span class="title class_">SingletonModeOfFullSafe</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfFullSafe</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="单例模式-之-饿汉模式">单例模式 之 饿汉模式<a title="#单例模式-之-饿汉模式" href="#单例模式-之-饿汉模式"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饿汉模式</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   饿汉模式天生是线程安全的，使用时没有延迟</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *   时候即创建实例，启动慢，有可能造成资源浪费</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfHungry</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 类加载即创建对象</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">static</span> <span class="type">SingletonModeOfHungry</span> <span class="variable">INSTANCE</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">SingletonModeOfHungry</span>();</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 提供给外接获取对象的方法</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> SingletonModeOfHungry <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 私有化构造器 防止外接创建对象</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">SingletonModeOfHungry</span><span class="params">()</span> &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Java</category>
-        <category>Design Pattern</category>
-      </categories>
-      <tags>
-        <tag>Singleton Pattern</tag>
       </tags>
   </entry>
   <entry>
