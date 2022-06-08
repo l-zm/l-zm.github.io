@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Mac 修改 Dock 栏的隐藏速度</title>
+    <url>/mac-edit-dock-hidden-speed/</url>
+    <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
+<p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
+<h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
+<p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解除网页右键限制</title>
+    <url>/remove-right-click-limit/</url>
+    <content><![CDATA[<h3 id="脚本">脚本<a title="#脚本" href="#脚本"></a></h3>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">javascript</span>:!<span class="keyword">function</span> <span class="title function_">e</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;&#125;<span class="keyword">function</span> <span class="title function_">o</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">removeChild</span>(e)&#125;<span class="keyword">function</span> <span class="title function_">r</span>(<span class="params">e</span>)&#123;<span class="keyword">return</span>[].<span class="property">slice</span>.<span class="title function_">call</span>(t.<span class="title function_">querySelectorAll</span>(e))&#125;<span class="keyword">function</span> <span class="title function_">c</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;<span class="title function_">s</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;<span class="keyword">if</span>(!o)<span class="keyword">try</span>&#123;<span class="keyword">var</span> n=t.<span class="property">contentDocument</span>;n.<span class="property">body</span>.<span class="property">childNodes</span>.<span class="property">length</span>&amp;&amp;(o=<span class="number">1</span>,<span class="title function_">e</span>(n))&#125;<span class="keyword">catch</span>(e)&#123;o=<span class="number">0</span>&#125;&#125;,<span class="number">100</span>)&#125;a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t[<span class="string">&#x27;on&#x27;</span>+e]=<span class="literal">null</span>&#125;);<span class="keyword">var</span> o;<span class="title function_">n</span>(),t.<span class="property">onload</span>=n&#125;<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="string">&#x27;parentNode&#x27;</span>,l=<span class="string">&#x27;forEach&#x27;</span>,a=<span class="string">&#x27;contextmenu dragstart selectstart select copy beforecopy mouseup mousedown&#x27;</span>.<span class="title function_">split</span>(<span class="string">&#x27; &#x27;</span>),u=<span class="built_in">setTimeout</span>(n,<span class="number">0</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearTimeout</span>(u);<span class="keyword">for</span>(u=<span class="built_in">setInterval</span>(n,<span class="number">1e8</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearInterval</span>(u);<span class="keyword">var</span> s=<span class="built_in">setTimeout</span>;<span class="built_in">setTimeout</span>=<span class="built_in">setInterval</span>=n,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](o);<span class="keyword">var</span> m=[];<span class="title function_">r</span>(<span class="string">&#x27;iframe,frame&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;m.<span class="title function_">push</span>(e),e[i].<span class="title function_">replaceChild</span>(t.<span class="title function_">createElement</span>(<span class="string">&#x27;script&#x27;</span>),e)&#125;);<span class="keyword">var</span> f=t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>;t.<span class="title function_">open</span>(),t.<span class="title function_">write</span>(<span class="string">&#x27;&lt;!DOCTYPE html&gt;&#x27;</span>),t.<span class="title function_">close</span>(),t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>=f,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">replaceChild</span>(m.<span class="title function_">shift</span>(),e)&#125;),<span class="title function_">r</span>(<span class="string">&#x27;*&#x27;</span>)[l](c),<span class="title function_">c</span>(t),a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t.<span class="title function_">addEventListener</span>(e,<span class="keyword">function</span>(<span class="params">e</span>)&#123;e.<span class="title function_">stopPropagation</span>()&#125;,!<span class="number">0</span>)&#125;);<span class="keyword">var</span> p=t.<span class="title function_">createElement</span>(<span class="string">&#x27;style&#x27;</span>);p.<span class="property">innerHTML</span>=<span class="string">&#x27;*&#123;-webkit-user-select:text!important;-moz-user-select:text!important;user-select:text!important;&#125;&#x27;</span>,t.<span class="property">body</span>.<span class="title function_">appendChild</span>(p)&#125;(<span class="variable language_">document</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="两种使用方法:">两种使用方法:<a title="#两种使用方法:" href="#两种使用方法:"></a></h3>
+<ol>
+<li>浏览器: F12打开调试模式, 在控制台<code>Console</code>里面直接执行</li>
+<li>直接保存为书签, 在需要解除右键限制的网页直接点击书签即可 <strong>(推荐)</strong></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown 基本语法</title>
     <url>/markdown/</url>
     <content><![CDATA[<h1 id="&lt;center&gt;-一级标题"><center> 一级标题<a title="#&lt;center&gt;-一级标题" href="#&lt;center&gt;-一级标题"></a></h1>
@@ -257,7 +290,7 @@ font-family: SlideTownsoul
   <entry>
     <title>临时文档</title>
     <url>/1/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1+tXjU258RXjjGnqZ938C/2svjl+jqnJbX2CnVww1FWM+bN2i6WJ/PU</is-cipher>]]></content>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1/hM+0KmwoLa78a6G/h6KltYnKt3q5SAbbhJVaNUCb2pUAFQmBDDucn</is-cipher>]]></content>
       <categories>
         <category>Other</category>
       </categories>
@@ -266,30 +299,29 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>解除网页右键限制</title>
-    <url>/remove-right-click-limit/</url>
-    <content><![CDATA[<h3 id="脚本">脚本<a title="#脚本" href="#脚本"></a></h3>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">javascript</span>:!<span class="keyword">function</span> <span class="title function_">e</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;&#125;<span class="keyword">function</span> <span class="title function_">o</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">removeChild</span>(e)&#125;<span class="keyword">function</span> <span class="title function_">r</span>(<span class="params">e</span>)&#123;<span class="keyword">return</span>[].<span class="property">slice</span>.<span class="title function_">call</span>(t.<span class="title function_">querySelectorAll</span>(e))&#125;<span class="keyword">function</span> <span class="title function_">c</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;<span class="title function_">s</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;<span class="keyword">if</span>(!o)<span class="keyword">try</span>&#123;<span class="keyword">var</span> n=t.<span class="property">contentDocument</span>;n.<span class="property">body</span>.<span class="property">childNodes</span>.<span class="property">length</span>&amp;&amp;(o=<span class="number">1</span>,<span class="title function_">e</span>(n))&#125;<span class="keyword">catch</span>(e)&#123;o=<span class="number">0</span>&#125;&#125;,<span class="number">100</span>)&#125;a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t[<span class="string">&#x27;on&#x27;</span>+e]=<span class="literal">null</span>&#125;);<span class="keyword">var</span> o;<span class="title function_">n</span>(),t.<span class="property">onload</span>=n&#125;<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="string">&#x27;parentNode&#x27;</span>,l=<span class="string">&#x27;forEach&#x27;</span>,a=<span class="string">&#x27;contextmenu dragstart selectstart select copy beforecopy mouseup mousedown&#x27;</span>.<span class="title function_">split</span>(<span class="string">&#x27; &#x27;</span>),u=<span class="built_in">setTimeout</span>(n,<span class="number">0</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearTimeout</span>(u);<span class="keyword">for</span>(u=<span class="built_in">setInterval</span>(n,<span class="number">1e8</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearInterval</span>(u);<span class="keyword">var</span> s=<span class="built_in">setTimeout</span>;<span class="built_in">setTimeout</span>=<span class="built_in">setInterval</span>=n,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](o);<span class="keyword">var</span> m=[];<span class="title function_">r</span>(<span class="string">&#x27;iframe,frame&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;m.<span class="title function_">push</span>(e),e[i].<span class="title function_">replaceChild</span>(t.<span class="title function_">createElement</span>(<span class="string">&#x27;script&#x27;</span>),e)&#125;);<span class="keyword">var</span> f=t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>;t.<span class="title function_">open</span>(),t.<span class="title function_">write</span>(<span class="string">&#x27;&lt;!DOCTYPE html&gt;&#x27;</span>),t.<span class="title function_">close</span>(),t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>=f,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">replaceChild</span>(m.<span class="title function_">shift</span>(),e)&#125;),<span class="title function_">r</span>(<span class="string">&#x27;*&#x27;</span>)[l](c),<span class="title function_">c</span>(t),a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t.<span class="title function_">addEventListener</span>(e,<span class="keyword">function</span>(<span class="params">e</span>)&#123;e.<span class="title function_">stopPropagation</span>()&#125;,!<span class="number">0</span>)&#125;);<span class="keyword">var</span> p=t.<span class="title function_">createElement</span>(<span class="string">&#x27;style&#x27;</span>);p.<span class="property">innerHTML</span>=<span class="string">&#x27;*&#123;-webkit-user-select:text!important;-moz-user-select:text!important;user-select:text!important;&#125;&#x27;</span>,t.<span class="property">body</span>.<span class="title function_">appendChild</span>(p)&#125;(<span class="variable language_">document</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="两种使用方法:">两种使用方法:<a title="#两种使用方法:" href="#两种使用方法:"></a></h3>
-<ol>
-<li>浏览器: F12打开调试模式, 在控制台<code>Console</code>里面直接执行</li>
-<li>直接保存为书签, 在需要解除右键限制的网页直接点击书签即可 <strong>(推荐)</strong></li>
-</ol>
+    <title>Redis 配置文件说明</title>
+    <url>/redis-config-explan/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">################################## NETWORK #####################################</span><br><span class="line">bind 127.0.0.1			# 默认绑定本机所有ip地址 为了安全 可以只监听内网ip</span><br><span class="line">protected-mode yes		# 保护模式[无密码模式设置为no]</span><br><span class="line">port 6379 			# 默认端口</span><br><span class="line">tcp-backlog 511			# listen队列的长度</span><br><span class="line">timeout 0			# 客户端空闲多少s(秒)后踢掉 0禁止</span><br><span class="line">tcp-keepalive 300		# 检测挂掉的连接 单位s 0禁止</span><br><span class="line">################################# GENERAL #####################################</span><br><span class="line">daemonize no 			# 作为守护进程运行</span><br><span class="line">supervised no 			# 设成开机启动后 系统监控</span><br><span class="line">pidfile /var/run/redis_6379.pid # pid 位置</span><br><span class="line">loglevel notice 		# 设置服务端的日志级别，有下列几种选择</span><br><span class="line">				debug：记录详细信息，用于开发或调试</span><br><span class="line">				verbose：提供很多有用的信息，</span><br><span class="line">					但是又不像debug那么详尽，默认就是这一选项</span><br><span class="line">				notice：适度提醒，多用于产品环境</span><br><span class="line">				warning：仅显示重要的警告信息</span><br><span class="line">logfile &quot;&quot;			# 日志目录</span><br><span class="line">databases 16			# 指定数据库的数量</span><br><span class="line">################################ SNAPSHOTTING  ################################</span><br><span class="line">save 900 1			# 每900秒(15分钟)至少一次键值变更时被触发</span><br><span class="line">save 300 10			# 每300秒(5分钟)至少10次键值变更时被触发</span><br><span class="line">save 60 10000			# 每60秒至少10000次键值变更时被触发</span><br><span class="line">stop-writes-on-bgsave-error yes	# 后台存储错误停止写</span><br><span class="line">rdbcompression yes		# 存储至本地数据库时(持久化到rdb文件)是否压缩数据 默认为 yes</span><br><span class="line">rdbchecksum yes			# 读取和写入的时候是否支持CRC64校验 默认是开启的</span><br><span class="line">dbfilename dump.rdb 		# 镜像文件的名字</span><br><span class="line">dir ./ 				# 当前工作目录 配置文件和镜像文件等都在此目录下</span><br><span class="line">################################# REPLICATION #################################</span><br><span class="line">slave-serve-stale-data yes	# 当slave服务器和master服务器失去连接后，</span><br><span class="line">				或者当数据正在复制传输的时候，如果此参数值设置“yes”</span><br><span class="line">				slave服务器可以继续接受客户端的请求，</span><br><span class="line">				否则，会返回给请求的客户端如下信息</span><br><span class="line">				“SYNC with master in progress”</span><br><span class="line">slave-read-only yes		# 是否允许slave服务器节点只提供读服务</span><br><span class="line">repl-diskless-sync no 		# disk较慢，并且网络较快的时候，</span><br><span class="line">				可以用diskless。（默认用disk-based）</span><br><span class="line">repl-diskless-sync-delay 5	# 备份等待延迟时间 seconds</span><br><span class="line">repl-disable-tcp-nodelay no 	# 指定向slave同步数据时，是否禁用socket的NO_DELAY选 项。</span><br><span class="line">				若配置为“yes”，则禁用NO_DELAY，则TCP协议栈会合并小包统一发送，</span><br><span class="line">				这样可以减少主从节点间的包数量并节省带宽，但会增加数据同步到</span><br><span class="line">				slave的时间。若配置为“no”，表明启用NO_DELAY，则TCP协议栈不</span><br><span class="line">				会延迟小包的发送时机，这样数据同步的延时会减少，但需要更大的带宽。</span><br><span class="line">				通常情况下，应该配置为no以降低同步延时，</span><br><span class="line">				但在主从节点间网络负载已经很高的情况下，可以配置为yes</span><br><span class="line">slave-priority 100		# 指定slave的优先级。在不只1个slave存在的部署环境下，</span><br><span class="line">				当master宕机时，Redis Sentinel会将priority值最小的slave</span><br><span class="line">				提升为master需要注意的是，若该配置项为0，则对应的slave永远</span><br><span class="line">				不会自动提升为master</span><br><span class="line">############################## APPEND ONLY MODE ###############################</span><br><span class="line">appendonly no 			# 开启append only 模式之后，redis 会把所接收到的每一次写</span><br><span class="line">				操作请求都追加到appendonly.aof 文件中，当redis 重新启动时，</span><br><span class="line">				会从该文件恢复出之前的状态。但是这样会造成appendonly.aof </span><br><span class="line">				文件过大，所以redis 还支持了BGREWRITEAOF 指令，</span><br><span class="line">				对appendonly.aof 进行重新整理。默认是不开启的</span><br><span class="line">appendfilename &quot;appendonly.aof&quot;	# 默认为appendonly.aof</span><br><span class="line">appendfsync everysec		# 设置aof的同步频率，有三种选择</span><br><span class="line">				always、everysec、no，默认是everysec表示每秒同步一次</span><br><span class="line">no-appendfsync-on-rewrite no 	# 指定是否在后台aof文件rewrite期间调用fsync，</span><br><span class="line">				默认为no，表示要调用fsync（无论后台是否有子进程在刷盘）。</span><br><span class="line">				Redis在后台写RDB文件或重写afo文件期间会存在大量磁盘IO，</span><br><span class="line">				此时，在某些linux系统中，调用fsync可能会阻塞</span><br><span class="line">auto-aof-rewrite-percentage 100 # 指定Redis重写aof文件的条件，默认为100，</span><br><span class="line">				表示与上次rewrite的aof文件大小相比，当前aof文件增长量超过上</span><br><span class="line">				次afo文件大小的100%时，就会触发background rewrite。</span><br><span class="line">				若配置为0，则会禁用自动rewrite</span><br><span class="line">auto-aof-rewrite-min-size 64mb 	# 指定触发rewrite的aof文件大小。</span><br><span class="line">				若aof文件小于该值，即使当前文件的增量比例达到</span><br><span class="line">				auto-aof-rewrite-percentage的配置值，也不会触发自动</span><br><span class="line">				rewrite。即这两个配置项同时满足时，才会触发rewrite</span><br><span class="line">aof-load-truncated yes 		# 会自动发布一个log给客户端然后load（默认）</span><br><span class="line">				如果是no，用户必须手动redis-check-aof修复AOF文件才可以</span><br><span class="line">################################ LUA SCRIPTING  ###############################</span><br><span class="line">lua-time-limit 5000 		# 一个Lua脚本最长的执行时间，单位为毫秒</span><br><span class="line">				如果为0或负数表示无限执行时间，默认为5000</span><br><span class="line">################################## SLOW LOG ###################################</span><br><span class="line">slowlog-log-slower-than 10000 	# 设定执行时间，单位是微秒，执行时长超过该时间</span><br><span class="line">				的命令将会被记入log。-1表示不记录slow log; 0强制记录所有命令</span><br><span class="line">slowlog-max-len 128 		# 最多保存 128 条日志</span><br><span class="line">################################ LATENCY MONITOR ##############################</span><br><span class="line">latency-monitor-threshold 0	# 用LATENCY打印redis实例在跑命令时的耗时图表</span><br><span class="line">				只记录大于等于下边设置的值的操作。0的话，就是关闭监视。</span><br><span class="line">				可以动态开启</span><br><span class="line">############################# EVENT NOTIFICATION ##############################</span><br><span class="line">notify-keyspace-events &quot;&quot; 	# 如果开着开关。一个client进行了DEL操作在“foo”key</span><br><span class="line">				上在database0上。两个消息将会发布通过 </span><br><span class="line">				pub/sub默认所用的通知被禁用，因为用户通常不需要改特性</span><br><span class="line">				并且该特性会有性能损耗</span><br><span class="line">############################### ADVANCED CONFIG ###############################</span><br><span class="line">hash-max-ziplist-entries 512 	# hash类型的数据结构在编码上可以使用</span><br><span class="line">				ziplist和hashtable。ziplist的特点就是文件存储(以及内存存储)</span><br><span class="line">				所需的空间较小,在内容较小时,性能和hashtable几乎一样.因此redis</span><br><span class="line">				对hash类型默认采取ziplist。如果hash中条目的条目个数或者value</span><br><span class="line">				长度达到阀值,将会被重构为hashtable</span><br><span class="line">				这个参数指的是ziplist中允许存储的最大条目个数</span><br><span class="line">				默认为512，建议为128</span><br><span class="line">hash-max-ziplist-value 64	# ziplist中允许条目value值最大字节数，默认为64，建议为1024</span><br><span class="line">list-max-ziplist-size -2 	# 对于list类型,将会采取ziplist,linkedlist两种编码类型</span><br><span class="line">list-compress-depth 0		# 表示一个quicklist两端不被压缩的节点个数。</span><br><span class="line">				注：这里的节点个数是指quicklist双向链表的节点个数，</span><br><span class="line">				而不是指ziplist里面的数据项个数。实际上，一个</span><br><span class="line">				quicklist节点上的ziplist，如果被压缩，就是整体被压缩的</span><br><span class="line">				参数list-compress-depth的取值含义如下：</span><br><span class="line">				0: 是个特殊值，表示都不压缩。这是Redis的默认值。</span><br><span class="line">				1: 表示quicklist两端各有1个节点不压缩，中间的节点压缩。</span><br><span class="line">				2: 表示quicklist两端各有2个节点不压缩，中间的节点压缩。</span><br><span class="line">				3: 表示quicklist两端各有3个节点不压缩，中间的节点压缩。</span><br><span class="line">				依此类推</span><br><span class="line">				由于0是个特殊值，很容易看出quicklist的头节点和</span><br><span class="line">				尾节点总是不被压缩的，以便于在表的两端进行快速存取</span><br><span class="line">set-max-intset-entries 512 	# 当set类型中的数据都是数值类型，</span><br><span class="line">				并且set中整型元素的数量不超过指定值时，使用特殊的编码方式</span><br><span class="line">zset-max-ziplist-entries 128 	# 与hash和list类似 </span><br><span class="line">zset-max-ziplist-value 64 	# zsort也采用如下的配置来选择是否进行特殊编码来节省空间</span><br><span class="line">hll-sparse-max-bytes 3000 	# 这个限制包含了16个字节的头部，当一个HyperLogLog</span><br><span class="line">				使用sparse representation 超过了这个显示，它就会转换到</span><br><span class="line">				dense representation上</span><br><span class="line">activerehashing yes 		# 用来控制是否自动重建hash。Active rehashing每100微秒</span><br><span class="line">				使用1微秒cpu时间排序，以重组Redis的hash表。重建是通过一种</span><br><span class="line">				lazy方式，写入hash表的操作越多，需要执行rehashing的步骤</span><br><span class="line">				也越多，如果服务器当前空闲，那么rehashing操作会一直执行。</span><br><span class="line">				如果对实时性要求较高，难以接受redis时不时出现的2微秒的延迟，</span><br><span class="line">				则可以设置activerehashing为no，</span><br><span class="line">				否则建议设置为yes，以节省内存空间</span><br><span class="line">client-output-buffer-limit normal 0 0 0</span><br><span class="line">client-output-buffer-limit slave 256mb 64mb 60</span><br><span class="line">client-output-buffer-limit pubsub 32mb 8mb 60</span><br><span class="line">客户端buffer控制。在客户端与server进行的交互中,每个连接都会与一个buffer关联,</span><br><span class="line">此buffer用来队列化等待被client接受的响应信息。如果client不能及时的消费响应信息,</span><br><span class="line">那么buffer将会被不断积压而给server带来内存压力.如果buffer中积压的数据达到阀值,</span><br><span class="line">将会导致连接被关闭,buffer被移除。</span><br><span class="line">buffer控制类型包括:normal -&gt; 普通连接；slave -&gt;与slave之间的连接；</span><br><span class="line">pubsub -&gt;pub/sub类型连接，此类型的连接，往往会产生此种问题;</span><br><span class="line">因为pub端会密集的发布消息,但是sub端可能消费不足.</span><br><span class="line">指令格式:client-output-buffer-limit &lt;class&gt; &lt;hard&gt; &lt;soft&gt; &lt;seconds&gt;&quot;,</span><br><span class="line">其中hard表示buffer最大值,一旦达到阀值将立即关闭连接;</span><br><span class="line">soft表示&quot;容忍值&quot;,它和seconds配合,如果buffer值超过soft且持续时间达到了seconds,</span><br><span class="line">也将立即关闭连接,如果超过了soft但是在seconds之后，buffer数据小于了soft,连接将会被保留.</span><br><span class="line">其中hard和soft都设置为0,则表示禁用buffer控制.通常hard值大于soft</span><br><span class="line">hz 10  				# Redis server执行后台任务的频率,默认为10,</span><br><span class="line">				此值越大表示redis对&quot;间歇性task&quot;的执行次数越频繁(次数/秒)。</span><br><span class="line">				&quot;间歇性task&quot;包括&quot;过期集合&quot;检测、关闭&quot;空闲超时&quot;的连接等,此</span><br><span class="line">				值必须大于0且小于500。此值过小就意味着更多的cpu周期消耗,</span><br><span class="line">				后台task被轮询的次数更频繁。此值过大意味着&quot;内存敏感&quot;性较差。</span><br><span class="line">				建议采用默认值</span><br><span class="line">aof-rewrite-incremental-fsync yes # aof rewrite过程中,是否采取增量文件同步策略</span><br><span class="line">				默认为“yes”。 rewrite过程中,每32M数据进行一次文件同步</span><br><span class="line">				这样可以减少aof大文件写入对磁盘的操作次数</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>Web</category>
+        <category>Redis</category>
       </categories>
       <tags>
-        <tag>Web</tag>
+        <tag>Redis</tag>
       </tags>
   </entry>
   <entry>
-    <title>Mac 修改 Dock 栏的隐藏速度</title>
-    <url>/mac-edit-dock-hidden-speed/</url>
-    <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
-<p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
-<h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
-<p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
+    <title>苹果官方鼠标移动速度慢问题解决(Magic Mouse)</title>
+    <url>/magic-mouse/</url>
+    <content><![CDATA[<h3 id="设置">设置<a title="#设置" href="#设置"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/626cad73239250f7c5d61401.png" alt="Magic Mouse" loading="lazy" class="φbp"></p>
+<p><strong>如果这里的调节到最大还是满足不了你</strong></p>
+<p><strong>我们可以通过终端查看到我们鼠标的设置：</strong></p>
+<p>读取当前的移动速度：<br>
+<code>defaults read -g com.apple.mouse.scaling</code></p>
+<p>默认可能是：<code>3</code> ， 我这里设置的：<code>7</code></p>
+<p><code>defaults write -g com.apple.mouse.scaling 7</code></p>
+<h3 id="重启电脑生效">重启电脑生效<a title="#重启电脑生效" href="#重启电脑生效"></a></h3>
 ]]></content>
       <categories>
         <category>Mac</category>
@@ -455,26 +487,6 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>苹果官方鼠标移动速度慢问题解决(Magic Mouse)</title>
-    <url>/magic-mouse/</url>
-    <content><![CDATA[<h3 id="设置">设置<a title="#设置" href="#设置"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/626cad73239250f7c5d61401.png" alt="Magic Mouse" loading="lazy" class="φbp"></p>
-<p><strong>如果这里的调节到最大还是满足不了你</strong></p>
-<p><strong>我们可以通过终端查看到我们鼠标的设置：</strong></p>
-<p>读取当前的移动速度：<br>
-<code>defaults read -g com.apple.mouse.scaling</code></p>
-<p>默认可能是：<code>3</code> ， 我这里设置的：<code>7</code></p>
-<p><code>defaults write -g com.apple.mouse.scaling 7</code></p>
-<h3 id="重启电脑生效">重启电脑生效<a title="#重启电脑生效" href="#重启电脑生效"></a></h3>
-]]></content>
-      <categories>
-        <category>Mac</category>
-      </categories>
-      <tags>
-        <tag>Mac</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>exo 网站初始化</title>
     <url>/hexo-web-site-inti/</url>
     <content><![CDATA[<p>第一步</p>
@@ -500,18 +512,6 @@ font-family: SlideTownsoul
       </categories>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Redis 配置文件说明</title>
-    <url>/redis-config-explan/</url>
-    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">################################## NETWORK #####################################</span><br><span class="line">bind 127.0.0.1			# 默认绑定本机所有ip地址 为了安全 可以只监听内网ip</span><br><span class="line">protected-mode yes		# 保护模式[无密码模式设置为no]</span><br><span class="line">port 6379 			# 默认端口</span><br><span class="line">tcp-backlog 511			# listen队列的长度</span><br><span class="line">timeout 0			# 客户端空闲多少s(秒)后踢掉 0禁止</span><br><span class="line">tcp-keepalive 300		# 检测挂掉的连接 单位s 0禁止</span><br><span class="line">################################# GENERAL #####################################</span><br><span class="line">daemonize no 			# 作为守护进程运行</span><br><span class="line">supervised no 			# 设成开机启动后 系统监控</span><br><span class="line">pidfile /var/run/redis_6379.pid # pid 位置</span><br><span class="line">loglevel notice 		# 设置服务端的日志级别，有下列几种选择</span><br><span class="line">				debug：记录详细信息，用于开发或调试</span><br><span class="line">				verbose：提供很多有用的信息，</span><br><span class="line">					但是又不像debug那么详尽，默认就是这一选项</span><br><span class="line">				notice：适度提醒，多用于产品环境</span><br><span class="line">				warning：仅显示重要的警告信息</span><br><span class="line">logfile &quot;&quot;			# 日志目录</span><br><span class="line">databases 16			# 指定数据库的数量</span><br><span class="line">################################ SNAPSHOTTING  ################################</span><br><span class="line">save 900 1			# 每900秒(15分钟)至少一次键值变更时被触发</span><br><span class="line">save 300 10			# 每300秒(5分钟)至少10次键值变更时被触发</span><br><span class="line">save 60 10000			# 每60秒至少10000次键值变更时被触发</span><br><span class="line">stop-writes-on-bgsave-error yes	# 后台存储错误停止写</span><br><span class="line">rdbcompression yes		# 存储至本地数据库时(持久化到rdb文件)是否压缩数据 默认为 yes</span><br><span class="line">rdbchecksum yes			# 读取和写入的时候是否支持CRC64校验 默认是开启的</span><br><span class="line">dbfilename dump.rdb 		# 镜像文件的名字</span><br><span class="line">dir ./ 				# 当前工作目录 配置文件和镜像文件等都在此目录下</span><br><span class="line">################################# REPLICATION #################################</span><br><span class="line">slave-serve-stale-data yes	# 当slave服务器和master服务器失去连接后，</span><br><span class="line">				或者当数据正在复制传输的时候，如果此参数值设置“yes”</span><br><span class="line">				slave服务器可以继续接受客户端的请求，</span><br><span class="line">				否则，会返回给请求的客户端如下信息</span><br><span class="line">				“SYNC with master in progress”</span><br><span class="line">slave-read-only yes		# 是否允许slave服务器节点只提供读服务</span><br><span class="line">repl-diskless-sync no 		# disk较慢，并且网络较快的时候，</span><br><span class="line">				可以用diskless。（默认用disk-based）</span><br><span class="line">repl-diskless-sync-delay 5	# 备份等待延迟时间 seconds</span><br><span class="line">repl-disable-tcp-nodelay no 	# 指定向slave同步数据时，是否禁用socket的NO_DELAY选 项。</span><br><span class="line">				若配置为“yes”，则禁用NO_DELAY，则TCP协议栈会合并小包统一发送，</span><br><span class="line">				这样可以减少主从节点间的包数量并节省带宽，但会增加数据同步到</span><br><span class="line">				slave的时间。若配置为“no”，表明启用NO_DELAY，则TCP协议栈不</span><br><span class="line">				会延迟小包的发送时机，这样数据同步的延时会减少，但需要更大的带宽。</span><br><span class="line">				通常情况下，应该配置为no以降低同步延时，</span><br><span class="line">				但在主从节点间网络负载已经很高的情况下，可以配置为yes</span><br><span class="line">slave-priority 100		# 指定slave的优先级。在不只1个slave存在的部署环境下，</span><br><span class="line">				当master宕机时，Redis Sentinel会将priority值最小的slave</span><br><span class="line">				提升为master需要注意的是，若该配置项为0，则对应的slave永远</span><br><span class="line">				不会自动提升为master</span><br><span class="line">############################## APPEND ONLY MODE ###############################</span><br><span class="line">appendonly no 			# 开启append only 模式之后，redis 会把所接收到的每一次写</span><br><span class="line">				操作请求都追加到appendonly.aof 文件中，当redis 重新启动时，</span><br><span class="line">				会从该文件恢复出之前的状态。但是这样会造成appendonly.aof </span><br><span class="line">				文件过大，所以redis 还支持了BGREWRITEAOF 指令，</span><br><span class="line">				对appendonly.aof 进行重新整理。默认是不开启的</span><br><span class="line">appendfilename &quot;appendonly.aof&quot;	# 默认为appendonly.aof</span><br><span class="line">appendfsync everysec		# 设置aof的同步频率，有三种选择</span><br><span class="line">				always、everysec、no，默认是everysec表示每秒同步一次</span><br><span class="line">no-appendfsync-on-rewrite no 	# 指定是否在后台aof文件rewrite期间调用fsync，</span><br><span class="line">				默认为no，表示要调用fsync（无论后台是否有子进程在刷盘）。</span><br><span class="line">				Redis在后台写RDB文件或重写afo文件期间会存在大量磁盘IO，</span><br><span class="line">				此时，在某些linux系统中，调用fsync可能会阻塞</span><br><span class="line">auto-aof-rewrite-percentage 100 # 指定Redis重写aof文件的条件，默认为100，</span><br><span class="line">				表示与上次rewrite的aof文件大小相比，当前aof文件增长量超过上</span><br><span class="line">				次afo文件大小的100%时，就会触发background rewrite。</span><br><span class="line">				若配置为0，则会禁用自动rewrite</span><br><span class="line">auto-aof-rewrite-min-size 64mb 	# 指定触发rewrite的aof文件大小。</span><br><span class="line">				若aof文件小于该值，即使当前文件的增量比例达到</span><br><span class="line">				auto-aof-rewrite-percentage的配置值，也不会触发自动</span><br><span class="line">				rewrite。即这两个配置项同时满足时，才会触发rewrite</span><br><span class="line">aof-load-truncated yes 		# 会自动发布一个log给客户端然后load（默认）</span><br><span class="line">				如果是no，用户必须手动redis-check-aof修复AOF文件才可以</span><br><span class="line">################################ LUA SCRIPTING  ###############################</span><br><span class="line">lua-time-limit 5000 		# 一个Lua脚本最长的执行时间，单位为毫秒</span><br><span class="line">				如果为0或负数表示无限执行时间，默认为5000</span><br><span class="line">################################## SLOW LOG ###################################</span><br><span class="line">slowlog-log-slower-than 10000 	# 设定执行时间，单位是微秒，执行时长超过该时间</span><br><span class="line">				的命令将会被记入log。-1表示不记录slow log; 0强制记录所有命令</span><br><span class="line">slowlog-max-len 128 		# 最多保存 128 条日志</span><br><span class="line">################################ LATENCY MONITOR ##############################</span><br><span class="line">latency-monitor-threshold 0	# 用LATENCY打印redis实例在跑命令时的耗时图表</span><br><span class="line">				只记录大于等于下边设置的值的操作。0的话，就是关闭监视。</span><br><span class="line">				可以动态开启</span><br><span class="line">############################# EVENT NOTIFICATION ##############################</span><br><span class="line">notify-keyspace-events &quot;&quot; 	# 如果开着开关。一个client进行了DEL操作在“foo”key</span><br><span class="line">				上在database0上。两个消息将会发布通过 </span><br><span class="line">				pub/sub默认所用的通知被禁用，因为用户通常不需要改特性</span><br><span class="line">				并且该特性会有性能损耗</span><br><span class="line">############################### ADVANCED CONFIG ###############################</span><br><span class="line">hash-max-ziplist-entries 512 	# hash类型的数据结构在编码上可以使用</span><br><span class="line">				ziplist和hashtable。ziplist的特点就是文件存储(以及内存存储)</span><br><span class="line">				所需的空间较小,在内容较小时,性能和hashtable几乎一样.因此redis</span><br><span class="line">				对hash类型默认采取ziplist。如果hash中条目的条目个数或者value</span><br><span class="line">				长度达到阀值,将会被重构为hashtable</span><br><span class="line">				这个参数指的是ziplist中允许存储的最大条目个数</span><br><span class="line">				默认为512，建议为128</span><br><span class="line">hash-max-ziplist-value 64	# ziplist中允许条目value值最大字节数，默认为64，建议为1024</span><br><span class="line">list-max-ziplist-size -2 	# 对于list类型,将会采取ziplist,linkedlist两种编码类型</span><br><span class="line">list-compress-depth 0		# 表示一个quicklist两端不被压缩的节点个数。</span><br><span class="line">				注：这里的节点个数是指quicklist双向链表的节点个数，</span><br><span class="line">				而不是指ziplist里面的数据项个数。实际上，一个</span><br><span class="line">				quicklist节点上的ziplist，如果被压缩，就是整体被压缩的</span><br><span class="line">				参数list-compress-depth的取值含义如下：</span><br><span class="line">				0: 是个特殊值，表示都不压缩。这是Redis的默认值。</span><br><span class="line">				1: 表示quicklist两端各有1个节点不压缩，中间的节点压缩。</span><br><span class="line">				2: 表示quicklist两端各有2个节点不压缩，中间的节点压缩。</span><br><span class="line">				3: 表示quicklist两端各有3个节点不压缩，中间的节点压缩。</span><br><span class="line">				依此类推</span><br><span class="line">				由于0是个特殊值，很容易看出quicklist的头节点和</span><br><span class="line">				尾节点总是不被压缩的，以便于在表的两端进行快速存取</span><br><span class="line">set-max-intset-entries 512 	# 当set类型中的数据都是数值类型，</span><br><span class="line">				并且set中整型元素的数量不超过指定值时，使用特殊的编码方式</span><br><span class="line">zset-max-ziplist-entries 128 	# 与hash和list类似 </span><br><span class="line">zset-max-ziplist-value 64 	# zsort也采用如下的配置来选择是否进行特殊编码来节省空间</span><br><span class="line">hll-sparse-max-bytes 3000 	# 这个限制包含了16个字节的头部，当一个HyperLogLog</span><br><span class="line">				使用sparse representation 超过了这个显示，它就会转换到</span><br><span class="line">				dense representation上</span><br><span class="line">activerehashing yes 		# 用来控制是否自动重建hash。Active rehashing每100微秒</span><br><span class="line">				使用1微秒cpu时间排序，以重组Redis的hash表。重建是通过一种</span><br><span class="line">				lazy方式，写入hash表的操作越多，需要执行rehashing的步骤</span><br><span class="line">				也越多，如果服务器当前空闲，那么rehashing操作会一直执行。</span><br><span class="line">				如果对实时性要求较高，难以接受redis时不时出现的2微秒的延迟，</span><br><span class="line">				则可以设置activerehashing为no，</span><br><span class="line">				否则建议设置为yes，以节省内存空间</span><br><span class="line">client-output-buffer-limit normal 0 0 0</span><br><span class="line">client-output-buffer-limit slave 256mb 64mb 60</span><br><span class="line">client-output-buffer-limit pubsub 32mb 8mb 60</span><br><span class="line">客户端buffer控制。在客户端与server进行的交互中,每个连接都会与一个buffer关联,</span><br><span class="line">此buffer用来队列化等待被client接受的响应信息。如果client不能及时的消费响应信息,</span><br><span class="line">那么buffer将会被不断积压而给server带来内存压力.如果buffer中积压的数据达到阀值,</span><br><span class="line">将会导致连接被关闭,buffer被移除。</span><br><span class="line">buffer控制类型包括:normal -&gt; 普通连接；slave -&gt;与slave之间的连接；</span><br><span class="line">pubsub -&gt;pub/sub类型连接，此类型的连接，往往会产生此种问题;</span><br><span class="line">因为pub端会密集的发布消息,但是sub端可能消费不足.</span><br><span class="line">指令格式:client-output-buffer-limit &lt;class&gt; &lt;hard&gt; &lt;soft&gt; &lt;seconds&gt;&quot;,</span><br><span class="line">其中hard表示buffer最大值,一旦达到阀值将立即关闭连接;</span><br><span class="line">soft表示&quot;容忍值&quot;,它和seconds配合,如果buffer值超过soft且持续时间达到了seconds,</span><br><span class="line">也将立即关闭连接,如果超过了soft但是在seconds之后，buffer数据小于了soft,连接将会被保留.</span><br><span class="line">其中hard和soft都设置为0,则表示禁用buffer控制.通常hard值大于soft</span><br><span class="line">hz 10  				# Redis server执行后台任务的频率,默认为10,</span><br><span class="line">				此值越大表示redis对&quot;间歇性task&quot;的执行次数越频繁(次数/秒)。</span><br><span class="line">				&quot;间歇性task&quot;包括&quot;过期集合&quot;检测、关闭&quot;空闲超时&quot;的连接等,此</span><br><span class="line">				值必须大于0且小于500。此值过小就意味着更多的cpu周期消耗,</span><br><span class="line">				后台task被轮询的次数更频繁。此值过大意味着&quot;内存敏感&quot;性较差。</span><br><span class="line">				建议采用默认值</span><br><span class="line">aof-rewrite-incremental-fsync yes # aof rewrite过程中,是否采取增量文件同步策略</span><br><span class="line">				默认为“yes”。 rewrite过程中,每32M数据进行一次文件同步</span><br><span class="line">				这样可以减少aof大文件写入对磁盘的操作次数</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Redis</category>
-      </categories>
-      <tags>
-        <tag>Redis</tag>
       </tags>
   </entry>
   <entry>
@@ -577,29 +577,6 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>离线下载安装 Windows商店(Microsoft Store) 应用</title>
-    <url>/Microsoft-Store/</url>
-    <content><![CDATA[<h3 id="复制链接">复制链接<a title="#复制链接" href="#复制链接"></a></h3>
-<p>以：Windows 相机 应用举例</p>
-<p><code>https://www.microsoft.com/zh-cn/p/camara-de-windows/9wzdncrfjbbg?activetab=pivot:overviewtab</code></p>
-<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
-<p><code>https://store.rg-adguard.net/</code></p>
-<ul>
-<li>粘贴链接到输入框</li>
-<li>找到以 <code>AppxBundle</code> 结尾的</li>
-<li>点击下载安装</li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/627886ca09475431290fb21e.png" alt="离线安装 Windows 商店(Microsoft-Store)应用-AppxBundle" loading="lazy" class="φbp"></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-        <category>Microsoft Store</category>
-      </categories>
-      <tags>
-        <tag>Microsoft Store</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PowerToys-微软的一款开源电脑工具箱软件</title>
     <url>/PowerToys/</url>
     <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
@@ -614,6 +591,37 @@ font-family: SlideTownsoul
       </categories>
       <tags>
         <tag>PowerToys</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows CMD 查看端口占用情况列表 关闭指定端口命令</title>
+    <url>/Windows-CMD-Task/</url>
+    <content><![CDATA[<h3 id="查看所有端口运行状态">查看所有端口运行状态<a title="#查看所有端口运行状态" href="#查看所有端口运行状态"></a></h3>
+<ul>
+<li><code>C:\&gt;netstat -ano</code></li>
+</ul>
+<blockquote>
+<p>查看端口<br>
+-a 显示所有连接和侦听端口<br>
+-n 以数字形式显示地址和端口号<br>
+-o 显示拥有的与每个连接关联的进程 ID</p>
+</blockquote>
+<h3 id="查找指定端口命令">查找指定端口命令<a title="#查找指定端口命令" href="#查找指定端口命令"></a></h3>
+<ul>
+<li><code>C:\&gt;netstat -aon | findstr &quot;4000&quot;</code></li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;netstat -aon | findstr <span class="string">&quot;4000&quot;</span></span><br><span class="line">  TCP    0.0.0.0:4000           0.0.0.0:0              LISTENING       12992</span><br><span class="line">  TCP    [::]:4000              [::]:0                 LISTENING       12992</span><br></pre></td></tr></table></figure>
+<h3 id="查看pid对应的进程">查看PID对应的进程<a title="#查看pid对应的进程" href="#查看pid对应的进程"></a></h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;tasklist | findstr <span class="string">&quot;12992&quot;</span></span><br><span class="line">node.exe                     12992 Console                    1     69,904 K</span><br></pre></td></tr></table></figure>
+<h3 id="关闭进程">关闭进程<a title="#关闭进程" href="#关闭进程"></a></h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;taskkill /f /pid 12992</span><br><span class="line">成功: 已终止 PID 为 12992 的进程。</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;taskkill /f /t /im node.exe</span><br><span class="line">成功: 已终止 PID 18744 (属于 PID 18672 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 3668 (属于 PID 18672 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 18672 (属于 PID 18628 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 28244 (属于 PID 30244 子进程)的进程。</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -649,45 +657,207 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>Chrome 插件</title>
-    <url>/Chrome-Plugins/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1/3vktqVh5BUBKFNFQ5Zk+XjkiJweh5Ske+TTO+0jsv7eKDdbC4MAQc</is-cipher>]]></content>
+    <title>离线下载安装 Windows商店(Microsoft Store) 应用</title>
+    <url>/Microsoft-Store/</url>
+    <content><![CDATA[<h3 id="复制链接">复制链接<a title="#复制链接" href="#复制链接"></a></h3>
+<p>以：Windows 相机 应用举例</p>
+<p><code>https://www.microsoft.com/zh-cn/p/camara-de-windows/9wzdncrfjbbg?activetab=pivot:overviewtab</code></p>
+<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
+<p><code>https://store.rg-adguard.net/</code></p>
+<ul>
+<li>粘贴链接到输入框</li>
+<li>找到以 <code>AppxBundle</code> 结尾的</li>
+<li>点击下载安装</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/627886ca09475431290fb21e.png" alt="离线安装 Windows 商店(Microsoft-Store)应用-AppxBundle" loading="lazy" class="φbp"></p>
+]]></content>
       <categories>
-        <category>Chrome</category>
+        <category>软件</category>
+        <category>Microsoft Store</category>
       </categories>
       <tags>
-        <tag>Chrome Plugins</tag>
+        <tag>Microsoft Store</tag>
       </tags>
   </entry>
   <entry>
-    <title>Windows CMD 查看端口占用情况列表 关闭指定端口命令</title>
-    <url>/Windows-CMD-Task/</url>
-    <content><![CDATA[<h3 id="查看所有端口运行状态">查看所有端口运行状态<a title="#查看所有端口运行状态" href="#查看所有端口运行状态"></a></h3>
-<ul>
-<li><code>C:\&gt;netstat -ano</code></li>
-</ul>
-<blockquote>
-<p>查看端口<br>
--a 显示所有连接和侦听端口<br>
--n 以数字形式显示地址和端口号<br>
--o 显示拥有的与每个连接关联的进程 ID</p>
+    <title>Linux 计划任务 CronTab</title>
+    <url>/linux-crontab/</url>
+    <content><![CDATA[<blockquote>
+<p>CronTab 的语法</p>
+<p>* * * * * date &gt;&gt; /tmp/date.txt</p>
 </blockquote>
-<h3 id="查找指定端口命令">查找指定端口命令<a title="#查找指定端口命令" href="#查找指定端口命令"></a></h3>
-<ul>
-<li><code>C:\&gt;netstat -aon | findstr &quot;4000&quot;</code></li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;netstat -aon | findstr <span class="string">&quot;4000&quot;</span></span><br><span class="line">  TCP    0.0.0.0:4000           0.0.0.0:0              LISTENING       12992</span><br><span class="line">  TCP    [::]:4000              [::]:0                 LISTENING       12992</span><br></pre></td></tr></table></figure>
-<h3 id="查看pid对应的进程">查看PID对应的进程<a title="#查看pid对应的进程" href="#查看pid对应的进程"></a></h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;tasklist | findstr <span class="string">&quot;12992&quot;</span></span><br><span class="line">node.exe                     12992 Console                    1     69,904 K</span><br></pre></td></tr></table></figure>
-<h3 id="关闭进程">关闭进程<a title="#关闭进程" href="#关闭进程"></a></h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;taskkill /f /pid 12992</span><br><span class="line">成功: 已终止 PID 为 12992 的进程。</span><br></pre></td></tr></table></figure>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;taskkill /f /t /im node.exe</span><br><span class="line">成功: 已终止 PID 18744 (属于 PID 18672 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 3668 (属于 PID 18672 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 18672 (属于 PID 18628 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 28244 (属于 PID 30244 子进程)的进程。</span><br></pre></td></tr></table></figure>
+<div class="φbq"><div class="φbs"><table><thead>
+<tr>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">date &gt;&gt; /tmp/date.txt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">分钟</td>
+<td style="text-align:center">小时</td>
+<td style="text-align:center">几号</td>
+<td style="text-align:center">几月</td>
+<td style="text-align:center">星期</td>
+<td style="text-align:center">需要执行的命令</td>
+</tr>
+</tbody>
+</table></div></div><p><img src="https://pic.imgdb.cn/item/626cf1db239250f7c57d0a84.png" alt="Linux 计划任务 CronTab" loading="lazy" class="φbp"></p>
+<h2 id="案例">案例<a title="#案例" href="#案例"></a></h2>
+<h3 id="每一小时">每一小时<a title="#每一小时" href="#每一小时"></a></h3>
+<p><code>* */1 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每小时执行/etc/cron.hourly目录内的脚本">每小时执行/etc/cron.hourly目录内的脚本<a title="#每小时执行/etc/cron.hourly目录内的脚本" href="#每小时执行/etc/cron.hourly目录内的脚本"></a></h3>
+<p><code>01 * * * * root run-parts /etc/cron.hourly</code></p>
+<h3 id="每小时的第3和第15分钟执行">每小时的第3和第15分钟执行<a title="#每小时的第3和第15分钟执行" href="#每小时的第3和第15分钟执行"></a></h3>
+<p><code>3,15 * * * * /service/l-zm/request.sh</code></p>
+<h3 id="在上午8点到11点的第3和第15分钟执行">在上午8点到11点的第3和第15分钟执行<a title="#在上午8点到11点的第3和第15分钟执行" href="#在上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每隔两天的上午8点到11点的第3和第15分钟执行">每隔两天的上午8点到11点的第3和第15分钟执行<a title="#每隔两天的上午8点到11点的第3和第15分钟执行" href="#每隔两天的上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 */2 * * date &gt;&gt; /tmp/date.txt</code></p>
+<h3 id="每个星期一的上午8点到11点的第3和第15分钟执行">每个星期一的上午8点到11点的第3和第15分钟执行<a title="#每个星期一的上午8点到11点的第3和第15分钟执行" href="#每个星期一的上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 * * 1 date &gt;&gt; /tmp/date.txt</code></p>
+<h3 id="每晚的21:30">每晚的21:30<a title="#每晚的21:30" href="#每晚的21:30"></a></h3>
+<p><code>30 21 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每月1、10、22日的4-:-45">每月1、10、22日的4 : 45<a title="#每月1、10、22日的4-:-45" href="#每月1、10、22日的4-:-45"></a></h3>
+<p><code>45 4 1,10,22 * * /service/l-zm/request.sh</code></p>
+<h3 id="每周六、周日的1-:-10">每周六、周日的1 : 10<a title="#每周六、周日的1-:-10" href="#每周六、周日的1-:-10"></a></h3>
+<p><code>10 1 * * 6,0 /service/l-zm/request.sh</code></p>
+<h3 id="每天18-:-00至23-:-00之间每隔30分钟">每天18 : 00至23 : 00之间每隔30分钟<a title="#每天18-:-00至23-:-00之间每隔30分钟" href="#每天18-:-00至23-:-00之间每隔30分钟"></a></h3>
+<p><code>0,30 18-23 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每星期六的晚上11-:-00-pm">每星期六的晚上11 : 00 pm<a title="#每星期六的晚上11-:-00-pm" href="#每星期六的晚上11-:-00-pm"></a></h3>
+<p><code>0 23 * * 6 /service/l-zm/request.sh</code></p>
+<h3 id="晚上11点到早上7点之间，每隔一小时">晚上11点到早上7点之间，每隔一小时<a title="#晚上11点到早上7点之间，每隔一小时" href="#晚上11点到早上7点之间，每隔一小时"></a></h3>
+<p><code>* 23-7/1 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每月的4号与每周一到周三的11点">每月的4号与每周一到周三的11点<a title="#每月的4号与每周一到周三的11点" href="#每月的4号与每周一到周三的11点"></a></h3>
+<p><code>0 11 4 * mon-wed /service/l-zm/request.sh</code></p>
+<h3 id="一月一号的4点">一月一号的4点<a title="#一月一号的4点" href="#一月一号的4点"></a></h3>
+<p><code>0 4 1 jan * /service/l-zm/request.sh</code></p>
+<h3 id="每秒执行一次">每秒执行一次<a title="#每秒执行一次" href="#每秒执行一次"></a></h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">*/1 * * * * <span class="built_in">sleep</span> 0s;<span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 1s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 2s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 3s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 4s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 5s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 6s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 7s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 8s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 9s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 10s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 11s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 12s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 13s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 14s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 15s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 16s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 17s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 18s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 19s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 20s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 21s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 22s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 23s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 24s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 25s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 26s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 27s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 28s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 29s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 30s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 31s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 32s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 33s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 34s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 35s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 36s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 37s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 38s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 39s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 40s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 41s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 42s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 43s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 44s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 45s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 46s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 47s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 48s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 49s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 50s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 51s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 52s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 53s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 54s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 55s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 56s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 57s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 58s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 59s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line"></span><br><span class="line">如果每秒没有循环连续 可以试试把 <span class="built_in">sleep</span> 0s 删除, 在最后添加 <span class="built_in">sleep</span> 60s (CentOS 和 Ubuntu 下不一样)</span><br></pre></td></tr></table></figure>
+<h2 id="crontab-使用与解释">CronTab 使用与解释<a title="#crontab-使用与解释" href="#crontab-使用与解释"></a></h2>
+<p><code>crontab -l</code> 查看所有的计划任务</p>
+<p><code>crontab -e</code> 修改计划任务</p>
+<p><code>service crond start</code> 启动计划任务</p>
+<p><code>service crond restart</code> 重启计划任务</p>
+<p><code>service crond reload</code> 重新载入计划任务</p>
 ]]></content>
       <categories>
-        <category>Windows</category>
+        <category>Linux</category>
+        <category>CronTab</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
+        <tag>Linux</tag>
+        <tag>CronTab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IntelliJ IDEA 插件</title>
+    <url>/IntelliJ-IDEA-Plugins/</url>
+    <content><![CDATA[<h3 id="free-mybatis-plugin">Free MyBatis plugin<a title="#free-mybatis-plugin" href="#free-mybatis-plugin"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/6279cab909475431291d2971.png" alt="Free MyBatis plugin" loading="lazy" class="φbp"></p>
+<ul>
+<li>Git地址：<a href="https://github.com/chuntungho/free-mybatis-plugin">https://github.com/chuntungho/free-mybatis-plugin</a></li>
+</ul>
+<p>主要功能：</p>
+<ol>
+<li>生成mapper xml文件</li>
+<li>快速从代码跳转到mapper及从mapper返回代码</li>
+<li>mybatis自动补全及语法错误提示</li>
+<li>集成mybatis generator gui界面</li>
+<li>根据数据库注解，生成swagger model注解</li>
+</ol>
+]]></content>
+      <categories>
+        <category>IntelliJ IDEA</category>
+      </categories>
+      <tags>
+        <tag>IntelliJ IDEA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多线程</title>
+    <url>/Thread/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Thread</category>
+      </categories>
+      <tags>
+        <tag>Thread</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL 开源的数据快速回滚工具(闪回) - binlog2sql</title>
+    <url>/mysql-binlog2sql/</url>
+    <content><![CDATA[<h2 id="binlog2sql-介绍">binlog2sql 介绍<a title="#binlog2sql-介绍" href="#binlog2sql-介绍"></a></h2>
+<p>从MySQL binlog解析出你要的SQL。根据不同选项，你可以得到原始SQL、回滚SQL、去除主键的INSERT SQL等。</p>
+<p>GitHub 地址：<code>https://github.com/danfengcao/binlog2sql</code></p>
+<h2 id="安装">安装<a title="#安装" href="#安装"></a></h2>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 安装Git</span></span><br><span class="line">yum install -y git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 pip 工具</span></span><br><span class="line">yum install -y epel-release</span><br><span class="line"></span><br><span class="line">yum install -y python-pip</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载 安装binlog2sql</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/danfengcao/binlog2sql.git &amp;&amp; <span class="built_in">cd</span> binlog2sql</span><br><span class="line"></span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>那些好看的页面效果</title>
+    <url>/good-html/</url>
+    <content><![CDATA[<ol>
+<li>
+<p><a href="/html/hover-style-slider.html?_blank">悬停效果的滑块(全屏)</a></p>
+</li>
+<li>
+<p><a href="/html/snowflake-animation.html?_blank">CSS雪花动画</a></p>
+</li>
+<li>
+<p><a href="/html/css-slider-font.html?_blank">CSS 滚动文字</a></p>
+</li>
+<li>
+<p><a href="/html/css-picture-accordion.html">CSS 实现横向图片手风琴样式图像库</a></p>
+</li>
+<li>
+<p><a href="/html/css-color.html">CSS 调色板 色彩库</a></p>
+</li>
+<li>
+<p><a href="/html/css-typing-animation.html">CSS 打字输出动画</a></p>
+</li>
+<li>
+<p><a href="/html/css-icon-android-ios.html">CSS 图标 iOS Android</a></p>
+</li>
+<li>
+<p><a href="/html/css3-loading-animations.html">CSS3 Loading animations</a></p>
+</li>
+<li>
+<p><a href="/html/flip-clock.html">翻页时钟</a></p>
+</li>
+<li>
+<p><a href="/html/vision-intelligent-cards.html">视觉智能卡-跟随鼠标</a></p>
+</li>
+<li>
+<p><a href="/html/tilt-style.html">倾斜效果</a></p>
+</li>
+<li>
+<p><a href="/html/symbol-arrow.html">箭头符号 箭头特殊符号大全</a></p>
+</li>
+<li>
+<p><a href="/html/symbol-serial-number.html">编号 序号 特殊符号大全</a></p>
+</li>
+<li>
+<p><a href="/html/symbol-stars.html">星星符号 特殊符号大全</a></p>
+</li>
+</ol>
+<!-- https://www.jq22.com/daima400 -->]]></content>
+      <categories>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
@@ -824,181 +994,6 @@ main {
       </tags>
   </entry>
   <entry>
-    <title>IntelliJ IDEA 插件</title>
-    <url>/IntelliJ-IDEA-Plugins/</url>
-    <content><![CDATA[<h3 id="free-mybatis-plugin">Free MyBatis plugin<a title="#free-mybatis-plugin" href="#free-mybatis-plugin"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/6279cab909475431291d2971.png" alt="Free MyBatis plugin" loading="lazy" class="φbp"></p>
-<ul>
-<li>Git地址：<a href="https://github.com/chuntungho/free-mybatis-plugin">https://github.com/chuntungho/free-mybatis-plugin</a></li>
-</ul>
-<p>主要功能：</p>
-<ol>
-<li>生成mapper xml文件</li>
-<li>快速从代码跳转到mapper及从mapper返回代码</li>
-<li>mybatis自动补全及语法错误提示</li>
-<li>集成mybatis generator gui界面</li>
-<li>根据数据库注解，生成swagger model注解</li>
-</ol>
-]]></content>
-      <categories>
-        <category>IntelliJ IDEA</category>
-      </categories>
-      <tags>
-        <tag>IntelliJ IDEA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>那些好看的页面效果</title>
-    <url>/good-html/</url>
-    <content><![CDATA[<ol>
-<li>
-<p><a href="/html/hover-style-slider.html?_blank">悬停效果的滑块(全屏)</a></p>
-</li>
-<li>
-<p><a href="/html/snowflake-animation.html?_blank">CSS雪花动画</a></p>
-</li>
-<li>
-<p><a href="/html/css-slider-font.html?_blank">CSS 滚动文字</a></p>
-</li>
-<li>
-<p><a href="/html/css-picture-accordion.html">CSS 实现横向图片手风琴样式图像库</a></p>
-</li>
-<li>
-<p><a href="/html/css-color.html">CSS 调色板 色彩库</a></p>
-</li>
-<li>
-<p><a href="/html/css-typing-animation.html">CSS 打字输出动画</a></p>
-</li>
-<li>
-<p><a href="/html/css-icon-android-ios.html">CSS 图标 iOS Android</a></p>
-</li>
-<li>
-<p><a href="/html/css3-loading-animations.html">CSS3 Loading animations</a></p>
-</li>
-<li>
-<p><a href="/html/flip-clock.html">翻页时钟</a></p>
-</li>
-<li>
-<p><a href="/html/vision-intelligent-cards.html">视觉智能卡-跟随鼠标</a></p>
-</li>
-<li>
-<p><a href="/html/tilt-style.html">倾斜效果</a></p>
-</li>
-<li>
-<p><a href="/html/symbol-arrow.html">箭头符号 箭头特殊符号大全</a></p>
-</li>
-</ol>
-<!-- https://www.jq22.com/daima400 -->]]></content>
-      <categories>
-        <category>HTML</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>多线程</title>
-    <url>/Thread/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Thread</category>
-      </categories>
-      <tags>
-        <tag>Thread</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL 开源的数据快速回滚工具(闪回) - binlog2sql</title>
-    <url>/mysql-binlog2sql/</url>
-    <content><![CDATA[<h2 id="binlog2sql-介绍">binlog2sql 介绍<a title="#binlog2sql-介绍" href="#binlog2sql-介绍"></a></h2>
-<p>从MySQL binlog解析出你要的SQL。根据不同选项，你可以得到原始SQL、回滚SQL、去除主键的INSERT SQL等。</p>
-<p>GitHub 地址：<code>https://github.com/danfengcao/binlog2sql</code></p>
-<h2 id="安装">安装<a title="#安装" href="#安装"></a></h2>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 安装Git</span></span><br><span class="line">yum install -y git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 pip 工具</span></span><br><span class="line">yum install -y epel-release</span><br><span class="line"></span><br><span class="line">yum install -y python-pip</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载 安装binlog2sql</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/danfengcao/binlog2sql.git &amp;&amp; <span class="built_in">cd</span> binlog2sql</span><br><span class="line"></span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux 计划任务 CronTab</title>
-    <url>/linux-crontab/</url>
-    <content><![CDATA[<blockquote>
-<p>CronTab 的语法</p>
-<p>* * * * * date &gt;&gt; /tmp/date.txt</p>
-</blockquote>
-<div class="φbq"><div class="φbs"><table><thead>
-<tr>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">date &gt;&gt; /tmp/date.txt</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">分钟</td>
-<td style="text-align:center">小时</td>
-<td style="text-align:center">几号</td>
-<td style="text-align:center">几月</td>
-<td style="text-align:center">星期</td>
-<td style="text-align:center">需要执行的命令</td>
-</tr>
-</tbody>
-</table></div></div><p><img src="https://pic.imgdb.cn/item/626cf1db239250f7c57d0a84.png" alt="Linux 计划任务 CronTab" loading="lazy" class="φbp"></p>
-<h2 id="案例">案例<a title="#案例" href="#案例"></a></h2>
-<h3 id="每一小时">每一小时<a title="#每一小时" href="#每一小时"></a></h3>
-<p><code>* */1 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每小时执行/etc/cron.hourly目录内的脚本">每小时执行/etc/cron.hourly目录内的脚本<a title="#每小时执行/etc/cron.hourly目录内的脚本" href="#每小时执行/etc/cron.hourly目录内的脚本"></a></h3>
-<p><code>01 * * * * root run-parts /etc/cron.hourly</code></p>
-<h3 id="每小时的第3和第15分钟执行">每小时的第3和第15分钟执行<a title="#每小时的第3和第15分钟执行" href="#每小时的第3和第15分钟执行"></a></h3>
-<p><code>3,15 * * * * /service/l-zm/request.sh</code></p>
-<h3 id="在上午8点到11点的第3和第15分钟执行">在上午8点到11点的第3和第15分钟执行<a title="#在上午8点到11点的第3和第15分钟执行" href="#在上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每隔两天的上午8点到11点的第3和第15分钟执行">每隔两天的上午8点到11点的第3和第15分钟执行<a title="#每隔两天的上午8点到11点的第3和第15分钟执行" href="#每隔两天的上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 */2 * * date &gt;&gt; /tmp/date.txt</code></p>
-<h3 id="每个星期一的上午8点到11点的第3和第15分钟执行">每个星期一的上午8点到11点的第3和第15分钟执行<a title="#每个星期一的上午8点到11点的第3和第15分钟执行" href="#每个星期一的上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 * * 1 date &gt;&gt; /tmp/date.txt</code></p>
-<h3 id="每晚的21:30">每晚的21:30<a title="#每晚的21:30" href="#每晚的21:30"></a></h3>
-<p><code>30 21 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每月1、10、22日的4-:-45">每月1、10、22日的4 : 45<a title="#每月1、10、22日的4-:-45" href="#每月1、10、22日的4-:-45"></a></h3>
-<p><code>45 4 1,10,22 * * /service/l-zm/request.sh</code></p>
-<h3 id="每周六、周日的1-:-10">每周六、周日的1 : 10<a title="#每周六、周日的1-:-10" href="#每周六、周日的1-:-10"></a></h3>
-<p><code>10 1 * * 6,0 /service/l-zm/request.sh</code></p>
-<h3 id="每天18-:-00至23-:-00之间每隔30分钟">每天18 : 00至23 : 00之间每隔30分钟<a title="#每天18-:-00至23-:-00之间每隔30分钟" href="#每天18-:-00至23-:-00之间每隔30分钟"></a></h3>
-<p><code>0,30 18-23 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每星期六的晚上11-:-00-pm">每星期六的晚上11 : 00 pm<a title="#每星期六的晚上11-:-00-pm" href="#每星期六的晚上11-:-00-pm"></a></h3>
-<p><code>0 23 * * 6 /service/l-zm/request.sh</code></p>
-<h3 id="晚上11点到早上7点之间，每隔一小时">晚上11点到早上7点之间，每隔一小时<a title="#晚上11点到早上7点之间，每隔一小时" href="#晚上11点到早上7点之间，每隔一小时"></a></h3>
-<p><code>* 23-7/1 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每月的4号与每周一到周三的11点">每月的4号与每周一到周三的11点<a title="#每月的4号与每周一到周三的11点" href="#每月的4号与每周一到周三的11点"></a></h3>
-<p><code>0 11 4 * mon-wed /service/l-zm/request.sh</code></p>
-<h3 id="一月一号的4点">一月一号的4点<a title="#一月一号的4点" href="#一月一号的4点"></a></h3>
-<p><code>0 4 1 jan * /service/l-zm/request.sh</code></p>
-<h3 id="每秒执行一次">每秒执行一次<a title="#每秒执行一次" href="#每秒执行一次"></a></h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">*/1 * * * * <span class="built_in">sleep</span> 0s;<span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 1s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 2s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 3s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 4s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 5s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 6s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 7s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 8s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 9s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 10s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 11s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 12s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 13s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 14s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 15s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 16s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 17s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 18s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 19s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 20s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 21s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 22s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 23s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 24s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 25s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 26s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 27s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 28s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 29s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 30s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 31s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 32s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 33s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 34s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 35s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 36s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 37s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 38s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 39s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 40s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 41s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 42s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 43s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 44s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 45s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 46s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 47s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 48s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 49s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 50s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 51s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 52s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 53s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 54s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 55s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 56s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 57s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 58s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 59s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line"></span><br><span class="line">如果每秒没有循环连续 可以试试把 <span class="built_in">sleep</span> 0s 删除, 在最后添加 <span class="built_in">sleep</span> 60s (CentOS 和 Ubuntu 下不一样)</span><br></pre></td></tr></table></figure>
-<h2 id="crontab-使用与解释">CronTab 使用与解释<a title="#crontab-使用与解释" href="#crontab-使用与解释"></a></h2>
-<p><code>crontab -l</code> 查看所有的计划任务</p>
-<p><code>crontab -e</code> 修改计划任务</p>
-<p><code>service crond start</code> 启动计划任务</p>
-<p><code>service crond restart</code> 重启计划任务</p>
-<p><code>service crond reload</code> 重新载入计划任务</p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-        <category>CronTab</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>CronTab</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java 23种设计模式 说明</title>
     <url>/Design-Pattern/</url>
     <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62878e6e09475431296d65c4.png" alt="Java 23种设计模式关系" loading="lazy" class="φbp"></p>
@@ -1019,48 +1014,14 @@ main {
       </tags>
   </entry>
   <entry>
-    <title>Java 23种设计模式之行为型模式「策略模式」Strategy Pattern</title>
-    <url>/Strategy-Pattern/</url>
-    <content><![CDATA[<h2 id="策略模式---strategy-pattern">策略模式 - Strategy Pattern<a title="#策略模式---strategy-pattern" href="#策略模式---strategy-pattern"></a></h2>
-<p>在策略模式（Strategy Pattern）中，一个类的行为或其算法可以在运行时更改。这种类型的设计模式属于行为型模式。</p>
-<p>在策略模式中，我们创建表示各种策略的对象和一个行为随着策略对象改变而改变的<code>context</code>对象。策略对象改变<code>context</code>对象的执行算法。</p>
-<p><strong>定义:</strong> 定义一系列的算法, 把它们一个个封装起来, 并且使它们可相互替换.<br>
-<strong>主要解决:</strong> 在有多种算法相似的情况下, 使用 <code>if...else</code> 所带来的复杂和难以维护.<br>
-<strong>何时使用:</strong> 一个系统有许多许多类, 而区分它们的只是他们直接的行为.<br>
-<strong>如何解决:</strong> 将这些算法封装成一个一个的类, 任意地替换.<br>
-<strong>关键代码:</strong> 实现同一个接口.</p>
-<p><strong>应用实例:</strong></p>
-<ul>
-<li>诸葛亮的锦囊妙计, 每一个锦囊就是一个策略.</li>
-<li>旅行的出游方式, 选择骑自行车、坐汽车, 每一种旅行方式都是一个策略.</li>
-<li>JAVA AWT 中的 LayoutManager.</li>
-</ul>
-<p><strong>优点:</strong></p>
-<ul>
-<li>算法可以自由切换。</li>
-<li>避免使用多重条件判断。</li>
-<li>扩展性良好。</li>
-</ul>
-<p><strong>缺点:</strong></p>
-<ul>
-<li>策略类会增多。</li>
-<li>所有策略类都需要对外暴露。</li>
-</ul>
-<p><strong>使用场景:</strong></p>
-<ul>
-<li>如果在一个系统里面有许多类，它们之间的区别仅在于它们的行为，那么使用策略模式可以动态地让一个对象在许多行为中选择一种行为。</li>
-<li>2、一个系统需要动态地在几种算法中选择一种。</li>
-<li>3、如果一个对象有很多的行为，如果不用恰当的模式，这些行为就只好使用多重的条件选择语句来实现。</li>
-</ul>
-<p><strong>注意事项:</strong> 如果一个系统的策略多于四个，就需要考虑使用混合模式，解决策略类膨胀的问题。</p>
-<h2 id="实现">实现<a title="#实现" href="#实现"></a></h2>
-]]></content>
+    <title>Chrome 插件</title>
+    <url>/Chrome-Plugins/</url>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1+A2S7U4IM7Z/1HOwoLdZq1L29mEV0yKqcCdQkPk/7nUgcfJiZ5A2TW</is-cipher>]]></content>
       <categories>
-        <category>Java</category>
-        <category>Design Pattern</category>
+        <category>Chrome</category>
       </categories>
       <tags>
-        <tag>Strategy Pattern</tag>
+        <tag>Chrome Plugins</tag>
       </tags>
   </entry>
   <entry>
@@ -1131,6 +1092,51 @@ main {
       </categories>
       <tags>
         <tag>Singleton Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java 23种设计模式之行为型模式「策略模式」Strategy Pattern</title>
+    <url>/Strategy-Pattern/</url>
+    <content><![CDATA[<h2 id="策略模式---strategy-pattern">策略模式 - Strategy Pattern<a title="#策略模式---strategy-pattern" href="#策略模式---strategy-pattern"></a></h2>
+<p>在策略模式（Strategy Pattern）中，一个类的行为或其算法可以在运行时更改。这种类型的设计模式属于行为型模式。</p>
+<p>在策略模式中，我们创建表示各种策略的对象和一个行为随着策略对象改变而改变的<code>context</code>对象。策略对象改变<code>context</code>对象的执行算法。</p>
+<p><strong>定义:</strong> 定义一系列的算法, 把它们一个个封装起来, 并且使它们可相互替换.<br>
+<strong>主要解决:</strong> 在有多种算法相似的情况下, 使用 <code>if...else</code> 所带来的复杂和难以维护.<br>
+<strong>何时使用:</strong> 一个系统有许多许多类, 而区分它们的只是他们直接的行为.<br>
+<strong>如何解决:</strong> 将这些算法封装成一个一个的类, 任意地替换.<br>
+<strong>关键代码:</strong> 实现同一个接口.</p>
+<p><strong>应用实例:</strong></p>
+<ul>
+<li>诸葛亮的锦囊妙计, 每一个锦囊就是一个策略.</li>
+<li>旅行的出游方式, 选择骑自行车、坐汽车, 每一种旅行方式都是一个策略.</li>
+<li>JAVA AWT 中的 LayoutManager.</li>
+</ul>
+<p><strong>优点:</strong></p>
+<ul>
+<li>算法可以自由切换。</li>
+<li>避免使用多重条件判断。</li>
+<li>扩展性良好。</li>
+</ul>
+<p><strong>缺点:</strong></p>
+<ul>
+<li>策略类会增多。</li>
+<li>所有策略类都需要对外暴露。</li>
+</ul>
+<p><strong>使用场景:</strong></p>
+<ul>
+<li>如果在一个系统里面有许多类，它们之间的区别仅在于它们的行为，那么使用策略模式可以动态地让一个对象在许多行为中选择一种行为。</li>
+<li>2、一个系统需要动态地在几种算法中选择一种。</li>
+<li>3、如果一个对象有很多的行为，如果不用恰当的模式，这些行为就只好使用多重的条件选择语句来实现。</li>
+</ul>
+<p><strong>注意事项:</strong> 如果一个系统的策略多于四个，就需要考虑使用混合模式，解决策略类膨胀的问题。</p>
+<h2 id="实现">实现<a title="#实现" href="#实现"></a></h2>
+]]></content>
+      <categories>
+        <category>Java</category>
+        <category>Design Pattern</category>
+      </categories>
+      <tags>
+        <tag>Strategy Pattern</tag>
       </tags>
   </entry>
 </search>
