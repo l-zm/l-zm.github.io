@@ -257,27 +257,12 @@ font-family: SlideTownsoul
   <entry>
     <title>临时文档</title>
     <url>/1/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1/2NWD07foBUGh40UXgyN0pVzWBz6kOX9m++ol+5E7TDrsMiJKgBe1y</is-cipher>]]></content>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX19jdyYn+St/jLJ88YsK+AUJfz1T8M2rn0scxfHs8e71cgAczmSBb/Ej</is-cipher>]]></content>
       <categories>
         <category>Other</category>
       </categories>
       <tags>
         <tag>Other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac 修改 Dock 栏的隐藏速度</title>
-    <url>/mac-edit-dock-hidden-speed/</url>
-    <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
-<p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
-<h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
-<p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
-]]></content>
-      <categories>
-        <category>Mac</category>
-      </categories>
-      <tags>
-        <tag>Mac</tag>
       </tags>
   </entry>
   <entry>
@@ -296,6 +281,21 @@ font-family: SlideTownsoul
       </categories>
       <tags>
         <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 修改 Dock 栏的隐藏速度</title>
+    <url>/mac-edit-dock-hidden-speed/</url>
+    <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
+<p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
+<h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
+<p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
       </tags>
   </entry>
   <entry>
@@ -487,6 +487,23 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
+    <title>PowerToys-微软的一款开源电脑工具箱软件</title>
+    <url>/PowerToys/</url>
+    <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
+<p>习惯了 <strong><code>Mac</code></strong> 系统的 <code>command + *</code> 按键的操作逻辑之后</p>
+<p>针对于 <strong><code>Windows</code></strong> 系统的 <code>Ctrl + *</code> 各种不适应</p>
+<hr>
+<p>放上我的调整结果，回到 <code>command</code> 按键逻辑下</p>
+<p><img src="https://pic.imgdb.cn/item/6277942309475431296ca2b5.png" alt="PowerToys-微软的一款开源电脑工具箱软件-键盘管理器" loading="lazy" class="φbp"></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>PowerToys</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>exo 网站初始化</title>
     <url>/hexo-web-site-inti/</url>
     <content><![CDATA[<p>第一步</p>
@@ -577,20 +594,26 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>PowerToys-微软的一款开源电脑工具箱软件</title>
-    <url>/PowerToys/</url>
-    <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
-<p>习惯了 <strong><code>Mac</code></strong> 系统的 <code>command + *</code> 按键的操作逻辑之后</p>
-<p>针对于 <strong><code>Windows</code></strong> 系统的 <code>Ctrl + *</code> 各种不适应</p>
-<hr>
-<p>放上我的调整结果，回到 <code>command</code> 按键逻辑下</p>
-<p><img src="https://pic.imgdb.cn/item/6277942309475431296ca2b5.png" alt="PowerToys-微软的一款开源电脑工具箱软件-键盘管理器" loading="lazy" class="φbp"></p>
+    <title>离线下载安装 Windows商店(Microsoft Store) 应用</title>
+    <url>/Microsoft-Store/</url>
+    <content><![CDATA[<h3 id="复制链接">复制链接<a title="#复制链接" href="#复制链接"></a></h3>
+<p>以：Windows 相机 应用举例</p>
+<p><code>https://www.microsoft.com/zh-cn/p/camara-de-windows/9wzdncrfjbbg?activetab=pivot:overviewtab</code></p>
+<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
+<p><code>https://store.rg-adguard.net/</code></p>
+<ul>
+<li>粘贴链接到输入框</li>
+<li>找到以 <code>AppxBundle</code> 结尾的</li>
+<li>点击下载安装</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/627886ca09475431290fb21e.png" alt="离线安装 Windows 商店(Microsoft-Store)应用-AppxBundle" loading="lazy" class="φbp"></p>
 ]]></content>
       <categories>
         <category>软件</category>
+        <category>Microsoft Store</category>
       </categories>
       <tags>
-        <tag>PowerToys</tag>
+        <tag>Microsoft Store</tag>
       </tags>
   </entry>
   <entry>
@@ -626,40 +649,6 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>Chrome 插件</title>
-    <url>/Chrome-Plugins/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1+rg9nVIlvMOxq5DaJeJpMtd9sUtGcQM1/Oj04o4AT7c2SMtaBIMrGb</is-cipher>]]></content>
-      <categories>
-        <category>Chrome</category>
-      </categories>
-      <tags>
-        <tag>Chrome Plugins</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>离线下载安装 Windows商店(Microsoft Store) 应用</title>
-    <url>/Microsoft-Store/</url>
-    <content><![CDATA[<h3 id="复制链接">复制链接<a title="#复制链接" href="#复制链接"></a></h3>
-<p>以：Windows 相机 应用举例</p>
-<p><code>https://www.microsoft.com/zh-cn/p/camara-de-windows/9wzdncrfjbbg?activetab=pivot:overviewtab</code></p>
-<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
-<p><code>https://store.rg-adguard.net/</code></p>
-<ul>
-<li>粘贴链接到输入框</li>
-<li>找到以 <code>AppxBundle</code> 结尾的</li>
-<li>点击下载安装</li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/627886ca09475431290fb21e.png" alt="离线安装 Windows 商店(Microsoft-Store)应用-AppxBundle" loading="lazy" class="φbp"></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-        <category>Microsoft Store</category>
-      </categories>
-      <tags>
-        <tag>Microsoft Store</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows CMD 查看端口占用情况列表 关闭指定端口命令</title>
     <url>/Windows-CMD-Task/</url>
     <content><![CDATA[<h3 id="查看所有端口运行状态">查看所有端口运行状态<a title="#查看所有端口运行状态" href="#查看所有端口运行状态"></a></h3>
@@ -688,61 +677,6 @@ font-family: SlideTownsoul
       </categories>
       <tags>
         <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>那些好看的页面效果</title>
-    <url>/good-html/</url>
-    <content><![CDATA[<ol>
-<li>
-<p><a href="/html/hover-style-slider.html?_blank">悬停效果的滑块(全屏)</a></p>
-</li>
-<li>
-<p><a href="/html/snowflake-animation.html?_blank">CSS雪花动画</a></p>
-</li>
-<li>
-<p><a href="/html/css-slider-font.html?_blank">CSS 滚动文字</a></p>
-</li>
-<li>
-<p><a href="/html/css-picture-accordion.html">CSS 实现横向图片手风琴样式图像库</a></p>
-</li>
-<li>
-<p><a href="/html/css-color.html">CSS 调色板 色彩库</a></p>
-</li>
-<li>
-<p><a href="/html/css-typing-animation.html">CSS 打字输出动画</a></p>
-</li>
-<li>
-<p><a href="/html/css-icon-android-ios.html">CSS 图标 iOS Android</a></p>
-</li>
-<li>
-<p><a href="/html/css3-loading-animations.html">CSS3 Loading animations</a></p>
-</li>
-<li>
-<p><a href="/html/flip-clock.html">翻页时钟</a></p>
-</li>
-<li>
-<p><a href="/html/vision-intelligent-cards.html">视觉智能卡-跟随鼠标</a></p>
-</li>
-<li>
-<p><a href="/html/tilt-style.html">倾斜效果</a></p>
-</li>
-<li>
-<p><a href="/html/symbol-arrow.html">箭头符号 箭头特殊符号大全</a></p>
-</li>
-<li>
-<p><a href="/html/symbol-serial-number.html">编号 序号 特殊符号大全</a></p>
-</li>
-<li>
-<p><a href="/html/symbol-stars.html">星星符号 特殊符号大全</a></p>
-</li>
-</ol>
-<!-- https://www.jq22.com/daima400 -->]]></content>
-      <categories>
-        <category>HTML</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
@@ -879,6 +813,72 @@ main {
       </tags>
   </entry>
   <entry>
+    <title>Chrome 插件</title>
+    <url>/Chrome-Plugins/</url>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1/GeUoxE0Bhw/P0O98yhKBrr00uN7B97jK16cGzBiRsCD2Gqkp3HIun</is-cipher>]]></content>
+      <categories>
+        <category>Chrome</category>
+      </categories>
+      <tags>
+        <tag>Chrome Plugins</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>那些好看的页面效果</title>
+    <url>/good-html/</url>
+    <content><![CDATA[<ol>
+<li>
+<p><a href="/html/hover-style-slider.html?_blank">悬停效果的滑块(全屏)</a></p>
+</li>
+<li>
+<p><a href="/html/snowflake-animation.html?_blank">CSS雪花动画</a></p>
+</li>
+<li>
+<p><a href="/html/css-slider-font.html?_blank">CSS 滚动文字</a></p>
+</li>
+<li>
+<p><a href="/html/css-picture-accordion.html">CSS 实现横向图片手风琴样式图像库</a></p>
+</li>
+<li>
+<p><a href="/html/css-color.html">CSS 调色板 色彩库</a></p>
+</li>
+<li>
+<p><a href="/html/css-typing-animation.html">CSS 打字输出动画</a></p>
+</li>
+<li>
+<p><a href="/html/css-icon-android-ios.html">CSS 图标 iOS Android</a></p>
+</li>
+<li>
+<p><a href="/html/css3-loading-animations.html">CSS3 Loading animations</a></p>
+</li>
+<li>
+<p><a href="/html/flip-clock.html">翻页时钟</a></p>
+</li>
+<li>
+<p><a href="/html/vision-intelligent-cards.html">视觉智能卡-跟随鼠标</a></p>
+</li>
+<li>
+<p><a href="/html/tilt-style.html">倾斜效果</a></p>
+</li>
+<li>
+<p><a href="/html/symbol-arrow.html">箭头符号 特殊符号大全</a></p>
+</li>
+<li>
+<p><a href="/html/symbol-serial-number.html">编号 序号 特殊符号大全</a></p>
+</li>
+<li>
+<p><a href="/html/symbol-stars.html">星星符号 特殊符号大全</a></p>
+</li>
+</ol>
+<!-- https://www.jq22.com/daima400 -->]]></content>
+      <categories>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>多线程</title>
     <url>/Thread/</url>
     <content><![CDATA[]]></content>
@@ -911,42 +911,6 @@ main {
       </categories>
       <tags>
         <tag>IntelliJ IDEA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL 开源的数据快速回滚工具(闪回) - binlog2sql</title>
-    <url>/mysql-binlog2sql/</url>
-    <content><![CDATA[<h2 id="binlog2sql-介绍">binlog2sql 介绍<a title="#binlog2sql-介绍" href="#binlog2sql-介绍"></a></h2>
-<p>从MySQL binlog解析出你要的SQL。根据不同选项，你可以得到原始SQL、回滚SQL、去除主键的INSERT SQL等。</p>
-<p>GitHub 地址：<code>https://github.com/danfengcao/binlog2sql</code></p>
-<h2 id="安装">安装<a title="#安装" href="#安装"></a></h2>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 安装Git</span></span><br><span class="line">yum install -y git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 pip 工具</span></span><br><span class="line">yum install -y epel-release</span><br><span class="line"></span><br><span class="line">yum install -y python-pip</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载 安装binlog2sql</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/danfengcao/binlog2sql.git &amp;&amp; <span class="built_in">cd</span> binlog2sql</span><br><span class="line"></span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java 23种设计模式 说明</title>
-    <url>/Design-Pattern/</url>
-    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62878e6e09475431296d65c4.png" alt="Java 23种设计模式关系" loading="lazy" class="φbp"></p>
-<h2 id="设计模式">设计模式<a title="#设计模式" href="#设计模式"></a></h2>
-<p>总体来说 <strong>设计模式</strong> 分为三类:</p>
-<p>创建型模式：共五种：工厂方法模式、抽象工厂模式、单例模式、创建者模式、原型模式。<br>
-结构型模式：共七种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式。<br>
-行为型模式：共十一种：策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。</p>
-<p>还有另外两类：并发型模式和线程池模式</p>
-<p><a href="https://cloud.tencent.com/developer/article/1602270">https://cloud.tencent.com/developer/article/1602270</a></p>
-<p><a href="https://blog.csdn.net/doymm2008/article/details/13288067">https://blog.csdn.net/doymm2008/article/details/13288067</a></p>
-]]></content>
-      <categories>
-        <category>Design Pattern</category>
-      </categories>
-      <tags>
-        <tag>Design Pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -1025,6 +989,42 @@ main {
       </tags>
   </entry>
   <entry>
+    <title>MySQL 开源的数据快速回滚工具(闪回) - binlog2sql</title>
+    <url>/mysql-binlog2sql/</url>
+    <content><![CDATA[<h2 id="binlog2sql-介绍">binlog2sql 介绍<a title="#binlog2sql-介绍" href="#binlog2sql-介绍"></a></h2>
+<p>从MySQL binlog解析出你要的SQL。根据不同选项，你可以得到原始SQL、回滚SQL、去除主键的INSERT SQL等。</p>
+<p>GitHub 地址：<code>https://github.com/danfengcao/binlog2sql</code></p>
+<h2 id="安装">安装<a title="#安装" href="#安装"></a></h2>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 安装Git</span></span><br><span class="line">yum install -y git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 pip 工具</span></span><br><span class="line">yum install -y epel-release</span><br><span class="line"></span><br><span class="line">yum install -y python-pip</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载 安装binlog2sql</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/danfengcao/binlog2sql.git &amp;&amp; <span class="built_in">cd</span> binlog2sql</span><br><span class="line"></span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java 23种设计模式 说明</title>
+    <url>/Design-Pattern/</url>
+    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62878e6e09475431296d65c4.png" alt="Java 23种设计模式关系" loading="lazy" class="φbp"></p>
+<h2 id="设计模式">设计模式<a title="#设计模式" href="#设计模式"></a></h2>
+<p>总体来说 <strong>设计模式</strong> 分为三类:</p>
+<p>创建型模式：共五种：工厂方法模式、抽象工厂模式、单例模式、创建者模式、原型模式。<br>
+结构型模式：共七种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式。<br>
+行为型模式：共十一种：策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。</p>
+<p>还有另外两类：并发型模式和线程池模式</p>
+<p><a href="https://cloud.tencent.com/developer/article/1602270">https://cloud.tencent.com/developer/article/1602270</a></p>
+<p><a href="https://blog.csdn.net/doymm2008/article/details/13288067">https://blog.csdn.net/doymm2008/article/details/13288067</a></p>
+]]></content>
+      <categories>
+        <category>Design Pattern</category>
+      </categories>
+      <tags>
+        <tag>Design Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java 23种设计模式之创建型模式「单例模式」Singleton Pattern</title>
     <url>/Singleton-Pattern/</url>
     <content><![CDATA[<h2 id="单例模式---singleton-pattern">单例模式 - Singleton Pattern<a title="#单例模式---singleton-pattern" href="#单例模式---singleton-pattern"></a></h2>
@@ -1045,6 +1045,51 @@ main {
       </categories>
       <tags>
         <tag>Singleton Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java 23种设计模式之行为型模式「策略模式」Strategy Pattern</title>
+    <url>/Strategy-Pattern/</url>
+    <content><![CDATA[<h2 id="策略模式---strategy-pattern">策略模式 - Strategy Pattern<a title="#策略模式---strategy-pattern" href="#策略模式---strategy-pattern"></a></h2>
+<p>在策略模式（Strategy Pattern）中，一个类的行为或其算法可以在运行时更改。这种类型的设计模式属于行为型模式。</p>
+<p>在策略模式中，我们创建表示各种策略的对象和一个行为随着策略对象改变而改变的<code>context</code>对象。策略对象改变<code>context</code>对象的执行算法。</p>
+<p><strong>定义:</strong> 定义一系列的算法, 把它们一个个封装起来, 并且使它们可相互替换.<br>
+<strong>主要解决:</strong> 在有多种算法相似的情况下, 使用 <code>if...else</code> 所带来的复杂和难以维护.<br>
+<strong>何时使用:</strong> 一个系统有许多许多类, 而区分它们的只是他们直接的行为.<br>
+<strong>如何解决:</strong> 将这些算法封装成一个一个的类, 任意地替换.<br>
+<strong>关键代码:</strong> 实现同一个接口.</p>
+<p><strong>应用实例:</strong></p>
+<ul>
+<li>诸葛亮的锦囊妙计, 每一个锦囊就是一个策略.</li>
+<li>旅行的出游方式, 选择骑自行车、坐汽车, 每一种旅行方式都是一个策略.</li>
+<li>JAVA AWT 中的 LayoutManager.</li>
+</ul>
+<p><strong>优点:</strong></p>
+<ul>
+<li>算法可以自由切换。</li>
+<li>避免使用多重条件判断。</li>
+<li>扩展性良好。</li>
+</ul>
+<p><strong>缺点:</strong></p>
+<ul>
+<li>策略类会增多。</li>
+<li>所有策略类都需要对外暴露。</li>
+</ul>
+<p><strong>使用场景:</strong></p>
+<ul>
+<li>如果在一个系统里面有许多类，它们之间的区别仅在于它们的行为，那么使用策略模式可以动态地让一个对象在许多行为中选择一种行为。</li>
+<li>2、一个系统需要动态地在几种算法中选择一种。</li>
+<li>3、如果一个对象有很多的行为，如果不用恰当的模式，这些行为就只好使用多重的条件选择语句来实现。</li>
+</ul>
+<p><strong>注意事项:</strong> 如果一个系统的策略多于四个，就需要考虑使用混合模式，解决策略类膨胀的问题。</p>
+<h2 id="实现">实现<a title="#实现" href="#实现"></a></h2>
+]]></content>
+      <categories>
+        <category>Java</category>
+        <category>Design Pattern</category>
+      </categories>
+      <tags>
+        <tag>Strategy Pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -1092,51 +1137,6 @@ main {
       <tags>
         <tag>Java</tag>
         <tag>Annotation</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java 23种设计模式之行为型模式「策略模式」Strategy Pattern</title>
-    <url>/Strategy-Pattern/</url>
-    <content><![CDATA[<h2 id="策略模式---strategy-pattern">策略模式 - Strategy Pattern<a title="#策略模式---strategy-pattern" href="#策略模式---strategy-pattern"></a></h2>
-<p>在策略模式（Strategy Pattern）中，一个类的行为或其算法可以在运行时更改。这种类型的设计模式属于行为型模式。</p>
-<p>在策略模式中，我们创建表示各种策略的对象和一个行为随着策略对象改变而改变的<code>context</code>对象。策略对象改变<code>context</code>对象的执行算法。</p>
-<p><strong>定义:</strong> 定义一系列的算法, 把它们一个个封装起来, 并且使它们可相互替换.<br>
-<strong>主要解决:</strong> 在有多种算法相似的情况下, 使用 <code>if...else</code> 所带来的复杂和难以维护.<br>
-<strong>何时使用:</strong> 一个系统有许多许多类, 而区分它们的只是他们直接的行为.<br>
-<strong>如何解决:</strong> 将这些算法封装成一个一个的类, 任意地替换.<br>
-<strong>关键代码:</strong> 实现同一个接口.</p>
-<p><strong>应用实例:</strong></p>
-<ul>
-<li>诸葛亮的锦囊妙计, 每一个锦囊就是一个策略.</li>
-<li>旅行的出游方式, 选择骑自行车、坐汽车, 每一种旅行方式都是一个策略.</li>
-<li>JAVA AWT 中的 LayoutManager.</li>
-</ul>
-<p><strong>优点:</strong></p>
-<ul>
-<li>算法可以自由切换。</li>
-<li>避免使用多重条件判断。</li>
-<li>扩展性良好。</li>
-</ul>
-<p><strong>缺点:</strong></p>
-<ul>
-<li>策略类会增多。</li>
-<li>所有策略类都需要对外暴露。</li>
-</ul>
-<p><strong>使用场景:</strong></p>
-<ul>
-<li>如果在一个系统里面有许多类，它们之间的区别仅在于它们的行为，那么使用策略模式可以动态地让一个对象在许多行为中选择一种行为。</li>
-<li>2、一个系统需要动态地在几种算法中选择一种。</li>
-<li>3、如果一个对象有很多的行为，如果不用恰当的模式，这些行为就只好使用多重的条件选择语句来实现。</li>
-</ul>
-<p><strong>注意事项:</strong> 如果一个系统的策略多于四个，就需要考虑使用混合模式，解决策略类膨胀的问题。</p>
-<h2 id="实现">实现<a title="#实现" href="#实现"></a></h2>
-]]></content>
-      <categories>
-        <category>Java</category>
-        <category>Design Pattern</category>
-      </categories>
-      <tags>
-        <tag>Strategy Pattern</tag>
       </tags>
   </entry>
 </search>
