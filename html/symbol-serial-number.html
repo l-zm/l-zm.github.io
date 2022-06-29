@@ -23,6 +23,7 @@
             /*padding: 10px 0 8px;*/
             text-align: center;
             position: relative;
+            box-shadow: 0 7px 7px rgb(0 0 0 / 5%);
         }
 
         .char-list dd p {
@@ -69,6 +70,7 @@
                 <dd><span name="num"></span><p>⑳</p></dd>
                 <dd><span name="num"></span><p>⓪</p></dd>
 
+                <br><br>
                 <dd><span name="num"></span><p>❶</p></dd>
                 <dd><span name="num"></span><p>❷</p></dd>
                 <dd><span name="num"></span><p>❸</p></dd>
@@ -90,6 +92,7 @@
                 <dd><span name="num"></span><p>⓳</p></dd>
                 <dd><span name="num"></span><p>⓴</p></dd>
 
+                <br><br>
                 <dd><span name="num"></span><p>㊀</p></dd>
                 <dd><span name="num"></span><p>㊁</p></dd>
                 <dd><span name="num"></span><p>㊂</p></dd>
@@ -111,6 +114,7 @@
                 <dd><span name="num"></span><p>㈨</p></dd>
                 <dd><span name="num"></span><p>㈩</p></dd>
 
+                <br><br>
                 <dd><span name="num"></span><p>⑴</p></dd>
                 <dd><span name="num"></span><p>⑵</p></dd>
                 <dd><span name="num"></span><p>⑶</p></dd>
@@ -132,6 +136,7 @@
                 <dd><span name="num"></span><p>⒆</p></dd>
                 <dd><span name="num"></span><p>⒇</p></dd>
 
+                <br><br>
                 <dd><span name="num"></span><p>⒈</p></dd>
                 <dd><span name="num"></span><p>⒉</p></dd>
                 <dd><span name="num"></span><p>⒊</p></dd>
@@ -153,6 +158,7 @@
                 <dd><span name="num"></span><p>⒚</p></dd>
                 <dd><span name="num"></span><p>⒛</p></dd>
 
+                <br><br>
                 <dd><span name="num"></span><p>Ⅰ</p></dd>
                 <dd><span name="num"></span><p>Ⅱ</p></dd>
                 <dd><span name="num"></span><p>Ⅲ</p></dd>
@@ -176,6 +182,7 @@
                 <dd><span name="num"></span><p>ⅸ</p></dd>
                 <dd><span name="num"></span><p>ⅹ</p></dd>
 
+                <br><br>
                 <dd><span name="num"></span><p>Ⓐ</p></dd>
                 <dd><span name="num"></span><p>Ⓑ</p></dd>
                 <dd><span name="num"></span><p>Ⓒ</p></dd>
@@ -203,6 +210,7 @@
                 <dd><span name="num"></span><p>Ⓨ</p></dd>
                 <dd><span name="num"></span><p>Ⓩ</p></dd>
 
+                <br><br>
                 <dd><span name="num"></span><p>ⓐ</p></dd>
                 <dd><span name="num"></span><p>ⓑ</p></dd>
                 <dd><span name="num"></span><p>ⓒ</p></dd>
@@ -230,6 +238,7 @@
                 <dd><span name="num"></span><p>ⓨ</p></dd>
                 <dd><span name="num"></span><p>ⓩ</p></dd>
 
+                <br><br>
                 <dd><span name="num"></span><p>⒜</p></dd>
                 <dd><span name="num"></span><p>⒝</p></dd>
                 <dd><span name="num"></span><p>⒞</p></dd>
@@ -262,26 +271,14 @@
     </div>
 
     <script type="text/javascript">
-
         window.onload = function () {
             var num = 1;
-
             var numList = document.getElementsByName("num");
             for (var i = 0; i < numList.length; i++) {
                 numList[i].innerText = num;
                 num++;
             }
-
         }
-
-
-            // $(document).ready(function () {
-            //     var num = 1;
-            //     $("span[name='num']").each(function () {
-            //         $(this).text(num++);
-            //     });
-            // });
-
     </script>
 </body>
 
