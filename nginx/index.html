@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-Hans">
 <head><!-- hexo injector head_begin start -->
-<script src="/config.74842cae4c66cbf7a1b0.js"></script>
+<script src="/config.4c33b0a03fe43d472c4e.js"></script>
 <!-- hexo injector head_begin end -->
 <meta charset="utf-8">
 <title>Centos 7 安装 Nginx - 配置 & 文件 & 说明 - 李先森</title>
@@ -14,20 +14,20 @@
 <!-- <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.0.1/echarts.common.min.js"></script> -->
 <script src="https://cdn.bootcdn.net/ajax/libs/echarts/4.9.0-rc.1/echarts-en.common.min.js"></script>
 
-<meta name="description" content="Nginx 的特点  是一个高性能的HTTP和反向代理服务器，也是一个IMAP&#x2F;POP3&#x2F;SMTP&#x2F;代理服务器 Nginx相较于Apache具有占用内存少，稳定性高等优势，并且依靠并发能力强，丰富的模块库以及友好灵活的配置儿闻名   目前Nginx最新版本：nginx-1.17.9   安装基础包 yum -y install gcc gcc-c++ lrzsz wget vim   安装完成,">
+<meta name="description" content="Nginx 的特点   是一个高性能的HTTP和反向代理服务器，也是一个IMAP&#x2F;POP3&#x2F;SMTP&#x2F;代理服务器   Nginx相较于Apache具有占用内存少，稳定性高等优势，并且依靠并发能力强，丰富的模块库以及友好灵活的配置儿闻名   安装基础包 yum -y install gcc gcc-c++ lrzsz wget vim   安装完成, 查看gcc版本 gcc -v 最后一行输出：gc">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Centos 7 安装 Nginx - 配置 &amp; 文件 &amp; 说明">
 <meta property="og:url" content="http://l-zm.com/nginx/index.html">
 <meta property="og:site_name" content="李先森">
-<meta property="og:description" content="Nginx 的特点  是一个高性能的HTTP和反向代理服务器，也是一个IMAP&#x2F;POP3&#x2F;SMTP&#x2F;代理服务器 Nginx相较于Apache具有占用内存少，稳定性高等优势，并且依靠并发能力强，丰富的模块库以及友好灵活的配置儿闻名   目前Nginx最新版本：nginx-1.17.9   安装基础包 yum -y install gcc gcc-c++ lrzsz wget vim   安装完成,">
+<meta property="og:description" content="Nginx 的特点   是一个高性能的HTTP和反向代理服务器，也是一个IMAP&#x2F;POP3&#x2F;SMTP&#x2F;代理服务器   Nginx相较于Apache具有占用内存少，稳定性高等优势，并且依靠并发能力强，丰富的模块库以及友好灵活的配置儿闻名   安装基础包 yum -y install gcc gcc-c++ lrzsz wget vim   安装完成, 查看gcc版本 gcc -v 最后一行输出：gc">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pic.imgdb.cn/item/62d4b76ff54cd3f937779d8e.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/62d4b8faf54cd3f937795737.png">
 <meta property="article:published_time" content="2022-01-22T00:00:00.000Z">
 <meta property="article:modified_time" content="2022-01-21T16:00:00.000Z">
 <meta property="article:author" content="李先森">
 <meta property="article:tag" content="Nginx">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://pic.imgdb.cn/item/62d4b76ff54cd3f937779d8e.png">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/62d4b8faf54cd3f937795737.png">
 
 
 <!-- hexo injector head_end start --><style is="theme">html{--inside-accent-color:#2a2b33;--inside-foreground-color:#363636;--inside-border-color:#e0e0e0;--inside-background:#f3f6f7;--inside-sidebar-background:#2a2b33;--inside-card-background:#fff;--inside-font-base:'PingFang SC','Josefin Sans';--inside-font-logo:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;--inside-font-menu:Baloo Bhaijaan,'PingFang SC','Josefin Sans';--inside-font-heading:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;--inside-font-label:Montserrat,'PingFang SC','Josefin Sans';--inside-font-code:Inconsolata,monospace;--inside-font-print:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;--inside-content-width:840px;--inside-highlight-00:#f8f8f8;--inside-highlight-01:#e8e8e8;--inside-highlight-02:#d8d8d8;--inside-highlight-03:#b8b8b8;--inside-highlight-04:#585858;--inside-highlight-05:#383838;--inside-highlight-06:#282828;--inside-highlight-07:#181818;--inside-highlight-08:#ab4642;--inside-highlight-09:#dc9656;--inside-highlight-0a:#f7ca88;--inside-highlight-0b:#a1b56c;--inside-highlight-0c:#86c1b9;--inside-highlight-0d:#7cafc2;--inside-highlight-0e:#ba8baf;--inside-highlight-0f:#a16946;--inside-card-color:#fff;--inside-accent-color-005:rgba(42,43,51,.05);--inside-accent-color-01:rgba(42,43,51,.1);--inside-accent-color-02:rgba(42,43,51,.2);--inside-accent-color-04:rgba(42,43,51,.4);--inside-accent-color-08:rgba(42,43,51,.8)}</style><script src="/theme.9ecc9ab1.js"></script><link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet"></link>
