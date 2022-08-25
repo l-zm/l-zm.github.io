@@ -11,45 +11,22 @@
     <link rel="icon" href="./favicon.ico">
     <style>
         .form-control.focus,.form-control:focus{border-color:#145ccd;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)}
-        @media (min-width:1200px){.container{max-width:1200px;padding:0}
-        }
-        .overflow-hidden{overflow:hidden}
+        @media (min-width:1200px){.container{max-width:1200px;padding:0}}
+        /*.overflow-hidden{overflow:hidden}*/
         #right-box{border-top:0!important}
         .modal-overflow-unset{overflow:unset!important}
         div.numberedtextarea-wrapper{position:relative}
         div.numberedtextarea-wrapper textarea{display:block;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
         div.numberedtextarea-line-numbers{position:absolute;display:none;background-color:#fafafa;top:0;left:0;right:0;bottom:0;width:40px;border-right:1px dashed #eee;border-bottom:solid 1px #ddd;color:#999;overflow:hidden}
         div.numberedtextarea-number{padding-right:6px;text-align:center}
-
-        .fa {
-            display: inline-block;
-            font: normal normal normal 14px/1 FontAwesome;
-            font-size: inherit;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale
-        }
-        .fa-database:before {
-            content: "📦"
-        }
-        .fa-compress:before {
-            content: "⏏"
-        }
-        .fa-sort-amount-asc:before {
-            content: "🔢"
-        }
-        .fa-trash:before {
-            content: "🗑"
-        }
-        .fa-copy:before {
-            content: "📑";
-        }
-        .fa-minus-square-o:before {
-            content: "➕"
-        }
-        .fa-plus-square-o:before {
-            content: "➖"
-        }
+        .fa {display: inline-block;font: normal normal normal 14px/1 FontAwesome;font-size: inherit;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale}
+        .fa-sort-amount-asc:before {content: "🔢";}
+        .fa-minus-square-o:before {content: "➕";}
+        .fa-plus-square-o:before {content: "➖";}
+        .fa-database:before {content: "📦";}
+        .fa-compress:before {content: "⏏";}
+        .fa-trash:before {content: "🗑";}
+        .fa-copy:before {content: "📑";}
     </style>
 
 <!-- zui.min.css -->
@@ -101,9 +78,9 @@ a,p,span,button{font-size:14px}button{background-color:transparent}.bg-color-f7{
                 </p>
             </div>
             <!-- 行号 -->
-            <div id="line-num" style="background-color:#fafafa;padding:0px 8px;float:left;border-right:dashed 1px #E5EBEE;display:none;color:#999;position:absolute;text-align:center;over-flow:hidden;"></div>
+            <div id="line-num" style="background-color:#fafafa;padding:0px 0px;float:left;border-right:dashed 1px #E5EBEE;display:none;color:#999;position:absolute;text-align:center;over-flow:hidden;"></div>
             <!-- 格式化 结果 -->
-            <div class="ro" id="json-target" style="padding:0px 32px;white-space: pre-line;word-wrap:break-word;"></div>
+            <div class="ro" id="json-target" style="padding:0px 32px 0px 2px;white-space: pre-line;word-wrap:break-word;"></div>
         </div>
     </div>
 </main>
@@ -233,15 +210,13 @@ $.msg=function(txt,style,obj,delay){
                 current_content = content;
                 result = new JSONFormat(content, 4).toString();
             } catch (e) {
-                result = '<span style="color: #f1592a;font-weight:bold;">' + e + '</span>';
+                result = '<span style="color: #f1592a;font-weight:bold;">&nbsp;' + 'JSON 格式不正确' + '</span>';
                 current_json_str = result;
             }
-
             $('#json-target').html(result);
         } else {
             $('#json-target').html('');
         }
-
     });
 
     //主入口
@@ -306,23 +281,30 @@ $.msg=function(txt,style,obj,delay){
 
     });
     $('.shown').click(function () {
+        var json_target=$('#json-target');
+        var line_num = $('#line-num');
         if (!shown_flag) {
             renderLine();
+            $(line_num).animate({padding:'0px 8px'},'500');
             $('#line-num').show();
-            console.log($('#line-num'))
             $('.numberedtextarea-line-numbers').show();
             shown_flag = true;
             $(this).attr('style', 'color:#15b374;');
+            $(json_target).animate({padding:'0px 32px 0px 40px'},'500');
         } else {
+            $(line_num).animate({padding:'0px 0px'},'500');
             $('#line-num').hide();
             $('.numberedtextarea-line-numbers').hide();
             shown_flag = false;
             $(this).attr('style', 'color:#999;');
+            // $('#json-target').attr('style', 'padding:0px 32px 0px 2px;');
+            $(json_target).animate({padding:'0px 32px 0px 2px'},'500');
         }
     });
 
     function renderLine() {
-        var line_num = $('#json-target').height() / 20;
+        // var line_num = $('#json-target').height() / 20;
+        var line_num = $('#json-target').html().split("<br>").length;
         $('#line-num').html("");
         var line_num_html = "";
         for (var i = 1; i < line_num + 1; i++) {
@@ -384,7 +366,6 @@ $.msg=function(txt,style,obj,delay){
             }
         };
     })(jQuery);
-
     $('.copy').click(function () {
         $.msg("成功复制到粘贴板","color:#00D69C;");
         // $(this).tooltip('toggle')
@@ -414,7 +395,6 @@ $.msg=function(txt,style,obj,delay){
             totalWidth = $(window).outerWidth();
             gapWidth = 0;
             forbidenWidth = totalWidth - 400;
-
             if (x > forbidenWidth) {
                 $('#dragEle').offset({top: 0, left: forbidenWidth - 5 + gapWidth});
                 $('main .col-md-5').width(forbidenWidth);
@@ -430,20 +410,13 @@ $.msg=function(txt,style,obj,delay){
         }, //拖动停止 x,y为当前坐标
         dragMove: function (x, y) {
             if (x > forbidenWidth || x < 200) {
-
             } else {
                 $('main .col-md-5').width(x);
                 $('main .col-md-7').width(totalWidth - x - 1);
             }
         } //拖动进行中 x,y为当前坐标
     });
-    $(window).resize(function () {
-        $('#dragEle').css('left', '');
-        $('main .col-md-7').css('width', '');
-        $('main .col-md-5').css('width', '');
-    });
-
+    $(window).resize(function () {$('#dragEle').css('left', '');$('main .col-md-7').css('width', '');$('main .col-md-5').css('width', '');});
 </script>
-
 </body>
 </html>
