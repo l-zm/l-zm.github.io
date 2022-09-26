@@ -255,6 +255,45 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
+    <title>临时文档</title>
+    <url>/1/</url>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX18BJES2+UBb59GKF1CyS3vFR81j/IqF/Z2X6p8GfwyhJdqMmvCiUUB+</is-cipher>]]></content>
+      <categories>
+        <category>Other</category>
+      </categories>
+      <tags>
+        <tag>Other</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>exo 网站初始化</title>
+    <url>/hexo-web-site-inti/</url>
+    <content><![CDATA[<p>第一步</p>
+<p>初始化：<code>hexo init</code></p>
+<p>安装 主题<br>
+使用的主题：<code>inside</code><br>
+地址：<code>https://github.com/ikeq/hexo-theme-inside</code></p>
+<ol>
+<li>进入博客目录 <code>project/</code> , 执行以下命令：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-inside</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>配置：<code>project/_config.yml</code></li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">inside</span></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>创建主题文件：<code>project/_config.inside.yml</code></li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://github.com/ikeq/hexo-theme-inside/blob/master/_config.yml</span><br></pre></td></tr></table></figure>
+<!-- https://github.com/omnibingo/talk2.it -->]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>动画版《唐诗三百首》儿童唱游合集</title>
     <url>/children/</url>
     <content><![CDATA[<p>《唐诗三百首》是一部流传很广的唐诗选集。唐朝(618年~907年)二百八十九年间，是中国诗歌发展的黄金时代，云蒸霞蔚，名家辈出，唐诗数量多达五万余首。<br>
@@ -616,65 +655,89 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>exo 网站初始化</title>
-    <url>/hexo-web-site-inti/</url>
-    <content><![CDATA[<p>第一步</p>
-<p>初始化：<code>hexo init</code></p>
-<p>安装 主题<br>
-使用的主题：<code>inside</code><br>
-地址：<code>https://github.com/ikeq/hexo-theme-inside</code></p>
-<ol>
-<li>进入博客目录 <code>project/</code> , 执行以下命令：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-inside</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>配置：<code>project/_config.yml</code></li>
-</ol>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">inside</span></span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>创建主题文件：<code>project/_config.inside.yml</code></li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://github.com/ikeq/hexo-theme-inside/blob/master/_config.yml</span><br></pre></td></tr></table></figure>
-<!-- https://github.com/omnibingo/talk2.it -->]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>临时文档</title>
-    <url>/1/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX18hACcUWUqBTivEGpCPI0WAKkOFYSOgdedbuXGz/62C8W8wbhxnr19E</is-cipher>]]></content>
-      <categories>
-        <category>Other</category>
-      </categories>
-      <tags>
-        <tag>Other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>离线下载安装 Windows商店(Microsoft Store) 应用</title>
-    <url>/Microsoft-Store/</url>
-    <content><![CDATA[<h3 id="复制链接">复制链接<a title="#复制链接" href="#复制链接"></a></h3>
-<p>以：Windows 相机 应用举例</p>
-<p><code>https://www.microsoft.com/zh-cn/p/camara-de-windows/9wzdncrfjbbg?activetab=pivot:overviewtab</code></p>
-<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
-<p><code>https://store.rg-adguard.net/</code></p>
-<ul>
-<li>粘贴链接到输入框</li>
-<li>找到以 <code>AppxBundle</code> 结尾的</li>
-<li>点击下载安装</li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/627886ca09475431290fb21e.png" alt="离线安装 Windows 商店(Microsoft-Store)应用-AppxBundle" loading="lazy" class="φbp"></p>
+    <title>苹果官方鼠标移动速度慢问题解决(Magic Mouse)</title>
+    <url>/magic-mouse/</url>
+    <content><![CDATA[<h3 id="设置">设置<a title="#设置" href="#设置"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/626cad73239250f7c5d61401.png" alt="Magic Mouse" loading="lazy" class="φbp"></p>
+<p><strong>如果这里的调节到最大还是满足不了你</strong></p>
+<p><strong>我们可以通过终端查看到我们鼠标的设置：</strong></p>
+<p>读取当前的移动速度：<br>
+<code>defaults read -g com.apple.mouse.scaling</code></p>
+<p>默认可能是：<code>3</code> ， 我这里设置的：<code>7</code></p>
+<p><code>defaults write -g com.apple.mouse.scaling 7</code></p>
+<h3 id="重启电脑生效">重启电脑生效<a title="#重启电脑生效" href="#重启电脑生效"></a></h3>
 ]]></content>
       <categories>
-        <category>软件</category>
-        <category>Microsoft Store</category>
+        <category>Mac</category>
       </categories>
       <tags>
-        <tag>Microsoft Store</tag>
+        <tag>Mac</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟机安装苹果Mac系统-生成cdr镜像文件教程</title>
+    <url>/virtual-machine-mac/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">App Store 下载系统文件，搜索：macOS Catalina，点击获取之后会打开偏好设置进行下载</span><br></pre></td></tr></table></figure>
+<p>下载完成会在应用程序里面出现：<code>安装macOS Catalina.app</code></p>
+<h2 id="所有的操作都是在终端里面完成的">所有的操作都是在终端里面完成的<a title="#所有的操作都是在终端里面完成的" href="#所有的操作都是在终端里面完成的"></a></h2>
+<ol>
+<li>创建dmg磁盘镜像<br>
+执行命令：<code>hdiutil create -o /tmp/Install\ macOS\ Monterey -size 14G -layout SPUD -fs HFS+J</code><br>
+<img src="https://pic1.imgdb.cn/item/63314d6a16f2c2beb19230a3.png" alt="image" loading="lazy"><br>
+说明：<br>
+<code>/tmp 镜像位置</code><br>
+<code>Install\ macOS\ Catalina 镜像名字Install macOS Catalina</code><br>
+<code>-size 8500m 镜像大小8500MB，只要比MacOS系统的资源文件大就好</code><br>
+<code>-layout SPUD dmg镜像是单分区模式</code><br>
+<code>-fs HFS+J 表示的是Mac OS Extended分区格式</code></li>
+<li>把镜像挂载起来<br>
+执行命令：<code>hdiutil attach /tmp/Install\ macOS\ Catalina.dmg -noverify -mountpoint /Volumes/Install\ macOS\ Catalina</code><br>
+<img src="https://pic1.imgdb.cn/item/63315d5016f2c2beb1a44439.png" alt="image" loading="lazy"><br>
+说明：<br>
+<code>-noverify 不进行验证</code><br>
+<code>-mountpoint /Volumes/Install\ macOS\ Catalina 挂载的位置</code></li>
+<li>创建MacOS Catalina安装程序<br>
+执行命令：<code>sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/Install\ macOS\ Catalina --nointeraction</code><br>
+<img src="https://pic1.imgdb.cn/item/63315d6916f2c2beb1a4663c.png" alt="image" loading="lazy"><br>
+说明：<br>
+<code>/Applications/Install\ macOS\ Catalina.app App Store 下载的系统路径</code><br>
+<code>Contents/Resources/createinstallmedia 系统里面的createinstallmedia程序，把系统写入到挂载的dmg盘中</code><br>
+<code>--volume /Volumes/Install\ macOS\ Catalina 刚刚挂载的dmg盘</code></li>
+<li>推出刚刚挂载的Install\ macOS\ Catalina磁盘<br>
+执行命令：<code>hdiutil detach /Volumes/Install\ macOS\ Catalina</code><br>
+<img src="https://pic1.imgdb.cn/item/63315e2c16f2c2beb1a53cc6.png" alt="image" loading="lazy"></li>
+<li>将dmg文件转换为cdr文件<br>
+执行命令：<code>hdiutil convert /tmp/Install\ macOS\ Catalina.dmg -format UDTO -o ~/Desktop/Install\ macOS\ Catalina</code><br>
+<img src="https://pic1.imgdb.cn/item/63315d9716f2c2beb1a49e65.png" alt="image" loading="lazy"><br>
+说明：<br>
+<code>Install\ macOS\ Catalina.dmg 上一步写好的镜像</code><br>
+<code>-format UDTO   转换为cdr格式</code><br>
+<code>~/Desktop/Install\ macOS\ Catalina 保存路径和名称</code></li>
+<li>done!!! 此刻可以在桌面找到镜像文件：<code>Install macOS Catalina.cdr</code><br>
+最后一步，删除多余的dmg文件<br>
+执行命令：<code>rm /tmp/Install\ macOS\ Catalina.dmg</code><br>
+<img src="https://pic1.imgdb.cn/item/63315db616f2c2beb1a4c06c.png" alt="image" loading="lazy"></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>图片</title>
+    <url>/picture/</url>
+    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62c6837cf54cd3f937647820.png" alt="iPhone All" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/62c6a7faf54cd3f93798805c.png" alt="Git" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/62f3638416f2c2beb11babb0.gif" alt="Windows 10 TO Windows 11" loading="lazy"></p>
+]]></content>
+      <categories>
+        <category>Picture</category>
+      </categories>
+      <tags>
+        <tag>Picture</tag>
       </tags>
   </entry>
   <entry>
@@ -710,64 +773,6 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>图片</title>
-    <url>/picture/</url>
-    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62c6837cf54cd3f937647820.png" alt="iPhone All" loading="lazy"><br>
-<img src="https://pic.imgdb.cn/item/62c6a7faf54cd3f93798805c.png" alt="Git" loading="lazy"><br>
-<img src="https://pic.imgdb.cn/item/62f3638416f2c2beb11babb0.gif" alt="Windows 10 TO Windows 11" loading="lazy"></p>
-]]></content>
-      <categories>
-        <category>Picture</category>
-      </categories>
-      <tags>
-        <tag>Picture</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>苹果官方鼠标移动速度慢问题解决(Magic Mouse)</title>
-    <url>/magic-mouse/</url>
-    <content><![CDATA[<h3 id="设置">设置<a title="#设置" href="#设置"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/626cad73239250f7c5d61401.png" alt="Magic Mouse" loading="lazy" class="φbp"></p>
-<p><strong>如果这里的调节到最大还是满足不了你</strong></p>
-<p><strong>我们可以通过终端查看到我们鼠标的设置：</strong></p>
-<p>读取当前的移动速度：<br>
-<code>defaults read -g com.apple.mouse.scaling</code></p>
-<p>默认可能是：<code>3</code> ， 我这里设置的：<code>7</code></p>
-<p><code>defaults write -g com.apple.mouse.scaling 7</code></p>
-<h3 id="重启电脑生效">重启电脑生效<a title="#重启电脑生效" href="#重启电脑生效"></a></h3>
-]]></content>
-      <categories>
-        <category>Mac</category>
-      </categories>
-      <tags>
-        <tag>Mac</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IntelliJ IDEA 插件</title>
-    <url>/IntelliJ-IDEA-Plugins/</url>
-    <content><![CDATA[<h3 id="free-mybatis-plugin">Free MyBatis plugin<a title="#free-mybatis-plugin" href="#free-mybatis-plugin"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/6279cab909475431291d2971.png" alt="Free MyBatis plugin" loading="lazy" class="φbp"></p>
-<ul>
-<li>Git地址：<a href="https://github.com/chuntungho/free-mybatis-plugin" target="_blank">https://github.com/chuntungho/free-mybatis-plugin</a></li>
-</ul>
-<p>主要功能：</p>
-<ol>
-<li>生成mapper xml文件</li>
-<li>快速从代码跳转到mapper及从mapper返回代码</li>
-<li>mybatis自动补全及语法错误提示</li>
-<li>集成mybatis generator gui界面</li>
-<li>根据数据库注解，生成swagger model注解</li>
-</ol>
-]]></content>
-      <categories>
-        <category>IntelliJ IDEA</category>
-      </categories>
-      <tags>
-        <tag>IntelliJ IDEA</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows CMD 查看端口占用情况列表 关闭指定端口命令</title>
     <url>/Windows-CMD-Task/</url>
     <content><![CDATA[<h3 id="查看所有端口运行状态">查看所有端口运行状态<a title="#查看所有端口运行状态" href="#查看所有端口运行状态"></a></h3>
@@ -790,6 +795,264 @@ font-family: SlideTownsoul
 <h3 id="关闭进程">关闭进程<a title="#关闭进程" href="#关闭进程"></a></h3>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;taskkill /f /pid 12992</span><br><span class="line">成功: 已终止 PID 为 12992 的进程。</span><br></pre></td></tr></table></figure>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;taskkill /f /t /im node.exe</span><br><span class="line">成功: 已终止 PID 18744 (属于 PID 18672 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 3668 (属于 PID 18672 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 18672 (属于 PID 18628 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 28244 (属于 PID 30244 子进程)的进程。</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>离线下载安装 Windows商店(Microsoft Store) 应用</title>
+    <url>/Microsoft-Store/</url>
+    <content><![CDATA[<h3 id="复制链接">复制链接<a title="#复制链接" href="#复制链接"></a></h3>
+<p>以：Windows 相机 应用举例</p>
+<p><code>https://www.microsoft.com/zh-cn/p/camara-de-windows/9wzdncrfjbbg?activetab=pivot:overviewtab</code></p>
+<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
+<p><code>https://store.rg-adguard.net/</code></p>
+<ul>
+<li>粘贴链接到输入框</li>
+<li>找到以 <code>AppxBundle</code> 结尾的</li>
+<li>点击下载安装</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/627886ca09475431290fb21e.png" alt="离线安装 Windows 商店(Microsoft-Store)应用-AppxBundle" loading="lazy" class="φbp"></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+        <category>Microsoft Store</category>
+      </categories>
+      <tags>
+        <tag>Microsoft Store</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PowerToys-微软的一款开源电脑工具箱软件</title>
+    <url>/PowerToys/</url>
+    <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
+<p>习惯了 <strong><code>Mac</code></strong> 系统的 <code>command + *</code> 按键的操作逻辑之后</p>
+<p>针对于 <strong><code>Windows</code></strong> 系统的 <code>Ctrl + *</code> 各种不适应</p>
+<hr>
+<p>放上我的调整结果，回到 <code>command</code> 按键逻辑下</p>
+<p><img src="https://pic.imgdb.cn/item/6277942309475431296ca2b5.png" alt="PowerToys-微软的一款开源电脑工具箱软件-键盘管理器" loading="lazy" class="φbp"></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>PowerToys</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>管理 &quot;此电脑&quot; 里面删不掉的流浪 &quot;快捷方式&quot;</title>
+    <url>/windows-MyComputerManager/</url>
+    <content><![CDATA[<h3 id="mycomputermanager">MyComputerManager<a title="#mycomputermanager" href="#mycomputermanager"></a></h3>
+<p>GitHub 开源小工具: <code>https://github.com/1357310795/MyComputerManager</code></p>
+<p>双击直接运行</p>
+<p><img src="https://pic.imgdb.cn/item/62cbbaa7f54cd3f9377cf8d0.png" alt="MyComputerManager" loading="lazy" class="φbp"></p>
+<h3 id="如何彻底杜绝">如何彻底杜绝<a title="#如何彻底杜绝" href="#如何彻底杜绝"></a></h3>
+<ol>
+<li>打开火绒</li>
+<li>安全设置</li>
+<li>高级防护</li>
+<li>自定义防护</li>
+<li>添加规则
+<ol>
+<li>规则名称(随便): <code>阻止程序在此电脑创建快捷方式</code></li>
+<li>注册表规则: <code>*\MyComputer\NameSpace\*</code></li>
+</ol>
+</li>
+</ol>
+<p><img src="https://pic.imgdb.cn/item/62cb97a3f54cd3f937521d28.png" alt="阻止程序在此电脑创建快捷方式" loading="lazy" class="φbp"></p>
+<blockquote>
+<p>如果你想要禁止在桌面创建快捷方式<br>
+把MyComputer改成Desktop即可</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>MyComputerManager</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iPhone与Windows传输文件的几种方式</title>
+    <url>/iPhone-Windows/</url>
+    <content><![CDATA[<h3 id="创建文件夹">创建文件夹<a title="#创建文件夹" href="#创建文件夹"></a></h3>
+<ul>
+<li>右键 <code>属性</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8a7f.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>点击 <code>共享</code> 标签下的 <code>共享</code> 按钮, 选择 <code>Everyone</code>, 点击 <code>添加</code>, 最后点击 <code>共享</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8a88.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>选择文件夹, 点击 <code>完成</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8ac3.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>继续点击 <code>高级共享</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67922f54cd3f937caab12.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>选中 <code>共享此文件夹</code>, 然后点击 <code>权限</code> 按钮</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8ae3.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>选中用户 <code>Everyone</code> 的读写权限, 然后一路确定</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8afc.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>打开命令提示符工具, 输入: <code>ipconfig</code>, 找到自己电脑的IPv4 地址: <code>192.168.95.1</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d678e2f54cd3f937c98b45.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>
+<p>打开手机软件 <code>文件</code>, 点击右上角: <code>连接服务器</code><br>
+<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45d4.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>输入上面获取到的IPv4 地址<br>
+<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45b0.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>输入电脑密码即可进入<br>
+<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45e1.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Windows</category>
+        <category>iPhone</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>iPhone</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WPS 2019 专业增强版 (温州大学教育版)</title>
+    <url>/windows-wps-2019/</url>
+    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62cbbf63f54cd3f9378360d4.png" alt="WPS 产品管理中心" loading="lazy" class="φbp"></p>
+<p><strong>教育版的优势</strong></p>
+<ul>
+<li>定制序列号(内嵌), 无需注册, 直接使用, 授权长期有效, 永久激活</li>
+<li>官方出品, 广告</li>
+<li>具备完整的VBA组件和VBA宏</li>
+</ul>
+<p><strong>下载地址</strong></p>
+<blockquote>
+<p>链接: <code>https://pan.baidu.com/s/1itrGNaYDIuLr2fkzig2OsQ?pwd=lizm</code><br>
+提取码: <code>lizm</code></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>WPS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows &amp; Mac M3U8 视频下载</title>
+    <url>/m3u8-download/</url>
+    <content><![CDATA[<h2 id="mac">Mac<a title="#mac" href="#mac"></a></h2>
+<h2 id="windows">Windows<a title="#windows" href="#windows"></a></h2>
+<h4 id="n_m3u8dl-cli">N_m3u8DL-CLI<a title="#n_m3u8dl-cli" href="#n_m3u8dl-cli"></a></h4>
+<p><img src="https://pic.imgdb.cn/item/62f1f7dd16f2c2beb1ccdd40.png" alt="N_m3u8DL-CLI" loading="lazy" class="φbp"></p>
+<p>GitHub地址: <a href="https://github.com/nilaoda/N_m3u8DL-CLI" target="_blank">https://github.com/nilaoda/N_m3u8DL-CLI</a></p>
+<blockquote>
+<p>N_m3u8DL-CLI是一款用于下载m3u8的命令行工具，<a href="http://xn--6kq92u.NET">基于.NET</a> Framework 4.6框架开发，调用系统类库进行HTTP下载，支持常见的m3u8格式下载，支持从视频中选择一部分下载，还提供丰富的命令行选项以增强其功能。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>M3U8</category>
+      </categories>
+      <tags>
+        <tag>M3U8</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows iTunes 设置关闭自动备份</title>
+    <url>/windows-itunes-backups/</url>
+    <content><![CDATA[<ol>
+<li>找到安装目录下的: <code>defaults.exe</code> 复制路径</li>
+<li>运行: <code>cmd</code></li>
+<li>执行命令: <code>&quot;D:\Application\iTunes\defaults.exe&quot; write com.apple.iTunes AutomaticDeviceBackupsDisabled -bool true</code></li>
+</ol>
+]]></content>
+      <categories>
+        <category>iTunes</category>
+      </categories>
+      <tags>
+        <tag>iTunes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows 显示并控制通过USB (或TCP/IP) 连接的 Android 设备</title>
+    <url>/windows-control-android/</url>
+    <content><![CDATA[<h3 id="scrcpy">scrcpy<a title="#scrcpy" href="#scrcpy"></a></h3>
+<p>Github地址：<a href="https://github.com/Genymobile/scrcpy" target="_blank">https://github.com/Genymobile/scrcpy</a></p>
+<p><strong>本应用专注于：</strong></p>
+<ul>
+<li><strong>轻量</strong> ：原生，仅显示设备屏幕</li>
+<li><strong>性能</strong> ：30~120fps，取决于设备</li>
+<li><strong>质量</strong> ：分辨率可达 1920×1080 或更高</li>
+<li><strong>低延迟</strong> ：35~70ms</li>
+<li><strong>快速启动</strong> ：最快 1 秒内即可显示第一帧</li>
+<li><strong>无侵入性</strong> ：不会在设备上遗留任何程序</li>
+<li><strong>用户利益</strong> ：无需帐号，无广告，无需联网</li>
+<li><strong>自由</strong> ：自由和开源软件</li>
+</ul>
+<p><strong>系统要求：</strong><br>
+安卓设备最低需要支持 API 21 (Android 5.0)<br>
+确保设备已开启 adb 调试<br>
+在某些设备上，还需要开启额外的选项以使用鼠标和键盘进行控制</p>
+<hr>
+<p>软件目录, 双击: <code>open_a_terminal_here.bat</code> 打开命令窗口</p>
+<h3 id="命令">命令<a title="#命令" href="#命令"></a></h3>
+<ul>
+<li>标题: <code>scrcpy --window-title &quot;my phone&quot;</code></li>
+<li>关闭设备屏幕: <code>scrcpy --turn-screen-off</code></li>
+<li>复制粘贴:
+<ul>
+<li>设备上复制,会自动同步到电脑的剪贴板上</li>
+<li>电脑上复制, 使用 <code>Ctrl</code> + <code>Shift</code> + <code>v</code> 粘贴到设备上</li>
+</ul>
+</li>
+<li>旋转屏幕: <code>Ctrl</code> + <code>R</code></li>
+</ul>
+<h3 id="常用命令">常用命令<a title="#常用命令" href="#常用命令"></a></h3>
+<p>关闭设备屏幕启动: <code>scrcpy --turn-screen-off --window-title &quot;my phone&quot;</code></p>
+]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Chrome 插件</title>
+    <url>/Chrome-Plugins/</url>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX19uRJyK7qFEtmyvn0L3YRtz1rZ4CTLAIzBTJyrpVwizZQb5YF1NE0as</is-cipher>]]></content>
+      <categories>
+        <category>Chrome</category>
+      </categories>
+      <tags>
+        <tag>Chrome Plugins</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows 10/11 电源计划 开启[卓越性能]</title>
+    <url>/windows-excellent/</url>
+    <content><![CDATA[<p>以管理员身份运行<code>Windows PowerShell</code>, 输入以下命令:</p>
+<p><code>powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61</code></p>
 ]]></content>
       <categories>
         <category>Windows</category>
@@ -842,166 +1105,6 @@ font-family: SlideTownsoul
       </categories>
       <tags>
         <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决 GitHub 无法访问</title>
-    <url>/github-host/</url>
-    <content><![CDATA[<p>需要配置的网址:</p>
-<ul>
-<li>网站：<code>github.com</code></li>
-<li>网站：<code>github.global.ssl.fastly.net</code></li>
-</ul>
-<h3 id="查询-github-dns">查询 GitHub DNS<a title="#查询-github-dns" href="#查询-github-dns"></a></h3>
-<p>地址: <code>http://tool.chinaz.com/dns</code><br>
-找到: TTL值 最小的DNS</p>
-<p>配置 Host 文件<br>
-Mac 路径：/etc/host<br>
-Windows 路径：C:\Windows\System32\drivers\etc</p>
-<p>添加:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">20.205.243.166 github.com</span><br><span class="line">31.13.73.169 github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
-<p>Done<br>
-<img src="https://pic.imgdb.cn/item/62c6a658f54cd3f93796440b.png" alt="" loading="lazy"><br>
-<img src="https://pic.imgdb.cn/item/62c6a743f54cd3f937977571.png" alt="" loading="lazy"></p>
-]]></content>
-      <categories>
-        <category>GitHub</category>
-      </categories>
-      <tags>
-        <tag>GitHub</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS Loading 加载动画</title>
-    <url>/2022-01-13-CSS-Loading/</url>
-    <content><![CDATA[<style type="text/css">
-
-/* * {
-	border: 0;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-} */
-/* :root {
-	--hue: 223;
-	--bg: hsl(var(--hue),10%,90%);
-	--fg: hsl(var(--hue),10%,10%);
-	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
-} */
-/* body {
-	background-color: #1f1f1f;
-	color: var(--fg);
-	font: 1em/1.5 sans-serif;
-	height: 100vh;
-	display: grid;
-	place-items: center;
-	transition: background-color 0.3s;
-} */
-main {
-	padding: 1.5em 0;
-}
-
-.ap {
-	width: 100%;
-	height: 16em;
-
-}
-.ap__ring {	
-	transition: stroke 0.3s;
-}
-.ap__worm1,
-.ap__worm2 {
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-}
-.ap__worm1 {
-	animation-name: worm1;
-}
-.ap__worm2 {
-	animation-name: worm2;
-	visibility: hidden;
-}
-
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-	:root {
-		--bg: hsl(var(--hue),10%,10%);
-		--fg: hsl(var(--hue),10%,90%);
-	}
-	.ap__ring {
-		stroke: hsla(var(--hue),10%,90%,0.1);
-	}
-}
-
-/* Animtions */
-@keyframes worm1 {
-	from {
-		animation-timing-function: ease-in-out;
-		stroke-dashoffset: -87.96;
-	}
-	20% {
-		animation-timing-function: ease-in;
-		stroke-dashoffset: 0;
-	}
-	60% {
-		stroke-dashoffset: -791.68;
-		visibility: visible;
-	}
-	60.1%,
-	to {
-		stroke-dashoffset: -791.68;
-		visibility: hidden;
-	}
-}
-@keyframes worm2 {
-	from,
-	60% {
-		stroke-dashoffset: -87.96;
-		visibility: hidden;
-	}
-	60.1% {
-		animation-timing-function: cubic-bezier(0,0,0.5,0.75);
-		stroke-dashoffset: -87.96;
-		visibility: visible;
-	}
-	77% {
-		animation-timing-function: cubic-bezier(0.5,0.25,0.5,0.88);
-		stroke-dashoffset: -340;
-		visibility: visible;
-	}
-	to {
-		stroke-dashoffset: -669.92;
-		visibility: visible;
-	}
-}
-</style>
-<script>
-
-</script><main>
-	<svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
-		<defs>
-			<linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
-				<stop offset="0%" stop-color="hsl(223,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
-			</linearGradient>
-			<linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
-				<stop offset="0%" stop-color="hsl(193,90%,55%)" />
-				<stop offset="50%" stop-color="hsl(223,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
-			</linearGradient>
-		</defs>
-		<circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
-		<circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
-		<path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
-	</svg>
-</main>]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>CSS</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -1286,13 +1389,146 @@ main {
       </tags>
   </entry>
   <entry>
+    <title>CSS Loading 加载动画</title>
+    <url>/2022-01-13-CSS-Loading/</url>
+    <content><![CDATA[<style type="text/css">
+
+/* * {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+} */
+/* :root {
+	--hue: 223;
+	--bg: hsl(var(--hue),10%,90%);
+	--fg: hsl(var(--hue),10%,10%);
+	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+} */
+/* body {
+	background-color: #1f1f1f;
+	color: var(--fg);
+	font: 1em/1.5 sans-serif;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	transition: background-color 0.3s;
+} */
+main {
+	padding: 1.5em 0;
+}
+
+.ap {
+	width: 100%;
+	height: 16em;
+
+}
+.ap__ring {	
+	transition: stroke 0.3s;
+}
+.ap__worm1,
+.ap__worm2 {
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.ap__worm1 {
+	animation-name: worm1;
+}
+.ap__worm2 {
+	animation-name: worm2;
+	visibility: hidden;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(var(--hue),10%,10%);
+		--fg: hsl(var(--hue),10%,90%);
+	}
+	.ap__ring {
+		stroke: hsla(var(--hue),10%,90%,0.1);
+	}
+}
+
+/* Animtions */
+@keyframes worm1 {
+	from {
+		animation-timing-function: ease-in-out;
+		stroke-dashoffset: -87.96;
+	}
+	20% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: 0;
+	}
+	60% {
+		stroke-dashoffset: -791.68;
+		visibility: visible;
+	}
+	60.1%,
+	to {
+		stroke-dashoffset: -791.68;
+		visibility: hidden;
+	}
+}
+@keyframes worm2 {
+	from,
+	60% {
+		stroke-dashoffset: -87.96;
+		visibility: hidden;
+	}
+	60.1% {
+		animation-timing-function: cubic-bezier(0,0,0.5,0.75);
+		stroke-dashoffset: -87.96;
+		visibility: visible;
+	}
+	77% {
+		animation-timing-function: cubic-bezier(0.5,0.25,0.5,0.88);
+		stroke-dashoffset: -340;
+		visibility: visible;
+	}
+	to {
+		stroke-dashoffset: -669.92;
+		visibility: visible;
+	}
+}
+</style>
+<script>
+
+</script><main>
+	<svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
+				<stop offset="0%" stop-color="hsl(223,90%,55%)" />
+				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
+			</linearGradient>
+			<linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
+				<stop offset="0%" stop-color="hsl(193,90%,55%)" />
+				<stop offset="50%" stop-color="hsl(223,90%,55%)" />
+				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
+			</linearGradient>
+		</defs>
+		<circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
+		<circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
+		<path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
+	</svg>
+</main>]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo 嵌入可视化 Echarts 图表</title>
     <url>/echarts/</url>
     <content><![CDATA[<p>Echarts在线库 CDN 服务: <code>https://www.bootcdn.cn/echarts/</code></p>
-<div id="echarts6599" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<div id="echarts995" style="width: 100%;height: 400px;margin: 0 auto"></div>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts6599'));
+        var myChart = echarts.init(document.getElementById('echarts995'));
 
         // 指定图表的配置项和数据
         var option = {
@@ -1358,10 +1594,10 @@ main {
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
 </script>
-<div id="echarts7984" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<div id="echarts6196" style="width: 100%;height: 400px;margin: 0 auto"></div>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts7984'));
+        var myChart = echarts.init(document.getElementById('echarts6196'));
 
         // 指定图表的配置项和数据
         var option = option = {
@@ -1423,10 +1659,10 @@ myChart.on('click', function (params) {
         endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
     });
 });
-</script><div id="echarts1634" style="width: 100%;height: 400px;margin: 0 auto"></div>
+</script><div id="echarts4654" style="width: 100%;height: 400px;margin: 0 auto"></div>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts1634'));
+        var myChart = echarts.init(document.getElementById('echarts4654'));
 
         // 指定图表的配置项和数据
         var option = option = {
@@ -1511,10 +1747,10 @@ myChart.on('click', function (params) {
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
 </script>
-<div id="echarts1753" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<div id="echarts7377" style="width: 100%;height: 400px;margin: 0 auto"></div>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts1753'));
+        var myChart = echarts.init(document.getElementById('echarts7377'));
 
         // 指定图表的配置项和数据
         var option = option = {
@@ -1567,170 +1803,54 @@ myChart.on('click', function (params) {
       </tags>
   </entry>
   <entry>
-    <title>多线程</title>
-    <url>/Thread/</url>
-    <content><![CDATA[]]></content>
+    <title>解决 GitHub 无法访问</title>
+    <url>/github-host/</url>
+    <content><![CDATA[<p>需要配置的网址:</p>
+<ul>
+<li>网站：<code>github.com</code></li>
+<li>网站：<code>github.global.ssl.fastly.net</code></li>
+</ul>
+<h3 id="查询-github-dns">查询 GitHub DNS<a title="#查询-github-dns" href="#查询-github-dns"></a></h3>
+<p>地址: <code>http://tool.chinaz.com/dns</code><br>
+找到: TTL值 最小的DNS</p>
+<p>配置 Host 文件<br>
+Mac 路径：/etc/host<br>
+Windows 路径：C:\Windows\System32\drivers\etc</p>
+<p>添加:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">20.205.243.166 github.com</span><br><span class="line">31.13.73.169 github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
+<p>Done<br>
+<img src="https://pic.imgdb.cn/item/62c6a658f54cd3f93796440b.png" alt="" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/62c6a743f54cd3f937977571.png" alt="" loading="lazy"></p>
+]]></content>
       <categories>
-        <category>Thread</category>
+        <category>GitHub</category>
       </categories>
       <tags>
-        <tag>Thread</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
-    <title>BigDecimal Java 高精度运算</title>
-    <url>/bigdecimal/</url>
-    <content><![CDATA[<h2 id="常用方法">常用方法<a title="#常用方法" href="#常用方法"></a></h2>
+    <title>IntelliJ IDEA 插件</title>
+    <url>/IntelliJ-IDEA-Plugins/</url>
+    <content><![CDATA[<h3 id="free-mybatis-plugin">Free MyBatis plugin<a title="#free-mybatis-plugin" href="#free-mybatis-plugin"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/6279cab909475431291d2971.png" alt="Free MyBatis plugin" loading="lazy" class="φbp"></p>
 <ul>
-<li>加法 : <code>BigDecimal add(BigDecimal augend)</code></li>
-<li>减法 : <code>BigDecimal subtract(BigDecimal subtrahend)</code></li>
-<li>乘法 : <code>BigDecimal multiply(BigDecimal multiplicand)</code></li>
-<li>除法 : <code>BigDecimal divide(BigDecimal divisor)</code></li>
+<li>Git地址：<a href="https://github.com/chuntungho/free-mybatis-plugin" target="_blank">https://github.com/chuntungho/free-mybatis-plugin</a></li>
 </ul>
-<h2 id="大小比较">大小比较<a title="#大小比较" href="#大小比较"></a></h2>
-<ul>
-<li><code>int compareTo(BigDecimal val)</code>
-<ul>
-<li>A &lt; B 返回 : -1</li>
-<li>A = B 返回 : 0</li>
-<li>A &gt; B 返回 : 1</li>
-</ul>
-</li>
-</ul>
-<h2 id="格式化">格式化<a title="#格式化" href="#格式化"></a></h2>
-<h3 id="百分比">百分比<a title="#百分比" href="#百分比"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">BigDecimal</span> <span class="variable">A</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="string">&quot;0.0008&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="type">NumberFormat</span> <span class="variable">percentInstance</span> <span class="operator">=</span> NumberFormat.getPercentInstance();</span><br><span class="line">percentInstance.setRoundingMode(RoundingMode.DOWN); <span class="comment">// 舍入模式: 截尾</span></span><br><span class="line">percentInstance.setMaximumFractionDigits(<span class="number">2</span>); <span class="comment">// 百分比小数最多两位</span></span><br><span class="line">percentInstance.setMinimumFractionDigits(<span class="number">2</span>); <span class="comment">// 百分比小数最少两位 0.00%</span></span><br><span class="line"></span><br><span class="line">percentInstance.format(interestRate); <span class="comment">// 0.08%</span></span><br></pre></td></tr></table></figure>
-<h2 id="不同舍入模式下的舍入操作汇总">不同舍入模式下的舍入操作汇总<a title="#不同舍入模式下的舍入操作汇总" href="#不同舍入模式下的舍入操作汇总"></a></h2>
-<div class="φbq"><div class="φbs"><table><thead>
-<tr>
-<th style="text-align:center">NUMBER</th>
-<th style="text-align:center">UP</th>
-<th style="text-align:center">DOWN</th>
-<th style="text-align:center">CEILING</th>
-<th style="text-align:center">FLOOR</th>
-<th style="text-align:center">HALF_UP</th>
-<th style="text-align:center">HALF_DOWN</th>
-<th style="text-align:center">HALF_EVEN</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">5.5</td>
-<td style="text-align:center">6</td>
-<td style="text-align:center">5</td>
-<td style="text-align:center">6</td>
-<td style="text-align:center">5</td>
-<td style="text-align:center">6</td>
-<td style="text-align:center">5</td>
-<td style="text-align:center">6</td>
-</tr>
-<tr>
-<td style="text-align:center">2.5</td>
-<td style="text-align:center">3</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">3</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">3</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">2</td>
-</tr>
-<tr>
-<td style="text-align:center">1.6</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">2</td>
-</tr>
-<tr>
-<td style="text-align:center">1.1</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center">1.0</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center">-1.0</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-</tr>
-<tr>
-<td style="text-align:center">-1.1</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-</tr>
-<tr>
-<td style="text-align:center">-1.6</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-2</td>
-</tr>
-<tr>
-<td style="text-align:center">-2.5</td>
-<td style="text-align:center">-3</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-3</td>
-<td style="text-align:center">-3</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-2</td>
-</tr>
-<tr>
-<td style="text-align:center">-5.5</td>
-<td style="text-align:center">-6</td>
-<td style="text-align:center">-5</td>
-<td style="text-align:center">-5</td>
-<td style="text-align:center">-6</td>
-<td style="text-align:center">-6</td>
-<td style="text-align:center">-5</td>
-<td style="text-align:center">-6</td>
-</tr>
-</tbody>
-</table></div></div><p><strong>UP</strong> 远离零方向舍入的舍入模式。始终对非零舍弃部分前面的数字加 1。注意，此舍入模式始终不会减少计算值的绝对值</p>
-<p><strong>DOWN</strong> 向零方向舍入的舍入模式。从不对舍弃部分前面的数字加 1（即截尾）。注意，此舍入模式始终不会增加计算值的绝对值</p>
-<p><strong>CEILING</strong> 向正无限大方向舍入的舍入模式。如果结果为正，则舍入行为类似于 RoundingMode.UP；如果结果为负，则舍入行为类似于 RoundingMode.DOWN。注意，此舍入模式始终不会减少计算值</p>
-<p><strong>FLOOR</strong> 向负无限大方向舍入的舍入模式。如果结果为正，则舍入行为类似于 RoundingMode.DOWN；如果结果为负，则舍入行为类似于 RoundingMode.UP。注意，此舍入模式始终不会增加计算值</p>
-<p><strong>HALF_UP</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向上舍入。如果被舍弃部分 &gt;= 0.5，则舍入行为同 RoundingMode.UP；否则舍入行为同 RoundingMode.DOWN。注意，此舍入模式就是通常学校里讲的四舍五入</p>
-<p><strong>HALF_DOWN</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向下舍入。如果被舍弃部分 &gt; 0.5，则舍入行为同 RoundingMode.UP；否则舍入行为同 RoundingMode.DOWN</p>
-<p><strong>HALF_EVEN</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向相邻的偶数舍入。如果舍弃部分左边的数字为奇数，则舍入行为同 RoundingMode.HALF_UP；如果为偶数，则舍入行为同 RoundingMode.HALF_DOWN。注意，在重复进行一系列计算时，此舍入模式可以在统计上将累加错误减到最小。此舍入模式也称为“银行家舍入法”，主要在美国使用。此舍入模式类似于 Java 中对 float 和 double 算法使用的舍入策略</p>
-<p><strong>UNNECESSARY</strong> 用于断言请求的操作具有精确结果的舍入模式，因此不需要舍入。如果对生成精确结果的操作指定此舍入模式，则抛出 ArithmeticException</p>
+<p>主要功能：</p>
+<ol>
+<li>生成mapper xml文件</li>
+<li>快速从代码跳转到mapper及从mapper返回代码</li>
+<li>mybatis自动补全及语法错误提示</li>
+<li>集成mybatis generator gui界面</li>
+<li>根据数据库注解，生成swagger model注解</li>
+</ol>
 ]]></content>
       <categories>
-        <category>Java</category>
-        <category>BigDecimal</category>
+        <category>IntelliJ IDEA</category>
       </categories>
       <tags>
-        <tag>Java</tag>
-        <tag>BigDecimal</tag>
+        <tag>IntelliJ IDEA</tag>
       </tags>
   </entry>
   <entry>
@@ -1743,6 +1863,80 @@ myChart.on('click', function (params) {
       </categories>
       <tags>
         <tag>MongoDB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Redis 配置文件说明</title>
+    <url>/redis-config-explan/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">################################## NETWORK #####################################</span><br><span class="line">bind 127.0.0.1			# 默认绑定本机所有ip地址 为了安全 可以只监听内网ip</span><br><span class="line">protected-mode yes		# 保护模式[无密码模式设置为no]</span><br><span class="line">port 6379 			# 默认端口</span><br><span class="line">tcp-backlog 511			# listen队列的长度</span><br><span class="line">timeout 0			# 客户端空闲多少s(秒)后踢掉 0禁止</span><br><span class="line">tcp-keepalive 300		# 检测挂掉的连接 单位s 0禁止</span><br><span class="line">################################# GENERAL #####################################</span><br><span class="line">daemonize no 			# 作为守护进程运行</span><br><span class="line">supervised no 			# 设成开机启动后 系统监控</span><br><span class="line">pidfile /var/run/redis_6379.pid # pid 位置</span><br><span class="line">loglevel notice 		# 设置服务端的日志级别，有下列几种选择</span><br><span class="line">				debug：记录详细信息，用于开发或调试</span><br><span class="line">				verbose：提供很多有用的信息，</span><br><span class="line">					但是又不像debug那么详尽，默认就是这一选项</span><br><span class="line">				notice：适度提醒，多用于产品环境</span><br><span class="line">				warning：仅显示重要的警告信息</span><br><span class="line">logfile &quot;&quot;			# 日志目录</span><br><span class="line">databases 16			# 指定数据库的数量</span><br><span class="line">################################ SNAPSHOTTING  ################################</span><br><span class="line">save 900 1			# 每900秒(15分钟)至少一次键值变更时被触发</span><br><span class="line">save 300 10			# 每300秒(5分钟)至少10次键值变更时被触发</span><br><span class="line">save 60 10000			# 每60秒至少10000次键值变更时被触发</span><br><span class="line">stop-writes-on-bgsave-error yes	# 后台存储错误停止写</span><br><span class="line">rdbcompression yes		# 存储至本地数据库时(持久化到rdb文件)是否压缩数据 默认为 yes</span><br><span class="line">rdbchecksum yes			# 读取和写入的时候是否支持CRC64校验 默认是开启的</span><br><span class="line">dbfilename dump.rdb 		# 镜像文件的名字</span><br><span class="line">dir ./ 				# 当前工作目录 配置文件和镜像文件等都在此目录下</span><br><span class="line">################################# REPLICATION #################################</span><br><span class="line">slave-serve-stale-data yes	# 当slave服务器和master服务器失去连接后，</span><br><span class="line">				或者当数据正在复制传输的时候，如果此参数值设置“yes”</span><br><span class="line">				slave服务器可以继续接受客户端的请求，</span><br><span class="line">				否则，会返回给请求的客户端如下信息</span><br><span class="line">				“SYNC with master in progress”</span><br><span class="line">slave-read-only yes		# 是否允许slave服务器节点只提供读服务</span><br><span class="line">repl-diskless-sync no 		# disk较慢，并且网络较快的时候，</span><br><span class="line">				可以用diskless。（默认用disk-based）</span><br><span class="line">repl-diskless-sync-delay 5	# 备份等待延迟时间 seconds</span><br><span class="line">repl-disable-tcp-nodelay no 	# 指定向slave同步数据时，是否禁用socket的NO_DELAY选 项。</span><br><span class="line">				若配置为“yes”，则禁用NO_DELAY，则TCP协议栈会合并小包统一发送，</span><br><span class="line">				这样可以减少主从节点间的包数量并节省带宽，但会增加数据同步到</span><br><span class="line">				slave的时间。若配置为“no”，表明启用NO_DELAY，则TCP协议栈不</span><br><span class="line">				会延迟小包的发送时机，这样数据同步的延时会减少，但需要更大的带宽。</span><br><span class="line">				通常情况下，应该配置为no以降低同步延时，</span><br><span class="line">				但在主从节点间网络负载已经很高的情况下，可以配置为yes</span><br><span class="line">slave-priority 100		# 指定slave的优先级。在不只1个slave存在的部署环境下，</span><br><span class="line">				当master宕机时，Redis Sentinel会将priority值最小的slave</span><br><span class="line">				提升为master需要注意的是，若该配置项为0，则对应的slave永远</span><br><span class="line">				不会自动提升为master</span><br><span class="line">############################## APPEND ONLY MODE ###############################</span><br><span class="line">appendonly no 			# 开启append only 模式之后，redis 会把所接收到的每一次写</span><br><span class="line">				操作请求都追加到appendonly.aof 文件中，当redis 重新启动时，</span><br><span class="line">				会从该文件恢复出之前的状态。但是这样会造成appendonly.aof </span><br><span class="line">				文件过大，所以redis 还支持了BGREWRITEAOF 指令，</span><br><span class="line">				对appendonly.aof 进行重新整理。默认是不开启的</span><br><span class="line">appendfilename &quot;appendonly.aof&quot;	# 默认为appendonly.aof</span><br><span class="line">appendfsync everysec		# 设置aof的同步频率，有三种选择</span><br><span class="line">				always、everysec、no，默认是everysec表示每秒同步一次</span><br><span class="line">no-appendfsync-on-rewrite no 	# 指定是否在后台aof文件rewrite期间调用fsync，</span><br><span class="line">				默认为no，表示要调用fsync（无论后台是否有子进程在刷盘）。</span><br><span class="line">				Redis在后台写RDB文件或重写afo文件期间会存在大量磁盘IO，</span><br><span class="line">				此时，在某些linux系统中，调用fsync可能会阻塞</span><br><span class="line">auto-aof-rewrite-percentage 100 # 指定Redis重写aof文件的条件，默认为100，</span><br><span class="line">				表示与上次rewrite的aof文件大小相比，当前aof文件增长量超过上</span><br><span class="line">				次afo文件大小的100%时，就会触发background rewrite。</span><br><span class="line">				若配置为0，则会禁用自动rewrite</span><br><span class="line">auto-aof-rewrite-min-size 64mb 	# 指定触发rewrite的aof文件大小。</span><br><span class="line">				若aof文件小于该值，即使当前文件的增量比例达到</span><br><span class="line">				auto-aof-rewrite-percentage的配置值，也不会触发自动</span><br><span class="line">				rewrite。即这两个配置项同时满足时，才会触发rewrite</span><br><span class="line">aof-load-truncated yes 		# 会自动发布一个log给客户端然后load（默认）</span><br><span class="line">				如果是no，用户必须手动redis-check-aof修复AOF文件才可以</span><br><span class="line">################################ LUA SCRIPTING  ###############################</span><br><span class="line">lua-time-limit 5000 		# 一个Lua脚本最长的执行时间，单位为毫秒</span><br><span class="line">				如果为0或负数表示无限执行时间，默认为5000</span><br><span class="line">################################## SLOW LOG ###################################</span><br><span class="line">slowlog-log-slower-than 10000 	# 设定执行时间，单位是微秒，执行时长超过该时间</span><br><span class="line">				的命令将会被记入log。-1表示不记录slow log; 0强制记录所有命令</span><br><span class="line">slowlog-max-len 128 		# 最多保存 128 条日志</span><br><span class="line">################################ LATENCY MONITOR ##############################</span><br><span class="line">latency-monitor-threshold 0	# 用LATENCY打印redis实例在跑命令时的耗时图表</span><br><span class="line">				只记录大于等于下边设置的值的操作。0的话，就是关闭监视。</span><br><span class="line">				可以动态开启</span><br><span class="line">############################# EVENT NOTIFICATION ##############################</span><br><span class="line">notify-keyspace-events &quot;&quot; 	# 如果开着开关。一个client进行了DEL操作在“foo”key</span><br><span class="line">				上在database0上。两个消息将会发布通过 </span><br><span class="line">				pub/sub默认所用的通知被禁用，因为用户通常不需要改特性</span><br><span class="line">				并且该特性会有性能损耗</span><br><span class="line">############################### ADVANCED CONFIG ###############################</span><br><span class="line">hash-max-ziplist-entries 512 	# hash类型的数据结构在编码上可以使用</span><br><span class="line">				ziplist和hashtable。ziplist的特点就是文件存储(以及内存存储)</span><br><span class="line">				所需的空间较小,在内容较小时,性能和hashtable几乎一样.因此redis</span><br><span class="line">				对hash类型默认采取ziplist。如果hash中条目的条目个数或者value</span><br><span class="line">				长度达到阀值,将会被重构为hashtable</span><br><span class="line">				这个参数指的是ziplist中允许存储的最大条目个数</span><br><span class="line">				默认为512，建议为128</span><br><span class="line">hash-max-ziplist-value 64	# ziplist中允许条目value值最大字节数，默认为64，建议为1024</span><br><span class="line">list-max-ziplist-size -2 	# 对于list类型,将会采取ziplist,linkedlist两种编码类型</span><br><span class="line">list-compress-depth 0		# 表示一个quicklist两端不被压缩的节点个数。</span><br><span class="line">				注：这里的节点个数是指quicklist双向链表的节点个数，</span><br><span class="line">				而不是指ziplist里面的数据项个数。实际上，一个</span><br><span class="line">				quicklist节点上的ziplist，如果被压缩，就是整体被压缩的</span><br><span class="line">				参数list-compress-depth的取值含义如下：</span><br><span class="line">				0: 是个特殊值，表示都不压缩。这是Redis的默认值。</span><br><span class="line">				1: 表示quicklist两端各有1个节点不压缩，中间的节点压缩。</span><br><span class="line">				2: 表示quicklist两端各有2个节点不压缩，中间的节点压缩。</span><br><span class="line">				3: 表示quicklist两端各有3个节点不压缩，中间的节点压缩。</span><br><span class="line">				依此类推</span><br><span class="line">				由于0是个特殊值，很容易看出quicklist的头节点和</span><br><span class="line">				尾节点总是不被压缩的，以便于在表的两端进行快速存取</span><br><span class="line">set-max-intset-entries 512 	# 当set类型中的数据都是数值类型，</span><br><span class="line">				并且set中整型元素的数量不超过指定值时，使用特殊的编码方式</span><br><span class="line">zset-max-ziplist-entries 128 	# 与hash和list类似 </span><br><span class="line">zset-max-ziplist-value 64 	# zsort也采用如下的配置来选择是否进行特殊编码来节省空间</span><br><span class="line">hll-sparse-max-bytes 3000 	# 这个限制包含了16个字节的头部，当一个HyperLogLog</span><br><span class="line">				使用sparse representation 超过了这个显示，它就会转换到</span><br><span class="line">				dense representation上</span><br><span class="line">activerehashing yes 		# 用来控制是否自动重建hash。Active rehashing每100微秒</span><br><span class="line">				使用1微秒cpu时间排序，以重组Redis的hash表。重建是通过一种</span><br><span class="line">				lazy方式，写入hash表的操作越多，需要执行rehashing的步骤</span><br><span class="line">				也越多，如果服务器当前空闲，那么rehashing操作会一直执行。</span><br><span class="line">				如果对实时性要求较高，难以接受redis时不时出现的2微秒的延迟，</span><br><span class="line">				则可以设置activerehashing为no，</span><br><span class="line">				否则建议设置为yes，以节省内存空间</span><br><span class="line">client-output-buffer-limit normal 0 0 0</span><br><span class="line">client-output-buffer-limit slave 256mb 64mb 60</span><br><span class="line">client-output-buffer-limit pubsub 32mb 8mb 60</span><br><span class="line">客户端buffer控制。在客户端与server进行的交互中,每个连接都会与一个buffer关联,</span><br><span class="line">此buffer用来队列化等待被client接受的响应信息。如果client不能及时的消费响应信息,</span><br><span class="line">那么buffer将会被不断积压而给server带来内存压力.如果buffer中积压的数据达到阀值,</span><br><span class="line">将会导致连接被关闭,buffer被移除。</span><br><span class="line">buffer控制类型包括:normal -&gt; 普通连接；slave -&gt;与slave之间的连接；</span><br><span class="line">pubsub -&gt;pub/sub类型连接，此类型的连接，往往会产生此种问题;</span><br><span class="line">因为pub端会密集的发布消息,但是sub端可能消费不足.</span><br><span class="line">指令格式:client-output-buffer-limit &lt;class&gt; &lt;hard&gt; &lt;soft&gt; &lt;seconds&gt;&quot;,</span><br><span class="line">其中hard表示buffer最大值,一旦达到阀值将立即关闭连接;</span><br><span class="line">soft表示&quot;容忍值&quot;,它和seconds配合,如果buffer值超过soft且持续时间达到了seconds,</span><br><span class="line">也将立即关闭连接,如果超过了soft但是在seconds之后，buffer数据小于了soft,连接将会被保留.</span><br><span class="line">其中hard和soft都设置为0,则表示禁用buffer控制.通常hard值大于soft</span><br><span class="line">hz 10  				# Redis server执行后台任务的频率,默认为10,</span><br><span class="line">				此值越大表示redis对&quot;间歇性task&quot;的执行次数越频繁(次数/秒)。</span><br><span class="line">				&quot;间歇性task&quot;包括&quot;过期集合&quot;检测、关闭&quot;空闲超时&quot;的连接等,此</span><br><span class="line">				值必须大于0且小于500。此值过小就意味着更多的cpu周期消耗,</span><br><span class="line">				后台task被轮询的次数更频繁。此值过大意味着&quot;内存敏感&quot;性较差。</span><br><span class="line">				建议采用默认值</span><br><span class="line">aof-rewrite-incremental-fsync yes # aof rewrite过程中,是否采取增量文件同步策略</span><br><span class="line">				默认为“yes”。 rewrite过程中,每32M数据进行一次文件同步</span><br><span class="line">				这样可以减少aof大文件写入对磁盘的操作次数</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Redis</category>
+      </categories>
+      <tags>
+        <tag>Redis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS App苹果企业签分发</title>
+    <url>/ios-app-enterprise-sign-share/</url>
+    <content><![CDATA[<h3 id="配置">配置<a title="#配置" href="#配置"></a></h3>
+<ol>
+<li>
+<p>必须有SSL证书（HTTPS）</p>
+<blockquote>
+<p>企业签分发的 plist、icon、ipa 等文件下载链接必须是https协议的，例如：<a href="https://html.xn--tiqt5l2rd.com/company_ios/propertylist.plist" target="_blank">https://html.主域名.com/company_ios/propertylist.plist</a></p>
+</blockquote>
+</li>
+<li>
+<p>配置MIME</p>
+<blockquote>
+<p>如果是Nginx，在 nginx/conf/mime.types 配置文件里面添加如下配置</p>
+</blockquote>
+<p>说明：</p>
+<ul>
+<li>application/octet-stream表示.ipa后缀的文件是下载类型</li>
+<li>text/xml表示.plist后缀的文件是xml类型</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">application/octet-stream    ipa</span><br><span class="line">text/xml    plist</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>苹果端安装协议</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">itms-services:<span class="comment">///?action=download-manifest&amp;url=https://html.主域名.com/company_ios/propertylist.plist</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用">使用<a title="#使用" href="#使用"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 能触发这个地址就好</span></span><br><span class="line">window.location = <span class="string">&quot;itms-services:///?action=download-manifest&amp;url=https://html.主域名.com/company_ios/propertylist.plist&quot;</span> </span><br></pre></td></tr></table></figure>
+<h3 id="注意">注意<a title="#注意" href="#注意"></a></h3>
+<ol>
+<li>自己签名的SSL证书是不行的</li>
+<li>plist 文件中有中文会有问题，需要另存为utf-8格式保存即可</li>
+<li>plist 文件下载路径问题，下载路径不要操作三级，否者会报“无法连接到…”、“此时无法下载…”、“证书有问题…”等</li>
+<li>安装协议 itms-services: 后面是三个&quot;/&quot;，当然，我测试了两个，也是可以的</li>
+<li>客户端对 plist 文件是有缓存的，如果安装不成功，可以修改下 plist 文件名称重新试下</li>
+<li>安装过程中图片无法显示问题，这个在plist文件里面已经设置了图片地址，但是就是不显示</li>
+</ol>
+<h3 id="plist文件样本：">plist文件样本：<a title="#plist文件样本：" href="#plist文件样本："></a></h3>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">plist</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//Apple//DTD PLIST 1.0//EN&quot;</span> <span class="string">&quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">plist</span> <span class="attr">version</span>=<span class="string">&quot;1.0&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">key</span>&gt;</span>items<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">array</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">key</span>&gt;</span>assets<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">array</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>software-package<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>https://www.主域名.com/包.ipa<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>full-size-image<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>needs-shine<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">          　　　　　　　　　　<span class="tag">&lt;<span class="name">true</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>http://www.主域名.com/icon-512.png<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>display-image<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>needs-shine<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">          　　　　　　　　　　<span class="tag">&lt;<span class="name">true</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>http://www.主域名.com/icon-57.png<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">array</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">key</span>&gt;</span>metadata<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>bundle-identifier<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>com.主域名.bundleId<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>bundle-version<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>2.0.0<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>software<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>subtitle<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span><span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>title<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>App名称<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">array</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plist</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="关于跳转设置信任的逻辑">关于跳转设置信任的逻辑<a title="#关于跳转设置信任的逻辑" href="#关于跳转设置信任的逻辑"></a></h3>
+<ul>
+<li>
+<p>iOS 9 版本之前可以直接： <code>prefs:root=General&amp;path=ManagedConfigurationList </code></p>
+</li>
+<li>
+<p>iOS 10 系统之后不能直接跳转了，但是可以：<code>https://www.主域名.com/企业签文件.mobileprovision </code></p>
+</li>
+<li>
+<p>JS Demo</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">    <span class="keyword">if</span>(agent.<span class="title function_">indexOf</span>(<span class="string">&quot;like mac os x&quot;</span>) &gt; <span class="number">0</span>) &#123;</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">var</span> ver=agent.<span class="title function_">match</span>(<span class="regexp">/cpu iphone os (.*?) like mac os/</span>);</span><br><span class="line">        ver = ver[<span class="number">1</span>].<span class="title function_">replace</span>(<span class="regexp">/_/g</span>,<span class="string">&quot;.&quot;</span>)</span><br><span class="line">        ver = ver.<span class="title function_">split</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">var</span> url = <span class="string">&quot;prefs:root=General&amp;path=ManagedConfigurationList&quot;</span>;</span><br><span class="line">        <span class="keyword">if</span> (agent.<span class="title function_">indexOf</span>(<span class="string">&#x27;ipad&#x27;</span>) &gt; <span class="number">0</span> || ver &gt; <span class="number">9</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (agent.<span class="title function_">indexOf</span>(<span class="string">&#x27;browser&#x27;</span>) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="comment">//证书替换</span></span><br><span class="line">                url   = <span class="string">&quot;https://www.主域名.com/embedded.mobileprovision&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="title function_">request</span>(url);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
       </tags>
   </entry>
   <entry>
@@ -1759,46 +1953,6 @@ myChart.on('click', function (params) {
       </categories>
       <tags>
         <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux GNU Grep 查询日志</title>
-    <url>/linux-select-log/</url>
-    <content><![CDATA[<p>官方介绍手册: <code>http://www.gnu.org/software/grep/manual/grep.html</code></p>
-<ul>
-<li>Grep 命令的格式<br>
-<code>grep [option...] [patterns] [file...]</code></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@coursecenterresource-0 logs]# grep --help</span><br><span class="line">Usage: grep [OPTION]... PATTERN [FILE]...</span><br><span class="line">Search for PATTERN in each FILE or standard input.</span><br><span class="line">PATTERN is, by default, a basic regular expression (BRE).</span><br><span class="line">Example: grep -i &#x27;hello world&#x27; menu.h main.c</span><br><span class="line"></span><br><span class="line">Regexp selection and interpretation:</span><br><span class="line">  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)</span><br><span class="line">  -F, --fixed-strings       PATTERN is a set of newline-separated fixed strings</span><br><span class="line">  -G, --basic-regexp        PATTERN is a basic regular expression (BRE)</span><br><span class="line">  -P, --perl-regexp         PATTERN is a Perl regular expression</span><br><span class="line">  -e, --regexp=PATTERN      use PATTERN for matching</span><br><span class="line">  -f, --file=FILE           obtain PATTERN from FILE</span><br><span class="line">  -i, --ignore-case         ignore case distinctions</span><br><span class="line">  -w, --word-regexp         force PATTERN to match only whole words</span><br><span class="line">  -x, --line-regexp         force PATTERN to match only whole lines</span><br><span class="line">  -z, --null-data           a data line ends in 0 byte, not newline</span><br><span class="line"></span><br><span class="line">Miscellaneous:</span><br><span class="line">  -s, --no-messages         suppress error messages</span><br><span class="line">  -v, --invert-match        select non-matching lines</span><br><span class="line">  -V, --version             display version information and exit</span><br><span class="line">      --help                display this help text and exit</span><br><span class="line"></span><br><span class="line">Output control:</span><br><span class="line">  -m, --max-count=NUM       stop after NUM matches</span><br><span class="line">  -b, --byte-offset         print the byte offset with output lines</span><br><span class="line">  -n, --line-number         print line number with output lines</span><br><span class="line">      --line-buffered       flush output on every line</span><br><span class="line">  -H, --with-filename       print the file name for each match</span><br><span class="line">  -h, --no-filename         suppress the file name prefix on output</span><br><span class="line">      --label=LABEL         use LABEL as the standard input file name prefix</span><br><span class="line">  -o, --only-matching       show only the part of a line matching PATTERN</span><br><span class="line">  -q, --quiet, --silent     suppress all normal output</span><br><span class="line">      --binary-files=TYPE   assume that binary files are TYPE;</span><br><span class="line">                            TYPE is &#x27;binary&#x27;, &#x27;text&#x27;, or &#x27;without-match&#x27;</span><br><span class="line">  -a, --text                equivalent to --binary-files=text</span><br><span class="line">  -I                        equivalent to --binary-files=without-match</span><br><span class="line">  -d, --directories=ACTION  how to handle directories;</span><br><span class="line">                            ACTION is &#x27;read&#x27;, &#x27;recurse&#x27;, or &#x27;skip&#x27;</span><br><span class="line">  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;</span><br><span class="line">                            ACTION is &#x27;read&#x27; or &#x27;skip&#x27;</span><br><span class="line">  -r, --recursive           like --directories=recurse</span><br><span class="line">  -R, --dereference-recursive</span><br><span class="line">                            likewise, but follow all symlinks</span><br><span class="line">      --include=FILE_PATTERN</span><br><span class="line">                            search only files that match FILE_PATTERN</span><br><span class="line">      --exclude=FILE_PATTERN</span><br><span class="line">                            skip files and directories matching FILE_PATTERN</span><br><span class="line">      --exclude-from=FILE   skip files matching any file pattern from FILE</span><br><span class="line">      --exclude-dir=PATTERN directories that match PATTERN will be skipped.</span><br><span class="line">  -L, --files-without-match print only names of FILEs containing no match</span><br><span class="line">  -l, --files-with-matches  print only names of FILEs containing matches</span><br><span class="line">  -c, --count               print only a count of matching lines per FILE</span><br><span class="line">  -T, --initial-tab         make tabs line up (if needed)</span><br><span class="line">  -Z, --null                print 0 byte after FILE name</span><br><span class="line"></span><br><span class="line">Context control:</span><br><span class="line">  -B, --before-context=NUM  print NUM lines of leading context</span><br><span class="line">  -A, --after-context=NUM   print NUM lines of trailing context</span><br><span class="line">  -C, --context=NUM         print NUM lines of output context</span><br><span class="line">  -NUM                      same as --context=NUM</span><br><span class="line">      --group-separator=SEP use SEP as a group separator</span><br><span class="line">      --no-group-separator  use empty string as a group separator</span><br><span class="line">      --color[=WHEN],</span><br><span class="line">      --colour[=WHEN]       use markers to highlight the matching strings;</span><br><span class="line">                            WHEN is &#x27;always&#x27;, &#x27;never&#x27;, or &#x27;auto&#x27;</span><br><span class="line">  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)</span><br><span class="line">  -u, --unix-byte-offsets   report offsets as if CRs were not there</span><br><span class="line">                            (MSDOS/Windows)</span><br><span class="line"></span><br><span class="line">&#x27;egrep&#x27; means &#x27;grep -E&#x27;.  &#x27;fgrep&#x27; means &#x27;grep -F&#x27;.</span><br><span class="line">Direct invocation as either &#x27;egrep&#x27; or &#x27;fgrep&#x27; is deprecated.</span><br><span class="line">When FILE is -, read standard input.  With no FILE, read . if a command-line</span><br><span class="line">-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.</span><br><span class="line">Exit status is 0 if any line is selected, 1 otherwise;</span><br><span class="line">if any error occurs and -q is not given, the exit status is 2.</span><br><span class="line"></span><br><span class="line">Report bugs to: bug-grep@gnu.org</span><br><span class="line">GNU Grep home page: &lt;http://www.gnu.org/software/grep/&gt;</span><br><span class="line">General help using GNU software: &lt;http://www.gnu.org/gethelp/&gt;</span><br></pre></td></tr></table></figure>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查询 info.log 日志文件中包含【关键字】的行</span></span><br><span class="line">grep 关键字 /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /data/info.log | grep <span class="string">&#x27;关键字&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 反向查找 不包换关键字的行</span></span><br><span class="line">grep -v 关键字 /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不区分大小写</span></span><br><span class="line">grep -i <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出匹配的行数</span></span><br><span class="line">grep -c <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 只输出匹配的内容</span></span><br><span class="line">grep -o <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出 带行号</span></span><br><span class="line">grep -n <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># -A:after 匹配行及之后5行的内容</span></span><br><span class="line"><span class="comment"># -B:before 匹配行及之前5行的内容</span></span><br><span class="line"><span class="comment"># -C:context 匹配行及前后5行的内容</span></span><br><span class="line">grep -A 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br><span class="line">grep -B 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br><span class="line">grep -C 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br></pre></td></tr></table></figure>
-<p>查询最后 1 次出现的日志<br>
-<code>grep -n '关键字' info.log | head -1</code></p>
-<p>查询最后 5 次出现的日志<br>
-<code>grep -n '关键字' info.log | head -5</code></p>
-<p>查询最开始 1 次出现的日志<br>
-<code>grep -n '关键字' info.log | tail -1</code></p>
-<h3 id="正则">正则<a title="#正则" href="#正则"></a></h3>
-<ul>
-<li>
-<p>以 关键字 开头<br>
-<code>grep '^关键字' /data/info.log</code></p>
-</li>
-<li>
-<p>以 关键字 结尾<br>
-<code>grep '关键字$' /data/info.log</code></p>
-</li>
-<li>
-<p>以多个 关键字 开头<br>
-<code>grep '^[关键字关键字]' /data/info.log</code><br>
-<code>grep '^关键字|^关键字' /data/info.log</code></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1874,80 +2028,6 @@ myChart.on('click', function (params) {
       <tags>
         <tag>Linux</tag>
         <tag>CronTab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iOS App苹果企业签分发</title>
-    <url>/ios-app-enterprise-sign-share/</url>
-    <content><![CDATA[<h3 id="配置">配置<a title="#配置" href="#配置"></a></h3>
-<ol>
-<li>
-<p>必须有SSL证书（HTTPS）</p>
-<blockquote>
-<p>企业签分发的 plist、icon、ipa 等文件下载链接必须是https协议的，例如：<a href="https://html.xn--tiqt5l2rd.com/company_ios/propertylist.plist" target="_blank">https://html.主域名.com/company_ios/propertylist.plist</a></p>
-</blockquote>
-</li>
-<li>
-<p>配置MIME</p>
-<blockquote>
-<p>如果是Nginx，在 nginx/conf/mime.types 配置文件里面添加如下配置</p>
-</blockquote>
-<p>说明：</p>
-<ul>
-<li>application/octet-stream表示.ipa后缀的文件是下载类型</li>
-<li>text/xml表示.plist后缀的文件是xml类型</li>
-</ul>
-</li>
-</ol>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">application/octet-stream    ipa</span><br><span class="line">text/xml    plist</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>苹果端安装协议</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">itms-services:<span class="comment">///?action=download-manifest&amp;url=https://html.主域名.com/company_ios/propertylist.plist</span></span><br></pre></td></tr></table></figure>
-<h3 id="使用">使用<a title="#使用" href="#使用"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 能触发这个地址就好</span></span><br><span class="line">window.location = <span class="string">&quot;itms-services:///?action=download-manifest&amp;url=https://html.主域名.com/company_ios/propertylist.plist&quot;</span> </span><br></pre></td></tr></table></figure>
-<h3 id="注意">注意<a title="#注意" href="#注意"></a></h3>
-<ol>
-<li>自己签名的SSL证书是不行的</li>
-<li>plist 文件中有中文会有问题，需要另存为utf-8格式保存即可</li>
-<li>plist 文件下载路径问题，下载路径不要操作三级，否者会报“无法连接到…”、“此时无法下载…”、“证书有问题…”等</li>
-<li>安装协议 itms-services: 后面是三个&quot;/&quot;，当然，我测试了两个，也是可以的</li>
-<li>客户端对 plist 文件是有缓存的，如果安装不成功，可以修改下 plist 文件名称重新试下</li>
-<li>安装过程中图片无法显示问题，这个在plist文件里面已经设置了图片地址，但是就是不显示</li>
-</ol>
-<h3 id="plist文件样本：">plist文件样本：<a title="#plist文件样本：" href="#plist文件样本："></a></h3>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">plist</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//Apple//DTD PLIST 1.0//EN&quot;</span> <span class="string">&quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">plist</span> <span class="attr">version</span>=<span class="string">&quot;1.0&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">key</span>&gt;</span>items<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">array</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">key</span>&gt;</span>assets<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">array</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>software-package<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>https://www.主域名.com/包.ipa<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>full-size-image<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>needs-shine<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">          　　　　　　　　　　<span class="tag">&lt;<span class="name">true</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>http://www.主域名.com/icon-512.png<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>display-image<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>needs-shine<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">          　　　　　　　　　　<span class="tag">&lt;<span class="name">true</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>http://www.主域名.com/icon-57.png<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">array</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">key</span>&gt;</span>metadata<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>bundle-identifier<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>com.主域名.bundleId<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>bundle-version<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>2.0.0<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>software<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>subtitle<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span><span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>title<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>App名称<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">array</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plist</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="关于跳转设置信任的逻辑">关于跳转设置信任的逻辑<a title="#关于跳转设置信任的逻辑" href="#关于跳转设置信任的逻辑"></a></h3>
-<ul>
-<li>
-<p>iOS 9 版本之前可以直接： <code>prefs:root=General&amp;path=ManagedConfigurationList </code></p>
-</li>
-<li>
-<p>iOS 10 系统之后不能直接跳转了，但是可以：<code>https://www.主域名.com/企业签文件.mobileprovision </code></p>
-</li>
-<li>
-<p>JS Demo</p>
-</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">    <span class="keyword">if</span>(agent.<span class="title function_">indexOf</span>(<span class="string">&quot;like mac os x&quot;</span>) &gt; <span class="number">0</span>) &#123;</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">var</span> ver=agent.<span class="title function_">match</span>(<span class="regexp">/cpu iphone os (.*?) like mac os/</span>);</span><br><span class="line">        ver = ver[<span class="number">1</span>].<span class="title function_">replace</span>(<span class="regexp">/_/g</span>,<span class="string">&quot;.&quot;</span>)</span><br><span class="line">        ver = ver.<span class="title function_">split</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">var</span> url = <span class="string">&quot;prefs:root=General&amp;path=ManagedConfigurationList&quot;</span>;</span><br><span class="line">        <span class="keyword">if</span> (agent.<span class="title function_">indexOf</span>(<span class="string">&#x27;ipad&#x27;</span>) &gt; <span class="number">0</span> || ver &gt; <span class="number">9</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (agent.<span class="title function_">indexOf</span>(<span class="string">&#x27;browser&#x27;</span>) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="comment">//证书替换</span></span><br><span class="line">                url   = <span class="string">&quot;https://www.主域名.com/embedded.mobileprovision&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="title function_">request</span>(url);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-      <tags>
-        <tag>iOS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Redis 配置文件说明</title>
-    <url>/redis-config-explan/</url>
-    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">################################## NETWORK #####################################</span><br><span class="line">bind 127.0.0.1			# 默认绑定本机所有ip地址 为了安全 可以只监听内网ip</span><br><span class="line">protected-mode yes		# 保护模式[无密码模式设置为no]</span><br><span class="line">port 6379 			# 默认端口</span><br><span class="line">tcp-backlog 511			# listen队列的长度</span><br><span class="line">timeout 0			# 客户端空闲多少s(秒)后踢掉 0禁止</span><br><span class="line">tcp-keepalive 300		# 检测挂掉的连接 单位s 0禁止</span><br><span class="line">################################# GENERAL #####################################</span><br><span class="line">daemonize no 			# 作为守护进程运行</span><br><span class="line">supervised no 			# 设成开机启动后 系统监控</span><br><span class="line">pidfile /var/run/redis_6379.pid # pid 位置</span><br><span class="line">loglevel notice 		# 设置服务端的日志级别，有下列几种选择</span><br><span class="line">				debug：记录详细信息，用于开发或调试</span><br><span class="line">				verbose：提供很多有用的信息，</span><br><span class="line">					但是又不像debug那么详尽，默认就是这一选项</span><br><span class="line">				notice：适度提醒，多用于产品环境</span><br><span class="line">				warning：仅显示重要的警告信息</span><br><span class="line">logfile &quot;&quot;			# 日志目录</span><br><span class="line">databases 16			# 指定数据库的数量</span><br><span class="line">################################ SNAPSHOTTING  ################################</span><br><span class="line">save 900 1			# 每900秒(15分钟)至少一次键值变更时被触发</span><br><span class="line">save 300 10			# 每300秒(5分钟)至少10次键值变更时被触发</span><br><span class="line">save 60 10000			# 每60秒至少10000次键值变更时被触发</span><br><span class="line">stop-writes-on-bgsave-error yes	# 后台存储错误停止写</span><br><span class="line">rdbcompression yes		# 存储至本地数据库时(持久化到rdb文件)是否压缩数据 默认为 yes</span><br><span class="line">rdbchecksum yes			# 读取和写入的时候是否支持CRC64校验 默认是开启的</span><br><span class="line">dbfilename dump.rdb 		# 镜像文件的名字</span><br><span class="line">dir ./ 				# 当前工作目录 配置文件和镜像文件等都在此目录下</span><br><span class="line">################################# REPLICATION #################################</span><br><span class="line">slave-serve-stale-data yes	# 当slave服务器和master服务器失去连接后，</span><br><span class="line">				或者当数据正在复制传输的时候，如果此参数值设置“yes”</span><br><span class="line">				slave服务器可以继续接受客户端的请求，</span><br><span class="line">				否则，会返回给请求的客户端如下信息</span><br><span class="line">				“SYNC with master in progress”</span><br><span class="line">slave-read-only yes		# 是否允许slave服务器节点只提供读服务</span><br><span class="line">repl-diskless-sync no 		# disk较慢，并且网络较快的时候，</span><br><span class="line">				可以用diskless。（默认用disk-based）</span><br><span class="line">repl-diskless-sync-delay 5	# 备份等待延迟时间 seconds</span><br><span class="line">repl-disable-tcp-nodelay no 	# 指定向slave同步数据时，是否禁用socket的NO_DELAY选 项。</span><br><span class="line">				若配置为“yes”，则禁用NO_DELAY，则TCP协议栈会合并小包统一发送，</span><br><span class="line">				这样可以减少主从节点间的包数量并节省带宽，但会增加数据同步到</span><br><span class="line">				slave的时间。若配置为“no”，表明启用NO_DELAY，则TCP协议栈不</span><br><span class="line">				会延迟小包的发送时机，这样数据同步的延时会减少，但需要更大的带宽。</span><br><span class="line">				通常情况下，应该配置为no以降低同步延时，</span><br><span class="line">				但在主从节点间网络负载已经很高的情况下，可以配置为yes</span><br><span class="line">slave-priority 100		# 指定slave的优先级。在不只1个slave存在的部署环境下，</span><br><span class="line">				当master宕机时，Redis Sentinel会将priority值最小的slave</span><br><span class="line">				提升为master需要注意的是，若该配置项为0，则对应的slave永远</span><br><span class="line">				不会自动提升为master</span><br><span class="line">############################## APPEND ONLY MODE ###############################</span><br><span class="line">appendonly no 			# 开启append only 模式之后，redis 会把所接收到的每一次写</span><br><span class="line">				操作请求都追加到appendonly.aof 文件中，当redis 重新启动时，</span><br><span class="line">				会从该文件恢复出之前的状态。但是这样会造成appendonly.aof </span><br><span class="line">				文件过大，所以redis 还支持了BGREWRITEAOF 指令，</span><br><span class="line">				对appendonly.aof 进行重新整理。默认是不开启的</span><br><span class="line">appendfilename &quot;appendonly.aof&quot;	# 默认为appendonly.aof</span><br><span class="line">appendfsync everysec		# 设置aof的同步频率，有三种选择</span><br><span class="line">				always、everysec、no，默认是everysec表示每秒同步一次</span><br><span class="line">no-appendfsync-on-rewrite no 	# 指定是否在后台aof文件rewrite期间调用fsync，</span><br><span class="line">				默认为no，表示要调用fsync（无论后台是否有子进程在刷盘）。</span><br><span class="line">				Redis在后台写RDB文件或重写afo文件期间会存在大量磁盘IO，</span><br><span class="line">				此时，在某些linux系统中，调用fsync可能会阻塞</span><br><span class="line">auto-aof-rewrite-percentage 100 # 指定Redis重写aof文件的条件，默认为100，</span><br><span class="line">				表示与上次rewrite的aof文件大小相比，当前aof文件增长量超过上</span><br><span class="line">				次afo文件大小的100%时，就会触发background rewrite。</span><br><span class="line">				若配置为0，则会禁用自动rewrite</span><br><span class="line">auto-aof-rewrite-min-size 64mb 	# 指定触发rewrite的aof文件大小。</span><br><span class="line">				若aof文件小于该值，即使当前文件的增量比例达到</span><br><span class="line">				auto-aof-rewrite-percentage的配置值，也不会触发自动</span><br><span class="line">				rewrite。即这两个配置项同时满足时，才会触发rewrite</span><br><span class="line">aof-load-truncated yes 		# 会自动发布一个log给客户端然后load（默认）</span><br><span class="line">				如果是no，用户必须手动redis-check-aof修复AOF文件才可以</span><br><span class="line">################################ LUA SCRIPTING  ###############################</span><br><span class="line">lua-time-limit 5000 		# 一个Lua脚本最长的执行时间，单位为毫秒</span><br><span class="line">				如果为0或负数表示无限执行时间，默认为5000</span><br><span class="line">################################## SLOW LOG ###################################</span><br><span class="line">slowlog-log-slower-than 10000 	# 设定执行时间，单位是微秒，执行时长超过该时间</span><br><span class="line">				的命令将会被记入log。-1表示不记录slow log; 0强制记录所有命令</span><br><span class="line">slowlog-max-len 128 		# 最多保存 128 条日志</span><br><span class="line">################################ LATENCY MONITOR ##############################</span><br><span class="line">latency-monitor-threshold 0	# 用LATENCY打印redis实例在跑命令时的耗时图表</span><br><span class="line">				只记录大于等于下边设置的值的操作。0的话，就是关闭监视。</span><br><span class="line">				可以动态开启</span><br><span class="line">############################# EVENT NOTIFICATION ##############################</span><br><span class="line">notify-keyspace-events &quot;&quot; 	# 如果开着开关。一个client进行了DEL操作在“foo”key</span><br><span class="line">				上在database0上。两个消息将会发布通过 </span><br><span class="line">				pub/sub默认所用的通知被禁用，因为用户通常不需要改特性</span><br><span class="line">				并且该特性会有性能损耗</span><br><span class="line">############################### ADVANCED CONFIG ###############################</span><br><span class="line">hash-max-ziplist-entries 512 	# hash类型的数据结构在编码上可以使用</span><br><span class="line">				ziplist和hashtable。ziplist的特点就是文件存储(以及内存存储)</span><br><span class="line">				所需的空间较小,在内容较小时,性能和hashtable几乎一样.因此redis</span><br><span class="line">				对hash类型默认采取ziplist。如果hash中条目的条目个数或者value</span><br><span class="line">				长度达到阀值,将会被重构为hashtable</span><br><span class="line">				这个参数指的是ziplist中允许存储的最大条目个数</span><br><span class="line">				默认为512，建议为128</span><br><span class="line">hash-max-ziplist-value 64	# ziplist中允许条目value值最大字节数，默认为64，建议为1024</span><br><span class="line">list-max-ziplist-size -2 	# 对于list类型,将会采取ziplist,linkedlist两种编码类型</span><br><span class="line">list-compress-depth 0		# 表示一个quicklist两端不被压缩的节点个数。</span><br><span class="line">				注：这里的节点个数是指quicklist双向链表的节点个数，</span><br><span class="line">				而不是指ziplist里面的数据项个数。实际上，一个</span><br><span class="line">				quicklist节点上的ziplist，如果被压缩，就是整体被压缩的</span><br><span class="line">				参数list-compress-depth的取值含义如下：</span><br><span class="line">				0: 是个特殊值，表示都不压缩。这是Redis的默认值。</span><br><span class="line">				1: 表示quicklist两端各有1个节点不压缩，中间的节点压缩。</span><br><span class="line">				2: 表示quicklist两端各有2个节点不压缩，中间的节点压缩。</span><br><span class="line">				3: 表示quicklist两端各有3个节点不压缩，中间的节点压缩。</span><br><span class="line">				依此类推</span><br><span class="line">				由于0是个特殊值，很容易看出quicklist的头节点和</span><br><span class="line">				尾节点总是不被压缩的，以便于在表的两端进行快速存取</span><br><span class="line">set-max-intset-entries 512 	# 当set类型中的数据都是数值类型，</span><br><span class="line">				并且set中整型元素的数量不超过指定值时，使用特殊的编码方式</span><br><span class="line">zset-max-ziplist-entries 128 	# 与hash和list类似 </span><br><span class="line">zset-max-ziplist-value 64 	# zsort也采用如下的配置来选择是否进行特殊编码来节省空间</span><br><span class="line">hll-sparse-max-bytes 3000 	# 这个限制包含了16个字节的头部，当一个HyperLogLog</span><br><span class="line">				使用sparse representation 超过了这个显示，它就会转换到</span><br><span class="line">				dense representation上</span><br><span class="line">activerehashing yes 		# 用来控制是否自动重建hash。Active rehashing每100微秒</span><br><span class="line">				使用1微秒cpu时间排序，以重组Redis的hash表。重建是通过一种</span><br><span class="line">				lazy方式，写入hash表的操作越多，需要执行rehashing的步骤</span><br><span class="line">				也越多，如果服务器当前空闲，那么rehashing操作会一直执行。</span><br><span class="line">				如果对实时性要求较高，难以接受redis时不时出现的2微秒的延迟，</span><br><span class="line">				则可以设置activerehashing为no，</span><br><span class="line">				否则建议设置为yes，以节省内存空间</span><br><span class="line">client-output-buffer-limit normal 0 0 0</span><br><span class="line">client-output-buffer-limit slave 256mb 64mb 60</span><br><span class="line">client-output-buffer-limit pubsub 32mb 8mb 60</span><br><span class="line">客户端buffer控制。在客户端与server进行的交互中,每个连接都会与一个buffer关联,</span><br><span class="line">此buffer用来队列化等待被client接受的响应信息。如果client不能及时的消费响应信息,</span><br><span class="line">那么buffer将会被不断积压而给server带来内存压力.如果buffer中积压的数据达到阀值,</span><br><span class="line">将会导致连接被关闭,buffer被移除。</span><br><span class="line">buffer控制类型包括:normal -&gt; 普通连接；slave -&gt;与slave之间的连接；</span><br><span class="line">pubsub -&gt;pub/sub类型连接，此类型的连接，往往会产生此种问题;</span><br><span class="line">因为pub端会密集的发布消息,但是sub端可能消费不足.</span><br><span class="line">指令格式:client-output-buffer-limit &lt;class&gt; &lt;hard&gt; &lt;soft&gt; &lt;seconds&gt;&quot;,</span><br><span class="line">其中hard表示buffer最大值,一旦达到阀值将立即关闭连接;</span><br><span class="line">soft表示&quot;容忍值&quot;,它和seconds配合,如果buffer值超过soft且持续时间达到了seconds,</span><br><span class="line">也将立即关闭连接,如果超过了soft但是在seconds之后，buffer数据小于了soft,连接将会被保留.</span><br><span class="line">其中hard和soft都设置为0,则表示禁用buffer控制.通常hard值大于soft</span><br><span class="line">hz 10  				# Redis server执行后台任务的频率,默认为10,</span><br><span class="line">				此值越大表示redis对&quot;间歇性task&quot;的执行次数越频繁(次数/秒)。</span><br><span class="line">				&quot;间歇性task&quot;包括&quot;过期集合&quot;检测、关闭&quot;空闲超时&quot;的连接等,此</span><br><span class="line">				值必须大于0且小于500。此值过小就意味着更多的cpu周期消耗,</span><br><span class="line">				后台task被轮询的次数更频繁。此值过大意味着&quot;内存敏感&quot;性较差。</span><br><span class="line">				建议采用默认值</span><br><span class="line">aof-rewrite-incremental-fsync yes # aof rewrite过程中,是否采取增量文件同步策略</span><br><span class="line">				默认为“yes”。 rewrite过程中,每32M数据进行一次文件同步</span><br><span class="line">				这样可以减少aof大文件写入对磁盘的操作次数</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Redis</category>
-      </categories>
-      <tags>
-        <tag>Redis</tag>
       </tags>
   </entry>
   <entry>
@@ -2126,181 +2206,210 @@ myChart.on('click', function (params) {
       </tags>
   </entry>
   <entry>
-    <title>Chrome 插件</title>
-    <url>/Chrome-Plugins/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX19mSwIz+MS2exttqRb5XqhjF8j78vIyZ3ArKj+p9J30+YQKcaKAUlCf</is-cipher>]]></content>
-      <categories>
-        <category>Chrome</category>
-      </categories>
-      <tags>
-        <tag>Chrome Plugins</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PowerToys-微软的一款开源电脑工具箱软件</title>
-    <url>/PowerToys/</url>
-    <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
-<p>习惯了 <strong><code>Mac</code></strong> 系统的 <code>command + *</code> 按键的操作逻辑之后</p>
-<p>针对于 <strong><code>Windows</code></strong> 系统的 <code>Ctrl + *</code> 各种不适应</p>
-<hr>
-<p>放上我的调整结果，回到 <code>command</code> 按键逻辑下</p>
-<p><img src="https://pic.imgdb.cn/item/6277942309475431296ca2b5.png" alt="PowerToys-微软的一款开源电脑工具箱软件-键盘管理器" loading="lazy" class="φbp"></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>PowerToys</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>管理 &quot;此电脑&quot; 里面删不掉的流浪 &quot;快捷方式&quot;</title>
-    <url>/windows-MyComputerManager/</url>
-    <content><![CDATA[<h3 id="mycomputermanager">MyComputerManager<a title="#mycomputermanager" href="#mycomputermanager"></a></h3>
-<p>GitHub 开源小工具: <code>https://github.com/1357310795/MyComputerManager</code></p>
-<p>双击直接运行</p>
-<p><img src="https://pic.imgdb.cn/item/62cbbaa7f54cd3f9377cf8d0.png" alt="MyComputerManager" loading="lazy" class="φbp"></p>
-<h3 id="如何彻底杜绝">如何彻底杜绝<a title="#如何彻底杜绝" href="#如何彻底杜绝"></a></h3>
-<ol>
-<li>打开火绒</li>
-<li>安全设置</li>
-<li>高级防护</li>
-<li>自定义防护</li>
-<li>添加规则
-<ol>
-<li>规则名称(随便): <code>阻止程序在此电脑创建快捷方式</code></li>
-<li>注册表规则: <code>*\MyComputer\NameSpace\*</code></li>
-</ol>
+    <title>BigDecimal Java 高精度运算</title>
+    <url>/bigdecimal/</url>
+    <content><![CDATA[<h2 id="常用方法">常用方法<a title="#常用方法" href="#常用方法"></a></h2>
+<ul>
+<li>加法 : <code>BigDecimal add(BigDecimal augend)</code></li>
+<li>减法 : <code>BigDecimal subtract(BigDecimal subtrahend)</code></li>
+<li>乘法 : <code>BigDecimal multiply(BigDecimal multiplicand)</code></li>
+<li>除法 : <code>BigDecimal divide(BigDecimal divisor)</code></li>
+</ul>
+<h2 id="大小比较">大小比较<a title="#大小比较" href="#大小比较"></a></h2>
+<ul>
+<li><code>int compareTo(BigDecimal val)</code>
+<ul>
+<li>A &lt; B 返回 : -1</li>
+<li>A = B 返回 : 0</li>
+<li>A &gt; B 返回 : 1</li>
+</ul>
 </li>
-</ol>
-<p><img src="https://pic.imgdb.cn/item/62cb97a3f54cd3f937521d28.png" alt="阻止程序在此电脑创建快捷方式" loading="lazy" class="φbp"></p>
-<blockquote>
-<p>如果你想要禁止在桌面创建快捷方式<br>
-把MyComputer改成Desktop即可</p>
-</blockquote>
+</ul>
+<h2 id="格式化">格式化<a title="#格式化" href="#格式化"></a></h2>
+<h3 id="百分比">百分比<a title="#百分比" href="#百分比"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">BigDecimal</span> <span class="variable">A</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="string">&quot;0.0008&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="type">NumberFormat</span> <span class="variable">percentInstance</span> <span class="operator">=</span> NumberFormat.getPercentInstance();</span><br><span class="line">percentInstance.setRoundingMode(RoundingMode.DOWN); <span class="comment">// 舍入模式: 截尾</span></span><br><span class="line">percentInstance.setMaximumFractionDigits(<span class="number">2</span>); <span class="comment">// 百分比小数最多两位</span></span><br><span class="line">percentInstance.setMinimumFractionDigits(<span class="number">2</span>); <span class="comment">// 百分比小数最少两位 0.00%</span></span><br><span class="line"></span><br><span class="line">percentInstance.format(interestRate); <span class="comment">// 0.08%</span></span><br></pre></td></tr></table></figure>
+<h2 id="不同舍入模式下的舍入操作汇总">不同舍入模式下的舍入操作汇总<a title="#不同舍入模式下的舍入操作汇总" href="#不同舍入模式下的舍入操作汇总"></a></h2>
+<div class="φbq"><div class="φbs"><table><thead>
+<tr>
+<th style="text-align:center">NUMBER</th>
+<th style="text-align:center">UP</th>
+<th style="text-align:center">DOWN</th>
+<th style="text-align:center">CEILING</th>
+<th style="text-align:center">FLOOR</th>
+<th style="text-align:center">HALF_UP</th>
+<th style="text-align:center">HALF_DOWN</th>
+<th style="text-align:center">HALF_EVEN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">5.5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+</tr>
+<tr>
+<td style="text-align:center">2.5</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">1.6</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">1.1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1.0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">-1.0</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+</tr>
+<tr>
+<td style="text-align:center">-1.1</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+</tr>
+<tr>
+<td style="text-align:center">-1.6</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+</tr>
+<tr>
+<td style="text-align:center">-2.5</td>
+<td style="text-align:center">-3</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-3</td>
+<td style="text-align:center">-3</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+</tr>
+<tr>
+<td style="text-align:center">-5.5</td>
+<td style="text-align:center">-6</td>
+<td style="text-align:center">-5</td>
+<td style="text-align:center">-5</td>
+<td style="text-align:center">-6</td>
+<td style="text-align:center">-6</td>
+<td style="text-align:center">-5</td>
+<td style="text-align:center">-6</td>
+</tr>
+</tbody>
+</table></div></div><p><strong>UP</strong> 远离零方向舍入的舍入模式。始终对非零舍弃部分前面的数字加 1。注意，此舍入模式始终不会减少计算值的绝对值</p>
+<p><strong>DOWN</strong> 向零方向舍入的舍入模式。从不对舍弃部分前面的数字加 1（即截尾）。注意，此舍入模式始终不会增加计算值的绝对值</p>
+<p><strong>CEILING</strong> 向正无限大方向舍入的舍入模式。如果结果为正，则舍入行为类似于 RoundingMode.UP；如果结果为负，则舍入行为类似于 RoundingMode.DOWN。注意，此舍入模式始终不会减少计算值</p>
+<p><strong>FLOOR</strong> 向负无限大方向舍入的舍入模式。如果结果为正，则舍入行为类似于 RoundingMode.DOWN；如果结果为负，则舍入行为类似于 RoundingMode.UP。注意，此舍入模式始终不会增加计算值</p>
+<p><strong>HALF_UP</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向上舍入。如果被舍弃部分 &gt;= 0.5，则舍入行为同 RoundingMode.UP；否则舍入行为同 RoundingMode.DOWN。注意，此舍入模式就是通常学校里讲的四舍五入</p>
+<p><strong>HALF_DOWN</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向下舍入。如果被舍弃部分 &gt; 0.5，则舍入行为同 RoundingMode.UP；否则舍入行为同 RoundingMode.DOWN</p>
+<p><strong>HALF_EVEN</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向相邻的偶数舍入。如果舍弃部分左边的数字为奇数，则舍入行为同 RoundingMode.HALF_UP；如果为偶数，则舍入行为同 RoundingMode.HALF_DOWN。注意，在重复进行一系列计算时，此舍入模式可以在统计上将累加错误减到最小。此舍入模式也称为“银行家舍入法”，主要在美国使用。此舍入模式类似于 Java 中对 float 和 double 算法使用的舍入策略</p>
+<p><strong>UNNECESSARY</strong> 用于断言请求的操作具有精确结果的舍入模式，因此不需要舍入。如果对生成精确结果的操作指定此舍入模式，则抛出 ArithmeticException</p>
 ]]></content>
       <categories>
-        <category>软件</category>
+        <category>Java</category>
+        <category>BigDecimal</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
-        <tag>MyComputerManager</tag>
+        <tag>Java</tag>
+        <tag>BigDecimal</tag>
       </tags>
   </entry>
   <entry>
-    <title>Windows &amp; Mac M3U8 视频下载</title>
-    <url>/m3u8-download/</url>
-    <content><![CDATA[<h2 id="mac">Mac<a title="#mac" href="#mac"></a></h2>
-<h2 id="windows">Windows<a title="#windows" href="#windows"></a></h2>
-<h4 id="n_m3u8dl-cli">N_m3u8DL-CLI<a title="#n_m3u8dl-cli" href="#n_m3u8dl-cli"></a></h4>
-<p><img src="https://pic.imgdb.cn/item/62f1f7dd16f2c2beb1ccdd40.png" alt="N_m3u8DL-CLI" loading="lazy" class="φbp"></p>
-<p>GitHub地址: <a href="https://github.com/nilaoda/N_m3u8DL-CLI" target="_blank">https://github.com/nilaoda/N_m3u8DL-CLI</a></p>
-<blockquote>
-<p>N_m3u8DL-CLI是一款用于下载m3u8的命令行工具，<a href="http://xn--6kq92u.NET">基于.NET</a> Framework 4.6框架开发，调用系统类库进行HTTP下载，支持常见的m3u8格式下载，支持从视频中选择一部分下载，还提供丰富的命令行选项以增强其功能。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>M3U8</category>
-      </categories>
-      <tags>
-        <tag>M3U8</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iPhone与Windows传输文件的几种方式</title>
-    <url>/iPhone-Windows/</url>
-    <content><![CDATA[<h3 id="创建文件夹">创建文件夹<a title="#创建文件夹" href="#创建文件夹"></a></h3>
+    <title>Linux GNU Grep 查询日志</title>
+    <url>/linux-select-log/</url>
+    <content><![CDATA[<p>官方介绍手册: <code>http://www.gnu.org/software/grep/manual/grep.html</code></p>
 <ul>
-<li>右键 <code>属性</code></li>
+<li>Grep 命令的格式<br>
+<code>grep [option...] [patterns] [file...]</code></li>
 </ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8a7f.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>点击 <code>共享</code> 标签下的 <code>共享</code> 按钮, 选择 <code>Everyone</code>, 点击 <code>添加</code>, 最后点击 <code>共享</code></li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8a88.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>选择文件夹, 点击 <code>完成</code></li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8ac3.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>继续点击 <code>高级共享</code></li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67922f54cd3f937caab12.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>选中 <code>共享此文件夹</code>, 然后点击 <code>权限</code> 按钮</li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8ae3.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>选中用户 <code>Everyone</code> 的读写权限, 然后一路确定</li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8afc.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>打开命令提示符工具, 输入: <code>ipconfig</code>, 找到自己电脑的IPv4 地址: <code>192.168.95.1</code></li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d678e2f54cd3f937c98b45.png" alt="" loading="lazy" class="φbp"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@coursecenterresource-0 logs]# grep --help</span><br><span class="line">Usage: grep [OPTION]... PATTERN [FILE]...</span><br><span class="line">Search for PATTERN in each FILE or standard input.</span><br><span class="line">PATTERN is, by default, a basic regular expression (BRE).</span><br><span class="line">Example: grep -i &#x27;hello world&#x27; menu.h main.c</span><br><span class="line"></span><br><span class="line">Regexp selection and interpretation:</span><br><span class="line">  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)</span><br><span class="line">  -F, --fixed-strings       PATTERN is a set of newline-separated fixed strings</span><br><span class="line">  -G, --basic-regexp        PATTERN is a basic regular expression (BRE)</span><br><span class="line">  -P, --perl-regexp         PATTERN is a Perl regular expression</span><br><span class="line">  -e, --regexp=PATTERN      use PATTERN for matching</span><br><span class="line">  -f, --file=FILE           obtain PATTERN from FILE</span><br><span class="line">  -i, --ignore-case         ignore case distinctions</span><br><span class="line">  -w, --word-regexp         force PATTERN to match only whole words</span><br><span class="line">  -x, --line-regexp         force PATTERN to match only whole lines</span><br><span class="line">  -z, --null-data           a data line ends in 0 byte, not newline</span><br><span class="line"></span><br><span class="line">Miscellaneous:</span><br><span class="line">  -s, --no-messages         suppress error messages</span><br><span class="line">  -v, --invert-match        select non-matching lines</span><br><span class="line">  -V, --version             display version information and exit</span><br><span class="line">      --help                display this help text and exit</span><br><span class="line"></span><br><span class="line">Output control:</span><br><span class="line">  -m, --max-count=NUM       stop after NUM matches</span><br><span class="line">  -b, --byte-offset         print the byte offset with output lines</span><br><span class="line">  -n, --line-number         print line number with output lines</span><br><span class="line">      --line-buffered       flush output on every line</span><br><span class="line">  -H, --with-filename       print the file name for each match</span><br><span class="line">  -h, --no-filename         suppress the file name prefix on output</span><br><span class="line">      --label=LABEL         use LABEL as the standard input file name prefix</span><br><span class="line">  -o, --only-matching       show only the part of a line matching PATTERN</span><br><span class="line">  -q, --quiet, --silent     suppress all normal output</span><br><span class="line">      --binary-files=TYPE   assume that binary files are TYPE;</span><br><span class="line">                            TYPE is &#x27;binary&#x27;, &#x27;text&#x27;, or &#x27;without-match&#x27;</span><br><span class="line">  -a, --text                equivalent to --binary-files=text</span><br><span class="line">  -I                        equivalent to --binary-files=without-match</span><br><span class="line">  -d, --directories=ACTION  how to handle directories;</span><br><span class="line">                            ACTION is &#x27;read&#x27;, &#x27;recurse&#x27;, or &#x27;skip&#x27;</span><br><span class="line">  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;</span><br><span class="line">                            ACTION is &#x27;read&#x27; or &#x27;skip&#x27;</span><br><span class="line">  -r, --recursive           like --directories=recurse</span><br><span class="line">  -R, --dereference-recursive</span><br><span class="line">                            likewise, but follow all symlinks</span><br><span class="line">      --include=FILE_PATTERN</span><br><span class="line">                            search only files that match FILE_PATTERN</span><br><span class="line">      --exclude=FILE_PATTERN</span><br><span class="line">                            skip files and directories matching FILE_PATTERN</span><br><span class="line">      --exclude-from=FILE   skip files matching any file pattern from FILE</span><br><span class="line">      --exclude-dir=PATTERN directories that match PATTERN will be skipped.</span><br><span class="line">  -L, --files-without-match print only names of FILEs containing no match</span><br><span class="line">  -l, --files-with-matches  print only names of FILEs containing matches</span><br><span class="line">  -c, --count               print only a count of matching lines per FILE</span><br><span class="line">  -T, --initial-tab         make tabs line up (if needed)</span><br><span class="line">  -Z, --null                print 0 byte after FILE name</span><br><span class="line"></span><br><span class="line">Context control:</span><br><span class="line">  -B, --before-context=NUM  print NUM lines of leading context</span><br><span class="line">  -A, --after-context=NUM   print NUM lines of trailing context</span><br><span class="line">  -C, --context=NUM         print NUM lines of output context</span><br><span class="line">  -NUM                      same as --context=NUM</span><br><span class="line">      --group-separator=SEP use SEP as a group separator</span><br><span class="line">      --no-group-separator  use empty string as a group separator</span><br><span class="line">      --color[=WHEN],</span><br><span class="line">      --colour[=WHEN]       use markers to highlight the matching strings;</span><br><span class="line">                            WHEN is &#x27;always&#x27;, &#x27;never&#x27;, or &#x27;auto&#x27;</span><br><span class="line">  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)</span><br><span class="line">  -u, --unix-byte-offsets   report offsets as if CRs were not there</span><br><span class="line">                            (MSDOS/Windows)</span><br><span class="line"></span><br><span class="line">&#x27;egrep&#x27; means &#x27;grep -E&#x27;.  &#x27;fgrep&#x27; means &#x27;grep -F&#x27;.</span><br><span class="line">Direct invocation as either &#x27;egrep&#x27; or &#x27;fgrep&#x27; is deprecated.</span><br><span class="line">When FILE is -, read standard input.  With no FILE, read . if a command-line</span><br><span class="line">-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.</span><br><span class="line">Exit status is 0 if any line is selected, 1 otherwise;</span><br><span class="line">if any error occurs and -q is not given, the exit status is 2.</span><br><span class="line"></span><br><span class="line">Report bugs to: bug-grep@gnu.org</span><br><span class="line">GNU Grep home page: &lt;http://www.gnu.org/software/grep/&gt;</span><br><span class="line">General help using GNU software: &lt;http://www.gnu.org/gethelp/&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查询 info.log 日志文件中包含【关键字】的行</span></span><br><span class="line">grep 关键字 /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /data/info.log | grep <span class="string">&#x27;关键字&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 反向查找 不包换关键字的行</span></span><br><span class="line">grep -v 关键字 /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不区分大小写</span></span><br><span class="line">grep -i <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出匹配的行数</span></span><br><span class="line">grep -c <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 只输出匹配的内容</span></span><br><span class="line">grep -o <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出 带行号</span></span><br><span class="line">grep -n <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># -A:after 匹配行及之后5行的内容</span></span><br><span class="line"><span class="comment"># -B:before 匹配行及之前5行的内容</span></span><br><span class="line"><span class="comment"># -C:context 匹配行及前后5行的内容</span></span><br><span class="line">grep -A 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br><span class="line">grep -B 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br><span class="line">grep -C 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br></pre></td></tr></table></figure>
+<p>查询最后 1 次出现的日志<br>
+<code>grep -n '关键字' info.log | head -1</code></p>
+<p>查询最后 5 次出现的日志<br>
+<code>grep -n '关键字' info.log | head -5</code></p>
+<p>查询最开始 1 次出现的日志<br>
+<code>grep -n '关键字' info.log | tail -1</code></p>
+<h3 id="正则">正则<a title="#正则" href="#正则"></a></h3>
 <ul>
 <li>
-<p>打开手机软件 <code>文件</code>, 点击右上角: <code>连接服务器</code><br>
-<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45d4.png" alt="" loading="lazy"></p>
+<p>以 关键字 开头<br>
+<code>grep '^关键字' /data/info.log</code></p>
 </li>
 <li>
-<p>输入上面获取到的IPv4 地址<br>
-<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45b0.png" alt="" loading="lazy"></p>
+<p>以 关键字 结尾<br>
+<code>grep '关键字$' /data/info.log</code></p>
 </li>
 <li>
-<p>输入电脑密码即可进入<br>
-<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45e1.png" alt="" loading="lazy"></p>
+<p>以多个 关键字 开头<br>
+<code>grep '^[关键字关键字]' /data/info.log</code><br>
+<code>grep '^关键字|^关键字' /data/info.log</code></p>
 </li>
 </ul>
 ]]></content>
       <categories>
-        <category>Windows</category>
-        <category>iPhone</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
-        <tag>iPhone</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
-    <title>WPS 2019 专业增强版 (温州大学教育版)</title>
-    <url>/windows-wps-2019/</url>
-    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62cbbf63f54cd3f9378360d4.png" alt="WPS 产品管理中心" loading="lazy" class="φbp"></p>
-<p><strong>教育版的优势</strong></p>
-<ul>
-<li>定制序列号(内嵌), 无需注册, 直接使用, 授权长期有效, 永久激活</li>
-<li>官方出品, 广告</li>
-<li>具备完整的VBA组件和VBA宏</li>
-</ul>
-<p><strong>下载地址</strong></p>
-<blockquote>
-<p>链接: <code>https://pan.baidu.com/s/1itrGNaYDIuLr2fkzig2OsQ?pwd=lizm</code><br>
-提取码: <code>lizm</code></p>
-</blockquote>
-]]></content>
+    <title>多线程</title>
+    <url>/Thread/</url>
+    <content><![CDATA[]]></content>
       <categories>
-        <category>软件</category>
+        <category>Thread</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
-        <tag>WPS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows iTunes 设置关闭自动备份</title>
-    <url>/windows-itunes-backups/</url>
-    <content><![CDATA[<ol>
-<li>找到安装目录下的: <code>defaults.exe</code> 复制路径</li>
-<li>运行: <code>cmd</code></li>
-<li>执行命令: <code>&quot;D:\Application\iTunes\defaults.exe&quot; write com.apple.iTunes AutomaticDeviceBackupsDisabled -bool true</code></li>
-</ol>
-]]></content>
-      <categories>
-        <category>iTunes</category>
-      </categories>
-      <tags>
-        <tag>iTunes</tag>
+        <tag>Thread</tag>
       </tags>
   </entry>
   <entry>
