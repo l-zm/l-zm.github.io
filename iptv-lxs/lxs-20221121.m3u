@@ -1,0 +1,35 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="1" tvg-name="CCTV 1" tvg-logo="CCTV1" group-title="央视",CCTV 1 综合
+http://39.134.115.163:8080/PLTV/88888910/224/3221225618/index.m3u8
+#EXTINF:-1 tvg-id="2" tvg-name="CCTV 2" tvg-logo="CCTV2" group-title="央视",CCTV 2 财经
+http://39.134.115.163:8080/PLTV/88888910/224/3221225619/index.m3u8
+#EXTINF:-1 tvg-id="3" tvg-name="CCTV 3" tvg-logo="CCTV3" group-title="央视",CCTV 3 综艺
+http://39.134.115.163:8080/PLTV/88888910/224/3221225634/index.m3u8
+#EXTINF:-1 tvg-id="4" tvg-name="CCTV 4" tvg-logo="CCTV4" group-title="央视",CCTV 4 中文国际
+http://39.134.115.163:8080/PLTV/88888910/224/3221225621/index.m3u8
+#EXTINF:-1 tvg-id="5" tvg-name="CCTV 5" tvg-logo="CCTV5" group-title="央视",CCTV 5 体育
+http://39.134.115.163:8080/PLTV/88888910/224/3221225633/index.m3u8
+#EXTINF:-1 tvg-id="6" tvg-name="CCTV 5+" tvg-logo="CCTV5+" group-title="央视",CCTV 5+ 体育赛事
+http://39.134.115.163:8080/PLTV/88888910/224/3221225649/index.m3u8
+#EXTINF:-1 tvg-id="7" tvg-name="CCTV 6" tvg-logo="CCTV6" group-title="央视",CCTV 6 电影
+http://39.134.115.163:8080/PLTV/88888910/224/3221225632/index.m3u8
+#EXTINF:-1 tvg-id="8" tvg-name="CCTV 7" tvg-logo="CCTV7" group-title="央视",CCTV 7 国防军事
+http://39.134.115.163:8080/PLTV/88888910/224/3221225624/index.m3u8
+#EXTINF:-1 tvg-id="9" tvg-name="CCTV 8" tvg-logo="CCTV8" group-title="央视",CCTV 8 电视剧
+http://39.134.115.163:8080/PLTV/88888910/224/3221225631/index.m3u8
+#EXTINF:-1 tvg-id="10" tvg-name="CCTV 9" tvg-logo="CCTV9" group-title="央视",CCTV 9 记录
+http://39.134.115.163:8080/PLTV/88888910/224/3221225646/index.m3u8
+#EXTINF:-1 tvg-id="11" tvg-name="CCTV 10" tvg-logo="CCTV10" group-title="央视",CCTV 10 科教
+http://39.134.115.163:8080/PLTV/88888910/224/3221225636/index.m3u8
+#EXTINF:-1 tvg-id="12" tvg-name="CCTV 11" tvg-logo="CCTV11" group-title="央视",CCTV 11 戏曲
+http://39.135.138.59:18890/PLTV/88888910/224/3221225628/index.m3u8
+#EXTINF:-1 tvg-id="13" tvg-name="CCTV 12" tvg-logo="CCTV12" group-title="央视",CCTV 12 社会与法
+http://39.134.115.163:8080/PLTV/88888910/224/3221225637/index.m3u8
+#EXTINF:-1 tvg-id="14" tvg-name="CCTV 13" tvg-logo="CCTV13" group-title="央视",CCTV 13 新闻
+http://39.134.115.163:8080/PLTV/88888910/224/3221225638/index.m3u8
+#EXTINF:-1 tvg-id="15" tvg-name="CCTV 14" tvg-logo="CCTV14" group-title="央视",CCTV 14 少儿
+http://ivi.bupt.edu.cn/hls/cctv14hd.m3u8
+#EXTINF:-1 tvg-id="16" tvg-name="CCTV 15" tvg-logo="CCTV15" group-title="央视",CCTV 15 音乐
+http://ivi.bupt.edu.cn/hls/cctv15.m3u8
+#EXTINF:-1 tvg-id="17" tvg-name="CCTV 17" tvg-logo="CCTV17" group-title="央视",CCTV 17 农业农村
+http://ivi.bupt.edu.cn/hls/cctv17hd.m3u8
