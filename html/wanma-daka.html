@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>考勤打卡</title>
+<!--适应移动端-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--css样式-->
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+html,
+  body {
+    font-size: calc(100 * 100vw / 375);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    font-size: .16rem;
+  }
+
+  * {
+  margin: 0;
+  padding: 0;
+}
+
+.items-scroll {
+  display: flex;
+  display: -webkit-flex;
+  white-space: nowrap;
+  align-items: center;
+  width: 100vw;
+  height: 8vh;
+  overflow: scroll;
+  border-bottom: 1px solid #f5F8Fa;
+}
+.calendar {
+  padding-bottom: 4vw;
+}
+.dateDay {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4vw;
+}
+
+.td {
+  width: .38rem;
+  height: 6vh;
+  line-height: 6vh;
+  text-align: center;
+  font-weight: 700;
+}
+
+.date_Dates {
+  display: flex;
+  padding: 0 4vw;
+  margin-top: 4vw;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.date_Date {
+  font-size: .12rem;
+  height: 7vh;
+  display: flex;
+  flex-wrap: wrap;
+  color: #E3E6E9;
+  flex-direction: column;
+  justify-content: center;
+  width: .38rem;
+  border: 1px solid #E3E6E9;
+}
+
+.date_Date2 {
+  font-size: .12rem;
+  height: 7vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: .38rem;
+}
+
+.date_Date4 {
+  font-size: .12rem;
+  height: 7vh;
+  display: flex;
+  flex-wrap: wrap;
+  color: #1D223E;
+  flex-direction: column;
+  justify-content: center;
+  width: .38rem;
+  border: 1px solid #E3E6E9;
+}
+
+.date_Date3 {
+  font-size: .12rem;
+  height: 7vh;
+  display: flex;
+  flex-wrap: wrap;
+  color: #00CBDB;
+  flex-direction: column;
+  justify-content: center;
+  width: .38rem;
+  border: 1px solid #00CBDB;
+  background-color: #E0F8F8;
+}
+.item {
+  margin-left: 4vw;
+  height: 6vh;
+  line-height: 6vh;
+  text-align: center;
+}
+.kong {
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  line-height: 20vh;
+}
+
+.course_state {
+  transform: scale(0.8);
+  color: #0081FF;
+  padding-top: .05rem;
+}
+
+.course_state2 {
+  transform: scale(0.8);
+  padding-top: .05rem;
+  color: #FF871A
+}
+
+.course_state4 {
+  transform: scale(0.8);
+  color: #ADAFBE;
+  padding-top: .05rem;
+}
+.type {
+  color: #0081FF;
+}
+
+.normal {
+  width: 0;
+}
+
+.wink {
+  margin: 0 auto;
+  transition: width 0.5s;
+  width: 12vw;
+  height: 3px;
+  background-color: #007DDB;
+}
+
+</style>
+<!--百度压缩版引用-->
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div style="width: 100vw;background-color:#fff">
+
+   <div class="items-scroll"></div>
+   
+   <div class="calendar">
+      <div class="dateDay">
+         <div class="td">一</div>
+         <div class="td">二</div>
+         <div class="td">三</div>
+         <div class="td">四</div>
+         <div class="td">五</div>
+         <div class="td">六</div>
+         <div class="td">日</div>
+      </div>
+      <div class="d_content1"></div>
+      <div class="d_content2">afdsasdfdfs</div>
+   </div>
+   
+</div>
+
+<script type="text/javascript">
+
+   var _thisMonthData = '';
+
+   window.onload = function() {
+      var request = new XMLHttpRequest();
+      var path="https://www.eyoulu.cn/api/hr/attendance/home/findMonthCount";
+      // request.onreadystatechange=state_change;
+
+      request.open("GET", path, true);
+      request.setRequestHeader("Authorization", "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiVVNFUjEzNzI4NTg4NjQ3NTU2NzUxMzYiLCJ1c2VyX25hbWUiOiI0MjIwMzJjNjEwOTg2MDM4NzI0MmUxMWNiMTQ3YmNjNiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2NzYzOTYyMjIsImF1dGhvcml0aWVzIjpbIllMMDQ0ODgwIl0sImp0aSI6Ijk5Y2Q0NzM1LTAyZDgtNDlmZS1hYTA4LTBkZDVmMjVmZDZhYiIsImNsaWVudF9pZCI6IndlY2hhdC1hcHAifQ.YTPnjPtxK4rL5fNRfmHkzHEFxFG2D22jwAjqva93RygCxQrZVkMLA2VkU-rx_r6RFz2bu3a8OqXmJHEjC90LrvWXAVmsE5zlN8fHhA3zK9tOBd2Fus__o_4e_Kej94f4WbVKptpT5HPTvtn_vLo0VR7DZeLiM_iOgQWXHJ_IA3A");
+
+      request.send();
+
+      var dataString;
+
+      request.onreadystatechange = function() { 
+        if (request.readyState == 4) { 
+          if ((request.status >= 200 && request.status < 300) || request.status == 304) { 
+            console.log(request.responseText); // 作为响应体返回的文本
+            dataString = request.responseText;
+
+            var jsonObj = JSON.parse(dataString);
+            if (!jsonObj) {
+              alert("数据请求失败");
+              return;
+            }
+            if (!jsonObj.data) {
+              alert("数据请求失败");
+              return;
+            }
+            if (!jsonObj.data.respCalendarHomeVos) {
+              alert("数据请求失败");
+              return;
+            }
+            
+            var monthAllData = jsonObj.data.respCalendarHomeVos;
+
+            _thisMonthData = monthAllData;
+
+            //获取年份
+            /*
+            * a ： 获取今天的年份及日期
+            * b ： 获取当前年份
+            * c ： 获取当前月份
+            * rc : 获取的月份（因为显示的是减一的 但算的是用正常的算的 所以这里设置2个变量）
+            * */
+            getYear(monthAllData);
+
+            $("#toDayClick").click();
+
+
+          } else { 
+            console.log("Request was unsuccessful: " + xhr.status); // 请求失败，返回 响应的 HTTP 状态 
+            return;
+          } 
+        } 
+      };
+
+      <!-- var dataString = '{"code":0,"msg":"请求成功","data":{"monthCountVo":null,"respCalendarHomeVos":[{"userCode":"YL044880","attendDate":"2023-02-01","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-01","shouldStartTime":"2023-02-01 09:00:00","shouldEndTime":"2023-02-01 18:00:00","actualStartTime":"2023-02-01 08:26:49","actualEndTime":"2023-02-01 18:22:47","startTimeStatus":"ZC","endTimeStatus":"ZC","startTimeAddress":"优路大厦9楼考勤机1","endTimeAddress":"优路大厦9楼考勤机2"}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-02","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-02","shouldStartTime":"2023-02-02 09:00:00","shouldEndTime":"2023-02-02 18:00:00","actualStartTime":"2023-02-02 08:19:47","actualEndTime":"2023-02-02 18:25:56","startTimeStatus":"ZC","endTimeStatus":"ZC","startTimeAddress":"优路大厦9楼考勤机2","endTimeAddress":"优路大厦1楼前台考勤"}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-03","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-03","shouldStartTime":"2023-02-03 09:00:00","shouldEndTime":"2023-02-03 18:00:00","actualStartTime":"2023-02-03 08:27:11","actualEndTime":"2023-02-03 18:33:46","startTimeStatus":"ZC","endTimeStatus":"ZC","startTimeAddress":"优路大厦9楼考勤机2","endTimeAddress":"优路大厦9楼考勤机2"}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-04","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-04","shouldStartTime":"2023-02-04 09:00:00","shouldEndTime":"2023-02-04 18:00:00","actualStartTime":"2023-02-04 08:03:57","actualEndTime":"2023-02-04 18:26:03","startTimeStatus":"ZC","endTimeStatus":"ZC","startTimeAddress":"优路大厦9楼考勤机1","endTimeAddress":"优路大厦9楼考勤机2"}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-05","shiftId":"0","shiftName":"休息","flows":"","flowsCode":"","shiftType":"XXR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":null,"attendShiftVos":[{"shiftId":"0","shiftName":"休息","shiftSectionTime":"","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-06","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-06","shouldStartTime":"2023-02-06 09:00:00","shouldEndTime":"2023-02-06 18:00:00","actualStartTime":"2023-02-06 08:33:09","actualEndTime":"2023-02-06 18:16:24","startTimeStatus":"ZC","endTimeStatus":"ZC","startTimeAddress":"优路大厦9楼考勤机1","endTimeAddress":"优路大厦9楼考勤机2"}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-07","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-07","shouldStartTime":"2023-02-07 09:00:00","shouldEndTime":"2023-02-07 18:00:00","actualStartTime":"2023-02-07 08:33:38","actualEndTime":"2023-02-07 18:24:01","startTimeStatus":"ZC","endTimeStatus":"ZC","startTimeAddress":"优路大厦9楼考勤机1","endTimeAddress":"优路大厦9楼考勤机2"}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-08","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-08","shouldStartTime":"2023-02-08 09:00:00","shouldEndTime":"2023-02-08 18:00:00","actualStartTime":"2023-02-08 08:33:49","actualEndTime":"2023-02-08 18:20:20","startTimeStatus":"ZC","endTimeStatus":"ZC","startTimeAddress":"优路大厦9楼考勤机2","endTimeAddress":"优路大厦9楼考勤机2"}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-09","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-09","shouldStartTime":"2023-02-09 09:00:00","shouldEndTime":"2023-02-09 18:00:00","actualStartTime":"2023-02-09 08:31:58","actualEndTime":"2023-02-09 18:17:24","startTimeStatus":"ZC","endTimeStatus":"ZC","startTimeAddress":"优路大厦9楼考勤机1","endTimeAddress":"优路大厦9楼考勤机1"}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-10","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-10","shouldStartTime":"2023-02-10 09:00:00","shouldEndTime":"2023-02-10 18:00:00","actualStartTime":"2023-02-10 08:31:35","actualEndTime":"2023-02-10 18:13:39","startTimeStatus":"ZC","endTimeStatus":"ZC","startTimeAddress":"优路大厦9楼考勤机1","endTimeAddress":"优路大厦9楼考勤机2"}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-11","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"调班申请","flowsCode":"thbsq","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-11","shouldStartTime":"2023-02-11 09:00:00","shouldEndTime":"2023-02-11 18:00:00","actualStartTime":"2023-02-11 08:32:01","actualEndTime":"2023-02-11 18:15:09","startTimeStatus":"ZC","endTimeStatus":"ZC","startTimeAddress":"优路大厦9楼考勤机1","endTimeAddress":"优路大厦9楼考勤机1"}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-12","shiftId":"0","shiftName":"休息","flows":"","flowsCode":"","shiftType":"XXR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":null,"attendShiftVos":[{"shiftId":"0","shiftName":"休息","shiftSectionTime":"","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-13","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-13","shouldStartTime":"2023-02-13 09:00:00","shouldEndTime":"2023-02-13 18:00:00","actualStartTime":"2023-02-13 08:33:31","actualEndTime":"2023-02-13 18:20:52","startTimeStatus":"ZC","endTimeStatus":"ZC","startTimeAddress":"优路大厦9楼考勤机1","endTimeAddress":"优路大厦9楼考勤机1"}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-14","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-14","shouldStartTime":"2023-02-14 09:00:00","shouldEndTime":"2023-02-14 18:00:00","actualStartTime":"2023-02-14 08:41:54","actualEndTime":null,"startTimeStatus":"ZC","endTimeStatus":null,"startTimeAddress":"优路大厦9楼考勤机2","endTimeAddress":null}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-15","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-15","shouldStartTime":"2023-02-15 09:00:00","shouldEndTime":"2023-02-15 18:00:00","actualStartTime":null,"actualEndTime":null,"startTimeStatus":null,"endTimeStatus":null,"startTimeAddress":null,"endTimeAddress":null}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-16","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-16","shouldStartTime":"2023-02-16 09:00:00","shouldEndTime":"2023-02-16 18:00:00","actualStartTime":null,"actualEndTime":null,"startTimeStatus":null,"endTimeStatus":null,"startTimeAddress":null,"endTimeAddress":null}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-17","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-17","shouldStartTime":"2023-02-17 09:00:00","shouldEndTime":"2023-02-17 18:00:00","actualStartTime":null,"actualEndTime":null,"startTimeStatus":null,"endTimeStatus":null,"startTimeAddress":null,"endTimeAddress":null}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-18","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-18","shouldStartTime":"2023-02-18 09:00:00","shouldEndTime":"2023-02-18 18:00:00","actualStartTime":null,"actualEndTime":null,"startTimeStatus":null,"endTimeStatus":null,"startTimeAddress":null,"endTimeAddress":null}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-19","shiftId":"0","shiftName":"休息","flows":"","flowsCode":"","shiftType":"XXR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":null,"attendShiftVos":[{"shiftId":"0","shiftName":"休息","shiftSectionTime":"","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-20","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-20","shouldStartTime":"2023-02-20 09:00:00","shouldEndTime":"2023-02-20 18:00:00","actualStartTime":null,"actualEndTime":null,"startTimeStatus":null,"endTimeStatus":null,"startTimeAddress":null,"endTimeAddress":null}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-21","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-21","shouldStartTime":"2023-02-21 09:00:00","shouldEndTime":"2023-02-21 18:00:00","actualStartTime":null,"actualEndTime":null,"startTimeStatus":null,"endTimeStatus":null,"startTimeAddress":null,"endTimeAddress":null}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-22","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-22","shouldStartTime":"2023-02-22 09:00:00","shouldEndTime":"2023-02-22 18:00:00","actualStartTime":null,"actualEndTime":null,"startTimeStatus":null,"endTimeStatus":null,"startTimeAddress":null,"endTimeAddress":null}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-23","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-23","shouldStartTime":"2023-02-23 09:00:00","shouldEndTime":"2023-02-23 18:00:00","actualStartTime":null,"actualEndTime":null,"startTimeStatus":null,"endTimeStatus":null,"startTimeAddress":null,"endTimeAddress":null}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-24","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-24","shouldStartTime":"2023-02-24 09:00:00","shouldEndTime":"2023-02-24 18:00:00","actualStartTime":null,"actualEndTime":null,"startTimeStatus":null,"endTimeStatus":null,"startTimeAddress":null,"endTimeAddress":null}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-25","shiftId":"0","shiftName":"休息","flows":"","flowsCode":"","shiftType":"XXR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":null,"attendShiftVos":[{"shiftId":"0","shiftName":"休息","shiftSectionTime":"","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-26","shiftId":"0","shiftName":"休息","flows":"","flowsCode":"","shiftType":"XXR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":null,"attendShiftVos":[{"shiftId":"0","shiftName":"休息","shiftSectionTime":"","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-27","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-27","shouldStartTime":"2023-02-27 09:00:00","shouldEndTime":"2023-02-27 18:00:00","actualStartTime":null,"actualEndTime":null,"startTimeStatus":null,"endTimeStatus":null,"startTimeAddress":null,"endTimeAddress":null}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]},{"userCode":"YL044880","attendDate":"2023-02-28","shiftId":"SHIFT1453636003729412096","shiftName":"A6班(09:00-18:00)","flows":"","flowsCode":"","shiftType":"GZR","attendStatus":"ZC","effectiveSurplusDays":0,"attendSectionVos":[{"userCode":"YL044880","attendDate":"2023-02-28","shouldStartTime":"2023-02-28 09:00:00","shouldEndTime":"2023-02-28 18:00:00","actualStartTime":null,"actualEndTime":null,"startTimeStatus":null,"endTimeStatus":null,"startTimeAddress":null,"endTimeAddress":null}],"attendShiftVos":[{"shiftId":"SHIFT1453636003729412096","shiftName":"A6班","shiftSectionTime":"(09:00-18:00)","shiftDescribe":null,"shiftCode":null,"shouldHours":null,"shiftType":null,"vacationType":null,"shiftSection":null,"isEnable":null,"shiftDept":null,"deptNames":null}]}],"exceptions":null,"attendExceptionVos":null}}'; -->
+   };
+
+   //切换年份（所选年份变蓝出现下划线）
+$('.items-scroll').on('click', '.item', function () {
+  $(this).addClass('type').siblings().removeClass('type')
+  $(this).find('.normal').addClass('wink')
+  $($(this).siblings()).find('.normal').removeClass('wink')
+  // _flag1 = 1;
+  // currPageNum1 = 1;
+})
+
+function getYear(monthAllData) {
+  var a = new Date();
+  var b = a.getFullYear();
+  var c = a.getMonth();
+  var rc = c + 1;
+  var html1 = ``;
+  $('.items-scroll').empty();
+  //一次展示往后5月的日历
+  for (var i = 0; i < 3; i++) {
+    //如果5月后的月数大于12
+    if (rc + i <= 12) {
+      //如果5月后的月数小于10（主要用于保持月份格式是2位数）
+      if(rc + i <10) {
+        var rc3 = rc + i
+        html1 = `<div class="item" data-year="${b}" data-month="${rc3}" onclick="getCalendar(this,${b},${rc3},${monthAllData})">${b}.${'0'+rc3}<div class="normal "></div>
+        </div>`
+      } else {
+        html1 = `<div class="item" data-year="${b}" data-month="${rc+i}" onclick="getCalendar(this,${b},${rc+i-1},${monthAllData})">${b}.${rc+i}<div class="normal "></div>
+        </div>`
+      }
+    } else {
+      var rc2 = rc + i - 12;
+      html1 = `<div class="item" data-year="${b+1}" data-month="${rc2}" onclick="getCalendar(this,${b+1},${rc2-1},${monthAllData})">${b+1}.${'0'+rc2}<div class="normal "></div>
+      </div>`
+    }
+    $('.items-scroll').append(html1)
+  }
+  getCalendar('', b, c, monthAllData);
+  $($(".items-scroll").children("div").get(0)).addClass('type');
+  $($(".items-scroll").children("div").children("div").get(0)).addClass('wink');
+}
+
+function getTodayData(monthAllData, yyyymmdd) {
+   console.log("要判断的日期：" + yyyymmdd);
+
+   if (!monthAllData) {
+   return;
+   }
+
+   for (var i = 0; i < monthAllData.length; i++) {
+      var monthData = monthAllData[i];
+      var attendDate = monthData.attendDate;  // 打卡日期
+      if (yyyymmdd == attendDate) {
+         console.log("打卡日期：" + attendDate);
+         return monthData;
+      }
+   }
+};
+
+//生成日历
+function getCalendar(obj, b, c, monthAllData) {
+   // console.table(monthAllData);
+  $('.d_content1').empty();
+  var T_today = new Date();
+  var T_year = T_today.getFullYear();
+  var T_month = T_today.getMonth() + 1;
+  var T_date = T_today.getDate();  // 今天
+  var list1 = []
+  var list2 = []
+  var list3 = []
+  var list1s = []
+  var list2s = []
+  var list3s = []
+  console.log('今天是：' + T_date);
+
+  if (obj == '') {
+    _year = new Date().getFullYear();
+    _month = new Date().getMonth() + 1;
+  } else {
+    _year = Number($(obj).attr('data-year'));
+    _month = Number($(obj).attr('data-month'));
+  }
+  if (_month < 10) {
+    _month = '0' + _month;
+  }
+  // console.log(_year + '-' + _month + '-' + T_date);
+
+  // $('.d_content2').empty();
+  var listMonth = new Array(31, 28 + lYear(b), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+  //计算处理月第一天是周几
+  var mD1 = new Date(b, c, 0);
+  //md1 ：星期几   mD1：日期格式
+  var md1 = mD1.getDay();
+  //计算日历行数
+  tr_str = Math.ceil((md1 + listMonth[c]) / 7);
+  //动态渲染日历盒子
+  for (var i = 0; i < tr_str; i++) {                    //日历有多少行
+    var html2 = `<div class=date_Dates>`               //每行插入的html代码
+    for (var k = 0; k < 7; k++) {                     //每行7天
+      inx = i * 7 + k;
+      data_str = inx - md1 + 1;                         //日期数字
+      console.log(data_str);
+      var data_str_2 = 0;
+      if (data_str < 10) {
+       data_str_2 = '0' + data_str;
+     } else {
+      data_str_2 = data_str;
+     }
+
+      let yyyymmdd = _year + '-' + _month + '-' + data_str_2;
+      console.log(yyyymmdd);
+        var toDayData = getTodayData(monthAllData, yyyymmdd);
+         console.log(toDayData);
+
+      // 判断上班类型
+      var _shiftType = 'X';
+      var _toDayData;
+      if (toDayData) {
+         // GZR:A6班(09:00-18:00)
+         var shiftType = toDayData.shiftType;  // 上班类型
+
+         if (shiftType == 'GZR') {
+            _shiftType = 'A6班'
+         } else if (shiftType == 'XXR') {
+            _shiftType = '休息'
+         } else {
+            _shiftType = '-';
+         }
+         _toDayData = toDayData.attendSectionVos;
+      }
+
+      if (data_str <= 0 || data_str > listMonth[c]) {
+        // 空的星期
+        html2 = html2 + `<div class="date_Date2"><div class=course_state></div></div>`
+      } else if (_year == T_year && _month == T_month && T_date == data_str) {
+        //今天
+        html2 = html2 + `<div id="toDayClick" class="date_Date3" onclick=dayClick(${_year},${_month},${data_str})>${data_str}<div class=course_state>${_shiftType}</div></div>`
+      } else {
+        let _tDate = _year + '-' + _month + '-' + data_str;
+        if (list2s.indexOf(_tDate) < 0 && list1s.indexOf(_tDate) < 0 && data_str < T_date && _month == T_month) {      
+        //今天之前的无课样式
+          html2 = html2 + `<div class="date_Date" onclick=dayClick(${_year},${_month},${data_str})>${data_str}<div class=course_state4>${_shiftType}</div></div>`
+        } else if (list2s.indexOf(_tDate) < 0 && list1s.indexOf(_tDate) < 0) {
+          html2 = html2 + `<div class="date_Date4" onclick=dayClick(${_year},${_month},${data_str})>${data_str}<div class=course_state4>${_shiftType}</div></div>`
+        }
+      }
+      // 正常星期内容
+    }
+    html2 = html2 + `</div>`
+    //在循环体中，每一行有7个盒子，所以在一行内生成7次dom元素，再一起添加到父盒子中
+    $('.d_content1').append(html2);
+  }
+};
+
+function dayClick(year, month, day) {
+  $('.d_content2').empty();
+
+   if (month < 10) {
+    month = '0' + month;
+   }
+   if (day < 10) {
+    day = '0' + day;
+   }
+   var dayClickYYYY = year + '-' + month + '-' + day;
+   console.log("点击了：" + year + '-' + month + '-' + day);
+
+   var toDayData = getTodayData(_thisMonthData, dayClickYYYY);
+   console.log(toDayData);
+   if (!toDayData) {
+    return;
+   }
+
+   // 打卡记录
+   var attendSectionVos = toDayData.attendSectionVos;
+   if (!attendSectionVos) {
+    return;
+   }
+   var toDayDate = `<br/>`;
+   for (var i = 0; i < attendSectionVos.length; i++) {
+      var attendSectionVo = attendSectionVos[i];
+      console.log(attendSectionVo);
+      if (attendSectionVo.actualStartTime) {
+        toDayDate = toDayDate + attendSectionVo.actualStartTime + `<br/>`;
+      }
+      if (attendSectionVo.actualEndTime) {
+        toDayDate = toDayDate + attendSectionVo.actualEndTime + `<br/>`;
+      }
+   }
+   $('.d_content2').append(toDayDate);
+};
+
+//判断闰年
+function lYear(year) {
+  if (year % 4 === 0 && year % 100 !== 0 || year % 100 === 0 && year % 400 === 0) { //能被4整除且不能被100整除 ，能被100整除且能被400整除
+    return 1
+  } else {
+    return 0
+  }
+}
+</script>
+</body>
+</html>
