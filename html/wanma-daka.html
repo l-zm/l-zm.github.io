@@ -232,7 +232,7 @@ html,
 
 
           } else { 
-            console.log("Request was unsuccessful: " + xhr.status); // 请求失败，返回 响应的 HTTP 状态 
+            console.log("Request was unsuccessful: " + xhr.status); // 请求失败,返回 响应的 HTTP 状态 
             return;
           } 
         } 
@@ -387,7 +387,7 @@ function getCalendar(obj, b, c, monthAllData) {
       // 正常星期内容
     }
     html2 = html2 + `</div>`
-    //在循环体中，每一行有7个盒子，所以在一行内生成7次dom元素，再一起添加到父盒子中
+    //在循环体中,每一行有7个盒子,所以在一行内生成7次dom元素,再一起添加到父盒子中
     $('.d_content1').append(html2);
   }
 };
@@ -431,7 +431,7 @@ function dayClick(year, month, day) {
 
 //判断闰年
 function lYear(year) {
-  if (year % 4 === 0 && year % 100 !== 0 || year % 100 === 0 && year % 400 === 0) { //能被4整除且不能被100整除 ，能被100整除且能被400整除
+  if (year % 4 === 0 && year % 100 !== 0 || year % 100 === 0 && year % 400 === 0) { //能被4整除且不能被100整除 ,能被100整除且能被400整除
     return 1
   } else {
     return 0
