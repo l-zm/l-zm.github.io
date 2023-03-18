@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>临时文档</title>
-    <url>/1/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1/8k1ZEeWq71o+QhCqisbzt8Pixvpa/BglUmHf14yk4I88hvYg5wHt3</is-cipher>]]></content>
-      <categories>
-        <category>Other</category>
-      </categories>
-      <tags>
-        <tag>Other</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown 基本语法</title>
     <url>/markdown/</url>
     <content><![CDATA[<h1 id="&lt;center&gt;-一级标题"><center> 一级标题<a title="#&lt;center&gt;-一级标题" href="#&lt;center&gt;-一级标题"></a></h1>
@@ -266,18 +255,14 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>Mac 修改 Dock 栏的隐藏速度</title>
-    <url>/mac-edit-dock-hidden-speed/</url>
-    <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
-<p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
-<h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
-<p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
-]]></content>
+    <title>临时文档</title>
+    <url>/1/</url>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1+Va3el5/mCxCQMuamGQ8xoEP3TqxlpivgsHYYLFsy38Ulv/4c7IOrp</is-cipher>]]></content>
       <categories>
-        <category>Mac</category>
+        <category>Other</category>
       </categories>
       <tags>
-        <tag>Mac</tag>
+        <tag>Other</tag>
       </tags>
   </entry>
   <entry>
@@ -627,26 +612,6 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>苹果官方鼠标移动速度慢问题解决(Magic Mouse)</title>
-    <url>/magic-mouse/</url>
-    <content><![CDATA[<h3 id="设置">设置<a title="#设置" href="#设置"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/626cad73239250f7c5d61401.png" alt="Magic Mouse" loading="lazy" class="φbp"></p>
-<p><strong>如果这里的调节到最大还是满足不了你</strong></p>
-<p><strong>我们可以通过终端查看到我们鼠标的设置：</strong></p>
-<p>读取当前的移动速度：<br>
-<code>defaults read -g com.apple.mouse.scaling</code></p>
-<p>默认可能是：<code>3</code> ， 我这里设置的：<code>7</code></p>
-<p><code>defaults write -g com.apple.mouse.scaling 7</code></p>
-<h3 id="重启电脑生效">重启电脑生效<a title="#重启电脑生效" href="#重启电脑生效"></a></h3>
-]]></content>
-      <categories>
-        <category>Mac</category>
-      </categories>
-      <tags>
-        <tag>Mac</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>exo 网站初始化</title>
     <url>/hexo-web-site-inti/</url>
     <content><![CDATA[<p>第一步</p>
@@ -672,6 +637,41 @@ font-family: SlideTownsoul
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>苹果官方鼠标移动速度慢问题解决(Magic Mouse)</title>
+    <url>/magic-mouse/</url>
+    <content><![CDATA[<h3 id="设置">设置<a title="#设置" href="#设置"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/626cad73239250f7c5d61401.png" alt="Magic Mouse" loading="lazy" class="φbp"></p>
+<p><strong>如果这里的调节到最大还是满足不了你</strong></p>
+<p><strong>我们可以通过终端查看到我们鼠标的设置：</strong></p>
+<p>读取当前的移动速度：<br>
+<code>defaults read -g com.apple.mouse.scaling</code></p>
+<p>默认可能是：<code>3</code> ， 我这里设置的：<code>7</code></p>
+<p><code>defaults write -g com.apple.mouse.scaling 7</code></p>
+<h3 id="重启电脑生效">重启电脑生效<a title="#重启电脑生效" href="#重启电脑生效"></a></h3>
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 修改 Dock 栏的隐藏速度</title>
+    <url>/mac-edit-dock-hidden-speed/</url>
+    <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
+<p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
+<h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
+<p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
       </tags>
   </entry>
   <entry>
@@ -732,6 +732,20 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
+    <title>图片</title>
+    <url>/picture/</url>
+    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62c6837cf54cd3f937647820.png" alt="iPhone All" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/62c6a7faf54cd3f93798805c.png" alt="Git" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/62f3638416f2c2beb11babb0.gif" alt="Windows 10 TO Windows 11" loading="lazy"></p>
+]]></content>
+      <categories>
+        <category>Picture</category>
+      </categories>
+      <tags>
+        <tag>Picture</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows 安装完成 必装软件</title>
     <url>/windows/</url>
     <content><![CDATA[<h3 id="系统激活">系统激活<a title="#系统激活" href="#系统激活"></a></h3>
@@ -764,17 +778,26 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>图片</title>
-    <url>/picture/</url>
-    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62c6837cf54cd3f937647820.png" alt="iPhone All" loading="lazy"><br>
-<img src="https://pic.imgdb.cn/item/62c6a7faf54cd3f93798805c.png" alt="Git" loading="lazy"><br>
-<img src="https://pic.imgdb.cn/item/62f3638416f2c2beb11babb0.gif" alt="Windows 10 TO Windows 11" loading="lazy"></p>
+    <title>离线下载安装 Windows商店(Microsoft Store) 应用</title>
+    <url>/Microsoft-Store/</url>
+    <content><![CDATA[<h3 id="复制链接">复制链接<a title="#复制链接" href="#复制链接"></a></h3>
+<p>以：Windows 相机 应用举例</p>
+<p><code>https://www.microsoft.com/zh-cn/p/camara-de-windows/9wzdncrfjbbg?activetab=pivot:overviewtab</code></p>
+<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
+<p><code>https://store.rg-adguard.net/</code></p>
+<ul>
+<li>粘贴链接到输入框</li>
+<li>找到以 <code>AppxBundle</code> 结尾的</li>
+<li>点击下载安装</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/627886ca09475431290fb21e.png" alt="离线安装 Windows 商店(Microsoft-Store)应用-AppxBundle" loading="lazy" class="φbp"></p>
 ]]></content>
       <categories>
-        <category>Picture</category>
+        <category>软件</category>
+        <category>Microsoft Store</category>
       </categories>
       <tags>
-        <tag>Picture</tag>
+        <tag>Microsoft Store</tag>
       </tags>
   </entry>
   <entry>
@@ -809,29 +832,6 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>离线下载安装 Windows商店(Microsoft Store) 应用</title>
-    <url>/Microsoft-Store/</url>
-    <content><![CDATA[<h3 id="复制链接">复制链接<a title="#复制链接" href="#复制链接"></a></h3>
-<p>以：Windows 相机 应用举例</p>
-<p><code>https://www.microsoft.com/zh-cn/p/camara-de-windows/9wzdncrfjbbg?activetab=pivot:overviewtab</code></p>
-<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
-<p><code>https://store.rg-adguard.net/</code></p>
-<ul>
-<li>粘贴链接到输入框</li>
-<li>找到以 <code>AppxBundle</code> 结尾的</li>
-<li>点击下载安装</li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/627886ca09475431290fb21e.png" alt="离线安装 Windows 商店(Microsoft-Store)应用-AppxBundle" loading="lazy" class="φbp"></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-        <category>Microsoft Store</category>
-      </categories>
-      <tags>
-        <tag>Microsoft Store</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows 11 设置状态栏时钟时间精确显示到秒教程</title>
     <url>/Windows-11-Time-Second/</url>
     <content><![CDATA[<p>Windows 11 任务栏不支持秒的显示，微软承认错误删除了一个注册表</p>
@@ -858,7 +858,7 @@ font-family: SlideTownsoul
   <entry>
     <title>Chrome 插件</title>
     <url>/Chrome-Plugins/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX19wq2ZI0iJLHp+84yXZqImIaDgBddtqYYnzLvpUXs/1XmJmi8i15mfE</is-cipher>]]></content>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1+nlPfsyWpaStXQKh/uTN6rBO2EstIHbpb+3jZae9J6i2kGYBLPKuHG</is-cipher>]]></content>
       <categories>
         <category>Chrome</category>
       </categories>
@@ -867,33 +867,246 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>解决 GitHub 无法访问</title>
-    <url>/github-host/</url>
-    <content><![CDATA[<p>需要配置的网址:</p>
-<ul>
-<li>网站：<code>github.com</code></li>
-<li>网站：<code>github.global.ssl.fastly.net</code></li>
-<li>网站：<code>raw.githubusercontent.com</code></li>
-</ul>
-<h3 id="查询-github-dns">查询 GitHub DNS<a title="#查询-github-dns" href="#查询-github-dns"></a></h3>
-<p>地址: <code>http://tool.chinaz.com/dns</code><br>
-找到: TTL值 最小的DNS</p>
-<h3 id="查询-github-真实ip">查询 GitHub 真实IP<a title="#查询-github-真实ip" href="#查询-github-真实ip"></a></h3>
-<p>地址: <code>https://www.ipaddress.com/</code></p>
-<p>配置 Host 文件<br>
-Mac 路径：/etc/host<br>
-Windows 路径：C:\Windows\System32\drivers\etc</p>
-<p>添加:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">20.205.243.166 github.com</span><br><span class="line">31.13.73.169 github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
-<p>Done<br>
-<img src="https://pic.imgdb.cn/item/62c6a658f54cd3f93796440b.png" alt="" loading="lazy"><br>
-<img src="https://pic.imgdb.cn/item/62c6a743f54cd3f937977571.png" alt="" loading="lazy"></p>
+    <title>管理 &quot;此电脑&quot; 里面删不掉的流浪 &quot;快捷方式&quot;</title>
+    <url>/windows-MyComputerManager/</url>
+    <content><![CDATA[<h3 id="mycomputermanager">MyComputerManager<a title="#mycomputermanager" href="#mycomputermanager"></a></h3>
+<p>GitHub 开源小工具: <code>https://github.com/1357310795/MyComputerManager</code></p>
+<p>双击直接运行</p>
+<p><img src="https://pic.imgdb.cn/item/62cbbaa7f54cd3f9377cf8d0.png" alt="MyComputerManager" loading="lazy" class="φbp"></p>
+<h3 id="如何彻底杜绝">如何彻底杜绝<a title="#如何彻底杜绝" href="#如何彻底杜绝"></a></h3>
+<ol>
+<li>打开火绒</li>
+<li>安全设置</li>
+<li>高级防护</li>
+<li>自定义防护</li>
+<li>添加规则
+<ol>
+<li>规则名称(随便): <code>阻止程序在此电脑创建快捷方式</code></li>
+<li>注册表规则: <code>*\MyComputer\NameSpace\*</code></li>
+</ol>
+</li>
+</ol>
+<p><img src="https://pic.imgdb.cn/item/62cb97a3f54cd3f937521d28.png" alt="阻止程序在此电脑创建快捷方式" loading="lazy" class="φbp"></p>
+<blockquote>
+<p>如果你想要禁止在桌面创建快捷方式<br>
+把MyComputer改成Desktop即可</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>GitHub</category>
+        <category>软件</category>
       </categories>
       <tags>
-        <tag>GitHub</tag>
+        <tag>Windows</tag>
+        <tag>MyComputerManager</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PowerToys-微软的一款开源电脑工具箱软件</title>
+    <url>/PowerToys/</url>
+    <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
+<p>习惯了 <strong><code>Mac</code></strong> 系统的 <code>command + *</code> 按键的操作逻辑之后</p>
+<p>针对于 <strong><code>Windows</code></strong> 系统的 <code>Ctrl + *</code> 各种不适应</p>
+<hr>
+<p>放上我的调整结果，回到 <code>command</code> 按键逻辑下</p>
+<p><img src="https://pic.imgdb.cn/item/6277942309475431296ca2b5.png" alt="PowerToys-微软的一款开源电脑工具箱软件-键盘管理器" loading="lazy" class="φbp"></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>PowerToys</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WPS 2019 专业增强版 (温州大学教育版)</title>
+    <url>/windows-wps-2019/</url>
+    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62cbbf63f54cd3f9378360d4.png" alt="WPS 产品管理中心" loading="lazy" class="φbp"></p>
+<p><strong>教育版的优势</strong></p>
+<ul>
+<li>定制序列号(内嵌), 无需注册, 直接使用, 授权长期有效, 永久激活</li>
+<li>官方出品, 广告</li>
+<li>具备完整的VBA组件和VBA宏</li>
+</ul>
+<p><strong>下载地址</strong></p>
+<blockquote>
+<p>链接: <code>https://pan.baidu.com/s/1itrGNaYDIuLr2fkzig2OsQ?pwd=lizm</code><br>
+提取码: <code>lizm</code></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>WPS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows &amp; Mac M3U8 视频下载</title>
+    <url>/m3u8-download/</url>
+    <content><![CDATA[<h2 id="mac">Mac<a title="#mac" href="#mac"></a></h2>
+<h2 id="windows">Windows<a title="#windows" href="#windows"></a></h2>
+<h4 id="n_m3u8dl-cli">N_m3u8DL-CLI<a title="#n_m3u8dl-cli" href="#n_m3u8dl-cli"></a></h4>
+<p><img src="https://pic.imgdb.cn/item/62f1f7dd16f2c2beb1ccdd40.png" alt="N_m3u8DL-CLI" loading="lazy" class="φbp"></p>
+<p>GitHub地址: <a href="https://github.com/nilaoda/N_m3u8DL-CLI" target="_blank">https://github.com/nilaoda/N_m3u8DL-CLI</a></p>
+<blockquote>
+<p>N_m3u8DL-CLI是一款用于下载m3u8的命令行工具，<a href="http://xn--6kq92u.NET">基于.NET</a> Framework 4.6框架开发，调用系统类库进行HTTP下载，支持常见的m3u8格式下载，支持从视频中选择一部分下载，还提供丰富的命令行选项以增强其功能。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>M3U8</category>
+      </categories>
+      <tags>
+        <tag>M3U8</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iPhone与Windows传输文件的几种方式</title>
+    <url>/iPhone-Windows/</url>
+    <content><![CDATA[<h3 id="创建文件夹">创建文件夹<a title="#创建文件夹" href="#创建文件夹"></a></h3>
+<ul>
+<li>右键 <code>属性</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8a7f.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>点击 <code>共享</code> 标签下的 <code>共享</code> 按钮, 选择 <code>Everyone</code>, 点击 <code>添加</code>, 最后点击 <code>共享</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8a88.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>选择文件夹, 点击 <code>完成</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8ac3.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>继续点击 <code>高级共享</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67922f54cd3f937caab12.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>选中 <code>共享此文件夹</code>, 然后点击 <code>权限</code> 按钮</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8ae3.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>选中用户 <code>Everyone</code> 的读写权限, 然后一路确定</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8afc.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>打开命令提示符工具, 输入: <code>ipconfig</code>, 找到自己电脑的IPv4 地址: <code>192.168.95.1</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d678e2f54cd3f937c98b45.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>
+<p>打开手机软件 <code>文件</code>, 点击右上角: <code>连接服务器</code><br>
+<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45d4.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>输入上面获取到的IPv4 地址<br>
+<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45b0.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>输入电脑密码即可进入<br>
+<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45e1.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Windows</category>
+        <category>iPhone</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>iPhone</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows 显示并控制通过USB (或TCP/IP) 连接的 Android 设备</title>
+    <url>/windows-control-android/</url>
+    <content><![CDATA[<h3 id="scrcpy">scrcpy<a title="#scrcpy" href="#scrcpy"></a></h3>
+<p>Github地址：<a href="https://github.com/Genymobile/scrcpy" target="_blank">https://github.com/Genymobile/scrcpy</a></p>
+<p><strong>本应用专注于：</strong></p>
+<ul>
+<li><strong>轻量</strong> ：原生，仅显示设备屏幕</li>
+<li><strong>性能</strong> ：30~120fps，取决于设备</li>
+<li><strong>质量</strong> ：分辨率可达 1920×1080 或更高</li>
+<li><strong>低延迟</strong> ：35~70ms</li>
+<li><strong>快速启动</strong> ：最快 1 秒内即可显示第一帧</li>
+<li><strong>无侵入性</strong> ：不会在设备上遗留任何程序</li>
+<li><strong>用户利益</strong> ：无需帐号，无广告，无需联网</li>
+<li><strong>自由</strong> ：自由和开源软件</li>
+</ul>
+<p><strong>系统要求：</strong><br>
+安卓设备最低需要支持 API 21 (Android 5.0)<br>
+确保设备已开启 adb 调试<br>
+在某些设备上，还需要开启额外的选项以使用鼠标和键盘进行控制</p>
+<hr>
+<p>软件目录, 双击: <code>open_a_terminal_here.bat</code> 打开命令窗口</p>
+<h3 id="命令">命令<a title="#命令" href="#命令"></a></h3>
+<ul>
+<li>标题: <code>scrcpy --window-title &quot;my phone&quot;</code></li>
+<li>关闭设备屏幕: <code>scrcpy --turn-screen-off</code></li>
+<li>复制粘贴:
+<ul>
+<li>设备上复制,会自动同步到电脑的剪贴板上</li>
+<li>电脑上复制, 使用 <code>Ctrl</code> + <code>Shift</code> + <code>v</code> 粘贴到设备上</li>
+</ul>
+</li>
+<li>旋转屏幕: <code>Ctrl</code> + <code>R</code></li>
+</ul>
+<h3 id="常用命令">常用命令<a title="#常用命令" href="#常用命令"></a></h3>
+<p>关闭设备屏幕启动: <code>scrcpy --turn-screen-off --window-title &quot;my phone&quot;</code></p>
+<p>选择 USB 设备启动: <code>scrcpy -d --turn-screen-off --window-title &quot;my phone&quot;</code></p>
+]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows iTunes 设置关闭自动备份</title>
+    <url>/windows-itunes-backups/</url>
+    <content><![CDATA[<ol>
+<li>找到安装目录下的: <code>defaults.exe</code> 复制路径</li>
+<li>运行: <code>cmd</code></li>
+<li>执行命令: <code>&quot;D:\Application\iTunes\defaults.exe&quot; write com.apple.iTunes AutomaticDeviceBackupsDisabled -bool true</code></li>
+</ol>
+]]></content>
+      <categories>
+        <category>iTunes</category>
+      </categories>
+      <tags>
+        <tag>iTunes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows 10/11 电源计划 开启[卓越性能]</title>
+    <url>/windows-excellent/</url>
+    <content><![CDATA[<p>以管理员身份运行<code>Windows PowerShell</code>, 输入以下命令:</p>
+<p><code>powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61</code></p>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解除网页右键限制</title>
+    <url>/remove-right-click-limit/</url>
+    <content><![CDATA[<h3 id="脚本">脚本<a title="#脚本" href="#脚本"></a></h3>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">javascript</span>:!<span class="keyword">function</span> <span class="title function_">e</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;&#125;<span class="keyword">function</span> <span class="title function_">o</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">removeChild</span>(e)&#125;<span class="keyword">function</span> <span class="title function_">r</span>(<span class="params">e</span>)&#123;<span class="keyword">return</span>[].<span class="property">slice</span>.<span class="title function_">call</span>(t.<span class="title function_">querySelectorAll</span>(e))&#125;<span class="keyword">function</span> <span class="title function_">c</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;<span class="title function_">s</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;<span class="keyword">if</span>(!o)<span class="keyword">try</span>&#123;<span class="keyword">var</span> n=t.<span class="property">contentDocument</span>;n.<span class="property">body</span>.<span class="property">childNodes</span>.<span class="property">length</span>&amp;&amp;(o=<span class="number">1</span>,<span class="title function_">e</span>(n))&#125;<span class="keyword">catch</span>(e)&#123;o=<span class="number">0</span>&#125;&#125;,<span class="number">100</span>)&#125;a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t[<span class="string">&#x27;on&#x27;</span>+e]=<span class="literal">null</span>&#125;);<span class="keyword">var</span> o;<span class="title function_">n</span>(),t.<span class="property">onload</span>=n&#125;<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="string">&#x27;parentNode&#x27;</span>,l=<span class="string">&#x27;forEach&#x27;</span>,a=<span class="string">&#x27;contextmenu dragstart selectstart select copy beforecopy mouseup mousedown&#x27;</span>.<span class="title function_">split</span>(<span class="string">&#x27; &#x27;</span>),u=<span class="built_in">setTimeout</span>(n,<span class="number">0</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearTimeout</span>(u);<span class="keyword">for</span>(u=<span class="built_in">setInterval</span>(n,<span class="number">1e8</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearInterval</span>(u);<span class="keyword">var</span> s=<span class="built_in">setTimeout</span>;<span class="built_in">setTimeout</span>=<span class="built_in">setInterval</span>=n,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](o);<span class="keyword">var</span> m=[];<span class="title function_">r</span>(<span class="string">&#x27;iframe,frame&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;m.<span class="title function_">push</span>(e),e[i].<span class="title function_">replaceChild</span>(t.<span class="title function_">createElement</span>(<span class="string">&#x27;script&#x27;</span>),e)&#125;);<span class="keyword">var</span> f=t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>;t.<span class="title function_">open</span>(),t.<span class="title function_">write</span>(<span class="string">&#x27;&lt;!DOCTYPE html&gt;&#x27;</span>),t.<span class="title function_">close</span>(),t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>=f,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">replaceChild</span>(m.<span class="title function_">shift</span>(),e)&#125;),<span class="title function_">r</span>(<span class="string">&#x27;*&#x27;</span>)[l](c),<span class="title function_">c</span>(t),a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t.<span class="title function_">addEventListener</span>(e,<span class="keyword">function</span>(<span class="params">e</span>)&#123;e.<span class="title function_">stopPropagation</span>()&#125;,!<span class="number">0</span>)&#125;);<span class="keyword">var</span> p=t.<span class="title function_">createElement</span>(<span class="string">&#x27;style&#x27;</span>);p.<span class="property">innerHTML</span>=<span class="string">&#x27;*&#123;-webkit-user-select:text!important;-moz-user-select:text!important;user-select:text!important;&#125;&#x27;</span>,t.<span class="property">body</span>.<span class="title function_">appendChild</span>(p)&#125;(<span class="variable language_">document</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="两种使用方法:">两种使用方法:<a title="#两种使用方法:" href="#两种使用方法:"></a></h3>
+<ol>
+<li>浏览器: F12打开调试模式, 在控制台<code>Console</code>里面直接执行</li>
+<li>直接保存为书签, 在需要解除右键限制的网页直接点击书签即可 <strong>(推荐)</strong></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
@@ -922,438 +1135,6 @@ Windows 路径：C:\Windows\System32\drivers\etc</p>
       </categories>
       <tags>
         <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解除网页右键限制</title>
-    <url>/remove-right-click-limit/</url>
-    <content><![CDATA[<h3 id="脚本">脚本<a title="#脚本" href="#脚本"></a></h3>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">javascript</span>:!<span class="keyword">function</span> <span class="title function_">e</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;&#125;<span class="keyword">function</span> <span class="title function_">o</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">removeChild</span>(e)&#125;<span class="keyword">function</span> <span class="title function_">r</span>(<span class="params">e</span>)&#123;<span class="keyword">return</span>[].<span class="property">slice</span>.<span class="title function_">call</span>(t.<span class="title function_">querySelectorAll</span>(e))&#125;<span class="keyword">function</span> <span class="title function_">c</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;<span class="title function_">s</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;<span class="keyword">if</span>(!o)<span class="keyword">try</span>&#123;<span class="keyword">var</span> n=t.<span class="property">contentDocument</span>;n.<span class="property">body</span>.<span class="property">childNodes</span>.<span class="property">length</span>&amp;&amp;(o=<span class="number">1</span>,<span class="title function_">e</span>(n))&#125;<span class="keyword">catch</span>(e)&#123;o=<span class="number">0</span>&#125;&#125;,<span class="number">100</span>)&#125;a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t[<span class="string">&#x27;on&#x27;</span>+e]=<span class="literal">null</span>&#125;);<span class="keyword">var</span> o;<span class="title function_">n</span>(),t.<span class="property">onload</span>=n&#125;<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="string">&#x27;parentNode&#x27;</span>,l=<span class="string">&#x27;forEach&#x27;</span>,a=<span class="string">&#x27;contextmenu dragstart selectstart select copy beforecopy mouseup mousedown&#x27;</span>.<span class="title function_">split</span>(<span class="string">&#x27; &#x27;</span>),u=<span class="built_in">setTimeout</span>(n,<span class="number">0</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearTimeout</span>(u);<span class="keyword">for</span>(u=<span class="built_in">setInterval</span>(n,<span class="number">1e8</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearInterval</span>(u);<span class="keyword">var</span> s=<span class="built_in">setTimeout</span>;<span class="built_in">setTimeout</span>=<span class="built_in">setInterval</span>=n,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](o);<span class="keyword">var</span> m=[];<span class="title function_">r</span>(<span class="string">&#x27;iframe,frame&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;m.<span class="title function_">push</span>(e),e[i].<span class="title function_">replaceChild</span>(t.<span class="title function_">createElement</span>(<span class="string">&#x27;script&#x27;</span>),e)&#125;);<span class="keyword">var</span> f=t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>;t.<span class="title function_">open</span>(),t.<span class="title function_">write</span>(<span class="string">&#x27;&lt;!DOCTYPE html&gt;&#x27;</span>),t.<span class="title function_">close</span>(),t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>=f,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">replaceChild</span>(m.<span class="title function_">shift</span>(),e)&#125;),<span class="title function_">r</span>(<span class="string">&#x27;*&#x27;</span>)[l](c),<span class="title function_">c</span>(t),a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t.<span class="title function_">addEventListener</span>(e,<span class="keyword">function</span>(<span class="params">e</span>)&#123;e.<span class="title function_">stopPropagation</span>()&#125;,!<span class="number">0</span>)&#125;);<span class="keyword">var</span> p=t.<span class="title function_">createElement</span>(<span class="string">&#x27;style&#x27;</span>);p.<span class="property">innerHTML</span>=<span class="string">&#x27;*&#123;-webkit-user-select:text!important;-moz-user-select:text!important;user-select:text!important;&#125;&#x27;</span>,t.<span class="property">body</span>.<span class="title function_">appendChild</span>(p)&#125;(<span class="variable language_">document</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="两种使用方法:">两种使用方法:<a title="#两种使用方法:" href="#两种使用方法:"></a></h3>
-<ol>
-<li>浏览器: F12打开调试模式, 在控制台<code>Console</code>里面直接执行</li>
-<li>直接保存为书签, 在需要解除右键限制的网页直接点击书签即可 <strong>(推荐)</strong></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>Web</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS Loading 加载动画</title>
-    <url>/2022-01-13-CSS-Loading/</url>
-    <content><![CDATA[<style type="text/css">
-
-/* * {
-	border: 0;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-} */
-/* :root {
-	--hue: 223;
-	--bg: hsl(var(--hue),10%,90%);
-	--fg: hsl(var(--hue),10%,10%);
-	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
-} */
-/* body {
-	background-color: #1f1f1f;
-	color: var(--fg);
-	font: 1em/1.5 sans-serif;
-	height: 100vh;
-	display: grid;
-	place-items: center;
-	transition: background-color 0.3s;
-} */
-main {
-	padding: 1.5em 0;
-}
-
-.ap {
-	width: 100%;
-	height: 16em;
-
-}
-.ap__ring {	
-	transition: stroke 0.3s;
-}
-.ap__worm1,
-.ap__worm2 {
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-}
-.ap__worm1 {
-	animation-name: worm1;
-}
-.ap__worm2 {
-	animation-name: worm2;
-	visibility: hidden;
-}
-
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-	:root {
-		--bg: hsl(var(--hue),10%,10%);
-		--fg: hsl(var(--hue),10%,90%);
-	}
-	.ap__ring {
-		stroke: hsla(var(--hue),10%,90%,0.1);
-	}
-}
-
-/* Animtions */
-@keyframes worm1 {
-	from {
-		animation-timing-function: ease-in-out;
-		stroke-dashoffset: -87.96;
-	}
-	20% {
-		animation-timing-function: ease-in;
-		stroke-dashoffset: 0;
-	}
-	60% {
-		stroke-dashoffset: -791.68;
-		visibility: visible;
-	}
-	60.1%,
-	to {
-		stroke-dashoffset: -791.68;
-		visibility: hidden;
-	}
-}
-@keyframes worm2 {
-	from,
-	60% {
-		stroke-dashoffset: -87.96;
-		visibility: hidden;
-	}
-	60.1% {
-		animation-timing-function: cubic-bezier(0,0,0.5,0.75);
-		stroke-dashoffset: -87.96;
-		visibility: visible;
-	}
-	77% {
-		animation-timing-function: cubic-bezier(0.5,0.25,0.5,0.88);
-		stroke-dashoffset: -340;
-		visibility: visible;
-	}
-	to {
-		stroke-dashoffset: -669.92;
-		visibility: visible;
-	}
-}
-</style>
-<script>
-
-</script><main>
-	<svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
-		<defs>
-			<linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
-				<stop offset="0%" stop-color="hsl(223,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
-			</linearGradient>
-			<linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
-				<stop offset="0%" stop-color="hsl(193,90%,55%)" />
-				<stop offset="50%" stop-color="hsl(223,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
-			</linearGradient>
-		</defs>
-		<circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
-		<circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
-		<path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
-	</svg>
-</main>]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>CSS</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo 嵌入可视化 Echarts 图表</title>
-    <url>/echarts/</url>
-    <content><![CDATA[<p>Echarts在线库 CDN 服务: <code>https://www.bootcdn.cn/echarts/</code></p>
-<div id="echarts9224" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts9224'));
-
-        // 指定图表的配置项和数据
-        var option = {
-  tooltip: {
-    trigger: 'axis'
-  },
-  legend: {
-    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
-  },
-  grid: {
-    left: '3%',
-    right: '4%',
-    bottom: '3%',
-    containLabel: true
-  },
-  toolbox: {
-    feature: {
-      saveAsImage: {}
-    }
-  },
-  xAxis: {
-    type: 'category',
-    boundaryGap: false,
-    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-  },
-  yAxis: {
-    type: 'value'
-  },
-  series: [
-    {
-      name: 'Email',
-      type: 'line',
-      stack: 'Total',
-      data: [120, 132, 101, 134, 90, 230, 210]
-    },
-    {
-      name: 'Union Ads',
-      type: 'line',
-      stack: 'Total',
-      data: [220, 182, 191, 234, 290, 330, 310]
-    },
-    {
-      name: 'Video Ads',
-      type: 'line',
-      stack: 'Total',
-      data: [150, 232, 201, 154, 190, 330, 410]
-    },
-    {
-      name: 'Direct',
-      type: 'line',
-      stack: 'Total',
-      data: [320, 332, 301, 334, 390, 330, 320]
-    },
-    {
-      name: 'Search Engine',
-      type: 'line',
-      stack: 'Total',
-      data: [820, 932, 901, 934, 1290, 1330, 1320]
-    }
-  ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>
-<div id="echarts8605" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts8605'));
-
-        // 指定图表的配置项和数据
-        var option = option = {
-    color: ['#3398DB'],
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
-            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-        }
-    },
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis: [
-        {
-            type: 'category',
-            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-            axisTick: {
-                alignWithLabel: true
-            }
-        }
-    ],
-    yAxis: [
-        {
-            type: 'value'
-        }
-    ],
-    series: [
-        {
-            name: '直接访问',
-            type: 'bar',
-            barWidth: '60%',
-            data: [10, 52, 200, 334, 390, 330, 220]
-        }
-    ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>
-<script type="text/javascript">
-var dataAxis = ['点', '击', '柱', '子', '或', '者', '两', '指', '在', '触', '屏', '上', '滑', '动', '能', '够', '自', '动', '缩', '放'];
-var data = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 122, 133, 334, 198, 123, 125, 220];
-var yMax = 500;
-var dataShadow = [];
-for (var i = 0; i < data.length; i++) {
-    dataShadow.push(yMax);
-}
-// Enable data zoom when user click bar.
-var zoomSize = 6;
-myChart.on('click', function (params) {
-    console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
-    myChart.dispatchAction({
-        type: 'dataZoom',
-        startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
-        endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
-    });
-});
-</script><div id="echarts5990" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts5990'));
-
-        // 指定图表的配置项和数据
-        var option = option = {
-    title: {
-        text: '特性示例：渐变色 阴影 点击缩放',
-        subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
-    },
-    xAxis: {
-        data: dataAxis,
-        axisLabel: {
-            inside: true,
-            textStyle: {
-                color: '#fff'
-            }
-        },
-        axisTick: {
-            show: false
-        },
-        axisLine: {
-            show: false
-        },
-        z: 10
-    },
-    yAxis: {
-        axisLine: {
-            show: false
-        },
-        axisTick: {
-            show: false
-        },
-        axisLabel: {
-            textStyle: {
-                color: '#999'
-            }
-        }
-    },
-    dataZoom: [
-        {
-            type: 'inside'
-        }
-    ],
-    series: [
-        { // For shadow
-            type: 'bar',
-            itemStyle: {
-                color: 'rgba(0,0,0,0.05)'
-            },
-            barGap: '-100%',
-            barCategoryGap: '40%',
-            data: dataShadow,
-            animation: false
-        },
-        {
-            type: 'bar',
-            itemStyle: {
-                color: new echarts.graphic.LinearGradient(
-                    0, 0, 0, 1,
-                    [
-                        {offset: 0, color: '#83bff6'},
-                        {offset: 0.5, color: '#188df0'},
-                        {offset: 1, color: '#188df0'}
-                    ]
-                )
-            },
-            emphasis: {
-                itemStyle: {
-                    color: new echarts.graphic.LinearGradient(
-                        0, 0, 0, 1,
-                        [
-                            {offset: 0, color: '#2378f7'},
-                            {offset: 0.7, color: '#2378f7'},
-                            {offset: 1, color: '#83bff6'}
-                        ]
-                    )
-                }
-            },
-            data: data
-        }
-    ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>
-<div id="echarts9398" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts9398'));
-
-        // 指定图表的配置项和数据
-        var option = option = {
-    title: {
-        text: '某站点用户访问来源',
-        subtext: '纯属虚构',
-        left: 'center'
-    },
-    tooltip: {
-        trigger: 'item',
-        formatter: '{a} <br/>{b} : {c} ({d}%)'
-    },
-    legend: {
-        orient: 'vertical',
-        left: 'left',
-        data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
-    },
-    series: [
-        {
-            name: '访问来源',
-            type: 'pie',
-            radius: '55%',
-            center: ['50%', '60%'],
-            data: [
-                {value: 335, name: '直接访问'},
-                {value: 310, name: '邮件营销'},
-                {value: 234, name: '联盟广告'},
-                {value: 135, name: '视频广告'},
-                {value: 1548, name: '搜索引擎'}
-            ],
-            emphasis: {
-                itemStyle: {
-                    shadowBlur: 10,
-                    shadowOffsetX: 0,
-                    shadowColor: 'rgba(0, 0, 0, 0.5)'
-                }
-            }
-        }
-    ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>]]></content>
-      <categories>
-        <category>Echarts</category>
-      </categories>
-      <tags>
-        <tag>Echarts</tag>
       </tags>
   </entry>
   <entry>
@@ -1638,228 +1419,136 @@ myChart.on('click', function (params) {
       </tags>
   </entry>
   <entry>
-    <title>PowerToys-微软的一款开源电脑工具箱软件</title>
-    <url>/PowerToys/</url>
-    <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
-<p>习惯了 <strong><code>Mac</code></strong> 系统的 <code>command + *</code> 按键的操作逻辑之后</p>
-<p>针对于 <strong><code>Windows</code></strong> 系统的 <code>Ctrl + *</code> 各种不适应</p>
-<hr>
-<p>放上我的调整结果，回到 <code>command</code> 按键逻辑下</p>
-<p><img src="https://pic.imgdb.cn/item/6277942309475431296ca2b5.png" alt="PowerToys-微软的一款开源电脑工具箱软件-键盘管理器" loading="lazy" class="φbp"></p>
-]]></content>
+    <title>CSS Loading 加载动画</title>
+    <url>/2022-01-13-CSS-Loading/</url>
+    <content><![CDATA[<style type="text/css">
+
+/* * {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+} */
+/* :root {
+	--hue: 223;
+	--bg: hsl(var(--hue),10%,90%);
+	--fg: hsl(var(--hue),10%,10%);
+	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+} */
+/* body {
+	background-color: #1f1f1f;
+	color: var(--fg);
+	font: 1em/1.5 sans-serif;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	transition: background-color 0.3s;
+} */
+main {
+	padding: 1.5em 0;
+}
+
+.ap {
+	width: 100%;
+	height: 16em;
+
+}
+.ap__ring {	
+	transition: stroke 0.3s;
+}
+.ap__worm1,
+.ap__worm2 {
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.ap__worm1 {
+	animation-name: worm1;
+}
+.ap__worm2 {
+	animation-name: worm2;
+	visibility: hidden;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(var(--hue),10%,10%);
+		--fg: hsl(var(--hue),10%,90%);
+	}
+	.ap__ring {
+		stroke: hsla(var(--hue),10%,90%,0.1);
+	}
+}
+
+/* Animtions */
+@keyframes worm1 {
+	from {
+		animation-timing-function: ease-in-out;
+		stroke-dashoffset: -87.96;
+	}
+	20% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: 0;
+	}
+	60% {
+		stroke-dashoffset: -791.68;
+		visibility: visible;
+	}
+	60.1%,
+	to {
+		stroke-dashoffset: -791.68;
+		visibility: hidden;
+	}
+}
+@keyframes worm2 {
+	from,
+	60% {
+		stroke-dashoffset: -87.96;
+		visibility: hidden;
+	}
+	60.1% {
+		animation-timing-function: cubic-bezier(0,0,0.5,0.75);
+		stroke-dashoffset: -87.96;
+		visibility: visible;
+	}
+	77% {
+		animation-timing-function: cubic-bezier(0.5,0.25,0.5,0.88);
+		stroke-dashoffset: -340;
+		visibility: visible;
+	}
+	to {
+		stroke-dashoffset: -669.92;
+		visibility: visible;
+	}
+}
+</style>
+<script>
+
+</script><main>
+	<svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
+				<stop offset="0%" stop-color="hsl(223,90%,55%)" />
+				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
+			</linearGradient>
+			<linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
+				<stop offset="0%" stop-color="hsl(193,90%,55%)" />
+				<stop offset="50%" stop-color="hsl(223,90%,55%)" />
+				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
+			</linearGradient>
+		</defs>
+		<circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
+		<circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
+		<path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
+	</svg>
+</main>]]></content>
       <categories>
-        <category>软件</category>
+        <category>HTML</category>
+        <category>CSS</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
-        <tag>PowerToys</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>管理 &quot;此电脑&quot; 里面删不掉的流浪 &quot;快捷方式&quot;</title>
-    <url>/windows-MyComputerManager/</url>
-    <content><![CDATA[<h3 id="mycomputermanager">MyComputerManager<a title="#mycomputermanager" href="#mycomputermanager"></a></h3>
-<p>GitHub 开源小工具: <code>https://github.com/1357310795/MyComputerManager</code></p>
-<p>双击直接运行</p>
-<p><img src="https://pic.imgdb.cn/item/62cbbaa7f54cd3f9377cf8d0.png" alt="MyComputerManager" loading="lazy" class="φbp"></p>
-<h3 id="如何彻底杜绝">如何彻底杜绝<a title="#如何彻底杜绝" href="#如何彻底杜绝"></a></h3>
-<ol>
-<li>打开火绒</li>
-<li>安全设置</li>
-<li>高级防护</li>
-<li>自定义防护</li>
-<li>添加规则
-<ol>
-<li>规则名称(随便): <code>阻止程序在此电脑创建快捷方式</code></li>
-<li>注册表规则: <code>*\MyComputer\NameSpace\*</code></li>
-</ol>
-</li>
-</ol>
-<p><img src="https://pic.imgdb.cn/item/62cb97a3f54cd3f937521d28.png" alt="阻止程序在此电脑创建快捷方式" loading="lazy" class="φbp"></p>
-<blockquote>
-<p>如果你想要禁止在桌面创建快捷方式<br>
-把MyComputer改成Desktop即可</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>MyComputerManager</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WPS 2019 专业增强版 (温州大学教育版)</title>
-    <url>/windows-wps-2019/</url>
-    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62cbbf63f54cd3f9378360d4.png" alt="WPS 产品管理中心" loading="lazy" class="φbp"></p>
-<p><strong>教育版的优势</strong></p>
-<ul>
-<li>定制序列号(内嵌), 无需注册, 直接使用, 授权长期有效, 永久激活</li>
-<li>官方出品, 广告</li>
-<li>具备完整的VBA组件和VBA宏</li>
-</ul>
-<p><strong>下载地址</strong></p>
-<blockquote>
-<p>链接: <code>https://pan.baidu.com/s/1itrGNaYDIuLr2fkzig2OsQ?pwd=lizm</code><br>
-提取码: <code>lizm</code></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>WPS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iPhone与Windows传输文件的几种方式</title>
-    <url>/iPhone-Windows/</url>
-    <content><![CDATA[<h3 id="创建文件夹">创建文件夹<a title="#创建文件夹" href="#创建文件夹"></a></h3>
-<ul>
-<li>右键 <code>属性</code></li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8a7f.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>点击 <code>共享</code> 标签下的 <code>共享</code> 按钮, 选择 <code>Everyone</code>, 点击 <code>添加</code>, 最后点击 <code>共享</code></li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8a88.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>选择文件夹, 点击 <code>完成</code></li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8ac3.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>继续点击 <code>高级共享</code></li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67922f54cd3f937caab12.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>选中 <code>共享此文件夹</code>, 然后点击 <code>权限</code> 按钮</li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8ae3.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>选中用户 <code>Everyone</code> 的读写权限, 然后一路确定</li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8afc.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>打开命令提示符工具, 输入: <code>ipconfig</code>, 找到自己电脑的IPv4 地址: <code>192.168.95.1</code></li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d678e2f54cd3f937c98b45.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>
-<p>打开手机软件 <code>文件</code>, 点击右上角: <code>连接服务器</code><br>
-<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45d4.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>输入上面获取到的IPv4 地址<br>
-<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45b0.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>输入电脑密码即可进入<br>
-<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45e1.png" alt="" loading="lazy"></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Windows</category>
-        <category>iPhone</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>iPhone</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows iTunes 设置关闭自动备份</title>
-    <url>/windows-itunes-backups/</url>
-    <content><![CDATA[<ol>
-<li>找到安装目录下的: <code>defaults.exe</code> 复制路径</li>
-<li>运行: <code>cmd</code></li>
-<li>执行命令: <code>&quot;D:\Application\iTunes\defaults.exe&quot; write com.apple.iTunes AutomaticDeviceBackupsDisabled -bool true</code></li>
-</ol>
-]]></content>
-      <categories>
-        <category>iTunes</category>
-      </categories>
-      <tags>
-        <tag>iTunes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows &amp; Mac M3U8 视频下载</title>
-    <url>/m3u8-download/</url>
-    <content><![CDATA[<h2 id="mac">Mac<a title="#mac" href="#mac"></a></h2>
-<h2 id="windows">Windows<a title="#windows" href="#windows"></a></h2>
-<h4 id="n_m3u8dl-cli">N_m3u8DL-CLI<a title="#n_m3u8dl-cli" href="#n_m3u8dl-cli"></a></h4>
-<p><img src="https://pic.imgdb.cn/item/62f1f7dd16f2c2beb1ccdd40.png" alt="N_m3u8DL-CLI" loading="lazy" class="φbp"></p>
-<p>GitHub地址: <a href="https://github.com/nilaoda/N_m3u8DL-CLI" target="_blank">https://github.com/nilaoda/N_m3u8DL-CLI</a></p>
-<blockquote>
-<p>N_m3u8DL-CLI是一款用于下载m3u8的命令行工具，<a href="http://xn--6kq92u.NET">基于.NET</a> Framework 4.6框架开发，调用系统类库进行HTTP下载，支持常见的m3u8格式下载，支持从视频中选择一部分下载，还提供丰富的命令行选项以增强其功能。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>M3U8</category>
-      </categories>
-      <tags>
-        <tag>M3U8</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows 显示并控制通过USB (或TCP/IP) 连接的 Android 设备</title>
-    <url>/windows-control-android/</url>
-    <content><![CDATA[<h3 id="scrcpy">scrcpy<a title="#scrcpy" href="#scrcpy"></a></h3>
-<p>Github地址：<a href="https://github.com/Genymobile/scrcpy" target="_blank">https://github.com/Genymobile/scrcpy</a></p>
-<p><strong>本应用专注于：</strong></p>
-<ul>
-<li><strong>轻量</strong> ：原生，仅显示设备屏幕</li>
-<li><strong>性能</strong> ：30~120fps，取决于设备</li>
-<li><strong>质量</strong> ：分辨率可达 1920×1080 或更高</li>
-<li><strong>低延迟</strong> ：35~70ms</li>
-<li><strong>快速启动</strong> ：最快 1 秒内即可显示第一帧</li>
-<li><strong>无侵入性</strong> ：不会在设备上遗留任何程序</li>
-<li><strong>用户利益</strong> ：无需帐号，无广告，无需联网</li>
-<li><strong>自由</strong> ：自由和开源软件</li>
-</ul>
-<p><strong>系统要求：</strong><br>
-安卓设备最低需要支持 API 21 (Android 5.0)<br>
-确保设备已开启 adb 调试<br>
-在某些设备上，还需要开启额外的选项以使用鼠标和键盘进行控制</p>
-<hr>
-<p>软件目录, 双击: <code>open_a_terminal_here.bat</code> 打开命令窗口</p>
-<h3 id="命令">命令<a title="#命令" href="#命令"></a></h3>
-<ul>
-<li>标题: <code>scrcpy --window-title &quot;my phone&quot;</code></li>
-<li>关闭设备屏幕: <code>scrcpy --turn-screen-off</code></li>
-<li>复制粘贴:
-<ul>
-<li>设备上复制,会自动同步到电脑的剪贴板上</li>
-<li>电脑上复制, 使用 <code>Ctrl</code> + <code>Shift</code> + <code>v</code> 粘贴到设备上</li>
-</ul>
-</li>
-<li>旋转屏幕: <code>Ctrl</code> + <code>R</code></li>
-</ul>
-<h3 id="常用命令">常用命令<a title="#常用命令" href="#常用命令"></a></h3>
-<p>关闭设备屏幕启动: <code>scrcpy --turn-screen-off --window-title &quot;my phone&quot;</code></p>
-<p>选择 USB 设备启动: <code>scrcpy -d --turn-screen-off --window-title &quot;my phone&quot;</code></p>
-]]></content>
-      <categories>
-        <category>Android</category>
-      </categories>
-      <tags>
-        <tag>Android</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows 10/11 电源计划 开启[卓越性能]</title>
-    <url>/windows-excellent/</url>
-    <content><![CDATA[<p>以管理员身份运行<code>Windows PowerShell</code>, 输入以下命令:</p>
-<p><code>powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61</code></p>
-]]></content>
-      <categories>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
+        <tag>HTML</tag>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -1884,6 +1573,444 @@ myChart.on('click', function (params) {
       </categories>
       <tags>
         <tag>IntelliJ IDEA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决 GitHub 无法访问</title>
+    <url>/github-host/</url>
+    <content><![CDATA[<p>需要配置的网址:</p>
+<ul>
+<li>网站：<code>github.com</code></li>
+<li>网站：<code>github.global.ssl.fastly.net</code></li>
+<li>网站：<code>raw.githubusercontent.com</code></li>
+</ul>
+<h3 id="查询-github-dns">查询 GitHub DNS<a title="#查询-github-dns" href="#查询-github-dns"></a></h3>
+<p>地址: <code>http://tool.chinaz.com/dns</code><br>
+找到: TTL值 最小的DNS</p>
+<h3 id="查询-github-真实ip">查询 GitHub 真实IP<a title="#查询-github-真实ip" href="#查询-github-真实ip"></a></h3>
+<p>地址: <code>https://www.ipaddress.com/</code></p>
+<p>配置 Host 文件<br>
+Mac 路径：/etc/host<br>
+Windows 路径：C:\Windows\System32\drivers\etc</p>
+<p>添加:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">20.205.243.166 github.com</span><br><span class="line">31.13.73.169 github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
+<p>Done<br>
+<img src="https://pic.imgdb.cn/item/62c6a658f54cd3f93796440b.png" alt="" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/62c6a743f54cd3f937977571.png" alt="" loading="lazy"></p>
+]]></content>
+      <categories>
+        <category>GitHub</category>
+      </categories>
+      <tags>
+        <tag>GitHub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 嵌入可视化 Echarts 图表</title>
+    <url>/echarts/</url>
+    <content><![CDATA[<p>Echarts在线库 CDN 服务: <code>https://www.bootcdn.cn/echarts/</code></p>
+<div id="echarts7484" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7484'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  tooltip: {
+    trigger: 'axis'
+  },
+  legend: {
+    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  toolbox: {
+    feature: {
+      saveAsImage: {}
+    }
+  },
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      name: 'Email',
+      type: 'line',
+      stack: 'Total',
+      data: [120, 132, 101, 134, 90, 230, 210]
+    },
+    {
+      name: 'Union Ads',
+      type: 'line',
+      stack: 'Total',
+      data: [220, 182, 191, 234, 290, 330, 310]
+    },
+    {
+      name: 'Video Ads',
+      type: 'line',
+      stack: 'Total',
+      data: [150, 232, 201, 154, 190, 330, 410]
+    },
+    {
+      name: 'Direct',
+      type: 'line',
+      stack: 'Total',
+      data: [320, 332, 301, 334, 390, 330, 320]
+    },
+    {
+      name: 'Search Engine',
+      type: 'line',
+      stack: 'Total',
+      data: [820, 932, 901, 934, 1290, 1330, 1320]
+    }
+  ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts8730" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts8730'));
+
+        // 指定图表的配置项和数据
+        var option = option = {
+    color: ['#3398DB'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            axisTick: {
+                alignWithLabel: true
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value'
+        }
+    ],
+    series: [
+        {
+            name: '直接访问',
+            type: 'bar',
+            barWidth: '60%',
+            data: [10, 52, 200, 334, 390, 330, 220]
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<script type="text/javascript">
+var dataAxis = ['点', '击', '柱', '子', '或', '者', '两', '指', '在', '触', '屏', '上', '滑', '动', '能', '够', '自', '动', '缩', '放'];
+var data = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 122, 133, 334, 198, 123, 125, 220];
+var yMax = 500;
+var dataShadow = [];
+for (var i = 0; i < data.length; i++) {
+    dataShadow.push(yMax);
+}
+// Enable data zoom when user click bar.
+var zoomSize = 6;
+myChart.on('click', function (params) {
+    console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+    myChart.dispatchAction({
+        type: 'dataZoom',
+        startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+        endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
+    });
+});
+</script><div id="echarts9080" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts9080'));
+
+        // 指定图表的配置项和数据
+        var option = option = {
+    title: {
+        text: '特性示例：渐变色 阴影 点击缩放',
+        subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
+    },
+    xAxis: {
+        data: dataAxis,
+        axisLabel: {
+            inside: true,
+            textStyle: {
+                color: '#fff'
+            }
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: false
+        },
+        z: 10
+    },
+    yAxis: {
+        axisLine: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLabel: {
+            textStyle: {
+                color: '#999'
+            }
+        }
+    },
+    dataZoom: [
+        {
+            type: 'inside'
+        }
+    ],
+    series: [
+        { // For shadow
+            type: 'bar',
+            itemStyle: {
+                color: 'rgba(0,0,0,0.05)'
+            },
+            barGap: '-100%',
+            barCategoryGap: '40%',
+            data: dataShadow,
+            animation: false
+        },
+        {
+            type: 'bar',
+            itemStyle: {
+                color: new echarts.graphic.LinearGradient(
+                    0, 0, 0, 1,
+                    [
+                        {offset: 0, color: '#83bff6'},
+                        {offset: 0.5, color: '#188df0'},
+                        {offset: 1, color: '#188df0'}
+                    ]
+                )
+            },
+            emphasis: {
+                itemStyle: {
+                    color: new echarts.graphic.LinearGradient(
+                        0, 0, 0, 1,
+                        [
+                            {offset: 0, color: '#2378f7'},
+                            {offset: 0.7, color: '#2378f7'},
+                            {offset: 1, color: '#83bff6'}
+                        ]
+                    )
+                }
+            },
+            data: data
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts5487" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts5487'));
+
+        // 指定图表的配置项和数据
+        var option = option = {
+    title: {
+        text: '某站点用户访问来源',
+        subtext: '纯属虚构',
+        left: 'center'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+        data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: '55%',
+            center: ['50%', '60%'],
+            data: [
+                {value: 335, name: '直接访问'},
+                {value: 310, name: '邮件营销'},
+                {value: 234, name: '联盟广告'},
+                {value: 135, name: '视频广告'},
+                {value: 1548, name: '搜索引擎'}
+            ],
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>]]></content>
+      <categories>
+        <category>Echarts</category>
+      </categories>
+      <tags>
+        <tag>Echarts</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 计划任务 CronTab</title>
+    <url>/linux-crontab/</url>
+    <content><![CDATA[<blockquote>
+<p>CronTab 的语法</p>
+<p>* * * * * date &gt;&gt; /tmp/date.txt</p>
+</blockquote>
+<div class="φbq"><div class="φbs"><table><thead>
+<tr>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">date &gt;&gt; /tmp/date.txt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">分钟</td>
+<td style="text-align:center">小时</td>
+<td style="text-align:center">几号</td>
+<td style="text-align:center">几月</td>
+<td style="text-align:center">星期</td>
+<td style="text-align:center">需要执行的命令</td>
+</tr>
+</tbody>
+</table></div></div><p><img src="https://pic.imgdb.cn/item/626cf1db239250f7c57d0a84.png" alt="Linux 计划任务 CronTab" loading="lazy" class="φbp"></p>
+<h2 id="案例">案例<a title="#案例" href="#案例"></a></h2>
+<h3 id="每一小时">每一小时<a title="#每一小时" href="#每一小时"></a></h3>
+<p><code>* */1 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每小时执行/etc/cron.hourly目录内的脚本">每小时执行/etc/cron.hourly目录内的脚本<a title="#每小时执行/etc/cron.hourly目录内的脚本" href="#每小时执行/etc/cron.hourly目录内的脚本"></a></h3>
+<p><code>01 * * * * root run-parts /etc/cron.hourly</code></p>
+<h3 id="每小时的第3和第15分钟执行">每小时的第3和第15分钟执行<a title="#每小时的第3和第15分钟执行" href="#每小时的第3和第15分钟执行"></a></h3>
+<p><code>3,15 * * * * /service/l-zm/request.sh</code></p>
+<h3 id="在上午8点到11点的第3和第15分钟执行">在上午8点到11点的第3和第15分钟执行<a title="#在上午8点到11点的第3和第15分钟执行" href="#在上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每隔两天的上午8点到11点的第3和第15分钟执行">每隔两天的上午8点到11点的第3和第15分钟执行<a title="#每隔两天的上午8点到11点的第3和第15分钟执行" href="#每隔两天的上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 */2 * * date &gt;&gt; /tmp/date.txt</code></p>
+<h3 id="每个星期一的上午8点到11点的第3和第15分钟执行">每个星期一的上午8点到11点的第3和第15分钟执行<a title="#每个星期一的上午8点到11点的第3和第15分钟执行" href="#每个星期一的上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 * * 1 date &gt;&gt; /tmp/date.txt</code></p>
+<h3 id="每晚的21:30">每晚的21:30<a title="#每晚的21:30" href="#每晚的21:30"></a></h3>
+<p><code>30 21 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每月1、10、22日的4-:-45">每月1、10、22日的4 : 45<a title="#每月1、10、22日的4-:-45" href="#每月1、10、22日的4-:-45"></a></h3>
+<p><code>45 4 1,10,22 * * /service/l-zm/request.sh</code></p>
+<h3 id="每周六、周日的1-:-10">每周六、周日的1 : 10<a title="#每周六、周日的1-:-10" href="#每周六、周日的1-:-10"></a></h3>
+<p><code>10 1 * * 6,0 /service/l-zm/request.sh</code></p>
+<h3 id="每天18-:-00至23-:-00之间每隔30分钟">每天18 : 00至23 : 00之间每隔30分钟<a title="#每天18-:-00至23-:-00之间每隔30分钟" href="#每天18-:-00至23-:-00之间每隔30分钟"></a></h3>
+<p><code>0,30 18-23 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每星期六的晚上11-:-00-pm">每星期六的晚上11 : 00 pm<a title="#每星期六的晚上11-:-00-pm" href="#每星期六的晚上11-:-00-pm"></a></h3>
+<p><code>0 23 * * 6 /service/l-zm/request.sh</code></p>
+<h3 id="晚上11点到早上7点之间，每隔一小时">晚上11点到早上7点之间，每隔一小时<a title="#晚上11点到早上7点之间，每隔一小时" href="#晚上11点到早上7点之间，每隔一小时"></a></h3>
+<p><code>* 23-7/1 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每月的4号与每周一到周三的11点">每月的4号与每周一到周三的11点<a title="#每月的4号与每周一到周三的11点" href="#每月的4号与每周一到周三的11点"></a></h3>
+<p><code>0 11 4 * mon-wed /service/l-zm/request.sh</code></p>
+<h3 id="一月一号的4点">一月一号的4点<a title="#一月一号的4点" href="#一月一号的4点"></a></h3>
+<p><code>0 4 1 jan * /service/l-zm/request.sh</code></p>
+<h3 id="每秒执行一次">每秒执行一次<a title="#每秒执行一次" href="#每秒执行一次"></a></h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">*/1 * * * * <span class="built_in">sleep</span> 0s;<span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 1s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 2s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 3s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 4s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 5s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 6s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 7s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 8s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 9s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 10s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 11s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 12s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 13s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 14s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 15s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 16s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 17s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 18s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 19s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 20s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 21s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 22s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 23s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 24s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 25s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 26s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 27s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 28s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 29s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 30s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 31s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 32s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 33s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 34s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 35s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 36s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 37s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 38s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 39s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 40s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 41s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 42s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 43s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 44s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 45s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 46s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 47s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 48s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 49s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 50s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 51s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 52s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 53s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 54s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 55s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 56s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 57s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 58s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 59s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line"></span><br><span class="line">如果每秒没有循环连续 可以试试把 <span class="built_in">sleep</span> 0s 删除, 在最后添加 <span class="built_in">sleep</span> 60s (CentOS 和 Ubuntu 下不一样)</span><br></pre></td></tr></table></figure>
+<h2 id="crontab-使用与解释">CronTab 使用与解释<a title="#crontab-使用与解释" href="#crontab-使用与解释"></a></h2>
+<p><code>crontab -l</code> 查看所有的计划任务</p>
+<p><code>crontab -e</code> 修改计划任务</p>
+<p><code>service crond start</code> 启动计划任务</p>
+<p><code>service crond restart</code> 重启计划任务</p>
+<p><code>service crond reload</code> 重新载入计划任务</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>CronTab</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>CronTab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MongoDB 语法</title>
+    <url>/mongodb-grammar/</url>
+    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62c7e89bf54cd3f937fa8442.png" alt="" loading="lazy" class="φbp"></p>
+]]></content>
+      <categories>
+        <category>MongoDB</category>
+      </categories>
+      <tags>
+        <tag>MongoDB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux GNU Grep 查询日志</title>
+    <url>/linux-select-log/</url>
+    <content><![CDATA[<p>官方介绍手册: <code>http://www.gnu.org/software/grep/manual/grep.html</code></p>
+<ul>
+<li>Grep 命令的格式<br>
+<code>grep [option...] [patterns] [file...]</code></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@coursecenterresource-0 logs]# grep --help</span><br><span class="line">Usage: grep [OPTION]... PATTERN [FILE]...</span><br><span class="line">Search for PATTERN in each FILE or standard input.</span><br><span class="line">PATTERN is, by default, a basic regular expression (BRE).</span><br><span class="line">Example: grep -i &#x27;hello world&#x27; menu.h main.c</span><br><span class="line"></span><br><span class="line">Regexp selection and interpretation:</span><br><span class="line">  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)</span><br><span class="line">  -F, --fixed-strings       PATTERN is a set of newline-separated fixed strings</span><br><span class="line">  -G, --basic-regexp        PATTERN is a basic regular expression (BRE)</span><br><span class="line">  -P, --perl-regexp         PATTERN is a Perl regular expression</span><br><span class="line">  -e, --regexp=PATTERN      use PATTERN for matching</span><br><span class="line">  -f, --file=FILE           obtain PATTERN from FILE</span><br><span class="line">  -i, --ignore-case         ignore case distinctions</span><br><span class="line">  -w, --word-regexp         force PATTERN to match only whole words</span><br><span class="line">  -x, --line-regexp         force PATTERN to match only whole lines</span><br><span class="line">  -z, --null-data           a data line ends in 0 byte, not newline</span><br><span class="line"></span><br><span class="line">Miscellaneous:</span><br><span class="line">  -s, --no-messages         suppress error messages</span><br><span class="line">  -v, --invert-match        select non-matching lines</span><br><span class="line">  -V, --version             display version information and exit</span><br><span class="line">      --help                display this help text and exit</span><br><span class="line"></span><br><span class="line">Output control:</span><br><span class="line">  -m, --max-count=NUM       stop after NUM matches</span><br><span class="line">  -b, --byte-offset         print the byte offset with output lines</span><br><span class="line">  -n, --line-number         print line number with output lines</span><br><span class="line">      --line-buffered       flush output on every line</span><br><span class="line">  -H, --with-filename       print the file name for each match</span><br><span class="line">  -h, --no-filename         suppress the file name prefix on output</span><br><span class="line">      --label=LABEL         use LABEL as the standard input file name prefix</span><br><span class="line">  -o, --only-matching       show only the part of a line matching PATTERN</span><br><span class="line">  -q, --quiet, --silent     suppress all normal output</span><br><span class="line">      --binary-files=TYPE   assume that binary files are TYPE;</span><br><span class="line">                            TYPE is &#x27;binary&#x27;, &#x27;text&#x27;, or &#x27;without-match&#x27;</span><br><span class="line">  -a, --text                equivalent to --binary-files=text</span><br><span class="line">  -I                        equivalent to --binary-files=without-match</span><br><span class="line">  -d, --directories=ACTION  how to handle directories;</span><br><span class="line">                            ACTION is &#x27;read&#x27;, &#x27;recurse&#x27;, or &#x27;skip&#x27;</span><br><span class="line">  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;</span><br><span class="line">                            ACTION is &#x27;read&#x27; or &#x27;skip&#x27;</span><br><span class="line">  -r, --recursive           like --directories=recurse</span><br><span class="line">  -R, --dereference-recursive</span><br><span class="line">                            likewise, but follow all symlinks</span><br><span class="line">      --include=FILE_PATTERN</span><br><span class="line">                            search only files that match FILE_PATTERN</span><br><span class="line">      --exclude=FILE_PATTERN</span><br><span class="line">                            skip files and directories matching FILE_PATTERN</span><br><span class="line">      --exclude-from=FILE   skip files matching any file pattern from FILE</span><br><span class="line">      --exclude-dir=PATTERN directories that match PATTERN will be skipped.</span><br><span class="line">  -L, --files-without-match print only names of FILEs containing no match</span><br><span class="line">  -l, --files-with-matches  print only names of FILEs containing matches</span><br><span class="line">  -c, --count               print only a count of matching lines per FILE</span><br><span class="line">  -T, --initial-tab         make tabs line up (if needed)</span><br><span class="line">  -Z, --null                print 0 byte after FILE name</span><br><span class="line"></span><br><span class="line">Context control:</span><br><span class="line">  -B, --before-context=NUM  print NUM lines of leading context</span><br><span class="line">  -A, --after-context=NUM   print NUM lines of trailing context</span><br><span class="line">  -C, --context=NUM         print NUM lines of output context</span><br><span class="line">  -NUM                      same as --context=NUM</span><br><span class="line">      --group-separator=SEP use SEP as a group separator</span><br><span class="line">      --no-group-separator  use empty string as a group separator</span><br><span class="line">      --color[=WHEN],</span><br><span class="line">      --colour[=WHEN]       use markers to highlight the matching strings;</span><br><span class="line">                            WHEN is &#x27;always&#x27;, &#x27;never&#x27;, or &#x27;auto&#x27;</span><br><span class="line">  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)</span><br><span class="line">  -u, --unix-byte-offsets   report offsets as if CRs were not there</span><br><span class="line">                            (MSDOS/Windows)</span><br><span class="line"></span><br><span class="line">&#x27;egrep&#x27; means &#x27;grep -E&#x27;.  &#x27;fgrep&#x27; means &#x27;grep -F&#x27;.</span><br><span class="line">Direct invocation as either &#x27;egrep&#x27; or &#x27;fgrep&#x27; is deprecated.</span><br><span class="line">When FILE is -, read standard input.  With no FILE, read . if a command-line</span><br><span class="line">-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.</span><br><span class="line">Exit status is 0 if any line is selected, 1 otherwise;</span><br><span class="line">if any error occurs and -q is not given, the exit status is 2.</span><br><span class="line"></span><br><span class="line">Report bugs to: bug-grep@gnu.org</span><br><span class="line">GNU Grep home page: &lt;http://www.gnu.org/software/grep/&gt;</span><br><span class="line">General help using GNU software: &lt;http://www.gnu.org/gethelp/&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查询 info.log 日志文件中包含【关键字】的行</span></span><br><span class="line">grep 关键字 /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /data/info.log | grep <span class="string">&#x27;关键字&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 反向查找 不包换关键字的行</span></span><br><span class="line">grep -v 关键字 /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不区分大小写</span></span><br><span class="line">grep -i <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出匹配的行数</span></span><br><span class="line">grep -c <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 只输出匹配的内容</span></span><br><span class="line">grep -o <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出 带行号</span></span><br><span class="line">grep -n <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># -A:after 匹配行及之后5行的内容</span></span><br><span class="line"><span class="comment"># -B:before 匹配行及之前5行的内容</span></span><br><span class="line"><span class="comment"># -C:context 匹配行及前后5行的内容</span></span><br><span class="line">grep -A 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br><span class="line">grep -B 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br><span class="line">grep -C 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br></pre></td></tr></table></figure>
+<p>查询最后 1 次出现的日志<br>
+<code>grep -n '关键字' info.log | head -1</code></p>
+<p>查询最后 5 次出现的日志<br>
+<code>grep -n '关键字' info.log | head -5</code></p>
+<p>查询最开始 1 次出现的日志<br>
+<code>grep -n '关键字' info.log | tail -1</code></p>
+<h3 id="正则">正则<a title="#正则" href="#正则"></a></h3>
+<ul>
+<li>
+<p>以 关键字 开头<br>
+<code>grep '^关键字' /data/info.log</code></p>
+</li>
+<li>
+<p>以 关键字 结尾<br>
+<code>grep '关键字$' /data/info.log</code></p>
+</li>
+<li>
+<p>以多个 关键字 开头<br>
+<code>grep '^[关键字关键字]' /data/info.log</code><br>
+<code>grep '^关键字|^关键字' /data/info.log</code></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -2043,144 +2170,6 @@ myChart.on('click', function (params) {
       </tags>
   </entry>
   <entry>
-    <title>多线程</title>
-    <url>/Thread/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Thread</category>
-      </categories>
-      <tags>
-        <tag>Thread</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux 计划任务 CronTab</title>
-    <url>/linux-crontab/</url>
-    <content><![CDATA[<blockquote>
-<p>CronTab 的语法</p>
-<p>* * * * * date &gt;&gt; /tmp/date.txt</p>
-</blockquote>
-<div class="φbq"><div class="φbs"><table><thead>
-<tr>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">date &gt;&gt; /tmp/date.txt</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">分钟</td>
-<td style="text-align:center">小时</td>
-<td style="text-align:center">几号</td>
-<td style="text-align:center">几月</td>
-<td style="text-align:center">星期</td>
-<td style="text-align:center">需要执行的命令</td>
-</tr>
-</tbody>
-</table></div></div><p><img src="https://pic.imgdb.cn/item/626cf1db239250f7c57d0a84.png" alt="Linux 计划任务 CronTab" loading="lazy" class="φbp"></p>
-<h2 id="案例">案例<a title="#案例" href="#案例"></a></h2>
-<h3 id="每一小时">每一小时<a title="#每一小时" href="#每一小时"></a></h3>
-<p><code>* */1 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每小时执行/etc/cron.hourly目录内的脚本">每小时执行/etc/cron.hourly目录内的脚本<a title="#每小时执行/etc/cron.hourly目录内的脚本" href="#每小时执行/etc/cron.hourly目录内的脚本"></a></h3>
-<p><code>01 * * * * root run-parts /etc/cron.hourly</code></p>
-<h3 id="每小时的第3和第15分钟执行">每小时的第3和第15分钟执行<a title="#每小时的第3和第15分钟执行" href="#每小时的第3和第15分钟执行"></a></h3>
-<p><code>3,15 * * * * /service/l-zm/request.sh</code></p>
-<h3 id="在上午8点到11点的第3和第15分钟执行">在上午8点到11点的第3和第15分钟执行<a title="#在上午8点到11点的第3和第15分钟执行" href="#在上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每隔两天的上午8点到11点的第3和第15分钟执行">每隔两天的上午8点到11点的第3和第15分钟执行<a title="#每隔两天的上午8点到11点的第3和第15分钟执行" href="#每隔两天的上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 */2 * * date &gt;&gt; /tmp/date.txt</code></p>
-<h3 id="每个星期一的上午8点到11点的第3和第15分钟执行">每个星期一的上午8点到11点的第3和第15分钟执行<a title="#每个星期一的上午8点到11点的第3和第15分钟执行" href="#每个星期一的上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 * * 1 date &gt;&gt; /tmp/date.txt</code></p>
-<h3 id="每晚的21:30">每晚的21:30<a title="#每晚的21:30" href="#每晚的21:30"></a></h3>
-<p><code>30 21 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每月1、10、22日的4-:-45">每月1、10、22日的4 : 45<a title="#每月1、10、22日的4-:-45" href="#每月1、10、22日的4-:-45"></a></h3>
-<p><code>45 4 1,10,22 * * /service/l-zm/request.sh</code></p>
-<h3 id="每周六、周日的1-:-10">每周六、周日的1 : 10<a title="#每周六、周日的1-:-10" href="#每周六、周日的1-:-10"></a></h3>
-<p><code>10 1 * * 6,0 /service/l-zm/request.sh</code></p>
-<h3 id="每天18-:-00至23-:-00之间每隔30分钟">每天18 : 00至23 : 00之间每隔30分钟<a title="#每天18-:-00至23-:-00之间每隔30分钟" href="#每天18-:-00至23-:-00之间每隔30分钟"></a></h3>
-<p><code>0,30 18-23 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每星期六的晚上11-:-00-pm">每星期六的晚上11 : 00 pm<a title="#每星期六的晚上11-:-00-pm" href="#每星期六的晚上11-:-00-pm"></a></h3>
-<p><code>0 23 * * 6 /service/l-zm/request.sh</code></p>
-<h3 id="晚上11点到早上7点之间，每隔一小时">晚上11点到早上7点之间，每隔一小时<a title="#晚上11点到早上7点之间，每隔一小时" href="#晚上11点到早上7点之间，每隔一小时"></a></h3>
-<p><code>* 23-7/1 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每月的4号与每周一到周三的11点">每月的4号与每周一到周三的11点<a title="#每月的4号与每周一到周三的11点" href="#每月的4号与每周一到周三的11点"></a></h3>
-<p><code>0 11 4 * mon-wed /service/l-zm/request.sh</code></p>
-<h3 id="一月一号的4点">一月一号的4点<a title="#一月一号的4点" href="#一月一号的4点"></a></h3>
-<p><code>0 4 1 jan * /service/l-zm/request.sh</code></p>
-<h3 id="每秒执行一次">每秒执行一次<a title="#每秒执行一次" href="#每秒执行一次"></a></h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">*/1 * * * * <span class="built_in">sleep</span> 0s;<span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 1s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 2s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 3s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 4s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 5s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 6s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 7s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 8s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 9s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 10s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 11s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 12s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 13s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 14s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 15s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 16s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 17s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 18s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 19s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 20s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 21s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 22s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 23s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 24s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 25s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 26s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 27s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 28s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 29s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 30s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 31s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 32s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 33s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 34s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 35s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 36s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 37s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 38s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 39s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 40s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 41s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 42s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 43s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 44s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 45s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 46s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 47s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 48s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 49s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 50s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 51s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 52s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 53s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 54s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 55s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 56s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 57s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 58s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 59s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line"></span><br><span class="line">如果每秒没有循环连续 可以试试把 <span class="built_in">sleep</span> 0s 删除, 在最后添加 <span class="built_in">sleep</span> 60s (CentOS 和 Ubuntu 下不一样)</span><br></pre></td></tr></table></figure>
-<h2 id="crontab-使用与解释">CronTab 使用与解释<a title="#crontab-使用与解释" href="#crontab-使用与解释"></a></h2>
-<p><code>crontab -l</code> 查看所有的计划任务</p>
-<p><code>crontab -e</code> 修改计划任务</p>
-<p><code>service crond start</code> 启动计划任务</p>
-<p><code>service crond restart</code> 重启计划任务</p>
-<p><code>service crond reload</code> 重新载入计划任务</p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-        <category>CronTab</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>CronTab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux GNU Grep 查询日志</title>
-    <url>/linux-select-log/</url>
-    <content><![CDATA[<p>官方介绍手册: <code>http://www.gnu.org/software/grep/manual/grep.html</code></p>
-<ul>
-<li>Grep 命令的格式<br>
-<code>grep [option...] [patterns] [file...]</code></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@coursecenterresource-0 logs]# grep --help</span><br><span class="line">Usage: grep [OPTION]... PATTERN [FILE]...</span><br><span class="line">Search for PATTERN in each FILE or standard input.</span><br><span class="line">PATTERN is, by default, a basic regular expression (BRE).</span><br><span class="line">Example: grep -i &#x27;hello world&#x27; menu.h main.c</span><br><span class="line"></span><br><span class="line">Regexp selection and interpretation:</span><br><span class="line">  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)</span><br><span class="line">  -F, --fixed-strings       PATTERN is a set of newline-separated fixed strings</span><br><span class="line">  -G, --basic-regexp        PATTERN is a basic regular expression (BRE)</span><br><span class="line">  -P, --perl-regexp         PATTERN is a Perl regular expression</span><br><span class="line">  -e, --regexp=PATTERN      use PATTERN for matching</span><br><span class="line">  -f, --file=FILE           obtain PATTERN from FILE</span><br><span class="line">  -i, --ignore-case         ignore case distinctions</span><br><span class="line">  -w, --word-regexp         force PATTERN to match only whole words</span><br><span class="line">  -x, --line-regexp         force PATTERN to match only whole lines</span><br><span class="line">  -z, --null-data           a data line ends in 0 byte, not newline</span><br><span class="line"></span><br><span class="line">Miscellaneous:</span><br><span class="line">  -s, --no-messages         suppress error messages</span><br><span class="line">  -v, --invert-match        select non-matching lines</span><br><span class="line">  -V, --version             display version information and exit</span><br><span class="line">      --help                display this help text and exit</span><br><span class="line"></span><br><span class="line">Output control:</span><br><span class="line">  -m, --max-count=NUM       stop after NUM matches</span><br><span class="line">  -b, --byte-offset         print the byte offset with output lines</span><br><span class="line">  -n, --line-number         print line number with output lines</span><br><span class="line">      --line-buffered       flush output on every line</span><br><span class="line">  -H, --with-filename       print the file name for each match</span><br><span class="line">  -h, --no-filename         suppress the file name prefix on output</span><br><span class="line">      --label=LABEL         use LABEL as the standard input file name prefix</span><br><span class="line">  -o, --only-matching       show only the part of a line matching PATTERN</span><br><span class="line">  -q, --quiet, --silent     suppress all normal output</span><br><span class="line">      --binary-files=TYPE   assume that binary files are TYPE;</span><br><span class="line">                            TYPE is &#x27;binary&#x27;, &#x27;text&#x27;, or &#x27;without-match&#x27;</span><br><span class="line">  -a, --text                equivalent to --binary-files=text</span><br><span class="line">  -I                        equivalent to --binary-files=without-match</span><br><span class="line">  -d, --directories=ACTION  how to handle directories;</span><br><span class="line">                            ACTION is &#x27;read&#x27;, &#x27;recurse&#x27;, or &#x27;skip&#x27;</span><br><span class="line">  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;</span><br><span class="line">                            ACTION is &#x27;read&#x27; or &#x27;skip&#x27;</span><br><span class="line">  -r, --recursive           like --directories=recurse</span><br><span class="line">  -R, --dereference-recursive</span><br><span class="line">                            likewise, but follow all symlinks</span><br><span class="line">      --include=FILE_PATTERN</span><br><span class="line">                            search only files that match FILE_PATTERN</span><br><span class="line">      --exclude=FILE_PATTERN</span><br><span class="line">                            skip files and directories matching FILE_PATTERN</span><br><span class="line">      --exclude-from=FILE   skip files matching any file pattern from FILE</span><br><span class="line">      --exclude-dir=PATTERN directories that match PATTERN will be skipped.</span><br><span class="line">  -L, --files-without-match print only names of FILEs containing no match</span><br><span class="line">  -l, --files-with-matches  print only names of FILEs containing matches</span><br><span class="line">  -c, --count               print only a count of matching lines per FILE</span><br><span class="line">  -T, --initial-tab         make tabs line up (if needed)</span><br><span class="line">  -Z, --null                print 0 byte after FILE name</span><br><span class="line"></span><br><span class="line">Context control:</span><br><span class="line">  -B, --before-context=NUM  print NUM lines of leading context</span><br><span class="line">  -A, --after-context=NUM   print NUM lines of trailing context</span><br><span class="line">  -C, --context=NUM         print NUM lines of output context</span><br><span class="line">  -NUM                      same as --context=NUM</span><br><span class="line">      --group-separator=SEP use SEP as a group separator</span><br><span class="line">      --no-group-separator  use empty string as a group separator</span><br><span class="line">      --color[=WHEN],</span><br><span class="line">      --colour[=WHEN]       use markers to highlight the matching strings;</span><br><span class="line">                            WHEN is &#x27;always&#x27;, &#x27;never&#x27;, or &#x27;auto&#x27;</span><br><span class="line">  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)</span><br><span class="line">  -u, --unix-byte-offsets   report offsets as if CRs were not there</span><br><span class="line">                            (MSDOS/Windows)</span><br><span class="line"></span><br><span class="line">&#x27;egrep&#x27; means &#x27;grep -E&#x27;.  &#x27;fgrep&#x27; means &#x27;grep -F&#x27;.</span><br><span class="line">Direct invocation as either &#x27;egrep&#x27; or &#x27;fgrep&#x27; is deprecated.</span><br><span class="line">When FILE is -, read standard input.  With no FILE, read . if a command-line</span><br><span class="line">-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.</span><br><span class="line">Exit status is 0 if any line is selected, 1 otherwise;</span><br><span class="line">if any error occurs and -q is not given, the exit status is 2.</span><br><span class="line"></span><br><span class="line">Report bugs to: bug-grep@gnu.org</span><br><span class="line">GNU Grep home page: &lt;http://www.gnu.org/software/grep/&gt;</span><br><span class="line">General help using GNU software: &lt;http://www.gnu.org/gethelp/&gt;</span><br></pre></td></tr></table></figure>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查询 info.log 日志文件中包含【关键字】的行</span></span><br><span class="line">grep 关键字 /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /data/info.log | grep <span class="string">&#x27;关键字&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 反向查找 不包换关键字的行</span></span><br><span class="line">grep -v 关键字 /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不区分大小写</span></span><br><span class="line">grep -i <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出匹配的行数</span></span><br><span class="line">grep -c <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 只输出匹配的内容</span></span><br><span class="line">grep -o <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出 带行号</span></span><br><span class="line">grep -n <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># -A:after 匹配行及之后5行的内容</span></span><br><span class="line"><span class="comment"># -B:before 匹配行及之前5行的内容</span></span><br><span class="line"><span class="comment"># -C:context 匹配行及前后5行的内容</span></span><br><span class="line">grep -A 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br><span class="line">grep -B 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br><span class="line">grep -C 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br></pre></td></tr></table></figure>
-<p>查询最后 1 次出现的日志<br>
-<code>grep -n '关键字' info.log | head -1</code></p>
-<p>查询最后 5 次出现的日志<br>
-<code>grep -n '关键字' info.log | head -5</code></p>
-<p>查询最开始 1 次出现的日志<br>
-<code>grep -n '关键字' info.log | tail -1</code></p>
-<h3 id="正则">正则<a title="#正则" href="#正则"></a></h3>
-<ul>
-<li>
-<p>以 关键字 开头<br>
-<code>grep '^关键字' /data/info.log</code></p>
-</li>
-<li>
-<p>以 关键字 结尾<br>
-<code>grep '关键字$' /data/info.log</code></p>
-</li>
-<li>
-<p>以多个 关键字 开头<br>
-<code>grep '^[关键字关键字]' /data/info.log</code><br>
-<code>grep '^关键字|^关键字' /data/info.log</code></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MongoDB 语法</title>
-    <url>/mongodb-grammar/</url>
-    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62c7e89bf54cd3f937fa8442.png" alt="" loading="lazy" class="φbp"></p>
-]]></content>
-      <categories>
-        <category>MongoDB</category>
-      </categories>
-      <tags>
-        <tag>MongoDB</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MySQL 开源的数据快速回滚工具(闪回) - binlog2sql</title>
     <url>/mysql-binlog2sql/</url>
     <content><![CDATA[<h2 id="binlog2sql-介绍">binlog2sql 介绍<a title="#binlog2sql-介绍" href="#binlog2sql-介绍"></a></h2>
@@ -2194,6 +2183,17 @@ myChart.on('click', function (params) {
       </categories>
       <tags>
         <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多线程</title>
+    <url>/Thread/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Thread</category>
+      </categories>
+      <tags>
+        <tag>Thread</tag>
       </tags>
   </entry>
   <entry>
@@ -2489,6 +2489,94 @@ myChart.on('click', function (params) {
       </tags>
   </entry>
   <entry>
+    <title>IP地址 归属地查询工具</title>
+    <url>/java-ip/</url>
+    <content><![CDATA[<h1 id="ip数量统计-(统计时间:2022-01)">IP数量统计 (统计时间:2022-01)<a title="#ip数量统计-(统计时间:2022-01)" href="#ip数量统计-(统计时间:2022-01)"></a></h1>
+<div class="φbq"><div class="φbs"><table><thead>
+<tr>
+<th style="text-align:right">运营商</th>
+<th style="text-align:left">IP 数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">中国大陆</td>
+<td style="text-align:left">336,244,699</td>
+</tr>
+<tr>
+<td style="text-align:right">电信</td>
+<td style="text-align:left">137,027,601</td>
+</tr>
+<tr>
+<td style="text-align:right">联通</td>
+<td style="text-align:left">79,009,205</td>
+</tr>
+<tr>
+<td style="text-align:right">移动</td>
+<td style="text-align:left">35366,683</td>
+</tr>
+<tr>
+<td style="text-align:right">铁通</td>
+<td style="text-align:left">24,553,340</td>
+</tr>
+<tr>
+<td style="text-align:right">教育网</td>
+<td style="text-align:left">17,143,530</td>
+</tr>
+<tr>
+<td style="text-align:right">鹏博士</td>
+<td style="text-align:left">8,754,246</td>
+</tr>
+<tr>
+<td style="text-align:right">华数</td>
+<td style="text-align:left">111,888</td>
+</tr>
+<tr>
+<td style="text-align:right">方正网络</td>
+<td style="text-align:left">740480</td>
+</tr>
+<tr>
+<td style="text-align:right">歌华网络</td>
+<td style="text-align:left">862312</td>
+</tr>
+<tr>
+<td style="text-align:right">阿里巴巴</td>
+<td style="text-align:left">3703716</td>
+</tr>
+</tbody>
+</table></div></div><hr>
+<h1 id="方案一-ip2region">方案一 Ip2region<a title="#方案一-ip2region" href="#方案一-ip2region"></a></h1>
+<h2 id="ip2region-是什么">Ip2region 是什么<a title="#ip2region-是什么" href="#ip2region-是什么"></a></h2>
+<p>Github:<code>https://github.com/lionsoul2014/ip2region</code><br>
+ip2region v2.0 - 是一个离线IP地址定位库和IP定位数据管理框架，10微秒级别的查询效率，提供了众多主流编程语言的 <code>xdb</code> 数据生成和查询客户端实现。</p>
+<h1 id="ip2region-特性">Ip2region 特性<a title="#ip2region-特性" href="#ip2region-特性"></a></h1>
+<h3 id="1、标准化的数据格式">1、标准化的数据格式<a title="#1、标准化的数据格式" href="#1、标准化的数据格式"></a></h3>
+<p>每个 ip 数据段的 region 信息都固定了格式：<code>国家|区域|省份|城市|ISP</code>，只有中国的数据绝大部分精确到了城市，其他国家部分数据只能定位到国家，后前的选项全部是0。</p>
+<h3 id="2、数据去重和压缩">2、数据去重和压缩<a title="#2、数据去重和压缩" href="#2、数据去重和压缩"></a></h3>
+<p><code>xdb</code> 格式生成程序会自动去重和压缩部分数据，默认的全部 IP 数据，生成的 ip2region.xdb 数据库是 11MiB，随着数据的详细度增加数据库的大小也慢慢增大。</p>
+<h3 id="3、极速查询响应">3、极速查询响应<a title="#3、极速查询响应" href="#3、极速查询响应"></a></h3>
+<p>即使是完全基于 <code>xdb</code> 文件的查询，单次查询响应时间在十微秒级别，可通过如下两种方式开启内存加速查询：</p>
+<ol>
+<li><code>vIndex</code> 索引缓存 ：使用固定的 <code>512KiB</code> 的内存空间缓存 vector index 数据，减少一次 IO 磁盘操作，保持平均查询效率稳定在10-20微秒之间。</li>
+<li><code>xdb</code> 整个文件缓存：将整个 <code>xdb</code> 文件全部加载到内存，内存占用等同于 <code>xdb</code> 文件大小，无磁盘 IO 操作，保持微秒级别的查询效率。</li>
+</ol>
+<h3 id="4、ip-数据管理框架">4、IP 数据管理框架<a title="#4、ip-数据管理框架" href="#4、ip-数据管理框架"></a></h3>
+<p>v2.0 格式的 <code>xdb</code> 支持亿级别的 IP 数据段行数，region 信息也可以完全自定义，例如：你可以在 region 中追加特定业务需求的数据，例如：GPS信息/国际统一地域信息编码/邮编等。也就是你完全可以使用 ip2region 来管理你自己的 IP 定位数据。</p>
+<h3 id="下载-ip2region.xdb">下载 ip2region.xdb<a title="#下载-ip2region.xdb" href="#下载-ip2region.xdb"></a></h3>
+<p><code>https://gitee.com/lionsoul/ip2region/tree/master/data</code></p>
+<h3 id="完全基于文件的查询">完全基于文件的查询<a title="#完全基于文件的查询" href="#完全基于文件的查询"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.l-zm;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.lionsoul.ip2region.xdb.Searcher;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.TimeUnit;</span><br><span class="line"><span class="keyword">import</span> <span class="keyword">static</span> com.niceloo.framework.web.validation.ValidatorUtils.C.ip;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SearcherTest</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 1、创建 searcher 对象</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">dbPath</span> <span class="operator">=</span> <span class="string">&quot;C:\\ip2region.xdb&quot;</span>;</span><br><span class="line">        <span class="type">Searcher</span> <span class="variable">searcher</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            searcher = Searcher.newWithFileOnly(dbPath);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            System.out.printf(<span class="string">&quot;failed to create searcher with `%s`: %s\n&quot;</span>, dbPath, e);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 2、查询</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="type">String</span> <span class="variable">ip</span> <span class="operator">=</span> <span class="string">&quot;39.165.255.51&quot;</span>;</span><br><span class="line">            <span class="type">long</span> <span class="variable">sTime</span> <span class="operator">=</span> System.nanoTime();</span><br><span class="line">            <span class="type">String</span> <span class="variable">region</span> <span class="operator">=</span> searcher.search(ip);</span><br><span class="line">            <span class="type">long</span> <span class="variable">cost</span> <span class="operator">=</span> TimeUnit.NANOSECONDS.toMicros((<span class="type">long</span>) (System.nanoTime() - sTime));</span><br><span class="line">            System.out.printf(<span class="string">&quot;&#123;region: %s, ioCount: %d, took: %d μs&#125;\n&quot;</span>, region, searcher.getIOCount(), cost);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            System.out.printf(<span class="string">&quot;failed to search(%s): %s\n&quot;</span>, ip, e);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 3、备注：并发使用，每个线程需要创建一个独立的 searcher 对象单独使用。</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;region: 中国|0|河南省|郑州市|移动, ioCount: 5, took: 1025 μs&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>IP</category>
+      </categories>
+      <tags>
+        <tag>IP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java 自定义注解的使用</title>
     <url>/Java-Annotation/</url>
     <content><![CDATA[<p><strong>自定义注解</strong> 说明</p>
@@ -2578,94 +2666,6 @@ myChart.on('click', function (params) {
       </categories>
       <tags>
         <tag>Strategy Pattern</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IP地址 归属地查询工具</title>
-    <url>/java-ip/</url>
-    <content><![CDATA[<h1 id="ip数量统计-(统计时间:2022-01)">IP数量统计 (统计时间:2022-01)<a title="#ip数量统计-(统计时间:2022-01)" href="#ip数量统计-(统计时间:2022-01)"></a></h1>
-<div class="φbq"><div class="φbs"><table><thead>
-<tr>
-<th style="text-align:right">运营商</th>
-<th style="text-align:left">IP 数量</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">中国大陆</td>
-<td style="text-align:left">336,244,699</td>
-</tr>
-<tr>
-<td style="text-align:right">电信</td>
-<td style="text-align:left">137,027,601</td>
-</tr>
-<tr>
-<td style="text-align:right">联通</td>
-<td style="text-align:left">79,009,205</td>
-</tr>
-<tr>
-<td style="text-align:right">移动</td>
-<td style="text-align:left">35366,683</td>
-</tr>
-<tr>
-<td style="text-align:right">铁通</td>
-<td style="text-align:left">24,553,340</td>
-</tr>
-<tr>
-<td style="text-align:right">教育网</td>
-<td style="text-align:left">17,143,530</td>
-</tr>
-<tr>
-<td style="text-align:right">鹏博士</td>
-<td style="text-align:left">8,754,246</td>
-</tr>
-<tr>
-<td style="text-align:right">华数</td>
-<td style="text-align:left">111,888</td>
-</tr>
-<tr>
-<td style="text-align:right">方正网络</td>
-<td style="text-align:left">740480</td>
-</tr>
-<tr>
-<td style="text-align:right">歌华网络</td>
-<td style="text-align:left">862312</td>
-</tr>
-<tr>
-<td style="text-align:right">阿里巴巴</td>
-<td style="text-align:left">3703716</td>
-</tr>
-</tbody>
-</table></div></div><hr>
-<h1 id="方案一-ip2region">方案一 Ip2region<a title="#方案一-ip2region" href="#方案一-ip2region"></a></h1>
-<h2 id="ip2region-是什么">Ip2region 是什么<a title="#ip2region-是什么" href="#ip2region-是什么"></a></h2>
-<p>Github:<code>https://github.com/lionsoul2014/ip2region</code><br>
-ip2region v2.0 - 是一个离线IP地址定位库和IP定位数据管理框架，10微秒级别的查询效率，提供了众多主流编程语言的 <code>xdb</code> 数据生成和查询客户端实现。</p>
-<h1 id="ip2region-特性">Ip2region 特性<a title="#ip2region-特性" href="#ip2region-特性"></a></h1>
-<h3 id="1、标准化的数据格式">1、标准化的数据格式<a title="#1、标准化的数据格式" href="#1、标准化的数据格式"></a></h3>
-<p>每个 ip 数据段的 region 信息都固定了格式：<code>国家|区域|省份|城市|ISP</code>，只有中国的数据绝大部分精确到了城市，其他国家部分数据只能定位到国家，后前的选项全部是0。</p>
-<h3 id="2、数据去重和压缩">2、数据去重和压缩<a title="#2、数据去重和压缩" href="#2、数据去重和压缩"></a></h3>
-<p><code>xdb</code> 格式生成程序会自动去重和压缩部分数据，默认的全部 IP 数据，生成的 ip2region.xdb 数据库是 11MiB，随着数据的详细度增加数据库的大小也慢慢增大。</p>
-<h3 id="3、极速查询响应">3、极速查询响应<a title="#3、极速查询响应" href="#3、极速查询响应"></a></h3>
-<p>即使是完全基于 <code>xdb</code> 文件的查询，单次查询响应时间在十微秒级别，可通过如下两种方式开启内存加速查询：</p>
-<ol>
-<li><code>vIndex</code> 索引缓存 ：使用固定的 <code>512KiB</code> 的内存空间缓存 vector index 数据，减少一次 IO 磁盘操作，保持平均查询效率稳定在10-20微秒之间。</li>
-<li><code>xdb</code> 整个文件缓存：将整个 <code>xdb</code> 文件全部加载到内存，内存占用等同于 <code>xdb</code> 文件大小，无磁盘 IO 操作，保持微秒级别的查询效率。</li>
-</ol>
-<h3 id="4、ip-数据管理框架">4、IP 数据管理框架<a title="#4、ip-数据管理框架" href="#4、ip-数据管理框架"></a></h3>
-<p>v2.0 格式的 <code>xdb</code> 支持亿级别的 IP 数据段行数，region 信息也可以完全自定义，例如：你可以在 region 中追加特定业务需求的数据，例如：GPS信息/国际统一地域信息编码/邮编等。也就是你完全可以使用 ip2region 来管理你自己的 IP 定位数据。</p>
-<h3 id="下载-ip2region.xdb">下载 ip2region.xdb<a title="#下载-ip2region.xdb" href="#下载-ip2region.xdb"></a></h3>
-<p><code>https://gitee.com/lionsoul/ip2region/tree/master/data</code></p>
-<h3 id="完全基于文件的查询">完全基于文件的查询<a title="#完全基于文件的查询" href="#完全基于文件的查询"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.l-zm;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.lionsoul.ip2region.xdb.Searcher;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.TimeUnit;</span><br><span class="line"><span class="keyword">import</span> <span class="keyword">static</span> com.niceloo.framework.web.validation.ValidatorUtils.C.ip;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SearcherTest</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 1、创建 searcher 对象</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">dbPath</span> <span class="operator">=</span> <span class="string">&quot;C:\\ip2region.xdb&quot;</span>;</span><br><span class="line">        <span class="type">Searcher</span> <span class="variable">searcher</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            searcher = Searcher.newWithFileOnly(dbPath);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            System.out.printf(<span class="string">&quot;failed to create searcher with `%s`: %s\n&quot;</span>, dbPath, e);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 2、查询</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="type">String</span> <span class="variable">ip</span> <span class="operator">=</span> <span class="string">&quot;39.165.255.51&quot;</span>;</span><br><span class="line">            <span class="type">long</span> <span class="variable">sTime</span> <span class="operator">=</span> System.nanoTime();</span><br><span class="line">            <span class="type">String</span> <span class="variable">region</span> <span class="operator">=</span> searcher.search(ip);</span><br><span class="line">            <span class="type">long</span> <span class="variable">cost</span> <span class="operator">=</span> TimeUnit.NANOSECONDS.toMicros((<span class="type">long</span>) (System.nanoTime() - sTime));</span><br><span class="line">            System.out.printf(<span class="string">&quot;&#123;region: %s, ioCount: %d, took: %d μs&#125;\n&quot;</span>, region, searcher.getIOCount(), cost);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            System.out.printf(<span class="string">&quot;failed to search(%s): %s\n&quot;</span>, ip, e);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 3、备注：并发使用，每个线程需要创建一个独立的 searcher 对象单独使用。</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>输出:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;region: 中国|0|河南省|郑州市|移动, ioCount: 5, took: 1025 μs&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>IP</category>
-      </categories>
-      <tags>
-        <tag>IP</tag>
       </tags>
   </entry>
 </search>
