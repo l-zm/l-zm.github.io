@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>临时文档</title>
-    <url>/1/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX19Jho4KiQj48H5D4zpRWhHf5CDmDDPc4aWTboQdOwgJlhOwO9Y+8FyW</is-cipher>]]></content>
-      <categories>
-        <category>Other</category>
-      </categories>
-      <tags>
-        <tag>Other</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown 基本语法</title>
     <url>/m/</url>
     <content><![CDATA[<h1 id="&lt;center&gt;-一级标题"><center> 一级标题<a title="#&lt;center&gt;-一级标题" href="#&lt;center&gt;-一级标题"></a></h1>
@@ -653,18 +642,14 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>Mac 修改 Dock 栏的隐藏速度</title>
-    <url>/mac-edit-dock-hidden-speed/</url>
-    <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
-<p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
-<h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
-<p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
-]]></content>
+    <title>临时文档</title>
+    <url>/1/</url>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1+5INx9VlR+yI5j9NNvqkyJk/sMhbF5Y1YTPhqw8bOSNFF5sLE312bU</is-cipher>]]></content>
       <categories>
-        <category>Mac</category>
+        <category>Other</category>
       </categories>
       <tags>
-        <tag>Mac</tag>
+        <tag>Other</tag>
       </tags>
   </entry>
   <entry>
@@ -679,6 +664,21 @@ font-family: SlideTownsoul
 <p>默认可能是：<code>3</code> ， 我这里设置的：<code>7</code></p>
 <p><code>defaults write -g com.apple.mouse.scaling 7</code></p>
 <h3 id="重启电脑生效">重启电脑生效<a title="#重启电脑生效" href="#重启电脑生效"></a></h3>
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac 修改 Dock 栏的隐藏速度</title>
+    <url>/mac-edit-dock-hidden-speed/</url>
+    <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
+<p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
+<h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
+<p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
 ]]></content>
       <categories>
         <category>Mac</category>
@@ -742,20 +742,6 @@ font-family: SlideTownsoul
       </categories>
       <tags>
         <tag>Mac</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图片</title>
-    <url>/picture/</url>
-    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62c6837cf54cd3f937647820.png" alt="iPhone All" loading="lazy"><br>
-<img src="https://pic.imgdb.cn/item/62c6a7faf54cd3f93798805c.png" alt="Git" loading="lazy"><br>
-<img src="https://pic.imgdb.cn/item/62f3638416f2c2beb11babb0.gif" alt="Windows 10 TO Windows 11" loading="lazy"></p>
-]]></content>
-      <categories>
-        <category>Picture</category>
-      </categories>
-      <tags>
-        <tag>Picture</tag>
       </tags>
   </entry>
   <entry>
@@ -869,9 +855,23 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
+    <title>图片</title>
+    <url>/picture/</url>
+    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62c6837cf54cd3f937647820.png" alt="iPhone All" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/62c6a7faf54cd3f93798805c.png" alt="Git" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/62f3638416f2c2beb11babb0.gif" alt="Windows 10 TO Windows 11" loading="lazy"></p>
+]]></content>
+      <categories>
+        <category>Picture</category>
+      </categories>
+      <tags>
+        <tag>Picture</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Chrome 插件</title>
     <url>/Chrome-Plugins/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1/2eWzhTeSX73lY5KfsezSlXda+TaX3dfTu0Cmihcmdd13wO3bhF7WS</is-cipher>]]></content>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX18h5cUvPprAeYzDo0hpteqphj8228XJqYvwaEF3ySSjWDOuq2aXko6O</is-cipher>]]></content>
       <categories>
         <category>Chrome</category>
       </categories>
@@ -895,6 +895,40 @@ font-family: SlideTownsoul
       <tags>
         <tag>Windows</tag>
         <tag>PowerToys</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>管理 &quot;此电脑&quot; 里面删不掉的流浪 &quot;快捷方式&quot;</title>
+    <url>/windows-MyComputerManager/</url>
+    <content><![CDATA[<h3 id="mycomputermanager">MyComputerManager<a title="#mycomputermanager" href="#mycomputermanager"></a></h3>
+<p>GitHub 开源小工具: <code>https://github.com/1357310795/MyComputerManager</code></p>
+<p>双击直接运行</p>
+<p><img src="https://pic.imgdb.cn/item/62cbbaa7f54cd3f9377cf8d0.png" alt="MyComputerManager" loading="lazy" class="φbp"></p>
+<h3 id="如何彻底杜绝">如何彻底杜绝<a title="#如何彻底杜绝" href="#如何彻底杜绝"></a></h3>
+<ol>
+<li>打开火绒</li>
+<li>安全设置</li>
+<li>高级防护</li>
+<li>自定义防护</li>
+<li>添加规则
+<ol>
+<li>规则名称(随便): <code>阻止程序在此电脑创建快捷方式</code></li>
+<li>注册表规则: <code>*\MyComputer\NameSpace\*</code></li>
+</ol>
+</li>
+</ol>
+<p><img src="https://pic.imgdb.cn/item/62cb97a3f54cd3f937521d28.png" alt="阻止程序在此电脑创建快捷方式" loading="lazy" class="φbp"></p>
+<blockquote>
+<p>如果你想要禁止在桌面创建快捷方式<br>
+把MyComputer改成Desktop即可</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>MyComputerManager</tag>
       </tags>
   </entry>
   <entry>
@@ -954,37 +988,19 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>管理 &quot;此电脑&quot; 里面删不掉的流浪 &quot;快捷方式&quot;</title>
-    <url>/windows-MyComputerManager/</url>
-    <content><![CDATA[<h3 id="mycomputermanager">MyComputerManager<a title="#mycomputermanager" href="#mycomputermanager"></a></h3>
-<p>GitHub 开源小工具: <code>https://github.com/1357310795/MyComputerManager</code></p>
-<p>双击直接运行</p>
-<p><img src="https://pic.imgdb.cn/item/62cbbaa7f54cd3f9377cf8d0.png" alt="MyComputerManager" loading="lazy" class="φbp"></p>
-<h3 id="如何彻底杜绝">如何彻底杜绝<a title="#如何彻底杜绝" href="#如何彻底杜绝"></a></h3>
-<ol>
-<li>打开火绒</li>
-<li>安全设置</li>
-<li>高级防护</li>
-<li>自定义防护</li>
-<li>添加规则
-<ol>
-<li>规则名称(随便): <code>阻止程序在此电脑创建快捷方式</code></li>
-<li>注册表规则: <code>*\MyComputer\NameSpace\*</code></li>
+    <title>Windows iTunes 设置关闭自动备份</title>
+    <url>/windows-itunes-backups/</url>
+    <content><![CDATA[<ol>
+<li>找到安装目录下的: <code>defaults.exe</code> 复制路径</li>
+<li>运行: <code>cmd</code></li>
+<li>执行命令: <code>&quot;D:\Application\iTunes\defaults.exe&quot; write com.apple.iTunes AutomaticDeviceBackupsDisabled -bool true</code></li>
 </ol>
-</li>
-</ol>
-<p><img src="https://pic.imgdb.cn/item/62cb97a3f54cd3f937521d28.png" alt="阻止程序在此电脑创建快捷方式" loading="lazy" class="φbp"></p>
-<blockquote>
-<p>如果你想要禁止在桌面创建快捷方式<br>
-把MyComputer改成Desktop即可</p>
-</blockquote>
 ]]></content>
       <categories>
-        <category>软件</category>
+        <category>iTunes</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
-        <tag>MyComputerManager</tag>
+        <tag>iTunes</tag>
       </tags>
   </entry>
   <entry>
@@ -1009,41 +1025,6 @@ font-family: SlideTownsoul
       <tags>
         <tag>Windows</tag>
         <tag>WPS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows iTunes 设置关闭自动备份</title>
-    <url>/windows-itunes-backups/</url>
-    <content><![CDATA[<ol>
-<li>找到安装目录下的: <code>defaults.exe</code> 复制路径</li>
-<li>运行: <code>cmd</code></li>
-<li>执行命令: <code>&quot;D:\Application\iTunes\defaults.exe&quot; write com.apple.iTunes AutomaticDeviceBackupsDisabled -bool true</code></li>
-</ol>
-]]></content>
-      <categories>
-        <category>iTunes</category>
-      </categories>
-      <tags>
-        <tag>iTunes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows &amp; Mac M3U8 视频下载</title>
-    <url>/m3u8-download/</url>
-    <content><![CDATA[<h2 id="mac">Mac<a title="#mac" href="#mac"></a></h2>
-<h2 id="windows">Windows<a title="#windows" href="#windows"></a></h2>
-<h4 id="n_m3u8dl-cli">N_m3u8DL-CLI<a title="#n_m3u8dl-cli" href="#n_m3u8dl-cli"></a></h4>
-<p><img src="https://pic.imgdb.cn/item/62f1f7dd16f2c2beb1ccdd40.png" alt="N_m3u8DL-CLI" loading="lazy" class="φbp"></p>
-<p>GitHub地址: <a href="https://github.com/nilaoda/N_m3u8DL-CLI" target="_blank">https://github.com/nilaoda/N_m3u8DL-CLI</a></p>
-<blockquote>
-<p>N_m3u8DL-CLI是一款用于下载m3u8的命令行工具，<a href="http://xn--6kq92u.NET">基于.NET</a> Framework 4.6框架开发，调用系统类库进行HTTP下载，支持常见的m3u8格式下载，支持从视频中选择一部分下载，还提供丰富的命令行选项以增强其功能。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>M3U8</category>
-      </categories>
-      <tags>
-        <tag>M3U8</tag>
       </tags>
   </entry>
   <entry>
@@ -1092,6 +1073,47 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
+    <title>Windows &amp; Mac M3U8 视频下载</title>
+    <url>/m3u8-download/</url>
+    <content><![CDATA[<h2 id="mac">Mac<a title="#mac" href="#mac"></a></h2>
+<h2 id="windows">Windows<a title="#windows" href="#windows"></a></h2>
+<h4 id="n_m3u8dl-cli">N_m3u8DL-CLI<a title="#n_m3u8dl-cli" href="#n_m3u8dl-cli"></a></h4>
+<p><img src="https://pic.imgdb.cn/item/62f1f7dd16f2c2beb1ccdd40.png" alt="N_m3u8DL-CLI" loading="lazy" class="φbp"></p>
+<p>GitHub地址: <a href="https://github.com/nilaoda/N_m3u8DL-CLI" target="_blank">https://github.com/nilaoda/N_m3u8DL-CLI</a></p>
+<blockquote>
+<p>N_m3u8DL-CLI是一款用于下载m3u8的命令行工具，<a href="http://xn--6kq92u.NET">基于.NET</a> Framework 4.6框架开发，调用系统类库进行HTTP下载，支持常见的m3u8格式下载，支持从视频中选择一部分下载，还提供丰富的命令行选项以增强其功能。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>M3U8</category>
+      </categories>
+      <tags>
+        <tag>M3U8</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ChatGPT 注册教程</title>
+    <url>/chatgpt-register/</url>
+    <content><![CDATA[<h3 id="打开官网:">打开官网:<a title="#打开官网:" href="#打开官网:"></a></h3>
+<ul>
+<li>网站：<code>https://openai.com/</code></li>
+<li>网站：<code>https://platform.openai.com/account/</code></li>
+</ul>
+<p>正常流程注册</p>
+<h3 id="需要国外电话接收短信">需要国外电话接收短信<a title="#需要国外电话接收短信" href="#需要国外电话接收短信"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/642f9790a682492fcc07235a.png" alt="" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/642f9799a682492fcc072b64.png" alt="" loading="lazy"></p>
+<h3 id="创建key">创建Key<a title="#创建key" href="#创建key"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/642f97faa682492fcc077f1e.png" alt="" loading="lazy" class="φbp"></p>
+]]></content>
+      <categories>
+        <category>ChatGPT</category>
+      </categories>
+      <tags>
+        <tag>ChatGPT</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows 10/11 电源计划 开启[卓越性能]</title>
     <url>/windows-excellent/</url>
     <content><![CDATA[<p>以管理员身份运行<code>Windows PowerShell</code>, 输入以下命令:</p>
@@ -1102,6 +1124,45 @@ font-family: SlideTownsoul
       </categories>
       <tags>
         <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IntelliJ IDEA 配置</title>
+    <url>/IntelliJ-IDEA-Config/</url>
+    <content><![CDATA[<h3 id="设置背景颜色">设置背景颜色<a title="#设置背景颜色" href="#设置背景颜色"></a></h3>
+<blockquote>
+<p>豆沙绿<br>
+色调: <code>85</code> 色度:<code>123</code> 亮度:<code>205</code><br>
+RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</code><br>
+十六进制颜色: <code>#C7EDCC</code> 或者 <code>#CCE8CF</code></p>
+</blockquote>
+<p><img src="https://pic.imgdb.cn/item/642bc30e6ea21b9a9e79b8fe.png" alt="设置背景颜色" loading="lazy" class="φbp"></p>
+<hr>
+<h3 id="显示空格">显示空格<a title="#显示空格" href="#显示空格"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/642bbe916ea21b9a9e503d72.png" alt="显示空格" loading="lazy" class="φbp"></p>
+<hr>
+<p>主要功能：</p>
+<ol>
+<li>生成mapper xml文件</li>
+<li>快速从代码跳转到mapper及从mapper返回代码</li>
+<li>mybatis自动补全及语法错误提示</li>
+<li>集成mybatis generator gui界面</li>
+<li>根据数据库注解，生成swagger model注解</li>
+</ol>
+<blockquote>
+<ul>
+<li>整理知识，学习笔记</li>
+<li>发布日记，杂文，所见所想</li>
+<li>撰写发布技术文稿（代码支持）</li>
+<li>撰写发布学术论文（LaTeX 公式支持）</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>IntelliJ IDEA</category>
+      </categories>
+      <tags>
+        <tag>IntelliJ IDEA</tag>
       </tags>
   </entry>
   <entry>
@@ -1128,28 +1189,6 @@ font-family: SlideTownsoul
       </categories>
       <tags>
         <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ChatGPT 注册教程</title>
-    <url>/chatgpt-register/</url>
-    <content><![CDATA[<h3 id="打开官网:">打开官网:<a title="#打开官网:" href="#打开官网:"></a></h3>
-<ul>
-<li>网站：<code>https://openai.com/</code></li>
-<li>网站：<code>https://platform.openai.com/account/</code></li>
-</ul>
-<p>正常流程注册</p>
-<h3 id="需要国外电话接收短信">需要国外电话接收短信<a title="#需要国外电话接收短信" href="#需要国外电话接收短信"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/642f9790a682492fcc07235a.png" alt="" loading="lazy"><br>
-<img src="https://pic.imgdb.cn/item/642f9799a682492fcc072b64.png" alt="" loading="lazy"></p>
-<h3 id="创建key">创建Key<a title="#创建key" href="#创建key"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/642f97faa682492fcc077f1e.png" alt="" loading="lazy" class="φbp"></p>
-]]></content>
-      <categories>
-        <category>ChatGPT</category>
-      </categories>
-      <tags>
-        <tag>ChatGPT</tag>
       </tags>
   </entry>
   <entry>
@@ -1180,6 +1219,30 @@ Windows 路径：C:\Windows\System32\drivers\etc</p>
       </categories>
       <tags>
         <tag>GitHub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IntelliJ IDEA 插件</title>
+    <url>/IntelliJ-IDEA-Plugins/</url>
+    <content><![CDATA[<h3 id="free-mybatis-plugin">Free MyBatis plugin<a title="#free-mybatis-plugin" href="#free-mybatis-plugin"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/6279cab909475431291d2971.png" alt="Free MyBatis plugin" loading="lazy" class="φbp"></p>
+<ul>
+<li>Git地址：<a href="https://github.com/chuntungho/free-mybatis-plugin" target="_blank">https://github.com/chuntungho/free-mybatis-plugin</a></li>
+</ul>
+<p>主要功能：</p>
+<ol>
+<li>生成mapper xml文件</li>
+<li>快速从代码跳转到mapper及从mapper返回代码</li>
+<li>mybatis自动补全及语法错误提示</li>
+<li>集成mybatis generator gui界面</li>
+<li>根据数据库注解，生成swagger model注解</li>
+</ol>
+]]></content>
+      <categories>
+        <category>IntelliJ IDEA</category>
+      </categories>
+      <tags>
+        <tag>IntelliJ IDEA</tag>
       </tags>
   </entry>
   <entry>
@@ -1359,6 +1422,331 @@ main {
       <tags>
         <tag>HTML</tag>
         <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 嵌入可视化 Echarts 图表</title>
+    <url>/echarts/</url>
+    <content><![CDATA[<p>Echarts在线库 CDN 服务: <code>https://www.bootcdn.cn/echarts/</code></p>
+<div id="echarts2711" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2711'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  tooltip: {
+    trigger: 'axis'
+  },
+  legend: {
+    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  toolbox: {
+    feature: {
+      saveAsImage: {}
+    }
+  },
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      name: 'Email',
+      type: 'line',
+      stack: 'Total',
+      data: [120, 132, 101, 134, 90, 230, 210]
+    },
+    {
+      name: 'Union Ads',
+      type: 'line',
+      stack: 'Total',
+      data: [220, 182, 191, 234, 290, 330, 310]
+    },
+    {
+      name: 'Video Ads',
+      type: 'line',
+      stack: 'Total',
+      data: [150, 232, 201, 154, 190, 330, 410]
+    },
+    {
+      name: 'Direct',
+      type: 'line',
+      stack: 'Total',
+      data: [320, 332, 301, 334, 390, 330, 320]
+    },
+    {
+      name: 'Search Engine',
+      type: 'line',
+      stack: 'Total',
+      data: [820, 932, 901, 934, 1290, 1330, 1320]
+    }
+  ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts1988" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts1988'));
+
+        // 指定图表的配置项和数据
+        var option = option = {
+    color: ['#3398DB'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            axisTick: {
+                alignWithLabel: true
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value'
+        }
+    ],
+    series: [
+        {
+            name: '直接访问',
+            type: 'bar',
+            barWidth: '60%',
+            data: [10, 52, 200, 334, 390, 330, 220]
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<script type="text/javascript">
+var dataAxis = ['点', '击', '柱', '子', '或', '者', '两', '指', '在', '触', '屏', '上', '滑', '动', '能', '够', '自', '动', '缩', '放'];
+var data = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 122, 133, 334, 198, 123, 125, 220];
+var yMax = 500;
+var dataShadow = [];
+for (var i = 0; i < data.length; i++) {
+    dataShadow.push(yMax);
+}
+// Enable data zoom when user click bar.
+var zoomSize = 6;
+myChart.on('click', function (params) {
+    console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+    myChart.dispatchAction({
+        type: 'dataZoom',
+        startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+        endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
+    });
+});
+</script><div id="echarts4842" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4842'));
+
+        // 指定图表的配置项和数据
+        var option = option = {
+    title: {
+        text: '特性示例：渐变色 阴影 点击缩放',
+        subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
+    },
+    xAxis: {
+        data: dataAxis,
+        axisLabel: {
+            inside: true,
+            textStyle: {
+                color: '#fff'
+            }
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: false
+        },
+        z: 10
+    },
+    yAxis: {
+        axisLine: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLabel: {
+            textStyle: {
+                color: '#999'
+            }
+        }
+    },
+    dataZoom: [
+        {
+            type: 'inside'
+        }
+    ],
+    series: [
+        { // For shadow
+            type: 'bar',
+            itemStyle: {
+                color: 'rgba(0,0,0,0.05)'
+            },
+            barGap: '-100%',
+            barCategoryGap: '40%',
+            data: dataShadow,
+            animation: false
+        },
+        {
+            type: 'bar',
+            itemStyle: {
+                color: new echarts.graphic.LinearGradient(
+                    0, 0, 0, 1,
+                    [
+                        {offset: 0, color: '#83bff6'},
+                        {offset: 0.5, color: '#188df0'},
+                        {offset: 1, color: '#188df0'}
+                    ]
+                )
+            },
+            emphasis: {
+                itemStyle: {
+                    color: new echarts.graphic.LinearGradient(
+                        0, 0, 0, 1,
+                        [
+                            {offset: 0, color: '#2378f7'},
+                            {offset: 0.7, color: '#2378f7'},
+                            {offset: 1, color: '#83bff6'}
+                        ]
+                    )
+                }
+            },
+            data: data
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts3244" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3244'));
+
+        // 指定图表的配置项和数据
+        var option = option = {
+    title: {
+        text: '某站点用户访问来源',
+        subtext: '纯属虚构',
+        left: 'center'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+        data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: '55%',
+            center: ['50%', '60%'],
+            data: [
+                {value: 335, name: '直接访问'},
+                {value: 310, name: '邮件营销'},
+                {value: 234, name: '联盟广告'},
+                {value: 135, name: '视频广告'},
+                {value: 1548, name: '搜索引擎'}
+            ],
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>]]></content>
+      <categories>
+        <category>Echarts</category>
+      </categories>
+      <tags>
+        <tag>Echarts</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你的 Microsoft 365 开发人员订阅</title>
+    <url>/microsoft-office-dev/</url>
+    <content><![CDATA[<blockquote>
+<p>官方说明: <code>https://learn.microsoft.com/zh-cn/office/developer-program/microsoft-365-developer-program</code></p>
+</blockquote>
+<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
+<p><code>https://developer.microsoft.com/zh-cn/microsoft-365/dev-program</code></p>
+<ol>
+<li>登录自己的微软账号</li>
+<li>点击立即加入
+<ol>
+<li>国家/地区: <code>China</code></li>
+<li>公司: 随意</li>
+<li>语言搜选项: 中文(简体)</li>
+</ol>
+</li>
+<li>下一步: 供我公司内部使用的应用程序</li>
+<li>下一步: 您感兴趣的开发领域, 随意选择</li>
+<li>设置 Microsoft 365 E5 沙盒, 选择: 可配置沙盒</li>
+<li>用户名/域/密码 自己设置</li>
+<li>最后输入手机号, 获取验证码完成(这里可能需要科学上网)</li>
+</ol>
+<h3 id="创建子用户">创建子用户<a title="#创建子用户" href="#创建子用户"></a></h3>
+<p>访问: <code>https://www.office.com/</code></p>
+<ol>
+<li>管理</li>
+<li>添加用户</li>
+</ol>
+<h3 id="调整网盘容量">调整网盘容量<a title="#调整网盘容量" href="#调整网盘容量"></a></h3>
+<p>访问网址: <code>https://admin.onedrive.com/?v=StorageSettings</code></p>
+<p>设置 &gt; OneDrive 存储限制 &gt; 默认存储限制 设置 <code>5120 (5 TB)</code> 即可</p>
+<hr>
+<blockquote>
+<p>引用: <a href="https://baijiahao.baidu.com/s?id=1762710572846867749" target="_blank">https://baijiahao.baidu.com/s?id=1762710572846867749</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Office</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
       </tags>
   </entry>
   <entry>
@@ -1640,619 +2028,6 @@ main {
       </categories>
       <tags>
         <tag>符号</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IntelliJ IDEA 插件</title>
-    <url>/IntelliJ-IDEA-Plugins/</url>
-    <content><![CDATA[<h3 id="free-mybatis-plugin">Free MyBatis plugin<a title="#free-mybatis-plugin" href="#free-mybatis-plugin"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/6279cab909475431291d2971.png" alt="Free MyBatis plugin" loading="lazy" class="φbp"></p>
-<ul>
-<li>Git地址：<a href="https://github.com/chuntungho/free-mybatis-plugin" target="_blank">https://github.com/chuntungho/free-mybatis-plugin</a></li>
-</ul>
-<p>主要功能：</p>
-<ol>
-<li>生成mapper xml文件</li>
-<li>快速从代码跳转到mapper及从mapper返回代码</li>
-<li>mybatis自动补全及语法错误提示</li>
-<li>集成mybatis generator gui界面</li>
-<li>根据数据库注解，生成swagger model注解</li>
-</ol>
-]]></content>
-      <categories>
-        <category>IntelliJ IDEA</category>
-      </categories>
-      <tags>
-        <tag>IntelliJ IDEA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo 嵌入可视化 Echarts 图表</title>
-    <url>/echarts/</url>
-    <content><![CDATA[<p>Echarts在线库 CDN 服务: <code>https://www.bootcdn.cn/echarts/</code></p>
-<div id="echarts6158" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts6158'));
-
-        // 指定图表的配置项和数据
-        var option = {
-  tooltip: {
-    trigger: 'axis'
-  },
-  legend: {
-    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
-  },
-  grid: {
-    left: '3%',
-    right: '4%',
-    bottom: '3%',
-    containLabel: true
-  },
-  toolbox: {
-    feature: {
-      saveAsImage: {}
-    }
-  },
-  xAxis: {
-    type: 'category',
-    boundaryGap: false,
-    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-  },
-  yAxis: {
-    type: 'value'
-  },
-  series: [
-    {
-      name: 'Email',
-      type: 'line',
-      stack: 'Total',
-      data: [120, 132, 101, 134, 90, 230, 210]
-    },
-    {
-      name: 'Union Ads',
-      type: 'line',
-      stack: 'Total',
-      data: [220, 182, 191, 234, 290, 330, 310]
-    },
-    {
-      name: 'Video Ads',
-      type: 'line',
-      stack: 'Total',
-      data: [150, 232, 201, 154, 190, 330, 410]
-    },
-    {
-      name: 'Direct',
-      type: 'line',
-      stack: 'Total',
-      data: [320, 332, 301, 334, 390, 330, 320]
-    },
-    {
-      name: 'Search Engine',
-      type: 'line',
-      stack: 'Total',
-      data: [820, 932, 901, 934, 1290, 1330, 1320]
-    }
-  ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>
-<div id="echarts4995" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts4995'));
-
-        // 指定图表的配置项和数据
-        var option = option = {
-    color: ['#3398DB'],
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
-            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-        }
-    },
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis: [
-        {
-            type: 'category',
-            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-            axisTick: {
-                alignWithLabel: true
-            }
-        }
-    ],
-    yAxis: [
-        {
-            type: 'value'
-        }
-    ],
-    series: [
-        {
-            name: '直接访问',
-            type: 'bar',
-            barWidth: '60%',
-            data: [10, 52, 200, 334, 390, 330, 220]
-        }
-    ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>
-<script type="text/javascript">
-var dataAxis = ['点', '击', '柱', '子', '或', '者', '两', '指', '在', '触', '屏', '上', '滑', '动', '能', '够', '自', '动', '缩', '放'];
-var data = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 122, 133, 334, 198, 123, 125, 220];
-var yMax = 500;
-var dataShadow = [];
-for (var i = 0; i < data.length; i++) {
-    dataShadow.push(yMax);
-}
-// Enable data zoom when user click bar.
-var zoomSize = 6;
-myChart.on('click', function (params) {
-    console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
-    myChart.dispatchAction({
-        type: 'dataZoom',
-        startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
-        endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
-    });
-});
-</script><div id="echarts4930" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts4930'));
-
-        // 指定图表的配置项和数据
-        var option = option = {
-    title: {
-        text: '特性示例：渐变色 阴影 点击缩放',
-        subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
-    },
-    xAxis: {
-        data: dataAxis,
-        axisLabel: {
-            inside: true,
-            textStyle: {
-                color: '#fff'
-            }
-        },
-        axisTick: {
-            show: false
-        },
-        axisLine: {
-            show: false
-        },
-        z: 10
-    },
-    yAxis: {
-        axisLine: {
-            show: false
-        },
-        axisTick: {
-            show: false
-        },
-        axisLabel: {
-            textStyle: {
-                color: '#999'
-            }
-        }
-    },
-    dataZoom: [
-        {
-            type: 'inside'
-        }
-    ],
-    series: [
-        { // For shadow
-            type: 'bar',
-            itemStyle: {
-                color: 'rgba(0,0,0,0.05)'
-            },
-            barGap: '-100%',
-            barCategoryGap: '40%',
-            data: dataShadow,
-            animation: false
-        },
-        {
-            type: 'bar',
-            itemStyle: {
-                color: new echarts.graphic.LinearGradient(
-                    0, 0, 0, 1,
-                    [
-                        {offset: 0, color: '#83bff6'},
-                        {offset: 0.5, color: '#188df0'},
-                        {offset: 1, color: '#188df0'}
-                    ]
-                )
-            },
-            emphasis: {
-                itemStyle: {
-                    color: new echarts.graphic.LinearGradient(
-                        0, 0, 0, 1,
-                        [
-                            {offset: 0, color: '#2378f7'},
-                            {offset: 0.7, color: '#2378f7'},
-                            {offset: 1, color: '#83bff6'}
-                        ]
-                    )
-                }
-            },
-            data: data
-        }
-    ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>
-<div id="echarts1351" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts1351'));
-
-        // 指定图表的配置项和数据
-        var option = option = {
-    title: {
-        text: '某站点用户访问来源',
-        subtext: '纯属虚构',
-        left: 'center'
-    },
-    tooltip: {
-        trigger: 'item',
-        formatter: '{a} <br/>{b} : {c} ({d}%)'
-    },
-    legend: {
-        orient: 'vertical',
-        left: 'left',
-        data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
-    },
-    series: [
-        {
-            name: '访问来源',
-            type: 'pie',
-            radius: '55%',
-            center: ['50%', '60%'],
-            data: [
-                {value: 335, name: '直接访问'},
-                {value: 310, name: '邮件营销'},
-                {value: 234, name: '联盟广告'},
-                {value: 135, name: '视频广告'},
-                {value: 1548, name: '搜索引擎'}
-            ],
-            emphasis: {
-                itemStyle: {
-                    shadowBlur: 10,
-                    shadowOffsetX: 0,
-                    shadowColor: 'rgba(0, 0, 0, 0.5)'
-                }
-            }
-        }
-    ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>]]></content>
-      <categories>
-        <category>Echarts</category>
-      </categories>
-      <tags>
-        <tag>Echarts</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IntelliJ IDEA 配置</title>
-    <url>/IntelliJ-IDEA-Config/</url>
-    <content><![CDATA[<h3 id="设置背景颜色">设置背景颜色<a title="#设置背景颜色" href="#设置背景颜色"></a></h3>
-<blockquote>
-<p>豆沙绿<br>
-色调: <code>85</code> 色度:<code>123</code> 亮度:<code>205</code><br>
-RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</code><br>
-十六进制颜色: <code>#C7EDCC</code> 或者 <code>#CCE8CF</code></p>
-</blockquote>
-<p><img src="https://pic.imgdb.cn/item/642bc30e6ea21b9a9e79b8fe.png" alt="设置背景颜色" loading="lazy" class="φbp"></p>
-<hr>
-<h3 id="显示空格">显示空格<a title="#显示空格" href="#显示空格"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/642bbe916ea21b9a9e503d72.png" alt="显示空格" loading="lazy" class="φbp"></p>
-<hr>
-<p>主要功能：</p>
-<ol>
-<li>生成mapper xml文件</li>
-<li>快速从代码跳转到mapper及从mapper返回代码</li>
-<li>mybatis自动补全及语法错误提示</li>
-<li>集成mybatis generator gui界面</li>
-<li>根据数据库注解，生成swagger model注解</li>
-</ol>
-<blockquote>
-<ul>
-<li>整理知识，学习笔记</li>
-<li>发布日记，杂文，所见所想</li>
-<li>撰写发布技术文稿（代码支持）</li>
-<li>撰写发布学术论文（LaTeX 公式支持）</li>
-</ul>
-</blockquote>
-]]></content>
-      <categories>
-        <category>IntelliJ IDEA</category>
-      </categories>
-      <tags>
-        <tag>IntelliJ IDEA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>BigDecimal Java 高精度运算</title>
-    <url>/bigdecimal/</url>
-    <content><![CDATA[<h2 id="常用方法">常用方法<a title="#常用方法" href="#常用方法"></a></h2>
-<ul>
-<li>加法 : <code>BigDecimal add(BigDecimal augend)</code></li>
-<li>减法 : <code>BigDecimal subtract(BigDecimal subtrahend)</code></li>
-<li>乘法 : <code>BigDecimal multiply(BigDecimal multiplicand)</code></li>
-<li>除法 : <code>BigDecimal divide(BigDecimal divisor)</code></li>
-</ul>
-<h2 id="大小比较">大小比较<a title="#大小比较" href="#大小比较"></a></h2>
-<ul>
-<li><code>int compareTo(BigDecimal val)</code>
-<ul>
-<li>A &lt; B 返回 : -1</li>
-<li>A = B 返回 : 0</li>
-<li>A &gt; B 返回 : 1</li>
-</ul>
-</li>
-</ul>
-<h2 id="格式化">格式化<a title="#格式化" href="#格式化"></a></h2>
-<h3 id="百分比">百分比<a title="#百分比" href="#百分比"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">BigDecimal</span> <span class="variable">A</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="string">&quot;0.0008&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="type">NumberFormat</span> <span class="variable">percentInstance</span> <span class="operator">=</span> NumberFormat.getPercentInstance();</span><br><span class="line">percentInstance.setRoundingMode(RoundingMode.DOWN); <span class="comment">// 舍入模式: 截尾</span></span><br><span class="line">percentInstance.setMaximumFractionDigits(<span class="number">2</span>); <span class="comment">// 百分比小数最多两位</span></span><br><span class="line">percentInstance.setMinimumFractionDigits(<span class="number">2</span>); <span class="comment">// 百分比小数最少两位 0.00%</span></span><br><span class="line"></span><br><span class="line">percentInstance.format(interestRate); <span class="comment">// 0.08%</span></span><br></pre></td></tr></table></figure>
-<h2 id="不同舍入模式下的舍入操作汇总">不同舍入模式下的舍入操作汇总<a title="#不同舍入模式下的舍入操作汇总" href="#不同舍入模式下的舍入操作汇总"></a></h2>
-<div class="φbq"><div class="φbs"><table><thead>
-<tr>
-<th style="text-align:center">NUMBER</th>
-<th style="text-align:center">UP</th>
-<th style="text-align:center">DOWN</th>
-<th style="text-align:center">CEILING</th>
-<th style="text-align:center">FLOOR</th>
-<th style="text-align:center">HALF_UP</th>
-<th style="text-align:center">HALF_DOWN</th>
-<th style="text-align:center">HALF_EVEN</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">5.5</td>
-<td style="text-align:center">6</td>
-<td style="text-align:center">5</td>
-<td style="text-align:center">6</td>
-<td style="text-align:center">5</td>
-<td style="text-align:center">6</td>
-<td style="text-align:center">5</td>
-<td style="text-align:center">6</td>
-</tr>
-<tr>
-<td style="text-align:center">2.5</td>
-<td style="text-align:center">3</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">3</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">3</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">2</td>
-</tr>
-<tr>
-<td style="text-align:center">1.6</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">2</td>
-</tr>
-<tr>
-<td style="text-align:center">1.1</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center">1.0</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center">-1.0</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-</tr>
-<tr>
-<td style="text-align:center">-1.1</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-</tr>
-<tr>
-<td style="text-align:center">-1.6</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-1</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-2</td>
-</tr>
-<tr>
-<td style="text-align:center">-2.5</td>
-<td style="text-align:center">-3</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-3</td>
-<td style="text-align:center">-3</td>
-<td style="text-align:center">-2</td>
-<td style="text-align:center">-2</td>
-</tr>
-<tr>
-<td style="text-align:center">-5.5</td>
-<td style="text-align:center">-6</td>
-<td style="text-align:center">-5</td>
-<td style="text-align:center">-5</td>
-<td style="text-align:center">-6</td>
-<td style="text-align:center">-6</td>
-<td style="text-align:center">-5</td>
-<td style="text-align:center">-6</td>
-</tr>
-</tbody>
-</table></div></div><p><strong>UP</strong> 远离零方向舍入的舍入模式。始终对非零舍弃部分前面的数字加 1。注意，此舍入模式始终不会减少计算值的绝对值</p>
-<p><strong>DOWN</strong> 向零方向舍入的舍入模式。从不对舍弃部分前面的数字加 1（即截尾）。注意，此舍入模式始终不会增加计算值的绝对值</p>
-<p><strong>CEILING</strong> 向正无限大方向舍入的舍入模式。如果结果为正，则舍入行为类似于 RoundingMode.UP；如果结果为负，则舍入行为类似于 RoundingMode.DOWN。注意，此舍入模式始终不会减少计算值</p>
-<p><strong>FLOOR</strong> 向负无限大方向舍入的舍入模式。如果结果为正，则舍入行为类似于 RoundingMode.DOWN；如果结果为负，则舍入行为类似于 RoundingMode.UP。注意，此舍入模式始终不会增加计算值</p>
-<p><strong>HALF_UP</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向上舍入。如果被舍弃部分 &gt;= 0.5，则舍入行为同 RoundingMode.UP；否则舍入行为同 RoundingMode.DOWN。注意，此舍入模式就是通常学校里讲的四舍五入</p>
-<p><strong>HALF_DOWN</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向下舍入。如果被舍弃部分 &gt; 0.5，则舍入行为同 RoundingMode.UP；否则舍入行为同 RoundingMode.DOWN</p>
-<p><strong>HALF_EVEN</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向相邻的偶数舍入。如果舍弃部分左边的数字为奇数，则舍入行为同 RoundingMode.HALF_UP；如果为偶数，则舍入行为同 RoundingMode.HALF_DOWN。注意，在重复进行一系列计算时，此舍入模式可以在统计上将累加错误减到最小。此舍入模式也称为“银行家舍入法”，主要在美国使用。此舍入模式类似于 Java 中对 float 和 double 算法使用的舍入策略</p>
-<p><strong>UNNECESSARY</strong> 用于断言请求的操作具有精确结果的舍入模式，因此不需要舍入。如果对生成精确结果的操作指定此舍入模式，则抛出 ArithmeticException</p>
-<h3 id="扩展">扩展<a title="#扩展" href="#扩展"></a></h3>
-<h4 id="float类型是32位，是单精度浮点表示法：">float类型是32位，是单精度浮点表示法：<a title="#float类型是32位，是单精度浮点表示法：" href="#float类型是32位，是单精度浮点表示法："></a></h4>
-<ul>
-<li>符号位（sign）占用1位，用来表示正负数，</li>
-<li>指数位（exponent）占用8位，用来表示指数，</li>
-<li>小数位（fraction）占用23位，用来表示小数，不足位数补0。</li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/6423924ba682492fcccd3ea4.png" alt="单精度" loading="lazy" class="φbp"></p>
-<h4 id="double类型是64位，是双精度浮点表示法：">double类型是64位，是双精度浮点表示法：<a title="#double类型是64位，是双精度浮点表示法：" href="#double类型是64位，是双精度浮点表示法："></a></h4>
-<ul>
-<li>符号位占用1位，指数位占用11位，小数位占用52位。</li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/6423924ba682492fcccd3e8a.png" alt="双精度" loading="lazy" class="φbp"></p>
-]]></content>
-      <categories>
-        <category>Java</category>
-        <category>BigDecimal</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>BigDecimal</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>将Oracle官方JDK开发手册制作成CHM格式文件</title>
-    <url>/oracle-jdk-chm/</url>
-    <content><![CDATA[<h3 id="下载制作工具-chmwriter.exe">下载制作工具 CHMWriter.exe<a title="#下载制作工具-chmwriter.exe" href="#下载制作工具-chmwriter.exe"></a></h3>
-<p>下载地址: <code>https://github.com/jptiancai/javadoc2chm</code><br>
-下载文件: <code>CHMWriter V3.0 bin.zip</code></p>
-<blockquote>
-<p>问题: 如果双击<code>CHMWriter.exe</code>报错,可以使用命令行运行:<code>java -jar CHMWriter.jar</code></p>
-</blockquote>
-<h3 id="下载官方手册-jdk-8u361-docs-all.zip">下载官方手册 jdk-8u361-docs-all.zip<a title="#下载官方手册-jdk-8u361-docs-all.zip" href="#下载官方手册-jdk-8u361-docs-all.zip"></a></h3>
-<p>下载地址: <code>https://www.oracle.com/java/technologies/javase-jdk8-doc-downloads.html</code></p>
-<h3 id="开始">开始<a title="#开始" href="#开始"></a></h3>
-<ol>
-<li>选择文件: <code>C:\jdk-8u361-docs-all\docs\api</code> 目录</li>
-<li>chm文件名可以自定义</li>
-<li>点击生成即可</li>
-</ol>
-<hr>
-<h3 id="jdk各个版本chm文件下载地址:">JDK各个版本CHM文件下载地址:<a title="#jdk各个版本chm文件下载地址:" href="#jdk各个版本chm文件下载地址:"></a></h3>
-<ul>
-<li>jdk-8u361-docs-all.chm: <code>https://pan.baidu.com/s/1dZN3g0CMXtB2h5oQnkDrYQ?pwd=llxs</code></li>
-</ul>
-<hr>
-<h3 id="扩展">扩展<a title="#扩展" href="#扩展"></a></h3>
-<h5 id="jdk各个版本的发布时间列表:">JDK各个版本的发布时间列表:<a title="#jdk各个版本的发布时间列表:" href="#jdk各个版本的发布时间列表:"></a></h5>
-<ol>
-<li>JDK 1.0：1996年1月23日</li>
-<li>JDK 1.1：1997年2月19日</li>
-<li>J2SE 1.2：1998年12月8日</li>
-<li>J2SE 1.3：2000年5月8日</li>
-<li>J2SE 1.4：2002年2月13日</li>
-<li>J2SE 5.0：2004年9月30日</li>
-<li>Java SE 6：2006年12月11日</li>
-<li>Java SE 7：2011年7月28日</li>
-<li>Java SE 8：2014年3月18日</li>
-<li>Java SE 9：2017年9月21日</li>
-<li>Java SE 10：2018年3月20日</li>
-<li>Java SE 11：2018年9月25日</li>
-<li>Java SE 12：2019年3月19日</li>
-<li>Java SE 13：2019年9月17日</li>
-<li>Java SE 14：2020年3月17日</li>
-<li>Java SE 15：2020年9月15日</li>
-<li>Java SE 16：2021年3月16日</li>
-<li>Java SE 17：2021年9月14日</li>
-</ol>
-<h5 id="根据官方数据，截至2021年9月，各个jdk版本的使用占比如下：">根据官方数据，截至2021年9月，各个JDK版本的使用占比如下：<a title="#根据官方数据，截至2021年9月，各个jdk版本的使用占比如下：" href="#根据官方数据，截至2021年9月，各个jdk版本的使用占比如下："></a></h5>
-<ol>
-<li>Java SE 17：11.3%</li>
-<li>Java SE 8：54.1%</li>
-<li>Java SE 11：14.7%</li>
-<li>Java SE 16：5.5%</li>
-<li>Java SE 15：1.6%</li>
-<li>Java SE 14：0.4%</li>
-<li>Java SE 13：0.2%</li>
-<li>Java SE 12：0.1%</li>
-<li>Java SE 9：0.1%</li>
-<li>Java SE 10：0.1%</li>
-</ol>
-<h5 id="各个jdk版本默认使用的虚拟机列表：">各个JDK版本默认使用的虚拟机列表：<a title="#各个jdk版本默认使用的虚拟机列表：" href="#各个jdk版本默认使用的虚拟机列表："></a></h5>
-<ol>
-<li>JDK 1.0.x：Classic VM</li>
-<li>JDK 1.1.x：Classic VM</li>
-<li>JDK 1.2.x：Classic VM, HotSpot VM</li>
-<li>JDK 1.3.x：HotSpot VM</li>
-<li>JDK 1.4.x：HotSpot VM</li>
-<li>JDK 5：HotSpot VM</li>
-<li>JDK 6：HotSpot VM</li>
-<li>JDK 7：HotSpot VM</li>
-<li>JDK 8：HotSpot VM</li>
-<li>JDK 9：JShell, HotSpot VM</li>
-<li>JDK 10：JShell, HotSpot VM</li>
-<li>JDK 11：JShell, HotSpot VM</li>
-<li>JDK 12：JShell, HotSpot VM</li>
-<li>JDK 13：JShell, HotSpot VM</li>
-<li>JDK 14：JShell, HotSpot VM</li>
-<li>JDK 15：JShell, HotSpot VM</li>
-<li>JDK 16：JShell, HotSpot VM</li>
-<li>JDK 17：JShell, HotSpot VM</li>
-</ol>
-<h5 id="hotspot虚拟机垃圾回收调整指南">HotSpot虚拟机垃圾回收调整指南<a title="#hotspot虚拟机垃圾回收调整指南" href="#hotspot虚拟机垃圾回收调整指南"></a></h5>
-<p><code>https://docs.oracle.com/en/java/javase/12/gctuning/index.html</code></p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>多线程</title>
-    <url>/Thread/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Thread</category>
-      </categories>
-      <tags>
-        <tag>Thread</tag>
       </tags>
   </entry>
   <entry>
@@ -2681,15 +2456,272 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </tags>
   </entry>
   <entry>
-    <title>MongoDB 语法</title>
-    <url>/mongodb-grammar/</url>
-    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62c7e89bf54cd3f937fa8442.png" alt="" loading="lazy" class="φbp"></p>
+    <title>将Oracle官方JDK开发手册制作成CHM格式文件</title>
+    <url>/oracle-jdk-chm/</url>
+    <content><![CDATA[<h3 id="下载制作工具-chmwriter.exe">下载制作工具 CHMWriter.exe<a title="#下载制作工具-chmwriter.exe" href="#下载制作工具-chmwriter.exe"></a></h3>
+<p>下载地址: <code>https://github.com/jptiancai/javadoc2chm</code><br>
+下载文件: <code>CHMWriter V3.0 bin.zip</code></p>
+<blockquote>
+<p>问题: 如果双击<code>CHMWriter.exe</code>报错,可以使用命令行运行:<code>java -jar CHMWriter.jar</code></p>
+</blockquote>
+<h3 id="下载官方手册-jdk-8u361-docs-all.zip">下载官方手册 jdk-8u361-docs-all.zip<a title="#下载官方手册-jdk-8u361-docs-all.zip" href="#下载官方手册-jdk-8u361-docs-all.zip"></a></h3>
+<p>下载地址: <code>https://www.oracle.com/java/technologies/javase-jdk8-doc-downloads.html</code></p>
+<h3 id="开始">开始<a title="#开始" href="#开始"></a></h3>
+<ol>
+<li>选择文件: <code>C:\jdk-8u361-docs-all\docs\api</code> 目录</li>
+<li>chm文件名可以自定义</li>
+<li>点击生成即可</li>
+</ol>
+<hr>
+<h3 id="jdk各个版本chm文件下载地址:">JDK各个版本CHM文件下载地址:<a title="#jdk各个版本chm文件下载地址:" href="#jdk各个版本chm文件下载地址:"></a></h3>
+<ul>
+<li>jdk-8u361-docs-all.chm: <code>https://pan.baidu.com/s/1dZN3g0CMXtB2h5oQnkDrYQ?pwd=llxs</code></li>
+</ul>
+<hr>
+<h3 id="扩展">扩展<a title="#扩展" href="#扩展"></a></h3>
+<h5 id="jdk各个版本的发布时间列表:">JDK各个版本的发布时间列表:<a title="#jdk各个版本的发布时间列表:" href="#jdk各个版本的发布时间列表:"></a></h5>
+<ol>
+<li>JDK 1.0：1996年1月23日</li>
+<li>JDK 1.1：1997年2月19日</li>
+<li>J2SE 1.2：1998年12月8日</li>
+<li>J2SE 1.3：2000年5月8日</li>
+<li>J2SE 1.4：2002年2月13日</li>
+<li>J2SE 5.0：2004年9月30日</li>
+<li>Java SE 6：2006年12月11日</li>
+<li>Java SE 7：2011年7月28日</li>
+<li>Java SE 8：2014年3月18日</li>
+<li>Java SE 9：2017年9月21日</li>
+<li>Java SE 10：2018年3月20日</li>
+<li>Java SE 11：2018年9月25日</li>
+<li>Java SE 12：2019年3月19日</li>
+<li>Java SE 13：2019年9月17日</li>
+<li>Java SE 14：2020年3月17日</li>
+<li>Java SE 15：2020年9月15日</li>
+<li>Java SE 16：2021年3月16日</li>
+<li>Java SE 17：2021年9月14日</li>
+</ol>
+<h5 id="根据官方数据，截至2021年9月，各个jdk版本的使用占比如下：">根据官方数据，截至2021年9月，各个JDK版本的使用占比如下：<a title="#根据官方数据，截至2021年9月，各个jdk版本的使用占比如下：" href="#根据官方数据，截至2021年9月，各个jdk版本的使用占比如下："></a></h5>
+<ol>
+<li>Java SE 17：11.3%</li>
+<li>Java SE 8：54.1%</li>
+<li>Java SE 11：14.7%</li>
+<li>Java SE 16：5.5%</li>
+<li>Java SE 15：1.6%</li>
+<li>Java SE 14：0.4%</li>
+<li>Java SE 13：0.2%</li>
+<li>Java SE 12：0.1%</li>
+<li>Java SE 9：0.1%</li>
+<li>Java SE 10：0.1%</li>
+</ol>
+<h5 id="各个jdk版本默认使用的虚拟机列表：">各个JDK版本默认使用的虚拟机列表：<a title="#各个jdk版本默认使用的虚拟机列表：" href="#各个jdk版本默认使用的虚拟机列表："></a></h5>
+<ol>
+<li>JDK 1.0.x：Classic VM</li>
+<li>JDK 1.1.x：Classic VM</li>
+<li>JDK 1.2.x：Classic VM, HotSpot VM</li>
+<li>JDK 1.3.x：HotSpot VM</li>
+<li>JDK 1.4.x：HotSpot VM</li>
+<li>JDK 5：HotSpot VM</li>
+<li>JDK 6：HotSpot VM</li>
+<li>JDK 7：HotSpot VM</li>
+<li>JDK 8：HotSpot VM</li>
+<li>JDK 9：JShell, HotSpot VM</li>
+<li>JDK 10：JShell, HotSpot VM</li>
+<li>JDK 11：JShell, HotSpot VM</li>
+<li>JDK 12：JShell, HotSpot VM</li>
+<li>JDK 13：JShell, HotSpot VM</li>
+<li>JDK 14：JShell, HotSpot VM</li>
+<li>JDK 15：JShell, HotSpot VM</li>
+<li>JDK 16：JShell, HotSpot VM</li>
+<li>JDK 17：JShell, HotSpot VM</li>
+</ol>
+<h5 id="hotspot虚拟机垃圾回收调整指南">HotSpot虚拟机垃圾回收调整指南<a title="#hotspot虚拟机垃圾回收调整指南" href="#hotspot虚拟机垃圾回收调整指南"></a></h5>
+<p><code>https://docs.oracle.com/en/java/javase/12/gctuning/index.html</code></p>
 ]]></content>
       <categories>
-        <category>MongoDB</category>
+        <category>Java</category>
       </categories>
       <tags>
-        <tag>MongoDB</tag>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多线程</title>
+    <url>/Thread/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Thread</category>
+      </categories>
+      <tags>
+        <tag>Thread</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>BigDecimal Java 高精度运算</title>
+    <url>/bigdecimal/</url>
+    <content><![CDATA[<h2 id="常用方法">常用方法<a title="#常用方法" href="#常用方法"></a></h2>
+<ul>
+<li>加法 : <code>BigDecimal add(BigDecimal augend)</code></li>
+<li>减法 : <code>BigDecimal subtract(BigDecimal subtrahend)</code></li>
+<li>乘法 : <code>BigDecimal multiply(BigDecimal multiplicand)</code></li>
+<li>除法 : <code>BigDecimal divide(BigDecimal divisor)</code></li>
+</ul>
+<h2 id="大小比较">大小比较<a title="#大小比较" href="#大小比较"></a></h2>
+<ul>
+<li><code>int compareTo(BigDecimal val)</code>
+<ul>
+<li>A &lt; B 返回 : -1</li>
+<li>A = B 返回 : 0</li>
+<li>A &gt; B 返回 : 1</li>
+</ul>
+</li>
+</ul>
+<h2 id="格式化">格式化<a title="#格式化" href="#格式化"></a></h2>
+<h3 id="百分比">百分比<a title="#百分比" href="#百分比"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">BigDecimal</span> <span class="variable">A</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="string">&quot;0.0008&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="type">NumberFormat</span> <span class="variable">percentInstance</span> <span class="operator">=</span> NumberFormat.getPercentInstance();</span><br><span class="line">percentInstance.setRoundingMode(RoundingMode.DOWN); <span class="comment">// 舍入模式: 截尾</span></span><br><span class="line">percentInstance.setMaximumFractionDigits(<span class="number">2</span>); <span class="comment">// 百分比小数最多两位</span></span><br><span class="line">percentInstance.setMinimumFractionDigits(<span class="number">2</span>); <span class="comment">// 百分比小数最少两位 0.00%</span></span><br><span class="line"></span><br><span class="line">percentInstance.format(interestRate); <span class="comment">// 0.08%</span></span><br></pre></td></tr></table></figure>
+<h2 id="不同舍入模式下的舍入操作汇总">不同舍入模式下的舍入操作汇总<a title="#不同舍入模式下的舍入操作汇总" href="#不同舍入模式下的舍入操作汇总"></a></h2>
+<div class="φbq"><div class="φbs"><table><thead>
+<tr>
+<th style="text-align:center">NUMBER</th>
+<th style="text-align:center">UP</th>
+<th style="text-align:center">DOWN</th>
+<th style="text-align:center">CEILING</th>
+<th style="text-align:center">FLOOR</th>
+<th style="text-align:center">HALF_UP</th>
+<th style="text-align:center">HALF_DOWN</th>
+<th style="text-align:center">HALF_EVEN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">5.5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+</tr>
+<tr>
+<td style="text-align:center">2.5</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">1.6</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">1.1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1.0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">-1.0</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+</tr>
+<tr>
+<td style="text-align:center">-1.1</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+</tr>
+<tr>
+<td style="text-align:center">-1.6</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+</tr>
+<tr>
+<td style="text-align:center">-2.5</td>
+<td style="text-align:center">-3</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-3</td>
+<td style="text-align:center">-3</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-2</td>
+</tr>
+<tr>
+<td style="text-align:center">-5.5</td>
+<td style="text-align:center">-6</td>
+<td style="text-align:center">-5</td>
+<td style="text-align:center">-5</td>
+<td style="text-align:center">-6</td>
+<td style="text-align:center">-6</td>
+<td style="text-align:center">-5</td>
+<td style="text-align:center">-6</td>
+</tr>
+</tbody>
+</table></div></div><p><strong>UP</strong> 远离零方向舍入的舍入模式。始终对非零舍弃部分前面的数字加 1。注意，此舍入模式始终不会减少计算值的绝对值</p>
+<p><strong>DOWN</strong> 向零方向舍入的舍入模式。从不对舍弃部分前面的数字加 1（即截尾）。注意，此舍入模式始终不会增加计算值的绝对值</p>
+<p><strong>CEILING</strong> 向正无限大方向舍入的舍入模式。如果结果为正，则舍入行为类似于 RoundingMode.UP；如果结果为负，则舍入行为类似于 RoundingMode.DOWN。注意，此舍入模式始终不会减少计算值</p>
+<p><strong>FLOOR</strong> 向负无限大方向舍入的舍入模式。如果结果为正，则舍入行为类似于 RoundingMode.DOWN；如果结果为负，则舍入行为类似于 RoundingMode.UP。注意，此舍入模式始终不会增加计算值</p>
+<p><strong>HALF_UP</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向上舍入。如果被舍弃部分 &gt;= 0.5，则舍入行为同 RoundingMode.UP；否则舍入行为同 RoundingMode.DOWN。注意，此舍入模式就是通常学校里讲的四舍五入</p>
+<p><strong>HALF_DOWN</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向下舍入。如果被舍弃部分 &gt; 0.5，则舍入行为同 RoundingMode.UP；否则舍入行为同 RoundingMode.DOWN</p>
+<p><strong>HALF_EVEN</strong> 向最接近数字方向舍入的舍入模式，如果与两个相邻数字的距离相等，则向相邻的偶数舍入。如果舍弃部分左边的数字为奇数，则舍入行为同 RoundingMode.HALF_UP；如果为偶数，则舍入行为同 RoundingMode.HALF_DOWN。注意，在重复进行一系列计算时，此舍入模式可以在统计上将累加错误减到最小。此舍入模式也称为“银行家舍入法”，主要在美国使用。此舍入模式类似于 Java 中对 float 和 double 算法使用的舍入策略</p>
+<p><strong>UNNECESSARY</strong> 用于断言请求的操作具有精确结果的舍入模式，因此不需要舍入。如果对生成精确结果的操作指定此舍入模式，则抛出 ArithmeticException</p>
+<h3 id="扩展">扩展<a title="#扩展" href="#扩展"></a></h3>
+<h4 id="float类型是32位，是单精度浮点表示法：">float类型是32位，是单精度浮点表示法：<a title="#float类型是32位，是单精度浮点表示法：" href="#float类型是32位，是单精度浮点表示法："></a></h4>
+<ul>
+<li>符号位（sign）占用1位，用来表示正负数，</li>
+<li>指数位（exponent）占用8位，用来表示指数，</li>
+<li>小数位（fraction）占用23位，用来表示小数，不足位数补0。</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/6423924ba682492fcccd3ea4.png" alt="单精度" loading="lazy" class="φbp"></p>
+<h4 id="double类型是64位，是双精度浮点表示法：">double类型是64位，是双精度浮点表示法：<a title="#double类型是64位，是双精度浮点表示法：" href="#double类型是64位，是双精度浮点表示法："></a></h4>
+<ul>
+<li>符号位占用1位，指数位占用11位，小数位占用52位。</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/6423924ba682492fcccd3e8a.png" alt="双精度" loading="lazy" class="φbp"></p>
+]]></content>
+      <categories>
+        <category>Java</category>
+        <category>BigDecimal</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>BigDecimal</tag>
       </tags>
   </entry>
   <entry>
@@ -2709,47 +2741,15 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </tags>
   </entry>
   <entry>
-    <title>你的 Microsoft 365 开发人员订阅</title>
-    <url>/microsoft-office-dev/</url>
-    <content><![CDATA[<blockquote>
-<p>官方说明: <code>https://learn.microsoft.com/zh-cn/office/developer-program/microsoft-365-developer-program</code></p>
-</blockquote>
-<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
-<p><code>https://developer.microsoft.com/zh-cn/microsoft-365/dev-program</code></p>
-<ol>
-<li>登录自己的微软账号</li>
-<li>点击立即加入
-<ol>
-<li>国家/地区: <code>China</code></li>
-<li>公司: 随意</li>
-<li>语言搜选项: 中文(简体)</li>
-</ol>
-</li>
-<li>下一步: 供我公司内部使用的应用程序</li>
-<li>下一步: 您感兴趣的开发领域, 随意选择</li>
-<li>设置 Microsoft 365 E5 沙盒, 选择: 可配置沙盒</li>
-<li>用户名/域/密码 自己设置</li>
-<li>最后输入手机号, 获取验证码完成(这里可能需要科学上网)</li>
-</ol>
-<h3 id="创建子用户">创建子用户<a title="#创建子用户" href="#创建子用户"></a></h3>
-<p>访问: <code>https://www.office.com/</code></p>
-<ol>
-<li>管理</li>
-<li>添加用户</li>
-</ol>
-<h3 id="调整网盘容量">调整网盘容量<a title="#调整网盘容量" href="#调整网盘容量"></a></h3>
-<p>访问网址: <code>https://admin.onedrive.com/?v=StorageSettings</code></p>
-<p>设置 &gt; OneDrive 存储限制 &gt; 默认存储限制 设置 <code>5120 (5 TB)</code> 即可</p>
-<hr>
-<blockquote>
-<p>引用: <a href="https://baijiahao.baidu.com/s?id=1762710572846867749" target="_blank">https://baijiahao.baidu.com/s?id=1762710572846867749</a></p>
-</blockquote>
+    <title>MongoDB 语法</title>
+    <url>/mongodb-grammar/</url>
+    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62c7e89bf54cd3f937fa8442.png" alt="" loading="lazy" class="φbp"></p>
 ]]></content>
       <categories>
-        <category>Office</category>
+        <category>MongoDB</category>
       </categories>
       <tags>
-        <tag>Office</tag>
+        <tag>MongoDB</tag>
       </tags>
   </entry>
   <entry>
@@ -2928,65 +2928,15 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </tags>
   </entry>
   <entry>
-    <title>iOS App苹果企业签分发</title>
-    <url>/ios-app-enterprise-sign-share/</url>
-    <content><![CDATA[<h3 id="配置">配置<a title="#配置" href="#配置"></a></h3>
-<ol>
-<li>
-<p>必须有SSL证书（HTTPS）</p>
-<blockquote>
-<p>企业签分发的 plist、icon、ipa 等文件下载链接必须是https协议的，例如：<a href="https://html.xn--tiqt5l2rd.com/company_ios/propertylist.plist" target="_blank">https://html.主域名.com/company_ios/propertylist.plist</a></p>
-</blockquote>
-</li>
-<li>
-<p>配置MIME</p>
-<blockquote>
-<p>如果是Nginx，在 nginx/conf/mime.types 配置文件里面添加如下配置</p>
-</blockquote>
-<p>说明：</p>
-<ul>
-<li>application/octet-stream表示.ipa后缀的文件是下载类型</li>
-<li>text/xml表示.plist后缀的文件是xml类型</li>
-</ul>
-</li>
-</ol>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">application/octet-stream    ipa</span><br><span class="line">text/xml    plist</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>苹果端安装协议</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">itms-services:<span class="comment">///?action=download-manifest&amp;url=https://html.主域名.com/company_ios/propertylist.plist</span></span><br></pre></td></tr></table></figure>
-<h3 id="使用">使用<a title="#使用" href="#使用"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 能触发这个地址就好</span></span><br><span class="line">window.location = <span class="string">&quot;itms-services:///?action=download-manifest&amp;url=https://html.主域名.com/company_ios/propertylist.plist&quot;</span> </span><br></pre></td></tr></table></figure>
-<h3 id="注意">注意<a title="#注意" href="#注意"></a></h3>
-<ol>
-<li>自己签名的SSL证书是不行的</li>
-<li>plist 文件中有中文会有问题，需要另存为utf-8格式保存即可</li>
-<li>plist 文件下载路径问题，下载路径不要操作三级，否者会报“无法连接到…”、“此时无法下载…”、“证书有问题…”等</li>
-<li>安装协议 itms-services: 后面是三个&quot;/&quot;，当然，我测试了两个，也是可以的</li>
-<li>客户端对 plist 文件是有缓存的，如果安装不成功，可以修改下 plist 文件名称重新试下</li>
-<li>安装过程中图片无法显示问题，这个在plist文件里面已经设置了图片地址，但是就是不显示</li>
-</ol>
-<h3 id="plist文件样本：">plist文件样本：<a title="#plist文件样本：" href="#plist文件样本："></a></h3>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">plist</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//Apple//DTD PLIST 1.0//EN&quot;</span> <span class="string">&quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">plist</span> <span class="attr">version</span>=<span class="string">&quot;1.0&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">key</span>&gt;</span>items<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">array</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">key</span>&gt;</span>assets<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">array</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>software-package<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>https://www.主域名.com/包.ipa<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>full-size-image<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>needs-shine<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">          　　　　　　　　　　<span class="tag">&lt;<span class="name">true</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>http://www.主域名.com/icon-512.png<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>display-image<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>needs-shine<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">          　　　　　　　　　　<span class="tag">&lt;<span class="name">true</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>http://www.主域名.com/icon-57.png<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">array</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">key</span>&gt;</span>metadata<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>bundle-identifier<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>com.主域名.bundleId<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>bundle-version<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>2.0.0<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>software<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>subtitle<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span><span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>title<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>App名称<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">array</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plist</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="关于跳转设置信任的逻辑">关于跳转设置信任的逻辑<a title="#关于跳转设置信任的逻辑" href="#关于跳转设置信任的逻辑"></a></h3>
-<ul>
-<li>
-<p>iOS 9 版本之前可以直接： <code>prefs:root=General&amp;path=ManagedConfigurationList </code></p>
-</li>
-<li>
-<p>iOS 10 系统之后不能直接跳转了，但是可以：<code>https://www.主域名.com/企业签文件.mobileprovision </code></p>
-</li>
-<li>
-<p>JS Demo</p>
-</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">    <span class="keyword">if</span>(agent.<span class="title function_">indexOf</span>(<span class="string">&quot;like mac os x&quot;</span>) &gt; <span class="number">0</span>) &#123;</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">var</span> ver=agent.<span class="title function_">match</span>(<span class="regexp">/cpu iphone os (.*?) like mac os/</span>);</span><br><span class="line">        ver = ver[<span class="number">1</span>].<span class="title function_">replace</span>(<span class="regexp">/_/g</span>,<span class="string">&quot;.&quot;</span>)</span><br><span class="line">        ver = ver.<span class="title function_">split</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">var</span> url = <span class="string">&quot;prefs:root=General&amp;path=ManagedConfigurationList&quot;</span>;</span><br><span class="line">        <span class="keyword">if</span> (agent.<span class="title function_">indexOf</span>(<span class="string">&#x27;ipad&#x27;</span>) &gt; <span class="number">0</span> || ver &gt; <span class="number">9</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (agent.<span class="title function_">indexOf</span>(<span class="string">&#x27;browser&#x27;</span>) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="comment">//证书替换</span></span><br><span class="line">                url   = <span class="string">&quot;https://www.主域名.com/embedded.mobileprovision&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="title function_">request</span>(url);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>Redis 配置文件说明</title>
+    <url>/redis-config-explan/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">################################## NETWORK #####################################</span><br><span class="line">bind 127.0.0.1			# 默认绑定本机所有ip地址 为了安全 可以只监听内网ip</span><br><span class="line">protected-mode yes		# 保护模式[无密码模式设置为no]</span><br><span class="line">port 6379 			# 默认端口</span><br><span class="line">tcp-backlog 511			# listen队列的长度</span><br><span class="line">timeout 0			# 客户端空闲多少s(秒)后踢掉 0禁止</span><br><span class="line">tcp-keepalive 300		# 检测挂掉的连接 单位s 0禁止</span><br><span class="line">################################# GENERAL #####################################</span><br><span class="line">daemonize no 			# 作为守护进程运行</span><br><span class="line">supervised no 			# 设成开机启动后 系统监控</span><br><span class="line">pidfile /var/run/redis_6379.pid # pid 位置</span><br><span class="line">loglevel notice 		# 设置服务端的日志级别，有下列几种选择</span><br><span class="line">				debug：记录详细信息，用于开发或调试</span><br><span class="line">				verbose：提供很多有用的信息，</span><br><span class="line">					但是又不像debug那么详尽，默认就是这一选项</span><br><span class="line">				notice：适度提醒，多用于产品环境</span><br><span class="line">				warning：仅显示重要的警告信息</span><br><span class="line">logfile &quot;&quot;			# 日志目录</span><br><span class="line">databases 16			# 指定数据库的数量</span><br><span class="line">################################ SNAPSHOTTING  ################################</span><br><span class="line">save 900 1			# 每900秒(15分钟)至少一次键值变更时被触发</span><br><span class="line">save 300 10			# 每300秒(5分钟)至少10次键值变更时被触发</span><br><span class="line">save 60 10000			# 每60秒至少10000次键值变更时被触发</span><br><span class="line">stop-writes-on-bgsave-error yes	# 后台存储错误停止写</span><br><span class="line">rdbcompression yes		# 存储至本地数据库时(持久化到rdb文件)是否压缩数据 默认为 yes</span><br><span class="line">rdbchecksum yes			# 读取和写入的时候是否支持CRC64校验 默认是开启的</span><br><span class="line">dbfilename dump.rdb 		# 镜像文件的名字</span><br><span class="line">dir ./ 				# 当前工作目录 配置文件和镜像文件等都在此目录下</span><br><span class="line">################################# REPLICATION #################################</span><br><span class="line">slave-serve-stale-data yes	# 当slave服务器和master服务器失去连接后，</span><br><span class="line">				或者当数据正在复制传输的时候，如果此参数值设置“yes”</span><br><span class="line">				slave服务器可以继续接受客户端的请求，</span><br><span class="line">				否则，会返回给请求的客户端如下信息</span><br><span class="line">				“SYNC with master in progress”</span><br><span class="line">slave-read-only yes		# 是否允许slave服务器节点只提供读服务</span><br><span class="line">repl-diskless-sync no 		# disk较慢，并且网络较快的时候，</span><br><span class="line">				可以用diskless。（默认用disk-based）</span><br><span class="line">repl-diskless-sync-delay 5	# 备份等待延迟时间 seconds</span><br><span class="line">repl-disable-tcp-nodelay no 	# 指定向slave同步数据时，是否禁用socket的NO_DELAY选 项。</span><br><span class="line">				若配置为“yes”，则禁用NO_DELAY，则TCP协议栈会合并小包统一发送，</span><br><span class="line">				这样可以减少主从节点间的包数量并节省带宽，但会增加数据同步到</span><br><span class="line">				slave的时间。若配置为“no”，表明启用NO_DELAY，则TCP协议栈不</span><br><span class="line">				会延迟小包的发送时机，这样数据同步的延时会减少，但需要更大的带宽。</span><br><span class="line">				通常情况下，应该配置为no以降低同步延时，</span><br><span class="line">				但在主从节点间网络负载已经很高的情况下，可以配置为yes</span><br><span class="line">slave-priority 100		# 指定slave的优先级。在不只1个slave存在的部署环境下，</span><br><span class="line">				当master宕机时，Redis Sentinel会将priority值最小的slave</span><br><span class="line">				提升为master需要注意的是，若该配置项为0，则对应的slave永远</span><br><span class="line">				不会自动提升为master</span><br><span class="line">############################## APPEND ONLY MODE ###############################</span><br><span class="line">appendonly no 			# 开启append only 模式之后，redis 会把所接收到的每一次写</span><br><span class="line">				操作请求都追加到appendonly.aof 文件中，当redis 重新启动时，</span><br><span class="line">				会从该文件恢复出之前的状态。但是这样会造成appendonly.aof </span><br><span class="line">				文件过大，所以redis 还支持了BGREWRITEAOF 指令，</span><br><span class="line">				对appendonly.aof 进行重新整理。默认是不开启的</span><br><span class="line">appendfilename &quot;appendonly.aof&quot;	# 默认为appendonly.aof</span><br><span class="line">appendfsync everysec		# 设置aof的同步频率，有三种选择</span><br><span class="line">				always、everysec、no，默认是everysec表示每秒同步一次</span><br><span class="line">no-appendfsync-on-rewrite no 	# 指定是否在后台aof文件rewrite期间调用fsync，</span><br><span class="line">				默认为no，表示要调用fsync（无论后台是否有子进程在刷盘）。</span><br><span class="line">				Redis在后台写RDB文件或重写afo文件期间会存在大量磁盘IO，</span><br><span class="line">				此时，在某些linux系统中，调用fsync可能会阻塞</span><br><span class="line">auto-aof-rewrite-percentage 100 # 指定Redis重写aof文件的条件，默认为100，</span><br><span class="line">				表示与上次rewrite的aof文件大小相比，当前aof文件增长量超过上</span><br><span class="line">				次afo文件大小的100%时，就会触发background rewrite。</span><br><span class="line">				若配置为0，则会禁用自动rewrite</span><br><span class="line">auto-aof-rewrite-min-size 64mb 	# 指定触发rewrite的aof文件大小。</span><br><span class="line">				若aof文件小于该值，即使当前文件的增量比例达到</span><br><span class="line">				auto-aof-rewrite-percentage的配置值，也不会触发自动</span><br><span class="line">				rewrite。即这两个配置项同时满足时，才会触发rewrite</span><br><span class="line">aof-load-truncated yes 		# 会自动发布一个log给客户端然后load（默认）</span><br><span class="line">				如果是no，用户必须手动redis-check-aof修复AOF文件才可以</span><br><span class="line">################################ LUA SCRIPTING  ###############################</span><br><span class="line">lua-time-limit 5000 		# 一个Lua脚本最长的执行时间，单位为毫秒</span><br><span class="line">				如果为0或负数表示无限执行时间，默认为5000</span><br><span class="line">################################## SLOW LOG ###################################</span><br><span class="line">slowlog-log-slower-than 10000 	# 设定执行时间，单位是微秒，执行时长超过该时间</span><br><span class="line">				的命令将会被记入log。-1表示不记录slow log; 0强制记录所有命令</span><br><span class="line">slowlog-max-len 128 		# 最多保存 128 条日志</span><br><span class="line">################################ LATENCY MONITOR ##############################</span><br><span class="line">latency-monitor-threshold 0	# 用LATENCY打印redis实例在跑命令时的耗时图表</span><br><span class="line">				只记录大于等于下边设置的值的操作。0的话，就是关闭监视。</span><br><span class="line">				可以动态开启</span><br><span class="line">############################# EVENT NOTIFICATION ##############################</span><br><span class="line">notify-keyspace-events &quot;&quot; 	# 如果开着开关。一个client进行了DEL操作在“foo”key</span><br><span class="line">				上在database0上。两个消息将会发布通过 </span><br><span class="line">				pub/sub默认所用的通知被禁用，因为用户通常不需要改特性</span><br><span class="line">				并且该特性会有性能损耗</span><br><span class="line">############################### ADVANCED CONFIG ###############################</span><br><span class="line">hash-max-ziplist-entries 512 	# hash类型的数据结构在编码上可以使用</span><br><span class="line">				ziplist和hashtable。ziplist的特点就是文件存储(以及内存存储)</span><br><span class="line">				所需的空间较小,在内容较小时,性能和hashtable几乎一样.因此redis</span><br><span class="line">				对hash类型默认采取ziplist。如果hash中条目的条目个数或者value</span><br><span class="line">				长度达到阀值,将会被重构为hashtable</span><br><span class="line">				这个参数指的是ziplist中允许存储的最大条目个数</span><br><span class="line">				默认为512，建议为128</span><br><span class="line">hash-max-ziplist-value 64	# ziplist中允许条目value值最大字节数，默认为64，建议为1024</span><br><span class="line">list-max-ziplist-size -2 	# 对于list类型,将会采取ziplist,linkedlist两种编码类型</span><br><span class="line">list-compress-depth 0		# 表示一个quicklist两端不被压缩的节点个数。</span><br><span class="line">				注：这里的节点个数是指quicklist双向链表的节点个数，</span><br><span class="line">				而不是指ziplist里面的数据项个数。实际上，一个</span><br><span class="line">				quicklist节点上的ziplist，如果被压缩，就是整体被压缩的</span><br><span class="line">				参数list-compress-depth的取值含义如下：</span><br><span class="line">				0: 是个特殊值，表示都不压缩。这是Redis的默认值。</span><br><span class="line">				1: 表示quicklist两端各有1个节点不压缩，中间的节点压缩。</span><br><span class="line">				2: 表示quicklist两端各有2个节点不压缩，中间的节点压缩。</span><br><span class="line">				3: 表示quicklist两端各有3个节点不压缩，中间的节点压缩。</span><br><span class="line">				依此类推</span><br><span class="line">				由于0是个特殊值，很容易看出quicklist的头节点和</span><br><span class="line">				尾节点总是不被压缩的，以便于在表的两端进行快速存取</span><br><span class="line">set-max-intset-entries 512 	# 当set类型中的数据都是数值类型，</span><br><span class="line">				并且set中整型元素的数量不超过指定值时，使用特殊的编码方式</span><br><span class="line">zset-max-ziplist-entries 128 	# 与hash和list类似 </span><br><span class="line">zset-max-ziplist-value 64 	# zsort也采用如下的配置来选择是否进行特殊编码来节省空间</span><br><span class="line">hll-sparse-max-bytes 3000 	# 这个限制包含了16个字节的头部，当一个HyperLogLog</span><br><span class="line">				使用sparse representation 超过了这个显示，它就会转换到</span><br><span class="line">				dense representation上</span><br><span class="line">activerehashing yes 		# 用来控制是否自动重建hash。Active rehashing每100微秒</span><br><span class="line">				使用1微秒cpu时间排序，以重组Redis的hash表。重建是通过一种</span><br><span class="line">				lazy方式，写入hash表的操作越多，需要执行rehashing的步骤</span><br><span class="line">				也越多，如果服务器当前空闲，那么rehashing操作会一直执行。</span><br><span class="line">				如果对实时性要求较高，难以接受redis时不时出现的2微秒的延迟，</span><br><span class="line">				则可以设置activerehashing为no，</span><br><span class="line">				否则建议设置为yes，以节省内存空间</span><br><span class="line">client-output-buffer-limit normal 0 0 0</span><br><span class="line">client-output-buffer-limit slave 256mb 64mb 60</span><br><span class="line">client-output-buffer-limit pubsub 32mb 8mb 60</span><br><span class="line">客户端buffer控制。在客户端与server进行的交互中,每个连接都会与一个buffer关联,</span><br><span class="line">此buffer用来队列化等待被client接受的响应信息。如果client不能及时的消费响应信息,</span><br><span class="line">那么buffer将会被不断积压而给server带来内存压力.如果buffer中积压的数据达到阀值,</span><br><span class="line">将会导致连接被关闭,buffer被移除。</span><br><span class="line">buffer控制类型包括:normal -&gt; 普通连接；slave -&gt;与slave之间的连接；</span><br><span class="line">pubsub -&gt;pub/sub类型连接，此类型的连接，往往会产生此种问题;</span><br><span class="line">因为pub端会密集的发布消息,但是sub端可能消费不足.</span><br><span class="line">指令格式:client-output-buffer-limit &lt;class&gt; &lt;hard&gt; &lt;soft&gt; &lt;seconds&gt;&quot;,</span><br><span class="line">其中hard表示buffer最大值,一旦达到阀值将立即关闭连接;</span><br><span class="line">soft表示&quot;容忍值&quot;,它和seconds配合,如果buffer值超过soft且持续时间达到了seconds,</span><br><span class="line">也将立即关闭连接,如果超过了soft但是在seconds之后，buffer数据小于了soft,连接将会被保留.</span><br><span class="line">其中hard和soft都设置为0,则表示禁用buffer控制.通常hard值大于soft</span><br><span class="line">hz 10  				# Redis server执行后台任务的频率,默认为10,</span><br><span class="line">				此值越大表示redis对&quot;间歇性task&quot;的执行次数越频繁(次数/秒)。</span><br><span class="line">				&quot;间歇性task&quot;包括&quot;过期集合&quot;检测、关闭&quot;空闲超时&quot;的连接等,此</span><br><span class="line">				值必须大于0且小于500。此值过小就意味着更多的cpu周期消耗,</span><br><span class="line">				后台task被轮询的次数更频繁。此值过大意味着&quot;内存敏感&quot;性较差。</span><br><span class="line">				建议采用默认值</span><br><span class="line">aof-rewrite-incremental-fsync yes # aof rewrite过程中,是否采取增量文件同步策略</span><br><span class="line">				默认为“yes”。 rewrite过程中,每32M数据进行一次文件同步</span><br><span class="line">				这样可以减少aof大文件写入对磁盘的操作次数</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>iOS</category>
+        <category>Redis</category>
       </categories>
       <tags>
-        <tag>iOS</tag>
+        <tag>Redis</tag>
       </tags>
   </entry>
   <entry>
@@ -3088,26 +3038,105 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </tags>
   </entry>
   <entry>
-    <title>Java 23种设计模式之创建型模式「单例模式」Singleton Pattern</title>
-    <url>/Singleton-Pattern/</url>
-    <content><![CDATA[<h2 id="单例模式---singleton-pattern">单例模式 - Singleton Pattern<a title="#单例模式---singleton-pattern" href="#单例模式---singleton-pattern"></a></h2>
-<h3 id="单例模式-之-holder-模式-(推荐)">单例模式 之 holder 模式 (推荐)<a title="#单例模式-之-holder-模式-(推荐)" href="#单例模式-之-holder-模式-(推荐)"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 holder 模式</span></span><br><span class="line"><span class="comment"> *   带有 Holder 的方法，</span></span><br><span class="line"><span class="comment"> *   类级内部类，静态的成员内部类，该内部类的实例与外部类的实例没有绑定关系</span></span><br><span class="line"><span class="comment"> *   只有在调用的时候才会被封装，从而实现了延迟加载，即懒汉式</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> *   holder方式的单例模式是最好的设计之一，也是目前用的比价广泛的设计之一</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   将懒加载和线程安全完美结合的一种方式（无锁）</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 注：</span></span><br><span class="line"><span class="comment"> *   final 修饰，不允许被继承</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfHolder</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfHolderIn</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 静态初始化，由JVM来保证线程安全</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">SingletonModeOfHolder</span> <span class="variable">INSTANCE</span> <span class="operator">=</span></span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">SingletonModeOfHolder</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> SingletonModeOfHolder <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> SingletonModeOfHolderIn.INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfHolder</span><span class="params">()</span> &#123; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="单例模式-之-饱汉模式（懒汉模式）">单例模式 之 饱汉模式（懒汉模式）<a title="#单例模式-之-饱汉模式（懒汉模式）" href="#单例模式-之-饱汉模式（懒汉模式）"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饱汉模式（懒汉模式）</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   启动快，资源占用小，使用时才实例，无锁</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *   非线程安全的，多线程下不能保证单例的唯一性</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 注：</span></span><br><span class="line"><span class="comment"> *   final 修饰，不允许被继承</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfFull</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">SingletonModeOfFull</span> <span class="variable">instance</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> SingletonModeOfFull <span class="title function_">getInstance</span> <span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">            instance = <span class="keyword">new</span> <span class="title class_">SingletonModeOfFull</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfFull</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="单例模式-之-双重锁检查-（double-check-lock）">单例模式 之 双重锁检查 （Double Check Lock）<a title="#单例模式-之-双重锁检查-（double-check-lock）" href="#单例模式-之-双重锁检查-（double-check-lock）"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饱汉模式（懒汉模式） 线程安全 双重锁检查 （Double Check Lock）</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   懒加载，线程安全</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 注：</span></span><br><span class="line"><span class="comment"> *   实例必须有 volatile 关键字修饰，保证初始化完全，保证了变量的可见性（visibility）</span></span><br><span class="line"><span class="comment"> *   被 volatile 关键字修饰的变量，如果值发生了变化，其他线程立马可见</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfFullDCL</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> <span class="type">SingletonModeOfFullDCL</span> <span class="variable">instance</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> SingletonModeOfFullDCL <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 判断实例是否存在，如果不存在进入下面的同步块</span></span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 同步 线程安全的创建实例</span></span><br><span class="line">            <span class="keyword">synchronized</span> (SingletonModeOfFullDCL.class) &#123;</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 再次检查实例是否存在</span></span><br><span class="line">                <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">                    instance = <span class="keyword">new</span> <span class="title class_">SingletonModeOfFullDCL</span>();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfFullDCL</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="单例模式-之-饱汉模式（懒汉模式）-线程安全">单例模式 之 饱汉模式（懒汉模式） 线程安全<a title="#单例模式-之-饱汉模式（懒汉模式）-线程安全" href="#单例模式-之-饱汉模式（懒汉模式）-线程安全"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饱汉模式（懒汉模式） 线程安全</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   启动快，资源占用小，使用时才实例，有锁</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *   synchronized 为独占排他锁，并发性差，即使在创建成功之后，获取实例仍然是串行化操作</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfFullSafe</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">SingletonModeOfFullSafe</span> <span class="variable">instance</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> SingletonModeOfFullSafe <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">            instance = <span class="keyword">new</span> <span class="title class_">SingletonModeOfFullSafe</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfFullSafe</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="单例模式-之-饿汉模式">单例模式 之 饿汉模式<a title="#单例模式-之-饿汉模式" href="#单例模式-之-饿汉模式"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饿汉模式</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   饿汉模式天生是线程安全的，使用时没有延迟</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *   时候即创建实例，启动慢，有可能造成资源浪费</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfHungry</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 类加载即创建对象</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">static</span> <span class="type">SingletonModeOfHungry</span> <span class="variable">INSTANCE</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">SingletonModeOfHungry</span>();</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 提供给外接获取对象的方法</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> SingletonModeOfHungry <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 私有化构造器 防止外接创建对象</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">SingletonModeOfHungry</span><span class="params">()</span> &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>iOS App苹果企业签分发</title>
+    <url>/ios-app-enterprise-sign-share/</url>
+    <content><![CDATA[<h3 id="配置">配置<a title="#配置" href="#配置"></a></h3>
+<ol>
+<li>
+<p>必须有SSL证书（HTTPS）</p>
+<blockquote>
+<p>企业签分发的 plist、icon、ipa 等文件下载链接必须是https协议的，例如：<a href="https://html.xn--tiqt5l2rd.com/company_ios/propertylist.plist" target="_blank">https://html.主域名.com/company_ios/propertylist.plist</a></p>
+</blockquote>
+</li>
+<li>
+<p>配置MIME</p>
+<blockquote>
+<p>如果是Nginx，在 nginx/conf/mime.types 配置文件里面添加如下配置</p>
+</blockquote>
+<p>说明：</p>
+<ul>
+<li>application/octet-stream表示.ipa后缀的文件是下载类型</li>
+<li>text/xml表示.plist后缀的文件是xml类型</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">application/octet-stream    ipa</span><br><span class="line">text/xml    plist</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>苹果端安装协议</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">itms-services:<span class="comment">///?action=download-manifest&amp;url=https://html.主域名.com/company_ios/propertylist.plist</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用">使用<a title="#使用" href="#使用"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 能触发这个地址就好</span></span><br><span class="line">window.location = <span class="string">&quot;itms-services:///?action=download-manifest&amp;url=https://html.主域名.com/company_ios/propertylist.plist&quot;</span> </span><br></pre></td></tr></table></figure>
+<h3 id="注意">注意<a title="#注意" href="#注意"></a></h3>
+<ol>
+<li>自己签名的SSL证书是不行的</li>
+<li>plist 文件中有中文会有问题，需要另存为utf-8格式保存即可</li>
+<li>plist 文件下载路径问题，下载路径不要操作三级，否者会报“无法连接到…”、“此时无法下载…”、“证书有问题…”等</li>
+<li>安装协议 itms-services: 后面是三个&quot;/&quot;，当然，我测试了两个，也是可以的</li>
+<li>客户端对 plist 文件是有缓存的，如果安装不成功，可以修改下 plist 文件名称重新试下</li>
+<li>安装过程中图片无法显示问题，这个在plist文件里面已经设置了图片地址，但是就是不显示</li>
+</ol>
+<h3 id="plist文件样本：">plist文件样本：<a title="#plist文件样本：" href="#plist文件样本："></a></h3>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">plist</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//Apple//DTD PLIST 1.0//EN&quot;</span> <span class="string">&quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">plist</span> <span class="attr">version</span>=<span class="string">&quot;1.0&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">key</span>&gt;</span>items<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">array</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">key</span>&gt;</span>assets<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">array</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>software-package<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>https://www.主域名.com/包.ipa<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>full-size-image<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>needs-shine<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">          　　　　　　　　　　<span class="tag">&lt;<span class="name">true</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>http://www.主域名.com/icon-512.png<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>display-image<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>needs-shine<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">          　　　　　　　　　　<span class="tag">&lt;<span class="name">true</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>http://www.主域名.com/icon-57.png<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">array</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">key</span>&gt;</span>metadata<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>bundle-identifier<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>com.主域名.bundleId<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>bundle-version<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>2.0.0<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>software<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>subtitle<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span><span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>title<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>App名称<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">array</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plist</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="关于跳转设置信任的逻辑">关于跳转设置信任的逻辑<a title="#关于跳转设置信任的逻辑" href="#关于跳转设置信任的逻辑"></a></h3>
+<ul>
+<li>
+<p>iOS 9 版本之前可以直接： <code>prefs:root=General&amp;path=ManagedConfigurationList </code></p>
+</li>
+<li>
+<p>iOS 10 系统之后不能直接跳转了，但是可以：<code>https://www.主域名.com/企业签文件.mobileprovision </code></p>
+</li>
+<li>
+<p>JS Demo</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">    <span class="keyword">if</span>(agent.<span class="title function_">indexOf</span>(<span class="string">&quot;like mac os x&quot;</span>) &gt; <span class="number">0</span>) &#123;</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">var</span> ver=agent.<span class="title function_">match</span>(<span class="regexp">/cpu iphone os (.*?) like mac os/</span>);</span><br><span class="line">        ver = ver[<span class="number">1</span>].<span class="title function_">replace</span>(<span class="regexp">/_/g</span>,<span class="string">&quot;.&quot;</span>)</span><br><span class="line">        ver = ver.<span class="title function_">split</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">var</span> url = <span class="string">&quot;prefs:root=General&amp;path=ManagedConfigurationList&quot;</span>;</span><br><span class="line">        <span class="keyword">if</span> (agent.<span class="title function_">indexOf</span>(<span class="string">&#x27;ipad&#x27;</span>) &gt; <span class="number">0</span> || ver &gt; <span class="number">9</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (agent.<span class="title function_">indexOf</span>(<span class="string">&#x27;browser&#x27;</span>) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="comment">//证书替换</span></span><br><span class="line">                url   = <span class="string">&quot;https://www.主域名.com/embedded.mobileprovision&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="title function_">request</span>(url);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>Java</category>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JVM - 详解JVM常量池</title>
+    <url>/jvm-constant-pool/</url>
+    <content><![CDATA[<p>JVM 官方文档(Java Language and Virtual Machine Specifications)<br>
+<code>https://docs.oracle.com/javase/specs/index.html</code></p>
+<p>Java SE 8 Edition<br>
+<code>https://docs.oracle.com/javase/specs/jvms/se8/html/index.html</code></p>
+<p>Java SE 8 参数文档<br>
+<code>https://docs.oracle.com/javase/8/docs/technotes/tools/unix/java.html</code></p>
+<p>详解JVM的常量池<br>
+转载：<code>http://t.csdn.cn/jL3A6</code></p>
+<p>链接：<a href="/h/jvm/2023-04-03Detailed-Explanation-of-JVM-Constant-Pool.html">详解JVM的常量池</a></p>
+]]></content>
+      <categories>
+        <category>JVM</category>
+      </categories>
+      <tags>
+        <tag>JVM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java 23种设计模式 说明</title>
+    <url>/Design-Pattern/</url>
+    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62878e6e09475431296d65c4.png" alt="Java 23种设计模式关系" loading="lazy" class="φbp"></p>
+<h2 id="设计模式">设计模式<a title="#设计模式" href="#设计模式"></a></h2>
+<p>总体来说 <strong>设计模式</strong> 分为三类:</p>
+<p>创建型模式：共五种：工厂方法模式、抽象工厂模式、单例模式、创建者模式、原型模式。<br>
+结构型模式：共七种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式。<br>
+行为型模式：共十一种：策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。</p>
+<p>还有另外两类：并发型模式和线程池模式</p>
+<p><a href="https://cloud.tencent.com/developer/article/1602270" target="_blank">https://cloud.tencent.com/developer/article/1602270</a></p>
+<p><a href="https://blog.csdn.net/doymm2008/article/details/13288067" target="_blank">https://blog.csdn.net/doymm2008/article/details/13288067</a></p>
+]]></content>
+      <categories>
         <category>Design Pattern</category>
       </categories>
       <tags>
-        <tag>Singleton Pattern</tag>
+        <tag>Design Pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -3153,6 +3182,29 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </categories>
       <tags>
         <tag>Strategy Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java 23种设计模式之创建型模式「单例模式」Singleton Pattern</title>
+    <url>/Singleton-Pattern/</url>
+    <content><![CDATA[<h2 id="单例模式---singleton-pattern">单例模式 - Singleton Pattern<a title="#单例模式---singleton-pattern" href="#单例模式---singleton-pattern"></a></h2>
+<h3 id="单例模式-之-holder-模式-(推荐)">单例模式 之 holder 模式 (推荐)<a title="#单例模式-之-holder-模式-(推荐)" href="#单例模式-之-holder-模式-(推荐)"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 holder 模式</span></span><br><span class="line"><span class="comment"> *   带有 Holder 的方法，</span></span><br><span class="line"><span class="comment"> *   类级内部类，静态的成员内部类，该内部类的实例与外部类的实例没有绑定关系</span></span><br><span class="line"><span class="comment"> *   只有在调用的时候才会被封装，从而实现了延迟加载，即懒汉式</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> *   holder方式的单例模式是最好的设计之一，也是目前用的比价广泛的设计之一</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   将懒加载和线程安全完美结合的一种方式（无锁）</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 注：</span></span><br><span class="line"><span class="comment"> *   final 修饰，不允许被继承</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfHolder</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfHolderIn</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 静态初始化，由JVM来保证线程安全</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">SingletonModeOfHolder</span> <span class="variable">INSTANCE</span> <span class="operator">=</span></span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">SingletonModeOfHolder</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> SingletonModeOfHolder <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> SingletonModeOfHolderIn.INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfHolder</span><span class="params">()</span> &#123; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="单例模式-之-饱汉模式（懒汉模式）">单例模式 之 饱汉模式（懒汉模式）<a title="#单例模式-之-饱汉模式（懒汉模式）" href="#单例模式-之-饱汉模式（懒汉模式）"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饱汉模式（懒汉模式）</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   启动快，资源占用小，使用时才实例，无锁</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *   非线程安全的，多线程下不能保证单例的唯一性</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 注：</span></span><br><span class="line"><span class="comment"> *   final 修饰，不允许被继承</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfFull</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">SingletonModeOfFull</span> <span class="variable">instance</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> SingletonModeOfFull <span class="title function_">getInstance</span> <span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">            instance = <span class="keyword">new</span> <span class="title class_">SingletonModeOfFull</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfFull</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="单例模式-之-双重锁检查-（double-check-lock）">单例模式 之 双重锁检查 （Double Check Lock）<a title="#单例模式-之-双重锁检查-（double-check-lock）" href="#单例模式-之-双重锁检查-（double-check-lock）"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饱汉模式（懒汉模式） 线程安全 双重锁检查 （Double Check Lock）</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   懒加载，线程安全</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 注：</span></span><br><span class="line"><span class="comment"> *   实例必须有 volatile 关键字修饰，保证初始化完全，保证了变量的可见性（visibility）</span></span><br><span class="line"><span class="comment"> *   被 volatile 关键字修饰的变量，如果值发生了变化，其他线程立马可见</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfFullDCL</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> <span class="type">SingletonModeOfFullDCL</span> <span class="variable">instance</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> SingletonModeOfFullDCL <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 判断实例是否存在，如果不存在进入下面的同步块</span></span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 同步 线程安全的创建实例</span></span><br><span class="line">            <span class="keyword">synchronized</span> (SingletonModeOfFullDCL.class) &#123;</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 再次检查实例是否存在</span></span><br><span class="line">                <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">                    instance = <span class="keyword">new</span> <span class="title class_">SingletonModeOfFullDCL</span>();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfFullDCL</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="单例模式-之-饱汉模式（懒汉模式）-线程安全">单例模式 之 饱汉模式（懒汉模式） 线程安全<a title="#单例模式-之-饱汉模式（懒汉模式）-线程安全" href="#单例模式-之-饱汉模式（懒汉模式）-线程安全"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饱汉模式（懒汉模式） 线程安全</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   启动快，资源占用小，使用时才实例，有锁</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *   synchronized 为独占排他锁，并发性差，即使在创建成功之后，获取实例仍然是串行化操作</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfFullSafe</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">SingletonModeOfFullSafe</span> <span class="variable">instance</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> SingletonModeOfFullSafe <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">            instance = <span class="keyword">new</span> <span class="title class_">SingletonModeOfFullSafe</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">SingletonModeOfFullSafe</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="单例模式-之-饿汉模式">单例模式 之 饿汉模式<a title="#单例模式-之-饿汉模式" href="#单例模式-之-饿汉模式"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单例模式 之 饿汉模式</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 优点：</span></span><br><span class="line"><span class="comment"> *   饿汉模式天生是线程安全的，使用时没有延迟</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 缺点：</span></span><br><span class="line"><span class="comment"> *   时候即创建实例，启动慢，有可能造成资源浪费</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 李先森</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">SingletonModeOfHungry</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 类加载即创建对象</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">static</span> <span class="type">SingletonModeOfHungry</span> <span class="variable">INSTANCE</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">SingletonModeOfHungry</span>();</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 提供给外接获取对象的方法</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> SingletonModeOfHungry <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 私有化构造器 防止外接创建对象</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">SingletonModeOfHungry</span><span class="params">()</span> &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Java</category>
+        <category>Design Pattern</category>
+      </categories>
+      <tags>
+        <tag>Singleton Pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -3204,93 +3256,6 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </categories>
       <tags>
         <tag>JVM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JVM - 详解JVM常量池</title>
-    <url>/jvm-constant-pool/</url>
-    <content><![CDATA[<p>JVM 官方文档(Java Language and Virtual Machine Specifications)<br>
-<code>https://docs.oracle.com/javase/specs/index.html</code></p>
-<p>Java SE 8 Edition<br>
-<code>https://docs.oracle.com/javase/specs/jvms/se8/html/index.html</code></p>
-<p>Java SE 8 参数文档<br>
-<code>https://docs.oracle.com/javase/8/docs/technotes/tools/unix/java.html</code></p>
-<p>详解JVM的常量池<br>
-转载：<code>http://t.csdn.cn/jL3A6</code></p>
-<p>链接：<a href="/h/jvm/2023-04-03Detailed-Explanation-of-JVM-Constant-Pool.html">详解JVM的常量池</a></p>
-]]></content>
-      <categories>
-        <category>JVM</category>
-      </categories>
-      <tags>
-        <tag>JVM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java 23种设计模式 说明</title>
-    <url>/Design-Pattern/</url>
-    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62878e6e09475431296d65c4.png" alt="Java 23种设计模式关系" loading="lazy" class="φbp"></p>
-<h2 id="设计模式">设计模式<a title="#设计模式" href="#设计模式"></a></h2>
-<p>总体来说 <strong>设计模式</strong> 分为三类:</p>
-<p>创建型模式：共五种：工厂方法模式、抽象工厂模式、单例模式、创建者模式、原型模式。<br>
-结构型模式：共七种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式。<br>
-行为型模式：共十一种：策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。</p>
-<p>还有另外两类：并发型模式和线程池模式</p>
-<p><a href="https://cloud.tencent.com/developer/article/1602270" target="_blank">https://cloud.tencent.com/developer/article/1602270</a></p>
-<p><a href="https://blog.csdn.net/doymm2008/article/details/13288067" target="_blank">https://blog.csdn.net/doymm2008/article/details/13288067</a></p>
-]]></content>
-      <categories>
-        <category>Design Pattern</category>
-      </categories>
-      <tags>
-        <tag>Design Pattern</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java 自定义注解的使用</title>
-    <url>/Java-Annotation/</url>
-    <content><![CDATA[<p><strong>自定义注解</strong> 说明</p>
-<ul>
-<li>自定义注解的修饰符为：<code>@interface</code></li>
-<li>注解可以添加成员变量, 成员变量以方法的形式定义</li>
-<li>需要使用 <code>@Retention</code> 注解来规定该注解的声明周期</li>
-<li>需要使用 <code>@Target</code> 注解来规定该注解的使用范围</li>
-</ul>
-<h3 id="java中的元注解(用来标识注解的注解),-共有四个">Java中的元注解(用来标识注解的注解), 共有四个<a title="#java中的元注解(用来标识注解的注解),-共有四个" href="#java中的元注解(用来标识注解的注解),-共有四个"></a></h3>
-<ol>
-<li><code>@Target</code> : 注解的作用目标</li>
-<li><code>@Retention</code> : 注解的保留位置, 注解的生命周期</li>
-<li><code>@Document</code> : 包含在javadoc文档中</li>
-<li><code>@Inherited</code> : 子类可以继承父类的该注解</li>
-</ol>
-<h4 id="@target-定义注解的使用位置,-作用目标,-取值范围"><code>@Target</code> 定义注解的使用位置, 作用目标, 取值范围<a title="#@target-定义注解的使用位置,-作用目标,-取值范围" href="#@target-定义注解的使用位置,-作用目标,-取值范围"></a></h4>
-<ul>
-<li><code>TYPE</code> : 类</li>
-<li><code>FIELD</code> : 字段</li>
-<li><code>METHOD</code> : 方法</li>
-<li><code>PARAMETER</code> : 参数</li>
-<li><code>CONSTRUCTOR</code> : 构造方法</li>
-<li><code>LOCAL_VARIABLE</code> : 局部变量</li>
-<li><code>ANNOTATION_TYPE</code> : 注解类型</li>
-<li><code>PACKAGE</code> : 包名</li>
-<li><code>TYPE_PARAMETER</code> : 类型参数</li>
-<li><code>TYPE_USE</code> : 任何类型</li>
-</ul>
-<h4 id="@retention-生命周期-三种情况"><code>@Retention</code> 生命周期 三种情况<a title="#@retention-生命周期-三种情况" href="#@retention-生命周期-三种情况"></a></h4>
-<ul>
-<li><code>@Retention(RetentionPolicy.SOURCE)</code> : 注解只存在于源码中(编译检查阶段)</li>
-<li><code>@Retention(RetentionPolicy.CLASS)</code> : 注解会在class字节码文件中存在 (默认保留策略)(class编译阶段)</li>
-<li><code>@Retention(RetentionPolicy.RUNTIME)</code> : 所有阶段都会保留(运行阶段)</li>
-</ul>
-<h4 id="@document-表示所修饰的注解在被javadoc解析时,-保留下来"><code>@Document</code> 表示所修饰的注解在被javadoc解析时, 保留下来<a title="#@document-表示所修饰的注解在被javadoc解析时,-保留下来" href="#@document-表示所修饰的注解在被javadoc解析时,-保留下来"></a></h4>
-<h4 id="@inherited-被它修饰的注解可以被继承"><code>@Inherited</code> 被它修饰的注解可以被继承<a title="#@inherited-被它修饰的注解可以被继承" href="#@inherited-被它修饰的注解可以被继承"></a></h4>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>Annotation</tag>
       </tags>
   </entry>
   <entry>
@@ -3382,15 +3347,50 @@ ip2region v2.0 - 是一个离线IP地址定位库和IP定位数据管理框架�
       </tags>
   </entry>
   <entry>
-    <title>Redis 配置文件说明</title>
-    <url>/redis-config-explan/</url>
-    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">################################## NETWORK #####################################</span><br><span class="line">bind 127.0.0.1			# 默认绑定本机所有ip地址 为了安全 可以只监听内网ip</span><br><span class="line">protected-mode yes		# 保护模式[无密码模式设置为no]</span><br><span class="line">port 6379 			# 默认端口</span><br><span class="line">tcp-backlog 511			# listen队列的长度</span><br><span class="line">timeout 0			# 客户端空闲多少s(秒)后踢掉 0禁止</span><br><span class="line">tcp-keepalive 300		# 检测挂掉的连接 单位s 0禁止</span><br><span class="line">################################# GENERAL #####################################</span><br><span class="line">daemonize no 			# 作为守护进程运行</span><br><span class="line">supervised no 			# 设成开机启动后 系统监控</span><br><span class="line">pidfile /var/run/redis_6379.pid # pid 位置</span><br><span class="line">loglevel notice 		# 设置服务端的日志级别，有下列几种选择</span><br><span class="line">				debug：记录详细信息，用于开发或调试</span><br><span class="line">				verbose：提供很多有用的信息，</span><br><span class="line">					但是又不像debug那么详尽，默认就是这一选项</span><br><span class="line">				notice：适度提醒，多用于产品环境</span><br><span class="line">				warning：仅显示重要的警告信息</span><br><span class="line">logfile &quot;&quot;			# 日志目录</span><br><span class="line">databases 16			# 指定数据库的数量</span><br><span class="line">################################ SNAPSHOTTING  ################################</span><br><span class="line">save 900 1			# 每900秒(15分钟)至少一次键值变更时被触发</span><br><span class="line">save 300 10			# 每300秒(5分钟)至少10次键值变更时被触发</span><br><span class="line">save 60 10000			# 每60秒至少10000次键值变更时被触发</span><br><span class="line">stop-writes-on-bgsave-error yes	# 后台存储错误停止写</span><br><span class="line">rdbcompression yes		# 存储至本地数据库时(持久化到rdb文件)是否压缩数据 默认为 yes</span><br><span class="line">rdbchecksum yes			# 读取和写入的时候是否支持CRC64校验 默认是开启的</span><br><span class="line">dbfilename dump.rdb 		# 镜像文件的名字</span><br><span class="line">dir ./ 				# 当前工作目录 配置文件和镜像文件等都在此目录下</span><br><span class="line">################################# REPLICATION #################################</span><br><span class="line">slave-serve-stale-data yes	# 当slave服务器和master服务器失去连接后，</span><br><span class="line">				或者当数据正在复制传输的时候，如果此参数值设置“yes”</span><br><span class="line">				slave服务器可以继续接受客户端的请求，</span><br><span class="line">				否则，会返回给请求的客户端如下信息</span><br><span class="line">				“SYNC with master in progress”</span><br><span class="line">slave-read-only yes		# 是否允许slave服务器节点只提供读服务</span><br><span class="line">repl-diskless-sync no 		# disk较慢，并且网络较快的时候，</span><br><span class="line">				可以用diskless。（默认用disk-based）</span><br><span class="line">repl-diskless-sync-delay 5	# 备份等待延迟时间 seconds</span><br><span class="line">repl-disable-tcp-nodelay no 	# 指定向slave同步数据时，是否禁用socket的NO_DELAY选 项。</span><br><span class="line">				若配置为“yes”，则禁用NO_DELAY，则TCP协议栈会合并小包统一发送，</span><br><span class="line">				这样可以减少主从节点间的包数量并节省带宽，但会增加数据同步到</span><br><span class="line">				slave的时间。若配置为“no”，表明启用NO_DELAY，则TCP协议栈不</span><br><span class="line">				会延迟小包的发送时机，这样数据同步的延时会减少，但需要更大的带宽。</span><br><span class="line">				通常情况下，应该配置为no以降低同步延时，</span><br><span class="line">				但在主从节点间网络负载已经很高的情况下，可以配置为yes</span><br><span class="line">slave-priority 100		# 指定slave的优先级。在不只1个slave存在的部署环境下，</span><br><span class="line">				当master宕机时，Redis Sentinel会将priority值最小的slave</span><br><span class="line">				提升为master需要注意的是，若该配置项为0，则对应的slave永远</span><br><span class="line">				不会自动提升为master</span><br><span class="line">############################## APPEND ONLY MODE ###############################</span><br><span class="line">appendonly no 			# 开启append only 模式之后，redis 会把所接收到的每一次写</span><br><span class="line">				操作请求都追加到appendonly.aof 文件中，当redis 重新启动时，</span><br><span class="line">				会从该文件恢复出之前的状态。但是这样会造成appendonly.aof </span><br><span class="line">				文件过大，所以redis 还支持了BGREWRITEAOF 指令，</span><br><span class="line">				对appendonly.aof 进行重新整理。默认是不开启的</span><br><span class="line">appendfilename &quot;appendonly.aof&quot;	# 默认为appendonly.aof</span><br><span class="line">appendfsync everysec		# 设置aof的同步频率，有三种选择</span><br><span class="line">				always、everysec、no，默认是everysec表示每秒同步一次</span><br><span class="line">no-appendfsync-on-rewrite no 	# 指定是否在后台aof文件rewrite期间调用fsync，</span><br><span class="line">				默认为no，表示要调用fsync（无论后台是否有子进程在刷盘）。</span><br><span class="line">				Redis在后台写RDB文件或重写afo文件期间会存在大量磁盘IO，</span><br><span class="line">				此时，在某些linux系统中，调用fsync可能会阻塞</span><br><span class="line">auto-aof-rewrite-percentage 100 # 指定Redis重写aof文件的条件，默认为100，</span><br><span class="line">				表示与上次rewrite的aof文件大小相比，当前aof文件增长量超过上</span><br><span class="line">				次afo文件大小的100%时，就会触发background rewrite。</span><br><span class="line">				若配置为0，则会禁用自动rewrite</span><br><span class="line">auto-aof-rewrite-min-size 64mb 	# 指定触发rewrite的aof文件大小。</span><br><span class="line">				若aof文件小于该值，即使当前文件的增量比例达到</span><br><span class="line">				auto-aof-rewrite-percentage的配置值，也不会触发自动</span><br><span class="line">				rewrite。即这两个配置项同时满足时，才会触发rewrite</span><br><span class="line">aof-load-truncated yes 		# 会自动发布一个log给客户端然后load（默认）</span><br><span class="line">				如果是no，用户必须手动redis-check-aof修复AOF文件才可以</span><br><span class="line">################################ LUA SCRIPTING  ###############################</span><br><span class="line">lua-time-limit 5000 		# 一个Lua脚本最长的执行时间，单位为毫秒</span><br><span class="line">				如果为0或负数表示无限执行时间，默认为5000</span><br><span class="line">################################## SLOW LOG ###################################</span><br><span class="line">slowlog-log-slower-than 10000 	# 设定执行时间，单位是微秒，执行时长超过该时间</span><br><span class="line">				的命令将会被记入log。-1表示不记录slow log; 0强制记录所有命令</span><br><span class="line">slowlog-max-len 128 		# 最多保存 128 条日志</span><br><span class="line">################################ LATENCY MONITOR ##############################</span><br><span class="line">latency-monitor-threshold 0	# 用LATENCY打印redis实例在跑命令时的耗时图表</span><br><span class="line">				只记录大于等于下边设置的值的操作。0的话，就是关闭监视。</span><br><span class="line">				可以动态开启</span><br><span class="line">############################# EVENT NOTIFICATION ##############################</span><br><span class="line">notify-keyspace-events &quot;&quot; 	# 如果开着开关。一个client进行了DEL操作在“foo”key</span><br><span class="line">				上在database0上。两个消息将会发布通过 </span><br><span class="line">				pub/sub默认所用的通知被禁用，因为用户通常不需要改特性</span><br><span class="line">				并且该特性会有性能损耗</span><br><span class="line">############################### ADVANCED CONFIG ###############################</span><br><span class="line">hash-max-ziplist-entries 512 	# hash类型的数据结构在编码上可以使用</span><br><span class="line">				ziplist和hashtable。ziplist的特点就是文件存储(以及内存存储)</span><br><span class="line">				所需的空间较小,在内容较小时,性能和hashtable几乎一样.因此redis</span><br><span class="line">				对hash类型默认采取ziplist。如果hash中条目的条目个数或者value</span><br><span class="line">				长度达到阀值,将会被重构为hashtable</span><br><span class="line">				这个参数指的是ziplist中允许存储的最大条目个数</span><br><span class="line">				默认为512，建议为128</span><br><span class="line">hash-max-ziplist-value 64	# ziplist中允许条目value值最大字节数，默认为64，建议为1024</span><br><span class="line">list-max-ziplist-size -2 	# 对于list类型,将会采取ziplist,linkedlist两种编码类型</span><br><span class="line">list-compress-depth 0		# 表示一个quicklist两端不被压缩的节点个数。</span><br><span class="line">				注：这里的节点个数是指quicklist双向链表的节点个数，</span><br><span class="line">				而不是指ziplist里面的数据项个数。实际上，一个</span><br><span class="line">				quicklist节点上的ziplist，如果被压缩，就是整体被压缩的</span><br><span class="line">				参数list-compress-depth的取值含义如下：</span><br><span class="line">				0: 是个特殊值，表示都不压缩。这是Redis的默认值。</span><br><span class="line">				1: 表示quicklist两端各有1个节点不压缩，中间的节点压缩。</span><br><span class="line">				2: 表示quicklist两端各有2个节点不压缩，中间的节点压缩。</span><br><span class="line">				3: 表示quicklist两端各有3个节点不压缩，中间的节点压缩。</span><br><span class="line">				依此类推</span><br><span class="line">				由于0是个特殊值，很容易看出quicklist的头节点和</span><br><span class="line">				尾节点总是不被压缩的，以便于在表的两端进行快速存取</span><br><span class="line">set-max-intset-entries 512 	# 当set类型中的数据都是数值类型，</span><br><span class="line">				并且set中整型元素的数量不超过指定值时，使用特殊的编码方式</span><br><span class="line">zset-max-ziplist-entries 128 	# 与hash和list类似 </span><br><span class="line">zset-max-ziplist-value 64 	# zsort也采用如下的配置来选择是否进行特殊编码来节省空间</span><br><span class="line">hll-sparse-max-bytes 3000 	# 这个限制包含了16个字节的头部，当一个HyperLogLog</span><br><span class="line">				使用sparse representation 超过了这个显示，它就会转换到</span><br><span class="line">				dense representation上</span><br><span class="line">activerehashing yes 		# 用来控制是否自动重建hash。Active rehashing每100微秒</span><br><span class="line">				使用1微秒cpu时间排序，以重组Redis的hash表。重建是通过一种</span><br><span class="line">				lazy方式，写入hash表的操作越多，需要执行rehashing的步骤</span><br><span class="line">				也越多，如果服务器当前空闲，那么rehashing操作会一直执行。</span><br><span class="line">				如果对实时性要求较高，难以接受redis时不时出现的2微秒的延迟，</span><br><span class="line">				则可以设置activerehashing为no，</span><br><span class="line">				否则建议设置为yes，以节省内存空间</span><br><span class="line">client-output-buffer-limit normal 0 0 0</span><br><span class="line">client-output-buffer-limit slave 256mb 64mb 60</span><br><span class="line">client-output-buffer-limit pubsub 32mb 8mb 60</span><br><span class="line">客户端buffer控制。在客户端与server进行的交互中,每个连接都会与一个buffer关联,</span><br><span class="line">此buffer用来队列化等待被client接受的响应信息。如果client不能及时的消费响应信息,</span><br><span class="line">那么buffer将会被不断积压而给server带来内存压力.如果buffer中积压的数据达到阀值,</span><br><span class="line">将会导致连接被关闭,buffer被移除。</span><br><span class="line">buffer控制类型包括:normal -&gt; 普通连接；slave -&gt;与slave之间的连接；</span><br><span class="line">pubsub -&gt;pub/sub类型连接，此类型的连接，往往会产生此种问题;</span><br><span class="line">因为pub端会密集的发布消息,但是sub端可能消费不足.</span><br><span class="line">指令格式:client-output-buffer-limit &lt;class&gt; &lt;hard&gt; &lt;soft&gt; &lt;seconds&gt;&quot;,</span><br><span class="line">其中hard表示buffer最大值,一旦达到阀值将立即关闭连接;</span><br><span class="line">soft表示&quot;容忍值&quot;,它和seconds配合,如果buffer值超过soft且持续时间达到了seconds,</span><br><span class="line">也将立即关闭连接,如果超过了soft但是在seconds之后，buffer数据小于了soft,连接将会被保留.</span><br><span class="line">其中hard和soft都设置为0,则表示禁用buffer控制.通常hard值大于soft</span><br><span class="line">hz 10  				# Redis server执行后台任务的频率,默认为10,</span><br><span class="line">				此值越大表示redis对&quot;间歇性task&quot;的执行次数越频繁(次数/秒)。</span><br><span class="line">				&quot;间歇性task&quot;包括&quot;过期集合&quot;检测、关闭&quot;空闲超时&quot;的连接等,此</span><br><span class="line">				值必须大于0且小于500。此值过小就意味着更多的cpu周期消耗,</span><br><span class="line">				后台task被轮询的次数更频繁。此值过大意味着&quot;内存敏感&quot;性较差。</span><br><span class="line">				建议采用默认值</span><br><span class="line">aof-rewrite-incremental-fsync yes # aof rewrite过程中,是否采取增量文件同步策略</span><br><span class="line">				默认为“yes”。 rewrite过程中,每32M数据进行一次文件同步</span><br><span class="line">				这样可以减少aof大文件写入对磁盘的操作次数</span><br></pre></td></tr></table></figure>
+    <title>Java 自定义注解的使用</title>
+    <url>/Java-Annotation/</url>
+    <content><![CDATA[<p><strong>自定义注解</strong> 说明</p>
+<ul>
+<li>自定义注解的修饰符为：<code>@interface</code></li>
+<li>注解可以添加成员变量, 成员变量以方法的形式定义</li>
+<li>需要使用 <code>@Retention</code> 注解来规定该注解的声明周期</li>
+<li>需要使用 <code>@Target</code> 注解来规定该注解的使用范围</li>
+</ul>
+<h3 id="java中的元注解(用来标识注解的注解),-共有四个">Java中的元注解(用来标识注解的注解), 共有四个<a title="#java中的元注解(用来标识注解的注解),-共有四个" href="#java中的元注解(用来标识注解的注解),-共有四个"></a></h3>
+<ol>
+<li><code>@Target</code> : 注解的作用目标</li>
+<li><code>@Retention</code> : 注解的保留位置, 注解的生命周期</li>
+<li><code>@Document</code> : 包含在javadoc文档中</li>
+<li><code>@Inherited</code> : 子类可以继承父类的该注解</li>
+</ol>
+<h4 id="@target-定义注解的使用位置,-作用目标,-取值范围"><code>@Target</code> 定义注解的使用位置, 作用目标, 取值范围<a title="#@target-定义注解的使用位置,-作用目标,-取值范围" href="#@target-定义注解的使用位置,-作用目标,-取值范围"></a></h4>
+<ul>
+<li><code>TYPE</code> : 类</li>
+<li><code>FIELD</code> : 字段</li>
+<li><code>METHOD</code> : 方法</li>
+<li><code>PARAMETER</code> : 参数</li>
+<li><code>CONSTRUCTOR</code> : 构造方法</li>
+<li><code>LOCAL_VARIABLE</code> : 局部变量</li>
+<li><code>ANNOTATION_TYPE</code> : 注解类型</li>
+<li><code>PACKAGE</code> : 包名</li>
+<li><code>TYPE_PARAMETER</code> : 类型参数</li>
+<li><code>TYPE_USE</code> : 任何类型</li>
+</ul>
+<h4 id="@retention-生命周期-三种情况"><code>@Retention</code> 生命周期 三种情况<a title="#@retention-生命周期-三种情况" href="#@retention-生命周期-三种情况"></a></h4>
+<ul>
+<li><code>@Retention(RetentionPolicy.SOURCE)</code> : 注解只存在于源码中(编译检查阶段)</li>
+<li><code>@Retention(RetentionPolicy.CLASS)</code> : 注解会在class字节码文件中存在 (默认保留策略)(class编译阶段)</li>
+<li><code>@Retention(RetentionPolicy.RUNTIME)</code> : 所有阶段都会保留(运行阶段)</li>
+</ul>
+<h4 id="@document-表示所修饰的注解在被javadoc解析时,-保留下来"><code>@Document</code> 表示所修饰的注解在被javadoc解析时, 保留下来<a title="#@document-表示所修饰的注解在被javadoc解析时,-保留下来" href="#@document-表示所修饰的注解在被javadoc解析时,-保留下来"></a></h4>
+<h4 id="@inherited-被它修饰的注解可以被继承"><code>@Inherited</code> 被它修饰的注解可以被继承<a title="#@inherited-被它修饰的注解可以被继承" href="#@inherited-被它修饰的注解可以被继承"></a></h4>
 ]]></content>
       <categories>
-        <category>Redis</category>
+        <category>Java</category>
       </categories>
       <tags>
-        <tag>Redis</tag>
+        <tag>Java</tag>
+        <tag>Annotation</tag>
       </tags>
   </entry>
 </search>
