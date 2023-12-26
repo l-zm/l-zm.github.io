@@ -257,7 +257,7 @@ font-family: SlideTownsoul
   <entry>
     <title>临时文档</title>
     <url>/1/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX19iZjnyOFS0cwKrPyrn8TQ5Xx8u5OUFgylgVQ309X40hJOCUjRwnt4x</is-cipher><details>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1+DxRPFGwy6OLtvWSli7gXsJ2M83ID1KjqxRt+Odqfb6GG4f08tAEov</is-cipher><details>
 <summary><strong>折叠内容</strong></summary><br>
 <strong>v1.0</strong><br>
 2023-06-01<br>
@@ -664,32 +664,221 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
+    <title>图床</title>
+    <url>/img-bed/</url>
+    <content><![CDATA[<h3 id="写在前面">写在前面<a title="#写在前面" href="#写在前面"></a></h3>
+<h4 id="最终效果">最终效果<a title="#最终效果" href="#最终效果"></a></h4>
+<blockquote>
+<p><code>https://你的域名/图片名称.png</code><br>
+<code>https://i.l-zm.com/图片名称.png</code><br>
+<code>https://img.l-zm.com/图片名称.png</code></p>
+</blockquote>
+<h4 id="使用平台介绍-backblaze-b2-+-cloudflare">使用平台介绍 Backblaze B2 + CloudFlare<a title="#使用平台介绍-backblaze-b2-+-cloudflare" href="#使用平台介绍-backblaze-b2-+-cloudflare"></a></h4>
+<h5 id="backblaze-b2">Backblaze B2<a title="#backblaze-b2" href="#backblaze-b2"></a></h5>
+<p>Backblaze创立于2007年,总部位于美国加州San Mateo, 是一家云存储和数据备份的公司</p>
+<blockquote>
+<p>资费</p>
+<ul>
+<li>由于B2加入了CloudFlare的 带宽联盟（ Bandwidth Alliance），所以B2与CloudFlare之间的流量直接免费，也就是每天无限量下行流量</li>
+<li>前 10GB 的存储空间是免费的</li>
+<li>注册Backblaze B2不必提供信用卡，10GB 免费存储空间永不过期，并且不会意外产生任何费用</li>
+<li>网络流量：1GB/天</li>
+<li>上传流量：无限</li>
+<li>下载请求数：2500次/天</li>
+<li>上传请求数：2500次/天</li>
+<li>BUCKET(桶)：100个</li>
+<li>BUCKET(桶)文件数：无限</li>
+</ul>
+</blockquote>
+<h5 id="cloudflare">CloudFlare<a title="#cloudflare" href="#cloudflare"></a></h5>
+<p>一家内容分发网络 (CDN) 和网络安全公司</p>
+<blockquote>
+<p>资费</p>
+</blockquote>
+<ul>
+<li>由于有了 Bandwidth Alliance(带宽联盟), Backblaze 到 Cloudflare 之间的出口是完全免费的</li>
+</ul>
+<h3 id="开始">开始<a title="#开始" href="#开始"></a></h3>
+<p>需要:</p>
+<ul>
+<li>Backblaze 账号</li>
+<li>CloudFlare 账号</li>
+<li>域名</li>
+</ul>
+<h4 id="注册-backblaze-账号">注册 Backblaze 账号<a title="#注册-backblaze-账号" href="#注册-backblaze-账号"></a></h4>
+<p>官网地址: <a href="https://www.backblaze.com" target="_blank">https://www.backblaze.com</a><br>
+<a href="https://www.backblaze.com/b2/sign-up.html" target="_blank">https://www.backblaze.com/b2/sign-up.html</a></p>
+<p>注册完成后: 创作一个桶</p>
+<p>桶类型选择: 公众（public）<br>
+其他默认<br>
+完成</p>
+<p>特别注意:</p>
+<ul>
+<li>注册的时候一定记得关闭任何VPN连接</li>
+<li>创建桶的时候,需要验证邮箱</li>
+</ul>
+<h4 id="注册-cloudflare-账号">注册 CloudFlare 账号<a title="#注册-cloudflare-账号" href="#注册-cloudflare-账号"></a></h4>
+<p>官网地址: <a href="https://www.cloudflare-cn.com/" target="_blank">https://www.cloudflare-cn.com/</a></p>
+<p>创建账号, 完成之后添加站点<br>
+根据操作修改自己域名的DNS<br>
+然后添加记录, 增加自己的二级域名作为图床的自定义域名<br>
+类型: CNAME</p>
+<p>设置SSL/TLS<br>
+设置HTTPS为: 您的 SSL/TLS 加密模式为 完全（严格）</p>
+<p>规则-页面缓存规则</p>
+<p>重写URL路径 优化图片URL: 重写传入请求的 URL 路径</p>
+<p>Cloudflare 转换规则分为三种：</p>
+<ul>
+<li>URL 重写规则: 重写 HTTP 请求的 URL 路径和查询字符串。</li>
+<li>HTTP 请求头修改规则: 设置 HTTP 请求头的值或移除请求头。</li>
+<li>HTTP 响应头修改规则: 设置 HTTP 响应头的值或删除响应头。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">(http.host eq &quot;i.你的域名.com&quot; and not starts_with(http.request.uri.path, &quot;/file/桶名称&quot;))</span><br></pre></td></tr></table></figure>
+<p>详细流程可以参考最后官网博文介绍</p>
+<p>参考:<br>
+Backblaze B2 官网</p>
+<p>Free Image Hosting With Cloudflare Transform Rules and Backblaze B2<br>
+<a href="https://www.backblaze.com/blog/free-image-hosting-with-cloudflare-transform-rules-and-backblaze-b2/" target="_blank">https://www.backblaze.com/blog/free-image-hosting-with-cloudflare-transform-rules-and-backblaze-b2/</a></p>
+<p>如果链接无法打开可以查看静态页面:<a href="https://www.alipan.com/s/9Q1XTzMGzQH" target="_blank">https://www.alipan.com/s/9Q1XTzMGzQH</a></p>
+]]></content>
+      <categories>
+        <category>Picture</category>
+      </categories>
+      <tags>
+        <tag>Picture</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows 安装完成 必装软件</title>
+    <url>/windows/</url>
+    <content><![CDATA[<h3 id="系统激活">系统激活<a title="#系统激活" href="#系统激活"></a></h3>
+<blockquote>
+<p><strong>HEU_KMS_Activator_v24.6.2</strong></p>
+<p>公众号：知彼而知己</p>
+<blockquote>
+<p>链接：<a href="https://pan.baidu.com/s/1pxIEZSK7xz8_lP85cQnyMw" target="_blank">https://pan.baidu.com/s/1pxIEZSK7xz8_lP85cQnyMw</a><br>
+提取码：vf3b</p>
+</blockquote>
+<p>GitHub：<a href="https://github.com/zbezj/HEU_KMS_Activator" target="_blank">https://github.com/zbezj/HEU_KMS_Activator</a></p>
+</blockquote>
+<p><img src="https://pic.imgdb.cn/item/6281a68209475431297e8edb.png" alt="HEU_KMS_Activator_v24.6.2" loading="lazy" class="φbp"></p>
+<hr>
+<blockquote>
+<p><strong>Microsoft PowerToys</strong>  <code>必装软件</code>  自定义键盘及快捷键</p>
+<blockquote>
+<p>官网：<a href="https://docs.microsoft.com/zh-cn/windows/powertoys/" target="_blank">https://docs.microsoft.com/zh-cn/windows/powertoys/</a></p>
+</blockquote>
+<p>GitHub 存储库：<a href="https://github.com/microsoft/PowerToys" target="_blank">https://github.com/microsoft/PowerToys</a></p>
+<p>链接：<a href="https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ" target="_blank">https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ</a><br>
+提取码：1234</p>
+</blockquote>
+<!-- https://masuit.com/posts?page=18&size=15&orderby=ModifyDate -->]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>离线下载安装 Windows商店(Microsoft Store) 应用</title>
+    <url>/Microsoft-Store/</url>
+    <content><![CDATA[<h3 id="复制链接">复制链接<a title="#复制链接" href="#复制链接"></a></h3>
+<p>以：Windows 相机 应用举例</p>
+<p><code>https://www.microsoft.com/zh-cn/p/camara-de-windows/9wzdncrfjbbg?activetab=pivot:overviewtab</code></p>
+<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
+<p><code>https://store.rg-adguard.net/</code></p>
+<ul>
+<li>粘贴链接到输入框</li>
+<li>找到以 <code>AppxBundle</code> 结尾的</li>
+<li>点击下载安装</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/627886ca09475431290fb21e.png" alt="离线安装 Windows 商店(Microsoft-Store)应用-AppxBundle" loading="lazy" class="φbp"></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+        <category>Microsoft Store</category>
+      </categories>
+      <tags>
+        <tag>Microsoft Store</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows 11 设置状态栏时钟时间精确显示到秒教程</title>
+    <url>/Windows-11-Time-Second/</url>
+    <content><![CDATA[<p>Windows 11 任务栏不支持秒的显示，微软承认错误删除了一个注册表</p>
+<p>微软说：“我们很抱歉，这不是 Windows 11 支持的注册表键值。非常感谢你给我们的反馈，我们将继续使用这些反馈来指导时钟的未来，”</p>
+<p>所以，需要新增一个注册表键值来修复这个问题</p>
+<p>操作如下：</p>
+<ol>
+<li><code>Win + R</code> 打开: <code>regedit</code></li>
+<li>打开路径: <code>HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced</code></li>
+<li>找到执行目录右键 &gt; 新建 &gt; <code>DWORD(32位)值(D)</code></li>
+<li>数值名称(N)改为: <code>ShowSecondsInSystemClock</code></li>
+<li>数值数据(V)设置为: 1</li>
+<li>基数默认就好: 十六进制(H)</li>
+<li>重启电脑</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows CMD 查看端口占用情况列表 关闭指定端口命令</title>
+    <url>/Windows-CMD-Task/</url>
+    <content><![CDATA[<h3 id="查看所有端口运行状态">查看所有端口运行状态<a title="#查看所有端口运行状态" href="#查看所有端口运行状态"></a></h3>
+<ul>
+<li><code>C:\&gt;netstat -ano</code></li>
+</ul>
+<blockquote>
+<p>查看端口<br>
+-a 显示所有连接和侦听端口<br>
+-n 以数字形式显示地址和端口号<br>
+-o 显示拥有的与每个连接关联的进程 ID</p>
+</blockquote>
+<h3 id="查找指定端口命令">查找指定端口命令<a title="#查找指定端口命令" href="#查找指定端口命令"></a></h3>
+<ul>
+<li><code>C:\&gt;netstat -aon | findstr &quot;4000&quot;</code></li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;netstat -aon | findstr <span class="string">&quot;4000&quot;</span></span><br><span class="line">  TCP    0.0.0.0:4000           0.0.0.0:0              LISTENING       12992</span><br><span class="line">  TCP    [::]:4000              [::]:0                 LISTENING       12992</span><br></pre></td></tr></table></figure>
+<h3 id="查看pid对应的进程">查看PID对应的进程<a title="#查看pid对应的进程" href="#查看pid对应的进程"></a></h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;tasklist | findstr <span class="string">&quot;12992&quot;</span></span><br><span class="line">node.exe                     12992 Console                    1     69,904 K</span><br></pre></td></tr></table></figure>
+<h3 id="关闭进程">关闭进程<a title="#关闭进程" href="#关闭进程"></a></h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;taskkill /f /pid 12992</span><br><span class="line">成功: 已终止 PID 为 12992 的进程。</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;taskkill /f /t /im node.exe</span><br><span class="line">成功: 已终止 PID 18744 (属于 PID 18672 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 3668 (属于 PID 18672 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 18672 (属于 PID 18628 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 28244 (属于 PID 30244 子进程)的进程。</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>图片</title>
+    <url>/picture/</url>
+    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62c6837cf54cd3f937647820.png" alt="iPhone All" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/62c6a7faf54cd3f93798805c.png" alt="Git" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/62f3638416f2c2beb11babb0.gif" alt="Windows 10 TO Windows 11" loading="lazy"></p>
+]]></content>
+      <categories>
+        <category>Picture</category>
+      </categories>
+      <tags>
+        <tag>Picture</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mac 修改 Dock 栏的隐藏速度</title>
     <url>/mac-edit-dock-hidden-speed/</url>
     <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
 <p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
 <h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
 <p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
-]]></content>
-      <categories>
-        <category>Mac</category>
-      </categories>
-      <tags>
-        <tag>Mac</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>苹果官方鼠标移动速度慢问题解决(Magic Mouse)</title>
-    <url>/magic-mouse/</url>
-    <content><![CDATA[<h3 id="设置">设置<a title="#设置" href="#设置"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/626cad73239250f7c5d61401.png" alt="Magic Mouse" loading="lazy" class="φbp"></p>
-<p><strong>如果这里的调节到最大还是满足不了你</strong></p>
-<p><strong>我们可以通过终端查看到我们鼠标的设置：</strong></p>
-<p>读取当前的移动速度：<br>
-<code>defaults read -g com.apple.mouse.scaling</code></p>
-<p>默认可能是：<code>3</code> ， 我这里设置的：<code>7</code></p>
-<p><code>defaults write -g com.apple.mouse.scaling 7</code></p>
-<h3 id="重启电脑生效">重启电脑生效<a title="#重启电脑生效" href="#重启电脑生效"></a></h3>
 ]]></content>
       <categories>
         <category>Mac</category>
@@ -881,223 +1070,110 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>图片</title>
-    <url>/picture/</url>
-    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62c6837cf54cd3f937647820.png" alt="iPhone All" loading="lazy"><br>
-<img src="https://pic.imgdb.cn/item/62c6a7faf54cd3f93798805c.png" alt="Git" loading="lazy"><br>
-<img src="https://pic.imgdb.cn/item/62f3638416f2c2beb11babb0.gif" alt="Windows 10 TO Windows 11" loading="lazy"></p>
-]]></content>
-      <categories>
-        <category>Picture</category>
-      </categories>
-      <tags>
-        <tag>Picture</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图床</title>
-    <url>/img-bed/</url>
-    <content><![CDATA[<h3 id="写在前面">写在前面<a title="#写在前面" href="#写在前面"></a></h3>
-<h4 id="最终效果">最终效果<a title="#最终效果" href="#最终效果"></a></h4>
-<blockquote>
-<p><code>https://你的域名/图片名称.png</code><br>
-<code>https://i.l-zm.com/图片名称.png</code><br>
-<code>https://img.l-zm.com/图片名称.png</code></p>
-</blockquote>
-<h4 id="使用平台介绍-backblaze-b2-+-cloudflare">使用平台介绍 Backblaze B2 + CloudFlare<a title="#使用平台介绍-backblaze-b2-+-cloudflare" href="#使用平台介绍-backblaze-b2-+-cloudflare"></a></h4>
-<h5 id="backblaze-b2">Backblaze B2<a title="#backblaze-b2" href="#backblaze-b2"></a></h5>
-<p>Backblaze创立于2007年,总部位于美国加州San Mateo, 是一家云存储和数据备份的公司</p>
-<blockquote>
-<p>资费</p>
-<ul>
-<li>由于B2加入了CloudFlare的 带宽联盟（ Bandwidth Alliance），所以B2与CloudFlare之间的流量直接免费，也就是每天无限量下行流量</li>
-<li>前 10GB 的存储空间是免费的</li>
-<li>注册Backblaze B2不必提供信用卡，10GB 免费存储空间永不过期，并且不会意外产生任何费用</li>
-<li>网络流量：1GB/天</li>
-<li>上传流量：无限</li>
-<li>下载请求数：2500次/天</li>
-<li>上传请求数：2500次/天</li>
-<li>BUCKET(桶)：100个</li>
-<li>BUCKET(桶)文件数：无限</li>
-</ul>
-</blockquote>
-<h5 id="cloudflare">CloudFlare<a title="#cloudflare" href="#cloudflare"></a></h5>
-<p>一家内容分发网络 (CDN) 和网络安全公司</p>
-<blockquote>
-<p>资费</p>
-</blockquote>
-<ul>
-<li>由于有了 Bandwidth Alliance(带宽联盟), Backblaze 到 Cloudflare 之间的出口是完全免费的</li>
-</ul>
-<h3 id="开始">开始<a title="#开始" href="#开始"></a></h3>
-<p>需要:</p>
-<ul>
-<li>Backblaze 账号</li>
-<li>CloudFlare 账号</li>
-<li>域名</li>
-</ul>
-<h4 id="注册-backblaze-账号">注册 Backblaze 账号<a title="#注册-backblaze-账号" href="#注册-backblaze-账号"></a></h4>
-<p>官网地址: <a href="https://www.backblaze.com" target="_blank">https://www.backblaze.com</a><br>
-<a href="https://www.backblaze.com/b2/sign-up.html" target="_blank">https://www.backblaze.com/b2/sign-up.html</a></p>
-<p>注册完成后: 创作一个桶</p>
-<p>桶类型选择: 公众（public）<br>
-其他默认<br>
-完成</p>
-<p>特别注意:</p>
-<ul>
-<li>注册的时候一定记得关闭任何VPN连接</li>
-<li>创建桶的时候,需要验证邮箱</li>
-</ul>
-<h4 id="注册-cloudflare-账号">注册 CloudFlare 账号<a title="#注册-cloudflare-账号" href="#注册-cloudflare-账号"></a></h4>
-<p>官网地址: <a href="https://www.cloudflare-cn.com/" target="_blank">https://www.cloudflare-cn.com/</a></p>
-<p>创建账号, 完成之后添加站点<br>
-根据操作修改自己域名的DNS<br>
-然后添加记录, 增加自己的二级域名作为图床的自定义域名<br>
-类型: CNAME</p>
-<p>设置SSL/TLS<br>
-设置HTTPS为: 您的 SSL/TLS 加密模式为 完全（严格）</p>
-<p>规则-页面缓存规则</p>
-<p>重写URL路径 优化图片URL: 重写传入请求的 URL 路径</p>
-<p>Cloudflare 转换规则分为三种：</p>
-<ul>
-<li>URL 重写规则: 重写 HTTP 请求的 URL 路径和查询字符串。</li>
-<li>HTTP 请求头修改规则: 设置 HTTP 请求头的值或移除请求头。</li>
-<li>HTTP 响应头修改规则: 设置 HTTP 响应头的值或删除响应头。</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">(http.host eq &quot;i.你的域名.com&quot; and not starts_with(http.request.uri.path, &quot;/file/桶名称&quot;))</span><br></pre></td></tr></table></figure>
-<p>详细流程可以参考最后官网博文介绍</p>
-<p>参考:<br>
-Backblaze B2 官网</p>
-<p>Free Image Hosting With Cloudflare Transform Rules and Backblaze B2<br>
-<a href="https://www.backblaze.com/blog/free-image-hosting-with-cloudflare-transform-rules-and-backblaze-b2/" target="_blank">https://www.backblaze.com/blog/free-image-hosting-with-cloudflare-transform-rules-and-backblaze-b2/</a></p>
-<p>如果链接无法打开可以查看静态页面:<a href="https://www.alipan.com/s/9Q1XTzMGzQH" target="_blank">https://www.alipan.com/s/9Q1XTzMGzQH</a></p>
-]]></content>
-      <categories>
-        <category>Picture</category>
-      </categories>
-      <tags>
-        <tag>Picture</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>离线下载安装 Windows商店(Microsoft Store) 应用</title>
-    <url>/Microsoft-Store/</url>
-    <content><![CDATA[<h3 id="复制链接">复制链接<a title="#复制链接" href="#复制链接"></a></h3>
-<p>以：Windows 相机 应用举例</p>
-<p><code>https://www.microsoft.com/zh-cn/p/camara-de-windows/9wzdncrfjbbg?activetab=pivot:overviewtab</code></p>
-<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
-<p><code>https://store.rg-adguard.net/</code></p>
-<ul>
-<li>粘贴链接到输入框</li>
-<li>找到以 <code>AppxBundle</code> 结尾的</li>
-<li>点击下载安装</li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/627886ca09475431290fb21e.png" alt="离线安装 Windows 商店(Microsoft-Store)应用-AppxBundle" loading="lazy" class="φbp"></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-        <category>Microsoft Store</category>
-      </categories>
-      <tags>
-        <tag>Microsoft Store</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows CMD 查看端口占用情况列表 关闭指定端口命令</title>
-    <url>/Windows-CMD-Task/</url>
-    <content><![CDATA[<h3 id="查看所有端口运行状态">查看所有端口运行状态<a title="#查看所有端口运行状态" href="#查看所有端口运行状态"></a></h3>
-<ul>
-<li><code>C:\&gt;netstat -ano</code></li>
-</ul>
-<blockquote>
-<p>查看端口<br>
--a 显示所有连接和侦听端口<br>
--n 以数字形式显示地址和端口号<br>
--o 显示拥有的与每个连接关联的进程 ID</p>
-</blockquote>
-<h3 id="查找指定端口命令">查找指定端口命令<a title="#查找指定端口命令" href="#查找指定端口命令"></a></h3>
-<ul>
-<li><code>C:\&gt;netstat -aon | findstr &quot;4000&quot;</code></li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;netstat -aon | findstr <span class="string">&quot;4000&quot;</span></span><br><span class="line">  TCP    0.0.0.0:4000           0.0.0.0:0              LISTENING       12992</span><br><span class="line">  TCP    [::]:4000              [::]:0                 LISTENING       12992</span><br></pre></td></tr></table></figure>
-<h3 id="查看pid对应的进程">查看PID对应的进程<a title="#查看pid对应的进程" href="#查看pid对应的进程"></a></h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;tasklist | findstr <span class="string">&quot;12992&quot;</span></span><br><span class="line">node.exe                     12992 Console                    1     69,904 K</span><br></pre></td></tr></table></figure>
-<h3 id="关闭进程">关闭进程<a title="#关闭进程" href="#关闭进程"></a></h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;taskkill /f /pid 12992</span><br><span class="line">成功: 已终止 PID 为 12992 的进程。</span><br></pre></td></tr></table></figure>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">C:\&gt;taskkill /f /t /im node.exe</span><br><span class="line">成功: 已终止 PID 18744 (属于 PID 18672 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 3668 (属于 PID 18672 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 18672 (属于 PID 18628 子进程)的进程。</span><br><span class="line">成功: 已终止 PID 28244 (属于 PID 30244 子进程)的进程。</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows 11 设置状态栏时钟时间精确显示到秒教程</title>
-    <url>/Windows-11-Time-Second/</url>
-    <content><![CDATA[<p>Windows 11 任务栏不支持秒的显示，微软承认错误删除了一个注册表</p>
-<p>微软说：“我们很抱歉，这不是 Windows 11 支持的注册表键值。非常感谢你给我们的反馈，我们将继续使用这些反馈来指导时钟的未来，”</p>
-<p>所以，需要新增一个注册表键值来修复这个问题</p>
-<p>操作如下：</p>
-<ol>
-<li><code>Win + R</code> 打开: <code>regedit</code></li>
-<li>打开路径: <code>HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced</code></li>
-<li>找到执行目录右键 &gt; 新建 &gt; <code>DWORD(32位)值(D)</code></li>
-<li>数值名称(N)改为: <code>ShowSecondsInSystemClock</code></li>
-<li>数值数据(V)设置为: 1</li>
-<li>基数默认就好: 十六进制(H)</li>
-<li>重启电脑</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows 安装完成 必装软件</title>
-    <url>/windows/</url>
-    <content><![CDATA[<h3 id="系统激活">系统激活<a title="#系统激活" href="#系统激活"></a></h3>
-<blockquote>
-<p><strong>HEU_KMS_Activator_v24.6.2</strong></p>
-<p>公众号：知彼而知己</p>
-<blockquote>
-<p>链接：<a href="https://pan.baidu.com/s/1pxIEZSK7xz8_lP85cQnyMw" target="_blank">https://pan.baidu.com/s/1pxIEZSK7xz8_lP85cQnyMw</a><br>
-提取码：vf3b</p>
-</blockquote>
-<p>GitHub：<a href="https://github.com/zbezj/HEU_KMS_Activator" target="_blank">https://github.com/zbezj/HEU_KMS_Activator</a></p>
-</blockquote>
-<p><img src="https://pic.imgdb.cn/item/6281a68209475431297e8edb.png" alt="HEU_KMS_Activator_v24.6.2" loading="lazy" class="φbp"></p>
-<hr>
-<blockquote>
-<p><strong>Microsoft PowerToys</strong>  <code>必装软件</code>  自定义键盘及快捷键</p>
-<blockquote>
-<p>官网：<a href="https://docs.microsoft.com/zh-cn/windows/powertoys/" target="_blank">https://docs.microsoft.com/zh-cn/windows/powertoys/</a></p>
-</blockquote>
-<p>GitHub 存储库：<a href="https://github.com/microsoft/PowerToys" target="_blank">https://github.com/microsoft/PowerToys</a></p>
-<p>链接：<a href="https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ" target="_blank">https://pan.baidu.com/s/1WTqX8XK9CYNPHr5CqSFHzQ</a><br>
-提取码：1234</p>
-</blockquote>
-<!-- https://masuit.com/posts?page=18&size=15&orderby=ModifyDate -->]]></content>
-      <categories>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Chrome 插件</title>
     <url>/Chrome-Plugins/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1+IL4bFJuEQhYLAd2kO0ZFPRG1iylcdXsuM6ZT1BceSQMm325ZTPFIe</is-cipher>]]></content>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX19vvgux99kQ3LE1ECi6sa0rGclX5+YCtPHRh0IBoxDu8aOHqTsU47UZ</is-cipher>]]></content>
       <categories>
         <category>Chrome</category>
       </categories>
       <tags>
         <tag>Chrome Plugins</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你的 Microsoft 365 开发人员订阅</title>
+    <url>/microsoft-office-dev/</url>
+    <content><![CDATA[<blockquote>
+<p>官方说明: <code>https://learn.microsoft.com/zh-cn/office/developer-program/microsoft-365-developer-program</code></p>
+</blockquote>
+<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
+<p><code>https://developer.microsoft.com/zh-cn/microsoft-365/dev-program</code></p>
+<ol>
+<li>登录自己的微软账号</li>
+<li>点击立即加入
+<ol>
+<li>国家/地区: <code>China</code></li>
+<li>公司: 随意</li>
+<li>语言搜选项: 中文(简体)</li>
+</ol>
+</li>
+<li>下一步: 供我公司内部使用的应用程序</li>
+<li>下一步: 您感兴趣的开发领域, 随意选择</li>
+<li>设置 Microsoft 365 E5 沙盒, 选择: 可配置沙盒</li>
+<li>用户名/域/密码 自己设置</li>
+<li>最后输入手机号, 获取验证码完成(这里可能需要科学上网)</li>
+</ol>
+<h3 id="创建子用户">创建子用户<a title="#创建子用户" href="#创建子用户"></a></h3>
+<p>访问: <code>https://www.office.com/</code></p>
+<ol>
+<li>管理</li>
+<li>添加用户</li>
+</ol>
+<h3 id="调整网盘容量">调整网盘容量<a title="#调整网盘容量" href="#调整网盘容量"></a></h3>
+<p>访问网址: <code>https://admin.onedrive.com/?v=StorageSettings</code></p>
+<p>设置 &gt; OneDrive 存储限制 &gt; 默认存储限制 设置 <code>5120 (5 TB)</code> 即可</p>
+<hr>
+<h3 id="禁用安全默认值">禁用安全默认值<a title="#禁用安全默认值" href="#禁用安全默认值"></a></h3>
+<p>访问网址: <code>https://portal.azure.com</code></p>
+<ol>
+<li>找到: <code>管理 Azure Active Directory</code></li>
+<li>点击: <code>查看</code></li>
+<li>点击左侧: <code>属性</code></li>
+<li>点击页面下方: <code>管理安全默认值</code></li>
+<li>安全默认值 设置为: 禁用</li>
+</ol>
+<hr>
+<h3 id="github上创建'pat密钥'">Github上创建’PAT密钥’<a title="#github上创建'pat密钥'" href="#github上创建'pat密钥'"></a></h3>
+<ol>
+<li>访问网址: <code>https://github.com</code></li>
+<li>登录</li>
+<li>进入设置: <code>https://github.com/settings/tokens</code></li>
+<li>点击按钮: <code>Generate new token</code></li>
+<li>选择: <code>New personal access token (classic)</code>
+<ol>
+<li>Note: E5</li>
+<li>Expiration: No expiration</li>
+<li>Select scopes: 选中:<code>workflow</code></li>
+</ol>
+</li>
+<li>OK, 最后拿到秘钥</li>
+</ol>
+<p>继续</p>
+<ol>
+<li>打开Git项目: <code>https://github.com/vcheckzen/KeepAliveE5</code></li>
+<li>点击右上角加号: <code>Import repository</code></li>
+<li>输入地址及自己定义一个项目名</li>
+<li>完成后进入自己的Git项目, 点击: <code>Settings</code> &gt; <code>Actions</code> &gt; <code>Secrets and variables</code> &gt; <code>Actions</code> &gt; <code>New repository secret</code>
+<ol>
+<li>PAT</li>
+<li>USER</li>
+<li>PASSWD</li>
+</ol>
+</li>
+<li>完成</li>
+</ol>
+<p>最后</p>
+<ol>
+<li>最后设置重复执行
+<ol>
+<li><code>Actions</code> &gt; General</li>
+<li>选择: <code>Allow all actions and reusable workflows</code></li>
+<li>Save 保存</li>
+</ol>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p>引用<br>
+永久白嫖Microsoft 365，教程来了: <a href="https://baijiahao.baidu.com/s?id=1762710572846867749" target="_blank">https://baijiahao.baidu.com/s?id=1762710572846867749</a><br>
+Microsoft 365永久激活！白嫖搞起来～: <a href="https://mp.weixin.qq.com/s/Z70wmTjMtsaEdiX5O4kJ1Q" target="_blank">https://mp.weixin.qq.com/s/Z70wmTjMtsaEdiX5O4kJ1Q</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Office</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
       </tags>
   </entry>
   <entry>
@@ -1259,99 +1335,23 @@ Backblaze B2 官网</p>
       </tags>
   </entry>
   <entry>
-    <title>你的 Microsoft 365 开发人员订阅</title>
-    <url>/microsoft-office-dev/</url>
-    <content><![CDATA[<blockquote>
-<p>官方说明: <code>https://learn.microsoft.com/zh-cn/office/developer-program/microsoft-365-developer-program</code></p>
-</blockquote>
-<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
-<p><code>https://developer.microsoft.com/zh-cn/microsoft-365/dev-program</code></p>
-<ol>
-<li>登录自己的微软账号</li>
-<li>点击立即加入
-<ol>
-<li>国家/地区: <code>China</code></li>
-<li>公司: 随意</li>
-<li>语言搜选项: 中文(简体)</li>
-</ol>
-</li>
-<li>下一步: 供我公司内部使用的应用程序</li>
-<li>下一步: 您感兴趣的开发领域, 随意选择</li>
-<li>设置 Microsoft 365 E5 沙盒, 选择: 可配置沙盒</li>
-<li>用户名/域/密码 自己设置</li>
-<li>最后输入手机号, 获取验证码完成(这里可能需要科学上网)</li>
-</ol>
-<h3 id="创建子用户">创建子用户<a title="#创建子用户" href="#创建子用户"></a></h3>
-<p>访问: <code>https://www.office.com/</code></p>
-<ol>
-<li>管理</li>
-<li>添加用户</li>
-</ol>
-<h3 id="调整网盘容量">调整网盘容量<a title="#调整网盘容量" href="#调整网盘容量"></a></h3>
-<p>访问网址: <code>https://admin.onedrive.com/?v=StorageSettings</code></p>
-<p>设置 &gt; OneDrive 存储限制 &gt; 默认存储限制 设置 <code>5120 (5 TB)</code> 即可</p>
-<hr>
-<h3 id="禁用安全默认值">禁用安全默认值<a title="#禁用安全默认值" href="#禁用安全默认值"></a></h3>
-<p>访问网址: <code>https://portal.azure.com</code></p>
-<ol>
-<li>找到: <code>管理 Azure Active Directory</code></li>
-<li>点击: <code>查看</code></li>
-<li>点击左侧: <code>属性</code></li>
-<li>点击页面下方: <code>管理安全默认值</code></li>
-<li>安全默认值 设置为: 禁用</li>
-</ol>
-<hr>
-<h3 id="github上创建'pat密钥'">Github上创建’PAT密钥’<a title="#github上创建'pat密钥'" href="#github上创建'pat密钥'"></a></h3>
-<ol>
-<li>访问网址: <code>https://github.com</code></li>
-<li>登录</li>
-<li>进入设置: <code>https://github.com/settings/tokens</code></li>
-<li>点击按钮: <code>Generate new token</code></li>
-<li>选择: <code>New personal access token (classic)</code>
-<ol>
-<li>Note: E5</li>
-<li>Expiration: No expiration</li>
-<li>Select scopes: 选中:<code>workflow</code></li>
-</ol>
-</li>
-<li>OK, 最后拿到秘钥</li>
-</ol>
-<p>继续</p>
-<ol>
-<li>打开Git项目: <code>https://github.com/vcheckzen/KeepAliveE5</code></li>
-<li>点击右上角加号: <code>Import repository</code></li>
-<li>输入地址及自己定义一个项目名</li>
-<li>完成后进入自己的Git项目, 点击: <code>Settings</code> &gt; <code>Actions</code> &gt; <code>Secrets and variables</code> &gt; <code>Actions</code> &gt; <code>New repository secret</code>
-<ol>
-<li>PAT</li>
-<li>USER</li>
-<li>PASSWD</li>
-</ol>
-</li>
-<li>完成</li>
-</ol>
-<p>最后</p>
-<ol>
-<li>最后设置重复执行
-<ol>
-<li><code>Actions</code> &gt; General</li>
-<li>选择: <code>Allow all actions and reusable workflows</code></li>
-<li>Save 保存</li>
-</ol>
-</li>
-</ol>
-<hr>
-<blockquote>
-<p>引用<br>
-永久白嫖Microsoft 365，教程来了: <a href="https://baijiahao.baidu.com/s?id=1762710572846867749" target="_blank">https://baijiahao.baidu.com/s?id=1762710572846867749</a><br>
-Microsoft 365永久激活！白嫖搞起来～: <a href="https://mp.weixin.qq.com/s/Z70wmTjMtsaEdiX5O4kJ1Q" target="_blank">https://mp.weixin.qq.com/s/Z70wmTjMtsaEdiX5O4kJ1Q</a></p>
-</blockquote>
+    <title>苹果官方鼠标移动速度慢问题解决(Magic Mouse)</title>
+    <url>/magic-mouse/</url>
+    <content><![CDATA[<h3 id="设置">设置<a title="#设置" href="#设置"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/626cad73239250f7c5d61401.png" alt="Magic Mouse" loading="lazy" class="φbp"></p>
+<p><strong>如果这里的调节到最大还是满足不了你</strong></p>
+<p><strong>我们可以通过终端查看到我们鼠标的设置：</strong></p>
+<p>读取当前的移动速度：<br>
+<code>defaults read -g com.apple.mouse.scaling</code></p>
+<p>默认可能是：<code>3</code> ， 我这里设置的：<code>7</code></p>
+<p><code>defaults write -g com.apple.mouse.scaling 7</code></p>
+<h3 id="重启电脑生效">重启电脑生效<a title="#重启电脑生效" href="#重启电脑生效"></a></h3>
 ]]></content>
       <categories>
-        <category>Office</category>
+        <category>Mac</category>
       </categories>
       <tags>
-        <tag>Office</tag>
+        <tag>Mac</tag>
       </tags>
   </entry>
   <entry>
@@ -1439,51 +1439,6 @@ Microsoft 365永久激活！白嫖搞起来～: <a href="https://mp.weixin.qq.co
       </tags>
   </entry>
   <entry>
-    <title>Clash for Windows</title>
-    <url>/clash-for-windows/</url>
-    <content><![CDATA[<h2 id="百度云下载地址">百度云下载地址<a title="#百度云下载地址" href="#百度云下载地址"></a></h2>
-<p>链接: <a href="https://pan.baidu.com/s/1hW77wn71LCC6HqbGdsK3kQ" target="_blank">https://pan.baidu.com/s/1hW77wn71LCC6HqbGdsK3kQ</a><br>
-提取码: 1234</p>
-<h3 id="git-下载地址-（已失效）">Git 下载地址 （已失效）<a title="#git-下载地址-（已失效）" href="#git-下载地址-（已失效）"></a></h3>
-<p><a href="https://github.com/Fndroid/clash_for_windows_pkg" target="_blank">https://github.com/Fndroid/clash_for_windows_pkg</a></p>
-<h3 id="汉化包下载地址（已失效）">汉化包下载地址（已失效）<a title="#汉化包下载地址（已失效）" href="#汉化包下载地址（已失效）"></a></h3>
-<p><a href="https://github.com/BoyceLig/Clash_Chinese_Patch" target="_blank">https://github.com/BoyceLig/Clash_Chinese_Patch</a></p>
-<h3 id="帮助文档">帮助文档<a title="#帮助文档" href="#帮助文档"></a></h3>
-<p><a href="https://docs.cfw.lbyczf.com" target="_blank">https://docs.cfw.lbyczf.com</a></p>
-<p><a href="https://github.com/Fndroid/clash-win-docs-new" target="_blank">https://github.com/Fndroid/clash-win-docs-new</a></p>
-<h3 id="版本说明">版本说明<a title="#版本说明" href="#版本说明"></a></h3>
-<div class="φbq"><div class="φbs"><table><thead>
-<tr>
-<th style="text-align:left">文件名</th>
-<th style="text-align:center">使用方式</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Clash.for.Windows-0.20.23-win.7z</td>
-<td style="text-align:center">免安装,解压即用</td>
-</tr>
-<tr>
-<td style="text-align:left">Clash.for.Windows.Setup.0.20.23.exe</td>
-<td style="text-align:center">安装</td>
-</tr>
-</tbody>
-</table></div></div><h3 id="关于clash订阅链接转换">关于Clash订阅链接转换<a title="#关于clash订阅链接转换" href="#关于clash订阅链接转换"></a></h3>
-<ol>
-<li>复制机场的Shadowsocks/V2ray订阅链接</li>
-<li>登录订阅转换网址 <a href="https://api.nameless13.com" target="_blank">https://api.nameless13.com</a> 并将链接粘贴在订阅链接位置</li>
-<li>点击生成订阅链接即可</li>
-<li>将生成的订阅链接粘贴于Clash中（使用方法参考Clash使用教程）</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Clash</category>
-      </categories>
-      <tags>
-        <tag>Clash</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PowerToys-微软的一款开源电脑工具箱软件</title>
     <url>/PowerToys/</url>
     <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
@@ -1536,6 +1491,51 @@ Microsoft 365永久激活！白嫖搞起来～: <a href="https://mp.weixin.qq.co
       </tags>
   </entry>
   <entry>
+    <title>Clash for Windows</title>
+    <url>/clash-for-windows/</url>
+    <content><![CDATA[<h2 id="百度云下载地址">百度云下载地址<a title="#百度云下载地址" href="#百度云下载地址"></a></h2>
+<p>链接: <a href="https://pan.baidu.com/s/1hW77wn71LCC6HqbGdsK3kQ" target="_blank">https://pan.baidu.com/s/1hW77wn71LCC6HqbGdsK3kQ</a><br>
+提取码: 1234</p>
+<h3 id="git-下载地址-（已失效）">Git 下载地址 （已失效）<a title="#git-下载地址-（已失效）" href="#git-下载地址-（已失效）"></a></h3>
+<p><a href="https://github.com/Fndroid/clash_for_windows_pkg" target="_blank">https://github.com/Fndroid/clash_for_windows_pkg</a></p>
+<h3 id="汉化包下载地址（已失效）">汉化包下载地址（已失效）<a title="#汉化包下载地址（已失效）" href="#汉化包下载地址（已失效）"></a></h3>
+<p><a href="https://github.com/BoyceLig/Clash_Chinese_Patch" target="_blank">https://github.com/BoyceLig/Clash_Chinese_Patch</a></p>
+<h3 id="帮助文档">帮助文档<a title="#帮助文档" href="#帮助文档"></a></h3>
+<p><a href="https://docs.cfw.lbyczf.com" target="_blank">https://docs.cfw.lbyczf.com</a></p>
+<p><a href="https://github.com/Fndroid/clash-win-docs-new" target="_blank">https://github.com/Fndroid/clash-win-docs-new</a></p>
+<h3 id="版本说明">版本说明<a title="#版本说明" href="#版本说明"></a></h3>
+<div class="φbq"><div class="φbs"><table><thead>
+<tr>
+<th style="text-align:left">文件名</th>
+<th style="text-align:center">使用方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Clash.for.Windows-0.20.23-win.7z</td>
+<td style="text-align:center">免安装,解压即用</td>
+</tr>
+<tr>
+<td style="text-align:left">Clash.for.Windows.Setup.0.20.23.exe</td>
+<td style="text-align:center">安装</td>
+</tr>
+</tbody>
+</table></div></div><h3 id="关于clash订阅链接转换">关于Clash订阅链接转换<a title="#关于clash订阅链接转换" href="#关于clash订阅链接转换"></a></h3>
+<ol>
+<li>复制机场的Shadowsocks/V2ray订阅链接</li>
+<li>登录订阅转换网址 <a href="https://api.nameless13.com" target="_blank">https://api.nameless13.com</a> 并将链接粘贴在订阅链接位置</li>
+<li>点击生成订阅链接即可</li>
+<li>将生成的订阅链接粘贴于Clash中（使用方法参考Clash使用教程）</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Clash</category>
+      </categories>
+      <tags>
+        <tag>Clash</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>WPS 2019 专业增强版 (温州大学教育版)</title>
     <url>/windows-wps-2019/</url>
     <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62cbbf63f54cd3f9378360d4.png" alt="WPS 产品管理中心" loading="lazy" class="φbp"></p>
@@ -1576,6 +1576,22 @@ Microsoft 365永久激活！白嫖搞起来～: <a href="https://mp.weixin.qq.co
       </categories>
       <tags>
         <tag>M3U8</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows iTunes 设置关闭自动备份</title>
+    <url>/windows-itunes-backups/</url>
+    <content><![CDATA[<ol>
+<li>找到安装目录下的: <code>defaults.exe</code> 复制路径</li>
+<li>运行: <code>cmd</code></li>
+<li>执行命令: <code>&quot;D:\Application\iTunes\defaults.exe&quot; write com.apple.iTunes AutomaticDeviceBackupsDisabled -bool true</code></li>
+</ol>
+]]></content>
+      <categories>
+        <category>iTunes</category>
+      </categories>
+      <tags>
+        <tag>iTunes</tag>
       </tags>
   </entry>
   <entry>
@@ -1632,22 +1648,6 @@ Microsoft 365永久激活！白嫖搞起来～: <a href="https://mp.weixin.qq.co
       <tags>
         <tag>Windows</tag>
         <tag>iPhone</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows iTunes 设置关闭自动备份</title>
-    <url>/windows-itunes-backups/</url>
-    <content><![CDATA[<ol>
-<li>找到安装目录下的: <code>defaults.exe</code> 复制路径</li>
-<li>运行: <code>cmd</code></li>
-<li>执行命令: <code>&quot;D:\Application\iTunes\defaults.exe&quot; write com.apple.iTunes AutomaticDeviceBackupsDisabled -bool true</code></li>
-</ol>
-]]></content>
-      <categories>
-        <category>iTunes</category>
-      </categories>
-      <tags>
-        <tag>iTunes</tag>
       </tags>
   </entry>
   <entry>
@@ -1784,28 +1784,6 @@ Windows 路径：C:\Windows\System32\drivers\etc</p>
       </tags>
   </entry>
   <entry>
-    <title>ChatGPT 注册教程</title>
-    <url>/chatgpt-register/</url>
-    <content><![CDATA[<h3 id="打开官网:">打开官网:<a title="#打开官网:" href="#打开官网:"></a></h3>
-<ul>
-<li>网站：<code>https://openai.com/</code></li>
-<li>网站：<code>https://platform.openai.com/account/</code></li>
-</ul>
-<p>正常流程注册</p>
-<h3 id="需要国外电话接收短信">需要国外电话接收短信<a title="#需要国外电话接收短信" href="#需要国外电话接收短信"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/642f9790a682492fcc07235a.png" alt="" loading="lazy"><br>
-<img src="https://pic.imgdb.cn/item/642f9799a682492fcc072b64.png" alt="" loading="lazy"></p>
-<h3 id="创建key">创建Key<a title="#创建key" href="#创建key"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/642f97faa682492fcc077f1e.png" alt="" loading="lazy" class="φbp"></p>
-]]></content>
-      <categories>
-        <category>ChatGPT</category>
-      </categories>
-      <tags>
-        <tag>ChatGPT</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>解除网页右键限制</title>
     <url>/remove-right-click-limit/</url>
     <content><![CDATA[<h3 id="脚本">脚本<a title="#脚本" href="#脚本"></a></h3>
@@ -1824,136 +1802,312 @@ Windows 路径：C:\Windows\System32\drivers\etc</p>
       </tags>
   </entry>
   <entry>
-    <title>CSS Loading 加载动画</title>
-    <url>/2022-01-13-CSS-Loading/</url>
-    <content><![CDATA[<style type="text/css">
-
-/* * {
-	border: 0;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-} */
-/* :root {
-	--hue: 223;
-	--bg: hsl(var(--hue),10%,90%);
-	--fg: hsl(var(--hue),10%,10%);
-	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
-} */
-/* body {
-	background-color: #1f1f1f;
-	color: var(--fg);
-	font: 1em/1.5 sans-serif;
-	height: 100vh;
-	display: grid;
-	place-items: center;
-	transition: background-color 0.3s;
-} */
-main {
-	padding: 1.5em 0;
-}
-
-.ap {
-	width: 100%;
-	height: 16em;
-
-}
-.ap__ring {	
-	transition: stroke 0.3s;
-}
-.ap__worm1,
-.ap__worm2 {
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-}
-.ap__worm1 {
-	animation-name: worm1;
-}
-.ap__worm2 {
-	animation-name: worm2;
-	visibility: hidden;
-}
-
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-	:root {
-		--bg: hsl(var(--hue),10%,10%);
-		--fg: hsl(var(--hue),10%,90%);
-	}
-	.ap__ring {
-		stroke: hsla(var(--hue),10%,90%,0.1);
-	}
-}
-
-/* Animtions */
-@keyframes worm1 {
-	from {
-		animation-timing-function: ease-in-out;
-		stroke-dashoffset: -87.96;
-	}
-	20% {
-		animation-timing-function: ease-in;
-		stroke-dashoffset: 0;
-	}
-	60% {
-		stroke-dashoffset: -791.68;
-		visibility: visible;
-	}
-	60.1%,
-	to {
-		stroke-dashoffset: -791.68;
-		visibility: hidden;
-	}
-}
-@keyframes worm2 {
-	from,
-	60% {
-		stroke-dashoffset: -87.96;
-		visibility: hidden;
-	}
-	60.1% {
-		animation-timing-function: cubic-bezier(0,0,0.5,0.75);
-		stroke-dashoffset: -87.96;
-		visibility: visible;
-	}
-	77% {
-		animation-timing-function: cubic-bezier(0.5,0.25,0.5,0.88);
-		stroke-dashoffset: -340;
-		visibility: visible;
-	}
-	to {
-		stroke-dashoffset: -669.92;
-		visibility: visible;
-	}
-}
-</style>
-<script>
-
-</script><main>
-	<svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
-		<defs>
-			<linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
-				<stop offset="0%" stop-color="hsl(223,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
-			</linearGradient>
-			<linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
-				<stop offset="0%" stop-color="hsl(193,90%,55%)" />
-				<stop offset="50%" stop-color="hsl(223,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
-			</linearGradient>
-		</defs>
-		<circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
-		<circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
-		<path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
-	</svg>
-</main>]]></content>
+    <title>那些好看的页面效果</title>
+    <url>/good-html/</url>
+    <content><![CDATA[<ol>
+<li><a href="/html/hover-style-slider.html?_blank">悬停效果的滑块(全屏)</a></li>
+<li><a href="/html/snowflake-animation.html?_blank">CSS雪花动画</a></li>
+<li><a href="/html/css-slider-font.html?_blank">CSS 滚动文字</a></li>
+<li><a href="/html/css-picture-accordion.html">CSS 实现横向图片手风琴样式图像库</a></li>
+<li><a href="/html/css-color.html">CSS 调色板 色彩库</a></li>
+<li><a href="/html/css-typing-animation.html">CSS 打字输出动画</a></li>
+<li><a href="/html/css-icon-android-ios.html">CSS 图标 iOS Android</a></li>
+<li><a href="/html/css3-loading-animations.html">CSS3 Loading animations</a></li>
+<li><a href="/html/flip-clock.html">翻页时钟</a></li>
+<li><a href="/html/vision-intelligent-cards.html">视觉智能卡-跟随鼠标</a></li>
+<li><a href="/html/tilt-style.html">倾斜效果</a></li>
+<li><a href="/html/symbol-special.html">特殊符号大全</a></li>
+<li><a href="/html/symbol-arrow.html">箭头符号 特殊符号大全</a></li>
+<li><a href="/html/symbol-stars.html">星星符号 特殊符号大全</a></li>
+<li><a href="/html/symbol-serial-number.html">编号 序号 特殊符号大全</a></li>
+</ol>
+<!-- https://www.jq22.com/daima400 -->]]></content>
       <categories>
         <category>HTML</category>
-        <category>CSS</category>
       </categories>
       <tags>
         <tag>HTML</tag>
-        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 嵌入可视化 Echarts 图表</title>
+    <url>/echarts/</url>
+    <content><![CDATA[<p>Echarts在线库 CDN 服务: <code>https://www.bootcdn.cn/echarts/</code></p>
+<div id="echarts6625" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6625'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  tooltip: {
+    trigger: 'axis'
+  },
+  legend: {
+    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  toolbox: {
+    feature: {
+      saveAsImage: {}
+    }
+  },
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      name: 'Email',
+      type: 'line',
+      stack: 'Total',
+      data: [120, 132, 101, 134, 90, 230, 210]
+    },
+    {
+      name: 'Union Ads',
+      type: 'line',
+      stack: 'Total',
+      data: [220, 182, 191, 234, 290, 330, 310]
+    },
+    {
+      name: 'Video Ads',
+      type: 'line',
+      stack: 'Total',
+      data: [150, 232, 201, 154, 190, 330, 410]
+    },
+    {
+      name: 'Direct',
+      type: 'line',
+      stack: 'Total',
+      data: [320, 332, 301, 334, 390, 330, 320]
+    },
+    {
+      name: 'Search Engine',
+      type: 'line',
+      stack: 'Total',
+      data: [820, 932, 901, 934, 1290, 1330, 1320]
+    }
+  ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts4648" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4648'));
+
+        // 指定图表的配置项和数据
+        var option = option = {
+    color: ['#3398DB'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            axisTick: {
+                alignWithLabel: true
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value'
+        }
+    ],
+    series: [
+        {
+            name: '直接访问',
+            type: 'bar',
+            barWidth: '60%',
+            data: [10, 52, 200, 334, 390, 330, 220]
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<script type="text/javascript">
+var dataAxis = ['点', '击', '柱', '子', '或', '者', '两', '指', '在', '触', '屏', '上', '滑', '动', '能', '够', '自', '动', '缩', '放'];
+var data = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 122, 133, 334, 198, 123, 125, 220];
+var yMax = 500;
+var dataShadow = [];
+for (var i = 0; i < data.length; i++) {
+    dataShadow.push(yMax);
+}
+// Enable data zoom when user click bar.
+var zoomSize = 6;
+myChart.on('click', function (params) {
+    console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+    myChart.dispatchAction({
+        type: 'dataZoom',
+        startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+        endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
+    });
+});
+</script><div id="echarts4542" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4542'));
+
+        // 指定图表的配置项和数据
+        var option = option = {
+    title: {
+        text: '特性示例：渐变色 阴影 点击缩放',
+        subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
+    },
+    xAxis: {
+        data: dataAxis,
+        axisLabel: {
+            inside: true,
+            textStyle: {
+                color: '#fff'
+            }
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: false
+        },
+        z: 10
+    },
+    yAxis: {
+        axisLine: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLabel: {
+            textStyle: {
+                color: '#999'
+            }
+        }
+    },
+    dataZoom: [
+        {
+            type: 'inside'
+        }
+    ],
+    series: [
+        { // For shadow
+            type: 'bar',
+            itemStyle: {
+                color: 'rgba(0,0,0,0.05)'
+            },
+            barGap: '-100%',
+            barCategoryGap: '40%',
+            data: dataShadow,
+            animation: false
+        },
+        {
+            type: 'bar',
+            itemStyle: {
+                color: new echarts.graphic.LinearGradient(
+                    0, 0, 0, 1,
+                    [
+                        {offset: 0, color: '#83bff6'},
+                        {offset: 0.5, color: '#188df0'},
+                        {offset: 1, color: '#188df0'}
+                    ]
+                )
+            },
+            emphasis: {
+                itemStyle: {
+                    color: new echarts.graphic.LinearGradient(
+                        0, 0, 0, 1,
+                        [
+                            {offset: 0, color: '#2378f7'},
+                            {offset: 0.7, color: '#2378f7'},
+                            {offset: 1, color: '#83bff6'}
+                        ]
+                    )
+                }
+            },
+            data: data
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts3346" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3346'));
+
+        // 指定图表的配置项和数据
+        var option = option = {
+    title: {
+        text: '某站点用户访问来源',
+        subtext: '纯属虚构',
+        left: 'center'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+        data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: '55%',
+            center: ['50%', '60%'],
+            data: [
+                {value: 335, name: '直接访问'},
+                {value: 310, name: '邮件营销'},
+                {value: 234, name: '联盟广告'},
+                {value: 135, name: '视频广告'},
+                {value: 1548, name: '搜索引擎'}
+            ],
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>]]></content>
+      <categories>
+        <category>Echarts</category>
+      </categories>
+      <tags>
+        <tag>Echarts</tag>
       </tags>
   </entry>
   <entry>
@@ -2238,26 +2392,17 @@ main {
       </tags>
   </entry>
   <entry>
-    <title>那些好看的页面效果</title>
-    <url>/good-html/</url>
-    <content><![CDATA[<ol>
-<li><a href="/html/hover-style-slider.html?_blank">悬停效果的滑块(全屏)</a></li>
-<li><a href="/html/snowflake-animation.html?_blank">CSS雪花动画</a></li>
-<li><a href="/html/css-slider-font.html?_blank">CSS 滚动文字</a></li>
-<li><a href="/html/css-picture-accordion.html">CSS 实现横向图片手风琴样式图像库</a></li>
-<li><a href="/html/css-color.html">CSS 调色板 色彩库</a></li>
-<li><a href="/html/css-typing-animation.html">CSS 打字输出动画</a></li>
-<li><a href="/html/css-icon-android-ios.html">CSS 图标 iOS Android</a></li>
-<li><a href="/html/css3-loading-animations.html">CSS3 Loading animations</a></li>
-<li><a href="/html/flip-clock.html">翻页时钟</a></li>
-<li><a href="/html/vision-intelligent-cards.html">视觉智能卡-跟随鼠标</a></li>
-<li><a href="/html/tilt-style.html">倾斜效果</a></li>
-<li><a href="/html/symbol-special.html">特殊符号大全</a></li>
-<li><a href="/html/symbol-arrow.html">箭头符号 特殊符号大全</a></li>
-<li><a href="/html/symbol-stars.html">星星符号 特殊符号大全</a></li>
-<li><a href="/html/symbol-serial-number.html">编号 序号 特殊符号大全</a></li>
-</ol>
-<!-- https://www.jq22.com/daima400 -->]]></content>
+    <title>一行代码给你的网站嵌入雪景效果</title>
+    <url>/snow/</url>
+    <content><![CDATA[<h3 id="来自-embed.im">来自 <a href="http://embed.im">embed.im</a><a title="#来自-embed.im" href="#来自-embed.im"></a></h3>
+<p>Snow effect 网址: <code>https://embed.im/snow/</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;script src=<span class="string">&quot;https://app.embed.im/snow.js&quot;</span> defer&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="hexo-博客使用技巧">Hexo 博客使用技巧<a title="#hexo-博客使用技巧" href="#hexo-博客使用技巧"></a></h3>
+<p>找到自己的主题文件, 找到<code>layout</code>文件夹, 打开文件<code>index.njk</code><br>
+在头部标签内引入JS即可</p>
+<p>该JS源文件:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* https://embed.im/snow */</span></span><br><span class="line"><span class="keyword">var</span> embedimSnow=<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;embedim--snow&quot;</span>);<span class="keyword">if</span>(!embedimSnow)&#123;<span class="keyword">function</span> <span class="title function_">embRand</span>(<span class="params">a,b</span>)&#123;<span class="keyword">return</span> <span class="title class_">Math</span>.<span class="title function_">floor</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>()*(b-a+<span class="number">1</span>))+a&#125;<span class="keyword">var</span> embCSS=<span class="string">&#x27;.embedim-snow&#123;position: absolute;width: 10px;height: 10px;background: white;border-radius: 50%;margin-top:-10px&#125;&#x27;</span>;<span class="keyword">var</span> embHTML=<span class="string">&#x27;&#x27;</span>;<span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;<span class="number">200</span>;i++)&#123;embHTML+=<span class="string">&#x27;&lt;i class=&quot;embedim-snow&quot;&gt;&lt;/i&gt;&#x27;</span>;<span class="keyword">var</span> rndX=(<span class="title function_">embRand</span>(<span class="number">0</span>,<span class="number">1000000</span>)*<span class="number">0.0001</span>),rndO=<span class="title function_">embRand</span>(-<span class="number">100000</span>,<span class="number">100000</span>)*<span class="number">0.0001</span>,rndT=(<span class="title function_">embRand</span>(<span class="number">3</span>,<span class="number">8</span>)*<span class="number">10</span>).<span class="title function_">toFixed</span>(<span class="number">2</span>),rndS=(<span class="title function_">embRand</span>(<span class="number">0</span>,<span class="number">10000</span>)*<span class="number">0.0001</span>).<span class="title function_">toFixed</span>(<span class="number">2</span>);embCSS+=<span class="string">&#x27;.embedim-snow:nth-child(&#x27;</span>+i+<span class="string">&#x27;)&#123;&#x27;</span>+<span class="string">&#x27;opacity:&#x27;</span>+(<span class="title function_">embRand</span>(<span class="number">1</span>,<span class="number">10000</span>)*<span class="number">0.0001</span>).<span class="title function_">toFixed</span>(<span class="number">2</span>)+<span class="string">&#x27;;&#x27;</span>+<span class="string">&#x27;transform:translate(&#x27;</span>+rndX.<span class="title function_">toFixed</span>(<span class="number">2</span>)+<span class="string">&#x27;vw,-10px) scale(&#x27;</span>+rndS+<span class="string">&#x27;);&#x27;</span>+<span class="string">&#x27;animation:fall-&#x27;</span>+i+<span class="string">&#x27; &#x27;</span>+<span class="title function_">embRand</span>(<span class="number">10</span>,<span class="number">30</span>)+<span class="string">&#x27;s -&#x27;</span>+<span class="title function_">embRand</span>(<span class="number">0</span>,<span class="number">30</span>)+<span class="string">&#x27;s linear infinite&#x27;</span>+<span class="string">&#x27;&#125;&#x27;</span>+<span class="string">&#x27;@keyframes fall-&#x27;</span>+i+<span class="string">&#x27;&#123;&#x27;</span>+rndT+<span class="string">&#x27;%&#123;&#x27;</span>+<span class="string">&#x27;transform:translate(&#x27;</span>+(rndX+rndO).<span class="title function_">toFixed</span>(<span class="number">2</span>)+<span class="string">&#x27;vw,&#x27;</span>+rndT+<span class="string">&#x27;vh) scale(&#x27;</span>+rndS+<span class="string">&#x27;)&#x27;</span>+<span class="string">&#x27;&#125;&#x27;</span>+<span class="string">&#x27;to&#123;&#x27;</span>+<span class="string">&#x27;transform:translate(&#x27;</span>+(rndX+(rndO/<span class="number">2</span>)).<span class="title function_">toFixed</span>(<span class="number">2</span>)+<span class="string">&#x27;vw, 105vh) scale(&#x27;</span>+rndS+<span class="string">&#x27;)&#x27;</span>+<span class="string">&#x27;&#125;&#x27;</span>+<span class="string">&#x27;&#125;&#x27;</span>&#125;embedimSnow=<span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;div&#x27;</span>);embedimSnow.<span class="property">id</span>=<span class="string">&#x27;embedim--snow&#x27;</span>;embedimSnow.<span class="property">innerHTML</span>=<span class="string">&#x27;&lt;style&gt;#embedim--snow&#123;position:fixed;left:0;top:0;bottom:0;width:100vw;height:100vh;overflow:hidden;z-index:9999999;pointer-events:none&#125;&#x27;</span>+embCSS+<span class="string">&#x27;&lt;/style&gt;&#x27;</span>+embHTML;<span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(embedimSnow)&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>HTML</category>
       </categories>
@@ -2349,284 +2494,25 @@ Backblaze B2 官网</p>
       </tags>
   </entry>
   <entry>
-    <title>Hexo 嵌入可视化 Echarts 图表</title>
-    <url>/echarts/</url>
-    <content><![CDATA[<p>Echarts在线库 CDN 服务: <code>https://www.bootcdn.cn/echarts/</code></p>
-<div id="echarts4607" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts4607'));
-
-        // 指定图表的配置项和数据
-        var option = {
-  tooltip: {
-    trigger: 'axis'
-  },
-  legend: {
-    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
-  },
-  grid: {
-    left: '3%',
-    right: '4%',
-    bottom: '3%',
-    containLabel: true
-  },
-  toolbox: {
-    feature: {
-      saveAsImage: {}
-    }
-  },
-  xAxis: {
-    type: 'category',
-    boundaryGap: false,
-    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-  },
-  yAxis: {
-    type: 'value'
-  },
-  series: [
-    {
-      name: 'Email',
-      type: 'line',
-      stack: 'Total',
-      data: [120, 132, 101, 134, 90, 230, 210]
-    },
-    {
-      name: 'Union Ads',
-      type: 'line',
-      stack: 'Total',
-      data: [220, 182, 191, 234, 290, 330, 310]
-    },
-    {
-      name: 'Video Ads',
-      type: 'line',
-      stack: 'Total',
-      data: [150, 232, 201, 154, 190, 330, 410]
-    },
-    {
-      name: 'Direct',
-      type: 'line',
-      stack: 'Total',
-      data: [320, 332, 301, 334, 390, 330, 320]
-    },
-    {
-      name: 'Search Engine',
-      type: 'line',
-      stack: 'Total',
-      data: [820, 932, 901, 934, 1290, 1330, 1320]
-    }
-  ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>
-<div id="echarts6850" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts6850'));
-
-        // 指定图表的配置项和数据
-        var option = option = {
-    color: ['#3398DB'],
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
-            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-        }
-    },
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis: [
-        {
-            type: 'category',
-            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-            axisTick: {
-                alignWithLabel: true
-            }
-        }
-    ],
-    yAxis: [
-        {
-            type: 'value'
-        }
-    ],
-    series: [
-        {
-            name: '直接访问',
-            type: 'bar',
-            barWidth: '60%',
-            data: [10, 52, 200, 334, 390, 330, 220]
-        }
-    ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>
-<script type="text/javascript">
-var dataAxis = ['点', '击', '柱', '子', '或', '者', '两', '指', '在', '触', '屏', '上', '滑', '动', '能', '够', '自', '动', '缩', '放'];
-var data = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 122, 133, 334, 198, 123, 125, 220];
-var yMax = 500;
-var dataShadow = [];
-for (var i = 0; i < data.length; i++) {
-    dataShadow.push(yMax);
-}
-// Enable data zoom when user click bar.
-var zoomSize = 6;
-myChart.on('click', function (params) {
-    console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
-    myChart.dispatchAction({
-        type: 'dataZoom',
-        startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
-        endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
-    });
-});
-</script><div id="echarts3283" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts3283'));
-
-        // 指定图表的配置项和数据
-        var option = option = {
-    title: {
-        text: '特性示例：渐变色 阴影 点击缩放',
-        subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
-    },
-    xAxis: {
-        data: dataAxis,
-        axisLabel: {
-            inside: true,
-            textStyle: {
-                color: '#fff'
-            }
-        },
-        axisTick: {
-            show: false
-        },
-        axisLine: {
-            show: false
-        },
-        z: 10
-    },
-    yAxis: {
-        axisLine: {
-            show: false
-        },
-        axisTick: {
-            show: false
-        },
-        axisLabel: {
-            textStyle: {
-                color: '#999'
-            }
-        }
-    },
-    dataZoom: [
-        {
-            type: 'inside'
-        }
-    ],
-    series: [
-        { // For shadow
-            type: 'bar',
-            itemStyle: {
-                color: 'rgba(0,0,0,0.05)'
-            },
-            barGap: '-100%',
-            barCategoryGap: '40%',
-            data: dataShadow,
-            animation: false
-        },
-        {
-            type: 'bar',
-            itemStyle: {
-                color: new echarts.graphic.LinearGradient(
-                    0, 0, 0, 1,
-                    [
-                        {offset: 0, color: '#83bff6'},
-                        {offset: 0.5, color: '#188df0'},
-                        {offset: 1, color: '#188df0'}
-                    ]
-                )
-            },
-            emphasis: {
-                itemStyle: {
-                    color: new echarts.graphic.LinearGradient(
-                        0, 0, 0, 1,
-                        [
-                            {offset: 0, color: '#2378f7'},
-                            {offset: 0.7, color: '#2378f7'},
-                            {offset: 1, color: '#83bff6'}
-                        ]
-                    )
-                }
-            },
-            data: data
-        }
-    ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>
-<div id="echarts3071" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts3071'));
-
-        // 指定图表的配置项和数据
-        var option = option = {
-    title: {
-        text: '某站点用户访问来源',
-        subtext: '纯属虚构',
-        left: 'center'
-    },
-    tooltip: {
-        trigger: 'item',
-        formatter: '{a} <br/>{b} : {c} ({d}%)'
-    },
-    legend: {
-        orient: 'vertical',
-        left: 'left',
-        data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
-    },
-    series: [
-        {
-            name: '访问来源',
-            type: 'pie',
-            radius: '55%',
-            center: ['50%', '60%'],
-            data: [
-                {value: 335, name: '直接访问'},
-                {value: 310, name: '邮件营销'},
-                {value: 234, name: '联盟广告'},
-                {value: 135, name: '视频广告'},
-                {value: 1548, name: '搜索引擎'}
-            ],
-            emphasis: {
-                itemStyle: {
-                    shadowBlur: 10,
-                    shadowOffsetX: 0,
-                    shadowColor: 'rgba(0, 0, 0, 0.5)'
-                }
-            }
-        }
-    ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>]]></content>
+    <title>ChatGPT 注册教程</title>
+    <url>/chatgpt-register/</url>
+    <content><![CDATA[<h3 id="打开官网:">打开官网:<a title="#打开官网:" href="#打开官网:"></a></h3>
+<ul>
+<li>网站：<code>https://openai.com/</code></li>
+<li>网站：<code>https://platform.openai.com/account/</code></li>
+</ul>
+<p>正常流程注册</p>
+<h3 id="需要国外电话接收短信">需要国外电话接收短信<a title="#需要国外电话接收短信" href="#需要国外电话接收短信"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/642f9790a682492fcc07235a.png" alt="" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/642f9799a682492fcc072b64.png" alt="" loading="lazy"></p>
+<h3 id="创建key">创建Key<a title="#创建key" href="#创建key"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/642f97faa682492fcc077f1e.png" alt="" loading="lazy" class="φbp"></p>
+]]></content>
       <categories>
-        <category>Echarts</category>
+        <category>ChatGPT</category>
       </categories>
       <tags>
-        <tag>Echarts</tag>
+        <tag>ChatGPT</tag>
       </tags>
   </entry>
   <entry>
@@ -2896,83 +2782,6 @@ myChart.on('click', function (params) {
       </categories>
       <tags>
         <tag>Thread</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IntelliJ IDEA 配置</title>
-    <url>/IntelliJ-IDEA-Config/</url>
-    <content><![CDATA[<h3 id="设置背景颜色">设置背景颜色<a title="#设置背景颜色" href="#设置背景颜色"></a></h3>
-<h4 id="豆沙绿">豆沙绿<a title="#豆沙绿" href="#豆沙绿"></a></h4>
-<blockquote>
-<p>RGB颜色: 红色:<code>199</code> 绿色:<code>238</code> 蓝色:<code>203</code><br>
-十六进制颜色: <code>C6EECB</code></p>
-</blockquote>
-<blockquote>
-<p>色调: <code>85</code> 色度:<code>123</code> 亮度:<code>205</code><br>
-RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</code><br>
-十六进制颜色: <code>#C7EDCC</code> 或者 <code>#CCE8CF</code></p>
-</blockquote>
-<ol>
-<li>
-<p>编辑器的背景颜色:<br>
-设置 &gt; 编辑器 &gt; 配色方案 &gt; 常规 &gt; 文本 &gt; 默认文本 &gt; 背景</p>
-</li>
-<li>
-<p>只读文件背景颜色:<br>
-设置 &gt; 编辑器 &gt; 配色方案 &gt; 常规 &gt; 文本 &gt; 只读文件背景 &gt; 背景</p>
-</li>
-<li>
-<p>设置行号区域背景颜色:<br>
-设置 &gt; 编辑器 &gt; 配色方案 &gt; 常规 &gt; 编辑器 &gt; 间距背景 &gt; 背景</p>
-</li>
-<li>
-<p>控制台背景颜色:<br>
-设置 &gt; 编辑器 &gt; 配色方案 &gt; 控制台颜色 &gt; 控制台 &gt; 背景 &gt; 背景<br>
-设置 &gt; 编辑器 &gt; 配色方案 &gt; 控制台颜色 &gt; 控制台 &gt; 标准输出 &gt; 背景</p>
-</li>
-<li>
-<p>设置左侧项目树背景颜色:<br>
-设置 &gt; 外观与行为 &gt; 文件颜色 &gt; 添加 &gt; 项目文件 &gt; 自定义</p>
-</li>
-</ol>
-<p><img src="https://pic.imgdb.cn/item/642bc30e6ea21b9a9e79b8fe.png" alt="设置背景颜色" loading="lazy" class="φbp"></p>
-<hr>
-<h3 id="显示空格">显示空格<a title="#显示空格" href="#显示空格"></a></h3>
-<ol>
-<li>设置 &gt; 编辑器 &gt; 常规 &gt; 外观 &gt; 显示空格</li>
-</ol>
-<p><img src="https://pic.imgdb.cn/item/642bbe916ea21b9a9e503d72.png" alt="显示空格" loading="lazy" class="φbp"></p>
-<hr>
-]]></content>
-      <categories>
-        <category>IntelliJ IDEA</category>
-      </categories>
-      <tags>
-        <tag>IntelliJ IDEA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IntelliJ IDEA 插件</title>
-    <url>/IntelliJ-IDEA-Plugins/</url>
-    <content><![CDATA[<h3 id="free-mybatis-plugin">Free MyBatis plugin<a title="#free-mybatis-plugin" href="#free-mybatis-plugin"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/6279cab909475431291d2971.png" alt="Free MyBatis plugin" loading="lazy" class="φbp"></p>
-<ul>
-<li>Git地址：<a href="https://github.com/chuntungho/free-mybatis-plugin" target="_blank">https://github.com/chuntungho/free-mybatis-plugin</a></li>
-</ul>
-<p>主要功能：</p>
-<ol>
-<li>生成mapper xml文件</li>
-<li>快速从代码跳转到mapper及从mapper返回代码</li>
-<li>mybatis自动补全及语法错误提示</li>
-<li>集成mybatis generator gui界面</li>
-<li>根据数据库注解，生成swagger model注解</li>
-</ol>
-]]></content>
-      <categories>
-        <category>IntelliJ IDEA</category>
-      </categories>
-      <tags>
-        <tag>IntelliJ IDEA</tag>
       </tags>
   </entry>
   <entry>
@@ -3286,6 +3095,83 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </tags>
   </entry>
   <entry>
+    <title>IntelliJ IDEA 配置</title>
+    <url>/IntelliJ-IDEA-Config/</url>
+    <content><![CDATA[<h3 id="设置背景颜色">设置背景颜色<a title="#设置背景颜色" href="#设置背景颜色"></a></h3>
+<h4 id="豆沙绿">豆沙绿<a title="#豆沙绿" href="#豆沙绿"></a></h4>
+<blockquote>
+<p>RGB颜色: 红色:<code>199</code> 绿色:<code>238</code> 蓝色:<code>203</code><br>
+十六进制颜色: <code>C6EECB</code></p>
+</blockquote>
+<blockquote>
+<p>色调: <code>85</code> 色度:<code>123</code> 亮度:<code>205</code><br>
+RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</code><br>
+十六进制颜色: <code>#C7EDCC</code> 或者 <code>#CCE8CF</code></p>
+</blockquote>
+<ol>
+<li>
+<p>编辑器的背景颜色:<br>
+设置 &gt; 编辑器 &gt; 配色方案 &gt; 常规 &gt; 文本 &gt; 默认文本 &gt; 背景</p>
+</li>
+<li>
+<p>只读文件背景颜色:<br>
+设置 &gt; 编辑器 &gt; 配色方案 &gt; 常规 &gt; 文本 &gt; 只读文件背景 &gt; 背景</p>
+</li>
+<li>
+<p>设置行号区域背景颜色:<br>
+设置 &gt; 编辑器 &gt; 配色方案 &gt; 常规 &gt; 编辑器 &gt; 间距背景 &gt; 背景</p>
+</li>
+<li>
+<p>控制台背景颜色:<br>
+设置 &gt; 编辑器 &gt; 配色方案 &gt; 控制台颜色 &gt; 控制台 &gt; 背景 &gt; 背景<br>
+设置 &gt; 编辑器 &gt; 配色方案 &gt; 控制台颜色 &gt; 控制台 &gt; 标准输出 &gt; 背景</p>
+</li>
+<li>
+<p>设置左侧项目树背景颜色:<br>
+设置 &gt; 外观与行为 &gt; 文件颜色 &gt; 添加 &gt; 项目文件 &gt; 自定义</p>
+</li>
+</ol>
+<p><img src="https://pic.imgdb.cn/item/642bc30e6ea21b9a9e79b8fe.png" alt="设置背景颜色" loading="lazy" class="φbp"></p>
+<hr>
+<h3 id="显示空格">显示空格<a title="#显示空格" href="#显示空格"></a></h3>
+<ol>
+<li>设置 &gt; 编辑器 &gt; 常规 &gt; 外观 &gt; 显示空格</li>
+</ol>
+<p><img src="https://pic.imgdb.cn/item/642bbe916ea21b9a9e503d72.png" alt="显示空格" loading="lazy" class="φbp"></p>
+<hr>
+]]></content>
+      <categories>
+        <category>IntelliJ IDEA</category>
+      </categories>
+      <tags>
+        <tag>IntelliJ IDEA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IntelliJ IDEA 插件</title>
+    <url>/IntelliJ-IDEA-Plugins/</url>
+    <content><![CDATA[<h3 id="free-mybatis-plugin">Free MyBatis plugin<a title="#free-mybatis-plugin" href="#free-mybatis-plugin"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/6279cab909475431291d2971.png" alt="Free MyBatis plugin" loading="lazy" class="φbp"></p>
+<ul>
+<li>Git地址：<a href="https://github.com/chuntungho/free-mybatis-plugin" target="_blank">https://github.com/chuntungho/free-mybatis-plugin</a></li>
+</ul>
+<p>主要功能：</p>
+<ol>
+<li>生成mapper xml文件</li>
+<li>快速从代码跳转到mapper及从mapper返回代码</li>
+<li>mybatis自动补全及语法错误提示</li>
+<li>集成mybatis generator gui界面</li>
+<li>根据数据库注解，生成swagger model注解</li>
+</ol>
+]]></content>
+      <categories>
+        <category>IntelliJ IDEA</category>
+      </categories>
+      <tags>
+        <tag>IntelliJ IDEA</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux 计划任务 CronTab</title>
     <url>/linux-crontab/</url>
     <content><![CDATA[<blockquote>
@@ -3410,6 +3296,22 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </categories>
       <tags>
         <tag>MongoDB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL 开源的数据快速回滚工具(闪回) - binlog2sql</title>
+    <url>/mysql-binlog2sql/</url>
+    <content><![CDATA[<h2 id="binlog2sql-介绍">binlog2sql 介绍<a title="#binlog2sql-介绍" href="#binlog2sql-介绍"></a></h2>
+<p>从MySQL binlog解析出你要的SQL。根据不同选项，你可以得到原始SQL、回滚SQL、去除主键的INSERT SQL等。</p>
+<p>GitHub 地址：<code>https://github.com/danfengcao/binlog2sql</code></p>
+<h2 id="安装">安装<a title="#安装" href="#安装"></a></h2>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 安装Git</span></span><br><span class="line">yum install -y git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 pip 工具</span></span><br><span class="line">yum install -y epel-release</span><br><span class="line"></span><br><span class="line">yum install -y python-pip</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载 安装binlog2sql</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/danfengcao/binlog2sql.git &amp;&amp; <span class="built_in">cd</span> binlog2sql</span><br><span class="line"></span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
       </tags>
   </entry>
   <entry>
@@ -3600,22 +3502,6 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </tags>
   </entry>
   <entry>
-    <title>MySQL 开源的数据快速回滚工具(闪回) - binlog2sql</title>
-    <url>/mysql-binlog2sql/</url>
-    <content><![CDATA[<h2 id="binlog2sql-介绍">binlog2sql 介绍<a title="#binlog2sql-介绍" href="#binlog2sql-介绍"></a></h2>
-<p>从MySQL binlog解析出你要的SQL。根据不同选项，你可以得到原始SQL、回滚SQL、去除主键的INSERT SQL等。</p>
-<p>GitHub 地址：<code>https://github.com/danfengcao/binlog2sql</code></p>
-<h2 id="安装">安装<a title="#安装" href="#安装"></a></h2>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 安装Git</span></span><br><span class="line">yum install -y git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 pip 工具</span></span><br><span class="line">yum install -y epel-release</span><br><span class="line"></span><br><span class="line">yum install -y python-pip</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载 安装binlog2sql</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/danfengcao/binlog2sql.git &amp;&amp; <span class="built_in">cd</span> binlog2sql</span><br><span class="line"></span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>iOS App苹果企业签分发</title>
     <url>/ios-app-enterprise-sign-share/</url>
     <content><![CDATA[<h3 id="配置">配置<a title="#配置" href="#配置"></a></h3>
@@ -3786,57 +3672,6 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </tags>
   </entry>
   <entry>
-    <title>JVM 工具集</title>
-    <url>/jvm-tools/</url>
-    <content><![CDATA[<h3 id="jvisualvm(java-visualvm)">jvisualvm(Java VisualVM)<a title="#jvisualvm(java-visualvm)" href="#jvisualvm(java-visualvm)"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/642e3c67a682492fcc7861d2.png" alt="Java VisualVM" loading="lazy" class="φbp"></p>
-<blockquote>
-<p>随JDK一同发布的jvm诊断工具<br>
-但是没有GC可视化, 需要安装插件, 看下面步骤</p>
-</blockquote>
-<h6 id="visual-gc-离线插件安装">Visual GC 离线插件安装<a title="#visual-gc-离线插件安装" href="#visual-gc-离线插件安装"></a></h6>
-<p>官网：<a href="https://visualvm.github.io/index.html" target="_blank">https://visualvm.github.io/index.html</a><br>
-点击：Plugins<br>
-点击：Plugins Centers<br>
-找到：Java VisualVM 对应JDK版本：<code>JDK 8 Update 131 - 341</code> &gt; <code>https://visualvm.github.io/uc/8u131/updates.xml.gz</code><br>
-找到：Tools 目录<br>
-点击： Visual GC 下载</p>
-<hr>
-<h3 id="memory-analyzer-(eclipse-mat)">Memory Analyzer (Eclipse MAT)<a title="#memory-analyzer-(eclipse-mat)" href="#memory-analyzer-(eclipse-mat)"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/6430e5360d2dde5777f3c0f6.png" alt="Java VisualVM" loading="lazy" class="φbp"></p>
-<blockquote>
-<p>一个快速且功能丰富的Java堆分析器, 它可以帮助您查找内存泄漏并减少内存消耗.<br>
-内存监控和分析<br>
-内存泄漏分析工具</p>
-</blockquote>
-<p>官方网站: <a href="https://www.eclipse.org/mat/downloads.php" target="_blank">https://www.eclipse.org/mat/downloads.php</a></p>
-<p>历史JDK版本可以点击:<code>Previous Releases</code> 下载符合自己JDK的版本</p>
-<p>官方介绍页面: <a href="https://wiki.eclipse.org/MemoryAnalyzer#About" target="_blank">https://wiki.eclipse.org/MemoryAnalyzer#About</a><br>
-官方教程页面: <a href="https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.mat.ui.help/gettingstarted/basictutorial.html" target="_blank">https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.mat.ui.help/gettingstarted/basictutorial.html</a></p>
-<hr>
-<h3 id="jprofiler">JProfiler<a title="#jprofiler" href="#jprofiler"></a></h3>
-<p><img src="https://pic.imgdb.cn/item/6438c32f0d2dde577769984a.png" alt="Java VisualVM" loading="lazy" class="φbp"></p>
-<p>官网: <a href="https://www.ej-technologies.com/products/jprofiler/overview.html" target="_blank">https://www.ej-technologies.com/products/jprofiler/overview.html</a></p>
-<p>绿色版下载: <a href="https://www.aliyundrive.com/s/Mic6vrDkQ1F" target="_blank">https://www.aliyundrive.com/s/Mic6vrDkQ1F</a></p>
-<hr>
-<h3 id="gc日志分析工具">GC日志分析工具<a title="#gc日志分析工具" href="#gc日志分析工具"></a></h3>
-<h4 id="gcviewer">GCViewer<a title="#gcviewer" href="#gcviewer"></a></h4>
-<p><img src="https://pic.imgdb.cn/item/6440ef470d2dde577776c2f4.png" alt="GCViewer" loading="lazy" class="φbp"></p>
-<p>官网: <a href="https://github.com/chewiebug/GCViewer" target="_blank">https://github.com/chewiebug/GCViewer</a><br>
-下载: <a href="https://github.com/chewiebug/GCViewer/releases" target="_blank">https://github.com/chewiebug/GCViewer/releases</a></p>
-<h4 id="gceasy">GCeasy<a title="#gceasy" href="#gceasy"></a></h4>
-<p><img src="https://pic.imgdb.cn/item/6440f2900d2dde57777ae7a7.png" alt="GCViewer" loading="lazy" class="φbp"></p>
-<p>官网: <a href="https://gceasy.io/" target="_blank">https://gceasy.io/</a></p>
-<hr>
-]]></content>
-      <categories>
-        <category>JVM</category>
-      </categories>
-      <tags>
-        <tag>JVM</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JVM 命令集</title>
     <url>/jvm-commands/</url>
     <content><![CDATA[<p>jps<br>
@@ -3927,6 +3762,57 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
 </tr>
 </tbody>
 </table></div></div>]]></content>
+      <categories>
+        <category>JVM</category>
+      </categories>
+      <tags>
+        <tag>JVM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JVM 工具集</title>
+    <url>/jvm-tools/</url>
+    <content><![CDATA[<h3 id="jvisualvm(java-visualvm)">jvisualvm(Java VisualVM)<a title="#jvisualvm(java-visualvm)" href="#jvisualvm(java-visualvm)"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/642e3c67a682492fcc7861d2.png" alt="Java VisualVM" loading="lazy" class="φbp"></p>
+<blockquote>
+<p>随JDK一同发布的jvm诊断工具<br>
+但是没有GC可视化, 需要安装插件, 看下面步骤</p>
+</blockquote>
+<h6 id="visual-gc-离线插件安装">Visual GC 离线插件安装<a title="#visual-gc-离线插件安装" href="#visual-gc-离线插件安装"></a></h6>
+<p>官网：<a href="https://visualvm.github.io/index.html" target="_blank">https://visualvm.github.io/index.html</a><br>
+点击：Plugins<br>
+点击：Plugins Centers<br>
+找到：Java VisualVM 对应JDK版本：<code>JDK 8 Update 131 - 341</code> &gt; <code>https://visualvm.github.io/uc/8u131/updates.xml.gz</code><br>
+找到：Tools 目录<br>
+点击： Visual GC 下载</p>
+<hr>
+<h3 id="memory-analyzer-(eclipse-mat)">Memory Analyzer (Eclipse MAT)<a title="#memory-analyzer-(eclipse-mat)" href="#memory-analyzer-(eclipse-mat)"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/6430e5360d2dde5777f3c0f6.png" alt="Java VisualVM" loading="lazy" class="φbp"></p>
+<blockquote>
+<p>一个快速且功能丰富的Java堆分析器, 它可以帮助您查找内存泄漏并减少内存消耗.<br>
+内存监控和分析<br>
+内存泄漏分析工具</p>
+</blockquote>
+<p>官方网站: <a href="https://www.eclipse.org/mat/downloads.php" target="_blank">https://www.eclipse.org/mat/downloads.php</a></p>
+<p>历史JDK版本可以点击:<code>Previous Releases</code> 下载符合自己JDK的版本</p>
+<p>官方介绍页面: <a href="https://wiki.eclipse.org/MemoryAnalyzer#About" target="_blank">https://wiki.eclipse.org/MemoryAnalyzer#About</a><br>
+官方教程页面: <a href="https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.mat.ui.help/gettingstarted/basictutorial.html" target="_blank">https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.mat.ui.help/gettingstarted/basictutorial.html</a></p>
+<hr>
+<h3 id="jprofiler">JProfiler<a title="#jprofiler" href="#jprofiler"></a></h3>
+<p><img src="https://pic.imgdb.cn/item/6438c32f0d2dde577769984a.png" alt="Java VisualVM" loading="lazy" class="φbp"></p>
+<p>官网: <a href="https://www.ej-technologies.com/products/jprofiler/overview.html" target="_blank">https://www.ej-technologies.com/products/jprofiler/overview.html</a></p>
+<p>绿色版下载: <a href="https://www.aliyundrive.com/s/Mic6vrDkQ1F" target="_blank">https://www.aliyundrive.com/s/Mic6vrDkQ1F</a></p>
+<hr>
+<h3 id="gc日志分析工具">GC日志分析工具<a title="#gc日志分析工具" href="#gc日志分析工具"></a></h3>
+<h4 id="gcviewer">GCViewer<a title="#gcviewer" href="#gcviewer"></a></h4>
+<p><img src="https://pic.imgdb.cn/item/6440ef470d2dde577776c2f4.png" alt="GCViewer" loading="lazy" class="φbp"></p>
+<p>官网: <a href="https://github.com/chewiebug/GCViewer" target="_blank">https://github.com/chewiebug/GCViewer</a><br>
+下载: <a href="https://github.com/chewiebug/GCViewer/releases" target="_blank">https://github.com/chewiebug/GCViewer/releases</a></p>
+<h4 id="gceasy">GCeasy<a title="#gceasy" href="#gceasy"></a></h4>
+<p><img src="https://pic.imgdb.cn/item/6440f2900d2dde57777ae7a7.png" alt="GCViewer" loading="lazy" class="φbp"></p>
+<p>官网: <a href="https://gceasy.io/" target="_blank">https://gceasy.io/</a></p>
+<hr>
+]]></content>
       <categories>
         <category>JVM</category>
       </categories>
@@ -4067,6 +3953,139 @@ ip2region v2.0 - 是一个离线IP地址定位库和IP定位数据管理框架�
       </categories>
       <tags>
         <tag>IP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS Loading 加载动画</title>
+    <url>/2022-01-13-CSS-Loading/</url>
+    <content><![CDATA[<style type="text/css">
+
+/* * {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+} */
+/* :root {
+	--hue: 223;
+	--bg: hsl(var(--hue),10%,90%);
+	--fg: hsl(var(--hue),10%,10%);
+	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+} */
+/* body {
+	background-color: #1f1f1f;
+	color: var(--fg);
+	font: 1em/1.5 sans-serif;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	transition: background-color 0.3s;
+} */
+main {
+	padding: 1.5em 0;
+}
+
+.ap {
+	width: 100%;
+	height: 16em;
+
+}
+.ap__ring {	
+	transition: stroke 0.3s;
+}
+.ap__worm1,
+.ap__worm2 {
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.ap__worm1 {
+	animation-name: worm1;
+}
+.ap__worm2 {
+	animation-name: worm2;
+	visibility: hidden;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(var(--hue),10%,10%);
+		--fg: hsl(var(--hue),10%,90%);
+	}
+	.ap__ring {
+		stroke: hsla(var(--hue),10%,90%,0.1);
+	}
+}
+
+/* Animtions */
+@keyframes worm1 {
+	from {
+		animation-timing-function: ease-in-out;
+		stroke-dashoffset: -87.96;
+	}
+	20% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: 0;
+	}
+	60% {
+		stroke-dashoffset: -791.68;
+		visibility: visible;
+	}
+	60.1%,
+	to {
+		stroke-dashoffset: -791.68;
+		visibility: hidden;
+	}
+}
+@keyframes worm2 {
+	from,
+	60% {
+		stroke-dashoffset: -87.96;
+		visibility: hidden;
+	}
+	60.1% {
+		animation-timing-function: cubic-bezier(0,0,0.5,0.75);
+		stroke-dashoffset: -87.96;
+		visibility: visible;
+	}
+	77% {
+		animation-timing-function: cubic-bezier(0.5,0.25,0.5,0.88);
+		stroke-dashoffset: -340;
+		visibility: visible;
+	}
+	to {
+		stroke-dashoffset: -669.92;
+		visibility: visible;
+	}
+}
+</style>
+<script>
+
+</script><main>
+	<svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
+				<stop offset="0%" stop-color="hsl(223,90%,55%)" />
+				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
+			</linearGradient>
+			<linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
+				<stop offset="0%" stop-color="hsl(193,90%,55%)" />
+				<stop offset="50%" stop-color="hsl(223,90%,55%)" />
+				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
+			</linearGradient>
+		</defs>
+		<circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
+		<circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
+		<path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
+	</svg>
+</main>]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>CSS</tag>
       </tags>
   </entry>
 </search>
