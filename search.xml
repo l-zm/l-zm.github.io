@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>临时文档</title>
+    <url>/1/</url>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1+Vf1f7PKy114+tBIHSGYjRNlg8NahNDmN2Hu3R20KkuQmoYmZGigiH</is-cipher><details>
+<summary><strong>折叠内容</strong></summary><br>
+<strong>v1.0</strong><br>
+2023-06-01<br>
+</details>
+]]></content>
+      <categories>
+        <category>Other</category>
+      </categories>
+      <tags>
+        <tag>Other</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown 基本语法</title>
     <url>/m/</url>
     <content><![CDATA[<h1 id="&lt;center&gt;-一级标题"><center> 一级标题<a title="#&lt;center&gt;-一级标题" href="#&lt;center&gt;-一级标题"></a></h1>
@@ -246,22 +262,6 @@ font-family: SlideTownsoul
 <hr>
 <p>[^LaTeX]: 支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 <a href="http://bramp.github.io/js-sequence-diagrams/" target="_blank">MathJax</a> 参考更多使用方法。</p>
 <p>[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。</p>
-]]></content>
-      <categories>
-        <category>Other</category>
-      </categories>
-      <tags>
-        <tag>Other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>临时文档</title>
-    <url>/1/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1+1LaT9F82z8qWrytTzkz+6AZ/ej50w4rai7pi+p5FF4prHJ1DM1ZKm</is-cipher><details>
-<summary><strong>折叠内容</strong></summary><br>
-<strong>v1.0</strong><br>
-2023-06-01<br>
-</details>
 ]]></content>
       <categories>
         <category>Other</category>
@@ -664,120 +664,6 @@ font-family: SlideTownsoul
       </tags>
   </entry>
   <entry>
-    <title>图床</title>
-    <url>/img-bed/</url>
-    <content><![CDATA[<h3 id="写在前面">写在前面<a title="#写在前面" href="#写在前面"></a></h3>
-<h4 id="最终效果">最终效果<a title="#最终效果" href="#最终效果"></a></h4>
-<blockquote>
-<p><code>https://你的域名/图片名称.png</code><br>
-<code>https://i.l-zm.com/图片名称.png</code><br>
-<code>https://img.l-zm.com/图片名称.png</code></p>
-</blockquote>
-<h4 id="使用平台介绍-backblaze-b2-+-cloudflare">使用平台介绍 Backblaze B2 + CloudFlare<a title="#使用平台介绍-backblaze-b2-+-cloudflare" href="#使用平台介绍-backblaze-b2-+-cloudflare"></a></h4>
-<h5 id="backblaze-b2">Backblaze B2<a title="#backblaze-b2" href="#backblaze-b2"></a></h5>
-<p>Backblaze创立于2007年,总部位于美国加州San Mateo, 是一家云存储和数据备份的公司</p>
-<blockquote>
-<p>资费</p>
-<ul>
-<li>由于B2加入了CloudFlare的 带宽联盟（ Bandwidth Alliance），所以B2与CloudFlare之间的流量直接免费，也就是每天无限量下行流量</li>
-<li>前 10GB 的存储空间是免费的</li>
-<li>注册Backblaze B2不必提供信用卡，10GB 免费存储空间永不过期，并且不会意外产生任何费用</li>
-<li>网络流量：1GB/天</li>
-<li>上传流量：无限</li>
-<li>下载请求数：2500次/天</li>
-<li>上传请求数：2500次/天</li>
-<li>BUCKET(桶)：100个</li>
-<li>BUCKET(桶)文件数：无限</li>
-</ul>
-</blockquote>
-<h5 id="cloudflare">CloudFlare<a title="#cloudflare" href="#cloudflare"></a></h5>
-<p>一家内容分发网络 (CDN) 和网络安全公司</p>
-<blockquote>
-<p>资费</p>
-</blockquote>
-<ul>
-<li>由于有了 Bandwidth Alliance(带宽联盟), Backblaze 到 Cloudflare 之间的出口是完全免费的</li>
-</ul>
-<h3 id="开始">开始<a title="#开始" href="#开始"></a></h3>
-<p>需要:</p>
-<ul>
-<li>Backblaze 账号</li>
-<li>CloudFlare 账号</li>
-<li>域名</li>
-</ul>
-<h4 id="注册-backblaze-账号">注册 Backblaze 账号<a title="#注册-backblaze-账号" href="#注册-backblaze-账号"></a></h4>
-<p>官网地址: <a href="https://www.backblaze.com" target="_blank">https://www.backblaze.com</a><br>
-<a href="https://www.backblaze.com/b2/sign-up.html" target="_blank">https://www.backblaze.com/b2/sign-up.html</a></p>
-<p>注册完成后: 创作一个桶</p>
-<p>桶类型选择: 公众（public）<br>
-其他默认<br>
-完成</p>
-<p>特别注意:</p>
-<ul>
-<li>注册的时候一定记得关闭任何VPN连接</li>
-<li>创建桶的时候,需要验证邮箱</li>
-</ul>
-<h4 id="注册-cloudflare-账号">注册 CloudFlare 账号<a title="#注册-cloudflare-账号" href="#注册-cloudflare-账号"></a></h4>
-<p>官网地址: <a href="https://www.cloudflare-cn.com/" target="_blank">https://www.cloudflare-cn.com/</a></p>
-<p>创建账号, 完成之后添加站点<br>
-根据操作修改自己域名的DNS<br>
-然后添加记录, 增加自己的二级域名作为图床的自定义域名<br>
-类型: CNAME</p>
-<p>设置SSL/TLS<br>
-设置HTTPS为: 您的 SSL/TLS 加密模式为 完全（严格）</p>
-<p>规则-页面缓存规则</p>
-<p>重写URL路径 优化图片URL: 重写传入请求的 URL 路径</p>
-<p>Cloudflare 转换规则分为三种：</p>
-<ul>
-<li>URL 重写规则: 重写 HTTP 请求的 URL 路径和查询字符串。</li>
-<li>HTTP 请求头修改规则: 设置 HTTP 请求头的值或移除请求头。</li>
-<li>HTTP 响应头修改规则: 设置 HTTP 响应头的值或删除响应头。</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">(http.host eq &quot;i.你的域名.com&quot; and not starts_with(http.request.uri.path, &quot;/file/桶名称&quot;))</span><br></pre></td></tr></table></figure>
-<p>详细流程可以参考最后官网博文介绍</p>
-<p>参考:<br>
-Backblaze B2 官网</p>
-<p>Free Image Hosting With Cloudflare Transform Rules and Backblaze B2<br>
-<a href="https://www.backblaze.com/blog/free-image-hosting-with-cloudflare-transform-rules-and-backblaze-b2/" target="_blank">https://www.backblaze.com/blog/free-image-hosting-with-cloudflare-transform-rules-and-backblaze-b2/</a></p>
-<p>如果链接无法打开可以查看静态页面:<a href="https://www.alipan.com/s/9Q1XTzMGzQH" target="_blank">https://www.alipan.com/s/9Q1XTzMGzQH</a></p>
-]]></content>
-      <categories>
-        <category>Picture</category>
-      </categories>
-      <tags>
-        <tag>Picture</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图片</title>
-    <url>/picture/</url>
-    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62c6837cf54cd3f937647820.png" alt="iPhone All" loading="lazy"><br>
-<img src="https://pic.imgdb.cn/item/62c6a7faf54cd3f93798805c.png" alt="Git" loading="lazy"><br>
-<img src="https://pic.imgdb.cn/item/62f3638416f2c2beb11babb0.gif" alt="Windows 10 TO Windows 11" loading="lazy"></p>
-]]></content>
-      <categories>
-        <category>Picture</category>
-      </categories>
-      <tags>
-        <tag>Picture</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac 修改 Dock 栏的隐藏速度</title>
-    <url>/mac-edit-dock-hidden-speed/</url>
-    <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
-<p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
-<h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
-<p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
-]]></content>
-      <categories>
-        <category>Mac</category>
-      </categories>
-      <tags>
-        <tag>Mac</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>苹果官方鼠标移动速度慢问题解决(Magic Mouse)</title>
     <url>/magic-mouse/</url>
     <content><![CDATA[<h3 id="设置">设置<a title="#设置" href="#设置"></a></h3>
@@ -980,6 +866,105 @@ Backblaze B2 官网</p>
       </tags>
   </entry>
   <entry>
+    <title>图片</title>
+    <url>/picture/</url>
+    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62c6837cf54cd3f937647820.png" alt="iPhone All" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/62c6a7faf54cd3f93798805c.png" alt="Git" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/62f3638416f2c2beb11babb0.gif" alt="Windows 10 TO Windows 11" loading="lazy"></p>
+]]></content>
+      <categories>
+        <category>Picture</category>
+      </categories>
+      <tags>
+        <tag>Picture</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>图床</title>
+    <url>/img-bed/</url>
+    <content><![CDATA[<h3 id="写在前面">写在前面<a title="#写在前面" href="#写在前面"></a></h3>
+<h4 id="最终效果">最终效果<a title="#最终效果" href="#最终效果"></a></h4>
+<blockquote>
+<p><code>https://你的域名/图片名称.png</code><br>
+<code>https://i.l-zm.com/图片名称.png</code><br>
+<code>https://img.l-zm.com/图片名称.png</code></p>
+</blockquote>
+<h4 id="使用平台介绍-backblaze-b2-+-cloudflare">使用平台介绍 Backblaze B2 + CloudFlare<a title="#使用平台介绍-backblaze-b2-+-cloudflare" href="#使用平台介绍-backblaze-b2-+-cloudflare"></a></h4>
+<h5 id="backblaze-b2">Backblaze B2<a title="#backblaze-b2" href="#backblaze-b2"></a></h5>
+<p>Backblaze创立于2007年,总部位于美国加州San Mateo, 是一家云存储和数据备份的公司</p>
+<blockquote>
+<p>资费</p>
+<ul>
+<li>由于B2加入了CloudFlare的 带宽联盟（ Bandwidth Alliance），所以B2与CloudFlare之间的流量直接免费，也就是每天无限量下行流量</li>
+<li>前 10GB 的存储空间是免费的</li>
+<li>注册Backblaze B2不必提供信用卡，10GB 免费存储空间永不过期，并且不会意外产生任何费用</li>
+<li>网络流量：1GB/天</li>
+<li>上传流量：无限</li>
+<li>下载请求数：2500次/天</li>
+<li>上传请求数：2500次/天</li>
+<li>BUCKET(桶)：100个</li>
+<li>BUCKET(桶)文件数：无限</li>
+</ul>
+</blockquote>
+<h5 id="cloudflare">CloudFlare<a title="#cloudflare" href="#cloudflare"></a></h5>
+<p>一家内容分发网络 (CDN) 和网络安全公司</p>
+<blockquote>
+<p>资费</p>
+</blockquote>
+<ul>
+<li>由于有了 Bandwidth Alliance(带宽联盟), Backblaze 到 Cloudflare 之间的出口是完全免费的</li>
+</ul>
+<h3 id="开始">开始<a title="#开始" href="#开始"></a></h3>
+<p>需要:</p>
+<ul>
+<li>Backblaze 账号</li>
+<li>CloudFlare 账号</li>
+<li>域名</li>
+</ul>
+<h4 id="注册-backblaze-账号">注册 Backblaze 账号<a title="#注册-backblaze-账号" href="#注册-backblaze-账号"></a></h4>
+<p>官网地址: <a href="https://www.backblaze.com" target="_blank">https://www.backblaze.com</a><br>
+<a href="https://www.backblaze.com/b2/sign-up.html" target="_blank">https://www.backblaze.com/b2/sign-up.html</a></p>
+<p>注册完成后: 创作一个桶</p>
+<p>桶类型选择: 公众（public）<br>
+其他默认<br>
+完成</p>
+<p>特别注意:</p>
+<ul>
+<li>注册的时候一定记得关闭任何VPN连接</li>
+<li>创建桶的时候,需要验证邮箱</li>
+</ul>
+<h4 id="注册-cloudflare-账号">注册 CloudFlare 账号<a title="#注册-cloudflare-账号" href="#注册-cloudflare-账号"></a></h4>
+<p>官网地址: <a href="https://www.cloudflare-cn.com/" target="_blank">https://www.cloudflare-cn.com/</a></p>
+<p>创建账号, 完成之后添加站点<br>
+根据操作修改自己域名的DNS<br>
+然后添加记录, 增加自己的二级域名作为图床的自定义域名<br>
+类型: CNAME</p>
+<p>设置SSL/TLS<br>
+设置HTTPS为: 您的 SSL/TLS 加密模式为 完全（严格）</p>
+<p>规则-页面缓存规则</p>
+<p>重写URL路径 优化图片URL: 重写传入请求的 URL 路径</p>
+<p>Cloudflare 转换规则分为三种：</p>
+<ul>
+<li>URL 重写规则: 重写 HTTP 请求的 URL 路径和查询字符串。</li>
+<li>HTTP 请求头修改规则: 设置 HTTP 请求头的值或移除请求头。</li>
+<li>HTTP 响应头修改规则: 设置 HTTP 响应头的值或删除响应头。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">(http.host eq &quot;i.你的域名.com&quot; and not starts_with(http.request.uri.path, &quot;/file/桶名称&quot;))</span><br></pre></td></tr></table></figure>
+<p>详细流程可以参考最后官网博文介绍</p>
+<p>参考:<br>
+Backblaze B2 官网</p>
+<p>Free Image Hosting With Cloudflare Transform Rules and Backblaze B2<br>
+<a href="https://www.backblaze.com/blog/free-image-hosting-with-cloudflare-transform-rules-and-backblaze-b2/" target="_blank">https://www.backblaze.com/blog/free-image-hosting-with-cloudflare-transform-rules-and-backblaze-b2/</a></p>
+<p>如果链接无法打开可以查看静态页面:<a href="https://www.alipan.com/s/9Q1XTzMGzQH" target="_blank">https://www.alipan.com/s/9Q1XTzMGzQH</a></p>
+]]></content>
+      <categories>
+        <category>Picture</category>
+      </categories>
+      <tags>
+        <tag>Picture</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows 安装完成 必装软件</title>
     <url>/windows/</url>
     <content><![CDATA[<h3 id="系统激活">系统激活<a title="#系统激活" href="#系统激活"></a></h3>
@@ -1090,698 +1075,18 @@ Backblaze B2 官网</p>
       </tags>
   </entry>
   <entry>
-    <title>Chrome 插件</title>
-    <url>/Chrome-Plugins/</url>
-    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX1+CGt0YEKZHNzj6qMCpQMtxfEDwiMxgidHr6+NDdiGokT0Nonff8aHr</is-cipher>]]></content>
-      <categories>
-        <category>Chrome</category>
-      </categories>
-      <tags>
-        <tag>Chrome Plugins</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>购买充值美区 Apple ID 礼品卡 官网&amp;支付宝</title>
-    <url>/appleid-gift-card/</url>
-    <content><![CDATA[<h2 id="苹果官网-购买">苹果官网 购买<a title="#苹果官网-购买" href="#苹果官网-购买"></a></h2>
-<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
-<blockquote>
-<p>准备</p>
-<ul>
-<li>Gmail 邮箱</li>
-<li>VISA 或者万事达 Mastercard 的信用卡</li>
-<li>美区 AppleID 账号</li>
-</ul>
-</blockquote>
-<hr>
-<h3 id="开始">开始<a title="#开始" href="#开始"></a></h3>
-<ol>
-<li>打开网站: <code>https://www.apple.com/shop/buy-giftcard/giftcard</code></li>
-<li>发送方式选择: <code>Email</code></li>
-<li>苹果设计Logo随便选择</li>
-<li>收件人输入Gmail邮箱</li>
-<li>发件人随便</li>
-<li>正常流程购买</li>
-</ol>
-<h3 id="美国地址生成">美国地址生成<a title="#美国地址生成" href="#美国地址生成"></a></h3>
-<blockquote>
-<p>生成地址尽量选择以下五个免税州</p>
-<ul>
-<li>蒙大拿州 Montana</li>
-<li>俄勒冈州 Oregon</li>
-<li>阿拉斯加州 Alaska</li>
-<li>特拉华州 Delaware</li>
-<li>新罕布什尔州 New Hampshire</li>
-</ul>
-</blockquote>
-<h4 id="美国地址生成器网站">美国地址生成器网站<a title="#美国地址生成器网站" href="#美国地址生成器网站"></a></h4>
-<p>网址一(推荐): <a href="https://www.meiguodizhi.com/" target="_blank">https://www.meiguodizhi.com/</a><br>
-网址二: <a href="https://www.shenfendaquan.com/" target="_blank">https://www.shenfendaquan.com/</a><br>
-网址三: <a href="http://www.haoweichi.com/" target="_blank">http://www.haoweichi.com/</a></p>
-<div class="φbq"><div class="φbs"><table><thead>
-<tr>
-<th style="text-align:right">示例地址 可直接使用</th>
-<th style="padding:0"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">街道</td>
-<td style="text-align:left">3751  Meadow Drive</td>
-</tr>
-<tr>
-<td style="text-align:right">区县</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:right">城市</td>
-<td style="text-align:left">Helena</td>
-</tr>
-<tr>
-<td style="text-align:right">州</td>
-<td style="text-align:left">MT</td>
-</tr>
-<tr>
-<td style="text-align:right">州全称</td>
-<td style="text-align:left">Montana</td>
-</tr>
-<tr>
-<td style="text-align:right">邮编</td>
-<td style="text-align:left">59601</td>
-</tr>
-<tr>
-<td style="text-align:right">电话号码</td>
-<td style="text-align:left">406-204-7893</td>
-</tr>
-<tr>
-<td style="text-align:right">临时邮箱</td>
-<td style="text-align:left"><a href="mailto:ncynjfvawd@iubridge.com">ncynjfvawd@iubridge.com</a></td>
-</tr>
-<tr>
-<td style="text-align:right">全名</td>
-<td style="text-align:left">Ala Manson</td>
-</tr>
-<tr>
-<td style="text-align:right">性别</td>
-<td style="text-align:left">Male</td>
-</tr>
-</tbody>
-</table></div></div><h3 id="给美区-apple-id-充值">给美区 Apple ID 充值<a title="#给美区-apple-id-充值" href="#给美区-apple-id-充值"></a></h3>
-<ol>
-<li>打开Gmail邮箱, 获取 Your Gift Card PIN:<code>XCH****GH242ZFV4</code></li>
-<li>手机App Store登录美区账号, 打开App Store, 点击头像</li>
-<li>兑换充值卡或代码</li>
-<li>手动输入兑换码</li>
-<li>完成</li>
-</ol>
-<hr>
-<h3 id="问题">问题<a title="#问题" href="#问题"></a></h3>
-<ol>
-<li>购买 Apple ID 礼品卡并充值后还需要添加付款方式吗？
-<ul>
-<li>答: 不需要。 由于美区AppleID购买App需要绑定支付方式, 需要继续添加付款方式进行账号验证, 但是在 App Store 里面只有两种付款方式:(信用卡/借记卡、PayPal), 当绑定充值礼品卡后, 付款方式就会显示Apple ID</li>
-<li>因为礼品卡、信用卡、借记卡是平行的, 只要满足一个, 就可以购买App了</li>
-</ul>
-</li>
-<li>为什么绑定礼品卡后还不能购买App？
-<ul>
-<li>答: 有可能是你的账单地址没有完善, 可以使用上面的美国地址生成器录入即可.</li>
-</ul>
-</li>
-<li>礼品卡发放时间
-<ul>
-<li>官方提示是一个小时, 亲测十分钟后收到</li>
-</ul>
-</li>
-</ol>
-<h3 id="提示">提示<a title="#提示" href="#提示"></a></h3>
-<ol>
-<li>当到 <strong>Place Your Order</strong> 那一步的时候, 一般情况下只要点击了, 信用卡扣款基本就完成了, 非常之快</li>
-</ol>
-<h2 id="支付宝-购买">支付宝 购买<a title="#支付宝-购买" href="#支付宝-购买"></a></h2>
-<ol>
-<li>支付宝 首页 切换地区 比如切换到旧金山<br>
-<img src="https://i.l-zm.com/i/202305301%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
-<li>顶部搜索: <code>出境</code> 选择第一个<br>
-<img src="https://i.l-zm.com/i/202305302%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
-<li>点击<code>折扣礼品卡</code><br>
-<img src="https://i.l-zm.com/i/202305303%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"><br>
-<img src="https://i.l-zm.com/i/202305304%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
-<li>滑动到底部 点击: <code>更多大牌折扣礼卡</code><br>
-<img src="https://i.l-zm.com/i/202305305%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
-<li>查找 点击: <code>App Store &amp; iTunes US</code><br>
-<img src="https://i.l-zm.com/i/202305306%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
-<li>输入礼品卡金额 最低2美元<br>
-<img src="https://i.l-zm.com/i/202305307%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
-<li>购买支付 可以使用支付宝花呗或信用卡<br>
-<img src="https://i.l-zm.com/i/202305308%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
-<li>稍等片刻 页面显示礼品卡号码<br>
-<img src="https://i.l-zm.com/i/202305309%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"><br>
-<img src="https://i.l-zm.com/i/2023053010%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
-<li>登录美区 AppleID 点击: <code>兑换充值卡或代码</code><br>
-<img src="https://i.l-zm.com/i/2023053011%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
-<li>点击: <code>手动输入兑换码</code><br>
-<img src="https://i.l-zm.com/i/2023053012%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
-<li>输入兑换码<br>
-<img src="https://i.l-zm.com/i/2023053013%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
-<li>完成<br>
-<img src="https://i.l-zm.com/i/2023053014%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
-</ol>
-<hr>
-<p>参考:<code>https://zhuanlan.zhihu.com/p/476434200</code></p>
+    <title>Mac 修改 Dock 栏的隐藏速度</title>
+    <url>/mac-edit-dock-hidden-speed/</url>
+    <content><![CDATA[<h3 id="修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）">修改 Dock 栏显示隐藏的速度（ 0秒 | 0.5秒 | 默认是 1 ）<a title="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）" href="#修改-dock-栏显示隐藏的速度（-0秒-|-0.5秒-|-默认是-1-）"></a></h3>
+<p><code>$ defaults write com.apple.dock autohide-delay -float 0 &amp;&amp; killall Dock</code></p>
+<h3 id="恢复默认设置">恢复默认设置<a title="#恢复默认设置" href="#恢复默认设置"></a></h3>
+<p><code>$ defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
 ]]></content>
       <categories>
-        <category>Apple ID</category>
+        <category>Mac</category>
       </categories>
       <tags>
-        <tag>iPhone</tag>
-        <tag>Apple ID</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>你的 Microsoft 365 开发人员订阅</title>
-    <url>/microsoft-office-dev/</url>
-    <content><![CDATA[<blockquote>
-<p>官方说明: <code>https://learn.microsoft.com/zh-cn/office/developer-program/microsoft-365-developer-program</code></p>
-</blockquote>
-<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
-<p><code>https://developer.microsoft.com/zh-cn/microsoft-365/dev-program</code></p>
-<ol>
-<li>登录自己的微软账号</li>
-<li>点击立即加入
-<ol>
-<li>国家/地区: <code>China</code></li>
-<li>公司: 随意</li>
-<li>语言搜选项: 中文(简体)</li>
-</ol>
-</li>
-<li>下一步: 供我公司内部使用的应用程序</li>
-<li>下一步: 您感兴趣的开发领域, 随意选择</li>
-<li>设置 Microsoft 365 E5 沙盒, 选择: 可配置沙盒</li>
-<li>用户名/域/密码 自己设置</li>
-<li>最后输入手机号, 获取验证码完成(这里可能需要科学上网)</li>
-</ol>
-<h3 id="创建子用户">创建子用户<a title="#创建子用户" href="#创建子用户"></a></h3>
-<p>访问: <code>https://www.office.com/</code></p>
-<ol>
-<li>管理</li>
-<li>添加用户</li>
-</ol>
-<h3 id="调整网盘容量">调整网盘容量<a title="#调整网盘容量" href="#调整网盘容量"></a></h3>
-<p>访问网址: <code>https://admin.onedrive.com/?v=StorageSettings</code></p>
-<p>设置 &gt; OneDrive 存储限制 &gt; 默认存储限制 设置 <code>5120 (5 TB)</code> 即可</p>
-<hr>
-<h3 id="禁用安全默认值">禁用安全默认值<a title="#禁用安全默认值" href="#禁用安全默认值"></a></h3>
-<p>访问网址: <code>https://portal.azure.com</code></p>
-<ol>
-<li>找到: <code>管理 Azure Active Directory</code></li>
-<li>点击: <code>查看</code></li>
-<li>点击左侧: <code>属性</code></li>
-<li>点击页面下方: <code>管理安全默认值</code></li>
-<li>安全默认值 设置为: 禁用</li>
-</ol>
-<hr>
-<h3 id="github上创建'pat密钥'">Github上创建’PAT密钥’<a title="#github上创建'pat密钥'" href="#github上创建'pat密钥'"></a></h3>
-<ol>
-<li>访问网址: <code>https://github.com</code></li>
-<li>登录</li>
-<li>进入设置: <code>https://github.com/settings/tokens</code></li>
-<li>点击按钮: <code>Generate new token</code></li>
-<li>选择: <code>New personal access token (classic)</code>
-<ol>
-<li>Note: E5</li>
-<li>Expiration: No expiration</li>
-<li>Select scopes: 选中:<code>workflow</code></li>
-</ol>
-</li>
-<li>OK, 最后拿到秘钥</li>
-</ol>
-<p>继续</p>
-<ol>
-<li>打开Git项目: <code>https://github.com/vcheckzen/KeepAliveE5</code></li>
-<li>点击右上角加号: <code>Import repository</code></li>
-<li>输入地址及自己定义一个项目名</li>
-<li>完成后进入自己的Git项目, 点击: <code>Settings</code> &gt; <code>Actions</code> &gt; <code>Secrets and variables</code> &gt; <code>Actions</code> &gt; <code>New repository secret</code>
-<ol>
-<li>PAT</li>
-<li>USER</li>
-<li>PASSWD</li>
-</ol>
-</li>
-<li>完成</li>
-</ol>
-<p>最后</p>
-<ol>
-<li>最后设置重复执行
-<ol>
-<li><code>Actions</code> &gt; General</li>
-<li>选择: <code>Allow all actions and reusable workflows</code></li>
-<li>Save 保存</li>
-</ol>
-</li>
-</ol>
-<hr>
-<blockquote>
-<p>引用<br>
-永久白嫖Microsoft 365，教程来了: <a href="https://baijiahao.baidu.com/s?id=1762710572846867749" target="_blank">https://baijiahao.baidu.com/s?id=1762710572846867749</a><br>
-Microsoft 365永久激活！白嫖搞起来～: <a href="https://mp.weixin.qq.com/s/Z70wmTjMtsaEdiX5O4kJ1Q" target="_blank">https://mp.weixin.qq.com/s/Z70wmTjMtsaEdiX5O4kJ1Q</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Office</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VPN客户端工具</title>
-    <url>/vpn-client-application/</url>
-    <content><![CDATA[<div class="φbq"><div class="φbs"><table><thead>
-<tr>
-<th style="text-align:center">工具(项目地址)</th>
-<th style="text-align:center">支持系统</th>
-<th style="text-align:center">介绍</th>
-<th style="text-align:center">常用类型</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><a href="https://github.com/2dust/v2rayN" target="_blank">V2rayN</a></td>
-<td style="text-align:center">Windows</td>
-<td style="text-align:center">V2RayN 是一个基于 V2Ray及Xray 内核的 Windows 客户端</td>
-<td style="text-align:center">SS、Trojan、V2ray（Vmess、VLESS）、Xray、Hysteria</td>
-</tr>
-<tr>
-<td style="text-align:center"><a href="https://github.com/V2RaySSR/Qv2ray" target="_blank">Qv2ray</a></td>
-<td style="text-align:center">Windows<br>macOS</td>
-<td style="text-align:center">使用Qt框架的跨平台V2Ray客户端。支持Windows，Linux，macOS 插件系统支持SSR / Trojan / Trojan-Go / NaiveProxy</td>
-<td style="text-align:center">SS、SSR、Trojan、V2ray（Vmess、VLESS）、Xray、NaiveProxy</td>
-</tr>
-<tr>
-<td style="text-align:center"><a href="https://github.com/Fndroid/clash_for_windows_pkg" target="_blank">Clash for Windows</a></td>
-<td style="text-align:center">Windows<br>macOS</td>
-<td style="text-align:center">基于Clash的Windows / macOS可以切换通过Meta内核支持全协议</td>
-<td style="text-align:center">SS、SSR、Trojan、Vmess、VLESS、Hysteria</td>
-</tr>
-<tr>
-<td style="text-align:center"><a href="https://github.com/2dust/clashN" target="_blank">ClashN</a></td>
-<td style="text-align:center">Windows</td>
-<td style="text-align:center">基于Clash的Windows</td>
-<td style="text-align:center">SS、SSR、Trojan、Vmess、VLESS、Hysteria</td>
-</tr>
-<tr>
-<td style="text-align:center"><a href="https://github.com/yichengchen/clashX" target="_blank">ClashX</a></td>
-<td style="text-align:center">macOS</td>
-<td style="text-align:center">Clash 是一个使用 Go 语言编写，基于规则的跨平台代理软件核心程序。ClashX 是运行在 macOS 上</td>
-<td style="text-align:center">SS、SSR、Trojan、V2ray</td>
-</tr>
-<tr>
-<td style="text-align:center"><a href="https://github.com/shadowsocks/shadowsocks-windows" target="_blank">ShadowSocks</a></td>
-<td style="text-align:center">Windows</td>
-<td style="text-align:center">科学上网工具早期的经典代表之作</td>
-<td style="text-align:center">SS、SSR</td>
-</tr>
-<tr>
-<td style="text-align:center"><a href="https://github.com/Kr328/ClashForAndroid" target="_blank">Clash for Android</a></td>
-<td style="text-align:center">Android</td>
-<td style="text-align:center">Android 的Clash图形用户界面</td>
-<td style="text-align:center">SS、SSR、Trojan、V2ray</td>
-</tr>
-<tr>
-<td style="text-align:center"><a href="https://github.com/shadowsocks/shadowsocks-android" target="_blank">Shadowsocks for Android</a></td>
-<td style="text-align:center">Android</td>
-<td style="text-align:center">适用于Android和Chrome操作系统，有TV版本的可以直接支持电视科学上网</td>
-<td style="text-align:center">SS、SSR</td>
-</tr>
-<tr>
-<td style="text-align:center"><a href="https://github.com/2dust/v2rayNG" target="_blank">v2rayNG</a></td>
-<td style="text-align:center">Android</td>
-<td style="text-align:center">Android 的 V2Ray 客户端</td>
-<td style="text-align:center">SS、Trojan、Vmess、VLESS、Trojan、Socks</td>
-</tr>
-<tr>
-<td style="text-align:center">Shadowrocket 小火箭</td>
-<td style="text-align:center">iOS</td>
-<td style="text-align:center">Shadowrocket 是一个通用的 iOS VPN 应用</td>
-<td style="text-align:center">SS、SSR、Trojan、V2ray、VLESS</td>
-</tr>
-</tbody>
-</table></div></div><p>iOS 苹果小飞机 Shadowrocket 共享账号</p>
-<p><a href="https://appleshare.club/" target="_blank">https://appleshare.club/</a><br>
-<a href="https://ioss.ml/share/ys#" target="_blank">https://ioss.ml/share/ys#</a></p>
-]]></content>
-      <categories>
-        <category>VPN</category>
-      </categories>
-      <tags>
-        <tag>VPN</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Clash for Windows</title>
-    <url>/clash-for-windows/</url>
-    <content><![CDATA[<h2 id="百度云下载地址">百度云下载地址<a title="#百度云下载地址" href="#百度云下载地址"></a></h2>
-<p>链接: <a href="https://pan.baidu.com/s/1hW77wn71LCC6HqbGdsK3kQ" target="_blank">https://pan.baidu.com/s/1hW77wn71LCC6HqbGdsK3kQ</a><br>
-提取码: 1234</p>
-<h3 id="git-下载地址-（已失效）">Git 下载地址 （已失效）<a title="#git-下载地址-（已失效）" href="#git-下载地址-（已失效）"></a></h3>
-<p><a href="https://github.com/Fndroid/clash_for_windows_pkg" target="_blank">https://github.com/Fndroid/clash_for_windows_pkg</a></p>
-<h3 id="汉化包下载地址（已失效）">汉化包下载地址（已失效）<a title="#汉化包下载地址（已失效）" href="#汉化包下载地址（已失效）"></a></h3>
-<p><a href="https://github.com/BoyceLig/Clash_Chinese_Patch" target="_blank">https://github.com/BoyceLig/Clash_Chinese_Patch</a></p>
-<h3 id="帮助文档">帮助文档<a title="#帮助文档" href="#帮助文档"></a></h3>
-<p><a href="https://docs.cfw.lbyczf.com" target="_blank">https://docs.cfw.lbyczf.com</a></p>
-<p><a href="https://github.com/Fndroid/clash-win-docs-new" target="_blank">https://github.com/Fndroid/clash-win-docs-new</a></p>
-<h3 id="版本说明">版本说明<a title="#版本说明" href="#版本说明"></a></h3>
-<div class="φbq"><div class="φbs"><table><thead>
-<tr>
-<th style="text-align:left">文件名</th>
-<th style="text-align:center">使用方式</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Clash.for.Windows-0.20.23-win.7z</td>
-<td style="text-align:center">免安装,解压即用</td>
-</tr>
-<tr>
-<td style="text-align:left">Clash.for.Windows.Setup.0.20.23.exe</td>
-<td style="text-align:center">安装</td>
-</tr>
-</tbody>
-</table></div></div><h3 id="关于clash订阅链接转换">关于Clash订阅链接转换<a title="#关于clash订阅链接转换" href="#关于clash订阅链接转换"></a></h3>
-<ol>
-<li>复制机场的Shadowsocks/V2ray订阅链接</li>
-<li>登录订阅转换网址 <a href="https://api.nameless13.com" target="_blank">https://api.nameless13.com</a> 并将链接粘贴在订阅链接位置</li>
-<li>点击生成订阅链接即可</li>
-<li>将生成的订阅链接粘贴于Clash中（使用方法参考Clash使用教程）</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Clash</category>
-      </categories>
-      <tags>
-        <tag>Clash</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cloudflare_WARP</title>
-    <url>/cloudflare_warp/</url>
-    <content><![CDATA[<h3 id="安装-cloudflare_warp">安装 Cloudflare_WARP<a title="#安装-cloudflare_warp" href="#安装-cloudflare_warp"></a></h3>
-<ol>
-<li>打开官网: <code>1.1.1.1</code></li>
-<li>下载对应系统的安装包, 安装<br>
-<img src="https://i.l-zm.com/cloudflare/20240101Cloudflare03.png" alt="Warp+ Bot" loading="lazy"></li>
-</ol>
-<h3 id="获取秘钥-获取-12-或-24pb-的-warp-plus-密钥">获取秘钥 获取 12 或 24PB 的 Warp Plus 密钥<a title="#获取秘钥-获取-12-或-24pb-的-warp-plus-密钥" href="#获取秘钥-获取-12-或-24pb-的-warp-plus-密钥"></a></h3>
-<p>在 Telegram 机器人中生成个人 Warp Plus 密钥</p>
-<ol>
-<li>转到 Telegram 中的 @generatewarpplusbot, 然后按 <code>/start</code></li>
-<li>点击<code>/generate</code> — generate a WARP+ key</li>
-<li>回答一个数据题，回答按照格式</li>
-<li></li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">✅ Successfully generated key!</span><br><span class="line"></span><br><span class="line">🔐 Key: ********-********-******** (24598562 GB)</span><br><span class="line"></span><br><span class="line">✨ If you enjoy free keys, please, make a donation to us (https://t.me/akamemoe/50)! It will help us to maintain this bot.</span><br></pre></td></tr></table></figure>
-<p><img src="https://i.l-zm.com/cloudflare/20240101Cloudflare02.png" alt="Warp+ Bot" loading="lazy" class="φbp"></p>
-<blockquote>
-<p>客户端使用过程中的遇到问题请查阅<br>
-<a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/troubleshooting/client-errors/" target="_blank">https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/troubleshooting/client-errors/</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Cloudflare</category>
-      </categories>
-      <tags>
-        <tag>Cloudflare</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PowerToys-微软的一款开源电脑工具箱软件</title>
-    <url>/PowerToys/</url>
-    <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
-<p>习惯了 <strong><code>Mac</code></strong> 系统的 <code>command + *</code> 按键的操作逻辑之后</p>
-<p>针对于 <strong><code>Windows</code></strong> 系统的 <code>Ctrl + *</code> 各种不适应</p>
-<hr>
-<p>放上我的调整结果，回到 <code>command</code> 按键逻辑下</p>
-<p><img src="https://pic.imgdb.cn/item/6277942309475431296ca2b5.png" alt="PowerToys-微软的一款开源电脑工具箱软件-键盘管理器" loading="lazy" class="φbp"></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>PowerToys</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>管理 &quot;此电脑&quot; 里面删不掉的流浪 &quot;快捷方式&quot;</title>
-    <url>/windows-MyComputerManager/</url>
-    <content><![CDATA[<h3 id="mycomputermanager">MyComputerManager<a title="#mycomputermanager" href="#mycomputermanager"></a></h3>
-<p>GitHub 开源小工具: <code>https://github.com/1357310795/MyComputerManager</code></p>
-<p>双击直接运行</p>
-<p><img src="https://pic.imgdb.cn/item/62cbbaa7f54cd3f9377cf8d0.png" alt="MyComputerManager" loading="lazy" class="φbp"></p>
-<h3 id="如何彻底杜绝">如何彻底杜绝<a title="#如何彻底杜绝" href="#如何彻底杜绝"></a></h3>
-<ol>
-<li>打开火绒</li>
-<li>安全设置</li>
-<li>高级防护</li>
-<li>自定义防护</li>
-<li>添加规则
-<ol>
-<li>规则名称(随便): <code>阻止程序在此电脑创建快捷方式</code></li>
-<li>注册表规则: <code>*\MyComputer\NameSpace\*</code></li>
-</ol>
-</li>
-</ol>
-<p><img src="https://pic.imgdb.cn/item/62cb97a3f54cd3f937521d28.png" alt="阻止程序在此电脑创建快捷方式" loading="lazy" class="φbp"></p>
-<blockquote>
-<p>如果你想要禁止在桌面创建快捷方式<br>
-把MyComputer改成Desktop即可</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>MyComputerManager</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WPS 2019 专业增强版 (温州大学教育版)</title>
-    <url>/windows-wps-2019/</url>
-    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62cbbf63f54cd3f9378360d4.png" alt="WPS 产品管理中心" loading="lazy" class="φbp"></p>
-<p><strong>教育版的优势</strong></p>
-<ul>
-<li>定制序列号(内嵌), 无需注册, 直接使用, 授权长期有效, 永久激活</li>
-<li>官方出品, 广告</li>
-<li>具备完整的VBA组件和VBA宏</li>
-</ul>
-<p><strong>下载地址</strong></p>
-<blockquote>
-<p>链接: <code>https://pan.baidu.com/s/1itrGNaYDIuLr2fkzig2OsQ?pwd=lizm</code><br>
-提取码: <code>lizm</code></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>WPS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iPhone与Windows传输文件的几种方式</title>
-    <url>/iPhone-Windows/</url>
-    <content><![CDATA[<h3 id="创建文件夹">创建文件夹<a title="#创建文件夹" href="#创建文件夹"></a></h3>
-<ul>
-<li>右键 <code>属性</code></li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8a7f.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>点击 <code>共享</code> 标签下的 <code>共享</code> 按钮, 选择 <code>Everyone</code>, 点击 <code>添加</code>, 最后点击 <code>共享</code></li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8a88.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>选择文件夹, 点击 <code>完成</code></li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8ac3.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>继续点击 <code>高级共享</code></li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67922f54cd3f937caab12.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>选中 <code>共享此文件夹</code>, 然后点击 <code>权限</code> 按钮</li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8ae3.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>选中用户 <code>Everyone</code> 的读写权限, 然后一路确定</li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8afc.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>打开命令提示符工具, 输入: <code>ipconfig</code>, 找到自己电脑的IPv4 地址: <code>192.168.95.1</code></li>
-</ul>
-<p><img src="https://pic.imgdb.cn/item/62d678e2f54cd3f937c98b45.png" alt="" loading="lazy" class="φbp"></p>
-<ul>
-<li>
-<p>打开手机软件 <code>文件</code>, 点击右上角: <code>连接服务器</code><br>
-<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45d4.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>输入上面获取到的IPv4 地址<br>
-<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45b0.png" alt="" loading="lazy"></p>
-</li>
-<li>
-<p>输入电脑密码即可进入<br>
-<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45e1.png" alt="" loading="lazy"></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Windows</category>
-        <category>iPhone</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>iPhone</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows &amp; Mac M3U8 视频下载</title>
-    <url>/m3u8-download/</url>
-    <content><![CDATA[<h2 id="mac">Mac<a title="#mac" href="#mac"></a></h2>
-<h2 id="windows">Windows<a title="#windows" href="#windows"></a></h2>
-<h4 id="n_m3u8dl-cli">N_m3u8DL-CLI<a title="#n_m3u8dl-cli" href="#n_m3u8dl-cli"></a></h4>
-<p><img src="https://pic.imgdb.cn/item/62f1f7dd16f2c2beb1ccdd40.png" alt="N_m3u8DL-CLI" loading="lazy" class="φbp"></p>
-<p>GitHub地址: <a href="https://github.com/nilaoda/N_m3u8DL-CLI" target="_blank">https://github.com/nilaoda/N_m3u8DL-CLI</a></p>
-<blockquote>
-<p>N_m3u8DL-CLI是一款用于下载m3u8的命令行工具，<a href="http://xn--6kq92u.NET">基于.NET</a> Framework 4.6框架开发，调用系统类库进行HTTP下载，支持常见的m3u8格式下载，支持从视频中选择一部分下载，还提供丰富的命令行选项以增强其功能。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>M3U8</category>
-      </categories>
-      <tags>
-        <tag>M3U8</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows iTunes 设置关闭自动备份</title>
-    <url>/windows-itunes-backups/</url>
-    <content><![CDATA[<ol>
-<li>找到安装目录下的: <code>defaults.exe</code> 复制路径</li>
-<li>运行: <code>cmd</code></li>
-<li>执行命令: <code>&quot;D:\Application\iTunes\defaults.exe&quot; write com.apple.iTunes AutomaticDeviceBackupsDisabled -bool true</code></li>
-</ol>
-]]></content>
-      <categories>
-        <category>iTunes</category>
-      </categories>
-      <tags>
-        <tag>iTunes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows 显示并控制通过USB (或TCP/IP) 连接的 Android 设备</title>
-    <url>/windows-control-android/</url>
-    <content><![CDATA[<h3 id="scrcpy">scrcpy<a title="#scrcpy" href="#scrcpy"></a></h3>
-<p>Github地址：<a href="https://github.com/Genymobile/scrcpy" target="_blank">https://github.com/Genymobile/scrcpy</a></p>
-<p><strong>本应用专注于：</strong></p>
-<ul>
-<li><strong>轻量</strong> ：原生，仅显示设备屏幕</li>
-<li><strong>性能</strong> ：30~120fps，取决于设备</li>
-<li><strong>质量</strong> ：分辨率可达 1920×1080 或更高</li>
-<li><strong>低延迟</strong> ：35~70ms</li>
-<li><strong>快速启动</strong> ：最快 1 秒内即可显示第一帧</li>
-<li><strong>无侵入性</strong> ：不会在设备上遗留任何程序</li>
-<li><strong>用户利益</strong> ：无需帐号，无广告，无需联网</li>
-<li><strong>自由</strong> ：自由和开源软件</li>
-</ul>
-<p><strong>系统要求：</strong><br>
-安卓设备最低需要支持 API 21 (Android 5.0)<br>
-确保设备已开启 adb 调试<br>
-在某些设备上，还需要开启额外的选项以使用鼠标和键盘进行控制</p>
-<hr>
-<p>软件目录, 双击: <code>open_a_terminal_here.bat</code> 打开命令窗口</p>
-<h3 id="命令">命令<a title="#命令" href="#命令"></a></h3>
-<ul>
-<li>标题: <code>scrcpy --window-title &quot;my phone&quot;</code></li>
-<li>关闭设备屏幕: <code>scrcpy --turn-screen-off</code></li>
-<li>复制粘贴:
-<ul>
-<li>设备上复制,会自动同步到电脑的剪贴板上</li>
-<li>电脑上复制, 使用 <code>Ctrl</code> + <code>Shift</code> + <code>v</code> 粘贴到设备上</li>
-</ul>
-</li>
-<li>旋转屏幕: <code>Ctrl</code> + <code>R</code></li>
-</ul>
-<h3 id="常用命令">常用命令<a title="#常用命令" href="#常用命令"></a></h3>
-<p>关闭设备屏幕启动: <code>scrcpy --turn-screen-off --window-title &quot;my phone&quot;</code></p>
-<p>选择 USB 设备启动: <code>scrcpy -d --turn-screen-off --window-title &quot;my phone&quot;</code></p>
-]]></content>
-      <categories>
-        <category>Android</category>
-      </categories>
-      <tags>
-        <tag>Android</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows 10/11 电源计划 开启[卓越性能]</title>
-    <url>/windows-excellent/</url>
-    <content><![CDATA[<p>以管理员身份运行<code>Windows PowerShell</code>, 输入以下命令:</p>
-<p><code>powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61</code></p>
-]]></content>
-      <categories>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows资源管理器删除左侧OneDrive图标</title>
-    <url>/windows-delete-onedrive-icon/</url>
-    <content><![CDATA[<p>Windows资源管理器删除左侧OneDrive图标</p>
-<ol>
-<li>
-<p>打开“运行”对话框，方法是按下“Windows键+R”</p>
-</li>
-<li>
-<p>在“运行”对话框中，输入<code>regedit</code>，然后单击“确定”按钮以打开“注册表编辑器”</p>
-</li>
-<li>
-<p>在左侧窗格中，展开以下路径：<code>HKEY_CLASSES_ROOT\CLSID\&#123;018D5C66-4533-4307-9B53-224DE2ED1FE6&#125;</code></p>
-</li>
-<li>
-<p>在右侧窗格中，找到<code>System.IsPinnedToNameSpaceTree</code>项，然后将其值从“1”更改为“0”</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ContextMenuManager 一个纯粹的Windows右键菜单管理程序</title>
-    <url>/windows-right-click/</url>
-    <content><![CDATA[<h3 id="contextmenumanager">ContextMenuManager<a title="#contextmenumanager" href="#contextmenumanager"></a></h3>
-<p>Github 地址: <a href="https://github.com/BluePointLilac/ContextMenuManager" target="_blank">https://github.com/BluePointLilac/ContextMenuManager</a></p>
-<h4 id="主要功能">主要功能<a title="#主要功能" href="#主要功能"></a></h4>
-<ul>
-<li>启用或禁用文件、文件夹、新建、发送到、打开方式、自定义文件格式、IE浏览器、WinX等右键菜单项目</li>
-<li>对上述场景右键菜单项目进行修改名称、修改图标、导航注册表位置、导航文件位置、永久删除等操作</li>
-<li>对上述场景右键菜单自定义添加项目，自定义菜单命令</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
+        <tag>Mac</tag>
       </tags>
   </entry>
   <entry>
@@ -1804,24 +1109,6 @@ Microsoft 365永久激活！白嫖搞起来～: <a href="https://mp.weixin.qq.co
       </categories>
       <tags>
         <tag>ChatGPT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解除网页右键限制</title>
-    <url>/remove-right-click-limit/</url>
-    <content><![CDATA[<h3 id="脚本">脚本<a title="#脚本" href="#脚本"></a></h3>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">javascript</span>:!<span class="keyword">function</span> <span class="title function_">e</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;&#125;<span class="keyword">function</span> <span class="title function_">o</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">removeChild</span>(e)&#125;<span class="keyword">function</span> <span class="title function_">r</span>(<span class="params">e</span>)&#123;<span class="keyword">return</span>[].<span class="property">slice</span>.<span class="title function_">call</span>(t.<span class="title function_">querySelectorAll</span>(e))&#125;<span class="keyword">function</span> <span class="title function_">c</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;<span class="title function_">s</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;<span class="keyword">if</span>(!o)<span class="keyword">try</span>&#123;<span class="keyword">var</span> n=t.<span class="property">contentDocument</span>;n.<span class="property">body</span>.<span class="property">childNodes</span>.<span class="property">length</span>&amp;&amp;(o=<span class="number">1</span>,<span class="title function_">e</span>(n))&#125;<span class="keyword">catch</span>(e)&#123;o=<span class="number">0</span>&#125;&#125;,<span class="number">100</span>)&#125;a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t[<span class="string">&#x27;on&#x27;</span>+e]=<span class="literal">null</span>&#125;);<span class="keyword">var</span> o;<span class="title function_">n</span>(),t.<span class="property">onload</span>=n&#125;<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="string">&#x27;parentNode&#x27;</span>,l=<span class="string">&#x27;forEach&#x27;</span>,a=<span class="string">&#x27;contextmenu dragstart selectstart select copy beforecopy mouseup mousedown&#x27;</span>.<span class="title function_">split</span>(<span class="string">&#x27; &#x27;</span>),u=<span class="built_in">setTimeout</span>(n,<span class="number">0</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearTimeout</span>(u);<span class="keyword">for</span>(u=<span class="built_in">setInterval</span>(n,<span class="number">1e8</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearInterval</span>(u);<span class="keyword">var</span> s=<span class="built_in">setTimeout</span>;<span class="built_in">setTimeout</span>=<span class="built_in">setInterval</span>=n,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](o);<span class="keyword">var</span> m=[];<span class="title function_">r</span>(<span class="string">&#x27;iframe,frame&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;m.<span class="title function_">push</span>(e),e[i].<span class="title function_">replaceChild</span>(t.<span class="title function_">createElement</span>(<span class="string">&#x27;script&#x27;</span>),e)&#125;);<span class="keyword">var</span> f=t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>;t.<span class="title function_">open</span>(),t.<span class="title function_">write</span>(<span class="string">&#x27;&lt;!DOCTYPE html&gt;&#x27;</span>),t.<span class="title function_">close</span>(),t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>=f,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">replaceChild</span>(m.<span class="title function_">shift</span>(),e)&#125;),<span class="title function_">r</span>(<span class="string">&#x27;*&#x27;</span>)[l](c),<span class="title function_">c</span>(t),a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t.<span class="title function_">addEventListener</span>(e,<span class="keyword">function</span>(<span class="params">e</span>)&#123;e.<span class="title function_">stopPropagation</span>()&#125;,!<span class="number">0</span>)&#125;);<span class="keyword">var</span> p=t.<span class="title function_">createElement</span>(<span class="string">&#x27;style&#x27;</span>);p.<span class="property">innerHTML</span>=<span class="string">&#x27;*&#123;-webkit-user-select:text!important;-moz-user-select:text!important;user-select:text!important;&#125;&#x27;</span>,t.<span class="property">body</span>.<span class="title function_">appendChild</span>(p)&#125;(<span class="variable language_">document</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="两种使用方法:">两种使用方法:<a title="#两种使用方法:" href="#两种使用方法:"></a></h3>
-<ol>
-<li>浏览器: F12打开调试模式, 在控制台<code>Console</code>里面直接执行</li>
-<li>直接保存为书签, 在需要解除右键限制的网页直接点击书签即可 <strong>(推荐)</strong></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
@@ -1855,6 +1142,24 @@ Windows 路径：C:\Windows\System32\drivers\etc</p>
       </tags>
   </entry>
   <entry>
+    <title>解除网页右键限制</title>
+    <url>/remove-right-click-limit/</url>
+    <content><![CDATA[<h3 id="脚本">脚本<a title="#脚本" href="#脚本"></a></h3>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">javascript</span>:!<span class="keyword">function</span> <span class="title function_">e</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;&#125;<span class="keyword">function</span> <span class="title function_">o</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">removeChild</span>(e)&#125;<span class="keyword">function</span> <span class="title function_">r</span>(<span class="params">e</span>)&#123;<span class="keyword">return</span>[].<span class="property">slice</span>.<span class="title function_">call</span>(t.<span class="title function_">querySelectorAll</span>(e))&#125;<span class="keyword">function</span> <span class="title function_">c</span>(<span class="params">t</span>)&#123;<span class="keyword">function</span> <span class="title function_">n</span>(<span class="params"></span>)&#123;<span class="title function_">s</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;<span class="keyword">if</span>(!o)<span class="keyword">try</span>&#123;<span class="keyword">var</span> n=t.<span class="property">contentDocument</span>;n.<span class="property">body</span>.<span class="property">childNodes</span>.<span class="property">length</span>&amp;&amp;(o=<span class="number">1</span>,<span class="title function_">e</span>(n))&#125;<span class="keyword">catch</span>(e)&#123;o=<span class="number">0</span>&#125;&#125;,<span class="number">100</span>)&#125;a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t[<span class="string">&#x27;on&#x27;</span>+e]=<span class="literal">null</span>&#125;);<span class="keyword">var</span> o;<span class="title function_">n</span>(),t.<span class="property">onload</span>=n&#125;<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="string">&#x27;parentNode&#x27;</span>,l=<span class="string">&#x27;forEach&#x27;</span>,a=<span class="string">&#x27;contextmenu dragstart selectstart select copy beforecopy mouseup mousedown&#x27;</span>.<span class="title function_">split</span>(<span class="string">&#x27; &#x27;</span>),u=<span class="built_in">setTimeout</span>(n,<span class="number">0</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearTimeout</span>(u);<span class="keyword">for</span>(u=<span class="built_in">setInterval</span>(n,<span class="number">1e8</span>);u&gt;=<span class="number">0</span>;u--)<span class="built_in">clearInterval</span>(u);<span class="keyword">var</span> s=<span class="built_in">setTimeout</span>;<span class="built_in">setTimeout</span>=<span class="built_in">setInterval</span>=n,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](o);<span class="keyword">var</span> m=[];<span class="title function_">r</span>(<span class="string">&#x27;iframe,frame&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;m.<span class="title function_">push</span>(e),e[i].<span class="title function_">replaceChild</span>(t.<span class="title function_">createElement</span>(<span class="string">&#x27;script&#x27;</span>),e)&#125;);<span class="keyword">var</span> f=t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>;t.<span class="title function_">open</span>(),t.<span class="title function_">write</span>(<span class="string">&#x27;&lt;!DOCTYPE html&gt;&#x27;</span>),t.<span class="title function_">close</span>(),t.<span class="property">documentElement</span>.<span class="property">innerHTML</span>=f,<span class="title function_">r</span>(<span class="string">&#x27;script&#x27;</span>)[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;e[i].<span class="title function_">replaceChild</span>(m.<span class="title function_">shift</span>(),e)&#125;),<span class="title function_">r</span>(<span class="string">&#x27;*&#x27;</span>)[l](c),<span class="title function_">c</span>(t),a[l](<span class="keyword">function</span>(<span class="params">e</span>)&#123;t.<span class="title function_">addEventListener</span>(e,<span class="keyword">function</span>(<span class="params">e</span>)&#123;e.<span class="title function_">stopPropagation</span>()&#125;,!<span class="number">0</span>)&#125;);<span class="keyword">var</span> p=t.<span class="title function_">createElement</span>(<span class="string">&#x27;style&#x27;</span>);p.<span class="property">innerHTML</span>=<span class="string">&#x27;*&#123;-webkit-user-select:text!important;-moz-user-select:text!important;user-select:text!important;&#125;&#x27;</span>,t.<span class="property">body</span>.<span class="title function_">appendChild</span>(p)&#125;(<span class="variable language_">document</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="两种使用方法:">两种使用方法:<a title="#两种使用方法:" href="#两种使用方法:"></a></h3>
+<ol>
+<li>浏览器: F12打开调试模式, 在控制台<code>Console</code>里面直接执行</li>
+<li>直接保存为书签, 在需要解除右键限制的网页直接点击书签即可 <strong>(推荐)</strong></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>那些好看的页面效果</title>
     <url>/good-html/</url>
     <content><![CDATA[<ol>
@@ -1880,139 +1185,6 @@ Windows 路径：C:\Windows\System32\drivers\etc</p>
       </categories>
       <tags>
         <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS Loading 加载动画</title>
-    <url>/2022-01-13-CSS-Loading/</url>
-    <content><![CDATA[<style type="text/css">
-
-/* * {
-	border: 0;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-} */
-/* :root {
-	--hue: 223;
-	--bg: hsl(var(--hue),10%,90%);
-	--fg: hsl(var(--hue),10%,10%);
-	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
-} */
-/* body {
-	background-color: #1f1f1f;
-	color: var(--fg);
-	font: 1em/1.5 sans-serif;
-	height: 100vh;
-	display: grid;
-	place-items: center;
-	transition: background-color 0.3s;
-} */
-main {
-	padding: 1.5em 0;
-}
-
-.ap {
-	width: 100%;
-	height: 16em;
-
-}
-.ap__ring {	
-	transition: stroke 0.3s;
-}
-.ap__worm1,
-.ap__worm2 {
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-}
-.ap__worm1 {
-	animation-name: worm1;
-}
-.ap__worm2 {
-	animation-name: worm2;
-	visibility: hidden;
-}
-
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-	:root {
-		--bg: hsl(var(--hue),10%,10%);
-		--fg: hsl(var(--hue),10%,90%);
-	}
-	.ap__ring {
-		stroke: hsla(var(--hue),10%,90%,0.1);
-	}
-}
-
-/* Animtions */
-@keyframes worm1 {
-	from {
-		animation-timing-function: ease-in-out;
-		stroke-dashoffset: -87.96;
-	}
-	20% {
-		animation-timing-function: ease-in;
-		stroke-dashoffset: 0;
-	}
-	60% {
-		stroke-dashoffset: -791.68;
-		visibility: visible;
-	}
-	60.1%,
-	to {
-		stroke-dashoffset: -791.68;
-		visibility: hidden;
-	}
-}
-@keyframes worm2 {
-	from,
-	60% {
-		stroke-dashoffset: -87.96;
-		visibility: hidden;
-	}
-	60.1% {
-		animation-timing-function: cubic-bezier(0,0,0.5,0.75);
-		stroke-dashoffset: -87.96;
-		visibility: visible;
-	}
-	77% {
-		animation-timing-function: cubic-bezier(0.5,0.25,0.5,0.88);
-		stroke-dashoffset: -340;
-		visibility: visible;
-	}
-	to {
-		stroke-dashoffset: -669.92;
-		visibility: visible;
-	}
-}
-</style>
-<script>
-
-</script><main>
-	<svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
-		<defs>
-			<linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
-				<stop offset="0%" stop-color="hsl(223,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
-			</linearGradient>
-			<linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
-				<stop offset="0%" stop-color="hsl(193,90%,55%)" />
-				<stop offset="50%" stop-color="hsl(223,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
-			</linearGradient>
-		</defs>
-		<circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
-		<circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
-		<path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
-	</svg>
-</main>]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>CSS</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -2297,6 +1469,420 @@ main {
       </tags>
   </entry>
   <entry>
+    <title>CSS Loading 加载动画</title>
+    <url>/2022-01-13-CSS-Loading/</url>
+    <content><![CDATA[<style type="text/css">
+
+/* * {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+} */
+/* :root {
+	--hue: 223;
+	--bg: hsl(var(--hue),10%,90%);
+	--fg: hsl(var(--hue),10%,10%);
+	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+} */
+/* body {
+	background-color: #1f1f1f;
+	color: var(--fg);
+	font: 1em/1.5 sans-serif;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	transition: background-color 0.3s;
+} */
+main {
+	padding: 1.5em 0;
+}
+
+.ap {
+	width: 100%;
+	height: 16em;
+
+}
+.ap__ring {	
+	transition: stroke 0.3s;
+}
+.ap__worm1,
+.ap__worm2 {
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.ap__worm1 {
+	animation-name: worm1;
+}
+.ap__worm2 {
+	animation-name: worm2;
+	visibility: hidden;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(var(--hue),10%,10%);
+		--fg: hsl(var(--hue),10%,90%);
+	}
+	.ap__ring {
+		stroke: hsla(var(--hue),10%,90%,0.1);
+	}
+}
+
+/* Animtions */
+@keyframes worm1 {
+	from {
+		animation-timing-function: ease-in-out;
+		stroke-dashoffset: -87.96;
+	}
+	20% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: 0;
+	}
+	60% {
+		stroke-dashoffset: -791.68;
+		visibility: visible;
+	}
+	60.1%,
+	to {
+		stroke-dashoffset: -791.68;
+		visibility: hidden;
+	}
+}
+@keyframes worm2 {
+	from,
+	60% {
+		stroke-dashoffset: -87.96;
+		visibility: hidden;
+	}
+	60.1% {
+		animation-timing-function: cubic-bezier(0,0,0.5,0.75);
+		stroke-dashoffset: -87.96;
+		visibility: visible;
+	}
+	77% {
+		animation-timing-function: cubic-bezier(0.5,0.25,0.5,0.88);
+		stroke-dashoffset: -340;
+		visibility: visible;
+	}
+	to {
+		stroke-dashoffset: -669.92;
+		visibility: visible;
+	}
+}
+</style>
+<script>
+
+</script><main>
+	<svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
+				<stop offset="0%" stop-color="hsl(223,90%,55%)" />
+				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
+			</linearGradient>
+			<linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
+				<stop offset="0%" stop-color="hsl(193,90%,55%)" />
+				<stop offset="50%" stop-color="hsl(223,90%,55%)" />
+				<stop offset="100%" stop-color="hsl(253,90%,55%)" />
+			</linearGradient>
+		</defs>
+		<circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
+		<circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
+		<path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
+	</svg>
+</main>]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 嵌入可视化 Echarts 图表</title>
+    <url>/echarts/</url>
+    <content><![CDATA[<p>Echarts在线库 CDN 服务: <code>https://www.bootcdn.cn/echarts/</code></p>
+<div id="echarts2534" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2534'));
+
+        // 指定图表的配置项和数据
+        var option = {
+  tooltip: {
+    trigger: 'axis'
+  },
+  legend: {
+    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  toolbox: {
+    feature: {
+      saveAsImage: {}
+    }
+  },
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      name: 'Email',
+      type: 'line',
+      stack: 'Total',
+      data: [120, 132, 101, 134, 90, 230, 210]
+    },
+    {
+      name: 'Union Ads',
+      type: 'line',
+      stack: 'Total',
+      data: [220, 182, 191, 234, 290, 330, 310]
+    },
+    {
+      name: 'Video Ads',
+      type: 'line',
+      stack: 'Total',
+      data: [150, 232, 201, 154, 190, 330, 410]
+    },
+    {
+      name: 'Direct',
+      type: 'line',
+      stack: 'Total',
+      data: [320, 332, 301, 334, 390, 330, 320]
+    },
+    {
+      name: 'Search Engine',
+      type: 'line',
+      stack: 'Total',
+      data: [820, 932, 901, 934, 1290, 1330, 1320]
+    }
+  ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts1657" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts1657'));
+
+        // 指定图表的配置项和数据
+        var option = option = {
+    color: ['#3398DB'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            axisTick: {
+                alignWithLabel: true
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value'
+        }
+    ],
+    series: [
+        {
+            name: '直接访问',
+            type: 'bar',
+            barWidth: '60%',
+            data: [10, 52, 200, 334, 390, 330, 220]
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<script type="text/javascript">
+var dataAxis = ['点', '击', '柱', '子', '或', '者', '两', '指', '在', '触', '屏', '上', '滑', '动', '能', '够', '自', '动', '缩', '放'];
+var data = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 122, 133, 334, 198, 123, 125, 220];
+var yMax = 500;
+var dataShadow = [];
+for (var i = 0; i < data.length; i++) {
+    dataShadow.push(yMax);
+}
+// Enable data zoom when user click bar.
+var zoomSize = 6;
+myChart.on('click', function (params) {
+    console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+    myChart.dispatchAction({
+        type: 'dataZoom',
+        startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+        endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
+    });
+});
+</script><div id="echarts8950" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts8950'));
+
+        // 指定图表的配置项和数据
+        var option = option = {
+    title: {
+        text: '特性示例：渐变色 阴影 点击缩放',
+        subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
+    },
+    xAxis: {
+        data: dataAxis,
+        axisLabel: {
+            inside: true,
+            textStyle: {
+                color: '#fff'
+            }
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: false
+        },
+        z: 10
+    },
+    yAxis: {
+        axisLine: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLabel: {
+            textStyle: {
+                color: '#999'
+            }
+        }
+    },
+    dataZoom: [
+        {
+            type: 'inside'
+        }
+    ],
+    series: [
+        { // For shadow
+            type: 'bar',
+            itemStyle: {
+                color: 'rgba(0,0,0,0.05)'
+            },
+            barGap: '-100%',
+            barCategoryGap: '40%',
+            data: dataShadow,
+            animation: false
+        },
+        {
+            type: 'bar',
+            itemStyle: {
+                color: new echarts.graphic.LinearGradient(
+                    0, 0, 0, 1,
+                    [
+                        {offset: 0, color: '#83bff6'},
+                        {offset: 0.5, color: '#188df0'},
+                        {offset: 1, color: '#188df0'}
+                    ]
+                )
+            },
+            emphasis: {
+                itemStyle: {
+                    color: new echarts.graphic.LinearGradient(
+                        0, 0, 0, 1,
+                        [
+                            {offset: 0, color: '#2378f7'},
+                            {offset: 0.7, color: '#2378f7'},
+                            {offset: 1, color: '#83bff6'}
+                        ]
+                    )
+                }
+            },
+            data: data
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<div id="echarts2617" style="width: 100%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2617'));
+
+        // 指定图表的配置项和数据
+        var option = option = {
+    title: {
+        text: '某站点用户访问来源',
+        subtext: '纯属虚构',
+        left: 'center'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+        data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: '55%',
+            center: ['50%', '60%'],
+            data: [
+                {value: 335, name: '直接访问'},
+                {value: 310, name: '邮件营销'},
+                {value: 234, name: '联盟广告'},
+                {value: 135, name: '视频广告'},
+                {value: 1548, name: '搜索引擎'}
+            ],
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>]]></content>
+      <categories>
+        <category>Echarts</category>
+      </categories>
+      <tags>
+        <tag>Echarts</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Netlify 部署 个人网站</title>
     <url>/Netlify/</url>
     <content><![CDATA[<p>官网: <a href="http://www.netlify.com">www.netlify.com</a></p>
@@ -2402,303 +1988,6 @@ Backblaze B2 官网</p>
       </tags>
   </entry>
   <entry>
-    <title>Hexo 嵌入可视化 Echarts 图表</title>
-    <url>/echarts/</url>
-    <content><![CDATA[<p>Echarts在线库 CDN 服务: <code>https://www.bootcdn.cn/echarts/</code></p>
-<div id="echarts9005" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts9005'));
-
-        // 指定图表的配置项和数据
-        var option = {
-  tooltip: {
-    trigger: 'axis'
-  },
-  legend: {
-    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
-  },
-  grid: {
-    left: '3%',
-    right: '4%',
-    bottom: '3%',
-    containLabel: true
-  },
-  toolbox: {
-    feature: {
-      saveAsImage: {}
-    }
-  },
-  xAxis: {
-    type: 'category',
-    boundaryGap: false,
-    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-  },
-  yAxis: {
-    type: 'value'
-  },
-  series: [
-    {
-      name: 'Email',
-      type: 'line',
-      stack: 'Total',
-      data: [120, 132, 101, 134, 90, 230, 210]
-    },
-    {
-      name: 'Union Ads',
-      type: 'line',
-      stack: 'Total',
-      data: [220, 182, 191, 234, 290, 330, 310]
-    },
-    {
-      name: 'Video Ads',
-      type: 'line',
-      stack: 'Total',
-      data: [150, 232, 201, 154, 190, 330, 410]
-    },
-    {
-      name: 'Direct',
-      type: 'line',
-      stack: 'Total',
-      data: [320, 332, 301, 334, 390, 330, 320]
-    },
-    {
-      name: 'Search Engine',
-      type: 'line',
-      stack: 'Total',
-      data: [820, 932, 901, 934, 1290, 1330, 1320]
-    }
-  ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>
-<div id="echarts670" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts670'));
-
-        // 指定图表的配置项和数据
-        var option = option = {
-    color: ['#3398DB'],
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
-            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-        }
-    },
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis: [
-        {
-            type: 'category',
-            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-            axisTick: {
-                alignWithLabel: true
-            }
-        }
-    ],
-    yAxis: [
-        {
-            type: 'value'
-        }
-    ],
-    series: [
-        {
-            name: '直接访问',
-            type: 'bar',
-            barWidth: '60%',
-            data: [10, 52, 200, 334, 390, 330, 220]
-        }
-    ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>
-<script type="text/javascript">
-var dataAxis = ['点', '击', '柱', '子', '或', '者', '两', '指', '在', '触', '屏', '上', '滑', '动', '能', '够', '自', '动', '缩', '放'];
-var data = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 122, 133, 334, 198, 123, 125, 220];
-var yMax = 500;
-var dataShadow = [];
-for (var i = 0; i < data.length; i++) {
-    dataShadow.push(yMax);
-}
-// Enable data zoom when user click bar.
-var zoomSize = 6;
-myChart.on('click', function (params) {
-    console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
-    myChart.dispatchAction({
-        type: 'dataZoom',
-        startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
-        endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
-    });
-});
-</script><div id="echarts4984" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts4984'));
-
-        // 指定图表的配置项和数据
-        var option = option = {
-    title: {
-        text: '特性示例：渐变色 阴影 点击缩放',
-        subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
-    },
-    xAxis: {
-        data: dataAxis,
-        axisLabel: {
-            inside: true,
-            textStyle: {
-                color: '#fff'
-            }
-        },
-        axisTick: {
-            show: false
-        },
-        axisLine: {
-            show: false
-        },
-        z: 10
-    },
-    yAxis: {
-        axisLine: {
-            show: false
-        },
-        axisTick: {
-            show: false
-        },
-        axisLabel: {
-            textStyle: {
-                color: '#999'
-            }
-        }
-    },
-    dataZoom: [
-        {
-            type: 'inside'
-        }
-    ],
-    series: [
-        { // For shadow
-            type: 'bar',
-            itemStyle: {
-                color: 'rgba(0,0,0,0.05)'
-            },
-            barGap: '-100%',
-            barCategoryGap: '40%',
-            data: dataShadow,
-            animation: false
-        },
-        {
-            type: 'bar',
-            itemStyle: {
-                color: new echarts.graphic.LinearGradient(
-                    0, 0, 0, 1,
-                    [
-                        {offset: 0, color: '#83bff6'},
-                        {offset: 0.5, color: '#188df0'},
-                        {offset: 1, color: '#188df0'}
-                    ]
-                )
-            },
-            emphasis: {
-                itemStyle: {
-                    color: new echarts.graphic.LinearGradient(
-                        0, 0, 0, 1,
-                        [
-                            {offset: 0, color: '#2378f7'},
-                            {offset: 0.7, color: '#2378f7'},
-                            {offset: 1, color: '#83bff6'}
-                        ]
-                    )
-                }
-            },
-            data: data
-        }
-    ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>
-<div id="echarts5541" style="width: 100%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts5541'));
-
-        // 指定图表的配置项和数据
-        var option = option = {
-    title: {
-        text: '某站点用户访问来源',
-        subtext: '纯属虚构',
-        left: 'center'
-    },
-    tooltip: {
-        trigger: 'item',
-        formatter: '{a} <br/>{b} : {c} ({d}%)'
-    },
-    legend: {
-        orient: 'vertical',
-        left: 'left',
-        data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
-    },
-    series: [
-        {
-            name: '访问来源',
-            type: 'pie',
-            radius: '55%',
-            center: ['50%', '60%'],
-            data: [
-                {value: 335, name: '直接访问'},
-                {value: 310, name: '邮件营销'},
-                {value: 234, name: '联盟广告'},
-                {value: 135, name: '视频广告'},
-                {value: 1548, name: '搜索引擎'}
-            ],
-            emphasis: {
-                itemStyle: {
-                    shadowBlur: 10,
-                    shadowOffsetX: 0,
-                    shadowColor: 'rgba(0, 0, 0, 0.5)'
-                }
-            }
-        }
-    ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>]]></content>
-      <categories>
-        <category>Echarts</category>
-      </categories>
-      <tags>
-        <tag>Echarts</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>导航</title>
-    <url>/nav/</url>
-    <content><![CDATA[<h3 id="中国国旗"><a href="https://l-zm.com/h/china-flag">中国国旗</a><a title="#中国国旗" href="#中国国旗"></a></h3>
-<p><img src="https://i.l-zm.com/html/20240101%E4%B8%AD%E5%9B%BD%E5%9B%BD%E6%97%97.png" alt="中国国旗" loading="lazy" class="φbp"></p>
-<h3 id="所有国家的国旗"><a href="https://l-zm.com/h/all-national-flags">所有国家的国旗</a><a title="#所有国家的国旗" href="#所有国家的国旗"></a></h3>
-<p><img src="https://i.l-zm.com/html/2024010%E6%89%80%E6%9C%89%E5%9B%BD%E5%AE%B6%E7%9A%84%E5%9B%BD%E6%97%97.png" alt="中国国旗" loading="lazy" class="φbp"></p>
-<h3 id="设计模式"><a href="https://l-zm.com/html/design-patterns/index">设计模式</a><a title="#设计模式" href="#设计模式"></a></h3>
-]]></content>
-      <categories>
-        <category>HTML</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>IntelliJ IDEA 配置</title>
     <url>/IntelliJ-IDEA-Config/</url>
     <content><![CDATA[<h3 id="设置背景颜色">设置背景颜色<a title="#设置背景颜色" href="#设置背景颜色"></a></h3>
@@ -2752,6 +2041,22 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </tags>
   </entry>
   <entry>
+    <title>导航</title>
+    <url>/nav/</url>
+    <content><![CDATA[<h3 id="中国国旗"><a href="https://l-zm.com/h/china-flag">中国国旗</a><a title="#中国国旗" href="#中国国旗"></a></h3>
+<p><img src="https://i.l-zm.com/html/20240101%E4%B8%AD%E5%9B%BD%E5%9B%BD%E6%97%97.png" alt="中国国旗" loading="lazy" class="φbp"></p>
+<h3 id="所有国家的国旗"><a href="https://l-zm.com/h/all-national-flags">所有国家的国旗</a><a title="#所有国家的国旗" href="#所有国家的国旗"></a></h3>
+<p><img src="https://i.l-zm.com/html/2024010%E6%89%80%E6%9C%89%E5%9B%BD%E5%AE%B6%E7%9A%84%E5%9B%BD%E6%97%97.png" alt="中国国旗" loading="lazy" class="φbp"></p>
+<h3 id="设计模式"><a href="https://l-zm.com/html/design-patterns/index">设计模式</a><a title="#设计模式" href="#设计模式"></a></h3>
+]]></content>
+      <categories>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>IntelliJ IDEA 插件</title>
     <url>/IntelliJ-IDEA-Plugins/</url>
     <content><![CDATA[<h3 id="free-mybatis-plugin">Free MyBatis plugin<a title="#free-mybatis-plugin" href="#free-mybatis-plugin"></a></h3>
@@ -2773,6 +2078,121 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </categories>
       <tags>
         <tag>IntelliJ IDEA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 计划任务 CronTab</title>
+    <url>/linux-crontab/</url>
+    <content><![CDATA[<blockquote>
+<p>CronTab 的语法</p>
+<p>* * * * * date &gt;&gt; /tmp/date.txt</p>
+</blockquote>
+<div class="φbq"><div class="φbs"><table><thead>
+<tr>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">date &gt;&gt; /tmp/date.txt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">分钟</td>
+<td style="text-align:center">小时</td>
+<td style="text-align:center">几号</td>
+<td style="text-align:center">几月</td>
+<td style="text-align:center">星期</td>
+<td style="text-align:center">需要执行的命令</td>
+</tr>
+</tbody>
+</table></div></div><p><img src="https://pic.imgdb.cn/item/626cf1db239250f7c57d0a84.png" alt="Linux 计划任务 CronTab" loading="lazy" class="φbp"></p>
+<h2 id="案例">案例<a title="#案例" href="#案例"></a></h2>
+<h3 id="每一小时">每一小时<a title="#每一小时" href="#每一小时"></a></h3>
+<p><code>* */1 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每小时执行/etc/cron.hourly目录内的脚本">每小时执行/etc/cron.hourly目录内的脚本<a title="#每小时执行/etc/cron.hourly目录内的脚本" href="#每小时执行/etc/cron.hourly目录内的脚本"></a></h3>
+<p><code>01 * * * * root run-parts /etc/cron.hourly</code></p>
+<h3 id="每小时的第3和第15分钟执行">每小时的第3和第15分钟执行<a title="#每小时的第3和第15分钟执行" href="#每小时的第3和第15分钟执行"></a></h3>
+<p><code>3,15 * * * * /service/l-zm/request.sh</code></p>
+<h3 id="在上午8点到11点的第3和第15分钟执行">在上午8点到11点的第3和第15分钟执行<a title="#在上午8点到11点的第3和第15分钟执行" href="#在上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每隔两天的上午8点到11点的第3和第15分钟执行">每隔两天的上午8点到11点的第3和第15分钟执行<a title="#每隔两天的上午8点到11点的第3和第15分钟执行" href="#每隔两天的上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 */2 * * date &gt;&gt; /tmp/date.txt</code></p>
+<h3 id="每个星期一的上午8点到11点的第3和第15分钟执行">每个星期一的上午8点到11点的第3和第15分钟执行<a title="#每个星期一的上午8点到11点的第3和第15分钟执行" href="#每个星期一的上午8点到11点的第3和第15分钟执行"></a></h3>
+<p><code>3,15 8-11 * * 1 date &gt;&gt; /tmp/date.txt</code></p>
+<h3 id="每晚的21:30">每晚的21:30<a title="#每晚的21:30" href="#每晚的21:30"></a></h3>
+<p><code>30 21 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每月1、10、22日的4-:-45">每月1、10、22日的4 : 45<a title="#每月1、10、22日的4-:-45" href="#每月1、10、22日的4-:-45"></a></h3>
+<p><code>45 4 1,10,22 * * /service/l-zm/request.sh</code></p>
+<h3 id="每周六、周日的1-:-10">每周六、周日的1 : 10<a title="#每周六、周日的1-:-10" href="#每周六、周日的1-:-10"></a></h3>
+<p><code>10 1 * * 6,0 /service/l-zm/request.sh</code></p>
+<h3 id="每天18-:-00至23-:-00之间每隔30分钟">每天18 : 00至23 : 00之间每隔30分钟<a title="#每天18-:-00至23-:-00之间每隔30分钟" href="#每天18-:-00至23-:-00之间每隔30分钟"></a></h3>
+<p><code>0,30 18-23 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每星期六的晚上11-:-00-pm">每星期六的晚上11 : 00 pm<a title="#每星期六的晚上11-:-00-pm" href="#每星期六的晚上11-:-00-pm"></a></h3>
+<p><code>0 23 * * 6 /service/l-zm/request.sh</code></p>
+<h3 id="晚上11点到早上7点之间，每隔一小时">晚上11点到早上7点之间，每隔一小时<a title="#晚上11点到早上7点之间，每隔一小时" href="#晚上11点到早上7点之间，每隔一小时"></a></h3>
+<p><code>* 23-7/1 * * * /service/l-zm/request.sh</code></p>
+<h3 id="每月的4号与每周一到周三的11点">每月的4号与每周一到周三的11点<a title="#每月的4号与每周一到周三的11点" href="#每月的4号与每周一到周三的11点"></a></h3>
+<p><code>0 11 4 * mon-wed /service/l-zm/request.sh</code></p>
+<h3 id="一月一号的4点">一月一号的4点<a title="#一月一号的4点" href="#一月一号的4点"></a></h3>
+<p><code>0 4 1 jan * /service/l-zm/request.sh</code></p>
+<h3 id="每秒执行一次">每秒执行一次<a title="#每秒执行一次" href="#每秒执行一次"></a></h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">*/1 * * * * <span class="built_in">sleep</span> 0s;<span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 1s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 2s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 3s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 4s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 5s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 6s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 7s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 8s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 9s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 10s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 11s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 12s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 13s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 14s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 15s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 16s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 17s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 18s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 19s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 20s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 21s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 22s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 23s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 24s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 25s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 26s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 27s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 28s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 29s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 30s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 31s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 32s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 33s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 34s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 35s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 36s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 37s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 38s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 39s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 40s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 41s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 42s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 43s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 44s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 45s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 46s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 47s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 48s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 49s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 50s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 51s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 52s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 53s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 54s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 55s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 56s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 57s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 58s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 59s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line"></span><br><span class="line">如果每秒没有循环连续 可以试试把 <span class="built_in">sleep</span> 0s 删除, 在最后添加 <span class="built_in">sleep</span> 60s (CentOS 和 Ubuntu 下不一样)</span><br></pre></td></tr></table></figure>
+<h2 id="crontab-使用与解释">CronTab 使用与解释<a title="#crontab-使用与解释" href="#crontab-使用与解释"></a></h2>
+<p><code>crontab -l</code> 查看所有的计划任务</p>
+<p><code>crontab -e</code> 修改计划任务</p>
+<p><code>service crond start</code> 启动计划任务</p>
+<p><code>service crond restart</code> 重启计划任务</p>
+<p><code>service crond reload</code> 重新载入计划任务</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>CronTab</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>CronTab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux GNU Grep 查询日志</title>
+    <url>/linux-select-log/</url>
+    <content><![CDATA[<p>官方介绍手册: <code>http://www.gnu.org/software/grep/manual/grep.html</code></p>
+<ul>
+<li>Grep 命令的格式<br>
+<code>grep [option...] [patterns] [file...]</code></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@coursecenterresource-0 logs]# grep --help</span><br><span class="line">Usage: grep [OPTION]... PATTERN [FILE]...</span><br><span class="line">Search for PATTERN in each FILE or standard input.</span><br><span class="line">PATTERN is, by default, a basic regular expression (BRE).</span><br><span class="line">Example: grep -i &#x27;hello world&#x27; menu.h main.c</span><br><span class="line"></span><br><span class="line">Regexp selection and interpretation:</span><br><span class="line">  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)</span><br><span class="line">  -F, --fixed-strings       PATTERN is a set of newline-separated fixed strings</span><br><span class="line">  -G, --basic-regexp        PATTERN is a basic regular expression (BRE)</span><br><span class="line">  -P, --perl-regexp         PATTERN is a Perl regular expression</span><br><span class="line">  -e, --regexp=PATTERN      use PATTERN for matching</span><br><span class="line">  -f, --file=FILE           obtain PATTERN from FILE</span><br><span class="line">  -i, --ignore-case         ignore case distinctions</span><br><span class="line">  -w, --word-regexp         force PATTERN to match only whole words</span><br><span class="line">  -x, --line-regexp         force PATTERN to match only whole lines</span><br><span class="line">  -z, --null-data           a data line ends in 0 byte, not newline</span><br><span class="line"></span><br><span class="line">Miscellaneous:</span><br><span class="line">  -s, --no-messages         suppress error messages</span><br><span class="line">  -v, --invert-match        select non-matching lines</span><br><span class="line">  -V, --version             display version information and exit</span><br><span class="line">      --help                display this help text and exit</span><br><span class="line"></span><br><span class="line">Output control:</span><br><span class="line">  -m, --max-count=NUM       stop after NUM matches</span><br><span class="line">  -b, --byte-offset         print the byte offset with output lines</span><br><span class="line">  -n, --line-number         print line number with output lines</span><br><span class="line">      --line-buffered       flush output on every line</span><br><span class="line">  -H, --with-filename       print the file name for each match</span><br><span class="line">  -h, --no-filename         suppress the file name prefix on output</span><br><span class="line">      --label=LABEL         use LABEL as the standard input file name prefix</span><br><span class="line">  -o, --only-matching       show only the part of a line matching PATTERN</span><br><span class="line">  -q, --quiet, --silent     suppress all normal output</span><br><span class="line">      --binary-files=TYPE   assume that binary files are TYPE;</span><br><span class="line">                            TYPE is &#x27;binary&#x27;, &#x27;text&#x27;, or &#x27;without-match&#x27;</span><br><span class="line">  -a, --text                equivalent to --binary-files=text</span><br><span class="line">  -I                        equivalent to --binary-files=without-match</span><br><span class="line">  -d, --directories=ACTION  how to handle directories;</span><br><span class="line">                            ACTION is &#x27;read&#x27;, &#x27;recurse&#x27;, or &#x27;skip&#x27;</span><br><span class="line">  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;</span><br><span class="line">                            ACTION is &#x27;read&#x27; or &#x27;skip&#x27;</span><br><span class="line">  -r, --recursive           like --directories=recurse</span><br><span class="line">  -R, --dereference-recursive</span><br><span class="line">                            likewise, but follow all symlinks</span><br><span class="line">      --include=FILE_PATTERN</span><br><span class="line">                            search only files that match FILE_PATTERN</span><br><span class="line">      --exclude=FILE_PATTERN</span><br><span class="line">                            skip files and directories matching FILE_PATTERN</span><br><span class="line">      --exclude-from=FILE   skip files matching any file pattern from FILE</span><br><span class="line">      --exclude-dir=PATTERN directories that match PATTERN will be skipped.</span><br><span class="line">  -L, --files-without-match print only names of FILEs containing no match</span><br><span class="line">  -l, --files-with-matches  print only names of FILEs containing matches</span><br><span class="line">  -c, --count               print only a count of matching lines per FILE</span><br><span class="line">  -T, --initial-tab         make tabs line up (if needed)</span><br><span class="line">  -Z, --null                print 0 byte after FILE name</span><br><span class="line"></span><br><span class="line">Context control:</span><br><span class="line">  -B, --before-context=NUM  print NUM lines of leading context</span><br><span class="line">  -A, --after-context=NUM   print NUM lines of trailing context</span><br><span class="line">  -C, --context=NUM         print NUM lines of output context</span><br><span class="line">  -NUM                      same as --context=NUM</span><br><span class="line">      --group-separator=SEP use SEP as a group separator</span><br><span class="line">      --no-group-separator  use empty string as a group separator</span><br><span class="line">      --color[=WHEN],</span><br><span class="line">      --colour[=WHEN]       use markers to highlight the matching strings;</span><br><span class="line">                            WHEN is &#x27;always&#x27;, &#x27;never&#x27;, or &#x27;auto&#x27;</span><br><span class="line">  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)</span><br><span class="line">  -u, --unix-byte-offsets   report offsets as if CRs were not there</span><br><span class="line">                            (MSDOS/Windows)</span><br><span class="line"></span><br><span class="line">&#x27;egrep&#x27; means &#x27;grep -E&#x27;.  &#x27;fgrep&#x27; means &#x27;grep -F&#x27;.</span><br><span class="line">Direct invocation as either &#x27;egrep&#x27; or &#x27;fgrep&#x27; is deprecated.</span><br><span class="line">When FILE is -, read standard input.  With no FILE, read . if a command-line</span><br><span class="line">-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.</span><br><span class="line">Exit status is 0 if any line is selected, 1 otherwise;</span><br><span class="line">if any error occurs and -q is not given, the exit status is 2.</span><br><span class="line"></span><br><span class="line">Report bugs to: bug-grep@gnu.org</span><br><span class="line">GNU Grep home page: &lt;http://www.gnu.org/software/grep/&gt;</span><br><span class="line">General help using GNU software: &lt;http://www.gnu.org/gethelp/&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查询 info.log 日志文件中包含【关键字】的行</span></span><br><span class="line">grep 关键字 /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /data/info.log | grep <span class="string">&#x27;关键字&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 反向查找 不包换关键字的行</span></span><br><span class="line">grep -v 关键字 /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不区分大小写</span></span><br><span class="line">grep -i <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出匹配的行数</span></span><br><span class="line">grep -c <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 只输出匹配的内容</span></span><br><span class="line">grep -o <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出 带行号</span></span><br><span class="line">grep -n <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># -A:after 匹配行及之后5行的内容</span></span><br><span class="line"><span class="comment"># -B:before 匹配行及之前5行的内容</span></span><br><span class="line"><span class="comment"># -C:context 匹配行及前后5行的内容</span></span><br><span class="line">grep -A 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br><span class="line">grep -B 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br><span class="line">grep -C 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br></pre></td></tr></table></figure>
+<p>查询最后 1 次出现的日志<br>
+<code>grep -n '关键字' info.log | head -1</code></p>
+<p>查询最后 5 次出现的日志<br>
+<code>grep -n '关键字' info.log | head -5</code></p>
+<p>查询最开始 1 次出现的日志<br>
+<code>grep -n '关键字' info.log | tail -1</code></p>
+<h3 id="正则">正则<a title="#正则" href="#正则"></a></h3>
+<ul>
+<li>
+<p>以 关键字 开头<br>
+<code>grep '^关键字' /data/info.log</code></p>
+</li>
+<li>
+<p>以 关键字 结尾<br>
+<code>grep '关键字$' /data/info.log</code></p>
+</li>
+<li>
+<p>以多个 关键字 开头<br>
+<code>grep '^[关键字关键字]' /data/info.log</code><br>
+<code>grep '^关键字|^关键字' /data/info.log</code></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -3042,121 +2462,6 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </categories>
       <tags>
         <tag>Thread</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux 计划任务 CronTab</title>
-    <url>/linux-crontab/</url>
-    <content><![CDATA[<blockquote>
-<p>CronTab 的语法</p>
-<p>* * * * * date &gt;&gt; /tmp/date.txt</p>
-</blockquote>
-<div class="φbq"><div class="φbs"><table><thead>
-<tr>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">*</th>
-<th style="text-align:center">date &gt;&gt; /tmp/date.txt</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">分钟</td>
-<td style="text-align:center">小时</td>
-<td style="text-align:center">几号</td>
-<td style="text-align:center">几月</td>
-<td style="text-align:center">星期</td>
-<td style="text-align:center">需要执行的命令</td>
-</tr>
-</tbody>
-</table></div></div><p><img src="https://pic.imgdb.cn/item/626cf1db239250f7c57d0a84.png" alt="Linux 计划任务 CronTab" loading="lazy" class="φbp"></p>
-<h2 id="案例">案例<a title="#案例" href="#案例"></a></h2>
-<h3 id="每一小时">每一小时<a title="#每一小时" href="#每一小时"></a></h3>
-<p><code>* */1 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每小时执行/etc/cron.hourly目录内的脚本">每小时执行/etc/cron.hourly目录内的脚本<a title="#每小时执行/etc/cron.hourly目录内的脚本" href="#每小时执行/etc/cron.hourly目录内的脚本"></a></h3>
-<p><code>01 * * * * root run-parts /etc/cron.hourly</code></p>
-<h3 id="每小时的第3和第15分钟执行">每小时的第3和第15分钟执行<a title="#每小时的第3和第15分钟执行" href="#每小时的第3和第15分钟执行"></a></h3>
-<p><code>3,15 * * * * /service/l-zm/request.sh</code></p>
-<h3 id="在上午8点到11点的第3和第15分钟执行">在上午8点到11点的第3和第15分钟执行<a title="#在上午8点到11点的第3和第15分钟执行" href="#在上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每隔两天的上午8点到11点的第3和第15分钟执行">每隔两天的上午8点到11点的第3和第15分钟执行<a title="#每隔两天的上午8点到11点的第3和第15分钟执行" href="#每隔两天的上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 */2 * * date &gt;&gt; /tmp/date.txt</code></p>
-<h3 id="每个星期一的上午8点到11点的第3和第15分钟执行">每个星期一的上午8点到11点的第3和第15分钟执行<a title="#每个星期一的上午8点到11点的第3和第15分钟执行" href="#每个星期一的上午8点到11点的第3和第15分钟执行"></a></h3>
-<p><code>3,15 8-11 * * 1 date &gt;&gt; /tmp/date.txt</code></p>
-<h3 id="每晚的21:30">每晚的21:30<a title="#每晚的21:30" href="#每晚的21:30"></a></h3>
-<p><code>30 21 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每月1、10、22日的4-:-45">每月1、10、22日的4 : 45<a title="#每月1、10、22日的4-:-45" href="#每月1、10、22日的4-:-45"></a></h3>
-<p><code>45 4 1,10,22 * * /service/l-zm/request.sh</code></p>
-<h3 id="每周六、周日的1-:-10">每周六、周日的1 : 10<a title="#每周六、周日的1-:-10" href="#每周六、周日的1-:-10"></a></h3>
-<p><code>10 1 * * 6,0 /service/l-zm/request.sh</code></p>
-<h3 id="每天18-:-00至23-:-00之间每隔30分钟">每天18 : 00至23 : 00之间每隔30分钟<a title="#每天18-:-00至23-:-00之间每隔30分钟" href="#每天18-:-00至23-:-00之间每隔30分钟"></a></h3>
-<p><code>0,30 18-23 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每星期六的晚上11-:-00-pm">每星期六的晚上11 : 00 pm<a title="#每星期六的晚上11-:-00-pm" href="#每星期六的晚上11-:-00-pm"></a></h3>
-<p><code>0 23 * * 6 /service/l-zm/request.sh</code></p>
-<h3 id="晚上11点到早上7点之间，每隔一小时">晚上11点到早上7点之间，每隔一小时<a title="#晚上11点到早上7点之间，每隔一小时" href="#晚上11点到早上7点之间，每隔一小时"></a></h3>
-<p><code>* 23-7/1 * * * /service/l-zm/request.sh</code></p>
-<h3 id="每月的4号与每周一到周三的11点">每月的4号与每周一到周三的11点<a title="#每月的4号与每周一到周三的11点" href="#每月的4号与每周一到周三的11点"></a></h3>
-<p><code>0 11 4 * mon-wed /service/l-zm/request.sh</code></p>
-<h3 id="一月一号的4点">一月一号的4点<a title="#一月一号的4点" href="#一月一号的4点"></a></h3>
-<p><code>0 4 1 jan * /service/l-zm/request.sh</code></p>
-<h3 id="每秒执行一次">每秒执行一次<a title="#每秒执行一次" href="#每秒执行一次"></a></h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">*/1 * * * * <span class="built_in">sleep</span> 0s;<span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 1s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 2s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 3s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 4s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 5s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 6s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 7s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 8s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 9s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 10s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 11s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 12s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 13s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 14s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 15s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 16s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 17s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 18s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 19s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 20s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 21s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 22s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 23s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 24s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 25s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 26s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 27s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 28s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 29s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 30s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 31s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 32s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 33s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 34s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 35s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 36s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 37s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 38s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 39s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 40s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 41s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 42s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 43s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 44s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 45s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 46s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 47s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 48s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 49s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 50s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 51s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 52s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 53s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 54s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 55s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 56s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 57s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 58s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line">*/1 * * * * <span class="built_in">sleep</span> 59s; <span class="built_in">date</span> &gt;&gt; /tmp/date.txt</span><br><span class="line"></span><br><span class="line">如果每秒没有循环连续 可以试试把 <span class="built_in">sleep</span> 0s 删除, 在最后添加 <span class="built_in">sleep</span> 60s (CentOS 和 Ubuntu 下不一样)</span><br></pre></td></tr></table></figure>
-<h2 id="crontab-使用与解释">CronTab 使用与解释<a title="#crontab-使用与解释" href="#crontab-使用与解释"></a></h2>
-<p><code>crontab -l</code> 查看所有的计划任务</p>
-<p><code>crontab -e</code> 修改计划任务</p>
-<p><code>service crond start</code> 启动计划任务</p>
-<p><code>service crond restart</code> 重启计划任务</p>
-<p><code>service crond reload</code> 重新载入计划任务</p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-        <category>CronTab</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>CronTab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux GNU Grep 查询日志</title>
-    <url>/linux-select-log/</url>
-    <content><![CDATA[<p>官方介绍手册: <code>http://www.gnu.org/software/grep/manual/grep.html</code></p>
-<ul>
-<li>Grep 命令的格式<br>
-<code>grep [option...] [patterns] [file...]</code></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@coursecenterresource-0 logs]# grep --help</span><br><span class="line">Usage: grep [OPTION]... PATTERN [FILE]...</span><br><span class="line">Search for PATTERN in each FILE or standard input.</span><br><span class="line">PATTERN is, by default, a basic regular expression (BRE).</span><br><span class="line">Example: grep -i &#x27;hello world&#x27; menu.h main.c</span><br><span class="line"></span><br><span class="line">Regexp selection and interpretation:</span><br><span class="line">  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)</span><br><span class="line">  -F, --fixed-strings       PATTERN is a set of newline-separated fixed strings</span><br><span class="line">  -G, --basic-regexp        PATTERN is a basic regular expression (BRE)</span><br><span class="line">  -P, --perl-regexp         PATTERN is a Perl regular expression</span><br><span class="line">  -e, --regexp=PATTERN      use PATTERN for matching</span><br><span class="line">  -f, --file=FILE           obtain PATTERN from FILE</span><br><span class="line">  -i, --ignore-case         ignore case distinctions</span><br><span class="line">  -w, --word-regexp         force PATTERN to match only whole words</span><br><span class="line">  -x, --line-regexp         force PATTERN to match only whole lines</span><br><span class="line">  -z, --null-data           a data line ends in 0 byte, not newline</span><br><span class="line"></span><br><span class="line">Miscellaneous:</span><br><span class="line">  -s, --no-messages         suppress error messages</span><br><span class="line">  -v, --invert-match        select non-matching lines</span><br><span class="line">  -V, --version             display version information and exit</span><br><span class="line">      --help                display this help text and exit</span><br><span class="line"></span><br><span class="line">Output control:</span><br><span class="line">  -m, --max-count=NUM       stop after NUM matches</span><br><span class="line">  -b, --byte-offset         print the byte offset with output lines</span><br><span class="line">  -n, --line-number         print line number with output lines</span><br><span class="line">      --line-buffered       flush output on every line</span><br><span class="line">  -H, --with-filename       print the file name for each match</span><br><span class="line">  -h, --no-filename         suppress the file name prefix on output</span><br><span class="line">      --label=LABEL         use LABEL as the standard input file name prefix</span><br><span class="line">  -o, --only-matching       show only the part of a line matching PATTERN</span><br><span class="line">  -q, --quiet, --silent     suppress all normal output</span><br><span class="line">      --binary-files=TYPE   assume that binary files are TYPE;</span><br><span class="line">                            TYPE is &#x27;binary&#x27;, &#x27;text&#x27;, or &#x27;without-match&#x27;</span><br><span class="line">  -a, --text                equivalent to --binary-files=text</span><br><span class="line">  -I                        equivalent to --binary-files=without-match</span><br><span class="line">  -d, --directories=ACTION  how to handle directories;</span><br><span class="line">                            ACTION is &#x27;read&#x27;, &#x27;recurse&#x27;, or &#x27;skip&#x27;</span><br><span class="line">  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;</span><br><span class="line">                            ACTION is &#x27;read&#x27; or &#x27;skip&#x27;</span><br><span class="line">  -r, --recursive           like --directories=recurse</span><br><span class="line">  -R, --dereference-recursive</span><br><span class="line">                            likewise, but follow all symlinks</span><br><span class="line">      --include=FILE_PATTERN</span><br><span class="line">                            search only files that match FILE_PATTERN</span><br><span class="line">      --exclude=FILE_PATTERN</span><br><span class="line">                            skip files and directories matching FILE_PATTERN</span><br><span class="line">      --exclude-from=FILE   skip files matching any file pattern from FILE</span><br><span class="line">      --exclude-dir=PATTERN directories that match PATTERN will be skipped.</span><br><span class="line">  -L, --files-without-match print only names of FILEs containing no match</span><br><span class="line">  -l, --files-with-matches  print only names of FILEs containing matches</span><br><span class="line">  -c, --count               print only a count of matching lines per FILE</span><br><span class="line">  -T, --initial-tab         make tabs line up (if needed)</span><br><span class="line">  -Z, --null                print 0 byte after FILE name</span><br><span class="line"></span><br><span class="line">Context control:</span><br><span class="line">  -B, --before-context=NUM  print NUM lines of leading context</span><br><span class="line">  -A, --after-context=NUM   print NUM lines of trailing context</span><br><span class="line">  -C, --context=NUM         print NUM lines of output context</span><br><span class="line">  -NUM                      same as --context=NUM</span><br><span class="line">      --group-separator=SEP use SEP as a group separator</span><br><span class="line">      --no-group-separator  use empty string as a group separator</span><br><span class="line">      --color[=WHEN],</span><br><span class="line">      --colour[=WHEN]       use markers to highlight the matching strings;</span><br><span class="line">                            WHEN is &#x27;always&#x27;, &#x27;never&#x27;, or &#x27;auto&#x27;</span><br><span class="line">  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)</span><br><span class="line">  -u, --unix-byte-offsets   report offsets as if CRs were not there</span><br><span class="line">                            (MSDOS/Windows)</span><br><span class="line"></span><br><span class="line">&#x27;egrep&#x27; means &#x27;grep -E&#x27;.  &#x27;fgrep&#x27; means &#x27;grep -F&#x27;.</span><br><span class="line">Direct invocation as either &#x27;egrep&#x27; or &#x27;fgrep&#x27; is deprecated.</span><br><span class="line">When FILE is -, read standard input.  With no FILE, read . if a command-line</span><br><span class="line">-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.</span><br><span class="line">Exit status is 0 if any line is selected, 1 otherwise;</span><br><span class="line">if any error occurs and -q is not given, the exit status is 2.</span><br><span class="line"></span><br><span class="line">Report bugs to: bug-grep@gnu.org</span><br><span class="line">GNU Grep home page: &lt;http://www.gnu.org/software/grep/&gt;</span><br><span class="line">General help using GNU software: &lt;http://www.gnu.org/gethelp/&gt;</span><br></pre></td></tr></table></figure>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查询 info.log 日志文件中包含【关键字】的行</span></span><br><span class="line">grep 关键字 /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /data/info.log | grep <span class="string">&#x27;关键字&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 反向查找 不包换关键字的行</span></span><br><span class="line">grep -v 关键字 /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不区分大小写</span></span><br><span class="line">grep -i <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出匹配的行数</span></span><br><span class="line">grep -c <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 只输出匹配的内容</span></span><br><span class="line">grep -o <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出 带行号</span></span><br><span class="line">grep -n <span class="string">&#x27;l-zm&#x27;</span> /data/info.log</span><br><span class="line"></span><br><span class="line"><span class="comment"># -A:after 匹配行及之后5行的内容</span></span><br><span class="line"><span class="comment"># -B:before 匹配行及之前5行的内容</span></span><br><span class="line"><span class="comment"># -C:context 匹配行及前后5行的内容</span></span><br><span class="line">grep -A 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br><span class="line">grep -B 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br><span class="line">grep -C 5 <span class="string">&#x27;关键字&#x27;</span> /data/info.log</span><br></pre></td></tr></table></figure>
-<p>查询最后 1 次出现的日志<br>
-<code>grep -n '关键字' info.log | head -1</code></p>
-<p>查询最后 5 次出现的日志<br>
-<code>grep -n '关键字' info.log | head -5</code></p>
-<p>查询最开始 1 次出现的日志<br>
-<code>grep -n '关键字' info.log | tail -1</code></p>
-<h3 id="正则">正则<a title="#正则" href="#正则"></a></h3>
-<ul>
-<li>
-<p>以 关键字 开头<br>
-<code>grep '^关键字' /data/info.log</code></p>
-</li>
-<li>
-<p>以 关键字 结尾<br>
-<code>grep '关键字$' /data/info.log</code></p>
-</li>
-<li>
-<p>以多个 关键字 开头<br>
-<code>grep '^[关键字关键字]' /data/info.log</code><br>
-<code>grep '^关键字|^关键字' /data/info.log</code></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -3498,68 +2803,6 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </tags>
   </entry>
   <entry>
-    <title>iOS App苹果企业签分发</title>
-    <url>/ios-app-enterprise-sign-share/</url>
-    <content><![CDATA[<h3 id="配置">配置<a title="#配置" href="#配置"></a></h3>
-<ol>
-<li>
-<p>必须有SSL证书（HTTPS）</p>
-<blockquote>
-<p>企业签分发的 plist、icon、ipa 等文件下载链接必须是https协议的，例如：<a href="https://html.xn--tiqt5l2rd.com/company_ios/propertylist.plist" target="_blank">https://html.主域名.com/company_ios/propertylist.plist</a></p>
-</blockquote>
-</li>
-<li>
-<p>配置MIME</p>
-<blockquote>
-<p>如果是Nginx，在 nginx/conf/mime.types 配置文件里面添加如下配置</p>
-</blockquote>
-<p>说明：</p>
-<ul>
-<li>application/octet-stream表示.ipa后缀的文件是下载类型</li>
-<li>text/xml表示.plist后缀的文件是xml类型</li>
-</ul>
-</li>
-</ol>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">application/octet-stream    ipa</span><br><span class="line">text/xml    plist</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>苹果端安装协议</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">itms-services:<span class="comment">///?action=download-manifest&amp;url=https://html.主域名.com/company_ios/propertylist.plist</span></span><br></pre></td></tr></table></figure>
-<h3 id="使用">使用<a title="#使用" href="#使用"></a></h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 能触发这个地址就好</span></span><br><span class="line">window.location = <span class="string">&quot;itms-services:///?action=download-manifest&amp;url=https://html.主域名.com/company_ios/propertylist.plist&quot;</span> </span><br></pre></td></tr></table></figure>
-<h3 id="注意">注意<a title="#注意" href="#注意"></a></h3>
-<ol>
-<li>自己签名的SSL证书是不行的</li>
-<li>plist 文件中有中文会有问题，需要另存为utf-8格式保存即可</li>
-<li>plist 文件下载路径问题，下载路径不要操作三级，否者会报“无法连接到…”、“此时无法下载…”、“证书有问题…”等</li>
-<li>安装协议 itms-services: 后面是三个&quot;/&quot;，当然，我测试了两个，也是可以的</li>
-<li>客户端对 plist 文件是有缓存的，如果安装不成功，可以修改下 plist 文件名称重新试下</li>
-<li>安装过程中图片无法显示问题，这个在plist文件里面已经设置了图片地址，但是就是不显示</li>
-</ol>
-<h3 id="plist文件样本：">plist文件样本：<a title="#plist文件样本：" href="#plist文件样本："></a></h3>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">plist</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//Apple//DTD PLIST 1.0//EN&quot;</span> <span class="string">&quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">plist</span> <span class="attr">version</span>=<span class="string">&quot;1.0&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">key</span>&gt;</span>items<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">array</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">key</span>&gt;</span>assets<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">array</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>software-package<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>https://www.主域名.com/包.ipa<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>full-size-image<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>needs-shine<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">          　　　　　　　　　　<span class="tag">&lt;<span class="name">true</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>http://www.主域名.com/icon-512.png<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>display-image<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>needs-shine<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">          　　　　　　　　　　<span class="tag">&lt;<span class="name">true</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>http://www.主域名.com/icon-57.png<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">array</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">key</span>&gt;</span>metadata<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>bundle-identifier<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>com.主域名.bundleId<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>bundle-version<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>2.0.0<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>software<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>subtitle<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span><span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>title<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>App名称<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">array</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plist</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="关于跳转设置信任的逻辑">关于跳转设置信任的逻辑<a title="#关于跳转设置信任的逻辑" href="#关于跳转设置信任的逻辑"></a></h3>
-<ul>
-<li>
-<p>iOS 9 版本之前可以直接： <code>prefs:root=General&amp;path=ManagedConfigurationList </code></p>
-</li>
-<li>
-<p>iOS 10 系统之后不能直接跳转了，但是可以：<code>https://www.主域名.com/企业签文件.mobileprovision </code></p>
-</li>
-<li>
-<p>JS Demo</p>
-</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">    <span class="keyword">if</span>(agent.<span class="title function_">indexOf</span>(<span class="string">&quot;like mac os x&quot;</span>) &gt; <span class="number">0</span>) &#123;</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">var</span> ver=agent.<span class="title function_">match</span>(<span class="regexp">/cpu iphone os (.*?) like mac os/</span>);</span><br><span class="line">        ver = ver[<span class="number">1</span>].<span class="title function_">replace</span>(<span class="regexp">/_/g</span>,<span class="string">&quot;.&quot;</span>)</span><br><span class="line">        ver = ver.<span class="title function_">split</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">var</span> url = <span class="string">&quot;prefs:root=General&amp;path=ManagedConfigurationList&quot;</span>;</span><br><span class="line">        <span class="keyword">if</span> (agent.<span class="title function_">indexOf</span>(<span class="string">&#x27;ipad&#x27;</span>) &gt; <span class="number">0</span> || ver &gt; <span class="number">9</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (agent.<span class="title function_">indexOf</span>(<span class="string">&#x27;browser&#x27;</span>) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="comment">//证书替换</span></span><br><span class="line">                url   = <span class="string">&quot;https://www.主域名.com/embedded.mobileprovision&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="title function_">request</span>(url);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-      <tags>
-        <tag>iOS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Centos 7 安装 Nginx - 配置 &amp; 文件 &amp; 说明</title>
     <url>/nginx/</url>
     <content><![CDATA[<h3 id="nginx-的特点">Nginx 的特点<a title="#nginx-的特点" href="#nginx-的特点"></a></h3>
@@ -3747,6 +2990,776 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </tags>
   </entry>
   <entry>
+    <title>iOS App苹果企业签分发</title>
+    <url>/ios-app-enterprise-sign-share/</url>
+    <content><![CDATA[<h3 id="配置">配置<a title="#配置" href="#配置"></a></h3>
+<ol>
+<li>
+<p>必须有SSL证书（HTTPS）</p>
+<blockquote>
+<p>企业签分发的 plist、icon、ipa 等文件下载链接必须是https协议的，例如：<a href="https://html.xn--tiqt5l2rd.com/company_ios/propertylist.plist" target="_blank">https://html.主域名.com/company_ios/propertylist.plist</a></p>
+</blockquote>
+</li>
+<li>
+<p>配置MIME</p>
+<blockquote>
+<p>如果是Nginx，在 nginx/conf/mime.types 配置文件里面添加如下配置</p>
+</blockquote>
+<p>说明：</p>
+<ul>
+<li>application/octet-stream表示.ipa后缀的文件是下载类型</li>
+<li>text/xml表示.plist后缀的文件是xml类型</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">application/octet-stream    ipa</span><br><span class="line">text/xml    plist</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>苹果端安装协议</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">itms-services:<span class="comment">///?action=download-manifest&amp;url=https://html.主域名.com/company_ios/propertylist.plist</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用">使用<a title="#使用" href="#使用"></a></h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 能触发这个地址就好</span></span><br><span class="line">window.location = <span class="string">&quot;itms-services:///?action=download-manifest&amp;url=https://html.主域名.com/company_ios/propertylist.plist&quot;</span> </span><br></pre></td></tr></table></figure>
+<h3 id="注意">注意<a title="#注意" href="#注意"></a></h3>
+<ol>
+<li>自己签名的SSL证书是不行的</li>
+<li>plist 文件中有中文会有问题，需要另存为utf-8格式保存即可</li>
+<li>plist 文件下载路径问题，下载路径不要操作三级，否者会报“无法连接到…”、“此时无法下载…”、“证书有问题…”等</li>
+<li>安装协议 itms-services: 后面是三个&quot;/&quot;，当然，我测试了两个，也是可以的</li>
+<li>客户端对 plist 文件是有缓存的，如果安装不成功，可以修改下 plist 文件名称重新试下</li>
+<li>安装过程中图片无法显示问题，这个在plist文件里面已经设置了图片地址，但是就是不显示</li>
+</ol>
+<h3 id="plist文件样本：">plist文件样本：<a title="#plist文件样本：" href="#plist文件样本："></a></h3>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">plist</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//Apple//DTD PLIST 1.0//EN&quot;</span> <span class="string">&quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">plist</span> <span class="attr">version</span>=<span class="string">&quot;1.0&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">key</span>&gt;</span>items<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">array</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">key</span>&gt;</span>assets<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">array</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>software-package<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>https://www.主域名.com/包.ipa<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>full-size-image<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>needs-shine<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">          　　　　　　　　　　<span class="tag">&lt;<span class="name">true</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>http://www.主域名.com/icon-512.png<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>display-image<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>needs-shine<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">          　　　　　　　　　　<span class="tag">&lt;<span class="name">true</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">key</span>&gt;</span>url<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">string</span>&gt;</span>http://www.主域名.com/icon-57.png<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">array</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">key</span>&gt;</span>metadata<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">dict</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>bundle-identifier<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>com.主域名.bundleId<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>bundle-version<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>2.0.0<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>software<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>subtitle<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span><span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">key</span>&gt;</span>title<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">string</span>&gt;</span>App名称<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">array</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dict</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plist</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="关于跳转设置信任的逻辑">关于跳转设置信任的逻辑<a title="#关于跳转设置信任的逻辑" href="#关于跳转设置信任的逻辑"></a></h3>
+<ul>
+<li>
+<p>iOS 9 版本之前可以直接： <code>prefs:root=General&amp;path=ManagedConfigurationList </code></p>
+</li>
+<li>
+<p>iOS 10 系统之后不能直接跳转了，但是可以：<code>https://www.主域名.com/企业签文件.mobileprovision </code></p>
+</li>
+<li>
+<p>JS Demo</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">    <span class="keyword">if</span>(agent.<span class="title function_">indexOf</span>(<span class="string">&quot;like mac os x&quot;</span>) &gt; <span class="number">0</span>) &#123;</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">var</span> ver=agent.<span class="title function_">match</span>(<span class="regexp">/cpu iphone os (.*?) like mac os/</span>);</span><br><span class="line">        ver = ver[<span class="number">1</span>].<span class="title function_">replace</span>(<span class="regexp">/_/g</span>,<span class="string">&quot;.&quot;</span>)</span><br><span class="line">        ver = ver.<span class="title function_">split</span>(<span class="string">&#x27;.&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">var</span> url = <span class="string">&quot;prefs:root=General&amp;path=ManagedConfigurationList&quot;</span>;</span><br><span class="line">        <span class="keyword">if</span> (agent.<span class="title function_">indexOf</span>(<span class="string">&#x27;ipad&#x27;</span>) &gt; <span class="number">0</span> || ver &gt; <span class="number">9</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (agent.<span class="title function_">indexOf</span>(<span class="string">&#x27;browser&#x27;</span>) &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="comment">//证书替换</span></span><br><span class="line">                url   = <span class="string">&quot;https://www.主域名.com/embedded.mobileprovision&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="title function_">request</span>(url);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>购买充值美区 Apple ID 礼品卡 官网&amp;支付宝</title>
+    <url>/appleid-gift-card/</url>
+    <content><![CDATA[<h2 id="苹果官网-购买">苹果官网 购买<a title="#苹果官网-购买" href="#苹果官网-购买"></a></h2>
+<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
+<blockquote>
+<p>准备</p>
+<ul>
+<li>Gmail 邮箱</li>
+<li>VISA 或者万事达 Mastercard 的信用卡</li>
+<li>美区 AppleID 账号</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="开始">开始<a title="#开始" href="#开始"></a></h3>
+<ol>
+<li>打开网站: <code>https://www.apple.com/shop/buy-giftcard/giftcard</code></li>
+<li>发送方式选择: <code>Email</code></li>
+<li>苹果设计Logo随便选择</li>
+<li>收件人输入Gmail邮箱</li>
+<li>发件人随便</li>
+<li>正常流程购买</li>
+</ol>
+<h3 id="美国地址生成">美国地址生成<a title="#美国地址生成" href="#美国地址生成"></a></h3>
+<blockquote>
+<p>生成地址尽量选择以下五个免税州</p>
+<ul>
+<li>蒙大拿州 Montana</li>
+<li>俄勒冈州 Oregon</li>
+<li>阿拉斯加州 Alaska</li>
+<li>特拉华州 Delaware</li>
+<li>新罕布什尔州 New Hampshire</li>
+</ul>
+</blockquote>
+<h4 id="美国地址生成器网站">美国地址生成器网站<a title="#美国地址生成器网站" href="#美国地址生成器网站"></a></h4>
+<p>网址一(推荐): <a href="https://www.meiguodizhi.com/" target="_blank">https://www.meiguodizhi.com/</a><br>
+网址二: <a href="https://www.shenfendaquan.com/" target="_blank">https://www.shenfendaquan.com/</a><br>
+网址三: <a href="http://www.haoweichi.com/" target="_blank">http://www.haoweichi.com/</a></p>
+<div class="φbq"><div class="φbs"><table><thead>
+<tr>
+<th style="text-align:right">示例地址 可直接使用</th>
+<th style="padding:0"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">街道</td>
+<td style="text-align:left">3751  Meadow Drive</td>
+</tr>
+<tr>
+<td style="text-align:right">区县</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:right">城市</td>
+<td style="text-align:left">Helena</td>
+</tr>
+<tr>
+<td style="text-align:right">州</td>
+<td style="text-align:left">MT</td>
+</tr>
+<tr>
+<td style="text-align:right">州全称</td>
+<td style="text-align:left">Montana</td>
+</tr>
+<tr>
+<td style="text-align:right">邮编</td>
+<td style="text-align:left">59601</td>
+</tr>
+<tr>
+<td style="text-align:right">电话号码</td>
+<td style="text-align:left">406-204-7893</td>
+</tr>
+<tr>
+<td style="text-align:right">临时邮箱</td>
+<td style="text-align:left"><a href="mailto:ncynjfvawd@iubridge.com">ncynjfvawd@iubridge.com</a></td>
+</tr>
+<tr>
+<td style="text-align:right">全名</td>
+<td style="text-align:left">Ala Manson</td>
+</tr>
+<tr>
+<td style="text-align:right">性别</td>
+<td style="text-align:left">Male</td>
+</tr>
+</tbody>
+</table></div></div><h3 id="给美区-apple-id-充值">给美区 Apple ID 充值<a title="#给美区-apple-id-充值" href="#给美区-apple-id-充值"></a></h3>
+<ol>
+<li>打开Gmail邮箱, 获取 Your Gift Card PIN:<code>XCH****GH242ZFV4</code></li>
+<li>手机App Store登录美区账号, 打开App Store, 点击头像</li>
+<li>兑换充值卡或代码</li>
+<li>手动输入兑换码</li>
+<li>完成</li>
+</ol>
+<hr>
+<h3 id="问题">问题<a title="#问题" href="#问题"></a></h3>
+<ol>
+<li>购买 Apple ID 礼品卡并充值后还需要添加付款方式吗？
+<ul>
+<li>答: 不需要。 由于美区AppleID购买App需要绑定支付方式, 需要继续添加付款方式进行账号验证, 但是在 App Store 里面只有两种付款方式:(信用卡/借记卡、PayPal), 当绑定充值礼品卡后, 付款方式就会显示Apple ID</li>
+<li>因为礼品卡、信用卡、借记卡是平行的, 只要满足一个, 就可以购买App了</li>
+</ul>
+</li>
+<li>为什么绑定礼品卡后还不能购买App？
+<ul>
+<li>答: 有可能是你的账单地址没有完善, 可以使用上面的美国地址生成器录入即可.</li>
+</ul>
+</li>
+<li>礼品卡发放时间
+<ul>
+<li>官方提示是一个小时, 亲测十分钟后收到</li>
+</ul>
+</li>
+</ol>
+<h3 id="提示">提示<a title="#提示" href="#提示"></a></h3>
+<ol>
+<li>当到 <strong>Place Your Order</strong> 那一步的时候, 一般情况下只要点击了, 信用卡扣款基本就完成了, 非常之快</li>
+</ol>
+<h2 id="支付宝-购买">支付宝 购买<a title="#支付宝-购买" href="#支付宝-购买"></a></h2>
+<ol>
+<li>支付宝 首页 切换地区 比如切换到旧金山<br>
+<img src="https://i.l-zm.com/i/202305301%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
+<li>顶部搜索: <code>出境</code> 选择第一个<br>
+<img src="https://i.l-zm.com/i/202305302%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
+<li>点击<code>折扣礼品卡</code><br>
+<img src="https://i.l-zm.com/i/202305303%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"><br>
+<img src="https://i.l-zm.com/i/202305304%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
+<li>滑动到底部 点击: <code>更多大牌折扣礼卡</code><br>
+<img src="https://i.l-zm.com/i/202305305%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
+<li>查找 点击: <code>App Store &amp; iTunes US</code><br>
+<img src="https://i.l-zm.com/i/202305306%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
+<li>输入礼品卡金额 最低2美元<br>
+<img src="https://i.l-zm.com/i/202305307%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
+<li>购买支付 可以使用支付宝花呗或信用卡<br>
+<img src="https://i.l-zm.com/i/202305308%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
+<li>稍等片刻 页面显示礼品卡号码<br>
+<img src="https://i.l-zm.com/i/202305309%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"><br>
+<img src="https://i.l-zm.com/i/2023053010%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
+<li>登录美区 AppleID 点击: <code>兑换充值卡或代码</code><br>
+<img src="https://i.l-zm.com/i/2023053011%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
+<li>点击: <code>手动输入兑换码</code><br>
+<img src="https://i.l-zm.com/i/2023053012%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
+<li>输入兑换码<br>
+<img src="https://i.l-zm.com/i/2023053013%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
+<li>完成<br>
+<img src="https://i.l-zm.com/i/2023053014%E6%94%AF%E4%BB%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E8%8B%B9%E6%9E%9C%E7%A4%BC%E5%93%81%E5%8D%A1.png" alt="支付宝购买苹果礼品卡" loading="lazy"></li>
+</ol>
+<hr>
+<p>参考:<code>https://zhuanlan.zhihu.com/p/476434200</code></p>
+]]></content>
+      <categories>
+        <category>Apple ID</category>
+      </categories>
+      <tags>
+        <tag>iPhone</tag>
+        <tag>Apple ID</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Chrome 插件</title>
+    <url>/Chrome-Plugins/</url>
+    <content><![CDATA[<is-cipher placeholder="内容已加密,&nbsp;请点击输入密码">U2FsdGVkX19x/Esr8K+09E41hB9LSE0zQUDqeB9Isxfx6TZCyH5NoHlbzpiPWWQ8</is-cipher>]]></content>
+      <categories>
+        <category>Chrome</category>
+      </categories>
+      <tags>
+        <tag>Chrome Plugins</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VPN客户端工具</title>
+    <url>/vpn-client-application/</url>
+    <content><![CDATA[<div class="φbq"><div class="φbs"><table><thead>
+<tr>
+<th style="text-align:center">工具(项目地址)</th>
+<th style="text-align:center">支持系统</th>
+<th style="text-align:center">介绍</th>
+<th style="text-align:center">常用类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://github.com/clash-verge-rev/clash-verge-rev" target="_blank">Clash Verge</a></td>
+<td style="text-align:center">Windows<br>macOS</td>
+<td style="text-align:center">基于 Tauri 的 Clash Meta GUI</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/2dust/v2rayN" target="_blank">V2rayN</a></td>
+<td style="text-align:center">Windows</td>
+<td style="text-align:center">V2RayN 是一个基于 V2Ray及Xray 内核的 Windows 客户端</td>
+<td style="text-align:center">SS、Trojan、V2ray（Vmess、VLESS）、Xray、Hysteria</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/V2RaySSR/Qv2ray" target="_blank">Qv2ray</a></td>
+<td style="text-align:center">Windows<br>macOS</td>
+<td style="text-align:center">使用Qt框架的跨平台V2Ray客户端。支持Windows，Linux，macOS 插件系统支持SSR / Trojan / Trojan-Go / NaiveProxy</td>
+<td style="text-align:center">SS、SSR、Trojan、V2ray（Vmess、VLESS）、Xray、NaiveProxy</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/Fndroid/clash_for_windows_pkg" target="_blank">Clash for Windows</a></td>
+<td style="text-align:center">Windows<br>macOS</td>
+<td style="text-align:center">基于Clash的Windows / macOS可以切换通过Meta内核支持全协议</td>
+<td style="text-align:center">SS、SSR、Trojan、Vmess、VLESS、Hysteria</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/2dust/clashN" target="_blank">ClashN</a></td>
+<td style="text-align:center">Windows</td>
+<td style="text-align:center">基于Clash的Windows</td>
+<td style="text-align:center">SS、SSR、Trojan、Vmess、VLESS、Hysteria</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/yichengchen/clashX" target="_blank">ClashX</a></td>
+<td style="text-align:center">macOS</td>
+<td style="text-align:center">Clash 是一个使用 Go 语言编写，基于规则的跨平台代理软件核心程序。ClashX 是运行在 macOS 上</td>
+<td style="text-align:center">SS、SSR、Trojan、V2ray</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/shadowsocks/shadowsocks-windows" target="_blank">ShadowSocks</a></td>
+<td style="text-align:center">Windows</td>
+<td style="text-align:center">科学上网工具早期的经典代表之作</td>
+<td style="text-align:center">SS、SSR</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/Kr328/ClashForAndroid" target="_blank">Clash for Android</a></td>
+<td style="text-align:center">Android</td>
+<td style="text-align:center">Android 的Clash图形用户界面</td>
+<td style="text-align:center">SS、SSR、Trojan、V2ray</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/shadowsocks/shadowsocks-android" target="_blank">Shadowsocks for Android</a></td>
+<td style="text-align:center">Android</td>
+<td style="text-align:center">适用于Android和Chrome操作系统，有TV版本的可以直接支持电视科学上网</td>
+<td style="text-align:center">SS、SSR</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/2dust/v2rayNG" target="_blank">v2rayNG</a></td>
+<td style="text-align:center">Android</td>
+<td style="text-align:center">Android 的 V2Ray 客户端</td>
+<td style="text-align:center">SS、Trojan、Vmess、VLESS、Trojan、Socks</td>
+</tr>
+<tr>
+<td style="text-align:center">Shadowrocket 小火箭</td>
+<td style="text-align:center">iOS</td>
+<td style="text-align:center">Shadowrocket 是一个通用的 iOS VPN 应用</td>
+<td style="text-align:center">SS、SSR、Trojan、V2ray、VLESS</td>
+</tr>
+</tbody>
+</table></div></div><p><img src="https://i.l-zm.com/i/20230523ClashVerge.png" alt="Clash Verge" loading="lazy" class="φbp"></p>
+<h3 id="ios-苹果小飞机-shadowrocket-共享账号">iOS 苹果小飞机 Shadowrocket 共享账号<a title="#ios-苹果小飞机-shadowrocket-共享账号" href="#ios-苹果小飞机-shadowrocket-共享账号"></a></h3>
+<ul>
+<li><a href="https://appleshare.club/" target="_blank">https://appleshare.club/</a></li>
+<li><a href="https://ioss.ml/share/ys#" target="_blank">https://ioss.ml/share/ys#</a></li>
+</ul>
+<h3 id="参考博客">参考博客<a title="#参考博客" href="#参考博客"></a></h3>
+<ul>
+<li><strong>Clash for Windows最新教程</strong> ：<a href="https://clashfor.win/" target="_blank">https://clashfor.win/</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>VPN</category>
+      </categories>
+      <tags>
+        <tag>VPN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Clash for Windows</title>
+    <url>/clash-for-windows/</url>
+    <content><![CDATA[<h2 id="百度云下载地址">百度云下载地址<a title="#百度云下载地址" href="#百度云下载地址"></a></h2>
+<p>链接: <a href="https://pan.baidu.com/s/1hW77wn71LCC6HqbGdsK3kQ" target="_blank">https://pan.baidu.com/s/1hW77wn71LCC6HqbGdsK3kQ</a><br>
+提取码: 1234</p>
+<h3 id="git-下载地址-（已失效）">Git 下载地址 （已失效）<a title="#git-下载地址-（已失效）" href="#git-下载地址-（已失效）"></a></h3>
+<p><a href="https://github.com/Fndroid/clash_for_windows_pkg" target="_blank">https://github.com/Fndroid/clash_for_windows_pkg</a></p>
+<h3 id="汉化包下载地址（已失效）">汉化包下载地址（已失效）<a title="#汉化包下载地址（已失效）" href="#汉化包下载地址（已失效）"></a></h3>
+<p><a href="https://github.com/BoyceLig/Clash_Chinese_Patch" target="_blank">https://github.com/BoyceLig/Clash_Chinese_Patch</a></p>
+<h3 id="帮助文档">帮助文档<a title="#帮助文档" href="#帮助文档"></a></h3>
+<p><a href="https://docs.cfw.lbyczf.com" target="_blank">https://docs.cfw.lbyczf.com</a></p>
+<p><a href="https://github.com/Fndroid/clash-win-docs-new" target="_blank">https://github.com/Fndroid/clash-win-docs-new</a></p>
+<h3 id="版本说明">版本说明<a title="#版本说明" href="#版本说明"></a></h3>
+<div class="φbq"><div class="φbs"><table><thead>
+<tr>
+<th style="text-align:left">文件名</th>
+<th style="text-align:center">使用方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Clash.for.Windows-0.20.23-win.7z</td>
+<td style="text-align:center">免安装,解压即用</td>
+</tr>
+<tr>
+<td style="text-align:left">Clash.for.Windows.Setup.0.20.23.exe</td>
+<td style="text-align:center">安装</td>
+</tr>
+</tbody>
+</table></div></div><h3 id="关于clash订阅链接转换">关于Clash订阅链接转换<a title="#关于clash订阅链接转换" href="#关于clash订阅链接转换"></a></h3>
+<ol>
+<li>复制机场的Shadowsocks/V2ray订阅链接</li>
+<li>登录订阅转换网址 <a href="https://api.nameless13.com" target="_blank">https://api.nameless13.com</a> 并将链接粘贴在订阅链接位置</li>
+<li>点击生成订阅链接即可</li>
+<li>将生成的订阅链接粘贴于Clash中（使用方法参考Clash使用教程）</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Clash</category>
+      </categories>
+      <tags>
+        <tag>Clash</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cloudflare_WARP</title>
+    <url>/cloudflare_warp/</url>
+    <content><![CDATA[<h3 id="安装-cloudflare_warp">安装 Cloudflare_WARP<a title="#安装-cloudflare_warp" href="#安装-cloudflare_warp"></a></h3>
+<ol>
+<li>打开官网: <code>1.1.1.1</code></li>
+<li>下载对应系统的安装包, 安装<br>
+<img src="https://i.l-zm.com/i/cloudflare/20240101Cloudflare3.png" alt="Warp+ Bot" loading="lazy"></li>
+</ol>
+<h3 id="获取秘钥-获取-12-或-24pb-的-warp-plus-密钥">获取秘钥 获取 12 或 24PB 的 Warp Plus 密钥<a title="#获取秘钥-获取-12-或-24pb-的-warp-plus-密钥" href="#获取秘钥-获取-12-或-24pb-的-warp-plus-密钥"></a></h3>
+<p>在 Telegram 机器人中生成个人 Warp Plus 密钥</p>
+<ol>
+<li>转到 Telegram 中的 @generatewarpplusbot, 然后按 <code>/start</code></li>
+<li>点击<code>/generate</code> — generate a WARP+ key</li>
+<li>回答一个数据题，回答按照格式</li>
+<li></li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">✅ Successfully generated key!</span><br><span class="line"></span><br><span class="line">🔐 Key: ********-********-******** (24598562 GB)</span><br><span class="line"></span><br><span class="line">✨ If you enjoy free keys, please, make a donation to us (https://t.me/akamemoe/50)! It will help us to maintain this bot.</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.l-zm.com/i/cloudflare/20240101Cloudflare02.png" alt="Warp+ Bot" loading="lazy" class="φbp"></p>
+<blockquote>
+<p>客户端使用过程中的遇到问题请查阅<br>
+<a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/troubleshooting/client-errors/" target="_blank">https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/troubleshooting/client-errors/</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Cloudflare</category>
+      </categories>
+      <tags>
+        <tag>Cloudflare</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PowerToys-微软的一款开源电脑工具箱软件</title>
+    <url>/PowerToys/</url>
+    <content><![CDATA[<h3 id="前言">前言<a title="#前言" href="#前言"></a></h3>
+<p>习惯了 <strong><code>Mac</code></strong> 系统的 <code>command + *</code> 按键的操作逻辑之后</p>
+<p>针对于 <strong><code>Windows</code></strong> 系统的 <code>Ctrl + *</code> 各种不适应</p>
+<hr>
+<p>放上我的调整结果，回到 <code>command</code> 按键逻辑下</p>
+<p><img src="https://pic.imgdb.cn/item/6277942309475431296ca2b5.png" alt="PowerToys-微软的一款开源电脑工具箱软件-键盘管理器" loading="lazy" class="φbp"></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>PowerToys</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>管理 &quot;此电脑&quot; 里面删不掉的流浪 &quot;快捷方式&quot;</title>
+    <url>/windows-MyComputerManager/</url>
+    <content><![CDATA[<h3 id="mycomputermanager">MyComputerManager<a title="#mycomputermanager" href="#mycomputermanager"></a></h3>
+<p>GitHub 开源小工具: <code>https://github.com/1357310795/MyComputerManager</code></p>
+<p>双击直接运行</p>
+<p><img src="https://pic.imgdb.cn/item/62cbbaa7f54cd3f9377cf8d0.png" alt="MyComputerManager" loading="lazy" class="φbp"></p>
+<h3 id="如何彻底杜绝">如何彻底杜绝<a title="#如何彻底杜绝" href="#如何彻底杜绝"></a></h3>
+<ol>
+<li>打开火绒</li>
+<li>安全设置</li>
+<li>高级防护</li>
+<li>自定义防护</li>
+<li>添加规则
+<ol>
+<li>规则名称(随便): <code>阻止程序在此电脑创建快捷方式</code></li>
+<li>注册表规则: <code>*\MyComputer\NameSpace\*</code></li>
+</ol>
+</li>
+</ol>
+<p><img src="https://pic.imgdb.cn/item/62cb97a3f54cd3f937521d28.png" alt="阻止程序在此电脑创建快捷方式" loading="lazy" class="φbp"></p>
+<blockquote>
+<p>如果你想要禁止在桌面创建快捷方式<br>
+把MyComputer改成Desktop即可</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>MyComputerManager</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WPS 2019 专业增强版 (温州大学教育版)</title>
+    <url>/windows-wps-2019/</url>
+    <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62cbbf63f54cd3f9378360d4.png" alt="WPS 产品管理中心" loading="lazy" class="φbp"></p>
+<p><strong>教育版的优势</strong></p>
+<ul>
+<li>定制序列号(内嵌), 无需注册, 直接使用, 授权长期有效, 永久激活</li>
+<li>官方出品, 广告</li>
+<li>具备完整的VBA组件和VBA宏</li>
+</ul>
+<p><strong>下载地址</strong></p>
+<blockquote>
+<p>链接: <code>https://pan.baidu.com/s/1itrGNaYDIuLr2fkzig2OsQ?pwd=lizm</code><br>
+提取码: <code>lizm</code></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>WPS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iPhone与Windows传输文件的几种方式</title>
+    <url>/iPhone-Windows/</url>
+    <content><![CDATA[<h3 id="创建文件夹">创建文件夹<a title="#创建文件夹" href="#创建文件夹"></a></h3>
+<ul>
+<li>右键 <code>属性</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8a7f.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>点击 <code>共享</code> 标签下的 <code>共享</code> 按钮, 选择 <code>Everyone</code>, 点击 <code>添加</code>, 最后点击 <code>共享</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8a88.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>选择文件夹, 点击 <code>完成</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8ac3.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>继续点击 <code>高级共享</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67922f54cd3f937caab12.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>选中 <code>共享此文件夹</code>, 然后点击 <code>权限</code> 按钮</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8ae3.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>选中用户 <code>Everyone</code> 的读写权限, 然后一路确定</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d67304f54cd3f937ae8afc.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>打开命令提示符工具, 输入: <code>ipconfig</code>, 找到自己电脑的IPv4 地址: <code>192.168.95.1</code></li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/62d678e2f54cd3f937c98b45.png" alt="" loading="lazy" class="φbp"></p>
+<ul>
+<li>
+<p>打开手机软件 <code>文件</code>, 点击右上角: <code>连接服务器</code><br>
+<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45d4.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>输入上面获取到的IPv4 地址<br>
+<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45b0.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>输入电脑密码即可进入<br>
+<img src="https://pic.imgdb.cn/item/62d67947f54cd3f937cb45e1.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Windows</category>
+        <category>iPhone</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>iPhone</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows iTunes 设置关闭自动备份</title>
+    <url>/windows-itunes-backups/</url>
+    <content><![CDATA[<ol>
+<li>找到安装目录下的: <code>defaults.exe</code> 复制路径</li>
+<li>运行: <code>cmd</code></li>
+<li>执行命令: <code>&quot;D:\Application\iTunes\defaults.exe&quot; write com.apple.iTunes AutomaticDeviceBackupsDisabled -bool true</code></li>
+</ol>
+]]></content>
+      <categories>
+        <category>iTunes</category>
+      </categories>
+      <tags>
+        <tag>iTunes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows &amp; Mac M3U8 视频下载</title>
+    <url>/m3u8-download/</url>
+    <content><![CDATA[<h2 id="mac">Mac<a title="#mac" href="#mac"></a></h2>
+<h2 id="windows">Windows<a title="#windows" href="#windows"></a></h2>
+<h4 id="n_m3u8dl-cli">N_m3u8DL-CLI<a title="#n_m3u8dl-cli" href="#n_m3u8dl-cli"></a></h4>
+<p><img src="https://pic.imgdb.cn/item/62f1f7dd16f2c2beb1ccdd40.png" alt="N_m3u8DL-CLI" loading="lazy" class="φbp"></p>
+<p>GitHub地址: <a href="https://github.com/nilaoda/N_m3u8DL-CLI" target="_blank">https://github.com/nilaoda/N_m3u8DL-CLI</a></p>
+<blockquote>
+<p>N_m3u8DL-CLI是一款用于下载m3u8的命令行工具，<a href="http://xn--6kq92u.NET">基于.NET</a> Framework 4.6框架开发，调用系统类库进行HTTP下载，支持常见的m3u8格式下载，支持从视频中选择一部分下载，还提供丰富的命令行选项以增强其功能。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>M3U8</category>
+      </categories>
+      <tags>
+        <tag>M3U8</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows 10/11 电源计划 开启[卓越性能]</title>
+    <url>/windows-excellent/</url>
+    <content><![CDATA[<p>以管理员身份运行<code>Windows PowerShell</code>, 输入以下命令:</p>
+<p><code>powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61</code></p>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows 显示并控制通过USB (或TCP/IP) 连接的 Android 设备</title>
+    <url>/windows-control-android/</url>
+    <content><![CDATA[<h3 id="scrcpy">scrcpy<a title="#scrcpy" href="#scrcpy"></a></h3>
+<p>Github地址：<a href="https://github.com/Genymobile/scrcpy" target="_blank">https://github.com/Genymobile/scrcpy</a></p>
+<p><strong>本应用专注于：</strong></p>
+<ul>
+<li><strong>轻量</strong> ：原生，仅显示设备屏幕</li>
+<li><strong>性能</strong> ：30~120fps，取决于设备</li>
+<li><strong>质量</strong> ：分辨率可达 1920×1080 或更高</li>
+<li><strong>低延迟</strong> ：35~70ms</li>
+<li><strong>快速启动</strong> ：最快 1 秒内即可显示第一帧</li>
+<li><strong>无侵入性</strong> ：不会在设备上遗留任何程序</li>
+<li><strong>用户利益</strong> ：无需帐号，无广告，无需联网</li>
+<li><strong>自由</strong> ：自由和开源软件</li>
+</ul>
+<p><strong>系统要求：</strong><br>
+安卓设备最低需要支持 API 21 (Android 5.0)<br>
+确保设备已开启 adb 调试<br>
+在某些设备上，还需要开启额外的选项以使用鼠标和键盘进行控制</p>
+<hr>
+<p>软件目录, 双击: <code>open_a_terminal_here.bat</code> 打开命令窗口</p>
+<h3 id="命令">命令<a title="#命令" href="#命令"></a></h3>
+<ul>
+<li>标题: <code>scrcpy --window-title &quot;my phone&quot;</code></li>
+<li>关闭设备屏幕: <code>scrcpy --turn-screen-off</code></li>
+<li>复制粘贴:
+<ul>
+<li>设备上复制,会自动同步到电脑的剪贴板上</li>
+<li>电脑上复制, 使用 <code>Ctrl</code> + <code>Shift</code> + <code>v</code> 粘贴到设备上</li>
+</ul>
+</li>
+<li>旋转屏幕: <code>Ctrl</code> + <code>R</code></li>
+</ul>
+<h3 id="常用命令">常用命令<a title="#常用命令" href="#常用命令"></a></h3>
+<p>关闭设备屏幕启动: <code>scrcpy --turn-screen-off --window-title &quot;my phone&quot;</code></p>
+<p>选择 USB 设备启动: <code>scrcpy -d --turn-screen-off --window-title &quot;my phone&quot;</code></p>
+]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows资源管理器删除左侧OneDrive图标</title>
+    <url>/windows-delete-onedrive-icon/</url>
+    <content><![CDATA[<p>Windows资源管理器删除左侧OneDrive图标</p>
+<ol>
+<li>
+<p>打开“运行”对话框，方法是按下“Windows键+R”</p>
+</li>
+<li>
+<p>在“运行”对话框中，输入<code>regedit</code>，然后单击“确定”按钮以打开“注册表编辑器”</p>
+</li>
+<li>
+<p>在左侧窗格中，展开以下路径：<code>HKEY_CLASSES_ROOT\CLSID\&#123;018D5C66-4533-4307-9B53-224DE2ED1FE6&#125;</code></p>
+</li>
+<li>
+<p>在右侧窗格中，找到<code>System.IsPinnedToNameSpaceTree</code>项，然后将其值从“1”更改为“0”</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ContextMenuManager 一个纯粹的Windows右键菜单管理程序</title>
+    <url>/windows-right-click/</url>
+    <content><![CDATA[<h3 id="contextmenumanager">ContextMenuManager<a title="#contextmenumanager" href="#contextmenumanager"></a></h3>
+<p>Github 地址: <a href="https://github.com/BluePointLilac/ContextMenuManager" target="_blank">https://github.com/BluePointLilac/ContextMenuManager</a></p>
+<h4 id="主要功能">主要功能<a title="#主要功能" href="#主要功能"></a></h4>
+<ul>
+<li>启用或禁用文件、文件夹、新建、发送到、打开方式、自定义文件格式、IE浏览器、WinX等右键菜单项目</li>
+<li>对上述场景右键菜单项目进行修改名称、修改图标、导航注册表位置、导航文件位置、永久删除等操作</li>
+<li>对上述场景右键菜单自定义添加项目，自定义菜单命令</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你的 Microsoft 365 开发人员订阅</title>
+    <url>/microsoft-office-dev/</url>
+    <content><![CDATA[<blockquote>
+<p>官方说明: <code>https://learn.microsoft.com/zh-cn/office/developer-program/microsoft-365-developer-program</code></p>
+</blockquote>
+<h3 id="打开网站">打开网站<a title="#打开网站" href="#打开网站"></a></h3>
+<p><code>https://developer.microsoft.com/zh-cn/microsoft-365/dev-program</code></p>
+<ol>
+<li>登录自己的微软账号</li>
+<li>点击立即加入
+<ol>
+<li>国家/地区: <code>China</code></li>
+<li>公司: 随意</li>
+<li>语言搜选项: 中文(简体)</li>
+</ol>
+</li>
+<li>下一步: 供我公司内部使用的应用程序</li>
+<li>下一步: 您感兴趣的开发领域, 随意选择</li>
+<li>设置 Microsoft 365 E5 沙盒, 选择: 可配置沙盒</li>
+<li>用户名/域/密码 自己设置</li>
+<li>最后输入手机号, 获取验证码完成(这里可能需要科学上网)</li>
+</ol>
+<h3 id="创建子用户">创建子用户<a title="#创建子用户" href="#创建子用户"></a></h3>
+<p>访问: <code>https://www.office.com/</code></p>
+<ol>
+<li>管理</li>
+<li>添加用户</li>
+</ol>
+<h3 id="调整网盘容量">调整网盘容量<a title="#调整网盘容量" href="#调整网盘容量"></a></h3>
+<p>访问网址: <code>https://admin.onedrive.com/?v=StorageSettings</code></p>
+<p>设置 &gt; OneDrive 存储限制 &gt; 默认存储限制 设置 <code>5120 (5 TB)</code> 即可</p>
+<hr>
+<h3 id="禁用安全默认值">禁用安全默认值<a title="#禁用安全默认值" href="#禁用安全默认值"></a></h3>
+<p>访问网址: <code>https://portal.azure.com</code></p>
+<ol>
+<li>找到: <code>管理 Azure Active Directory</code></li>
+<li>点击: <code>查看</code></li>
+<li>点击左侧: <code>属性</code></li>
+<li>点击页面下方: <code>管理安全默认值</code></li>
+<li>安全默认值 设置为: 禁用</li>
+</ol>
+<hr>
+<h3 id="github上创建'pat密钥'">Github上创建’PAT密钥’<a title="#github上创建'pat密钥'" href="#github上创建'pat密钥'"></a></h3>
+<ol>
+<li>访问网址: <code>https://github.com</code></li>
+<li>登录</li>
+<li>进入设置: <code>https://github.com/settings/tokens</code></li>
+<li>点击按钮: <code>Generate new token</code></li>
+<li>选择: <code>New personal access token (classic)</code>
+<ol>
+<li>Note: E5</li>
+<li>Expiration: No expiration</li>
+<li>Select scopes: 选中:<code>workflow</code></li>
+</ol>
+</li>
+<li>OK, 最后拿到秘钥</li>
+</ol>
+<p>继续</p>
+<ol>
+<li>打开Git项目: <code>https://github.com/vcheckzen/KeepAliveE5</code></li>
+<li>点击右上角加号: <code>Import repository</code></li>
+<li>输入地址及自己定义一个项目名</li>
+<li>完成后进入自己的Git项目, 点击: <code>Settings</code> &gt; <code>Actions</code> &gt; <code>Secrets and variables</code> &gt; <code>Actions</code> &gt; <code>New repository secret</code>
+<ol>
+<li>PAT</li>
+<li>USER</li>
+<li>PASSWD</li>
+</ol>
+</li>
+<li>完成</li>
+</ol>
+<p>最后</p>
+<ol>
+<li>最后设置重复执行
+<ol>
+<li><code>Actions</code> &gt; General</li>
+<li>选择: <code>Allow all actions and reusable workflows</code></li>
+<li>Save 保存</li>
+</ol>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p>引用<br>
+永久白嫖Microsoft 365，教程来了: <a href="https://baijiahao.baidu.com/s?id=1762710572846867749" target="_blank">https://baijiahao.baidu.com/s?id=1762710572846867749</a><br>
+Microsoft 365永久激活！白嫖搞起来～: <a href="https://mp.weixin.qq.com/s/Z70wmTjMtsaEdiX5O4kJ1Q" target="_blank">https://mp.weixin.qq.com/s/Z70wmTjMtsaEdiX5O4kJ1Q</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Office</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java 23种设计模式 说明</title>
     <url>/Design-Pattern/</url>
     <content><![CDATA[<p><img src="https://pic.imgdb.cn/item/62878e6e09475431296d65c4.png" alt="Java 23种设计模式关系" loading="lazy" class="φbp"></p>
@@ -3832,6 +3845,53 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </categories>
       <tags>
         <tag>Strategy Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java 自定义注解的使用</title>
+    <url>/Java-Annotation/</url>
+    <content><![CDATA[<p><strong>自定义注解</strong> 说明</p>
+<ul>
+<li>自定义注解的修饰符为：<code>@interface</code></li>
+<li>注解可以添加成员变量, 成员变量以方法的形式定义</li>
+<li>需要使用 <code>@Retention</code> 注解来规定该注解的声明周期</li>
+<li>需要使用 <code>@Target</code> 注解来规定该注解的使用范围</li>
+</ul>
+<h3 id="java中的元注解(用来标识注解的注解),-共有四个">Java中的元注解(用来标识注解的注解), 共有四个<a title="#java中的元注解(用来标识注解的注解),-共有四个" href="#java中的元注解(用来标识注解的注解),-共有四个"></a></h3>
+<ol>
+<li><code>@Target</code> : 注解的作用目标</li>
+<li><code>@Retention</code> : 注解的保留位置, 注解的生命周期</li>
+<li><code>@Document</code> : 包含在javadoc文档中</li>
+<li><code>@Inherited</code> : 子类可以继承父类的该注解</li>
+</ol>
+<h4 id="@target-定义注解的使用位置,-作用目标,-取值范围"><code>@Target</code> 定义注解的使用位置, 作用目标, 取值范围<a title="#@target-定义注解的使用位置,-作用目标,-取值范围" href="#@target-定义注解的使用位置,-作用目标,-取值范围"></a></h4>
+<ul>
+<li><code>TYPE</code> : 类</li>
+<li><code>FIELD</code> : 字段</li>
+<li><code>METHOD</code> : 方法</li>
+<li><code>PARAMETER</code> : 参数</li>
+<li><code>CONSTRUCTOR</code> : 构造方法</li>
+<li><code>LOCAL_VARIABLE</code> : 局部变量</li>
+<li><code>ANNOTATION_TYPE</code> : 注解类型</li>
+<li><code>PACKAGE</code> : 包名</li>
+<li><code>TYPE_PARAMETER</code> : 类型参数</li>
+<li><code>TYPE_USE</code> : 任何类型</li>
+</ul>
+<h4 id="@retention-生命周期-三种情况"><code>@Retention</code> 生命周期 三种情况<a title="#@retention-生命周期-三种情况" href="#@retention-生命周期-三种情况"></a></h4>
+<ul>
+<li><code>@Retention(RetentionPolicy.SOURCE)</code> : 注解只存在于源码中(编译检查阶段)</li>
+<li><code>@Retention(RetentionPolicy.CLASS)</code> : 注解会在class字节码文件中存在 (默认保留策略)(class编译阶段)</li>
+<li><code>@Retention(RetentionPolicy.RUNTIME)</code> : 所有阶段都会保留(运行阶段)</li>
+</ul>
+<h4 id="@document-表示所修饰的注解在被javadoc解析时,-保留下来"><code>@Document</code> 表示所修饰的注解在被javadoc解析时, 保留下来<a title="#@document-表示所修饰的注解在被javadoc解析时,-保留下来" href="#@document-表示所修饰的注解在被javadoc解析时,-保留下来"></a></h4>
+<h4 id="@inherited-被它修饰的注解可以被继承"><code>@Inherited</code> 被它修饰的注解可以被继承<a title="#@inherited-被它修饰的注解可以被继承" href="#@inherited-被它修饰的注解可以被继承"></a></h4>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Annotation</tag>
       </tags>
   </entry>
   <entry>
@@ -4001,53 +4061,6 @@ RGB颜色: 红色:<code>199</code> 绿色:<code>237</code> 蓝色:<code>204</cod
       </categories>
       <tags>
         <tag>JVM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java 自定义注解的使用</title>
-    <url>/Java-Annotation/</url>
-    <content><![CDATA[<p><strong>自定义注解</strong> 说明</p>
-<ul>
-<li>自定义注解的修饰符为：<code>@interface</code></li>
-<li>注解可以添加成员变量, 成员变量以方法的形式定义</li>
-<li>需要使用 <code>@Retention</code> 注解来规定该注解的声明周期</li>
-<li>需要使用 <code>@Target</code> 注解来规定该注解的使用范围</li>
-</ul>
-<h3 id="java中的元注解(用来标识注解的注解),-共有四个">Java中的元注解(用来标识注解的注解), 共有四个<a title="#java中的元注解(用来标识注解的注解),-共有四个" href="#java中的元注解(用来标识注解的注解),-共有四个"></a></h3>
-<ol>
-<li><code>@Target</code> : 注解的作用目标</li>
-<li><code>@Retention</code> : 注解的保留位置, 注解的生命周期</li>
-<li><code>@Document</code> : 包含在javadoc文档中</li>
-<li><code>@Inherited</code> : 子类可以继承父类的该注解</li>
-</ol>
-<h4 id="@target-定义注解的使用位置,-作用目标,-取值范围"><code>@Target</code> 定义注解的使用位置, 作用目标, 取值范围<a title="#@target-定义注解的使用位置,-作用目标,-取值范围" href="#@target-定义注解的使用位置,-作用目标,-取值范围"></a></h4>
-<ul>
-<li><code>TYPE</code> : 类</li>
-<li><code>FIELD</code> : 字段</li>
-<li><code>METHOD</code> : 方法</li>
-<li><code>PARAMETER</code> : 参数</li>
-<li><code>CONSTRUCTOR</code> : 构造方法</li>
-<li><code>LOCAL_VARIABLE</code> : 局部变量</li>
-<li><code>ANNOTATION_TYPE</code> : 注解类型</li>
-<li><code>PACKAGE</code> : 包名</li>
-<li><code>TYPE_PARAMETER</code> : 类型参数</li>
-<li><code>TYPE_USE</code> : 任何类型</li>
-</ul>
-<h4 id="@retention-生命周期-三种情况"><code>@Retention</code> 生命周期 三种情况<a title="#@retention-生命周期-三种情况" href="#@retention-生命周期-三种情况"></a></h4>
-<ul>
-<li><code>@Retention(RetentionPolicy.SOURCE)</code> : 注解只存在于源码中(编译检查阶段)</li>
-<li><code>@Retention(RetentionPolicy.CLASS)</code> : 注解会在class字节码文件中存在 (默认保留策略)(class编译阶段)</li>
-<li><code>@Retention(RetentionPolicy.RUNTIME)</code> : 所有阶段都会保留(运行阶段)</li>
-</ul>
-<h4 id="@document-表示所修饰的注解在被javadoc解析时,-保留下来"><code>@Document</code> 表示所修饰的注解在被javadoc解析时, 保留下来<a title="#@document-表示所修饰的注解在被javadoc解析时,-保留下来" href="#@document-表示所修饰的注解在被javadoc解析时,-保留下来"></a></h4>
-<h4 id="@inherited-被它修饰的注解可以被继承"><code>@Inherited</code> 被它修饰的注解可以被继承<a title="#@inherited-被它修饰的注解可以被继承" href="#@inherited-被它修饰的注解可以被继承"></a></h4>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>Annotation</tag>
       </tags>
   </entry>
   <entry>
